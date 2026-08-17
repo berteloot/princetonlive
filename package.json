@@ -8,7 +8,8 @@
     "build:seo": "node scripts/build-seo-pages.mjs",
     "refresh:data": "node scripts/fetch-live-data.mjs",
     "refresh:civic": "node scripts/fetch-civic-map.mjs",
-    "refresh:public": "npm run refresh:data && npm run refresh:civic",
+    "refresh:waste": "node scripts/fetch-waste-data.mjs",
+    "refresh:public": "npm run refresh:data && npm run refresh:civic && npm run refresh:waste",
     "build": "npm run build:seo && npm run refresh:public && vite build",
     "preview": "vite preview --host 0.0.0.0"
   },

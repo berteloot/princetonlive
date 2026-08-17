@@ -931,6 +931,154 @@ h3 {
   font-size: 1.16rem;
 }
 
+.waste-tool {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.78fr);
+  gap: 18px;
+  margin-top: 18px;
+  padding: clamp(18px, 4vw, 28px);
+  background: #fff;
+  border: 1px solid rgba(23, 32, 27, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 14px 40px rgba(23, 32, 27, 0.06);
+}
+
+.waste-copy h3 {
+  max-width: 680px;
+  font-size: clamp(1.55rem, 3vw, 2.4rem);
+  line-height: 1;
+}
+
+.waste-copy > p {
+  max-width: 680px;
+  color: #5e6a62;
+  line-height: 1.55;
+}
+
+.waste-search {
+  margin: 18px 0 12px;
+  background: #fbfaf5;
+}
+
+.waste-search input {
+  background: transparent;
+}
+
+.waste-results {
+  display: grid;
+  gap: 9px;
+}
+
+.waste-result {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 86px;
+  gap: 8px 14px;
+  align-items: center;
+  padding: 14px;
+  background: #fbfaf5;
+  border: 1px solid rgba(23, 32, 27, 0.08);
+  border-radius: 8px;
+}
+
+.waste-result strong,
+.waste-result span,
+.waste-result small,
+.waste-result b {
+  display: block;
+}
+
+.waste-result strong {
+  color: var(--princeton-black);
+}
+
+.waste-result span,
+.waste-result small,
+.waste-result p {
+  color: #5e6a62;
+}
+
+.waste-result b {
+  color: var(--orange-deep);
+  font-size: 1.38rem;
+  line-height: 1;
+}
+
+.waste-result p {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.waste-official {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
+
+.waste-summary,
+.waste-rules,
+.recyclecoach-card {
+  padding: 16px;
+  background: #f2eee5;
+  border: 1px solid rgba(23, 32, 27, 0.08);
+  border-radius: 8px;
+}
+
+.waste-summary span,
+.waste-rules span,
+.recyclecoach-card span {
+  color: var(--orange-deep);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.waste-summary strong {
+  display: block;
+  margin: 6px 0;
+  font-size: 1.25rem;
+  line-height: 1.15;
+}
+
+.waste-summary p,
+.waste-rules p,
+.recyclecoach-card p {
+  margin: 0;
+  color: #5e6a62;
+  line-height: 1.5;
+}
+
+.waste-rules {
+  display: grid;
+  gap: 12px;
+}
+
+.recyclecoach-card {
+  display: grid;
+  gap: 12px;
+}
+
+.recyclecoach-embed {
+  min-height: 180px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(23, 32, 27, 0.1);
+  border-radius: 8px;
+}
+
+.recyclecoach-embed:empty::before {
+  display: block;
+  padding: 16px;
+  color: #5e6a62;
+  content: "Loading official Recycle Coach calendar...";
+  font-weight: 800;
+}
+
+.waste-links {
+  padding: 0;
+}
+
 .resident-perks {
   color: var(--princeton-black);
   background: #eef2eb;
@@ -1742,6 +1890,10 @@ h3 {
   color: var(--orange-deep);
 }
 
+.source-links.compact.waste-links {
+  padding: 0;
+}
+
 .explore {
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(280px, 1fr);
@@ -1858,6 +2010,7 @@ footer a {
   .section-heading.split,
   .culture-layout,
   .civic-layout,
+  .waste-tool,
   .explore {
     grid-template-columns: 1fr;
   }

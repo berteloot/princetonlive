@@ -1,0 +1,2930 @@
+{
+  "generatedAt": "2026-08-17T16:20:28.465Z",
+  "source": "Municipality of Princeton public waste documents",
+  "streetCount": 456,
+  "recycleCoach": {
+    "cityId": "3320",
+    "projectId": "537",
+    "districtId": "PR",
+    "pluginToken": "TVRJek53PT0=",
+    "url": "https://recyclecoach.com/cities/usa-nj-municipality-of-princeton/",
+    "citySearchUrl": "https://api-city.recyclecoach.com/city/search?term=Princeton%2C%20New%20Jersey%2C%20USA",
+    "apiNote": "Recycle Coach city lookup is publicly reachable, but PrincetonLive uses official municipal documents for local street lookup and links/embeds Recycle Coach for live address-specific reminders."
+  },
+  "rules": {
+    "trash": "Place Princeton trash carts no earlier than 7 PM the day before collection and no later than 7 AM on collection day. Central Business District timing differs.",
+    "bulk": "Bulk waste is collected Wednesdays by reservation only. Reserve by Sunday 11:59 PM; maximum two eligible items per week, each up to 50 pounds.",
+    "yard": "Leaf, branch, and log collection begins on the listed section date. Put material out by 7 AM on the start date, no more than 7 days prior.",
+    "recycling": "Recycling is handled through Mercer County Improvement Authority; use Recycle Coach for address-specific recycling dates and reminders."
+  },
+  "yardSchedule2026": {
+    "1": {
+      "branchAndLogs": [
+        "January",
+        "March 16",
+        "April 27",
+        "June 15",
+        "August 10",
+        "September 8",
+        "October 5"
+      ],
+      "looseLeaves": [
+        "March 23",
+        "October 19",
+        "November 16",
+        "December 14"
+      ],
+      "baggedLeaves": [
+        "May 4",
+        "October 12",
+        "October 19",
+        "October 26",
+        "November 2",
+        "November 9",
+        "November 16",
+        "November 30",
+        "December 7"
+      ]
+    },
+    "2": {
+      "branchAndLogs": [
+        "January",
+        "March 16",
+        "April 27",
+        "June 15",
+        "August 17",
+        "September 14",
+        "October 5"
+      ],
+      "looseLeaves": [
+        "March 23",
+        "October 26",
+        "November 30",
+        "December 14"
+      ],
+      "baggedLeaves": [
+        "May 4",
+        "October 13",
+        "October 20",
+        "October 27",
+        "November 3",
+        "November 10",
+        "November 17",
+        "December 1",
+        "December 8"
+      ]
+    },
+    "3": {
+      "branchAndLogs": [
+        "January",
+        "March 16",
+        "April 27",
+        "June 15",
+        "August 24",
+        "September 21",
+        "October 5"
+      ],
+      "looseLeaves": [
+        "March 23",
+        "November 2",
+        "December 7",
+        "December 14"
+      ],
+      "baggedLeaves": [
+        "May 4",
+        "October 14",
+        "October 21",
+        "October 28",
+        "November 4",
+        "November 12",
+        "November 18",
+        "December 2",
+        "December 9"
+      ]
+    },
+    "4": {
+      "branchAndLogs": [
+        "January",
+        "March 16",
+        "April 27",
+        "June 15",
+        "August 31",
+        "September 28",
+        "October 5"
+      ],
+      "looseLeaves": [
+        "March 23",
+        "October 12",
+        "November 9",
+        "December 14"
+      ],
+      "baggedLeaves": [
+        "May 4",
+        "October 15",
+        "October 22",
+        "October 29",
+        "November 5",
+        "November 12",
+        "November 19",
+        "December 3",
+        "December 10"
+      ]
+    },
+    "5": {
+      "branchAndLogs": [
+        "January",
+        "March 16",
+        "April 27",
+        "June 15",
+        "August 17",
+        "August 31",
+        "September 14",
+        "September 28",
+        "October 5"
+      ],
+      "looseLeaves": [
+        "March 23",
+        "October 12",
+        "October 26",
+        "November 9",
+        "November 30",
+        "December 14"
+      ],
+      "baggedLeaves": [
+        "May 4",
+        "October 13",
+        "October 20",
+        "October 27",
+        "November 3",
+        "November 10",
+        "November 17",
+        "December 1",
+        "December 8"
+      ]
+    }
+  },
+  "streets": [
+    {
+      "street": "ABERNATHY DRIVE",
+      "normalized": "ABERNATHY DR",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "ADAMS DRIVE",
+      "normalized": "ADAMS DR",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "AIKEN AVENUE",
+      "normalized": "AIKEN AVE",
+      "trashDay": "FRIDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "ALEXANDER STREET",
+      "normalized": "ALEXANDER ST",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "ALL SAINTS ROAD",
+      "normalized": "ALL SAINTS RD",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "ALLISON ROAD",
+      "normalized": "ALLISON RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "ANDREWS LANE",
+      "normalized": "ANDREWS LN",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "ARMOUR ROAD",
+      "normalized": "ARMOUR RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "ARMSTRONG DRIVE",
+      "normalized": "ARMSTRONG DR",
+      "trashDay": "THURSDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "ARRETON ROAD",
+      "normalized": "ARRETON RD",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "AUDUBON LANE",
+      "normalized": "AUDUBON LN",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "AUTUMN HILL LANE",
+      "normalized": "AUTUMN HILL LN",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "AUTUMN HILL ROAD",
+      "normalized": "AUTUMN HILL RD",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "BAINBRIDGE STREET",
+      "normalized": "BAINBRIDGE ST",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "BAKER COURT",
+      "normalized": "BAKER CT",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "BALCORT DRIVE",
+      "normalized": "BALCORT DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "BALDWIN LANE",
+      "normalized": "BALDWIN LN",
+      "trashDay": "MONDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "BALSAM LANE",
+      "normalized": "BALSAM LN",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "BANK STREET",
+      "normalized": "BANK ST",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "BARSKY COURT",
+      "normalized": "BARSKY CT",
+      "trashDay": "THURSDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "BASIN STREET",
+      "normalized": "BASIN ST",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "BATTLE ROAD",
+      "normalized": "BATTLE RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "BATTLE ROAD CIRCLE",
+      "normalized": "BATTLE RD CIR",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "BATTLE ROAD WEST",
+      "normalized": "BATTLE RD WEST",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "BATTLEBROOK LANE",
+      "normalized": "BATTLEBROOK LN",
+      "trashDay": "TUESDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "BAYARD LANE",
+      "normalized": "BAYARD LN",
+      "trashDay": "TUESDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "BEATTY COURT",
+      "normalized": "BEATTY CT",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "BEECH HILL CIRCLE",
+      "normalized": "BEECH HILL CIR",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "BEECH HOLLOW LANE",
+      "normalized": "BEECH HOLLOW LN",
+      "trashDay": "MONDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "BENJAMIN RUSH LANE",
+      "normalized": "BENJAMIN RUSH LN",
+      "trashDay": "TUESDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "BERRIEN COURT",
+      "normalized": "BERRIEN CT",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "BERTRAND DRIVE",
+      "normalized": "BERTRAND DR",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "BILLIE ELLIS LANE",
+      "normalized": "BILLIE ELLIS LN",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "BIRCH AVE",
+      "normalized": "BIRCH AVE",
+      "trashDay": "TUESDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "BOGART COURT",
+      "normalized": "BOGART CT",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "BOUDINOT STREET",
+      "normalized": "BOUDINOT ST",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "BOUVANT DRIVE",
+      "normalized": "BOUVANT DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "BRAEBURN DRIVE",
+      "normalized": "BRAEBURN DR",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "BRANCH ALLEY",
+      "normalized": "BRANCH ALLEY",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "BREARLY ROAD",
+      "normalized": "BREARLY RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "BRECKINRIDGE ROAD",
+      "normalized": "BRECKINRIDGE RD",
+      "trashDay": "Not listed",
+      "yardSection": "3"
+    },
+    {
+      "street": "BRICKHOUSE ROAD",
+      "normalized": "BRICKHOUSE RD",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "BROADMEAD",
+      "normalized": "BROADMEAD",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "BROADRIPPLE DRIVE",
+      "normalized": "BROADRIPPLE DR",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "BROOKS BEND",
+      "normalized": "BROOKS BEND",
+      "trashDay": "MONDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "BROOKSTONE DRIVE",
+      "normalized": "BROOKSTONE DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "BULLOCK DRIVE",
+      "normalized": "BULLOCK DR",
+      "trashDay": "TUESDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "BUNN DRIVE",
+      "normalized": "BUNN DR",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "BURR DRIVE",
+      "normalized": "BURR DR",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "BUTLER AVENUE",
+      "normalized": "BUTLER AVE",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "BUTTERNUT ROW",
+      "normalized": "BUTTERNUT ROW",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "CALDWELL DRIVE",
+      "normalized": "CALDWELL DR",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "CAMERON COURT",
+      "normalized": "CAMERON CT",
+      "trashDay": "THURSDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "CAMPBELL WOODS WAY",
+      "normalized": "CAMPBELL WOODS WAY",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "CAMPBLETON CIRCLE",
+      "normalized": "CAMPBLETON CIR",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "CARNAHAN PLACE",
+      "normalized": "CARNAHAN PL",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "CARNEGIE DRIVE",
+      "normalized": "CARNEGIE DR",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "CARRIAGE WAY",
+      "normalized": "CARRIAGE WAY",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "CASTLE HOWARD COURT",
+      "normalized": "CASTLE HOWARD CT",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "CEDAR LANE",
+      "normalized": "CEDAR LN",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "CHAMBERS STREET",
+      "normalized": "CHAMBERS ST",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "CHARLTON STREET",
+      "normalized": "CHARLTON ST",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "CHERRY HILL ROAD",
+      "normalized": "CHERRY HILL RD",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "CHERRY VALLEY ROAD",
+      "normalized": "CHERRY VALLEY RD",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "CHESTNUT STREET",
+      "normalized": "CHESTNUT ST",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "CHRISTOPHER DRIVE",
+      "normalized": "CHRISTOPHER DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "CLARKE COURT",
+      "normalized": "CLARKE CT",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "CLAY STREET",
+      "normalized": "CLAY ST",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "CLEARVIEW AVENUE",
+      "normalized": "CLEARVIEW AVE",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "CLEVELAND LANE",
+      "normalized": "CLEVELAND LN",
+      "trashDay": "TUESDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "CLEVELAND LANE(Bayard Lane to Library Place)",
+      "normalized": "CLEVELAND LN(BAYARD LN TO LIBRARY PL)",
+      "trashDay": "Not listed",
+      "yardSection": "5"
+    },
+    {
+      "street": "CLEVELAND LANE(Library Place to Elm Road)",
+      "normalized": "CLEVELAND LN(LIBRARY PL TO ELM RD)",
+      "trashDay": "Not listed",
+      "yardSection": "3"
+    },
+    {
+      "street": "CLOVER LANE",
+      "normalized": "CLOVER LN",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "COLLEGE ROAD",
+      "normalized": "COLLEGE RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "COLLEGE ROAD WEST",
+      "normalized": "COLLEGE RD WEST",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "CONCORD LANE",
+      "normalized": "CONCORD LN",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "CONISTON COURT",
+      "normalized": "CONISTON CT",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "CONSTITUTION DRIVE",
+      "normalized": "CONSTITUTION DR",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "CONSTITUTION HILL EAST",
+      "normalized": "CONSTITUTION HILL EAST",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "CONSTITUTION HILL WEST",
+      "normalized": "CONSTITUTION HILL WEST",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "CORDOVA ROAD",
+      "normalized": "CORDOVA RD",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "COVENTRY FARM LANE",
+      "normalized": "COVENTRY FARM LN",
+      "trashDay": "MONDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "CRADLEROCK ROAD",
+      "normalized": "CRADLEROCK RD",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "CRESTVIEW DRIVE",
+      "normalized": "CRESTVIEW DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "CROOKED TREE LANE",
+      "normalized": "CROOKED TREE LN",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "CUYLER ROAD",
+      "normalized": "CUYLER RD",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "DAVID BREARLEY DRIVE",
+      "normalized": "DAVID BREARLEY DR",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "DAVIES DRIVE",
+      "normalized": "DAVIES DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "DEAN MATHEY LANE",
+      "normalized": "DEAN MATHEY LN",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "DEER PATH",
+      "normalized": "DEER PATH",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "DEMPSEY AVE",
+      "normalized": "DEMPSEY AVE",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "DERWENT DRIVE",
+      "normalized": "DERWENT DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "DEVEREUX AVENUE",
+      "normalized": "DEVEREUX AVE",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "DICKINSON STREET",
+      "normalized": "DICKINSON ST",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "DODDS LANE",
+      "normalized": "DODDS LN",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "DOGWOOD HILL",
+      "normalized": "DOGWOOD HILL",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "DOGWOOD LANE",
+      "normalized": "DOGWOOD LN",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "DORANN AVE",
+      "normalized": "DORANN AVE",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "DRAKES CORNER ROAD",
+      "normalized": "DRAKES CORNER RD",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "DUFFIELD PLACE",
+      "normalized": "DUFFIELD PL",
+      "trashDay": "TUESDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "EARLE LANE",
+      "normalized": "EARLE LN",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "EDGEHILL STREET",
+      "normalized": "EDGEHILL ST",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "EDGERSTOUNE ROAD",
+      "normalized": "EDGERSTOUNE RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "EDWARDS PLACE",
+      "normalized": "EDWARDS PL",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "EINSTEIN ROAD",
+      "normalized": "EINSTEIN RD",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "EISENHOWER STREET",
+      "normalized": "EISENHOWER ST",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "ELM DRIVE",
+      "normalized": "ELM DR",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "ELM LANE",
+      "normalized": "ELM LN",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "ELM ROAD",
+      "normalized": "ELM RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "ERDMAN AVE",
+      "normalized": "ERDMAN AVE",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "ETTL CIRCLE",
+      "normalized": "ETTL CIR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "EVELYN PLACE",
+      "normalized": "EVELYN PL",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "EVERGREEN CIRCLE",
+      "normalized": "EVERGREEN CIR",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "EWING STREET",
+      "normalized": "EWING ST",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "FACULTY DRIVE",
+      "normalized": "FACULTY DR",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "FAIRWAY DRIVE",
+      "normalized": "FAIRWAY DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "FARRAND ROAD",
+      "normalized": "FARRAND RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "FINLEY ROAD",
+      "normalized": "FINLEY RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "FIRESTONE COURT",
+      "normalized": "FIRESTONE CT",
+      "trashDay": "THURSDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "FISHER AVE",
+      "normalized": "FISHER AVE",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "FITCH WAY",
+      "normalized": "FITCH WAY",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "FITZRANDOLPH ROAD",
+      "normalized": "FITZRANDOLPH RD",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "FLEMING WAY",
+      "normalized": "FLEMING WAY",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "FLEXNER LANE",
+      "normalized": "FLEXNER LN",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "FLORENCE LANE",
+      "normalized": "FLORENCE LN",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "FORESTER DRIVE",
+      "normalized": "FORESTER DR",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "FOULET DRIVE",
+      "normalized": "FOULET DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "FRANKLIN AVE",
+      "normalized": "FRANKLIN AVE",
+      "trashDay": "THURSDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "FRANKLIN AVE (North Harrison to Snowden)",
+      "normalized": "FRANKLIN AVE (NORTH HARRISON TO SNOWDEN)",
+      "trashDay": "Not listed",
+      "yardSection": "1"
+    },
+    {
+      "street": "FRANKLIN AVE (North Harrison to W itherspoon )",
+      "normalized": "FRANKLIN AVE (NORTH HARRISON TO W ITHERSPOON )",
+      "trashDay": "Not listed",
+      "yardSection": "5"
+    },
+    {
+      "street": "FREDRICK COURT",
+      "normalized": "FREDRICK CT",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "GALLUP ROAD",
+      "normalized": "GALLUP RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "GARRETT LANE",
+      "normalized": "GARRETT LN",
+      "trashDay": "MONDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "GEORGE DRIVE",
+      "normalized": "GEORGE DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "GLEN DRIVE",
+      "normalized": "GLEN DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "GORDON WAY",
+      "normalized": "GORDON WAY",
+      "trashDay": "THURSDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "GOVERNORS LANE",
+      "normalized": "GOVERNORS LN",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "GRASMERE WAY",
+      "normalized": "GRASMERE WAY",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "GREAT ROAD",
+      "normalized": "GREAT RD",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "GREAT ROAD EAST",
+      "normalized": "GREAT RD EAST",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "GREEN SHADOWS LANE",
+      "normalized": "GREEN SHADOWS LN",
+      "trashDay": "TUESDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "GREEN STREET",
+      "normalized": "GREEN ST",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "GREENBRIAR ROW",
+      "normalized": "GREENBRIAR ROW",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "GREENBRIAR WAY",
+      "normalized": "GREENBRIAR WAY",
+      "trashDay": "Not listed",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "GREENHOLM STREET",
+      "normalized": "GREENHOLM ST",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "GREENHOUSE COURT",
+      "normalized": "GREENHOUSE CT",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "GREENHOUSE DRIVE",
+      "normalized": "GREENHOUSE DR",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "GREENLAND COURT",
+      "normalized": "GREENLAND CT",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "GREENVIEW AVE",
+      "normalized": "GREENVIEW AVE",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "GREENWAY TERRACE",
+      "normalized": "GREENWAY TERRACE",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "GRIGGS DRIVE",
+      "normalized": "GRIGGS DR",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "GROVER AVE",
+      "normalized": "GROVER AVE",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "GULICK ROAD",
+      "normalized": "GULICK RD",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "GUYOT AVE",
+      "normalized": "GUYOT AVE",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "HAGEMAN LANE",
+      "normalized": "HAGEMAN LN",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "HALE DRIVE",
+      "normalized": "HALE DR",
+      "trashDay": "Not listed",
+      "yardSection": "3"
+    },
+    {
+      "street": "HALE LANE",
+      "normalized": "HALE LN",
+      "trashDay": "TUESDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "HALSEY STREET",
+      "normalized": "HALSEY ST",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "HAMILTON AVE ( N.Harrison St. to Snowden Ln.)",
+      "normalized": "HAMILTON AVE ( N.HARRISON ST. TO SNOWDEN LN.)",
+      "trashDay": "Not listed",
+      "yardSection": "1"
+    },
+    {
+      "street": "HAMILTON AVE (N. Harrison St. to Moore St.)",
+      "normalized": "HAMILTON AVE (N. HARRISON ST. TO MOORE ST.)",
+      "trashDay": "Not listed",
+      "yardSection": "5"
+    },
+    {
+      "street": "HAMILTON AVENUE",
+      "normalized": "HAMILTON AVE",
+      "trashDay": "THURSDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "HARDY DRIVE",
+      "normalized": "HARDY DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "HARRIET DRIVE",
+      "normalized": "HARRIET DR",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "HARRIS ROAD",
+      "normalized": "HARRIS RD",
+      "trashDay": "THURSDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "HARRIS ROAD (Franklin Ave. to Henry Ave.)",
+      "normalized": "HARRIS RD (FRANKLIN AVE. TO HENRY AVE.)",
+      "trashDay": "Not listed",
+      "yardSection": "5"
+    },
+    {
+      "street": "HARRIS ROAD (Valley Rd. to Henry Ave.)",
+      "normalized": "HARRIS RD (VALLEY RD. TO HENRY AVE.)",
+      "trashDay": "Not listed",
+      "yardSection": "1"
+    },
+    {
+      "street": "HARRISON LANE",
+      "normalized": "HARRISON LN",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "HARRISON STREET",
+      "normalized": "HARRISON ST",
+      "trashDay": "Not listed",
+      "yardSection": "5"
+    },
+    {
+      "street": "HARRISON STREET (SOUTH OF NASSAU)",
+      "normalized": "HARRISON ST (SOUTH OF NASSAU)",
+      "trashDay": "FRIDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "HARRISON STREET NORTH",
+      "normalized": "HARRISON ST NORTH",
+      "trashDay": "THURSDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "HARRISON STREET NORTH (Franklin Ave. to Ewing/Bunn)",
+      "normalized": "HARRISON ST NORTH (FRANKLIN AVE. TO EWING/BUNN)",
+      "trashDay": "Not listed",
+      "yardSection": "1"
+    },
+    {
+      "street": "HARRISON STREET NORTH (Nassau St. to Franklin Ave.)",
+      "normalized": "HARRISON ST NORTH (NASSAU ST. TO FRANKLIN AVE.)",
+      "trashDay": "Not listed",
+      "yardSection": "5"
+    },
+    {
+      "street": "HARRISON STREET SOUTH",
+      "normalized": "HARRISON ST SOUTH",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "HARTLEY AVENUE",
+      "normalized": "HARTLEY AVE",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "HASLET AVENUE",
+      "normalized": "HASLET AVE",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "HAWTHORNE AVENUE",
+      "normalized": "HAWTHORNE AVE",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "HEATHER LANE",
+      "normalized": "HEATHER LN",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "HEMLOCK CIRCLE",
+      "normalized": "HEMLOCK CIR",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "HENDERSON AVENUE",
+      "normalized": "HENDERSON AVE",
+      "trashDay": "MONDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "HENRY AVENUE",
+      "normalized": "HENRY AVE",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "HERRONTOWN CIRCLE",
+      "normalized": "HERRONTOWN CIR",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "HERRONTOWN LANE",
+      "normalized": "HERRONTOWN LN",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "HERRONTOWN ROAD",
+      "normalized": "HERRONTOWN RD",
+      "trashDay": "Not listed",
+      "yardSection": "1"
+    },
+    {
+      "street": "HERRONTOWN ROAD (NORTH OF SNOWDEN)",
+      "normalized": "HERRONTOWN RD (NORTH OF SNOWDEN)",
+      "trashDay": "THURSDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "HERRONTOWN ROAD (SOUTH OF SNOWDEN)",
+      "normalized": "HERRONTOWN RD (SOUTH OF SNOWDEN)",
+      "trashDay": "FRIDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "HIBBEN ROAD",
+      "normalized": "HIBBEN RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "HICKORY COURT",
+      "normalized": "HICKORY CT",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "HIGHLAND TERRACE",
+      "normalized": "HIGHLAND TERRACE",
+      "trashDay": "MONDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "HILLSIDE AVE",
+      "normalized": "HILLSIDE AVE",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "HILLSIDE ROAD",
+      "normalized": "HILLSIDE RD",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "HILLTOP DRIVE",
+      "normalized": "HILLTOP DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "HODGE ROAD",
+      "normalized": "HODGE RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "HODGE ROAD (Bayard Lane to Library Place)",
+      "normalized": "HODGE RD (BAYARD LN TO LIBRARY PL)",
+      "trashDay": "Not listed",
+      "yardSection": "5"
+    },
+    {
+      "street": "HODGE ROAD(Library Place to Elm R d. )",
+      "normalized": "HODGE RD(LIBRARY PL TO ELM R D. )",
+      "trashDay": "Not listed",
+      "yardSection": "3"
+    },
+    {
+      "street": "HORNOR LANE",
+      "normalized": "HORNOR LN",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "HOUGHTON ROAD",
+      "normalized": "HOUGHTON RD",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "HOWE CIRCLE",
+      "normalized": "HOWE CIR",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "HULFISH STREET",
+      "normalized": "HULFISH ST",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "HUMBERT STREET",
+      "normalized": "HUMBERT ST",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "HUN ROAD",
+      "normalized": "HUN RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "HUNT DRIVE",
+      "normalized": "HUNT DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "HUNTER ROAD",
+      "normalized": "HUNTER RD",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "HUTCHINSON DRIVE",
+      "normalized": "HUTCHINSON DR",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "INDEPENDENCE DRIVE",
+      "normalized": "INDEPENDENCE DR",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "IRIS LANE",
+      "normalized": "IRIS LN",
+      "trashDay": "MONDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "JAMES COURT",
+      "normalized": "JAMES CT",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "JEFFERSON ROAD",
+      "normalized": "JEFFERSON RD",
+      "trashDay": "THURSDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "JEFFERSON ROAD (Henry Ave. to Red Hill Rd.)",
+      "normalized": "JEFFERSON RD (HENRY AVE. TO RED HILL RD.)",
+      "trashDay": "Not listed",
+      "yardSection": "1"
+    },
+    {
+      "street": "JEFFERSON ROAD (Henry Ave. to Wiggins St.)",
+      "normalized": "JEFFERSON RD (HENRY AVE. TO WIGGINS ST.)",
+      "trashDay": "Not listed",
+      "yardSection": "5"
+    },
+    {
+      "street": "JOHN STREET",
+      "normalized": "JOHN ST",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "JONATHAN DAYTON COURT",
+      "normalized": "JONATHAN DAYTON CT",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "JOURNEYS END LANE",
+      "normalized": "JOURNEYS END LN",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "JUNIPER ROW",
+      "normalized": "JUNIPER ROW",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "KARIN COURT",
+      "normalized": "KARIN CT",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "KATIES POND ROAD",
+      "normalized": "KATIES POND RD",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "KIMBERLY COURT",
+      "normalized": "KIMBERLY CT",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "KING STREET",
+      "normalized": "KING ST",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "KINGSTON ROAD",
+      "normalized": "KINGSTON RD",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "KNOLL DRIVE",
+      "normalized": "KNOLL DR",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "LAFAYETTE COURT",
+      "normalized": "LAFAYETTE CT",
+      "trashDay": "TUESDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "LAFAYETTE ROAD",
+      "normalized": "LAFAYETTE RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "LAFAYETTE ROAD WEST",
+      "normalized": "LAFAYETTE RD WEST",
+      "trashDay": "TUESDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "LAFAYETTE ROAD WEST (North of Cleveland)",
+      "normalized": "LAFAYETTE RD WEST (NORTH OF CLEVELAND)",
+      "trashDay": "Not listed",
+      "yardSection": "4"
+    },
+    {
+      "street": "LAKE DRIVE",
+      "normalized": "LAKE DR",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "LAKE LANE",
+      "normalized": "LAKE LN",
+      "trashDay": "FRIDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "LAMBERT DRIVE",
+      "normalized": "LAMBERT DR",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "LAUREL CIRCLE",
+      "normalized": "LAUREL CIR",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "LAUREL ROAD",
+      "normalized": "LAUREL RD",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "LAWRENCEVILLE ROAD",
+      "normalized": "LAWRENCEVILLE RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "LEABROOK LANE",
+      "normalized": "LEABROOK LN",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "LEAVITT LANE",
+      "normalized": "LEAVITT LN",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "LEICESTER COURT",
+      "normalized": "LEICESTER CT",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "LEIGH AVENUE",
+      "normalized": "LEIGH AVE",
+      "trashDay": "TUESDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "LEONARD COURT",
+      "normalized": "LEONARD CT",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "LESLIE COURT",
+      "normalized": "LESLIE CT",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "LIBBY AVENUE",
+      "normalized": "LIBBY AVE",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "LIBRARY PLACE",
+      "normalized": "LIBRARY PL",
+      "trashDay": "TUESDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "LIBRARY PLACE (Hodge Rd. to Westcott Rd.)",
+      "normalized": "LIBRARY PL (HODGE RD. TO WESTCOTT RD.)",
+      "trashDay": "Not listed",
+      "yardSection": "3"
+    },
+    {
+      "street": "LIBRARY PLACE (Mercer St. to Hodge Rd.)",
+      "normalized": "LIBRARY PL (MERCER ST. TO HODGE RD.)",
+      "trashDay": "Not listed",
+      "yardSection": "5"
+    },
+    {
+      "street": "LILAC LANE",
+      "normalized": "LILAC LN",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "LINCOLN COURT",
+      "normalized": "LINCOLN CT",
+      "trashDay": "THURSDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "LINDEN LANE",
+      "normalized": "LINDEN LN",
+      "trashDay": "THURSDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "LINDEN LANE (Franklin Ave. to Guyot)",
+      "normalized": "LINDEN LN (FRANKLIN AVE. TO GUYOT)",
+      "trashDay": "Not listed",
+      "yardSection": "1"
+    },
+    {
+      "street": "LINDEN LANE (Nassau St. to Franklin Ave.)",
+      "normalized": "LINDEN LN (NASSAU ST. TO FRANKLIN AVE.)",
+      "trashDay": "Not listed",
+      "yardSection": "5"
+    },
+    {
+      "street": "LINWOOD CIRCLE",
+      "normalized": "LINWOOD CIR",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "LITTLEBROOK ROAD",
+      "normalized": "LITTLEBROOK RD",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "LITTLEBROOK ROAD NORTH",
+      "normalized": "LITTLEBROOK RD NORTH",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "LOCUST LANE",
+      "normalized": "LOCUST LN",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "LONGVIEW DRIVE",
+      "normalized": "LONGVIEW DR",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "LOOMIS COURT",
+      "normalized": "LOOMIS CT",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "LOOP ROW",
+      "normalized": "LOOP ROW",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "LOVERS LANE",
+      "normalized": "LOVERS LN",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "LYTLE STREET",
+      "normalized": "LYTLE ST",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "MACLEAN CIRCLE",
+      "normalized": "MACLEAN CIR",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "MACLEAN STREET",
+      "normalized": "MACLEAN ST",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "MADISON STREET",
+      "normalized": "MADISON ST",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "MAGNOLIA LANE",
+      "normalized": "MAGNOLIA LN",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "MAIDENHEAD ROAD",
+      "normalized": "MAIDENHEAD RD",
+      "trashDay": "MONDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "MAIDENHEAD ROAD (Woodhull Ln. to George Dr. )",
+      "normalized": "MAIDENHEAD RD (WOODHULL LN. TO GEORGE DR. )",
+      "trashDay": "Not listed",
+      "yardSection": "4"
+    },
+    {
+      "street": "MANSGROVE ROAD",
+      "normalized": "MANSGROVE RD",
+      "trashDay": "Not listed",
+      "yardSection": "4"
+    },
+    {
+      "street": "MANSGROVE ROAD (East of 206)",
+      "normalized": "MANSGROVE RD (EAST OF 206)",
+      "trashDay": "THURSDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "MANSGROVE ROAD (West of 206)",
+      "normalized": "MANSGROVE RD (WEST OF 206)",
+      "trashDay": "MONDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "MAPLE STREET",
+      "normalized": "MAPLE ST",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "MAPLE TERRACE",
+      "normalized": "MAPLE TERRACE",
+      "trashDay": "THURSDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "MARGERUMS COURT",
+      "normalized": "MARGERUMS CT",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "MARION ROAD EAST",
+      "normalized": "MARION RD EAST",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "MARION ROAD WEST",
+      "normalized": "MARION RD WEST",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "MARKHAM ROAD",
+      "normalized": "MARKHAM RD",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "MARSHALL STREET",
+      "normalized": "MARSHALL ST",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "MASON DRIVE",
+      "normalized": "MASON DR",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "MAXWELL LANE",
+      "normalized": "MAXWELL LN",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "MAYBURY HILL ROAD",
+      "normalized": "MAYBURY HILL RD",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "MCCOMB ROAD",
+      "normalized": "MCCOMB RD",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "MCCOSH CIRCLE",
+      "normalized": "MCCOSH CIR",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "MEADOWBROOK DRIVE",
+      "normalized": "MEADOWBROOK DR",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "MEETINGHOUSE COURT",
+      "normalized": "MEETINGHOUSE CT",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "MERCER ROAD",
+      "normalized": "MERCER RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "MERCER ROAD (Hibben Rd. to Lawrence Twp. Border)",
+      "normalized": "MERCER RD (HIBBEN RD. TO LAWRENCE TWP. BORDER)",
+      "trashDay": "Not listed",
+      "yardSection": "3"
+    },
+    {
+      "street": "MERCER STREET",
+      "normalized": "MERCER ST",
+      "trashDay": "TUESDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "MERCER STREET (Nassau St. to Hibben Road)",
+      "normalized": "MERCER ST (NASSAU ST. TO HIBBEN RD)",
+      "trashDay": "Not listed",
+      "yardSection": "5"
+    },
+    {
+      "street": "MERRITT LANE",
+      "normalized": "MERRITT LN",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "MERSHON DRIVE",
+      "normalized": "MERSHON DR",
+      "trashDay": "THURSDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "MONROE LANE",
+      "normalized": "MONROE LN",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "MONTADALE CIRCLE",
+      "normalized": "MONTADALE CIR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "MONTADALE DRIVE",
+      "normalized": "MONTADALE DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "MOORE STREET",
+      "normalized": "MOORE ST",
+      "trashDay": "THURSDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "MOORE STREET (Franklin Ave. to Jefferson )",
+      "normalized": "MOORE ST (FRANKLIN AVE. TO JEFFERSON )",
+      "trashDay": "Not listed",
+      "yardSection": "1"
+    },
+    {
+      "street": "MOORE STREET (Nassau St. to Franklin Ave.)",
+      "normalized": "MOORE ST (NASSAU ST. TO FRANKLIN AVE.)",
+      "trashDay": "Not listed",
+      "yardSection": "5"
+    },
+    {
+      "street": "MORAN AVENUE",
+      "normalized": "MORAN AVE",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "MORGAN PLACE",
+      "normalized": "MORGAN PL",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "MORSE LANE",
+      "normalized": "MORSE LN",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "MORVEN PLACE",
+      "normalized": "MORVEN PL",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "MOUNT LUCAS ROAD",
+      "normalized": "MOUNT LUCAS RD",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "MOUNTAIN AVENUE",
+      "normalized": "MOUNTAIN AVE",
+      "trashDay": "TUESDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "MULBERRY ROW",
+      "normalized": "MULBERRY ROW",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "MURRAY PLACE",
+      "normalized": "MURRAY PL",
+      "trashDay": "FRIDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "NASSAU STREET (HARRISON ST TO RIVERSIDE DR)",
+      "normalized": "NASSAU ST (HARRISON ST TO RIVERSIDE DR)",
+      "trashDay": "FRIDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "NASSAU STREET (HARRISON ST TO WITHERSPOON)",
+      "normalized": "NASSAU ST (HARRISON ST TO WITHERSPOON)",
+      "trashDay": "THURSDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "NASSAU STREET (Harrison St. to River Rd.)",
+      "normalized": "NASSAU ST (HARRISON ST. TO RIVER RD.)",
+      "trashDay": "Not listed",
+      "yardSection": "2"
+    },
+    {
+      "street": "NASSAU STREET (Harrison to Route 206)",
+      "normalized": "NASSAU ST (HARRISON TO ROUTE 206)",
+      "trashDay": "Not listed",
+      "yardSection": "5"
+    },
+    {
+      "street": "NEIL COURT",
+      "normalized": "NEIL CT",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "NEWLIN ROAD",
+      "normalized": "NEWLIN RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "NORTH ROAD",
+      "normalized": "NORTH RD",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "OAKLAND STREET",
+      "normalized": "OAKLAND ST",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "OAKRIDGE COURT",
+      "normalized": "OAKRIDGE CT",
+      "trashDay": "MONDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "OBER ROAD",
+      "normalized": "OBER RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "OLD ORCHARD LANE",
+      "normalized": "OLD ORCHARD LN",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "OLDEN LANE",
+      "normalized": "OLDEN LN",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "OPPENHEIMER LANE",
+      "normalized": "OPPENHEIMER LN",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "ORCHARD CIRCLE",
+      "normalized": "ORCHARD CIR",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "OVERBROOK DRIVE",
+      "normalized": "OVERBROOK DR",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "PANOFSKY LANE",
+      "normalized": "PANOFSKY LN",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "PARDEE CIRCLE",
+      "normalized": "PARDEE CIR",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "PARDOE ROAD",
+      "normalized": "PARDOE RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "PARK PLACE",
+      "normalized": "PARK PL",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "PARKSIDE DRIVE",
+      "normalized": "PARKSIDE DR",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "PATTON AVENUE",
+      "normalized": "PATTON AVE",
+      "trashDay": "FRIDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "PATTON AVENUE (Harrison to Cedar)",
+      "normalized": "PATTON AVE (HARRISON TO CEDAR)",
+      "trashDay": "Not listed",
+      "yardSection": "2"
+    },
+    {
+      "street": "PATTON AVENUE (Harrison to Murray)",
+      "normalized": "PATTON AVE (HARRISON TO MURRAY)",
+      "trashDay": "Not listed",
+      "yardSection": "5"
+    },
+    {
+      "street": "PECK PLACE",
+      "normalized": "PECK PL",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "PELHAM STREET",
+      "normalized": "PELHAM ST",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "PETTIT PLACE",
+      "normalized": "PETTIT PL",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "PHEASANT HILL ROAD",
+      "normalized": "PHEASANT HILL RD",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "PHILIP DRIVE",
+      "normalized": "PHILIP DR",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "PINE STREET",
+      "normalized": "PINE ST",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "POE ROAD",
+      "normalized": "POE RD",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "POOR FARM ROAD",
+      "normalized": "POOR FARM RD",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "POTTER’S RUN",
+      "normalized": "POTTER’S RUN",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "PRESERVATION PLACE",
+      "normalized": "PRESERVATION PL",
+      "trashDay": "TUESDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "PRESERVE DRIVE",
+      "normalized": "PRESERVE DR",
+      "trashDay": "MONDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "PRETTY BROOK ROAD",
+      "normalized": "PRETTY BROOK RD",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "PRINCE WILLIAM COURT",
+      "normalized": "PRINCE WILLIAM CT",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "PRINCETON AVENUE",
+      "normalized": "PRINCETON AVE",
+      "trashDay": "FRIDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "PRINCETON-KINGSTON ROAD",
+      "normalized": "PRINCETON-KINGSTON RD",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "PROSPECT AVENUE",
+      "normalized": "PROSPECT AVE",
+      "trashDay": "FRIDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "PROSPECT AVENUE (Harrison St. to Princeton-Kingston Rd.)",
+      "normalized": "PROSPECT AVE (HARRISON ST. TO PRINCETON-KINGSTON RD.)",
+      "trashDay": "Not listed",
+      "yardSection": "2"
+    },
+    {
+      "street": "PROSPECT AVENUE (Washington Ave. to Harrison St.)",
+      "normalized": "PROSPECT AVE (WASHINGTON AVE. TO HARRISON ST.)",
+      "trashDay": "Not listed",
+      "yardSection": "5"
+    },
+    {
+      "street": "PROVINCE LINE ROAD",
+      "normalized": "PROVINCE LINE RD",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "PURITAN COURT",
+      "normalized": "PURITAN CT",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "QUAKER ROAD",
+      "normalized": "QUAKER RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "QUARRY LANE",
+      "normalized": "QUARRY LN",
+      "trashDay": "MONDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "QUARRY STREET",
+      "normalized": "QUARRY ST",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "QUEENSTON PLACE",
+      "normalized": "QUEENSTON PL",
+      "trashDay": "THURSDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "RACE STREET",
+      "normalized": "RACE ST",
+      "trashDay": "TUESDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "RANDALL ROAD",
+      "normalized": "RANDALL RD",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "RANDOM ROAD",
+      "normalized": "RANDOM RD",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "RED HILL ROAD",
+      "normalized": "RED HILL RD",
+      "trashDay": "MONDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "RED HILL ROAD EAST",
+      "normalized": "RED HILL RD EAST",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "RED OAK ROW",
+      "normalized": "RED OAK ROW",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "REDDING CIRCLE",
+      "normalized": "REDDING CIR",
+      "trashDay": "FRIDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "REGATTA ROW",
+      "normalized": "REGATTA ROW",
+      "trashDay": "FRIDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "RICHARD COURT",
+      "normalized": "RICHARD CT",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "RIDGEVIEW CIRCLE",
+      "normalized": "RIDGEVIEW CIR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "RIDGEVIEW ROAD",
+      "normalized": "RIDGEVIEW RD",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "RIVER ROAD",
+      "normalized": "RIVER RD",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "RIVERSIDE DRIVE EAST",
+      "normalized": "RIVERSIDE DR EAST",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "RIVERSIDE DRIVE WEST",
+      "normalized": "RIVERSIDE DR WEST",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "ROBERT ROAD",
+      "normalized": "ROBERT RD",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "RODNEY COURT",
+      "normalized": "RODNEY CT",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "ROLLINGMEAD",
+      "normalized": "ROLLINGMEAD",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "ROPER ROAD",
+      "normalized": "ROPER RD",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "ROSEDALE LANE",
+      "normalized": "ROSEDALE LN",
+      "trashDay": "MONDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "ROSEDALE ROAD",
+      "normalized": "ROSEDALE RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "ROSS STEVENSON CIRCLE",
+      "normalized": "ROSS STEVENSON CIR",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "RUNNING CEDAR ROAD",
+      "normalized": "RUNNING CEDAR RD",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "RUSSELL ROAD",
+      "normalized": "RUSSELL RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "SASSAFRAS ROW",
+      "normalized": "SASSAFRAS ROW",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "SCOTT LANE",
+      "normalized": "SCOTT LN",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "SCRIBNER COURT",
+      "normalized": "SCRIBNER CT",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "SERGEANT STREET",
+      "normalized": "SERGEANT ST",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "SHADY BROOK LANE",
+      "normalized": "SHADY BROOK LN",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "SHIRLEY COURT",
+      "normalized": "SHIRLEY CT",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "SNOWDEN LANE",
+      "normalized": "SNOWDEN LN",
+      "trashDay": "Not listed",
+      "yardSection": "1"
+    },
+    {
+      "street": "SNOWDEN LANE (EVEN STREET NO.’S)",
+      "normalized": "SNOWDEN LN (EVEN ST NO.’S)",
+      "trashDay": "THURSDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "SNOWDEN LANE (ODD STREET NO.’S)",
+      "normalized": "SNOWDEN LN (ODD ST NO.’S)",
+      "trashDay": "FRIDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "SOUTHERN WAY",
+      "normalized": "SOUTHERN WAY",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "SPRING STREET",
+      "normalized": "SPRING ST",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "SPRINGDALE ROAD",
+      "normalized": "SPRINGDALE RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "SPRUCE CIRCLE",
+      "normalized": "SPRUCE CIR",
+      "trashDay": "THURSDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "SPRUCE LANE",
+      "normalized": "SPRUCE LN",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "SPRUCE STREET",
+      "normalized": "SPRUCE ST",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "ST CLAIR COURT",
+      "normalized": "ST CLAIR CT",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "STANLEY AVE",
+      "normalized": "STANLEY AVE",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "STATE ROAD",
+      "normalized": "STATE RD",
+      "trashDay": "THURSDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "STATE ROAD (Leigh Ave. to Montgomery border)",
+      "normalized": "STATE RD (LEIGH AVE. TO MONTGOMERY BORDER)",
+      "trashDay": "Not listed",
+      "yardSection": "1"
+    },
+    {
+      "street": "STETSON WAY",
+      "normalized": "STETSON WAY",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "STOCKTON STREET",
+      "normalized": "STOCKTON ST",
+      "trashDay": "TUESDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "STOCKTON STREET (from Lawrence border to Hibben Rd)",
+      "normalized": "STOCKTON ST (FROM LAWRENCE BORDER TO HIBBEN RD)",
+      "trashDay": "Not listed",
+      "yardSection": "3"
+    },
+    {
+      "street": "STONE CLIFF ROAD",
+      "normalized": "STONE CLIFF RD",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "STONE HOUSE DRIVE",
+      "normalized": "STONE HOUSE DR",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "STONEWALL CIRCLE",
+      "normalized": "STONEWALL CIR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "STONY BROOK LANE",
+      "normalized": "STONY BROOK LN",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "STUART CLOSE",
+      "normalized": "STUART CLOSE",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "STUART ROAD",
+      "normalized": "STUART RD",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "STUART ROAD EAST",
+      "normalized": "STUART RD EAST",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "STUART ROAD WEST",
+      "normalized": "STUART RD WEST",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "STURGES WAY",
+      "normalized": "STURGES WAY",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "SYCAMORE ROAD",
+      "normalized": "SYCAMORE RD",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "TALBOT LANE",
+      "normalized": "TALBOT LN",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "TARKINGTON COURT",
+      "normalized": "TARKINGTON CT",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "TEE-AR PLACE",
+      "normalized": "TEE-AR PL",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "TERHUNE ROAD",
+      "normalized": "TERHUNE RD",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "THANET ROAD",
+      "normalized": "THANET RD",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "TORREY LANE",
+      "normalized": "TORREY LN",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "TREWBRIDGE COURT",
+      "normalized": "TREWBRIDGE CT",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "TULANE STREET NORTH",
+      "normalized": "TULANE ST NORTH",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "TULANE STREET SOUTH",
+      "normalized": "TULANE ST SOUTH",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "TUPELO ROW",
+      "normalized": "TUPELO ROW",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "TURNER COURT",
+      "normalized": "TURNER CT",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "TYSON LANE",
+      "normalized": "TYSON LN",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "UNIVERSITY PLACE",
+      "normalized": "UNIVERSITY PL",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "VALLEY ROAD",
+      "normalized": "VALLEY RD",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "VAN DYKE ROAD",
+      "normalized": "VAN DYKE RD",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "VAN MARTER COURT",
+      "normalized": "VAN MARTER CT",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "VANDEVENTER AVE",
+      "normalized": "VANDEVENTER AVE",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "VEBLIN CIRCLE",
+      "normalized": "VEBLIN CIR",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "VERNON CIRCLE",
+      "normalized": "VERNON CIR",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "VICTORIA MEWS",
+      "normalized": "VICTORIA MEWS",
+      "trashDay": "TUESDAY",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "VON NEUMAN DRIVE",
+      "normalized": "VON NEUMAN DR",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "VREELAND COURT",
+      "normalized": "VREELAND CT",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "WALKER DRIVE",
+      "normalized": "WALKER DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "WALNUT LANE",
+      "normalized": "WALNUT LN",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "WARREN COURT",
+      "normalized": "WARREN CT",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "WASHINGTON ROAD",
+      "normalized": "WASHINGTON RD",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "WENDOVER DRIVE",
+      "normalized": "WENDOVER DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "WEST DRIVE",
+      "normalized": "WEST DR",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "WESTCOTT ROAD",
+      "normalized": "WESTCOTT RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "WESTERLY ROAD",
+      "normalized": "WESTERLY RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "WESTERN WAY",
+      "normalized": "WESTERN WAY",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "WEYL LANE",
+      "normalized": "WEYL LN",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "WHEATSHEAF LANE",
+      "normalized": "WHEATSHEAF LN",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "WHITE OAK DRIVE",
+      "normalized": "WHITE OAK DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "WHITE PINE LANE",
+      "normalized": "WHITE PINE LN",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "WIGGINS STREET",
+      "normalized": "WIGGINS ST",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "WILKINSON WAY",
+      "normalized": "WILKINSON WAY",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "WILLIAM LIVINGSTON COURT",
+      "normalized": "WILLIAM LIVINGSTON CT",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "WILLIAM PATERSON COURT",
+      "normalized": "WILLIAM PATERSON CT",
+      "trashDay": "NOT INCLUDED",
+      "yardSection": "NOT INCLUDED"
+    },
+    {
+      "street": "WILLIAM STREET",
+      "normalized": "WILLIAM ST",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "WILLOW STREET",
+      "normalized": "WILLOW ST",
+      "trashDay": "THURSDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "WILSON ROAD",
+      "normalized": "WILSON RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "WILTON STREET",
+      "normalized": "WILTON ST",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "WINANT ROAD",
+      "normalized": "WINANT RD",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    },
+    {
+      "street": "WINDERMERE WAY",
+      "normalized": "WINDERMERE WAY",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "WINDY TOP COURT",
+      "normalized": "WINDY TOP CT",
+      "trashDay": "THURSDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "WINFIELD ROAD",
+      "normalized": "WINFIELD RD",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "WITHERSPOON LANE",
+      "normalized": "WITHERSPOON LN",
+      "trashDay": "TUESDAY",
+      "yardSection": "5"
+    },
+    {
+      "street": "WITHERSPOON STREET (Clay St. to Valley rd.)",
+      "normalized": "WITHERSPOON ST (CLAY ST. TO VALLEY RD.)",
+      "trashDay": "Not listed",
+      "yardSection": "1"
+    },
+    {
+      "street": "WITHERSPOON STREET (FRANKLIN TO VALLEY)",
+      "normalized": "WITHERSPOON ST (FRANKLIN TO VALLEY)",
+      "trashDay": "THURSDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "WITHERSPOON STREET (Nassau St. to Clay St.)",
+      "normalized": "WITHERSPOON ST (NASSAU ST. TO CLAY ST.)",
+      "trashDay": "Not listed",
+      "yardSection": "5"
+    },
+    {
+      "street": "WITHERSPOON STREET (WIGGINS TO FRANKLIN)",
+      "normalized": "WITHERSPOON ST (WIGGINS TO FRANKLIN)",
+      "trashDay": "TUESDAY",
+      "yardSection": "Not listed"
+    },
+    {
+      "street": "WITTMER COURT",
+      "normalized": "WITTMER CT",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "WOODHULL LANE",
+      "normalized": "WOODHULL LN",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "WOODLAND DRIVE",
+      "normalized": "WOODLAND DR",
+      "trashDay": "MONDAY",
+      "yardSection": "4"
+    },
+    {
+      "street": "WOODS WAY",
+      "normalized": "WOODS WAY",
+      "trashDay": "FRIDAY",
+      "yardSection": "1"
+    },
+    {
+      "street": "WOODSIDE LANE",
+      "normalized": "WOODSIDE LN",
+      "trashDay": "FRIDAY",
+      "yardSection": "2"
+    },
+    {
+      "street": "WORTHS MILL LANE",
+      "normalized": "WORTHS MILL LN",
+      "trashDay": "TUESDAY",
+      "yardSection": "3"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Princeton trash collection",
+      "url": "https://www.princetonnj.gov/1359/Trash-Collection"
+    },
+    {
+      "name": "Trash collection schedule by street",
+      "url": "https://www.princetonnj.gov/DocumentCenter/View/969/Trash-Collection-Schedule-by-Street-PDF"
+    },
+    {
+      "name": "Leaf, branch, and log collection",
+      "url": "https://www.princetonnj.gov/450/Leaf-Branch-and-Log-Collection"
+    },
+    {
+      "name": "Residential brush and leaf collection sections",
+      "url": "https://www.princetonnj.gov/DocumentCenter/View/1018/Residential-Brush-and-Leaf-Collection-Sections-PDF"
+    },
+    {
+      "name": "2026 waste collection brochure",
+      "url": "https://www.princetonnj.gov/DocumentCenter/View/22550/2026-Waste-Mailer---English"
+    },
+    {
+      "name": "Recycle Coach Princeton",
+      "url": "https://recyclecoach.com/cities/usa-nj-municipality-of-princeton/"
+    }
+  ]
+}

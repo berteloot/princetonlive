@@ -97,6 +97,34 @@ const fallbackData = {
   sources: [],
 };
 
+const fallbackWasteData = {
+  generatedAt: null,
+  streetCount: 0,
+  recycleCoach: {
+    pluginToken: "TVRJek53PT0=",
+    url: "https://recyclecoach.com/cities/usa-nj-municipality-of-princeton/",
+    apiNote:
+      "Recycle Coach city lookup is publicly reachable, but PrincetonLive uses official municipal documents for local street lookup and links/embeds Recycle Coach for live address-specific reminders.",
+  },
+  rules: {
+    trash:
+      "Place Princeton trash carts no earlier than 7 PM the day before collection and no later than 7 AM on collection day.",
+    bulk:
+      "Bulk waste is collected Wednesdays by reservation only. Reserve by Sunday 11:59 PM.",
+    yard:
+      "Leaf, branch, and log collection begins on the listed section date. Put material out by 7 AM on the start date, no more than 7 days prior.",
+    recycling:
+      "Use Recycle Coach for address-specific recycling dates and reminders.",
+  },
+  yardSchedule2026: {},
+  streets: [],
+  sources: [
+    { name: "Princeton trash collection", url: "https://www.princetonnj.gov/1359/Trash-Collection" },
+    { name: "Leaf, branch, and log collection", url: "https://www.princetonnj.gov/450/Leaf-Branch-and-Log-Collection" },
+    { name: "Recycle Coach Princeton", url: "https://recyclecoach.com/cities/usa-nj-municipality-of-princeton/" },
+  ],
+};
+
 const fallbackCivicMap = {
   generatedAt: null,
   release: "Civic map loading",
@@ -239,8 +267,8 @@ const practicalTiles = [
   },
   {
     label: "Trash & recycling",
-    value: "Resident services",
-    url: "https://www.princetonnj.gov/263/Trash-Recycling",
+    value: "Street lookup",
+    url: "#waste",
     icon: Recycle,
   },
   {
@@ -458,6 +486,27 @@ function triggerGoogleTranslate(targetLanguage) {
   return true;
 }
 
+function normalizeWasteStreet(value) {
+  return value
+    .toUpperCase()
+    .replace(/\bAVENUE\b/g, "AVE")
+    .replace(/\bDRIVE\b/g, "DR")
+    .replace(/\bSTREET\b/g, "ST")
+    .replace(/\bROAD\b/g, "RD")
+    .replace(/\bLANE\b/g, "LN")
+    .replace(/\bCOURT\b/g, "CT")
+    .replace(/\bCIRCLE\b/g, "CIR")
+    .replace(/\bPLACE\b/g, "PL")
+    .replace(/[^\w\s().-]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function wasteSectionSchedule(wasteData, section) {
+  if (!section || section === "NOT INCLUDED" || section === "Not listed") return null;
+  return wasteData.yardSchedule2026?.[section] ?? null;
+}
+
 function formatRefresh(value) {
   if (!value) return "Last refreshed when the site was built";
   return new Intl.DateTimeFormat("en-US", {
@@ -560,6 +609,8 @@ function App() {
   const [filter, setFilter] = useState("all");
   const [query, setQuery] = useState("");
   const [liveData, setLiveData] = useState(fallbackData);
+  const [wasteData, setWasteData] = useState(fallbackWasteData);
+  const [wasteQuery, setWasteQuery] = useState("");
   const [civicMap, setCivicMap] = useState(fallbackCivicMap);
   const [civicMetric, setCivicMetric] = useState("income");
   const [hoveredCivicFeature, setHoveredCivicFeature] = useState(null);
@@ -584,6 +635,22 @@ function App() {
       .then((response) => (response.ok ? response.json() : fallbackCivicMap))
       .then((data) => setCivicMap({ ...fallbackCivicMap, ...data }))
       .catch(() => setCivicMap(fallbackCivicMap));
+  }, []);
+
+  useEffect(() => {
+    fetch(`/waste-data.json?v=${Date.now()}`)
+      .then((response) => (response.ok ? response.json() : fallbackWasteData))
+      .then((data) => setWasteData({ ...fallbackWasteData, ...data }))
+      .catch(() => setWasteData(fallbackWasteData));
+  }, []);
+
+  useEffect(() => {
+    if (document.getElementById("recyclecoach-loader")) return;
+    const script = document.createElement("script");
+    script.id = "recyclecoach-loader";
+    script.src = "https://cdn.recyclecoach.com/webapp/js/loader.min.js";
+    script.async = true;
+    document.head.appendChild(script);
   }, []);
 
   useEffect(() => {
@@ -645,6 +712,21 @@ function App() {
   }, [filter, liveData.events, query]);
 
   const visibleEvents = filteredEvents.slice(0, 10);
+  const normalizedWasteQuery = normalizeWasteStreet(wasteQuery);
+  const wasteMatches = useMemo(() => {
+    if (!normalizedWasteQuery) return wasteData.streets.slice(0, 6);
+    return wasteData.streets
+      .filter(
+        (street) =>
+          street.normalized?.includes(normalizedWasteQuery) ||
+          normalizeWasteStreet(street.street).includes(normalizedWasteQuery),
+      )
+      .slice(0, 8);
+  }, [normalizedWasteQuery, wasteData.streets]);
+  const primaryWasteMatch = wasteMatches[0] ?? null;
+  const primaryYardSchedule = primaryWasteMatch
+    ? wasteSectionSchedule(wasteData, primaryWasteMatch.yardSection)
+    : null;
   const nextEvent = liveData.events[0];
   const alertCount = liveData.alerts?.length ?? 0;
   const activeCivicMetric =
@@ -1013,6 +1095,103 @@ function App() {
             </a>
           ))}
         </div>
+        <section className="waste-tool" id="waste" aria-labelledby="waste-heading">
+          <div className="waste-copy">
+            <p className="eyebrow">Waste by street</p>
+            <h3 id="waste-heading">Trash day, bulk pickup, and yard-waste section.</h3>
+            <p>
+              Search a Princeton street from the town's public street schedules. PrincetonLive keeps
+              this lookup local in your browser; use Recycle Coach for live address reminders.
+            </p>
+            <label className="search-box waste-search">
+              <Search size={18} aria-hidden="true" />
+              <span className="sr-only">Search Princeton street waste schedule</span>
+              <input
+                value={wasteQuery}
+                onChange={(event) => setWasteQuery(event.target.value)}
+                placeholder="Try Lytle Street, Library Place, Witherspoon..."
+              />
+              {wasteQuery ? (
+                <button type="button" onClick={() => setWasteQuery("")} aria-label="Clear street search">
+                  Clear
+                </button>
+              ) : null}
+            </label>
+            <div className="waste-results" aria-live="polite">
+              {wasteMatches.length ? (
+                wasteMatches.map((street) => {
+                  const sectionSchedule = wasteSectionSchedule(wasteData, street.yardSection);
+                  return (
+                    <article className="waste-result" key={`${street.normalized}-${street.trashDay}-${street.yardSection}`}>
+                      <div>
+                        <strong>{street.street}</strong>
+                        <span>
+                          Trash: {street.trashDay === "NOT INCLUDED" ? "not included" : street.trashDay}
+                        </span>
+                      </div>
+                      <div>
+                        <small>Yard section</small>
+                        <b>{street.yardSection}</b>
+                      </div>
+                      {sectionSchedule ? (
+                        <p>
+                          Branch/log starts: {sectionSchedule.branchAndLogs.slice(0, 4).join(", ")}.
+                        </p>
+                      ) : (
+                        <p>Use Recycle Coach or the official section list for address-level yard pickup.</p>
+                      )}
+                    </article>
+                  );
+                })
+              ) : (
+                <div className="empty-state">
+                  No street match yet. Try the street name only, without a house number.
+                </div>
+              )}
+            </div>
+          </div>
+          <aside className="waste-official" aria-label="Official Princeton waste tools">
+            <div className="waste-summary">
+              <span>{wasteData.streetCount || "Official"} street records</span>
+              <strong>
+                {primaryWasteMatch
+                  ? `${primaryWasteMatch.street}: ${primaryWasteMatch.trashDay}`
+                  : "Type a street for the quickest answer"}
+              </strong>
+              <p>
+                {primaryYardSchedule
+                  ? `Section ${primaryWasteMatch.yardSection} loose leaves: ${primaryYardSchedule.looseLeaves.join(", ")}.`
+                  : wasteData.rules.yard}
+              </p>
+            </div>
+            <div className="waste-rules">
+              <div>
+                <span>Bulk items</span>
+                <p>{wasteData.rules.bulk}</p>
+              </div>
+              <div>
+                <span>Recycling</span>
+                <p>{wasteData.rules.recycling}</p>
+              </div>
+            </div>
+            <div className="recyclecoach-card notranslate" translate="no">
+              <div>
+                <span>Official live calendar</span>
+                <p>Recycle Coach handles exact address schedules, reminders, recycling, and yard-waste updates.</p>
+              </div>
+              <div className="recyclecoach-embed">
+                <div id="rcroot" data-plugin={wasteData.recycleCoach.pluginToken} />
+              </div>
+            </div>
+            <div className="source-links compact waste-links">
+              {wasteData.sources.slice(0, 4).map((source) => (
+                <a href={source.url} key={source.url} {...externalLinkProps(source.url)}>
+                  {source.name}
+                </a>
+              ))}
+            </div>
+          </aside>
+        </section>
       </section>
 
       <section className="section resident-perks" id="perks">

@@ -158,14 +158,19 @@ const pillarGuides = [
     slug: "princeton-resident-services",
     title: "Princeton resident services: alerts, recycling, reporting issues, parks, and town resources",
     description:
-      "A practical guide to Princeton resident services, including alerts, trash and recycling, SeeClickFix, EV charging, parks, municipal maps, Human Services, and recreation.",
+      "A practical guide to Princeton resident services, including alerts, trash and recycling by street, bulk pickup, yard waste, SeeClickFix, EV charging, parks, municipal maps, Human Services, and recreation.",
     intent: "Create a stable resource page for practical municipal and civic-service queries.",
     keywords: ["Princeton resident services", "Princeton trash recycling", "Princeton town alerts"],
     sections: [
       {
         heading: "The services residents look for repeatedly",
         body:
-          "Princeton residents often need the same practical links: weather alerts, town alerts, trash and recycling, reporting issues, parking, EV charging, parks, GIS maps, Human Services, and recreation programs.",
+          "Princeton residents often need the same practical links: weather alerts, town alerts, trash and recycling, bulk pickup, yard-waste sections, reporting issues, parking, EV charging, parks, GIS maps, Human Services, and recreation programs.",
+      },
+      {
+        heading: "Waste by street",
+        body:
+          "PrincetonLive generates a street-level waste lookup from the Municipality of Princeton's public trash collection schedule and residential brush and leaf section list. It shows weekly trash day and yard-waste section, while Recycle Coach remains the official address-specific calendar and reminder source.",
       },
       {
         heading: "Why PrincetonLive keeps these together",
@@ -180,7 +185,8 @@ const pillarGuides = [
     ],
     faqs: [
       ["Can PrincetonLive replace official town pages?", "No. It is a resident guide that links to official town sources for authoritative details."],
-      ["What services does PrincetonLive group together?", "Alerts, recycling, issue reporting, parking, EV charging, parks, GIS maps, Human Services, and recreation links."],
+      ["Does PrincetonLive show Princeton trash pickup by street?", "Yes. It generates a searchable street lookup from official Princeton public documents, then links to Recycle Coach for live address reminders."],
+      ["What services does PrincetonLive group together?", "Alerts, trash and recycling, bulk pickup, yard-waste sections, issue reporting, parking, EV charging, parks, GIS maps, Human Services, and recreation links."],
     ],
     relatedAnchors: ["#practical", "#perks", "#explore"],
   },
@@ -580,6 +586,7 @@ ${guideLinks}
 
 - [Live daily data](${SITE_URL}/live-data.json): Generated public snapshot of weather, alerts, public events, resident perks, and source links.
 - [Civic map data](${SITE_URL}/civic-map.json): Generated public snapshot of Census block-group civic metrics, map geometry, benchmarks, and voting-source links.
+- [Waste data](${SITE_URL}/waste-data.json): Generated public street lookup for Princeton trash collection day, yard-waste section, bulk pickup rules, Recycle Coach links, and official waste sources.
 - [Sitemap](${SITE_URL}/sitemap.xml): Crawlable URL list.
 - [Robots policy](${SITE_URL}/robots.txt): Crawler access policy.
 

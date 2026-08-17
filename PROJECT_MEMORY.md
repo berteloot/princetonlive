@@ -89,6 +89,12 @@ Civic map:
 - Princeton Public Schools official school pages and registration/address-assignment guidance
 - NJ School Performance Reports as the official public report-card source
 
+Waste:
+- Princeton trash collection page and public trash collection schedule by street
+- Princeton leaf, branch, and log collection page and residential brush/leaf section list
+- Princeton 2026 waste collection brochure for yard-waste section dates and placement rules
+- Recycle Coach Princeton city record/widget for official live address-specific reminders
+
 ## UX Decisions
 
 - Keep PrincetonLive resident-first, not tourist-first.
@@ -110,6 +116,7 @@ Civic map:
 - Resident perks must distinguish free benefits from access programs that cost money. Princeton University Community Auditing is resident-relevant, but it is tuition-based, not a free library-style perk.
 - The Census API key must stay server/build-side only. The browser receives generated aggregate JSON, never the key.
 - GitHub scheduled refresh passes `CENSUS_API_KEY` from repository secrets when configured and falls back to Census Reporter when absent.
+- Waste pickup should be resident-first and street/address-first. Use official Princeton street schedules to generate a local searchable trash-day and yard-section lookup. Recycle Coach has a public city lookup and official widget, but no documented stable schedule API for PrincetonLive use, so link/embed Recycle Coach for live address-specific reminders instead of reverse-engineering private schedule endpoints.
 - External links should open in a new tab with `target="_blank"` and `rel="noopener noreferrer"` so visitors do not lose PrincetonLive. In-page hash navigation stays in the same tab.
 - SEO/GEO crawlability matters: `index.html` must keep crawlable fallback body content inside `#root`, a clear H1, canonical/geo/social metadata, and JSON-LD in the initial HTML so non-JavaScript AI/search crawlers can classify the page.
 - Structured data should represent visible page content. Keep the visible FAQ in sync with the FAQPage JSON-LD and keep the civic Dataset JSON-LD aligned with `public/civic-map.json`.
@@ -119,6 +126,7 @@ Civic map:
 ## Feature Log
 
 - Latest - Added a generated SEO pillar guide cluster under `/guides/` for moving to Princeton, library benefits, transit, culture, civic data, and resident services, with homepage internal links.
+- Latest - Added a generated waste-data refresh and practical Waste by Street tool using Princeton public trash-day and brush/leaf section documents, plus Recycle Coach as the official live address calendar.
 - Latest - Reduced the homepage hero headline from a long descriptive sentence to `PrincetonLive`, with the resident-guide phrase moved into smaller lead copy for better first-viewport usability.
 - Latest - Added a Schools layer to the civic map with Princeton Public Schools campus points, grade context, official district links, assignment caveat, and NJDOE report links.
 - Latest - Added SEO/GEO crawlability layer: raw HTML answer block, explicit H1, canonical/social/geo metadata, JSON-LD graph, robots.txt, sitemap.xml, llms.txt, and visible resident FAQ.
