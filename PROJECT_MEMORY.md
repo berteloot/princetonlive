@@ -65,7 +65,10 @@ Daily operating data:
 Civic map:
 - U.S. Census TIGERweb tract geometry
 - Census Reporter API / ACS 2024 5-year estimates
+- Census Reporter API national ACS benchmarks, matched to the same ACS release as the Princeton tract feed
+- U.S. Census TIGERweb national tract count for children-per-tract normalization
 - NJ Division of Elections official 2024 Mercer presidential results PDF
+- FEC official 2024 presidential general election results PDF for national popular-vote benchmark
 - Mercer County archived election results links
 - Princeton elections links
 
@@ -76,13 +79,16 @@ Civic map:
 - Google Translate powers French and Spanish because the content is expected to update from public feeds.
 - Agenda filters and search must remain clickable after Google Translate mutates the DOM.
 - Weather appears in the top daily brief; do not duplicate weaker weather cards lower on the page.
+- Anchor links must account for the sticky header so section headings, controls, and map toolbars are not hidden when landing on a deep link.
 - Civic data must be neighborhood-scale or aggregate only. Do not publish individual voter, household, or address-level data.
 - The voting layer may show official Princeton municipal-level Republican/Democrat results across the map, but neighborhood shading should only be added after official district totals are safely joined to public district boundaries.
 - Civic map legends must show both sides of the scale. For wealth/children layers, darker means higher. Children count and child share must use distinct labels and color scales because count and percentage answer different questions. For voting, red-to-blue means Republican-to-Democratic.
 - Civic map regions should expose their current metric on hover, focus, and tap/click.
+- Civic map benchmarks must be generated from public data during refresh. Income and child-share use U.S. ACS values from the same release as Princeton tract estimates; children count is compared with U.S. average residents under 18 per census tract, not the national child total.
 
 ## Feature Log
 
+- Latest - Added U.S. benchmark comparisons to civic map metrics, generated from public Census/FEC sources during the civic data refresh.
 - Latest - Improved civic map hover/tap details, fixed lower/higher legends, and reflected official Princeton municipal presidential results on the voting layer.
 - Latest - Made the civic map distinction between children count and child share explicit, with separate green and blue scales.
 - `744922f` - Added aggregate civic map with wealth, children, family-share, and source-linked voting layers.

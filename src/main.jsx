@@ -103,6 +103,7 @@ const fallbackCivicMap = {
   viewBox: "0 0 100 72",
   features: [],
   highlights: [],
+  benchmarks: {},
   voting: {
     title: "Voting layer",
     summary:
@@ -277,7 +278,7 @@ function formatRefresh(value) {
 
 function formatCivicValue(key, value) {
   if (!Number.isFinite(value)) return "Source linked";
-  if (key === "voting") {
+  if (key === "voting" || key === "voteMargin") {
     const points = Math.abs(value) * 100;
     return `${value >= 0 ? "Democratic" : "Republican"} +${points.toFixed(1)} pts`;
   }
@@ -295,6 +296,26 @@ function formatCivicValue(key, value) {
     }).format(value);
   }
   return new Intl.NumberFormat("en-US").format(value);
+}
+
+function formatBenchmarkDelta(key, value, benchmark) {
+  const benchmarkValue = benchmark?.value;
+  if (!Number.isFinite(value) || !Number.isFinite(benchmarkValue)) return null;
+
+  if (key === "childShare" || key === "voting" || key === "voteMargin") {
+    const delta = (value - benchmarkValue) * 100;
+    if (Math.abs(delta) < 0.05) return "Matches U.S. benchmark";
+    return `${delta > 0 ? "+" : "-"}${Math.abs(delta).toFixed(1)} pts vs U.S.`;
+  }
+
+  if (!benchmarkValue) return null;
+  const delta = ((value - benchmarkValue) / benchmarkValue) * 100;
+  if (Math.abs(delta) < 0.5) return "Matches U.S. benchmark";
+  return `${delta > 0 ? "+" : "-"}${Math.abs(delta).toFixed(0)}% vs U.S.`;
+}
+
+function benchmarkValueKey(key) {
+  return key === "voting" ? "voting" : key;
 }
 
 function metricDomain(features, key) {
@@ -414,12 +435,13 @@ function App() {
   const activeCivicMetric =
     civicMetrics.find((metric) => metric.key === civicMetric) ?? civicMetrics[0];
   const civicDomain = metricDomain(civicMap.features, civicMetric);
+  const activeBenchmark = civicMap.benchmarks?.[civicMetric];
   const topCivicFeatures = civicMap.features
     .filter((feature) => Number.isFinite(feature[civicMetric]))
     .sort((a, b) => b[civicMetric] - a[civicMetric])
     .slice(0, 4);
   const metricValueKey = civicMetric === "voting" ? "voteMargin" : civicMetric;
-  const hoverFeature = hoveredCivicFeature ?? topCivicFeatures[0] ?? civicMap.features[0];
+  const activeBenchmarkValueKey = benchmarkValueKey(civicMetric);
   const votingResult = civicMap.voting?.result;
   const votingStats = votingResult
     ? [
@@ -686,8 +708,18 @@ function App() {
               ))}
             </div>
             <div className="metric-definition">
-              <strong>{activeCivicMetric.detail}</strong>
-              <span>{activeCivicMetric.note}</span>
+              <div>
+                <strong>{activeCivicMetric.detail}</strong>
+                {activeCivicMetric.note ? <span>{activeCivicMetric.note}</span> : null}
+              </div>
+              {activeBenchmark ? (
+                <a className="benchmark-pill" href={activeBenchmark.sourceUrl}>
+                  <span>U.S. benchmark</span>
+                  <strong>
+                    {formatCivicValue(activeBenchmarkValueKey, activeBenchmark.value)}
+                  </strong>
+                </a>
+              ) : null}
             </div>
             <div className="civic-map-shell">
               <svg
@@ -699,42 +731,52 @@ function App() {
                 onMouseLeave={() => setHoveredCivicFeature(null)}
                 onPointerLeave={() => setHoveredCivicFeature(null)}
               >
-                {civicMap.features.map((feature) => (
-                  <path
-                    key={feature.geoid}
-                    d={feature.path}
-                    fill={tractFill(feature, civicMetric, civicDomain)}
-                    className={hoveredCivicFeature?.geoid === feature.geoid ? "is-hovered" : ""}
-                    tabIndex="0"
-                    role="button"
-                    aria-label={`${feature.areaLabel}, ${feature.tractLabel}, ${formatCivicValue(metricValueKey, feature[metricValueKey])}`}
-                    onMouseEnter={(event) => {
-                      setHoveredCivicFeature(feature);
-                      updateCivicTooltip(event);
-                    }}
-                    onPointerEnter={(event) => {
-                      setHoveredCivicFeature(feature);
-                      updateCivicTooltip(event);
-                    }}
-                    onPointerMove={updateCivicTooltip}
-                    onClick={(event) => {
-                      setHoveredCivicFeature(feature);
-                      updateCivicTooltip(event);
-                    }}
-                    onFocus={() => setHoveredCivicFeature(feature)}
-                    onKeyDown={(event) => {
-                      if (event.key === "Enter" || event.key === " ") {
-                        event.preventDefault();
+                {civicMap.features.map((feature) => {
+                  const featureValue = feature[metricValueKey];
+                  const featureDelta = formatBenchmarkDelta(
+                    metricValueKey,
+                    featureValue,
+                    activeBenchmark,
+                  );
+
+                  return (
+                    <path
+                      key={feature.geoid}
+                      d={feature.path}
+                      fill={tractFill(feature, civicMetric, civicDomain)}
+                      className={hoveredCivicFeature?.geoid === feature.geoid ? "is-hovered" : ""}
+                      tabIndex="0"
+                      role="button"
+                      aria-label={`${feature.areaLabel}, ${feature.tractLabel}, ${formatCivicValue(metricValueKey, featureValue)}`}
+                      onMouseEnter={(event) => {
                         setHoveredCivicFeature(feature);
-                      }
-                    }}
-                  >
-                    <title>
-                      {feature.areaLabel}, {feature.tractLabel}:{" "}
-                      {formatCivicValue(metricValueKey, feature[metricValueKey])}
-                    </title>
-                  </path>
-                ))}
+                        updateCivicTooltip(event);
+                      }}
+                      onPointerEnter={(event) => {
+                        setHoveredCivicFeature(feature);
+                        updateCivicTooltip(event);
+                      }}
+                      onPointerMove={updateCivicTooltip}
+                      onClick={(event) => {
+                        setHoveredCivicFeature(feature);
+                        updateCivicTooltip(event);
+                      }}
+                      onFocus={() => setHoveredCivicFeature(feature)}
+                      onKeyDown={(event) => {
+                        if (event.key === "Enter" || event.key === " ") {
+                          event.preventDefault();
+                          setHoveredCivicFeature(feature);
+                        }
+                      }}
+                    >
+                      <title>
+                        {feature.areaLabel}, {feature.tractLabel}:{" "}
+                        {formatCivicValue(metricValueKey, featureValue)}
+                        {featureDelta ? ` (${featureDelta})` : ""}
+                      </title>
+                    </path>
+                  );
+                })}
               </svg>
               {hoveredCivicFeature ? (
                 <div
@@ -747,7 +789,16 @@ function App() {
                   <strong>{hoveredCivicFeature.areaLabel}</strong>
                   <span>{hoveredCivicFeature.tractLabel}</span>
                   <b>{formatCivicValue(metricValueKey, hoveredCivicFeature[metricValueKey])}</b>
-                  {civicMetric === "voting" ? <small>Princeton municipal result</small> : null}
+                  <small>
+                    {formatBenchmarkDelta(
+                      metricValueKey,
+                      hoveredCivicFeature[metricValueKey],
+                      activeBenchmark,
+                    ) ||
+                      (civicMetric === "voting"
+                        ? "Princeton municipal result"
+                        : activeBenchmark?.label)}
+                  </small>
                 </div>
               ) : null}
               {civicMetric === "voting" ? (
@@ -806,6 +857,19 @@ function App() {
                       <small>
                         {highlight.label}, {highlight.tract}
                       </small>
+                      {formatBenchmarkDelta(
+                        highlight.key,
+                        highlight.rawValue,
+                        civicMap.benchmarks?.[highlight.key],
+                      ) ? (
+                        <em>
+                          {formatBenchmarkDelta(
+                            highlight.key,
+                            highlight.rawValue,
+                            civicMap.benchmarks?.[highlight.key],
+                          )}
+                        </em>
+                      ) : null}
                     </div>
                   ))}
                 </div>
@@ -818,7 +882,22 @@ function App() {
                         <small>{hoveredCivicFeature.tractLabel}</small>
                       </span>
                       <strong>
-                        {formatCivicValue(metricValueKey, hoveredCivicFeature[metricValueKey])}
+                        <span>
+                          {formatCivicValue(metricValueKey, hoveredCivicFeature[metricValueKey])}
+                        </span>
+                        {formatBenchmarkDelta(
+                          metricValueKey,
+                          hoveredCivicFeature[metricValueKey],
+                          activeBenchmark,
+                        ) ? (
+                          <small>
+                            {formatBenchmarkDelta(
+                              metricValueKey,
+                              hoveredCivicFeature[metricValueKey],
+                              activeBenchmark,
+                            )}
+                          </small>
+                        ) : null}
                       </strong>
                     </div>
                   ) : null}
@@ -828,7 +907,22 @@ function App() {
                         {feature.areaLabel}
                         <small>{feature.tractLabel}</small>
                       </span>
-                      <strong>{formatCivicValue(metricValueKey, feature[metricValueKey])}</strong>
+                      <strong>
+                        <span>{formatCivicValue(metricValueKey, feature[metricValueKey])}</span>
+                        {formatBenchmarkDelta(
+                          metricValueKey,
+                          feature[metricValueKey],
+                          activeBenchmark,
+                        ) ? (
+                          <small>
+                            {formatBenchmarkDelta(
+                              metricValueKey,
+                              feature[metricValueKey],
+                              activeBenchmark,
+                            )}
+                          </small>
+                        ) : null}
+                      </strong>
                     </div>
                   ))}
                 </div>

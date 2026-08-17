@@ -15,6 +15,22 @@ const geometryUrl =
   "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Tracts_Blocks/MapServer/7/query?where=STATE%3D%2734%27%20AND%20COUNTY%3D%27021%27&outFields=GEOID,BASENAME,NAME,CENTLAT,CENTLON&returnGeometry=true&outSR=4326&f=geojson";
 const censusReporterUrl =
   "https://api.censusreporter.org/1.0/data/show/latest?table_ids=B19013,B01001&geo_ids=140%7C05000US34021";
+const tractCountUrl =
+  "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Tracts_Blocks/MapServer/7/query?where=1%3D1&returnCountOnly=true&f=json";
+const censusReporterBase = "https://api.censusreporter.org/1.0/data/show";
+const censusReporterHome = "https://api.censusreporter.org/";
+const fecNationalResultUrl = "https://www.fec.gov/documents/5644/2024presgeresults.pdf";
+
+const childAgeKeys = [
+  "B01001003",
+  "B01001004",
+  "B01001005",
+  "B01001006",
+  "B01001027",
+  "B01001028",
+  "B01001029",
+  "B01001030",
+];
 
 const princetonVoting = {
   year: 2024,
@@ -30,6 +46,19 @@ const princetonVoting = {
     "https://www.nj.gov/state/elections/assets/pdf/election-results/2024/2024-official-general-results-president-mercer.pdf",
 };
 
+const nationalVoting = {
+  year: 2024,
+  level: "United States",
+  contest: "U.S. President",
+  democratCandidate: "Kamala D. Harris",
+  republicanCandidate: "Donald J. Trump",
+  democratVotes: 75017613,
+  republicanVotes: 77302580,
+  totalVotes: 155238302,
+  sourceName: "FEC official 2024 presidential general election results",
+  sourceUrl: fecNationalResultUrl,
+};
+
 const votingTotal =
   princetonVoting.democratVotes + princetonVoting.republicanVotes + princetonVoting.otherVotes;
 const votingSummary = {
@@ -39,6 +68,12 @@ const votingSummary = {
   republicanShare: princetonVoting.republicanVotes / votingTotal,
   otherShare: princetonVoting.otherVotes / votingTotal,
   margin: (princetonVoting.democratVotes - princetonVoting.republicanVotes) / votingTotal,
+  nationalBenchmark: {
+    ...nationalVoting,
+    democratShare: nationalVoting.democratVotes / nationalVoting.totalVotes,
+    republicanShare: nationalVoting.republicanVotes / nationalVoting.totalVotes,
+    margin: (nationalVoting.democratVotes - nationalVoting.republicanVotes) / nationalVoting.totalVotes,
+  },
 };
 
 const fallback = {
@@ -49,6 +84,7 @@ const fallback = {
   viewBox: `0 0 ${SVG_WIDTH} ${SVG_HEIGHT}`,
   features: [],
   highlights: [],
+  benchmarks: {},
   voting: {
     status: "municipality-level",
     title: "Voting layer",
@@ -77,7 +113,15 @@ const fallback = {
     },
     {
       name: "Census Reporter API / ACS 2024 5-year",
-      url: "https://api.censusreporter.org/",
+      url: censusReporterHome,
+    },
+    {
+      name: "U.S. Census TIGERweb national tract count",
+      url: "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Tracts_Blocks/MapServer/7",
+    },
+    {
+      name: "FEC official 2024 presidential general election results",
+      url: fecNationalResultUrl,
     },
     {
       name: "Mercer County archived election results",
@@ -106,9 +150,15 @@ async function fetchJson(url) {
 }
 
 function numberOrNull(value) {
+  if (value === null || value === undefined || value === "") return null;
   const number = Number(value);
   if (!Number.isFinite(number) || number < 0) return null;
   return number;
+}
+
+function sumEstimates(estimate, keys) {
+  const values = keys.map((key) => numberOrNull(estimate[key])).filter(Number.isFinite);
+  return values.length ? values.reduce((sum, value) => sum + value, 0) : null;
 }
 
 function tractStats(data, geoid) {
@@ -116,23 +166,82 @@ function tractStats(data, geoid) {
   const entry = data.data?.[key];
   const age = entry?.B01001?.estimate || {};
   const income = entry?.B19013?.estimate?.B19013001;
-  const children =
-    numberOrNull(age.B01001003) +
-    numberOrNull(age.B01001004) +
-    numberOrNull(age.B01001005) +
-    numberOrNull(age.B01001006) +
-    numberOrNull(age.B01001027) +
-    numberOrNull(age.B01001028) +
-    numberOrNull(age.B01001029) +
-    numberOrNull(age.B01001030);
+  const children = sumEstimates(age, childAgeKeys);
   const population = numberOrNull(age.B01001001);
 
   return {
     income: numberOrNull(income),
     population,
-    children: Number.isFinite(children) ? children : null,
+    children,
     childShare: population ? children / population : null,
   };
+}
+
+async function fetchNationalBenchmarks(release) {
+  const releaseId = release?.id || "latest";
+  const releaseName = release?.name || "ACS latest";
+  const nationalUrl = `${censusReporterBase}/${releaseId}?table_ids=B19013,B01001&geo_ids=01000US`;
+
+  try {
+    const [nationalCensus, tractCount] = await Promise.all([
+      fetchJson(nationalUrl),
+      fetchJson(tractCountUrl),
+    ]);
+    const entry = nationalCensus.data?.["01000US"];
+    const age = entry?.B01001?.estimate || {};
+    const population = numberOrNull(age.B01001001);
+    const children = sumEstimates(age, childAgeKeys);
+    const income = numberOrNull(entry?.B19013?.estimate?.B19013001);
+    const nationalTracts = numberOrNull(tractCount.count);
+    const sourceName = `Census Reporter API / ${releaseName}`;
+
+    return {
+      income: {
+        label: "U.S. median household income",
+        value: income,
+        unit: "currency",
+        release: nationalCensus.release?.name || releaseName,
+        sourceName,
+        sourceUrl: nationalUrl,
+      },
+      children: {
+        label: "U.S. average residents under 18 per census tract",
+        value: children && nationalTracts ? children / nationalTracts : null,
+        unit: "number",
+        release: nationalCensus.release?.name || releaseName,
+        sourceName: `${sourceName} + TIGERweb tract count`,
+        sourceUrl: nationalUrl,
+      },
+      childShare: {
+        label: "U.S. share of population under 18",
+        value: population && children ? children / population : null,
+        unit: "percent",
+        release: nationalCensus.release?.name || releaseName,
+        sourceName,
+        sourceUrl: nationalUrl,
+      },
+      voting: {
+        label: "U.S. 2024 presidential popular-vote margin",
+        value: votingSummary.nationalBenchmark.margin,
+        unit: "margin",
+        release: "FEC official 2024 result",
+        sourceName: nationalVoting.sourceName,
+        sourceUrl: nationalVoting.sourceUrl,
+      },
+    };
+  } catch (error) {
+    console.warn(`National benchmark refresh failed: ${error.message}`);
+    return {
+      voting: {
+        label: "U.S. 2024 presidential popular-vote margin",
+        value: votingSummary.nationalBenchmark.margin,
+        unit: "margin",
+        release: "FEC official 2024 result",
+        sourceName: nationalVoting.sourceName,
+        sourceUrl: nationalVoting.sourceUrl,
+      },
+    };
+  }
 }
 
 function inPrincetonArea(feature) {
@@ -209,6 +318,7 @@ function metricHighlight(features, key, title, formatter) {
         label: feature.areaLabel,
         tract: feature.tractLabel,
         value: formatter(feature[key]),
+        rawValue: feature[key],
       }
     : null;
 }
@@ -230,6 +340,7 @@ const formatPercent = (value) =>
 
 try {
   const [geometry, census] = await Promise.all([fetchJson(geometryUrl), fetchJson(censusReporterUrl)]);
+  const benchmarks = await fetchNationalBenchmarks(census.release);
   const selected = (geometry.features || []).filter(inPrincetonArea);
   const project = projectFactory(allPoints(selected));
 
@@ -268,6 +379,7 @@ try {
     release: census.release?.name || "ACS latest 5-year",
     features,
     highlights,
+    benchmarks,
   };
 
   await mkdir(new URL("../public", import.meta.url), { recursive: true });

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T13:38:12.925Z",
+  "generatedAt": "2026-08-17T13:55:36.993Z",
   "release": "ACS 2024 5-year",
   "privacy": "Neighborhood-scale public data only. PrincetonLive does not publish individual voter, household, or address-level records.",
   "viewBox": "0 0 100 72",
@@ -263,23 +263,60 @@
       "title": "Highest median household income",
       "label": "Northeast Princeton area",
       "tract": "Tract 42.05",
-      "value": "$250,001"
+      "value": "$250,001",
+      "rawValue": 250001
     },
     {
       "key": "children",
       "title": "Most children under 18",
       "label": "Southern edge",
       "tract": "Tract 43.13",
-      "value": "1,852"
+      "value": "1,852",
+      "rawValue": 1852
     },
     {
       "key": "childShare",
       "title": "Largest child share of population",
       "label": "Southern edge",
       "tract": "Tract 43.13",
-      "value": "34.8%"
+      "value": "34.8%",
+      "rawValue": 0.3476628496339403
     }
   ],
+  "benchmarks": {
+    "income": {
+      "label": "U.S. median household income",
+      "value": 80734,
+      "unit": "currency",
+      "release": "ACS 2024 5-year",
+      "sourceName": "Census Reporter API / ACS 2024 5-year",
+      "sourceUrl": "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B19013,B01001&geo_ids=01000US"
+    },
+    "children": {
+      "label": "U.S. average residents under 18 per census tract",
+      "value": 859.5661588467069,
+      "unit": "number",
+      "release": "ACS 2024 5-year",
+      "sourceName": "Census Reporter API / ACS 2024 5-year + TIGERweb tract count",
+      "sourceUrl": "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B19013,B01001&geo_ids=01000US"
+    },
+    "childShare": {
+      "label": "U.S. share of population under 18",
+      "value": 0.21950700236621906,
+      "unit": "percent",
+      "release": "ACS 2024 5-year",
+      "sourceName": "Census Reporter API / ACS 2024 5-year",
+      "sourceUrl": "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B19013,B01001&geo_ids=01000US"
+    },
+    "voting": {
+      "label": "U.S. 2024 presidential popular-vote margin",
+      "value": -0.014719092972300096,
+      "unit": "margin",
+      "release": "FEC official 2024 result",
+      "sourceName": "FEC official 2024 presidential general election results",
+      "sourceUrl": "https://www.fec.gov/documents/5644/2024presgeresults.pdf"
+    }
+  },
   "voting": {
     "status": "municipality-level",
     "title": "Voting layer",
@@ -299,7 +336,22 @@
       "democratShare": 0.8107767449188593,
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
-      "margin": 0.6509374507641406
+      "margin": 0.6509374507641406,
+      "nationalBenchmark": {
+        "year": 2024,
+        "level": "United States",
+        "contest": "U.S. President",
+        "democratCandidate": "Kamala D. Harris",
+        "republicanCandidate": "Donald J. Trump",
+        "democratVotes": 75017613,
+        "republicanVotes": 77302580,
+        "totalVotes": 155238302,
+        "sourceName": "FEC official 2024 presidential general election results",
+        "sourceUrl": "https://www.fec.gov/documents/5644/2024presgeresults.pdf",
+        "democratShare": 0.483241648700847,
+        "republicanShare": 0.49796074167314713,
+        "margin": -0.014719092972300096
+      }
     },
     "links": [
       {
@@ -324,6 +376,14 @@
     {
       "name": "Census Reporter API / ACS 2024 5-year",
       "url": "https://api.censusreporter.org/"
+    },
+    {
+      "name": "U.S. Census TIGERweb national tract count",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Tracts_Blocks/MapServer/7"
+    },
+    {
+      "name": "FEC official 2024 presidential general election results",
+      "url": "https://www.fec.gov/documents/5644/2024presgeresults.pdf"
     },
     {
       "name": "Mercer County archived election results",
