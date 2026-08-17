@@ -1907,12 +1907,12 @@ h3 {
   gap: 10px;
 }
 
-.walk-list div {
+.walk-list article {
   display: grid;
   grid-template-columns: 54px minmax(0, 1fr) 24px;
   align-items: center;
   gap: 14px;
-  min-height: 64px;
+  min-height: 92px;
   padding: 14px 18px;
   background: rgba(255, 255, 255, 0.68);
   border: 1px solid rgba(23, 32, 27, 0.08);
@@ -1930,10 +1930,43 @@ h3 {
   line-height: 1.35;
 }
 
+.walk-actions {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.walk-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 32px;
+  padding: 6px 10px;
+  color: var(--princeton-black);
+  background: #fffaf2;
+  border: 1px solid rgba(238, 127, 45, 0.26);
+  border-radius: 8px;
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.walk-actions a:hover {
+  color: #fff;
+  background: var(--princeton-black);
+  border-color: var(--princeton-black);
+}
+
 .walk-list svg {
   grid-column: 3;
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 3;
   color: #2f6958;
+}
+
+.walk-actions svg {
+  grid-column: auto;
+  grid-row: auto;
+  color: currentColor;
 }
 
 .source-plan {

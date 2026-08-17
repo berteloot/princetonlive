@@ -457,12 +457,60 @@ const residentPerks = [
 ];
 
 const exploreStops = [
-  ["D&R Canal towpath", "Flat, easy orientation walk along the water."],
-  ["Institute Woods", "Shaded trails for a quiet first-month ritual."],
-  ["Princeton Battlefield", "History, fields, and a useful western anchor."],
-  ["Stony Brook paths", "Good for nature breaks and weekend resets."],
-  ["Community Park", "Playgrounds, pool, fields, and everyday family logistics."],
-  ["Nassau Street side streets", "Errands, coffee, bookshops, and shortcuts."],
+  {
+    stop: "D&R Canal towpath",
+    note: "Flat, easy orientation walk along the water.",
+    guideLabel: "Town guide",
+    guideUrl: "https://www.princetonnj.gov/1641/DR-Canal-State-Park",
+    mapLabel: "Trail maps",
+    mapUrl: "https://dandrcanal.org/trails",
+    icon: Trees,
+  },
+  {
+    stop: "Institute Woods",
+    note: "Shaded trails for a quiet first-month ritual.",
+    guideLabel: "Town guide",
+    guideUrl: "https://www.princetonnj.gov/1765/Institute-Woods",
+    mapLabel: "Trail map",
+    mapUrl: "https://www.ias.edu/sites/default/files/IAS%20Woods%20-%20Trail%20Map.pdf",
+    icon: Trees,
+  },
+  {
+    stop: "Princeton Battlefield",
+    note: "History, fields, and a useful western anchor.",
+    guideLabel: "Park guide",
+    guideUrl: "https://dep.nj.gov/parksandforests/state-park/princeton-battlefield-state-park/",
+    mapLabel: "Open map",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Princeton%20Battlefield%20State%20Park",
+    icon: Bike,
+  },
+  {
+    stop: "Stony Brook paths",
+    note: "Good for nature breaks and weekend resets.",
+    guideLabel: "Iron Mike",
+    guideUrl: "https://www.princetonnj.gov/1771/Iron-Mike-Trail",
+    mapLabel: "Trail maps",
+    mapUrl: "https://www.fopos.org/trail-maps",
+    icon: Trees,
+  },
+  {
+    stop: "Community Park",
+    note: "Playgrounds, pool, fields, and everyday family logistics.",
+    guideLabel: "North park",
+    guideUrl: "https://www.princetonnj.gov/1605/Community-Park-North",
+    mapLabel: "South park",
+    mapUrl: "https://princetonrecreation.com/facilities/facility/details/Community-Park-South-9",
+    icon: Bike,
+  },
+  {
+    stop: "Nassau Street side streets",
+    note: "Errands, coffee, bookshops, and shortcuts.",
+    guideLabel: "Digital tours",
+    guideUrl: "https://princetonhistory.org/visit/digitaltours/",
+    mapLabel: "Downtown",
+    mapUrl: "https://www.experienceprinceton.org/visit",
+    icon: Bike,
+  },
 ];
 
 function getInitialLanguage() {
@@ -1796,14 +1844,25 @@ function App() {
           </p>
         </div>
         <div className="walk-list">
-          {exploreStops.map(([stop, note], index) => (
-            <div key={stop}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <strong>{stop}</strong>
-              <small>{note}</small>
-              {index % 2 === 0 ? <Trees size={18} /> : <Bike size={18} />}
-            </div>
-          ))}
+          {exploreStops.map((walk, index) => {
+            const WalkIcon = walk.icon;
+            return (
+              <article key={walk.stop}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <strong>{walk.stop}</strong>
+                <small>{walk.note}</small>
+                <div className="walk-actions">
+                  <a href={walk.guideUrl} {...externalLinkProps(walk.guideUrl)}>
+                    {walk.guideLabel} <ExternalLink size={13} aria-hidden="true" />
+                  </a>
+                  <a href={walk.mapUrl} {...externalLinkProps(walk.mapUrl)}>
+                    {walk.mapLabel} <Map size={13} aria-hidden="true" />
+                  </a>
+                </div>
+                <WalkIcon size={18} aria-hidden="true" />
+              </article>
+            );
+          })}
         </div>
       </section>
 

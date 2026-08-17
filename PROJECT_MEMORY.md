@@ -106,6 +106,16 @@ Waste:
 - Princeton 2026 waste collection brochure for yard-waste section dates and placement rules
 - Recycle Coach Princeton city record/widget for official live address-specific reminders
 
+Explore walks:
+- Municipality of Princeton open-space pages for D&R Canal State Park, Institute Woods, Iron Mike Trail, and Community Park North
+- D&R Canal trail maps
+- Institute for Advanced Study Institute Woods trail map PDF
+- NJDEP Princeton Battlefield State Park page
+- Friends of Princeton Open Space trail maps
+- Princeton Recreation Community Park South page
+- Historical Society of Princeton digital tours
+- Experience Princeton downtown visit resources
+
 ## UX Decisions
 
 - Keep PrincetonLive resident-first, not tourist-first.
@@ -117,6 +127,7 @@ Waste:
 - Anchor links must account for the sticky header so section headings, controls, and map toolbars are not hidden when landing on a deep link.
 - Mobile navigation wraps cleanly on iPhone-width screens instead of clipping or requiring horizontal scrolling.
 - Deep links are re-applied after React/data hydration so links like `#waste` and `#civic` land on the correct section on mobile and desktop.
+- First-month walk cards must include actionable guide/map links. Avoid listing walks that residents cannot open in a map or official/stable resource.
 - Civic data must be neighborhood-scale or aggregate only. Do not publish individual voter, household, or address-level data.
 - The voting layer may show official Princeton municipal-level Republican/Democrat results across the map, but neighborhood shading should only be added after official district totals are safely joined to public district boundaries.
 - Civic map legends must show both sides of the scale. For wealth/children layers, darker means higher. Children count and child share must use distinct labels and color scales because count and percentage answer different questions. For voting, red-to-blue means Republican-to-Democratic.
@@ -142,6 +153,7 @@ Waste:
 ## Feature Log
 
 - Latest - Added Google tag / GA4 measurement ID `G-RL5N5X5EZE` to the app shell and generated SEO pillar pages.
+- Latest - Added guide and map links to every First-month Princeton walk card.
 - Latest - Added Pierre site health monitoring with 15-minute GitHub Actions checks and Telegram alert secrets, mirroring the Le Pouliguen Live monitoring pattern.
 - Latest - Fixed iPhone navigation wrapping and post-hydration hash scrolling for direct links such as Waste by Street and Civic Map.
 - Latest - Added generated JSON endpoints to the sitemap for AI/chatbot SEO discoverability.
