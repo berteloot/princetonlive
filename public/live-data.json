@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-17T15:35:45.772Z",
+  "generatedAt": "2026-08-17T15:38:08.874Z",
   "weather": {
     "temperature": 86,
-    "shortForecast": "Patchy Fog then Slight Chance Showers And Thunderstorms",
+    "shortForecast": "Partly Sunny then Slight Chance Showers And Thunderstorms",
     "wind": "5 mph NW",
-    "detailedForecast": "Patchy fog before 11am, then a slight chance of rain showers between 4pm and 5pm, then a slight chance of showers and thunderstorms. Partly sunny, with a high near 86. Northwest wind around 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
+    "detailedForecast": "A slight chance of rain showers between 4pm and 5pm, then a slight chance of showers and thunderstorms. Partly sunny, with a high near 86. Northwest wind around 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -239,7 +239,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Patchy Fog then Slight Chance Showers And Thunderstorms, 86F"
+      "detail": "Partly Sunny then Slight Chance Showers And Thunderstorms, 86F"
     },
     {
       "name": "Princeton University Events",
