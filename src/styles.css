@@ -128,7 +128,7 @@ input {
   gap: 20px;
   padding: 16px clamp(18px, 4vw, 56px);
   background: rgba(255, 250, 241, 0.9);
-  border-bottom: 1px solid rgba(23, 32, 27, 0.11);
+  border-bottom: 1px solid rgba(23, 32, 27, 0.32);
   backdrop-filter: blur(18px);
 }
 
@@ -577,7 +577,7 @@ h3 {
 .profile-setup {
   padding: 18px;
   background: #fff;
-  border: 1px solid rgba(23, 32, 27, 0.09);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
   box-shadow: 0 14px 34px rgba(23, 32, 27, 0.04);
 }
@@ -602,7 +602,7 @@ h3 {
   padding: 0 12px;
   color: var(--princeton-black);
   background: #fbfaf5;
-  border: 1px solid rgba(23, 32, 27, 0.12);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
   outline: 0;
 }
@@ -622,7 +622,7 @@ h3 {
   color: var(--princeton-black);
   text-align: left;
   background: #fbfaf5;
-  border: 1px solid rgba(23, 32, 27, 0.1);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
   cursor: pointer;
 }
@@ -685,7 +685,7 @@ h3 {
   gap: 8px;
   padding: 18px;
   background: #fff;
-  border: 1px solid rgba(23, 32, 27, 0.09);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
   box-shadow: 0 14px 34px rgba(23, 32, 27, 0.04);
 }
@@ -734,7 +734,7 @@ h3 {
   padding: 18px;
   color: var(--princeton-black);
   background: #fff;
-  border: 1px solid rgba(23, 32, 27, 0.09);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
   box-shadow: 0 14px 34px rgba(23, 32, 27, 0.04);
 }
@@ -944,7 +944,7 @@ h3 {
   color: #46554c;
   cursor: pointer;
   background: #fff;
-  border: 1px solid rgba(23, 32, 27, 0.1);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 7px;
 }
 
@@ -960,7 +960,7 @@ h3 {
   gap: 10px;
   padding: 0 14px;
   background: #fff;
-  border: 1px solid rgba(23, 32, 27, 0.12);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
 }
 
@@ -1005,7 +1005,7 @@ h3 {
   align-items: center;
   padding: 17px;
   background: #fff;
-  border: 1px solid rgba(23, 32, 27, 0.1);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
 }
 
@@ -1042,7 +1042,7 @@ h3 {
   padding: 18px;
   color: #5e6a62;
   background: #fff;
-  border: 1px solid rgba(23, 32, 27, 0.1);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
 }
 
@@ -1066,7 +1066,7 @@ h3 {
   padding: 16px 18px;
   color: var(--princeton-black);
   background: #fff;
-  border: 1px solid rgba(23, 32, 27, 0.1);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
 }
 
@@ -1088,7 +1088,7 @@ h3 {
 .feature-card,
 .utility-tile {
   background: #fff;
-  border: 1px solid rgba(23, 32, 27, 0.1);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
   box-shadow: 0 14px 40px rgba(23, 32, 27, 0.06);
 }
@@ -1287,7 +1287,7 @@ h3 {
   margin-top: 18px;
   padding: clamp(18px, 4vw, 28px);
   background: #fff;
-  border: 1px solid rgba(23, 32, 27, 0.1);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
   box-shadow: 0 14px 40px rgba(23, 32, 27, 0.06);
 }
@@ -1365,7 +1365,7 @@ h3 {
   align-items: center;
   padding: 14px;
   background: #fbfaf5;
-  border: 1px solid rgba(23, 32, 27, 0.08);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
 }
 
@@ -1410,7 +1410,7 @@ h3 {
 .recyclecoach-card {
   padding: 16px;
   background: #f2eee5;
-  border: 1px solid rgba(23, 32, 27, 0.08);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
 }
 
@@ -1452,7 +1452,7 @@ h3 {
   min-height: 180px;
   overflow: hidden;
   background: #fff;
-  border: 1px solid rgba(23, 32, 27, 0.1);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
 }
 
@@ -1502,7 +1502,7 @@ h3 {
   min-height: 210px;
   padding: 18px;
   background: #fff;
-  border: 1px solid rgba(23, 32, 27, 0.1);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
   box-shadow: 0 14px 40px rgba(23, 32, 27, 0.05);
   transition:
@@ -1565,7 +1565,7 @@ h3 {
 .highlight-list div,
 .tract-rank {
   background: #fff;
-  border: 1px solid rgba(23, 32, 27, 0.1);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
   box-shadow: 0 14px 40px rgba(23, 32, 27, 0.05);
 }
@@ -1579,7 +1579,7 @@ h3 {
   flex-wrap: wrap;
   gap: 8px;
   padding: 14px;
-  border-bottom: 1px solid rgba(23, 32, 27, 0.08);
+  border-bottom: 1px solid rgba(23, 32, 27, 0.32);
 }
 
 .civic-toolbar button {
@@ -1591,7 +1591,7 @@ h3 {
   color: #46554c;
   cursor: pointer;
   background: #f7f2e8;
-  border: 1px solid rgba(23, 32, 27, 0.1);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 7px;
   font-weight: 850;
 }
@@ -1609,7 +1609,7 @@ h3 {
   padding: 12px 14px;
   color: #5e6a62;
   background: #fffaf1;
-  border-bottom: 1px solid rgba(23, 32, 27, 0.08);
+  border-bottom: 1px solid rgba(23, 32, 27, 0.32);
   font-size: 0.88rem;
 }
 
@@ -1636,7 +1636,7 @@ h3 {
   padding: 8px 10px;
   text-align: right;
   background: #fff;
-  border: 1px solid rgba(23, 32, 27, 0.1);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 7px;
 }
 
@@ -1663,7 +1663,7 @@ h3 {
   gap: 8px;
   padding: 12px 14px 14px;
   background: #fff;
-  border-bottom: 1px solid rgba(23, 32, 27, 0.08);
+  border-bottom: 1px solid rgba(23, 32, 27, 0.32);
 }
 
 .address-locator label {
@@ -1679,7 +1679,7 @@ h3 {
   align-items: center;
   padding: 7px 7px 7px 10px;
   background: #f8faf4;
-  border: 1px solid rgba(23, 32, 27, 0.11);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
 }
 
@@ -2023,7 +2023,7 @@ h3 {
 .school-context-panel h3 {
   margin: 0;
   padding: 16px;
-  border-bottom: 1px solid rgba(23, 32, 27, 0.08);
+  border-bottom: 1px solid rgba(23, 32, 27, 0.32);
 }
 
 .school-context-panel {
@@ -2035,7 +2035,7 @@ h3 {
   padding: 14px 16px;
   color: #5e6a62;
   line-height: 1.5;
-  border-bottom: 1px solid rgba(23, 32, 27, 0.08);
+  border-bottom: 1px solid rgba(23, 32, 27, 0.32);
 }
 
 .active-school {
@@ -2043,7 +2043,7 @@ h3 {
   gap: 5px;
   padding: 16px;
   background: #fffaf1;
-  border-bottom: 1px solid rgba(23, 32, 27, 0.08);
+  border-bottom: 1px solid rgba(23, 32, 27, 0.32);
 }
 
 .active-school span,
@@ -2084,7 +2084,7 @@ h3 {
   cursor: pointer;
   background: #fff;
   border: 0;
-  border-bottom: 1px solid rgba(23, 32, 27, 0.08);
+  border-bottom: 1px solid rgba(23, 32, 27, 0.32);
 }
 
 .school-list button.is-active,
@@ -2113,7 +2113,7 @@ h3 {
   gap: 12px;
   align-items: center;
   padding: 13px 16px;
-  border-bottom: 1px solid rgba(23, 32, 27, 0.08);
+  border-bottom: 1px solid rgba(23, 32, 27, 0.32);
 }
 
 .tract-rank div:last-child {
@@ -2144,7 +2144,7 @@ h3 {
   min-height: 172px;
   padding: 18px;
   background: #fff;
-  border: 1px solid rgba(23, 32, 27, 0.1);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
   box-shadow: 0 14px 40px rgba(23, 32, 27, 0.05);
 }
@@ -2179,7 +2179,7 @@ h3 {
   padding: 18px;
   color: var(--princeton-black);
   background: #fff;
-  border: 1px solid rgba(23, 32, 27, 0.1);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
   box-shadow: 0 14px 40px rgba(23, 32, 27, 0.05);
   transition:
@@ -2304,7 +2304,7 @@ h3 {
   min-height: 92px;
   padding: 14px 18px;
   background: rgba(255, 255, 255, 0.68);
-  border: 1px solid rgba(23, 32, 27, 0.08);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
 }
 
@@ -2365,7 +2365,7 @@ h3 {
 
 .source-table {
   overflow: hidden;
-  border: 1px solid rgba(23, 32, 27, 0.1);
+  border: 1px solid rgba(23, 32, 27, 0.32);
   border-radius: 8px;
 }
 
@@ -2374,7 +2374,7 @@ h3 {
   grid-template-columns: 0.9fr 1.4fr 120px;
   gap: 18px;
   padding: 15px 18px;
-  border-bottom: 1px solid rgba(23, 32, 27, 0.08);
+  border-bottom: 1px solid rgba(23, 32, 27, 0.32);
 }
 
 .source-row:last-child {
@@ -2608,5 +2608,74 @@ footer a {
   footer {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+
+/* --- Accessibility and resilience additions (audit follow-up) --- */
+
+/* Enlarged, invisible hit area for the school markers (SC 2.5.8). */
+.school-marker-hit {
+  fill: transparent;
+  stroke: none;
+}
+
+/* Per-block garbage and yard answers, shown when one street spans several blocks
+   with different collection days. */
+.waste-blocks {
+  display: grid;
+  gap: 4px;
+  margin: 8px 0 0;
+  padding: 10px 12px;
+  background: rgba(153, 68, 0, 0.06);
+  border-left: 3px solid var(--orange-deep);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.9rem;
+}
+
+.waste-blocks > span:first-child {
+  font-weight: 700;
+}
+
+.waste-stale {
+  margin: 0 0 12px;
+  padding: 12px 14px;
+  background: rgba(153, 68, 0, 0.1);
+  border-left: 4px solid var(--orange-deep);
+  border-radius: 0 6px 6px 0;
+  color: #3a2a1c;
+  font-size: 0.92rem;
+}
+
+.waste-freshness {
+  display: block;
+  margin-top: 10px;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+.recyclecoach-fallback {
+  margin: 0;
+  padding: 14px;
+  font-size: 0.92rem;
+}
+
+/* The alert strip and waste result had no small-screen rule, so at 320px the
+   headline column collapsed to roughly 52px and the waste row kept a fixed
+   86px column. */
+@media (max-width: 680px) {
+  .alert-strip a {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .waste-result {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .waste-result > div:nth-child(2) {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
   }
 }

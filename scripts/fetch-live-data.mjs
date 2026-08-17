@@ -158,13 +158,27 @@ function asArray(value) {
 
 function classify(text) {
   const value = text.toLowerCase();
-  const tags = new Set(["new"]);
-  if (/library|story|kids|teen|family|children|workshop/.test(value)) tags.add("family");
-  if (/film|theatre|theater|concert|music|art|museum|lecture|studio|dance|culture/.test(value)) {
+  const tags = new Set();
+
+  // "new" used to be seeded on every event, so the "New here" filter returned the whole
+  // list and did nothing. It now means orientation-shaped: free, public, drop-in, or a
+  // first-look at the town.
+  if (/tour|orientation|welcome|newcomer|new resident|open house|introduction|intro to|first|drop-in|drop in|free/.test(value)) {
+    tags.add("new");
+  }
+
+  // "workshop" alone was tagging adult writing groups as family. Require an explicit
+  // age or child signal instead.
+  if (/story ?time|kids|children|teen|toddler|preschool|baby|babies|family|all ages|youth|ages \d/.test(value)) {
+    tags.add("family");
+  }
+  if (/film|theatre|theater|concert|music|art|museum|lecture|studio|dance|culture|exhibit|author|reading|poetry/.test(value)) {
     tags.add("culture");
   }
-  if (/rain|indoor|library|film|theatre|theater|museum|workshop|meeting/.test(value)) tags.add("rain");
-  if (/council|municipal|trash|recycling|food pantry|health|permit|task force/.test(value)) {
+  if (/library|film|theatre|theater|museum|workshop|meeting|indoor|gallery|class/.test(value)) {
+    tags.add("rain");
+  }
+  if (/council|municipal|trash|recycling|food pantry|health|permit|task force|zoning|board|budget|registration/.test(value)) {
     tags.add("practical");
   }
   return [...tags];

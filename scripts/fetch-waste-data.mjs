@@ -134,14 +134,42 @@ async function fetchDocxRows(url) {
   return extractRowsFromDocx(Buffer.from(await response.arrayBuffer()));
 }
 
-function parseLookup(rows, valuePattern) {
-  const lookup = new Map();
+// The two municipal documents cut the same street into different blocks. The trash
+// schedule says "WITHERSPOON STREET (WIGGINS TO FRANKLIN)" while the brush schedule
+// says "WITHERSPOON STREET (Nassau St. to Clay St.)". Joining on the whole string
+// therefore never matched on any segmented street, and the resident saw "Not listed"
+// on Nassau, Witherspoon, Harrison and Library Place. Join on the base street name
+// instead and keep each document's blocks as sub-entries.
+function splitStreet(raw) {
+  const cleaned = raw.replace(/\s+/g, " ").trim();
+  const match = cleaned.match(/^([^(]+?)\s*\((.+)\)\s*$/);
+  if (match) {
+    return { base: match[1].trim(), segment: match[2].replace(/\s+/g, " ").trim() };
+  }
+  return { base: cleaned, segment: "" };
+}
+
+function parseEntries(rows, valuePattern) {
+  const byBase = new Map();
   for (const [street, value] of rows) {
     if (!street || !value || /STREET NAME/i.test(street)) continue;
     if (!valuePattern.test(value)) continue;
-    lookup.set(normalizeStreet(street), { street, value });
+    const { base, segment } = splitStreet(street);
+    const key = normalizeStreet(base);
+    if (!key) continue;
+    if (!byBase.has(key)) byBase.set(key, { base, entries: [] });
+    byBase.get(key).entries.push({ segment, value: value.trim() });
   }
-  return lookup;
+  return byBase;
+}
+
+// One value if every block agrees (or there is only one), otherwise a marker telling
+// the resident the answer depends on their block.
+function resolve(record) {
+  if (!record || !record.entries.length) return { value: "Not listed", varies: false };
+  const distinct = [...new Set(record.entries.map((entry) => entry.value.toUpperCase()))];
+  if (distinct.length === 1) return { value: record.entries[0].value, varies: false };
+  return { value: "Varies by block", varies: true };
 }
 
 const [trashRows, yardRows] = await Promise.all([
@@ -149,27 +177,41 @@ const [trashRows, yardRows] = await Promise.all([
   fetchDocxRows(yardSectionUrl),
 ]);
 
-const trashByStreet = parseLookup(trashRows, /^(MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|NOT INCLUDED)$/i);
-const yardByStreet = parseLookup(yardRows, /^(1|2|3|4|5|NOT INCLUDED)$/i);
+const trashByStreet = parseEntries(trashRows, /^(MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|NOT INCLUDED)$/i);
+const yardByStreet = parseEntries(yardRows, /^(1|2|3|4|5|NOT INCLUDED)$/i);
 const allStreetKeys = new Set([...trashByStreet.keys(), ...yardByStreet.keys()]);
 
 const streets = [...allStreetKeys]
   .map((key) => {
     const trash = trashByStreet.get(key);
     const yard = yardByStreet.get(key);
+    const trashResolved = resolve(trash);
+    const yardResolved = resolve(yard);
     return {
-      street: trash?.street ?? yard?.street ?? key,
+      street: trash?.base ?? yard?.base ?? key,
       normalized: key,
-      trashDay: trash?.value ?? "Not listed",
-      yardSection: yard?.value ?? "Not listed",
+      trashDay: trashResolved.value,
+      yardSection: yardResolved.value,
+      trashVariesByBlock: trashResolved.varies,
+      yardVariesByBlock: yardResolved.varies,
+      // Blocks are carried through so the page can show which block is which when the
+      // street-level answer is not single-valued.
+      trashBlocks: (trash?.entries ?? []).filter((entry) => entry.segment),
+      yardBlocks: (yard?.entries ?? []).filter((entry) => entry.segment),
     };
   })
   .sort((a, b) => a.street.localeCompare(b.street));
+
+const completeCount = streets.filter(
+  (item) => item.trashDay !== "Not listed" && item.yardSection !== "Not listed",
+).length;
 
 const payload = {
   generatedAt: new Date().toISOString(),
   source: "Municipality of Princeton public waste documents",
   streetCount: streets.length,
+  completeStreetCount: completeCount,
+  yardScheduleYear: 2026,
   recycleCoach: {
     cityId: "3320",
     projectId: "537",
@@ -189,6 +231,8 @@ const payload = {
       "Leaf, branch, and log collection begins on the listed section date. Put material out by 7 AM on the start date, no more than 7 days prior.",
     recycling:
       "Recycling is handled through Mercer County Improvement Authority; use Recycle Coach for address-specific recycling dates and reminders.",
+    notIncluded:
+      "Municipal garbage collection covers buildings of one to four dwelling units. Larger buildings and most commercial properties arrange private collection, which is why some streets are listed as not included.",
   },
   yardSchedule2026,
   streets,

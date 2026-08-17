@@ -52,18 +52,26 @@ const defaultResidentProfile = {
   },
 };
 
+// These replace the served <title> after hydration, so they must be at least as good
+// as the one in index.html. The previous English entry was the bare word
+// "PrincetonLive", which threw away the served title, and the fr/es entries were
+// English strings describing a translation ("PrincetonLive in French") that were
+// useless as a search snippet.
 const languageMeta = {
   en: {
-    title: "PrincetonLive",
-    description: "PrincetonLive is a daily operating guide for becoming a Princetonian.",
+    title: "PrincetonLive | Princeton, NJ resident guide",
+    description:
+      "Daily Princeton, NJ resident guide: garbage day by street, weather alerts, public events, transit, town services, and library benefits.",
   },
   fr: {
-    title: "PrincetonLive in French",
-    description: "PrincetonLive translated into French by Google Translate.",
+    title: "PrincetonLive | Guide du résident de Princeton, NJ",
+    description:
+      "Guide quotidien pour les résidents de Princeton, NJ: jour de collecte des ordures par rue, alertes météo, événements publics, transports et services municipaux.",
   },
   es: {
-    title: "PrincetonLive in Spanish",
-    description: "PrincetonLive translated into Spanish by Google Translate.",
+    title: "PrincetonLive | Guía para residentes de Princeton, NJ",
+    description:
+      "Guía diaria para residentes de Princeton, NJ: día de recogida de basura por calle, alertas meteorológicas, eventos públicos, transporte y servicios municipales.",
   },
 };
 
@@ -704,8 +712,39 @@ function normalizeWasteStreet(value) {
 }
 
 function wasteSectionSchedule(wasteData, section) {
-  if (!section || section === "NOT INCLUDED" || section === "Not listed") return null;
+  if (!section || section === "NOT INCLUDED" || section === "Not listed" || section === "Varies by block") {
+    return null;
+  }
   return wasteData.yardSchedule2026?.[section] ?? null;
+}
+
+const monthIndex = {
+  january: 0, february: 1, march: 2, april: 3, may: 4, june: 5,
+  july: 6, august: 7, september: 8, october: 9, november: 10, december: 11,
+};
+
+// The schedule is a list of labels like "March 16" or a bare "January" for a whole
+// month. Showing dates that have already passed made the yard section read as useless,
+// so only future entries are rendered. A bare month counts as upcoming until it ends.
+function upcomingYardDates(dates, year, now = new Date()) {
+  if (!Array.isArray(dates)) return [];
+  return dates.filter((label) => {
+    const match = String(label).trim().match(/^([A-Za-z]+)(?:\s+(\d{1,2}))?$/);
+    if (!match) return true;
+    const month = monthIndex[match[1].toLowerCase()];
+    if (month === undefined) return true;
+    const day = match[2] ? Number(match[2]) : null;
+    // A bare month stays visible through its final day.
+    const end = day === null ? new Date(year, month + 1, 0, 23, 59, 59) : new Date(year, month, day, 23, 59, 59);
+    return end >= now;
+  });
+}
+
+// The hardcoded yard schedule is stamped for one calendar year. Once that year is
+// over the whole list is wrong, and nothing upstream would say so.
+function yardScheduleIsStale(wasteData, now = new Date()) {
+  const year = wasteData?.yardScheduleYear;
+  return typeof year === "number" && now.getFullYear() > year;
 }
 
 function formatRefresh(value) {
@@ -817,6 +856,7 @@ function App() {
   const [civicMetric, setCivicMetric] = useState("income");
   const [hoveredCivicFeature, setHoveredCivicFeature] = useState(null);
   const [hoveredSchool, setHoveredSchool] = useState(null);
+  const [recycleCoachFailed, setRecycleCoachFailed] = useState(false);
   const [civicTooltip, setCivicTooltip] = useState({ x: 0, y: 0 });
   const [addressQuery, setAddressQuery] = useState("");
   const [addressLookup, setAddressLookup] = useState({
@@ -865,7 +905,16 @@ function App() {
     script.id = "recyclecoach-loader";
     script.src = "https://cdn.recyclecoach.com/webapp/js/loader.min.js";
     script.async = true;
+    script.onerror = () => setRecycleCoachFailed(true);
     document.head.appendChild(script);
+    // The loader 302-redirects and can silently never render, which left the embed
+    // showing "Loading official Recycle Coach calendar..." forever. Fall back to a
+    // plain link after 8 seconds so the resident still gets somewhere.
+    const timer = window.setTimeout(() => {
+      const widget = document.querySelector(".recyclecoach-card iframe, .recyclecoach-card [data-rc-widget]");
+      if (!widget) setRecycleCoachFailed(true);
+    }, 8000);
+    return () => window.clearTimeout(timer);
   }, []);
 
   useEffect(() => {
@@ -1182,7 +1231,15 @@ function App() {
             <a href="#faq">FAQ</a>
             <a href="#explore">Explore</a>
           </nav>
-          <div className="language-switcher notranslate" translate="no" aria-label="Language">
+          {/* role="group" so the aria-label is honored: on a bare div it is dropped.
+              aria-current marks the one active language, which is what a single-select
+              group means. aria-pressed described three independent toggles. */}
+          <div
+            className="language-switcher notranslate"
+            translate="no"
+            role="group"
+            aria-label="Page language"
+          >
             <span className="translation-provider">Google Translate</span>
             {languages.map((option) => (
               <button
@@ -1190,8 +1247,8 @@ function App() {
                 type="button"
                 className={language === option.code ? "is-active" : ""}
                 onClick={() => selectLanguage(option.code)}
-                aria-pressed={language === option.code}
-                title={option.label}
+                aria-current={language === option.code ? "true" : undefined}
+                aria-label={option.label}
               >
                 {option.short}
               </button>
@@ -1204,11 +1261,11 @@ function App() {
       <main>
       {/* tabIndex -1 so the skip link moves focus here, not just the scroll position. */}
       <section className="hero" id="top" tabIndex={-1}>
+        {/* PENDING: swap to the self-hosted hero once src/assets/hero-nassau-hall.jpg
+            is in place and `npm run build:hero` has generated public/hero-nassau-hall-*.
+            The markup is written and the build script exists; only the photo is missing.
+            Until then this keeps the working image so the hero does not break. */}
         <div className="hero-media" aria-hidden="true">
-          {/* 421 KB, hotlinked from princeton.edu, and the LCP candidate. Dimensions and
-              fetchpriority reduce layout shift and pull it forward, but the real fix is a
-              self-hosted image we hold rights to. The ?itok= derivative token also expires
-              when the university rebuilds its image styles, which breaks this without warning. */}
           <img
             src="https://www.princeton.edu/sites/default/files/styles/half_2x/public/20161006_CL_DJA_028.jpg?itok=AGbX2ltx"
             alt=""
@@ -1229,7 +1286,7 @@ function App() {
             Find weather, alerts, public events, transit decisions, town services, library perks,
             and neighborhood-scale civic context in one independent daily guide.
           </p>
-          <div className="daily-shortcuts" aria-label="Resident shortcuts">
+          <div className="daily-shortcuts" role="group" aria-label="Resident shortcuts">
             {dailyShortcuts.map(({ label, value, url, icon: Icon }) => (
               <a href={url} key={label} {...externalLinkProps(url)}>
                 <Icon size={17} aria-hidden="true" />
@@ -1281,11 +1338,11 @@ function App() {
         </aside>
       </section>
 
-      <section className="section my-princeton" id="my-princeton">
+      <section className="section my-princeton" id="my-princeton" aria-labelledby="my-princeton-heading">
         <div className="section-heading split">
           <div>
             <p className="eyebrow">My Princeton</p>
-            <h2>Your local setup, saved on this device.</h2>
+            <h2 id="my-princeton-heading">Your local setup, saved on this device.</h2>
           </div>
           <p>
             Add a street and a few resident modes. PrincetonLive keeps this in your browser only,
@@ -1337,7 +1394,11 @@ function App() {
               </strong>
               <p>
                 {profileYardSchedule
-                  ? `Yard section ${profileWasteMatch.yardSection}; branch/log starts ${profileYardSchedule.branchAndLogs.slice(0, 3).join(", ")}.`
+                  ? `Yard section ${profileWasteMatch.yardSection}; next branch and log starts ${
+                      upcomingYardDates(profileYardSchedule.branchAndLogs, wasteData.yardScheduleYear)
+                        .slice(0, 3)
+                        .join(", ") || `none left in ${wasteData.yardScheduleYear}`
+                    }.`
                   : "Use the street lookup for pickup day, yard section, bulk rules, and Recycle Coach."}
               </p>
               <a
@@ -1395,11 +1456,11 @@ function App() {
         </div>
       </section>
 
-      <section className="section resident-checklist" id="new-resident">
+      <section className="section resident-checklist" id="new-resident" aria-labelledby="new-resident-heading">
         <div className="section-heading split">
           <div>
             <p className="eyebrow">New here</p>
-            <h2>First-week Princeton setup.</h2>
+            <h2 id="new-resident-heading">First-week Princeton setup.</h2>
           </div>
           <p>
             A practical checklist for turning Princeton from a famous place into a usable home:
@@ -1421,33 +1482,38 @@ function App() {
         </div>
       </section>
 
-      <section className="section today-grid" id="today">
+      <section className="section today-grid" id="today" aria-labelledby="today-heading">
         <div className="section-heading">
           <p className="eyebrow">Today</p>
-          <h2>Public events and resident signals.</h2>
+          <h2 id="today-heading">Public events and resident signals.</h2>
           <p>
             Pulled from public Princeton sources, then trimmed into a short list that is useful
             for a resident deciding what to do next.
           </p>
         </div>
-        <div className="control-row" aria-label="Agenda filters">
+        <div className="control-row" role="group" aria-label="Agenda filters">
           {agendaFilters.map(([value, label, Icon]) => (
             <button
               key={value}
               type="button"
               className={filter === value ? "is-active" : ""}
               onClick={() => setFilter(value)}
-              aria-pressed={filter === value}
+              aria-current={filter === value ? "true" : undefined}
             >
               <Icon size={17} aria-hidden="true" />
               {label}
             </button>
           ))}
         </div>
-        <label className="search-box">
-          <Search size={18} aria-hidden="true" />
-          <span className="sr-only">Search agenda</span>
+        {/* The Clear button used to sit inside the <label>, which is invalid and makes a
+            click on it also activate the input. The label now wraps only the field. */}
+        <div className="search-box">
+          <label htmlFor="agenda-search">
+            <Search size={18} aria-hidden="true" />
+            <span className="sr-only">Search agenda</span>
+          </label>
           <input
+            id="agenda-search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Search events, library, town, lectures..."
@@ -1457,14 +1523,14 @@ function App() {
               Clear
             </button>
           ) : null}
-        </label>
+        </div>
         <div className="results-meta" aria-live="polite">
           Showing {visibleEvents.length} of {filteredEvents.length} matching public items
         </div>
         {liveData.eventsArePlaceholder ? (
           <p className="agenda-placeholder-note" role="status">
-            The Princeton event feeds did not load, so the entries below are links to the
-            official calendars rather than today's listings.
+            The Princeton event feeds did not load. The entries below link to each official
+            calendar, so you can check today's listings at the source.
           </p>
         ) : null}
         <div className="agenda-list" key={`agenda-${filter}-${query}-${liveData.generatedAt}`}>
@@ -1534,11 +1600,11 @@ function App() {
         </section>
       ) : null}
 
-      <section className="section" id="move">
+      <section className="section" id="move" aria-labelledby="move-heading">
         <div className="section-heading split">
           <div>
             <p className="eyebrow">Move</p>
-            <h2>Make the commute choice before the calendar choice.</h2>
+            <h2 id="move-heading">Make the commute choice before the calendar choice.</h2>
           </div>
           <p>
             Princeton trips often hinge on one transfer, one parking rule, or one missed shuttle.
@@ -1559,10 +1625,10 @@ function App() {
         </div>
       </section>
 
-      <section className="section practical" id="practical">
+      <section className="section practical" id="practical" aria-labelledby="practical-heading">
         <div className="section-heading">
           <p className="eyebrow">Practical</p>
-          <h2>Resident errands without the tab hunt.</h2>
+          <h2 id="practical-heading">Resident errands without the tab hunt.</h2>
           <p>
             Start with the street lookup below when you need garbage day, bulk pickup rules,
             or the yard-waste section for a Princeton street.
@@ -1577,10 +1643,13 @@ function App() {
               garbage pickup, bulk pickup rules, and the yard-waste section used for leaves, branches,
               and logs.
             </p>
-            <label className="search-box waste-search">
-              <Search size={18} aria-hidden="true" />
-              <span className="sr-only">Search Princeton street waste schedule</span>
+            <div className="search-box waste-search">
+              <label htmlFor="waste-search-input">
+                <Search size={18} aria-hidden="true" />
+                <span className="sr-only">Search Princeton street waste schedule</span>
+              </label>
               <input
+                id="waste-search-input"
                 value={wasteQuery}
                 onChange={(event) => setWasteQuery(event.target.value)}
                 placeholder="Street name, e.g. Lytle Street"
@@ -1590,8 +1659,21 @@ function App() {
                   Clear
                 </button>
               ) : null}
-            </label>
-            <div className="waste-results" aria-live="polite">
+            </div>
+            {/* The live region is a short count, not the result list. Announcing up to
+                eight full records on every keystroke made the field unusable. */}
+            <div className="sr-only" aria-live="polite">
+              {normalizedWasteQuery
+                ? `${wasteMatches.length} street${wasteMatches.length === 1 ? "" : "s"} matched`
+                : ""}
+            </div>
+            {yardScheduleIsStale(wasteData) ? (
+              <p className="waste-stale" role="status">
+                The yard collection dates below are from the {wasteData.yardScheduleYear} schedule and
+                have not been replaced yet. Confirm with the municipal page before putting material out.
+              </p>
+            ) : null}
+            <div className="waste-results">
               {!normalizedWasteQuery ? (
                 <div className="waste-prompt">
                   <strong>Start with the street name only.</strong>
@@ -1607,6 +1689,9 @@ function App() {
               ) : wasteMatches.length ? (
                 wasteMatches.map((street) => {
                   const sectionSchedule = wasteSectionSchedule(wasteData, street.yardSection);
+                  const upcoming = sectionSchedule
+                    ? upcomingYardDates(sectionSchedule.branchAndLogs, wasteData.yardScheduleYear)
+                    : [];
                   return (
                     <article className="waste-result" key={`${street.normalized}-${street.trashDay}-${street.yardSection}`}>
                       <div>
@@ -1619,11 +1704,39 @@ function App() {
                         <small>Yard section</small>
                         <b>{street.yardSection}</b>
                       </div>
-                      {sectionSchedule ? (
-                        <p>
-                          Branch/log starts: {sectionSchedule.branchAndLogs.slice(0, 4).join(", ")}.
+                      {street.trashVariesByBlock && street.trashBlocks?.length ? (
+                        <p className="waste-blocks">
+                          <span>Garbage day depends on your block:</span>
+                          {street.trashBlocks.map((block) => (
+                            <span key={block.segment}>
+                              {block.segment}: <b>{block.value}</b>
+                            </span>
+                          ))}
                         </p>
-                      ) : (
+                      ) : null}
+                      {street.yardVariesByBlock && street.yardBlocks?.length ? (
+                        <p className="waste-blocks">
+                          <span>Yard section depends on your block:</span>
+                          {street.yardBlocks.map((block) => (
+                            <span key={block.segment}>
+                              {block.segment}: section <b>{block.value}</b>
+                            </span>
+                          ))}
+                        </p>
+                      ) : null}
+                      {street.trashDay === "NOT INCLUDED" ? (
+                        <p>{wasteData.rules?.notIncluded}</p>
+                      ) : null}
+                      {sectionSchedule ? (
+                        upcoming.length ? (
+                          <p>Next branch and log starts: {upcoming.slice(0, 4).join(", ")}.</p>
+                        ) : (
+                          <p>
+                            No branch or log start dates remain in the {wasteData.yardScheduleYear} schedule.
+                            Check the municipal page for next year's dates.
+                          </p>
+                        )
+                      ) : street.yardVariesByBlock ? null : (
                         <p>Use Recycle Coach or the official section list for address-level yard pickup.</p>
                       )}
                     </article>
@@ -1646,9 +1759,17 @@ function App() {
               </strong>
               <p>
                 {primaryYardSchedule
-                  ? `Section ${primaryWasteMatch.yardSection} loose leaves: ${primaryYardSchedule.looseLeaves.join(", ")}.`
+                  ? `Section ${primaryWasteMatch.yardSection} loose leaves: ${
+                      upcomingYardDates(primaryYardSchedule.looseLeaves, wasteData.yardScheduleYear).join(", ") ||
+                      `no dates left in ${wasteData.yardScheduleYear}`
+                    }.`
                   : wasteData.rules.yard}
               </p>
+              {/* Freshness was invisible here, so a resident could not tell a current
+                  schedule from one scraped before the town changed it. */}
+              <small className="waste-freshness">
+                Street data {formatRefresh(wasteData.generatedAt)}
+              </small>
             </div>
             <div className="waste-rules">
               <div>
@@ -1666,7 +1787,20 @@ function App() {
                 <p>Recycle Coach handles exact address schedules, reminders, recycling, and yard-waste updates.</p>
               </div>
               <div className="recyclecoach-embed">
-                <div id="rcroot" data-plugin={wasteData.recycleCoach.pluginToken} />
+                {recycleCoachFailed ? (
+                  <p className="recyclecoach-fallback">
+                    The Recycle Coach widget did not load.{" "}
+                    <a
+                      href={wasteData.recycleCoach.url}
+                      {...externalLinkProps(wasteData.recycleCoach.url)}
+                    >
+                      Open the official Princeton calendar
+                    </a>{" "}
+                    for address-level schedules and reminders.
+                  </p>
+                ) : (
+                  <div id="rcroot" data-plugin={wasteData.recycleCoach.pluginToken} />
+                )}
               </div>
             </div>
             <div className="source-links compact waste-links">
@@ -1689,11 +1823,11 @@ function App() {
         </div>
       </section>
 
-      <section className="section resident-perks" id="perks">
+      <section className="section resident-perks" id="perks" aria-labelledby="perks-heading">
         <div className="section-heading split">
           <div>
             <p className="eyebrow">Resident perks</p>
-            <h2>Things Princeton quietly makes available.</h2>
+            <h2 id="perks-heading">Things Princeton quietly makes available.</h2>
           </div>
           <p>
             A resident-first checklist of library benefits, learning access, arts resources, and
@@ -1723,11 +1857,11 @@ function App() {
         </div>
       </section>
 
-      <section className="section civic-section" id="civic">
+      <section className="section civic-section" id="civic" aria-labelledby="civic-heading">
         <div className="section-heading split">
           <div>
             <p className="eyebrow">Neighborhood context</p>
-            <h2>Public data, closer to daily life.</h2>
+            <h2 id="civic-heading">Public data, closer to daily life.</h2>
           </div>
           <p>
             Census block-group boundaries and ACS estimates make the map more local without exposing
@@ -1738,7 +1872,7 @@ function App() {
 
         <div className="civic-layout">
           <div className={`civic-map-panel metric-${civicMetric}`}>
-            <div className="civic-toolbar" aria-label="Neighborhood map metrics">
+            <div className="civic-toolbar" role="group" aria-label="Neighborhood map metrics">
               {civicMetrics.map(({ key, label, icon: Icon }) => (
                 <button
                   key={key}
@@ -1748,7 +1882,7 @@ function App() {
                     setCivicMetric(key);
                     setHoveredSchool(null);
                   }}
-                  aria-pressed={civicMetric === key}
+                  aria-current={civicMetric === key ? "true" : undefined}
                 >
                   <Icon size={17} aria-hidden="true" />
                   {label}
@@ -1846,6 +1980,11 @@ function App() {
                           event.preventDefault();
                           setHoveredCivicFeature(feature);
                         }
+                        // WCAG 1.4.13 requires hover/focus content to be dismissable
+                        // without moving the pointer or focus.
+                        if (event.key === "Escape") {
+                          setHoveredCivicFeature(null);
+                        }
                       }}
                     >
                       <title>
@@ -1895,6 +2034,10 @@ function App() {
                             }
                           }}
                         >
+                          {/* The visible marker is 7.3px across on a 360px phone, well
+                              under the 24px minimum. This invisible circle enlarges the
+                              hit area without changing the design. */}
+                          <circle className="school-marker-hit" r="8" />
                           <circle r="2.2" />
                           <text y="0.74" textAnchor="middle">
                             S
@@ -2164,11 +2307,11 @@ function App() {
         </div>
       </section>
 
-      <section className="section faq-section" id="faq">
+      <section className="section faq-section" id="faq" aria-labelledby="faq-heading">
         <div className="section-heading split">
           <div>
             <p className="eyebrow">FAQ</p>
-            <h2>Clear answers for residents and AI assistants.</h2>
+            <h2 id="faq-heading">Clear answers for residents and AI assistants.</h2>
           </div>
           <p>
             Short answers to the questions a new Princetonian, a search engine, or an AI chatbot
@@ -2185,11 +2328,11 @@ function App() {
         </div>
       </section>
 
-      <section className="section guides-section" id="guides">
+      <section className="section guides-section" id="guides" aria-labelledby="guides-heading">
         <div className="section-heading split">
           <div>
             <p className="eyebrow">Guides</p>
-            <h2>Stable pages for recurring Princeton questions.</h2>
+            <h2 id="guides-heading">Stable pages for recurring Princeton questions.</h2>
           </div>
           <p>
             Crawlable resident guides give search engines and AI assistants durable pages to cite,
@@ -2265,10 +2408,10 @@ function App() {
         </div>
       </section>
 
-      <section className="section explore" id="explore">
+      <section className="section explore" id="explore" aria-labelledby="explore-heading">
         <div>
           <p className="eyebrow">Explore</p>
-          <h2>First-month Princeton walks.</h2>
+          <h2 id="explore-heading">First-month Princeton walks.</h2>
           <p>
             Short local anchors for learning the town beyond Nassau Street, selected for everyday
             usefulness rather than tourism.

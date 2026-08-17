@@ -1,7 +1,13 @@
 import { mkdir, writeFile } from "node:fs/promises";
 
 const SITE_URL = "https://princetonlive.berteloot.org";
-const today = "2026-08-17";
+// Stamped at build time. A frozen constant kept re-publishing the same lastmod and
+// dateModified on every rebuild, so the freshness signal was false as soon as any
+// content changed. SOURCE_DATE_EPOCH is honored for reproducible builds.
+const buildDate = process.env.SOURCE_DATE_EPOCH
+  ? new Date(Number(process.env.SOURCE_DATE_EPOCH) * 1000)
+  : new Date();
+const today = buildDate.toISOString().slice(0, 10);
 const googleTag = `    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RL5N5X5EZE"></script>
     <script>
@@ -354,36 +360,42 @@ ${jsonLd}
     </script>
     <title>${escapeHtml(title)} | PrincetonLive</title>
     <style>
-      :root { color-scheme: light; --orange: #ee7f2d; --black: #171f1b; --ink: #26332c; --muted: #5e6a62; --paper: #f8faf4; }
+      :root { color-scheme: light; --orange: #994400; --black: #171f1b; --ink: #26332c; --muted: #5e6a62; --paper: #f8faf4; }
       * { box-sizing: border-box; }
       body { margin: 0; color: var(--ink); background: var(--paper); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; }
-      a { color: #b65216; font-weight: 800; text-decoration: none; }
+      a { color: #994400; font-weight: 800; text-decoration: underline; text-underline-offset: 2px; }
       a:hover { color: var(--black); }
       header, main, footer { padding: 28px clamp(18px, 5vw, 72px); }
-      .topbar { display: flex; align-items: center; justify-content: space-between; gap: 18px; background: #fff; border-bottom: 1px solid rgba(23, 31, 27, .1); }
+      .topbar { display: flex; align-items: center; justify-content: space-between; gap: 18px; background: #fff; border-bottom: 1px solid rgba(23, 31, 27, .32); }
       .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--black); font-weight: 950; }
       .mark { display: grid; place-items: center; width: 38px; height: 38px; color: #fff; background: var(--black); border-radius: 8px; }
       nav { display: flex; flex-wrap: wrap; gap: 12px; }
-      nav a { color: var(--muted); font-size: .94rem; }
+      nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 12px; color: var(--muted); font-size: .94rem; }
       .hero { display: grid; gap: 14px; max-width: 940px; padding-top: 52px; padding-bottom: 36px; }
       .eyebrow { margin: 0; color: var(--orange); font-size: .78rem; font-weight: 950; letter-spacing: .08em; text-transform: uppercase; }
       h1 { margin: 0; color: var(--black); font-size: clamp(2.4rem, 7vw, 5.3rem); line-height: .95; letter-spacing: 0; }
       h2 { margin: 0 0 10px; color: var(--black); font-size: clamp(1.45rem, 3vw, 2.1rem); line-height: 1.05; }
       h3 { margin: 0 0 6px; color: var(--black); }
       p { margin: 0; }
-      .answer { max-width: 800px; padding: 18px; background: #fff; border: 1px solid rgba(23, 31, 27, .1); border-radius: 8px; box-shadow: 0 14px 40px rgba(23, 31, 27, .05); }
+      .answer { max-width: 800px; padding: 18px; background: #fff; border: 1px solid rgba(23, 31, 27, .32); border-radius: 8px; box-shadow: 0 14px 40px rgba(23, 31, 27, .05); }
       .layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, .36fr); gap: clamp(22px, 5vw, 60px); align-items: start; }
       article { display: grid; gap: 22px; max-width: 880px; }
-      section, aside { padding: 22px; background: #fff; border: 1px solid rgba(23, 31, 27, .1); border-radius: 8px; }
+      section, aside { padding: 22px; background: #fff; border: 1px solid rgba(23, 31, 27, .32); border-radius: 8px; }
       .toc, .related { display: grid; gap: 10px; }
       .toc a, .related a { display: block; padding: 10px 0; border-bottom: 1px solid rgba(23, 31, 27, .08); }
       .faq { display: grid; gap: 12px; }
       footer { color: #fff; background: var(--black); }
       footer a { color: #ffb27a; }
+      :focus-visible { outline: 3px solid #994400; outline-offset: 2px; border-radius: 4px; }
+      footer :focus-visible { outline-color: #ffb27a; }
+      .skip-link { position: absolute; left: -9999px; top: 0; z-index: 99; padding: 12px 18px; color: #fff; background: var(--black); text-decoration: none; }
+      .skip-link:focus { left: 0; }
+      @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
       @media (max-width: 820px) { .topbar, .layout { grid-template-columns: 1fr; } .topbar { align-items: flex-start; flex-direction: column; } }
     </style>
   </head>
   <body class="${pageClass}">
+    <a class="skip-link" href="#guide-main">Skip to main content</a>
     <header class="topbar">
       <a class="brand" href="/">
         <span class="mark">PL</span>
@@ -402,6 +414,7 @@ ${jsonLd}
 ${body}
     <footer>
       <p>PrincetonLive is an independent resident guide. Use official linked sources for authoritative rules, schedules, eligibility, and emergency details.</p>
+      <p>This page was last updated on <time datetime="${today}">${today}</time>.</p>
       <p><a href="/">Return to PrincetonLive</a></p>
     </footer>
   </body>
@@ -414,9 +427,9 @@ function guideHtml(guide) {
   const sectionNav = guide.sections
     .map((section, index) => `<a href="#section-${index + 1}">${escapeHtml(section.heading)}</a>`)
     .join("\n");
+  // No slice: with six guides the old .slice(0, 4) orphaned one sibling on every page.
   const relatedGuides = pillarGuides
     .filter((item) => item.slug !== guide.slug)
-    .slice(0, 4)
     .map((item) => `<a href="${guidePath(item.slug)}">${escapeHtml(item.title)}</a>`)
     .join("\n");
   const relatedAnchors = guide.relatedAnchors
@@ -442,7 +455,7 @@ function guideHtml(guide) {
     .join("\n");
 
   const body = `
-    <main>
+    <main id="guide-main" tabindex="-1">
       <div class="hero">
         <p class="eyebrow">PrincetonLive guide</p>
         <h1>${escapeHtml(guide.title)}</h1>
@@ -513,7 +526,7 @@ function guidesIndexHtml() {
     },
   };
   const body = `
-    <main>
+    <main id="guide-main" tabindex="-1">
       <div class="hero">
         <p class="eyebrow">Resident guide hub</p>
         <h1>PrincetonLive resident guides.</h1>

@@ -10,6 +10,7 @@
     "refresh:civic": "node scripts/fetch-civic-map.mjs",
     "refresh:waste": "node scripts/fetch-waste-data.mjs",
     "refresh:public": "npm run refresh:data && npm run refresh:civic && npm run refresh:waste",
+    "build:hero": "node scripts/build-hero-image.mjs",
     "build": "npm run build:seo && npm run refresh:public && vite build",
     "preview": "vite preview --host 0.0.0.0"
   },
