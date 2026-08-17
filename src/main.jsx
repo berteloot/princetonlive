@@ -14,6 +14,7 @@ import {
   CloudRain,
   ExternalLink,
   Film,
+  Info,
   Landmark,
   Library,
   Map,
@@ -824,6 +825,18 @@ function App() {
               <BarChart3 size={19} aria-hidden="true" />
               <strong>{civicMap.release}</strong>
               <span>{civicMap.privacy}</span>
+            </div>
+            <div className="tract-explainer">
+              <Info size={19} aria-hidden="true" />
+              <strong>What is a tract?</strong>
+              <span>
+                A census tract is a stable Census comparison area, often neighborhood-sized.
+                It is useful for statistics, but it is not a named neighborhood, voting precinct,
+                or exact address.
+              </span>
+              <a href="https://www.census.gov/programs-surveys/geography/about/glossary.html">
+                Census glossary
+              </a>
             </div>
             {civicMetric === "voting" ? (
               <div className="voting-note">

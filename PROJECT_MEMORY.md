@@ -85,9 +85,11 @@ Civic map:
 - Civic map legends must show both sides of the scale. For wealth/children layers, darker means higher. Children count and child share must use distinct labels and color scales because count and percentage answer different questions. For voting, red-to-blue means Republican-to-Democratic.
 - Civic map regions should expose their current metric on hover, focus, and tap/click.
 - Civic map benchmarks must be generated from public data during refresh. Income and child-share use U.S. ACS values from the same release as Princeton tract estimates; children count is compared with U.S. average residents under 18 per census tract, not the national child total.
+- Explain Census terms in resident language. A tract should be presented as a stable Census comparison area, often neighborhood-sized, not as a named neighborhood, voting precinct, or address.
 
 ## Feature Log
 
+- Latest - Added a plain-English "What is a tract?" explainer to the civic map.
 - Latest - Added U.S. benchmark comparisons to civic map metrics, generated from public Census/FEC sources during the civic data refresh.
 - Latest - Improved civic map hover/tap details, fixed lower/higher legends, and reflected official Princeton municipal presidential results on the voting layer.
 - Latest - Made the civic map distinction between children count and child share explicit, with separate green and blue scales.

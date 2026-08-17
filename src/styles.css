@@ -936,6 +936,7 @@ h3 {
 
 .civic-map-panel,
 .privacy-note,
+.tract-explainer,
 .voting-note,
 .highlight-list div,
 .tract-rank {
@@ -1189,14 +1190,36 @@ h3 {
   padding: 16px;
 }
 
-.privacy-note svg {
+.privacy-note svg,
+.tract-explainer svg {
   grid-row: span 2;
   color: var(--princeton-orange);
 }
 
-.privacy-note span {
+.privacy-note span,
+.tract-explainer span {
   color: #5e6a62;
   line-height: 1.45;
+}
+
+.tract-explainer {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 5px 10px;
+  padding: 16px;
+  background: #fffaf1;
+}
+
+.tract-explainer a {
+  grid-column: 2;
+  width: fit-content;
+  color: var(--orange-deep);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.tract-explainer a:hover {
+  color: var(--princeton-black);
 }
 
 .highlight-list {
