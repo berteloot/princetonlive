@@ -108,7 +108,7 @@ const fallbackWasteData = {
   },
   rules: {
     trash:
-      "Place Princeton trash carts no earlier than 7 PM the day before collection and no later than 7 AM on collection day.",
+      "Place Princeton garbage carts no earlier than 7 PM the day before collection and no later than 7 AM on collection day.",
     bulk:
       "Bulk waste is collected Wednesdays by reservation only. Reserve by Sunday 11:59 PM.",
     yard:
@@ -119,7 +119,7 @@ const fallbackWasteData = {
   yardSchedule2026: {},
   streets: [],
   sources: [
-    { name: "Princeton trash collection", url: "https://www.princetonnj.gov/1359/Trash-Collection" },
+    { name: "Princeton garbage collection", url: "https://www.princetonnj.gov/1359/Trash-Collection" },
     { name: "Leaf, branch, and log collection", url: "https://www.princetonnj.gov/450/Leaf-Branch-and-Log-Collection" },
     { name: "Recycle Coach Princeton", url: "https://recyclecoach.com/cities/usa-nj-municipality-of-princeton/" },
   ],
@@ -266,7 +266,7 @@ const practicalTiles = [
     icon: AlertTriangle,
   },
   {
-    label: "Trash & recycling",
+    label: "Garbage & recycling",
     value: "Street lookup",
     url: "#waste",
     icon: Recycle,
@@ -943,7 +943,7 @@ function App() {
             <a href="#today">Today</a>
             <a href="#move">Move</a>
             <a href="#practical">Practical</a>
-            <a href="#waste">Trash</a>
+            <a href="#waste">Garbage</a>
             <a href="#perks">Perks</a>
             <a href="#civic">Civic map</a>
             <a href="#guides">Guides</a>
@@ -1151,17 +1151,17 @@ function App() {
           <p className="eyebrow">Practical</p>
           <h2>Resident errands without the tab hunt.</h2>
           <p>
-            Start with the street lookup below when you need trash day, bulk pickup rules,
+            Start with the street lookup below when you need garbage day, bulk pickup rules,
             or the yard-waste section for a Princeton street.
           </p>
         </div>
         <section className="waste-tool" id="waste" aria-labelledby="waste-heading">
           <div className="waste-copy">
-            <p className="eyebrow">Trash pickup by street</p>
-            <h3 id="waste-heading">Type your street to find your Princeton trash day.</h3>
+            <p className="eyebrow">Garbage pickup by street</p>
+            <h3 id="waste-heading">Type your street to find your Princeton garbage day.</h3>
             <p>
               Search the town's public street schedule by street name only. The result shows regular
-              trash pickup, bulk pickup rules, and the yard-waste section used for leaves, branches,
+              garbage pickup, bulk pickup rules, and the yard-waste section used for leaves, branches,
               and logs.
             </p>
             <label className="search-box waste-search">
@@ -1187,7 +1187,7 @@ function App() {
                       <div>
                         <strong>{street.street}</strong>
                         <span>
-                          Trash: {street.trashDay === "NOT INCLUDED" ? "not included" : street.trashDay}
+                          Garbage: {street.trashDay === "NOT INCLUDED" ? "not included" : street.trashDay}
                         </span>
                       </div>
                       <div>

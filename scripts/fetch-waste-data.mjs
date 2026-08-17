@@ -182,7 +182,7 @@ const payload = {
   },
   rules: {
     trash:
-      "Place Princeton trash carts no earlier than 7 PM the day before collection and no later than 7 AM on collection day. Central Business District timing differs.",
+      "Place Princeton garbage carts no earlier than 7 PM the day before collection and no later than 7 AM on collection day. Central Business District timing differs.",
     bulk:
       "Bulk waste is collected Wednesdays by reservation only. Reserve by Sunday 11:59 PM; maximum two eligible items per week, each up to 50 pounds.",
     yard:
@@ -193,8 +193,8 @@ const payload = {
   yardSchedule2026,
   streets,
   sources: [
-    { name: "Princeton trash collection", url: "https://www.princetonnj.gov/1359/Trash-Collection" },
-    { name: "Trash collection schedule by street", url: trashStreetUrl },
+    { name: "Princeton garbage collection", url: "https://www.princetonnj.gov/1359/Trash-Collection" },
+    { name: "Garbage collection schedule by street", url: trashStreetUrl },
     { name: "Leaf, branch, and log collection", url: "https://www.princetonnj.gov/450/Leaf-Branch-and-Log-Collection" },
     { name: "Residential brush and leaf collection sections", url: yardSectionUrl },
     { name: "2026 waste collection brochure", url: wasteMailerUrl },

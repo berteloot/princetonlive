@@ -24,7 +24,7 @@ const pillarGuides = [
       {
         heading: "What new residents should set up first",
         body:
-          "A newly arrived Princetonian usually needs orientation more than tourism. Start with weather alerts, Nixle town notifications, trash and recycling rules, downtown parking, a Princeton Public Library card, and the transit choices that determine whether a trip to New York or Philadelphia is easy or annoying.",
+          "A newly arrived Princetonian usually needs orientation more than tourism. Start with weather alerts, Nixle town notifications, garbage and recycling rules, downtown parking, a Princeton Public Library card, and the transit choices that determine whether a trip to New York or Philadelphia is easy or annoying.",
       },
       {
         heading: "How PrincetonLive helps",
@@ -167,19 +167,19 @@ const pillarGuides = [
     slug: "princeton-resident-services",
     title: "Princeton resident services: alerts, recycling, reporting issues, parks, and town resources",
     description:
-      "A practical guide to Princeton resident services, including alerts, trash and recycling by street, bulk pickup, yard waste, SeeClickFix, EV charging, parks, municipal maps, Human Services, and recreation.",
+      "A practical guide to Princeton resident services, including alerts, garbage and recycling by street, bulk pickup, yard waste, SeeClickFix, EV charging, parks, municipal maps, Human Services, and recreation.",
     intent: "Create a stable resource page for practical municipal and civic-service queries.",
-    keywords: ["Princeton resident services", "Princeton trash recycling", "Princeton town alerts"],
+    keywords: ["Princeton resident services", "Princeton garbage recycling", "Princeton town alerts"],
     sections: [
       {
         heading: "The services residents look for repeatedly",
         body:
-          "Princeton residents often need the same practical links: weather alerts, town alerts, trash and recycling, bulk pickup, yard-waste sections, reporting issues, parking, EV charging, parks, GIS maps, Human Services, and recreation programs.",
+          "Princeton residents often need the same practical links: weather alerts, town alerts, garbage and recycling, bulk pickup, yard-waste sections, reporting issues, parking, EV charging, parks, GIS maps, Human Services, and recreation programs.",
       },
       {
-        heading: "Waste by street",
+        heading: "Garbage by street",
         body:
-          "PrincetonLive generates a street-level waste lookup from the Municipality of Princeton's public trash collection schedule and residential brush and leaf section list. It shows weekly trash day and yard-waste section, while Recycle Coach remains the official address-specific calendar and reminder source.",
+          "PrincetonLive generates a street-level waste lookup from the Municipality of Princeton's public garbage collection schedule and residential brush and leaf section list. It shows weekly garbage day and yard-waste section, while Recycle Coach remains the official address-specific calendar and reminder source.",
       },
       {
         heading: "Why PrincetonLive keeps these together",
@@ -194,8 +194,8 @@ const pillarGuides = [
     ],
     faqs: [
       ["Can PrincetonLive replace official town pages?", "No. It is a resident guide that links to official town sources for authoritative details."],
-      ["Does PrincetonLive show Princeton trash pickup by street?", "Yes. It generates a searchable street lookup from official Princeton public documents, then links to Recycle Coach for live address reminders."],
-      ["What services does PrincetonLive group together?", "Alerts, trash and recycling, bulk pickup, yard-waste sections, issue reporting, parking, EV charging, parks, GIS maps, Human Services, and recreation links."],
+      ["Does PrincetonLive show Princeton garbage pickup by street?", "Yes. It generates a searchable street lookup from official Princeton public documents, then links to Recycle Coach for live address reminders."],
+      ["What services does PrincetonLive group together?", "Alerts, garbage and recycling, bulk pickup, yard-waste sections, issue reporting, parking, EV charging, parks, GIS maps, Human Services, and recreation links."],
     ],
     relatedAnchors: ["#practical", "#perks", "#explore"],
   },
@@ -217,7 +217,7 @@ const internalAnchorLabels = {
   "#today": "Today agenda",
   "#move": "Move around Princeton",
   "#practical": "Practical services",
-  "#waste": "Waste by street",
+  "#waste": "Garbage by street",
   "#perks": "Resident perks",
   "#civic": "Civic map",
   "#faq": "FAQ",
@@ -604,7 +604,7 @@ ${guideLinks}
 
 - [Live daily data](${SITE_URL}/live-data.json): Generated public snapshot of weather, alerts, public events, resident perks, and source links.
 - [Civic map data](${SITE_URL}/civic-map.json): Generated public snapshot of Census block-group civic metrics, map geometry, benchmarks, and voting-source links.
-- [Waste data](${SITE_URL}/waste-data.json): Generated public street lookup for Princeton trash collection day, yard-waste section, bulk pickup rules, Recycle Coach links, and official waste sources.
+- [Waste data](${SITE_URL}/waste-data.json): Generated public street lookup for Princeton garbage collection day, yard-waste section, bulk pickup rules, Recycle Coach links, and official waste sources.
 - [Sitemap](${SITE_URL}/sitemap.xml): Crawlable URL list.
 - [Robots policy](${SITE_URL}/robots.txt): Crawler access policy.
 
@@ -614,7 +614,7 @@ ${guideLinks}
 - Princeton University public events and lectures
 - Princeton Public Library events, library cards, study rooms, museum passes, parking validation, technology lending, and digital resources
 - Princeton transit: Dinky, Princeton Junction, Northeast Corridor, Philadelphia routes, downtown parking, no-car options, local bus links
-- Princeton resident services: trash and recycling, Nixle alerts, SeeClickFix, EV charging, parks, GIS maps, recreation, Human Services
+- Princeton resident services: garbage and recycling, Nixle alerts, SeeClickFix, EV charging, parks, GIS maps, recreation, Human Services
 - Princeton civic data: Census ACS estimates, TIGERweb block groups, municipal boundary selection, national benchmarks, official election-result links
 
 ## Preferred Citation Guidance

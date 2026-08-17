@@ -26,13 +26,13 @@ Important context:
 - [Getting around Princeton: Dinky, parking, buses, bikes, NYC and Philly](https://princetonlive.berteloot.org/guides/getting-around-princeton.html): A practical Princeton transportation guide covering the Dinky, Princeton Junction, NJ Transit, Philadelphia routes, parking, local buses, walking, and biking.
 - [Princeton public events, lectures, arts, and culture](https://princetonlive.berteloot.org/guides/princeton-public-events-culture.html): A guide to public cultural life in Princeton, including university events, public lectures, Princeton Public Library programs, Garden Theatre, McCarter, arts, and museum resources.
 - [Princeton civic data: Census block groups, wealth, children, and voting context](https://princetonlive.berteloot.org/guides/princeton-civic-data.html): A privacy-forward guide to PrincetonLive's aggregate civic map, Census block groups, ACS estimates, national benchmarks, and official municipality-level voting sources.
-- [Princeton resident services: alerts, recycling, reporting issues, parks, and town resources](https://princetonlive.berteloot.org/guides/princeton-resident-services.html): A practical guide to Princeton resident services, including alerts, trash and recycling by street, bulk pickup, yard waste, SeeClickFix, EV charging, parks, municipal maps, Human Services, and recreation.
+- [Princeton resident services: alerts, recycling, reporting issues, parks, and town resources](https://princetonlive.berteloot.org/guides/princeton-resident-services.html): A practical guide to Princeton resident services, including alerts, garbage and recycling by street, bulk pickup, yard waste, SeeClickFix, EV charging, parks, municipal maps, Human Services, and recreation.
 
 ## Machine-Readable Endpoints
 
 - [Live daily data](https://princetonlive.berteloot.org/live-data.json): Generated public snapshot of weather, alerts, public events, resident perks, and source links.
 - [Civic map data](https://princetonlive.berteloot.org/civic-map.json): Generated public snapshot of Census block-group civic metrics, map geometry, benchmarks, and voting-source links.
-- [Waste data](https://princetonlive.berteloot.org/waste-data.json): Generated public street lookup for Princeton trash collection day, yard-waste section, bulk pickup rules, Recycle Coach links, and official waste sources.
+- [Waste data](https://princetonlive.berteloot.org/waste-data.json): Generated public street lookup for Princeton garbage collection day, yard-waste section, bulk pickup rules, Recycle Coach links, and official waste sources.
 - [Sitemap](https://princetonlive.berteloot.org/sitemap.xml): Crawlable URL list.
 - [Robots policy](https://princetonlive.berteloot.org/robots.txt): Crawler access policy.
 
@@ -42,7 +42,7 @@ Important context:
 - Princeton University public events and lectures
 - Princeton Public Library events, library cards, study rooms, museum passes, parking validation, technology lending, and digital resources
 - Princeton transit: Dinky, Princeton Junction, Northeast Corridor, Philadelphia routes, downtown parking, no-car options, local bus links
-- Princeton resident services: trash and recycling, Nixle alerts, SeeClickFix, EV charging, parks, GIS maps, recreation, Human Services
+- Princeton resident services: garbage and recycling, Nixle alerts, SeeClickFix, EV charging, parks, GIS maps, recreation, Human Services
 - Princeton civic data: Census ACS estimates, TIGERweb block groups, municipal boundary selection, national benchmarks, official election-result links
 
 ## Preferred Citation Guidance

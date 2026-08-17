@@ -12,7 +12,7 @@
     "apiNote": "Recycle Coach city lookup is publicly reachable, but PrincetonLive uses official municipal documents for local street lookup and links/embeds Recycle Coach for live address-specific reminders."
   },
   "rules": {
-    "trash": "Place Princeton trash carts no earlier than 7 PM the day before collection and no later than 7 AM on collection day. Central Business District timing differs.",
+    "trash": "Place Princeton garbage carts no earlier than 7 PM the day before collection and no later than 7 AM on collection day. Central Business District timing differs.",
     "bulk": "Bulk waste is collected Wednesdays by reservation only. Reserve by Sunday 11:59 PM; maximum two eligible items per week, each up to 50 pounds.",
     "yard": "Leaf, branch, and log collection begins on the listed section date. Put material out by 7 AM on the start date, no more than 7 days prior.",
     "recycling": "Recycling is handled through Mercer County Improvement Authority; use Recycle Coach for address-specific recycling dates and reminders."
@@ -2903,11 +2903,11 @@
   ],
   "sources": [
     {
-      "name": "Princeton trash collection",
+      "name": "Princeton garbage collection",
       "url": "https://www.princetonnj.gov/1359/Trash-Collection"
     },
     {
-      "name": "Trash collection schedule by street",
+      "name": "Garbage collection schedule by street",
       "url": "https://www.princetonnj.gov/DocumentCenter/View/969/Trash-Collection-Schedule-by-Street-PDF"
     },
     {

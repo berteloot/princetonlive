@@ -101,7 +101,7 @@ Civic map:
 - NJ School Performance Reports as the official public report-card source
 
 Waste:
-- Princeton trash collection page and public trash collection schedule by street
+- Princeton garbage collection page and public street schedule
 - Princeton leaf, branch, and log collection page and residential brush/leaf section list
 - Princeton 2026 waste collection brochure for yard-waste section dates and placement rules
 - Recycle Coach Princeton city record/widget for official live address-specific reminders
@@ -128,7 +128,7 @@ Explore walks:
 - Mobile navigation wraps cleanly on iPhone-width screens instead of clipping or requiring horizontal scrolling.
 - Deep links are re-applied after React/data hydration so links like `#waste` and `#civic` land on the correct section on mobile and desktop.
 - First-month walk cards must include actionable guide/map links. Avoid listing walks that residents cannot open in a map or official/stable resource.
-- Trash pickup by street is a primary resident tool. Keep it directly reachable from the top navigation as `#waste` and placed before lower-priority practical service tiles.
+- Garbage pickup by street is a primary resident tool. Keep it directly reachable from the top navigation as `#waste` and placed before lower-priority practical service tiles.
 - Civic data must be neighborhood-scale or aggregate only. Do not publish individual voter, household, or address-level data.
 - The voting layer may show official Princeton municipal-level Republican/Democrat results across the map, but neighborhood shading should only be added after official district totals are safely joined to public district boundaries.
 - Civic map legends must show both sides of the scale. For wealth/children layers, darker means higher. Children count and child share must use distinct labels and color scales because count and percentage answer different questions. For voting, red-to-blue means Republican-to-Democratic.
@@ -141,7 +141,7 @@ Explore walks:
 - Resident perks must distinguish free benefits from access programs that cost money. Princeton University Community Auditing is resident-relevant, but it is tuition-based, not a free library-style perk.
 - The Census API key must stay server/build-side only. The browser receives generated aggregate JSON, never the key.
 - GitHub scheduled refresh passes `CENSUS_API_KEY` from repository secrets when configured and falls back to Census Reporter when absent.
-- Waste pickup should be resident-first and street/address-first. Use official Princeton street schedules to generate a local searchable trash-day and yard-section lookup. Recycle Coach has a public city lookup and official widget, but no documented stable schedule API for PrincetonLive use, so link/embed Recycle Coach for live address-specific reminders instead of reverse-engineering private schedule endpoints.
+- Waste pickup should be resident-first and street/address-first. Use official Princeton street schedules to generate a local searchable garbage-day and yard-section lookup. Recycle Coach has a public city lookup and official widget, but no documented stable schedule API for PrincetonLive use, so link/embed Recycle Coach for live address-specific reminders instead of reverse-engineering private schedule endpoints.
 - External links should open in a new tab with `target="_blank"` and `rel="noopener noreferrer"` so visitors do not lose PrincetonLive. In-page hash navigation stays in the same tab.
 - SEO/GEO crawlability matters: `index.html` must keep crawlable fallback body content inside `#root`, a clear H1, canonical/geo/social metadata, and JSON-LD in the initial HTML so non-JavaScript AI/search crawlers can classify the page.
 - Structured data should represent visible page content. Keep the visible FAQ in sync with the FAQPage JSON-LD and keep the civic Dataset JSON-LD aligned with `public/civic-map.json`.
@@ -155,12 +155,13 @@ Explore walks:
 
 - Latest - Added Google tag / GA4 measurement ID `G-RL5N5X5EZE` to the app shell and generated SEO pillar pages.
 - Latest - Added guide and map links to every First-month Princeton walk card.
-- Latest - Promoted Trash pickup by street into the primary navigation and moved the lookup above practical service tiles.
+- Latest - Renamed user-facing pickup language to garbage pickup.
+- Latest - Promoted Garbage pickup by street into the primary navigation and moved the lookup above practical service tiles.
 - Latest - Added Pierre site health monitoring with 15-minute GitHub Actions checks and Telegram alert secrets, mirroring the Le Pouliguen Live monitoring pattern.
-- Latest - Fixed iPhone navigation wrapping and post-hydration hash scrolling for direct links such as Waste by Street and Civic Map.
+- Latest - Fixed iPhone navigation wrapping and post-hydration hash scrolling for direct links such as Garbage by Street and Civic Map.
 - Latest - Added generated JSON endpoints to the sitemap for AI/chatbot SEO discoverability.
 - Latest - Added a generated SEO pillar guide cluster under `/guides/` for moving to Princeton, library benefits, transit, culture, civic data, and resident services, with homepage internal links.
-- Latest - Added a generated waste-data refresh and practical Waste by Street tool using Princeton public trash-day and brush/leaf section documents, plus Recycle Coach as the official live address calendar.
+- Latest - Added a generated waste-data refresh and practical Garbage by Street tool using Princeton public garbage-day and brush/leaf section documents, plus Recycle Coach as the official live address calendar.
 - Latest - Reduced the homepage hero headline from a long descriptive sentence to `PrincetonLive`, with the resident-guide phrase moved into smaller lead copy for better first-viewport usability.
 - Latest - Added a Schools layer to the civic map with Princeton Public Schools campus points, grade context, official district links, assignment caveat, and NJDOE report links.
 - Latest - Added SEO/GEO crawlability layer: raw HTML answer block, explicit H1, canonical/social/geo metadata, JSON-LD graph, robots.txt, sitemap.xml, llms.txt, and visible resident FAQ.
