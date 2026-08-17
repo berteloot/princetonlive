@@ -907,14 +907,26 @@ function App() {
     script.async = true;
     script.onerror = () => setRecycleCoachFailed(true);
     document.head.appendChild(script);
+
     // The loader 302-redirects and can silently never render, which left the embed
-    // showing "Loading official Recycle Coach calendar..." forever. Fall back to a
-    // plain link after 8 seconds so the resident still gets somewhere.
-    const timer = window.setTimeout(() => {
-      const widget = document.querySelector(".recyclecoach-card iframe, .recyclecoach-card [data-rc-widget]");
-      if (!widget) setRecycleCoachFailed(true);
-    }, 8000);
-    return () => window.clearTimeout(timer);
+    // showing "Loading official Recycle Coach calendar..." forever. Fall back to a plain
+    // link only when the mount point is genuinely still empty. An earlier version looked
+    // for an iframe, which this widget never creates, so it showed the fallback even on
+    // a healthy load. Poll rather than check once, because the widget renders whenever
+    // the CDN script gets round to it.
+    const deadline = Date.now() + 15000;
+    const poll = window.setInterval(() => {
+      const root = document.getElementById("rcroot");
+      if (root && root.childElementCount > 0) {
+        window.clearInterval(poll);
+        return;
+      }
+      if (Date.now() >= deadline) {
+        window.clearInterval(poll);
+        setRecycleCoachFailed(true);
+      }
+    }, 1000);
+    return () => window.clearInterval(poll);
   }, []);
 
   useEffect(() => {
@@ -1261,19 +1273,33 @@ function App() {
       <main>
       {/* tabIndex -1 so the skip link moves focus here, not just the scroll position. */}
       <section className="hero" id="top" tabIndex={-1}>
-        {/* PENDING: swap to the self-hosted hero once src/assets/hero-nassau-hall.jpg
-            is in place and `npm run build:hero` has generated public/hero-nassau-hall-*.
-            The markup is written and the build script exists; only the photo is missing.
-            Until then this keeps the working image so the hero does not break. */}
+        {/* Self-hosted photograph of the Nassau Hall cupola, owned by the site author.
+            Replaces a 421 KB image hotlinked from princeton.edu that was the LCP
+            candidate, spent a third party's bandwidth, carried an ?itok= derivative token
+            that expires whenever the university rebuilds its image styles, and was
+            university-owned imagery on an independent site. 5408x3072 source, generated
+            by `npm run build:hero`. A phone now pulls 39 to 76 KB. */}
         <div className="hero-media" aria-hidden="true">
-          <img
-            src="https://www.princeton.edu/sites/default/files/styles/half_2x/public/20161006_CL_DJA_028.jpg?itok=AGbX2ltx"
-            alt=""
-            width="1920"
-            height="1280"
-            fetchPriority="high"
-            decoding="async"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcSet={[
+                "/hero-nassau-hall-800.webp 800w",
+                "/hero-nassau-hall-1200.webp 1200w",
+                "/hero-nassau-hall-1600.webp 1600w",
+                "/hero-nassau-hall-2000.webp 2000w",
+              ].join(", ")}
+              sizes="100vw"
+            />
+            <img
+              src="/hero-nassau-hall-1600.jpg"
+              alt=""
+              width="1600"
+              height="909"
+              fetchPriority="high"
+              decoding="async"
+            />
+          </picture>
         </div>
         <div className="hero-copy">
           <p className="eyebrow">Princeton, NJ today</p>

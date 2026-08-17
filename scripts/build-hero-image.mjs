@@ -18,6 +18,11 @@ import { access, mkdir, rm } from "node:fs/promises";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { constants } from "node:fs";
+import { fileURLToPath } from "node:url";
+
+// URL.pathname percent-encodes spaces, which breaks any shelled-out binary when the
+// repo lives under a path like "Stan's Consulting". fileURLToPath decodes properly.
+const pathOf = (url) => fileURLToPath(url);
 
 const run = promisify(execFile);
 
@@ -62,23 +67,23 @@ await mkdir(tmp, { recursive: true });
 for (const width of WIDTHS) {
   const intermediate = new URL(`resized-${width}.jpg`, tmp);
   // sips resamples on the longest edge and preserves aspect ratio.
-  await run("sips", ["--resampleWidth", String(width), SOURCE.pathname, "--out", intermediate.pathname]);
+  await run("sips", ["--resampleWidth", String(width), pathOf(SOURCE), "--out", pathOf(intermediate)]);
 
   const webp = new URL(`hero-nassau-hall-${width}.webp`, PUBLIC_DIR);
-  await run("cwebp", ["-q", WEBP_QUALITY, "-m", "6", intermediate.pathname, "-o", webp.pathname]);
+  await run("cwebp", ["-q", WEBP_QUALITY, "-m", "6", pathOf(intermediate), "-o", pathOf(webp)]);
   console.log(`  wrote hero-nassau-hall-${width}.webp`);
 
   if (width === 1600) {
     const jpg = new URL("hero-nassau-hall-1600.jpg", PUBLIC_DIR);
-    await run("sips", ["-s", "format", "jpeg", "-s", "formatOptions", "72", intermediate.pathname, "--out", jpg.pathname]);
+    await run("sips", ["-s", "format", "jpeg", "-s", "formatOptions", "72", pathOf(intermediate), "--out", pathOf(jpg)]);
     console.log("  wrote hero-nassau-hall-1600.jpg (fallback)");
   }
 }
 
 // Social card. Open Graph wants 1200x630, so crop to that box after resizing.
 const ogIntermediate = new URL("og-source.jpg", tmp);
-await run("sips", ["--resampleWidth", "1200", SOURCE.pathname, "--out", ogIntermediate.pathname]);
-await run("sips", ["-c", "630", "1200", ogIntermediate.pathname, "--out", new URL("og-hero.jpg", PUBLIC_DIR).pathname]);
+await run("sips", ["--resampleWidth", "1200", pathOf(SOURCE), "--out", pathOf(ogIntermediate)]);
+await run("sips", ["-c", "630", "1200", pathOf(ogIntermediate), "--out", pathOf(new URL("og-hero.jpg", PUBLIC_DIR))]);
 console.log("  wrote og-hero.jpg (1200x630)");
 
 await rm(tmp, { recursive: true, force: true });
