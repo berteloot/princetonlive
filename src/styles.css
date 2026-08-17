@@ -322,7 +322,7 @@ h3 {
 .section-heading p,
 .explore p,
 .feature-card p,
-  .culture-copy p {
+.culture-copy p {
   color: #5e6a62;
   font-size: 1rem;
   line-height: 1.65;
@@ -343,6 +343,7 @@ h3 {
   grid-template-columns: minmax(0, 0.55fr) minmax(320px, 1fr);
   gap: clamp(24px, 5vw, 70px);
   align-items: start;
+  color: var(--princeton-black);
   background: var(--paper-strong);
 }
 
@@ -471,6 +472,7 @@ h3 {
   display: grid;
   grid-template-columns: minmax(0, 0.74fr) minmax(280px, 1fr);
   gap: 18px 28px;
+  color: var(--princeton-black);
   background: #eef2eb;
 }
 
@@ -671,7 +673,7 @@ h3 {
   right: 34%;
   bottom: 18%;
   background: #fff;
-  color: #fff;
+  color: var(--princeton-black);
 }
 
 .pin-campus svg {
@@ -698,6 +700,7 @@ h3 {
 }
 
 .practical {
+  color: var(--princeton-black);
   background: var(--paper);
 }
 
@@ -732,6 +735,7 @@ h3 {
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(280px, 1fr);
   gap: clamp(22px, 5vw, 70px);
+  color: var(--princeton-black);
   background: #e7ede2;
 }
 
@@ -762,6 +766,7 @@ h3 {
 }
 
 .source-plan {
+  color: var(--princeton-black);
   background: #fff;
 }
 
