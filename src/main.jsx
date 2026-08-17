@@ -2468,10 +2468,10 @@ function App() {
       </main>
 
       <footer>
-        <div>
+        <div className="footer-identity">
           <strong>PrincetonLive</strong>
           <span>
-            Vibe coded with love by{" "}
+            Built and maintained by{" "}
             <a
               className="notranslate"
               translate="no"
@@ -2480,7 +2480,32 @@ function App() {
             >
               Stan Berteloot
             </a>
+            , Princeton resident. Corrections welcome.
           </span>
+        </div>
+        {/* The two exposures worth naming on every page: implied affiliation (the site
+            carries the town name and a photograph of Nassau Hall) and reliance (residents
+            act on collection days and weather alerts shown here). */}
+        <div className="footer-disclaimer">
+          <p>
+            <strong>Independent and unofficial.</strong> PrincetonLive is a personal project
+            with no affiliation to and no endorsement from Princeton University, the
+            Municipality of Princeton, Princeton Public Library, or Princeton Public Schools.
+            All names and trademarks belong to their owners.
+          </p>
+          <p>
+            Information is gathered from public sources, provided as is with no warranty, and
+            can be delayed, incomplete, or out of date. It is not authoritative. Confirm
+            anything that matters with the official source before you act on it. Never rely on
+            this site in an emergency: call 911, and check{" "}
+            <a href="https://www.weather.gov/phi/" {...externalLinkProps("https://www.weather.gov/phi/")}>
+              weather.gov
+            </a>{" "}
+            for severe weather.
+          </p>
+          <p>
+            <a href="/legal.html">Disclaimer, terms, and privacy</a>
+          </p>
         </div>
         <a href="#top">
           <Navigation size={16} aria-hidden="true" />

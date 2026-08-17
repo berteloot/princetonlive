@@ -2679,3 +2679,45 @@ footer a {
     gap: 8px;
   }
 }
+
+/* Footer disclaimer. Kept legible rather than fine print: a disclaimer nobody can read
+   does less work, and this one carries the emergency routing. */
+footer {
+  display: grid;
+  gap: 16px;
+}
+
+.footer-identity {
+  display: grid;
+  gap: 4px;
+}
+
+.footer-disclaimer {
+  display: grid;
+  gap: 8px;
+  max-width: 70ch;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.footer-disclaimer p {
+  margin: 0;
+}
+
+.footer-disclaimer strong {
+  color: #ffffff;
+}
+
+.footer-disclaimer a {
+  color: #ffb27a;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* The legal page reuses the guide shell, so it only needs readable measure. */
+.legal-page article section p + p {
+  margin-top: 10px;
+}
