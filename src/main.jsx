@@ -11,6 +11,7 @@ import {
   Bus,
   CalendarDays,
   ChevronRight,
+  ShieldCheck,
   Menu,
   X,
   CloudRain,
@@ -881,6 +882,7 @@ function App() {
   const [hoveredSchool, setHoveredSchool] = useState(null);
   const [recycleCoachFailed, setRecycleCoachFailed] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
+  const [crimeData, setCrimeData] = useState(null);
   const [civicTooltip, setCivicTooltip] = useState({ x: 0, y: 0 });
   const [addressQuery, setAddressQuery] = useState("");
   const [addressLookup, setAddressLookup] = useState({
@@ -914,6 +916,15 @@ function App() {
       .then((response) => (response.ok ? response.json() : fallbackCivicMap))
       .then((data) => setCivicMap({ ...fallbackCivicMap, ...data }))
       .catch(() => setCivicMap(fallbackCivicMap));
+  }, []);
+
+  useEffect(() => {
+    // Absent or failed, the safety panel simply does not render. Crime figures are not
+    // something to show a placeholder for.
+    fetch(`/crime-data.json?v=${DATA_VERSION}`)
+      .then((response) => (response.ok ? response.json() : null))
+      .then((data) => setCrimeData(data && data.year ? data : null))
+      .catch(() => setCrimeData(null));
   }, []);
 
   useEffect(() => {
@@ -2226,6 +2237,59 @@ function App() {
                 Census glossary
               </a>
             </div>
+            {crimeData ? (
+              <div className="crime-panel">
+                <ShieldCheck size={19} aria-hidden="true" />
+                <h3>Reported crime in Princeton, {crimeData.year}</h3>
+                <p>
+                  Figures cover the whole municipality. They are shown per 100,000 residents
+                  so Princeton, New Jersey, and the country can be compared on the same basis.
+                </p>
+                {[
+                  ["violent-crime", "Violent crime"],
+                  ["property-crime", "Property crime"],
+                ].map(([key, label]) => {
+                  const town = crimeData.princeton?.[key];
+                  const state = crimeData.newJersey?.[key];
+                  const usa = crimeData.national?.[key];
+                  if (!town?.rate || !usa?.rate) return null;
+                  const max = Math.max(town.rate, state?.rate ?? 0, usa.rate);
+                  const share = Math.round((town.rate / usa.rate) * 100);
+                  const bars = [
+                    ["Princeton", town.rate, "is-town"],
+                    ["New Jersey", state?.rate, ""],
+                    ["United States", usa.rate, ""],
+                  ];
+                  return (
+                    <div className="crime-metric" key={key}>
+                      <div className="crime-metric-head">
+                        <strong>{label}</strong>
+                        <span>
+                          {town.count} reported, {share}% of the national rate
+                        </span>
+                      </div>
+                      {bars.map(([name, value, cls]) =>
+                        typeof value === "number" ? (
+                          <div className={`crime-bar ${cls}`} key={name}>
+                            <span>{name}</span>
+                            <i aria-hidden="true" style={{ width: `${Math.max(2, (value / max) * 100)}%` }} />
+                            <b>{value.toLocaleString()}</b>
+                          </div>
+                        ) : null,
+                      )}
+                    </div>
+                  );
+                })}
+                <p className="crime-caveat">{crimeData.caveat}</p>
+                <div className="source-links compact">
+                  {crimeData.sources.map((source) => (
+                    <a href={source.url} key={source.url} {...externalLinkProps(source.url)}>
+                      {source.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ) : null}
             {civicMetric === "voting" ? (
               <div className="voting-note">
                 <h3>{civicMap.voting.title}</h3>

@@ -333,7 +333,7 @@ nav a:hover {
 }
 
 .hero-copy h1 {
-  overflow-wrap: break-word;
+  overflow-wrap: normal;
 }
 
 .hero-copy {
@@ -368,7 +368,7 @@ p {
 h1 {
   max-width: 720px;
   margin-bottom: 16px;
-  font-size: clamp(2.4rem, 9vw, 6.4rem);
+  font-size: clamp(2.4rem, 9vw, 5.6rem);
   line-height: 0.92;
   letter-spacing: 0;
 }
@@ -2519,6 +2519,10 @@ footer a {
     font-size: clamp(2.15rem, 10.5vw, 4.4rem);
   }
 
+  .hero-copy h1 {
+    overflow-wrap: break-word;
+  }
+
   .hero-copy .hero-lede {
     font-size: clamp(1.15rem, 5.6vw, 2.1rem);
   }
@@ -2848,5 +2852,94 @@ footer {
 @media (max-width: 420px) {
   .brand span:not(.brand-mark) {
     font-size: 0.95rem;
+  }
+}
+
+/* --- Reported crime panel --- */
+
+/* Municipal figures only. This is deliberately not shaded onto block groups: no public
+   crime data exists at that granularity for a town this size, and neighborhood crime
+   maps move property values and track race and income. */
+.crime-panel {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid rgba(23, 32, 27, 0.32);
+  border-radius: 8px;
+}
+
+.crime-panel h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.crime-panel > p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+.crime-metric {
+  display: grid;
+  gap: 5px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(23, 32, 27, 0.14);
+}
+
+.crime-metric-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.crime-metric-head span {
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+}
+
+.crime-bar {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr) 58px;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+}
+
+.crime-bar span {
+  color: var(--ink-soft);
+}
+
+.crime-bar i {
+  display: block;
+  height: 10px;
+  background: rgba(23, 32, 27, 0.26);
+  border-radius: 999px;
+}
+
+.crime-bar.is-town i {
+  background: var(--orange-deep);
+}
+
+.crime-bar b {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.crime-caveat {
+  margin: 0;
+  padding-top: 8px;
+  border-top: 1px solid rgba(23, 32, 27, 0.14);
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 680px) {
+  .crime-bar {
+    grid-template-columns: 76px minmax(0, 1fr) 52px;
+    font-size: 0.78rem;
   }
 }

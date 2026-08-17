@@ -1,0 +1,81 @@
+{
+  "generatedAt": "2026-08-17T22:57:07.785Z",
+  "year": 2025,
+  "source": "FBI Crime Data Explorer (Uniform Crime Reporting), as submitted by Princeton Police Department",
+  "basis": "Rates are offences per 100,000 residents for the calendar year shown, using the population covered by reporting agencies so the three levels compare like for like.",
+  "caveat": "Princeton is a small town, so a handful of incidents moves the rate noticeably from one year to the next. Treat a single year as a rough indicator and read the trend instead. These counts cover the municipal police department only.",
+  "princeton": {
+    "violent-crime": {
+      "count": 13,
+      "monthsReported": 12,
+      "population": 31613,
+      "rate": 41.1
+    },
+    "property-crime": {
+      "count": 177,
+      "monthsReported": 12,
+      "population": 31613,
+      "rate": 559.9
+    }
+  },
+  "princetonUniversity": {
+    "violent-crime": {
+      "count": 3,
+      "monthsReported": 12,
+      "population": null,
+      "rate": null
+    },
+    "property-crime": {
+      "count": 230,
+      "monthsReported": 12,
+      "population": null,
+      "rate": null
+    }
+  },
+  "newJersey": {
+    "violent-crime": {
+      "count": 18450,
+      "monthsReported": 12,
+      "population": 9316995,
+      "rate": 198
+    },
+    "property-crime": {
+      "count": 118071,
+      "monthsReported": 12,
+      "population": 9316995,
+      "rate": 1267.3
+    }
+  },
+  "national": {
+    "violent-crime": {
+      "count": 1093729,
+      "monthsReported": 12,
+      "population": 332377626,
+      "rate": 329.1
+    },
+    "property-crime": {
+      "count": 5157159,
+      "monthsReported": 12,
+      "population": 332377626,
+      "rate": 1551.6
+    }
+  },
+  "sources": [
+    {
+      "name": "FBI Crime Data Explorer: Princeton Police Department",
+      "url": "https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/le/summary?ori=NJ0111000"
+    },
+    {
+      "name": "FBI Crime Data Explorer",
+      "url": "https://cde.ucr.cjis.gov/"
+    },
+    {
+      "name": "New Jersey State Police Uniform Crime Reporting",
+      "url": "https://www.nj.gov/njsp/ucr/uniform-crime-reports.shtml"
+    },
+    {
+      "name": "Princeton annual and monthly police reports",
+      "url": "https://www.princetonnj.gov/396/Annual-Monthly-Police-Reports"
+    }
+  ]
+}
