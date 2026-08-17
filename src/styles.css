@@ -984,6 +984,13 @@ h3 {
   background-size: 56px 56px;
 }
 
+.metric-voting .civic-map-shell {
+  background:
+    linear-gradient(90deg, rgba(47, 105, 88, 0.07) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(47, 105, 88, 0.07) 1px, transparent 1px),
+    #eef3f7;
+}
+
 .civic-map-shell svg {
   width: min(100%, 760px);
   max-height: 430px;
@@ -992,6 +999,8 @@ h3 {
 }
 
 .civic-map-shell path {
+  cursor: crosshair;
+  outline: none;
   stroke: #fffaf1;
   stroke-linejoin: round;
   stroke-width: 0.55;
@@ -1000,8 +1009,46 @@ h3 {
     opacity 160ms ease;
 }
 
-.civic-map-shell path:hover {
-  opacity: 0.72;
+.civic-map-shell path:hover,
+.civic-map-shell path:focus,
+.civic-map-shell path.is-hovered {
+  opacity: 0.86;
+  stroke: #17201b;
+  stroke-width: 0.68;
+}
+
+.civic-tooltip {
+  position: absolute;
+  z-index: 4;
+  display: grid;
+  gap: 3px;
+  min-width: 190px;
+  max-width: min(260px, calc(100% - 24px));
+  padding: 12px 13px;
+  color: #fff;
+  pointer-events: none;
+  background: rgba(11, 11, 11, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  box-shadow: 0 18px 44px rgba(11, 11, 11, 0.22);
+  transform: translate(14px, -50%);
+}
+
+.civic-tooltip strong,
+.civic-tooltip b {
+  line-height: 1.15;
+}
+
+.civic-tooltip span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.civic-tooltip small {
+  color: var(--orange-soft);
+  font-size: 0.76rem;
+  font-weight: 850;
 }
 
 .vote-overlay {
@@ -1032,28 +1079,37 @@ h3 {
 
 .civic-legend {
   display: grid;
-  grid-template-columns: auto minmax(140px, 1fr) auto;
-  gap: 10px;
-  align-items: center;
+  gap: 8px;
   padding: 12px 14px 14px;
   color: #5e6a62;
   font-size: 0.82rem;
   font-weight: 850;
 }
 
-.civic-legend div {
+.legend-scale {
+  display: grid;
+  grid-template-columns: auto minmax(140px, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.legend-scale i {
   height: 9px;
   background: linear-gradient(90deg, #edf0e9, #f0aa5e, #9b4704);
   border-radius: 999px;
 }
 
-.metric-children .civic-legend div,
-.metric-childShare .civic-legend div {
+.legend-scale span:last-child {
+  color: var(--princeton-black);
+}
+
+.metric-children .legend-scale i,
+.metric-childShare .legend-scale i {
   background: linear-gradient(90deg, #edf0e9, #8cc8ac, #2f6958);
 }
 
-.metric-voting .civic-legend div {
-  background: linear-gradient(90deg, #edf0e9, #d8ded5);
+.metric-voting .legend-scale i {
+  background: linear-gradient(90deg, #c94b43, #f3f1e7 50%, #1f67b1);
 }
 
 .civic-insights {
@@ -1151,6 +1207,29 @@ h3 {
   padding: 16px;
   color: #5e6a62;
   line-height: 1.6;
+}
+
+.vote-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  padding: 0 16px 16px;
+}
+
+.vote-stats span {
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+  color: #5e6a62;
+  background: #f7f2e8;
+  border-radius: 7px;
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.vote-stats strong {
+  color: var(--princeton-black);
+  font-size: 1.1rem;
 }
 
 .source-links.compact {
@@ -1362,6 +1441,20 @@ footer a {
   }
 
   .civic-legend {
+    grid-template-columns: 1fr;
+  }
+
+  .legend-scale {
+    grid-template-columns: auto minmax(80px, 1fr) auto;
+  }
+
+  .civic-tooltip {
+    right: 12px;
+    left: 12px !important;
+    transform: translateY(-52%);
+  }
+
+  .vote-stats {
     grid-template-columns: 1fr;
   }
 

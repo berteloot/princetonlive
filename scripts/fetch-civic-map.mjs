@@ -16,6 +16,31 @@ const geometryUrl =
 const censusReporterUrl =
   "https://api.censusreporter.org/1.0/data/show/latest?table_ids=B19013,B01001&geo_ids=140%7C05000US34021";
 
+const princetonVoting = {
+  year: 2024,
+  level: "Municipality",
+  contest: "U.S. President",
+  democratCandidate: "Kamala D. Harris",
+  republicanCandidate: "Donald J. Trump",
+  democratVotes: 10292,
+  republicanVotes: 2029,
+  otherVotes: 373,
+  sourceName: "NJ Division of Elections official Mercer County presidential results",
+  sourceUrl:
+    "https://www.nj.gov/state/elections/assets/pdf/election-results/2024/2024-official-general-results-president-mercer.pdf",
+};
+
+const votingTotal =
+  princetonVoting.democratVotes + princetonVoting.republicanVotes + princetonVoting.otherVotes;
+const votingSummary = {
+  ...princetonVoting,
+  totalVotes: votingTotal,
+  democratShare: princetonVoting.democratVotes / votingTotal,
+  republicanShare: princetonVoting.republicanVotes / votingTotal,
+  otherShare: princetonVoting.otherVotes / votingTotal,
+  margin: (princetonVoting.democratVotes - princetonVoting.republicanVotes) / votingTotal,
+};
+
 const fallback = {
   generatedAt: null,
   release: "Civic map unavailable",
@@ -25,11 +50,16 @@ const fallback = {
   features: [],
   highlights: [],
   voting: {
-    status: "source-linked",
+    status: "municipality-level",
     title: "Voting layer",
     summary:
-      "Official Mercer County election reports and Princeton election district maps are linked here. Republican/Democrat neighborhood shading should only be added after official district totals are safely joined to public district boundaries.",
+      "The map reflects Princeton's official 2024 municipal presidential result. Neighborhood-level Republican/Democrat shading should only be added after official district totals are safely joined to public district boundaries.",
+    result: votingSummary,
     links: [
+      {
+        label: "NJ official Princeton presidential result",
+        url: princetonVoting.sourceUrl,
+      },
       {
         label: "Mercer County archived election results",
         url: "https://www.mercercounty.org/government/county-clerk-/elections/archived-election-results",
@@ -52,6 +82,10 @@ const fallback = {
     {
       name: "Mercer County archived election results",
       url: "https://www.mercercounty.org/government/county-clerk-/elections/archived-election-results",
+    },
+    {
+      name: "NJ Division of Elections official 2024 Mercer presidential results",
+      url: princetonVoting.sourceUrl,
     },
     {
       name: "Princeton elections",
@@ -212,6 +246,10 @@ try {
           lon: Number(Number(feature.properties.CENTLON).toFixed(5)),
         },
         path: pathForGeometry(feature.geometry, project),
+        voteMargin: votingSummary.margin,
+        democratShare: votingSummary.democratShare,
+        republicanShare: votingSummary.republicanShare,
+        otherShare: votingSummary.otherShare,
         ...stats,
       };
     })

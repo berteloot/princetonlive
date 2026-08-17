@@ -107,7 +107,12 @@ const fallbackCivicMap = {
     title: "Voting layer",
     summary:
       "Official election result links are available. Republican/Democrat neighborhood shading will only be added after official precinct totals can be safely joined to public district boundaries.",
+    result: null,
     links: [
+      {
+        label: "NJ official Princeton presidential result",
+        url: "https://www.nj.gov/state/elections/assets/pdf/election-results/2024/2024-official-general-results-president-mercer.pdf",
+      },
       {
         label: "Mercer County archived election results",
         url: "https://www.mercercounty.org/government/county-clerk-/elections/archived-election-results",
@@ -151,7 +156,7 @@ const civicMetrics = [
   {
     key: "voting",
     label: "Voting",
-    detail: "Official district sources",
+    detail: "Democratic vs. Republican result",
     icon: Vote,
   },
 ];
@@ -270,6 +275,10 @@ function formatRefresh(value) {
 
 function formatCivicValue(key, value) {
   if (!Number.isFinite(value)) return "Source linked";
+  if (key === "voting") {
+    const points = Math.abs(value) * 100;
+    return `${value >= 0 ? "Democratic" : "Republican"} +${points.toFixed(1)} pts`;
+  }
   if (key === "income") {
     return new Intl.NumberFormat("en-US", {
       style: "currency",
@@ -292,7 +301,13 @@ function metricDomain(features, key) {
 }
 
 function tractFill(feature, key, domain) {
-  if (key === "voting") return "#d8ded5";
+  if (key === "voting") {
+    const margin = Number.isFinite(feature.voteMargin) ? feature.voteMargin : 0;
+    const intensity = Math.min(Math.abs(margin), 0.75) / 0.75;
+    const lightness = 88 - intensity * 42;
+    const hue = margin >= 0 ? 214 : 5;
+    return `hsl(${hue} 72% ${lightness}%)`;
+  }
   const value = feature[key];
   if (!Number.isFinite(value)) return "#edf0e9";
   const [min, max] = domain;
@@ -312,6 +327,8 @@ function App() {
   const [liveData, setLiveData] = useState(fallbackData);
   const [civicMap, setCivicMap] = useState(fallbackCivicMap);
   const [civicMetric, setCivicMetric] = useState("income");
+  const [hoveredCivicFeature, setHoveredCivicFeature] = useState(null);
+  const [civicTooltip, setCivicTooltip] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     fetch(`/live-data.json?v=${Date.now()}`)
@@ -395,6 +412,25 @@ function App() {
     .filter((feature) => Number.isFinite(feature[civicMetric]))
     .sort((a, b) => b[civicMetric] - a[civicMetric])
     .slice(0, 4);
+  const metricValueKey = civicMetric === "voting" ? "voteMargin" : civicMetric;
+  const hoverFeature = hoveredCivicFeature ?? topCivicFeatures[0] ?? civicMap.features[0];
+  const votingResult = civicMap.voting?.result;
+  const votingStats = votingResult
+    ? [
+        ["Democratic", `${(votingResult.democratShare * 100).toFixed(1)}%`],
+        ["Republican", `${(votingResult.republicanShare * 100).toFixed(1)}%`],
+        ["Other", `${(votingResult.otherShare * 100).toFixed(1)}%`],
+      ]
+    : [];
+
+  const updateCivicTooltip = (event) => {
+    const shell = event.currentTarget.closest?.(".civic-map-shell") ?? event.currentTarget;
+    const rect = shell.getBoundingClientRect();
+    setCivicTooltip({
+      x: event.clientX - rect.left,
+      y: event.clientY - rect.top,
+    });
+  };
 
   return (
     <main>
@@ -622,7 +658,8 @@ function App() {
           </div>
           <p>
             Census tract boundaries and ACS estimates make the map useful without exposing
-            household-level records. Voting is handled as official aggregate sources only.
+            household-level records. Voting uses the official Princeton municipal result until
+            district-level results can be joined safely.
           </p>
         </div>
 
@@ -647,32 +684,77 @@ function App() {
                 viewBox={civicMap.viewBox}
                 role="img"
                 aria-label={`Princeton-area tracts by ${activeCivicMetric.detail}`}
+                onPointerMove={updateCivicTooltip}
+                onMouseMove={updateCivicTooltip}
+                onMouseLeave={() => setHoveredCivicFeature(null)}
+                onPointerLeave={() => setHoveredCivicFeature(null)}
               >
                 {civicMap.features.map((feature) => (
                   <path
                     key={feature.geoid}
                     d={feature.path}
                     fill={tractFill(feature, civicMetric, civicDomain)}
+                    className={hoveredCivicFeature?.geoid === feature.geoid ? "is-hovered" : ""}
+                    tabIndex="0"
+                    role="button"
+                    aria-label={`${feature.areaLabel}, ${feature.tractLabel}, ${formatCivicValue(metricValueKey, feature[metricValueKey])}`}
+                    onMouseEnter={(event) => {
+                      setHoveredCivicFeature(feature);
+                      updateCivicTooltip(event);
+                    }}
+                    onPointerEnter={(event) => {
+                      setHoveredCivicFeature(feature);
+                      updateCivicTooltip(event);
+                    }}
+                    onPointerMove={updateCivicTooltip}
+                    onClick={(event) => {
+                      setHoveredCivicFeature(feature);
+                      updateCivicTooltip(event);
+                    }}
+                    onFocus={() => setHoveredCivicFeature(feature)}
+                    onKeyDown={(event) => {
+                      if (event.key === "Enter" || event.key === " ") {
+                        event.preventDefault();
+                        setHoveredCivicFeature(feature);
+                      }
+                    }}
                   >
                     <title>
                       {feature.areaLabel}, {feature.tractLabel}:{" "}
-                      {formatCivicValue(civicMetric, feature[civicMetric])}
+                      {formatCivicValue(metricValueKey, feature[metricValueKey])}
                     </title>
                   </path>
                 ))}
               </svg>
+              {hoveredCivicFeature ? (
+                <div
+                  className="civic-tooltip"
+                  style={{
+                    left: `${civicTooltip.x}px`,
+                    top: `${civicTooltip.y}px`,
+                  }}
+                >
+                  <strong>{hoveredCivicFeature.areaLabel}</strong>
+                  <span>{hoveredCivicFeature.tractLabel}</span>
+                  <b>{formatCivicValue(metricValueKey, hoveredCivicFeature[metricValueKey])}</b>
+                  {civicMetric === "voting" ? <small>Princeton municipal result</small> : null}
+                </div>
+              ) : null}
               {civicMetric === "voting" ? (
                 <div className="vote-overlay">
                   <Vote size={22} aria-hidden="true" />
-                  <strong>{civicMap.voting.title}</strong>
-                  <span>Aggregate district join pending</span>
+                  <strong>{formatCivicValue("voting", votingResult?.margin)}</strong>
+                  <span>Princeton 2024 municipal result</span>
                 </div>
               ) : null}
             </div>
             <div className="civic-legend">
               <span>{activeCivicMetric.detail}</span>
-              <div aria-hidden="true" />
-              <span>Higher</span>
+              <div className="legend-scale">
+                <span>{civicMetric === "voting" ? "Republican" : "Lower"}</span>
+                <i aria-hidden="true" />
+                <span>{civicMetric === "voting" ? "Democratic" : "Higher"}</span>
+              </div>
             </div>
           </div>
 
@@ -686,6 +768,16 @@ function App() {
               <div className="voting-note">
                 <h3>{civicMap.voting.title}</h3>
                 <p>{civicMap.voting.summary}</p>
+                {votingStats.length ? (
+                  <div className="vote-stats">
+                    {votingStats.map(([label, value]) => (
+                      <span key={label}>
+                        {label}
+                        <strong>{value}</strong>
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
                 <div className="source-links compact">
                   {civicMap.voting.links.map((link) => (
                     <a href={link.url} key={link.url}>
@@ -708,14 +800,25 @@ function App() {
                   ))}
                 </div>
                 <div className="tract-rank">
-                  <h3>Highest on this layer</h3>
+                  <h3>{hoveredCivicFeature ? "Hovered tract" : "Highest on this layer"}</h3>
+                  {hoveredCivicFeature ? (
+                    <div>
+                      <span>
+                        {hoveredCivicFeature.areaLabel}
+                        <small>{hoveredCivicFeature.tractLabel}</small>
+                      </span>
+                      <strong>
+                        {formatCivicValue(metricValueKey, hoveredCivicFeature[metricValueKey])}
+                      </strong>
+                    </div>
+                  ) : null}
                   {topCivicFeatures.map((feature) => (
                     <div key={feature.geoid}>
                       <span>
                         {feature.areaLabel}
                         <small>{feature.tractLabel}</small>
                       </span>
-                      <strong>{formatCivicValue(civicMetric, feature[civicMetric])}</strong>
+                      <strong>{formatCivicValue(metricValueKey, feature[metricValueKey])}</strong>
                     </div>
                   ))}
                 </div>
