@@ -2,6 +2,8 @@
 
 PrincetonLive is a static React/Vite MVP for a daily operating guide for becoming a Princetonian.
 
+For ongoing development context, data sources, deployment notes, and the change checklist, read `PROJECT_MEMORY.md` before making updates.
+
 ## Local development
 
 ```bash
