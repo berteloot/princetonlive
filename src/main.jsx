@@ -563,7 +563,12 @@ function App() {
       <footer>
         <div>
           <strong>PrincetonLive</strong>
-          <span>Public Princeton signals, organized for daily resident life.</span>
+          <span>
+            Vibe coded with love by{" "}
+            <a className="notranslate" translate="no" href="https://www.linkedin.com/in/berteloot">
+              Stan Berteloot
+            </a>
+          </span>
         </div>
         <a href="#top">
           <Navigation size={16} aria-hidden="true" />
