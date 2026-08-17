@@ -11,6 +11,7 @@ Production:
 - Render URL: https://princetonlive.onrender.com
 - Render service ID: `srv-da1fs149v7es73bavnq0`
 - GitHub repo: `berteloot/princetonlive`
+- Canonical local folder: `/Users/stanislasberteloot/Library/CloudStorage/Dropbox/Stan's Consulting/Nytro/NYTRO_AI/clients/altilead/Princeton`
 
 ## Architecture
 
@@ -157,6 +158,7 @@ Explore walks:
 
 ## Feature Log
 
+- Latest - Moved the local working copy from `/Users/stanislasberteloot/Documents/ChatGPT/Princeton Live` into the intended Dropbox Princeton client folder and documented that folder as the canonical local workspace.
 - Latest - Added Google tag / GA4 measurement ID `G-RL5N5X5EZE` to the app shell and generated SEO pillar pages.
 - Latest - Added guide and map links to every First-month Princeton walk card.
 - Latest - Renamed user-facing pickup language to garbage pickup.
