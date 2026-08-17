@@ -34,12 +34,23 @@ const languages = [
   { code: "es", short: "ES", label: "Espanol" },
 ];
 
-const translations = {
+const languageMeta = {
   en: {
-    meta: {
-      title: "PrincetonLive",
-      description: "PrincetonLive is a daily operating guide for becoming a Princetonian.",
-    },
+    title: "PrincetonLive",
+    description: "PrincetonLive is a daily operating guide for becoming a Princetonian.",
+  },
+  fr: {
+    title: "PrincetonLive in French",
+    description: "PrincetonLive translated into French by Google Translate.",
+  },
+  es: {
+    title: "PrincetonLive in Spanish",
+    description: "PrincetonLive translated into Spanish by Google Translate.",
+  },
+};
+
+const content = {
+  en: {
     brandSub: "Independent resident guide",
     nav: {
       today: "Today",
@@ -164,264 +175,6 @@ const translations = {
       top: "Back to top",
     },
   },
-  fr: {
-    meta: {
-      title: "PrincetonLive en francais",
-      description: "PrincetonLive est le guide quotidien pour devenir Princetonien.",
-    },
-    brandSub: "Guide residentiel independant",
-    nav: {
-      today: "Aujourd'hui",
-      move: "Se deplacer",
-      culture: "Culture",
-      practical: "Pratique",
-      explore: "Explorer",
-    },
-    languageLabel: "Langue",
-    hero: {
-      eyebrow: "Orange et noir, pense pour les residents",
-      title: "Savoir ce que Princeton sait.",
-      body: "Un carnet civique calme pour les nouveaux residents : trajets, culture, conferences, stationnement, alertes, courses, vie publique et petites decisions qui transforment Princeton en lieu vraiment habitable.",
-      note: "L'esprit Princeton, sans confusion avec un site officiel de l'Universite.",
-      primary: "Commencer par aujourd'hui",
-      secondary: "Plan des donnees",
-      snapshotLabel: "Instantane du jour",
-      brief: [
-        ["Princeton, NJ", "Mode resident"],
-        ["Premier bon reflexe", "Verifier le transport avant la culture"],
-        ["Plan pluie", "Bibliotheque, conferences, cinema"],
-        ["Signal local", "Alertes orange, texte noir, confiance calme"],
-      ],
-    },
-    intro: {
-      eyebrow: "Positionnement",
-      title: "Pas un tableau d'information municipal. Un concierge de vie locale.",
-      body: "PrincetonLive repond a la question que le nouveau resident garde ouverte dans dix onglets : que dois-je savoir aujourd'hui pour bien vivre Princeton ?",
-    },
-    identity: {
-      eyebrow: "Systeme visuel",
-      title: "Un clin d'oeil Princeton, pas un costume Princeton.",
-      paletteKicker: "Palette",
-      paletteTitle: "Orange pour les signaux. Noir pour la confiance.",
-      paletteBody: "PrincetonLive utilise l'orange Princeton comme accent de haute priorite, puis laisse l'interface respirer avec des neutres civiques et chaleureux.",
-      swatchesLabel: "Palette PrincetonLive",
-      swatches: ["Orange", "Noir", "Papier", "Civique"],
-      tigerKicker: "Energie du tigre",
-      tigerTitle: "Alerte, rapide, avec un peu d'elan.",
-      tigerBody: "L'influence du tigre apparait dans le mouvement et la hierarchie : barres diagonales nettes, cartes faciles a scanner et moments orange quand un resident doit agir.",
-    },
-    today: {
-      eyebrow: "Aujourd'hui",
-      title: "Un seul agenda entre la ville et l'universite.",
-      filtersLabel: "Filtres de l'agenda",
-      searchLabel: "Rechercher dans l'agenda",
-      searchPlaceholder: "Rechercher conferences, films, bibliotheque, McCarter...",
-      filters: [
-        ["new", "Nouveau ici"],
-        ["family", "Famille"],
-        ["rain", "Plan pluie"],
-        ["all", "Tout"],
-      ],
-      agenda: [
-        ["16h30", "Conference universitaire ouverte", "Campus de Princeton", "Gratuit", "Evenements Princeton University"],
-        ["18h00", "Atelier ou evenement a la bibliotheque", "Princeton Public Library", "Resident", "Evenements bibliotheque"],
-        ["19h10", "Verification des seances du Garden Theatre", "Nassau Street", "Interieur", "Garden Theatre"],
-        ["20h00", "Creneau de spectacle McCarter", "University Place", "Arts", "McCarter Theatre"],
-      ],
-    },
-    move: {
-      eyebrow: "Se deplacer",
-      title: "Les choix de trajet avant les choix de calendrier.",
-      body: "La premiere version privilegie une logique d'itineraire fiable et des renvois officiels ; les flux GTFS en direct et les donnees avec identifiants pourront venir apres le MVP statique.",
-      cards: [
-        ["NYC sans erreur bete", "Dinky jusqu'a Princeton Junction, puis Northeast Corridor vers NY Penn. Verifiez la marge de correspondance avant de partir.", "Ouvrir NJ Transit"],
-        ["Logique de trajet vers Philly", "Princeton Junction vers Trenton, puis SEPTA vers Center City. Amtrak peut etre plus rapide, mais moins previsible pour un trajet simple.", "Ouvrir l'API SEPTA"],
-        ["Stationnement sans stress", "Les horodateurs du centre, les parkings et Princeton Junction ont chacun leurs regles. Integrez le stationnement a l'itineraire.", "Regles de stationnement"],
-        ["Princeton sans voiture", "TigerTransit, FreeB, marche, velo et Dinky meritent une carte calme plutot que cinq onglets.", "Se deplacer"],
-      ],
-    },
-    culture: {
-      eyebrow: "Culture",
-      title: "Vie intellectuelle publique, theatre, films et bibliotheque au meme endroit.",
-      cardTitle: "Ce soir a Princeton",
-      body: "L'avantage produit n'est pas d'inventer des evenements. Il consiste a reunir l'universite, la bibliotheque, Garden Theatre, McCarter, le musee, Richardson, Lewis Center et les arts locaux dans un agenda utile aux residents.",
-      stats: ["Gratuit ce soir", "Ouvert au public", "A l'interieur s'il pleut"],
-    },
-    practical: {
-      eyebrow: "Vie pratique",
-      title: "Les choses ennuyeuses, trouvables avant de devenir irritantes.",
-      tiles: [
-        ["Alertes meteo", "Pret NWS"],
-        ["Alertes municipales", "Nixle"],
-        ["Dechets et recyclage", "Par adresse plus tard"],
-        ["Bornes EV", "Statique d'abord"],
-        ["Services municipaux", "Liens en un clic"],
-        ["Couches SIG", "Parcs, zonage, sentiers"],
-      ],
-    },
-    explore: {
-      eyebrow: "Explorer",
-      title: "Promenades du premier mois pour se reperer.",
-      body: "La couche exploration commence par les parcs, sentiers, art public, quartiers historiques, aires de jeux, toilettes et stationnement. Elle peut devenir une carte residentielle alimentee par le SIG de Princeton.",
-      stops: [
-        "Chemin de halage du canal D&R",
-        "Institute Woods",
-        "Princeton Battlefield",
-        "Sentiers de Stony Brook",
-        "Aires de jeux avec toilettes",
-        "Promenades dans les quartiers historiques",
-      ],
-    },
-    sources: {
-      eyebrow: "Faisabilite",
-      title: "Plan des sources pour la version live.",
-      body: "Lancement statique d'abord, puis flux live mis en cache lorsque la source publique est assez solide pour respecter les utilisateurs et les proprietaires des sources.",
-      label: "Plan des sources",
-      rows: [
-        ["Evenements universitaires", "RSS et filtres publics", "Solide"],
-        ["Evenements bibliotheque", "Flux calendrier Communico", "Solide"],
-        ["Meteo et alertes", "API National Weather Service", "Solide"],
-        ["SIG municipal", "Services publics ArcGIS", "Solide"],
-        ["Garden Theatre", "Extraction HTML des seances", "Faisable"],
-        ["McCarter", "Listings caches par scraping", "A surveiller"],
-        ["Transport", "GTFS et liens officiels", "Avec identifiants"],
-        ["Dechets/recyclage", "Recycle Coach et consignes municipales", "Manuel d'abord"],
-      ],
-    },
-    footer: {
-      line: "Transformer un lieu celebre en maison utilisable.",
-      top: "Retour en haut",
-    },
-  },
-  es: {
-    meta: {
-      title: "PrincetonLive en espanol",
-      description: "PrincetonLive es la guia diaria para convertirse en princetoniano.",
-    },
-    brandSub: "Guia independiente para residentes",
-    nav: {
-      today: "Hoy",
-      move: "Moverse",
-      culture: "Cultura",
-      practical: "Vida practica",
-      explore: "Explorar",
-    },
-    languageLabel: "Idioma",
-    hero: {
-      eyebrow: "Naranja y negro, primero el residente",
-      title: "Saber lo que Princeton sabe.",
-      body: "Un cuaderno civico y tranquilo para nuevos residentes: traslados, cultura, charlas, estacionamiento, alertas, mandados, vida publica y las pequenas decisiones que convierten Princeton en un hogar usable.",
-      note: "Espiritu Princeton sin confundirse con un sitio oficial de la Universidad.",
-      primary: "Empezar por hoy",
-      secondary: "Plan de datos",
-      snapshotLabel: "Resumen de hoy",
-      brief: [
-        ["Princeton, NJ", "Modo residente"],
-        ["Primer buen habito", "Revisar transporte antes de cultura"],
-        ["Plan si llueve", "Biblioteca, charlas, cine"],
-        ["Senal local", "Alertas naranjas, texto negro, confianza tranquila"],
-      ],
-    },
-    intro: {
-      eyebrow: "Posicionamiento",
-      title: "No es un tablero municipal. Es un concierge de vida local.",
-      body: "PrincetonLive responde a la pregunta que un nuevo residente mantiene abierta en diez pestanas: que debo saber hoy para vivir bien Princeton?",
-    },
-    identity: {
-      eyebrow: "Sistema visual",
-      title: "Una pista Princeton, no un disfraz Princeton.",
-      paletteKicker: "Paleta",
-      paletteTitle: "Naranja para senales. Negro para confianza.",
-      paletteBody: "PrincetonLive usa el naranja Princeton como acento de alta senal y deja que la interfaz respire con neutros civicos y calidos.",
-      swatchesLabel: "Paleta PrincetonLive",
-      swatches: ["Naranja", "Negro", "Papel", "Civico"],
-      tigerKicker: "Energia del tigre",
-      tigerTitle: "Alerta, rapido y con un poco de espiritu.",
-      tigerBody: "La influencia del tigre aparece en el movimiento y la jerarquia: barras diagonales nitidas, tarjetas faciles de escanear y momentos naranjas cuando un residente debe actuar.",
-    },
-    today: {
-      eyebrow: "Hoy",
-      title: "Una sola agenda entre la ciudad y la universidad.",
-      filtersLabel: "Filtros de agenda",
-      searchLabel: "Buscar en la agenda",
-      searchPlaceholder: "Buscar charlas, peliculas, biblioteca, McCarter...",
-      filters: [
-        ["new", "Nuevo aqui"],
-        ["family", "Familia"],
-        ["rain", "Plan lluvia"],
-        ["all", "Todo"],
-      ],
-      agenda: [
-        ["4:30 PM", "Charla universitaria abierta", "Campus de Princeton", "Gratis", "Eventos de Princeton University"],
-        ["6:00 PM", "Taller o evento comunitario en la biblioteca", "Princeton Public Library", "Residente", "Eventos de biblioteca"],
-        ["7:10 PM", "Revisar funciones del Garden Theatre", "Nassau Street", "Interior", "Garden Theatre"],
-        ["8:00 PM", "Ventana de funcion en McCarter", "University Place", "Artes", "McCarter Theatre"],
-      ],
-    },
-    move: {
-      eyebrow: "Moverse",
-      title: "Decisiones de traslado antes de decisiones de calendario.",
-      body: "La primera version prioriza logica de rutas confiable y enlaces oficiales; los feeds GTFS en vivo y con credenciales pueden sumarse despues del MVP estatico.",
-      cards: [
-        ["NYC sin equivocarse", "Dinky hasta Princeton Junction y luego Northeast Corridor hacia NY Penn. Revisa el margen de conexion antes de salir.", "Abrir NJ Transit"],
-        ["Logica de ruta a Philly", "Princeton Junction a Trenton y luego SEPTA hacia Center City. Amtrak puede ser mas rapido, pero menos predecible para viajes simples.", "Abrir API de SEPTA"],
-        ["Estacionar con cabeza", "Los parquimetros del centro, garajes y lotes de Princeton Junction tienen reglas distintas. Incluye el estacionamiento en el itinerario.", "Reglas de parking"],
-        ["Princeton sin auto", "TigerTransit, FreeB, caminar, bicicleta y Dinky merecen un mapa claro en vez de cinco pestanas.", "Como moverse"],
-      ],
-    },
-    culture: {
-      eyebrow: "Cultura",
-      title: "Vida intelectual publica, teatro, cine y biblioteca en un solo lugar.",
-      cardTitle: "Esta noche en Princeton",
-      body: "La ventaja del producto no es inventar eventos. Es unir la universidad, la biblioteca, Garden Theatre, McCarter, el museo, Richardson, Lewis Center y las artes locales en una agenda util para residentes.",
-      stats: ["Gratis esta noche", "Abierto al publico", "Interior si llueve"],
-    },
-    practical: {
-      eyebrow: "Vida practica",
-      title: "Lo aburrido, facil de encontrar antes de que moleste.",
-      tiles: [
-        ["Alertas meteorologicas", "Listo para NWS"],
-        ["Alertas municipales", "Nixle"],
-        ["Basura y reciclaje", "Por direccion despues"],
-        ["Cargadores EV", "Primero estatico"],
-        ["Servicios municipales", "Enlaces de un toque"],
-        ["Capas GIS", "Parques, zonificacion, senderos"],
-      ],
-    },
-    explore: {
-      eyebrow: "Explorar",
-      title: "Caminatas del primer mes para orientarse.",
-      body: "La capa de exploracion empieza con parques, senderos, arte publico, distritos historicos, juegos infantiles, banos y estacionamiento. Puede convertirse en un mapa residencial alimentado por el GIS de Princeton.",
-      stops: [
-        "Sendero del canal D&R",
-        "Institute Woods",
-        "Princeton Battlefield",
-        "Caminos de Stony Brook",
-        "Juegos infantiles con banos",
-        "Paseos por distritos historicos",
-      ],
-    },
-    sources: {
-      eyebrow: "Factibilidad",
-      title: "Plan de fuentes para la version en vivo.",
-      body: "Lanzamiento estatico primero; luego feeds en vivo en cache cuando la fuente publica sea lo bastante solida para respetar a usuarios y duenos de fuentes.",
-      label: "Plan de fuentes",
-      rows: [
-        ["Eventos universitarios", "RSS y filtros publicos", "Solido"],
-        ["Eventos de biblioteca", "Feeds del calendario Communico", "Solido"],
-        ["Clima y alertas", "API del National Weather Service", "Solido"],
-        ["GIS municipal", "Servicios publicos de ArcGIS", "Solido"],
-        ["Garden Theatre", "Extraccion HTML de funciones", "Viable"],
-        ["McCarter", "Listados cacheados por scraping", "Vigilar"],
-        ["Transito", "GTFS mas enlaces oficiales", "Con credenciales"],
-        ["Basura/reciclaje", "Recycle Coach y guia municipal", "Manual primero"],
-      ],
-    },
-    footer: {
-      line: "Convertir un lugar famoso en un hogar usable.",
-      top: "Volver arriba",
-    },
-  },
 };
 
 const agendaUrls = [
@@ -488,7 +241,7 @@ function App() {
   const [language, setLanguage] = useState(getInitialLanguage);
   const [persona, setPersona] = useState("new");
   const [query, setQuery] = useState("");
-  const t = translations.en;
+  const t = content.en;
 
   useEffect(() => {
     if (window.google?.translate?.TranslateElement) return;
@@ -514,9 +267,9 @@ function App() {
 
   useEffect(() => {
     document.documentElement.lang = language;
-    document.title = translations[language].meta.title;
+    document.title = languageMeta[language].title;
     const metaDescription = document.querySelector('meta[name="description"]');
-    metaDescription?.setAttribute("content", translations[language].meta.description);
+    metaDescription?.setAttribute("content", languageMeta[language].description);
     setGoogleTranslateCookie(language);
 
     const attempts = [250, 750, 1500, 2500].map((delay) =>
