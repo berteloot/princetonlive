@@ -143,14 +143,16 @@ const civicMetrics = [
   },
   {
     key: "children",
-    label: "Children",
+    label: "Children count",
     detail: "Residents under 18",
+    note: "Raw count of residents under 18 in the tract.",
     icon: Baby,
   },
   {
     key: "childShare",
-    label: "Family share",
+    label: "Child share",
     detail: "Children as share of population",
+    note: "Percentage of the tract population that is under 18.",
     icon: Users,
   },
   {
@@ -315,6 +317,10 @@ function tractFill(feature, key, domain) {
   if (key === "income") {
     const lightness = 88 - ratio * 48;
     return `hsl(27 86% ${lightness}%)`;
+  }
+  if (key === "childShare") {
+    const lightness = 88 - ratio * 44;
+    return `hsl(203 58% ${lightness}%)`;
   }
   const lightness = 86 - ratio * 43;
   return `hsl(154 40% ${lightness}%)`;
@@ -678,6 +684,10 @@ function App() {
                   {label}
                 </button>
               ))}
+            </div>
+            <div className="metric-definition">
+              <strong>{activeCivicMetric.detail}</strong>
+              <span>{activeCivicMetric.note}</span>
             </div>
             <div className="civic-map-shell">
               <svg

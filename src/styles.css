@@ -971,6 +971,28 @@ h3 {
   background: var(--princeton-black);
 }
 
+.metric-definition {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 14px;
+  color: #5e6a62;
+  background: #fffaf1;
+  border-bottom: 1px solid rgba(23, 32, 27, 0.08);
+  font-size: 0.88rem;
+}
+
+.metric-definition strong {
+  flex: 0 0 auto;
+  color: var(--princeton-black);
+}
+
+.metric-definition span {
+  text-align: right;
+  line-height: 1.4;
+}
+
 .civic-map-shell {
   position: relative;
   display: grid;
@@ -1103,9 +1125,12 @@ h3 {
   color: var(--princeton-black);
 }
 
-.metric-children .legend-scale i,
-.metric-childShare .legend-scale i {
+.metric-children .legend-scale i {
   background: linear-gradient(90deg, #edf0e9, #8cc8ac, #2f6958);
+}
+
+.metric-childShare .legend-scale i {
+  background: linear-gradient(90deg, #edf0e9, #8fc1d8, #245f86);
 }
 
 .metric-voting .legend-scale i {
@@ -1438,6 +1463,15 @@ footer a {
 
   .civic-toolbar button {
     justify-content: center;
+  }
+
+  .metric-definition {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .metric-definition span {
+    text-align: left;
   }
 
   .civic-legend {

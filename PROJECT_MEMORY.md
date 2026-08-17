@@ -78,12 +78,13 @@ Civic map:
 - Weather appears in the top daily brief; do not duplicate weaker weather cards lower on the page.
 - Civic data must be neighborhood-scale or aggregate only. Do not publish individual voter, household, or address-level data.
 - The voting layer may show official Princeton municipal-level Republican/Democrat results across the map, but neighborhood shading should only be added after official district totals are safely joined to public district boundaries.
-- Civic map legends must show both sides of the scale. For wealth/children layers, darker means higher. For voting, red-to-blue means Republican-to-Democratic.
+- Civic map legends must show both sides of the scale. For wealth/children layers, darker means higher. Children count and child share must use distinct labels and color scales because count and percentage answer different questions. For voting, red-to-blue means Republican-to-Democratic.
 - Civic map regions should expose their current metric on hover, focus, and tap/click.
 
 ## Feature Log
 
 - Latest - Improved civic map hover/tap details, fixed lower/higher legends, and reflected official Princeton municipal presidential results on the voting layer.
+- Latest - Made the civic map distinction between children count and child share explicit, with separate green and blue scales.
 - `744922f` - Added aggregate civic map with wealth, children, family-share, and source-linked voting layers.
 - `c2241f2` - Added footer attribution: "Vibe coded with love by Stan Berteloot."
 - `a22ce90` - Consolidated weather and alert UI.
