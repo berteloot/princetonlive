@@ -1493,6 +1493,61 @@ h3 {
   line-height: 1.55;
 }
 
+.guides-section {
+  color: var(--princeton-black);
+  background: #fffaf1;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.guide-card {
+  display: grid;
+  gap: 10px;
+  min-height: 190px;
+  padding: 18px;
+  color: var(--princeton-black);
+  background: #fff;
+  border: 1px solid rgba(23, 32, 27, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 14px 40px rgba(23, 32, 27, 0.05);
+  transition:
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.guide-card span {
+  color: var(--princeton-black);
+  font-size: 1.1rem;
+  font-weight: 950;
+  line-height: 1.2;
+}
+
+.guide-card p {
+  margin: 0;
+  color: #5e6a62;
+  line-height: 1.52;
+}
+
+.guide-card strong {
+  display: inline-flex;
+  align-items: center;
+  align-self: end;
+  gap: 6px;
+  width: fit-content;
+  color: var(--orange-deep);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.guide-card:hover {
+  border-color: rgba(238, 127, 45, 0.4);
+  transform: translateY(-1px);
+}
+
 .tract-rank strong {
   display: grid;
   gap: 3px;
@@ -1685,6 +1740,7 @@ footer a {
   .commute-grid,
   .tile-grid,
   .faq-grid,
+  .guide-grid,
   .perk-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1727,6 +1783,7 @@ footer a {
   .identity-panels,
   .tile-grid,
   .faq-grid,
+  .guide-grid,
   .perk-list {
     grid-template-columns: 1fr;
   }

@@ -267,6 +267,39 @@ const residentFaqs = [
   },
 ];
 
+const pillarGuides = [
+  {
+    title: "Moving to Princeton",
+    detail: "First-week orientation for new residents: alerts, transit, library cards, services, and local discovery.",
+    url: "/guides/moving-to-princeton.html",
+  },
+  {
+    title: "Library benefits",
+    detail: "Library cards, study rooms, parking validation, museum passes, technology, and digital resources.",
+    url: "/guides/princeton-library-benefits.html",
+  },
+  {
+    title: "Getting around",
+    detail: "Dinky, Princeton Junction, NYC and Philly routes, parking, buses, walking, and biking.",
+    url: "/guides/getting-around-princeton.html",
+  },
+  {
+    title: "Public events and culture",
+    detail: "University public events, lectures, library programs, Garden Theatre, McCarter, arts, and museums.",
+    url: "/guides/princeton-public-events-culture.html",
+  },
+  {
+    title: "Civic data",
+    detail: "Census block groups, wealth, children, national benchmarks, and voting-source limits.",
+    url: "/guides/princeton-civic-data.html",
+  },
+  {
+    title: "Resident services",
+    detail: "Alerts, recycling, reporting issues, EV charging, parks, Human Services, and recreation.",
+    url: "/guides/princeton-resident-services.html",
+  },
+];
+
 const residentPerks = [
   {
     group: "Free with a Princeton library card",
@@ -743,6 +776,7 @@ function App() {
             <a href="#practical">Practical</a>
             <a href="#perks">Perks</a>
             <a href="#civic">Civic map</a>
+            <a href="#guides">Guides</a>
             <a href="#faq">FAQ</a>
             <a href="#explore">Explore</a>
           </nav>
@@ -1319,6 +1353,30 @@ function App() {
               <h3>{question}</h3>
               <p>{answer}</p>
             </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section guides-section" id="guides">
+        <div className="section-heading split">
+          <div>
+            <p className="eyebrow">Guides</p>
+            <h2>Stable pages for recurring Princeton questions.</h2>
+          </div>
+          <p>
+            Crawlable resident guides give search engines and AI assistants durable pages to cite,
+            while the homepage stays focused on live daily signals.
+          </p>
+        </div>
+        <div className="guide-grid">
+          {pillarGuides.map(({ title, detail, url }) => (
+            <a className="guide-card" href={url} key={url}>
+              <span>{title}</span>
+              <p>{detail}</p>
+              <strong>
+                Open guide <ChevronRight size={16} aria-hidden="true" />
+              </strong>
+            </a>
           ))}
         </div>
       </section>

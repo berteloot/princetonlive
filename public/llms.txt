@@ -15,8 +15,18 @@ Important context:
 ## Main Pages
 
 - [PrincetonLive homepage](https://princetonlive.berteloot.org/): Resident guide for Princeton events, transit, services, library benefits, resident perks, civic data, and weather.
+- [Resident guide hub](https://princetonlive.berteloot.org/guides/): Crawlable pillar guides for recurring Princeton resident questions.
 - [French version](https://princetonlive.berteloot.org/?lang=fr): Google-translated French view.
 - [Spanish version](https://princetonlive.berteloot.org/?lang=es): Google-translated Spanish view.
+
+## Pillar Guides
+
+- [Moving to Princeton, NJ: a resident orientation guide](https://princetonlive.berteloot.org/guides/moving-to-princeton.html): A practical orientation guide for new Princeton residents covering first-week decisions, library cards, transit, alerts, town services, and local discovery.
+- [Princeton Public Library benefits for residents](https://princetonlive.berteloot.org/guides/princeton-library-benefits.html): A resident-focused guide to Princeton Public Library cards, study rooms, parking validation, museum passes, digital media, technology, and free learning resources.
+- [Getting around Princeton: Dinky, parking, buses, bikes, NYC and Philly](https://princetonlive.berteloot.org/guides/getting-around-princeton.html): A practical Princeton transportation guide covering the Dinky, Princeton Junction, NJ Transit, Philadelphia routes, parking, local buses, walking, and biking.
+- [Princeton public events, lectures, arts, and culture](https://princetonlive.berteloot.org/guides/princeton-public-events-culture.html): A guide to public cultural life in Princeton, including university events, public lectures, Princeton Public Library programs, Garden Theatre, McCarter, arts, and museum resources.
+- [Princeton civic data: Census block groups, wealth, children, and voting context](https://princetonlive.berteloot.org/guides/princeton-civic-data.html): A privacy-forward guide to PrincetonLive's aggregate civic map, Census block groups, ACS estimates, national benchmarks, and official municipality-level voting sources.
+- [Princeton resident services: alerts, recycling, reporting issues, parks, and town resources](https://princetonlive.berteloot.org/guides/princeton-resident-services.html): A practical guide to Princeton resident services, including alerts, trash and recycling, SeeClickFix, EV charging, parks, municipal maps, Human Services, and recreation.
 
 ## Machine-Readable Endpoints
 

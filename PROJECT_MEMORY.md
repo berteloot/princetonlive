@@ -20,6 +20,7 @@ Production:
 - Civic map data output: `public/civic-map.json`
 - Daily data refresh script: `scripts/fetch-live-data.mjs`
 - Civic map refresh script: `scripts/fetch-civic-map.mjs`
+- SEO pillar page generator: `scripts/build-seo-pages.mjs`
 - Render config: `render.yaml`
 - Scheduled data refresh: `.github/workflows/refresh-data.yml`
 - Crawl policy: `public/robots.txt`
@@ -27,6 +28,7 @@ Production:
 - Agent guidance: `public/llms.txt`
 
 The website is a static Render site. Runtime data is served from generated JSON files in `public/`, and the frontend fetches those files with cache-busting query strings.
+SEO pillar pages are generated into `public/guides/` before each build, along with synced sitemap and llms.txt entries.
 
 ## Commands
 
@@ -41,6 +43,12 @@ Refresh public data:
 
 ```bash
 npm run refresh:public
+```
+
+Generate SEO pillar pages:
+
+```bash
+npm run build:seo
 ```
 
 Build:
@@ -102,9 +110,11 @@ Civic map:
 - SEO/GEO crawlability matters: `index.html` must keep crawlable fallback body content inside `#root`, a clear H1, canonical/geo/social metadata, and JSON-LD in the initial HTML so non-JavaScript AI/search crawlers can classify the page.
 - Structured data should represent visible page content. Keep the visible FAQ in sync with the FAQPage JSON-LD and keep the civic Dataset JSON-LD aligned with `public/civic-map.json`.
 - `robots.txt`, `sitemap.xml`, and `llms.txt` should be deployed at the domain root and updated when site positioning, URLs, language routes, or machine-readable endpoints change.
+- SEO pillar pages live under `/guides/` and are generated from `scripts/build-seo-pages.mjs`. Add new stable guide topics there first so the HTML page, guide hub, sitemap, and llms.txt stay synchronized.
 
 ## Feature Log
 
+- Latest - Added a generated SEO pillar guide cluster under `/guides/` for moving to Princeton, library benefits, transit, culture, civic data, and resident services, with homepage internal links.
 - Latest - Added SEO/GEO crawlability layer: raw HTML answer block, explicit H1, canonical/social/geo metadata, JSON-LD graph, robots.txt, sitemap.xml, llms.txt, and visible resident FAQ.
 - Latest - Updated external link handling so outbound and data-fed links open in a new tab while internal section navigation remains same-page.
 - Latest - Updated the civic data refresh to prefer the official U.S. Census API with `CENSUS_API_KEY`, auto-detect the newest available ACS 5-year release, and keep Census Reporter as an automatic fallback.

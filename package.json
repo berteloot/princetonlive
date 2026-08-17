@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
+    "build:seo": "node scripts/build-seo-pages.mjs",
     "refresh:data": "node scripts/fetch-live-data.mjs",
     "refresh:civic": "node scripts/fetch-civic-map.mjs",
     "refresh:public": "npm run refresh:data && npm run refresh:civic",
-    "build": "npm run refresh:public && vite build",
+    "build": "npm run build:seo && npm run refresh:public && vite build",
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
