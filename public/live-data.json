@@ -1,0 +1,263 @@
+{
+  "generatedAt": "2026-08-17T13:07:33.934Z",
+  "weather": {
+    "temperature": 86,
+    "shortForecast": "Patchy Fog then Slight Chance Showers And Thunderstorms",
+    "wind": "5 mph NW",
+    "detailedForecast": "Patchy fog before 11am, then a slight chance of rain showers between 4pm and 5pm, then a slight chance of showers and thunderstorms. Partly sunny, with a high near 86. Northwest wind around 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
+    "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
+  },
+  "alerts": [],
+  "events": [
+    {
+      "title": "Workshop: Writers Room",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 17",
+      "timeLabel": "10:00am - 12:00pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/15466919",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
+      ]
+    },
+    {
+      "title": "Kids: Playtime Fun: At the Market",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 17",
+      "timeLabel": "11:00am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14760969",
+      "tags": [
+        "new",
+        "family",
+        "rain"
+      ]
+    },
+    {
+      "title": "English Conversation (in person)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 17",
+      "timeLabel": "12:00pm - 1:30pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/16932152",
+      "tags": [
+        "new"
+      ]
+    },
+    {
+      "title": "English Conversation (Virtual)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 17",
+      "timeLabel": "7:00pm - 8:30pm",
+      "location": "Virtual - Google Meet",
+      "url": "https://princetonlibrary.libnet.info/event/16624384",
+      "tags": [
+        "new"
+      ]
+    },
+    {
+      "title": "Rubin Hack Week Welcome and Kick Off",
+      "source": "Princeton University",
+      "dateLabel": "Aug 17",
+      "timeLabel": "9:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/rubin-hack-week-welcome-and-kick",
+      "tags": [
+        "new"
+      ]
+    },
+    {
+      "title": "Kids: Baby Beach Party",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 18",
+      "timeLabel": "10:30am - 11:15am",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/16019667",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
+      ]
+    },
+    {
+      "title": "Kids: Playtime Fun: At the Market",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 18",
+      "timeLabel": "11:00am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14760970",
+      "tags": [
+        "new",
+        "family",
+        "rain"
+      ]
+    },
+    {
+      "title": "Tech: Ask the Mac Pros",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 18",
+      "timeLabel": "1:00pm - 3:00pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/16661443",
+      "tags": [
+        "new"
+      ]
+    },
+    {
+      "title": "Summer Film Series: From Page to Screen",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 18",
+      "timeLabel": "3:00pm - 5:00pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17029105",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
+      ]
+    },
+    {
+      "title": "Catherine Project Weekly Book Discussion Series",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 18",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/16570101",
+      "tags": [
+        "new",
+        "family"
+      ]
+    },
+    {
+      "title": "Mercer County Community ID",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 18",
+      "timeLabel": "4:00pm - 6:30pm",
+      "location": "Princeton Public Library - Conference Room",
+      "url": "https://princetonlibrary.libnet.info/event/15432406",
+      "tags": [
+        "new",
+        "family"
+      ]
+    },
+    {
+      "title": "Catherine Project Book Discussion Series",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 18",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/16560996",
+      "tags": [
+        "new",
+        "family"
+      ]
+    },
+    {
+      "title": "Workshop: Writers Room Online",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 18",
+      "timeLabel": "7:00pm - 8:35pm",
+      "location": "Virtual - Zoom Webinar",
+      "url": "https://princetonlibrary.libnet.info/event/15430625",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
+      ]
+    },
+    {
+      "title": "Princeton Tango Club Weekly Class",
+      "source": "Princeton University",
+      "dateLabel": "Aug 17",
+      "timeLabel": "8:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-tango-club-weekly-class-1",
+      "tags": [
+        "new",
+        "culture"
+      ]
+    },
+    {
+      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Spruce Circle",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 18, 2026",
+      "timeLabel": "01:00 PM - 01:45 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7336",
+      "tags": [
+        "new",
+        "family",
+        "practical"
+      ]
+    },
+    {
+      "title": "Food Insecurity Task Force: Arm in Arm",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 18, 2026",
+      "timeLabel": "01:00 PM - 07:00 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7747",
+      "tags": [
+        "new",
+        "practical"
+      ]
+    },
+    {
+      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Redding Circle",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 18, 2026",
+      "timeLabel": "02:00 PM - 02:30 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7388",
+      "tags": [
+        "new",
+        "family",
+        "practical"
+      ]
+    },
+    {
+      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At YMCA",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 18, 2026",
+      "timeLabel": "03:15 PM - 04:15 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7128",
+      "tags": [
+        "new",
+        "practical"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "name": "National Weather Service",
+      "url": "https://api.weather.gov/",
+      "status": "ok",
+      "detail": "Patchy Fog then Slight Chance Showers And Thunderstorms, 86F"
+    },
+    {
+      "name": "Princeton University Events",
+      "url": "https://www.princeton.edu/feed/events/",
+      "status": "ok",
+      "detail": "200 events"
+    },
+    {
+      "name": "Princeton Public Library",
+      "url": "https://princetonlibrary.libnet.info/events",
+      "status": "ok",
+      "detail": "36 events"
+    },
+    {
+      "name": "Municipality of Princeton",
+      "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
+      "status": "ok",
+      "detail": "28 calendar items"
+    }
+  ]
+}

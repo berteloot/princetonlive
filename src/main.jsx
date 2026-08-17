@@ -49,171 +49,133 @@ const languageMeta = {
   },
 };
 
-const content = {
-  en: {
-    brandSub: "Independent resident guide",
-    nav: {
-      today: "Today",
-      move: "Move",
-      culture: "Culture",
-      practical: "Practical",
-      explore: "Explore",
-    },
-    languageLabel: "Language",
-    hero: {
-      eyebrow: "Orange and black, resident-first",
-      title: "Know what Princeton knows.",
-      body: "A calm civic notebook for new residents: commute, culture, lectures, parking, alerts, errands, public life, and the small decisions that turn Princeton into a usable home.",
-      note: "Princeton spirit without official-university confusion.",
-      primary: "Start with today",
-      secondary: "Data plan",
-      snapshotLabel: "Today snapshot",
-      brief: [
-        ["Princeton, NJ", "Resident mode"],
-        ["Best first habit", "Check transit before culture"],
-        ["Weather fallback", "Library, lectures, cinema"],
-        ["Local signal", "Orange alerts, black type, quiet confidence"],
-      ],
-    },
-    intro: {
-      eyebrow: "Positioning",
-      title: "Not a town-info dashboard. A local life concierge.",
-      body: "PrincetonLive answers the new-resident question hiding underneath ten different tabs: what should I know today so I can live Princeton well?",
-    },
-    identity: {
-      eyebrow: "Visual System",
-      title: "A Princeton cue, not a Princeton costume.",
-      paletteKicker: "Palette",
-      paletteTitle: "Orange for signals. Black for trust.",
-      paletteBody: "PrincetonLive uses Princeton orange as a high-signal accent, then gives the working interface room to breathe with warm civic neutrals.",
-      swatchesLabel: "PrincetonLive palette",
-      swatches: ["Orange", "Black", "Paper", "Civic"],
-      tigerKicker: "Mascot Energy",
-      tigerTitle: "Alert, quick, and a little spirited.",
-      tigerBody: "The tiger influence shows up as motion and hierarchy: crisp diagonal signal bars, fast-to-scan cards, and sharp orange moments where a resident needs to act.",
-    },
-    today: {
-      eyebrow: "Today",
-      title: "One agenda across town and university life.",
-      filtersLabel: "Agenda filters",
-      searchLabel: "Search agenda",
-      searchPlaceholder: "Search lectures, films, library, McCarter...",
-      filters: [
-        ["new", "New here"],
-        ["family", "Family"],
-        ["rain", "Rain plan"],
-        ["all", "All"],
-      ],
-      agenda: [
-        ["4:30 PM", "Open university lecture", "Princeton campus", "Free", "Princeton University Events"],
-        ["6:00 PM", "Library workshop or community event", "Princeton Public Library", "Resident", "Library Events"],
-        ["7:10 PM", "Garden Theatre showtime check", "Nassau Street", "Indoors", "Garden Theatre"],
-        ["8:00 PM", "McCarter performance window", "University Place", "Arts", "McCarter Theatre"],
-      ],
-    },
-    move: {
-      eyebrow: "Move",
-      title: "Commute decisions before calendar decisions.",
-      body: "First version favors reliable route logic and official handoffs; live GTFS and credentialed feeds can layer in after the static MVP.",
-      cards: [
-        ["NYC without the mistake", "Dinky to Princeton Junction, then Northeast Corridor to NY Penn. Check transfer padding before you leave.", "Open NJ Transit"],
-        ["Philly route logic", "Use Princeton Junction to Trenton, then SEPTA toward Center City. Amtrak can be faster but less predictable for casual trips.", "Open SEPTA API"],
-        ["Parking sanity check", "Downtown meters, garages, and Princeton Junction lots each have different rules. Treat parking as part of the itinerary.", "Parking rules"],
-        ["No-car Princeton", "TigerTransit, FreeB, walking, biking, and Dinky routing deserve one calm map instead of five browser tabs.", "Getting around"],
-      ],
-    },
-    culture: {
-      eyebrow: "Culture",
-      title: "Public intellectual life, theater, films, and library life in one place.",
-      cardTitle: "Tonight in Princeton",
-      body: "The product edge is not inventing events. It is joining the university, library, Garden Theatre, McCarter, museum, Richardson, Lewis Center, and local arts into a single resident-grade agenda.",
-      stats: ["Free tonight", "Open to public", "Indoors if raining"],
-    },
-    practical: {
-      eyebrow: "Practical Life",
-      title: "The boring stuff, made findable before it becomes annoying.",
-      tiles: [
-        ["Weather alerts", "NWS-ready"],
-        ["Town alerts", "Nixle"],
-        ["Trash and recycling", "Address-aware later"],
-        ["EV chargers", "Static first"],
-        ["Municipal services", "One-tap links"],
-        ["GIS layers", "Parks, zoning, trails"],
-      ],
-    },
-    explore: {
-      eyebrow: "Explore",
-      title: "First-month walks for becoming oriented.",
-      body: "The explore layer starts with parks, trails, public art, historic districts, playgrounds, restrooms, and parking. It can become a resident map powered by Princeton GIS.",
-      stops: [
-        "D&R Canal towpath",
-        "Institute Woods",
-        "Princeton Battlefield",
-        "Stony Brook paths",
-        "Playgrounds with restrooms",
-        "Historic district walks",
-      ],
-    },
-    sources: {
-      eyebrow: "Feasibility",
-      title: "Source plan for the live version.",
-      body: "Static launch first, then cached live feeds where the public source is strong enough to respect users and source owners.",
-      label: "Source plan",
-      rows: [
-        ["University events", "RSS and public filters", "Strong"],
-        ["Library events", "Communico calendar feeds", "Strong"],
-        ["Weather and alerts", "National Weather Service API", "Strong"],
-        ["Municipal GIS", "ArcGIS public feature services", "Strong"],
-        ["Garden Theatre", "HTML showtime extraction", "Workable"],
-        ["McCarter", "Cached listings scrape", "Watchful"],
-        ["Transit", "GTFS plus official links", "Credentialed"],
-        ["Trash/recycling", "Recycle Coach and municipal guidance", "Manual first"],
-      ],
-    },
-    footer: {
-      line: "Turning a famous place into a usable home.",
-      top: "Back to top",
-    },
+const fallbackData = {
+  generatedAt: null,
+  weather: {
+    temperature: null,
+    shortForecast: "Weather loading",
+    wind: "",
+    detailedForecast: "Current Princeton forecast was not available during the last refresh.",
+    sourceUrl: "https://www.weather.gov/",
   },
+  alerts: [],
+  events: [
+    {
+      title: "Princeton University public events",
+      source: "Princeton University",
+      dateLabel: "Today",
+      timeLabel: "Check schedule",
+      location: "Princeton campus",
+      url: "https://www.princeton.edu/events",
+      tags: ["culture", "new"],
+    },
+    {
+      title: "Princeton Public Library events",
+      source: "Princeton Public Library",
+      dateLabel: "Today",
+      timeLabel: "Check schedule",
+      location: "65 Witherspoon Street",
+      url: "https://princetonlibrary.libnet.info/events",
+      tags: ["family", "rain"],
+    },
+    {
+      title: "Municipal calendar",
+      source: "Municipality of Princeton",
+      dateLabel: "Today",
+      timeLabel: "Check schedule",
+      location: "Princeton, NJ",
+      url: "https://www.princetonnj.gov/calendar.aspx",
+      tags: ["practical", "new"],
+    },
+  ],
+  sources: [],
 };
 
-const agendaUrls = [
-  "https://www.princeton.edu/events",
-  "https://princetonlibrary.libnet.info/events",
-  "https://www.princetongardentheatre.org/",
-  "https://www.mccarter.org/events",
+const agendaFilters = [
+  ["all", "All", CalendarDays],
+  ["new", "New here", Sparkles],
+  ["family", "Family", Users],
+  ["rain", "Rain plan", Umbrella],
+  ["culture", "Culture", Theater],
 ];
 
-const agendaModes = [
-  ["new", "culture"],
-  ["family", "culture"],
-  ["culture", "rain"],
-  ["culture"],
+const commuteCards = [
+  {
+    title: "NYC by train",
+    detail: "Dinky to Princeton Junction, then Northeast Corridor to New York Penn. Check the transfer before you leave.",
+    action: "NJ Transit Dinky",
+    url: "https://www.njtransit.com/destinations/princeton-dinky",
+    icon: Train,
+  },
+  {
+    title: "Philly route",
+    detail: "Use Princeton Junction to Trenton, then SEPTA toward Center City. Compare Amtrak when timing matters.",
+    action: "SEPTA schedules",
+    url: "https://api.septa.org/",
+    icon: Route,
+  },
+  {
+    title: "Downtown parking",
+    detail: "Meters, garages, permit zones, and Princeton Junction lots each work differently. Check before you commit.",
+    action: "Parking rules",
+    url: "https://www.princetonnj.gov/203/Parking-in-Princeton",
+    icon: ParkingCircle,
+  },
+  {
+    title: "No-car options",
+    detail: "TigerTransit, FreeB, walking, biking, and the Dinky cover more day-to-day trips than new residents expect.",
+    action: "Getting around",
+    url: "https://www.princetonnj.gov/578/Getting-Around-Princeton",
+    icon: Bus,
+  },
 ];
 
-const filterIcons = {
-  new: Sparkles,
-  family: Users,
-  rain: Umbrella,
-  all: CalendarDays,
-};
-
-const commuteIcons = [Train, Route, ParkingCircle, Bus];
-const commuteUrls = [
-  "https://www.njtransit.com/destinations/princeton-dinky",
-  "https://api.septa.org/",
-  "https://www.princetonnj.gov/203/Parking-in-Princeton",
-  "https://www.princetonnj.gov/578/Getting-Around-Princeton",
+const practicalTiles = [
+  {
+    label: "Weather alerts",
+    value: "NWS",
+    url: "https://www.weather.gov/",
+    icon: CloudRain,
+  },
+  {
+    label: "Town alerts",
+    value: "Nixle",
+    url: "https://www.princetonnj.gov/274/Emergency-Phone-Notifications",
+    icon: AlertTriangle,
+  },
+  {
+    label: "Trash & recycling",
+    value: "Resident services",
+    url: "https://www.princetonnj.gov/263/Trash-Recycling",
+    icon: Recycle,
+  },
+  {
+    label: "EV charging",
+    value: "Station map",
+    url: "https://afdc.energy.gov/stations/#/find/nearest?location=Princeton%2C%20NJ",
+    icon: BatteryCharging,
+  },
+  {
+    label: "Report an issue",
+    value: "SeeClickFix",
+    url: "https://seeclickfix.com/princeton_nj",
+    icon: Landmark,
+  },
+  {
+    label: "Parks & GIS",
+    value: "Town maps",
+    url: "https://www.princetonnj.gov/1845/GIS-Maps-and-Apps",
+    icon: Map,
+  },
 ];
 
-const practicalIcons = [CloudRain, AlertTriangle, Recycle, BatteryCharging, Landmark, Map];
-const practicalUrls = [
-  "https://www.weather.gov/",
-  "https://www.princetonnj.gov/274/Emergency-Phone-Notifications",
-  "https://www.princetonnj.gov/",
-  "https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/all/",
-  "https://www.princetonnj.gov/",
-  "https://www.princetonnj.gov/1845/GIS-Maps-and-Apps",
+const exploreStops = [
+  ["D&R Canal towpath", "Flat, easy orientation walk along the water."],
+  ["Institute Woods", "Shaded trails for a quiet first-month ritual."],
+  ["Princeton Battlefield", "History, fields, and a useful western anchor."],
+  ["Stony Brook paths", "Good for nature breaks and weekend resets."],
+  ["Community Park", "Playgrounds, pool, fields, and everyday family logistics."],
+  ["Nassau Street side streets", "Errands, coffee, bookshops, and shortcuts."],
 ];
 
 function getInitialLanguage() {
@@ -237,11 +199,30 @@ function triggerGoogleTranslate(targetLanguage) {
   return true;
 }
 
+function formatRefresh(value) {
+  if (!value) return "Last refreshed when the site was built";
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    timeZone: "America/New_York",
+    timeZoneName: "short",
+  }).format(new Date(value));
+}
+
 function App() {
   const [language, setLanguage] = useState(getInitialLanguage);
-  const [persona, setPersona] = useState("new");
+  const [filter, setFilter] = useState("all");
   const [query, setQuery] = useState("");
-  const t = content.en;
+  const [liveData, setLiveData] = useState(fallbackData);
+
+  useEffect(() => {
+    fetch(`/live-data.json?v=${Date.now()}`)
+      .then((response) => (response.ok ? response.json() : fallbackData))
+      .then((data) => setLiveData({ ...fallbackData, ...data }))
+      .catch(() => setLiveData(fallbackData));
+  }, []);
 
   useEffect(() => {
     if (window.google?.translate?.TranslateElement) return;
@@ -292,57 +273,40 @@ function App() {
     window.location.assign(`${url.pathname}${url.search}${url.hash}`);
   };
 
-  const navItems = [
-    ["today", t.nav.today],
-    ["move", t.nav.move],
-    ["culture", t.nav.culture],
-    ["practical", t.nav.practical],
-    ["explore", t.nav.explore],
-  ];
-
-  const agenda = t.today.agenda.map(([time, title, place, tag, source], index) => ({
-    time,
-    title,
-    place,
-    tag,
-    source,
-    mode: agendaModes[index],
-    url: agendaUrls[index],
-  }));
-
-  const filteredAgenda = useMemo(() => {
+  const filteredEvents = useMemo(() => {
     const normalized = query.trim().toLowerCase();
-    return agenda.filter((item) => {
-      const personaMatch =
-        persona === "all" || item.mode.includes(persona) || item.mode.includes("culture");
-      const textMatch =
-        !normalized ||
-        `${item.title} ${item.place} ${item.tag} ${item.source}`
-          .toLowerCase()
-          .includes(normalized);
-      return personaMatch && textMatch;
+    return liveData.events.filter((event) => {
+      const tagMatch = filter === "all" || event.tags?.includes(filter);
+      const text = `${event.title} ${event.source} ${event.location} ${event.dateLabel} ${event.timeLabel}`.toLowerCase();
+      return tagMatch && (!normalized || text.includes(normalized));
     });
-  }, [agenda, persona, query]);
+  }, [filter, liveData.events, query]);
+
+  const nextEvent = liveData.events[0];
+  const alertCount = liveData.alerts?.length ?? 0;
 
   return (
     <main>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="PrincetonLive home">
-          <span className="brand-mark notranslate" translate="no">PL</span>
+          <span className="brand-mark notranslate" translate="no">
+            PL
+          </span>
           <span>
-            <span className="notranslate" translate="no">PrincetonLive</span>
-            <small>{t.brandSub}</small>
+            <span className="notranslate" translate="no">
+              PrincetonLive
+            </span>
+            <small>Independent resident guide</small>
           </span>
         </a>
         <div className="header-controls">
           <nav aria-label="Primary navigation">
-            {navItems.map(([id, label]) => (
-              <a key={id} href={`#${id}`}>
-                {label}
-              </a>
-            ))}
+            <a href="#today">Today</a>
+            <a href="#move">Move</a>
+            <a href="#practical">Practical</a>
+            <a href="#explore">Explore</a>
           </nav>
-          <div className="language-switcher notranslate" translate="no" aria-label={t.languageLabel}>
+          <div className="language-switcher notranslate" translate="no" aria-label="Language">
             <span className="translation-provider">Google Translate</span>
             {languages.map((option) => (
               <button
@@ -369,221 +333,217 @@ function App() {
           />
         </div>
         <div className="hero-copy">
-          <p className="eyebrow">{t.hero.eyebrow}</p>
-          <h1>{t.hero.title}</h1>
-          <p>{t.hero.body}</p>
-          <div className="identity-note" aria-label="Brand positioning note">
-            <span aria-hidden="true" />
-            <strong>{t.hero.note}</strong>
-          </div>
+          <p className="eyebrow">Princeton, NJ today</p>
+          <h1>Know what matters before you leave.</h1>
+          <p>
+            Weather, alerts, public events, transit decisions, town services, and useful local
+            links in one resident-first daily guide.
+          </p>
           <div className="hero-actions">
             <a className="primary-action" href="#today">
-              {t.hero.primary} <ChevronRight size={18} aria-hidden="true" />
+              Open today <ChevronRight size={18} aria-hidden="true" />
             </a>
-            <a className="secondary-action" href="#sources">
-              {t.hero.secondary}
+            <a className="secondary-action" href="#move">
+              Check transit
             </a>
           </div>
         </div>
-        <aside className="daily-brief" aria-label={t.hero.snapshotLabel}>
-          {t.hero.brief.map(([label, value]) => (
-            <div key={label}>
-              <span>{label}</span>
-              <strong>{value}</strong>
-            </div>
-          ))}
+        <aside className="daily-brief" aria-label="Today snapshot">
+          <a href={liveData.weather.sourceUrl}>
+            <span>Weather</span>
+            <strong>
+              {liveData.weather.temperature ? `${liveData.weather.temperature}°F, ` : ""}
+              {liveData.weather.shortForecast}
+            </strong>
+          </a>
+          <a href="https://www.weather.gov/phi/">
+            <span>Alerts</span>
+            <strong>{alertCount ? `${alertCount} active weather alert${alertCount === 1 ? "" : "s"}` : "No active NWS alerts"}</strong>
+          </a>
+          <a href={nextEvent?.url ?? "https://www.princeton.edu/events"}>
+            <span>Next useful item</span>
+            <strong>{nextEvent ? nextEvent.title : "Check public calendars"}</strong>
+          </a>
+          <div>
+            <span>Updated</span>
+            <strong>{formatRefresh(liveData.generatedAt)}</strong>
+          </div>
         </aside>
-      </section>
-
-      <section className="section intro-band">
-        <div>
-          <p className="eyebrow">{t.intro.eyebrow}</p>
-          <h2>{t.intro.title}</h2>
-        </div>
-        <p>{t.intro.body}</p>
-      </section>
-
-      <section className="section identity-system" aria-labelledby="identity-heading">
-        <div>
-          <p className="eyebrow">{t.identity.eyebrow}</p>
-          <h2 id="identity-heading">{t.identity.title}</h2>
-        </div>
-        <div className="identity-panels">
-          <article className="identity-panel color-panel">
-            <span className="panel-kicker">{t.identity.paletteKicker}</span>
-            <h3>{t.identity.paletteTitle}</h3>
-            <p>{t.identity.paletteBody}</p>
-            <div className="swatches" aria-label={t.identity.swatchesLabel}>
-              {[
-                ["#ee7f2d", t.identity.swatches[0]],
-                ["#0b0b0b", t.identity.swatches[1]],
-                ["#f4efe6", t.identity.swatches[2]],
-                ["#2f6958", t.identity.swatches[3]],
-              ].map(([swatch, label]) => (
-                <span style={{ "--swatch": swatch }} key={label}>
-                  {label}
-                </span>
-              ))}
-            </div>
-          </article>
-          <article className="identity-panel tiger-panel">
-            <span className="panel-kicker">{t.identity.tigerKicker}</span>
-            <h3>{t.identity.tigerTitle}</h3>
-            <p>{t.identity.tigerBody}</p>
-            <div className="signal-bars" aria-hidden="true">
-              <span />
-              <span />
-              <span />
-            </div>
-          </article>
-        </div>
       </section>
 
       <section className="section today-grid" id="today">
         <div className="section-heading">
-          <p className="eyebrow">{t.today.eyebrow}</p>
-          <h2>{t.today.title}</h2>
+          <p className="eyebrow">Today</p>
+          <h2>Public events and resident signals.</h2>
+          <p>
+            Pulled from public Princeton sources, then trimmed into a short list that is useful
+            for a resident deciding what to do next.
+          </p>
         </div>
-        <div className="control-row" aria-label={t.today.filtersLabel}>
-          {t.today.filters.map(([value, label]) => {
-            const Icon = filterIcons[value];
-            return (
-              <button
-                key={value}
-                type="button"
-                className={persona === value ? "is-active" : ""}
-                onClick={() => setPersona(value)}
-              >
-                <Icon size={17} aria-hidden="true" />
-                {label}
-              </button>
-            );
-          })}
+        <div className="control-row" aria-label="Agenda filters">
+          {agendaFilters.map(([value, label, Icon]) => (
+            <button
+              key={value}
+              type="button"
+              className={filter === value ? "is-active" : ""}
+              onClick={() => setFilter(value)}
+            >
+              <Icon size={17} aria-hidden="true" />
+              {label}
+            </button>
+          ))}
         </div>
         <label className="search-box">
           <Search size={18} aria-hidden="true" />
-          <span className="sr-only">{t.today.searchLabel}</span>
+          <span className="sr-only">Search agenda</span>
           <input
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder={t.today.searchPlaceholder}
+            placeholder="Search events, library, town, lectures..."
           />
         </label>
         <div className="agenda-list">
-          {filteredAgenda.map((item) => (
-            <a className="agenda-card" href={item.url} key={item.title}>
-              <time>{item.time}</time>
-              <div>
-                <h3>{item.title}</h3>
-                <p>{item.place}</p>
-              </div>
-              <span>{item.tag}</span>
-              <ExternalLink size={16} aria-hidden="true" />
-            </a>
-          ))}
+          {filteredEvents.length ? (
+            filteredEvents.slice(0, 10).map((event) => (
+              <a className="agenda-card" href={event.url} key={`${event.source}-${event.title}-${event.timeLabel}`}>
+                <time>
+                  {event.dateLabel}
+                  <small>{event.timeLabel}</small>
+                </time>
+                <div>
+                  <h3>{event.title}</h3>
+                  <p>{event.location}</p>
+                </div>
+                <span>{event.source}</span>
+                <ExternalLink size={16} aria-hidden="true" />
+              </a>
+            ))
+          ) : (
+            <div className="empty-state">No matching items in the current public-data snapshot.</div>
+          )}
+        </div>
+      </section>
+
+      <section className="section weather-band" aria-labelledby="weather-heading">
+        <div className="section-heading split">
+          <div>
+            <p className="eyebrow">Weather & alerts</p>
+            <h2 id="weather-heading">Plan the next few hours.</h2>
+          </div>
+          <p>{liveData.weather.detailedForecast}</p>
+        </div>
+        <div className="alert-strip">
+          {liveData.alerts.length ? (
+            liveData.alerts.slice(0, 3).map((alert) => (
+              <a href={alert.url} key={alert.id}>
+                <AlertTriangle size={18} aria-hidden="true" />
+                <strong>{alert.event}</strong>
+                <span>{alert.headline}</span>
+              </a>
+            ))
+          ) : (
+            <div>
+              <CloudRain size={18} aria-hidden="true" />
+              <strong>No active National Weather Service alerts for Princeton.</strong>
+              <span>{liveData.weather.wind}</span>
+            </div>
+          )}
         </div>
       </section>
 
       <section className="section" id="move">
         <div className="section-heading split">
           <div>
-            <p className="eyebrow">{t.move.eyebrow}</p>
-            <h2>{t.move.title}</h2>
+            <p className="eyebrow">Move</p>
+            <h2>Make the commute choice before the calendar choice.</h2>
           </div>
-          <p>{t.move.body}</p>
+          <p>
+            Princeton trips often hinge on one transfer, one parking rule, or one missed shuttle.
+            These links get residents to the official decision points quickly.
+          </p>
         </div>
         <div className="commute-grid">
-          {t.move.cards.map(([title, detail, action], index) => {
-            const Icon = commuteIcons[index];
-            return (
-              <a href={commuteUrls[index]} className="feature-card" key={title}>
-                <Icon size={24} aria-hidden="true" />
-                <h3>{title}</h3>
-                <p>{detail}</p>
-                <span>
-                  {action} <ChevronRight size={16} aria-hidden="true" />
-                </span>
-              </a>
-            );
-          })}
-        </div>
-      </section>
-
-      <section className="culture-band" id="culture">
-        <div className="section-heading">
-          <p className="eyebrow">{t.culture.eyebrow}</p>
-          <h2>{t.culture.title}</h2>
-        </div>
-        <div className="culture-layout">
-          <div className="culture-map" aria-hidden="true">
-            <span className="pin pin-library"><Library size={18} /></span>
-            <span className="pin pin-film"><Film size={18} /></span>
-            <span className="pin pin-theater"><Theater size={18} /></span>
-            <span className="pin pin-campus"><BookOpen size={18} /></span>
-            <span className="route-line" />
-          </div>
-          <div className="culture-copy">
-            <h3>{t.culture.cardTitle}</h3>
-            <p>{t.culture.body}</p>
-            <div className="mini-stats">
-              {t.culture.stats.map((stat) => (
-                <span key={stat}>{stat}</span>
-              ))}
-            </div>
-          </div>
+          {commuteCards.map(({ title, detail, action, url, icon: Icon }) => (
+            <a href={url} className="feature-card" key={title}>
+              <Icon size={24} aria-hidden="true" />
+              <h3>{title}</h3>
+              <p>{detail}</p>
+              <span>
+                {action} <ChevronRight size={16} aria-hidden="true" />
+              </span>
+            </a>
+          ))}
         </div>
       </section>
 
       <section className="section practical" id="practical">
         <div className="section-heading">
-          <p className="eyebrow">{t.practical.eyebrow}</p>
-          <h2>{t.practical.title}</h2>
+          <p className="eyebrow">Practical</p>
+          <h2>Resident errands without the tab hunt.</h2>
         </div>
         <div className="tile-grid">
-          {t.practical.tiles.map(([label, value], index) => {
-            const Icon = practicalIcons[index];
-            return (
-              <a className="utility-tile" href={practicalUrls[index]} key={label}>
-                <Icon size={21} aria-hidden="true" />
-                <span>{label}</span>
-                <strong>{value}</strong>
-              </a>
-            );
-          })}
+          {practicalTiles.map(({ label, value, url, icon: Icon }) => (
+            <a className="utility-tile" href={url} key={label}>
+              <Icon size={21} aria-hidden="true" />
+              <span>{label}</span>
+              <strong>{value}</strong>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section className="section culture-band" aria-labelledby="culture-heading">
+        <div className="section-heading split">
+          <div>
+            <p className="eyebrow">Culture</p>
+            <h2 id="culture-heading">One evening, several Princeton layers.</h2>
+          </div>
+          <p>
+            The library, university, Garden Theatre, McCarter, museum, and town calendars are
+            different silos. PrincetonLive keeps the useful public signals together.
+          </p>
+        </div>
+        <div className="culture-layout">
+          <div className="culture-map" aria-hidden="true">
+            <span className="pin pin-library">
+              <Library size={18} />
+            </span>
+            <span className="pin pin-film">
+              <Film size={18} />
+            </span>
+            <span className="pin pin-theater">
+              <Theater size={18} />
+            </span>
+            <span className="pin pin-campus">
+              <BookOpen size={18} />
+            </span>
+            <span className="route-line" />
+          </div>
+          <div className="source-links">
+            <a href="https://www.princeton.edu/events">Princeton University events</a>
+            <a href="https://princetonlibrary.libnet.info/events">Princeton Public Library</a>
+            <a href="https://www.princetongardentheatre.org/">Garden Theatre</a>
+            <a href="https://www.mccarter.org/events">McCarter Theatre</a>
+          </div>
         </div>
       </section>
 
       <section className="section explore" id="explore">
         <div>
-          <p className="eyebrow">{t.explore.eyebrow}</p>
-          <h2>{t.explore.title}</h2>
-          <p>{t.explore.body}</p>
+          <p className="eyebrow">Explore</p>
+          <h2>First-month Princeton walks.</h2>
+          <p>
+            Short local anchors for learning the town beyond Nassau Street, selected for everyday
+            usefulness rather than tourism.
+          </p>
         </div>
         <div className="walk-list">
-          {t.explore.stops.map((stop, index) => (
+          {exploreStops.map(([stop, note], index) => (
             <div key={stop}>
               <span>{String(index + 1).padStart(2, "0")}</span>
               <strong>{stop}</strong>
+              <small>{note}</small>
               {index % 2 === 0 ? <Trees size={18} /> : <Bike size={18} />}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="section source-plan" id="sources">
-        <div className="section-heading split">
-          <div>
-            <p className="eyebrow">{t.sources.eyebrow}</p>
-            <h2>{t.sources.title}</h2>
-          </div>
-          <p>{t.sources.body}</p>
-        </div>
-        <div className="source-table" role="table" aria-label={t.sources.label}>
-          {t.sources.rows.map(([source, method, status]) => (
-            <div className="source-row" role="row" key={source}>
-              <span role="cell">{source}</span>
-              <span role="cell">{method}</span>
-              <strong role="cell">{status}</strong>
             </div>
           ))}
         </div>
@@ -592,11 +552,11 @@ function App() {
       <footer>
         <div>
           <strong>PrincetonLive</strong>
-          <span>{t.footer.line}</span>
+          <span>Public Princeton signals, organized for daily resident life.</span>
         </div>
         <a href="#top">
           <Navigation size={16} aria-hidden="true" />
-          {t.footer.top}
+          Back to top
         </a>
       </footer>
     </main>

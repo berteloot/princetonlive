@@ -355,9 +355,15 @@ h3 {
   backdrop-filter: blur(20px);
 }
 
+.daily-brief a,
 .daily-brief div {
+  display: block;
   padding: 18px;
   background: rgba(255, 255, 255, 0.1);
+}
+
+.daily-brief a:hover {
+  background: rgba(255, 255, 255, 0.16);
 }
 
 .daily-brief span {
@@ -612,8 +618,17 @@ h3 {
 }
 
 .agenda-card time {
+  display: grid;
+  gap: 4px;
   font-weight: 900;
   color: var(--orange-deep);
+}
+
+.agenda-card time small {
+  color: #6a5545;
+  font-size: 0.74rem;
+  font-weight: 800;
+  line-height: 1.15;
 }
 
 .agenda-card p {
@@ -628,6 +643,48 @@ h3 {
   border-radius: 999px;
   font-size: 0.82rem;
   font-weight: 800;
+  white-space: nowrap;
+}
+
+.empty-state {
+  padding: 18px;
+  color: #5e6a62;
+  background: #fff;
+  border: 1px solid rgba(23, 32, 27, 0.1);
+  border-radius: 8px;
+}
+
+.weather-band {
+  color: var(--princeton-black);
+  background: #fffaf1;
+}
+
+.alert-strip {
+  display: grid;
+  gap: 10px;
+}
+
+.alert-strip a,
+.alert-strip div {
+  display: grid;
+  grid-template-columns: 28px minmax(180px, 0.45fr) minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  min-height: 64px;
+  padding: 16px 18px;
+  color: var(--princeton-black);
+  background: #fff;
+  border: 1px solid rgba(23, 32, 27, 0.1);
+  border-radius: 8px;
+}
+
+.alert-strip svg {
+  color: var(--princeton-orange);
+}
+
+.alert-strip span {
+  color: #5e6a62;
+  line-height: 1.45;
 }
 
 .commute-grid {
@@ -754,6 +811,32 @@ h3 {
   color: rgba(255, 255, 255, 0.74);
 }
 
+.source-links {
+  display: grid;
+  gap: 10px;
+}
+
+.source-links a {
+  display: flex;
+  min-height: 58px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  font-weight: 850;
+}
+
+.source-links a::after {
+  flex: 0 0 auto;
+  color: var(--orange-soft);
+  content: "Open";
+  font-size: 0.82rem;
+}
+
 .mini-stats {
   display: flex;
   flex-wrap: wrap;
@@ -831,7 +914,15 @@ h3 {
   font-weight: 900;
 }
 
+.walk-list small {
+  grid-column: 2;
+  color: #5e6a62;
+  line-height: 1.35;
+}
+
 .walk-list svg {
+  grid-column: 3;
+  grid-row: 1 / span 2;
   color: #2f6958;
 }
 
