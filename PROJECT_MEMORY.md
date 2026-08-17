@@ -64,11 +64,12 @@ Daily operating data:
 - Static resident-perk links verified from Princeton Public Library, Princeton University Community Auditing, Arts Council of Princeton, and Princeton municipal pages
 
 Civic map:
-- U.S. Census TIGERweb tract geometry
+- U.S. Census TIGERweb block-group geometry
+- U.S. Census TIGERweb Princeton county-subdivision boundary for selecting only Princeton municipal block groups
 - U.S. Census API / ACS 5-year estimates when `CENSUS_API_KEY` is available during build or refresh. The refresh tries the newest plausible ACS 5-year release first, steps backward if Census has not published that year yet, and can be pinned with `CENSUS_ACS_YEAR`.
 - Census Reporter API / ACS estimates as the automatic fallback if the official Census key is missing or the API is unavailable
-- U.S. Census API or Census Reporter national ACS benchmarks, matched to the same ACS release as the Princeton tract feed
-- U.S. Census TIGERweb national tract count for children-per-tract normalization
+- U.S. Census API or Census Reporter national ACS benchmarks, matched to the same ACS release as the Princeton block-group feed
+- U.S. Census TIGERweb national block-group count for children-per-block-group normalization
 - OpenStreetMap Nominatim for submit-only address lookup on the civic map
 - NJ Division of Elections official 2024 Mercer presidential results PDF
 - FEC official 2024 presidential general election results PDF for national popular-vote benchmark
@@ -87,9 +88,10 @@ Civic map:
 - The voting layer may show official Princeton municipal-level Republican/Democrat results across the map, but neighborhood shading should only be added after official district totals are safely joined to public district boundaries.
 - Civic map legends must show both sides of the scale. For wealth/children layers, darker means higher. Children count and child share must use distinct labels and color scales because count and percentage answer different questions. For voting, red-to-blue means Republican-to-Democratic.
 - Civic map regions should expose their current metric on hover, focus, and tap/click.
-- Civic map benchmarks must be generated from public data during refresh. Income and child-share use U.S. ACS values from the same release as Princeton tract estimates; children count is compared with U.S. average residents under 18 per census tract, not the national child total.
-- Explain Census terms in resident language. A tract should be presented as a stable Census comparison area, often neighborhood-sized, not as a named neighborhood, voting precinct, or address.
-- Civic address lookup should be submit-only, privacy-forward, and should not store searched addresses. The current implementation uses OpenStreetMap/Nominatim plus local tract geometry. Google Places autocomplete can be added later only after a Google Maps API key, billing, and domain restrictions are configured.
+- Civic map benchmarks must be generated from public data during refresh. Income and child-share use U.S. ACS values from the same release as Princeton block-group estimates; children count is compared with U.S. average residents under 18 per census block group, not the national child total.
+- Explain Census terms in resident language. A block group is a smaller aggregate area inside a tract; it is still not a named neighborhood, voting precinct, household, or exact address.
+- Wealth UI must explain that ACS median household income is top-coded at `$250,001+`; missing small-area estimates should read as "No ACS estimate," not low wealth.
+- Civic address lookup should be submit-only, privacy-forward, and should not store searched addresses. The current implementation uses OpenStreetMap/Nominatim plus local block-group geometry. Google Places autocomplete can be added later only after a Google Maps API key, billing, and domain restrictions are configured.
 - Resident perks must distinguish free benefits from access programs that cost money. Princeton University Community Auditing is resident-relevant, but it is tuition-based, not a free library-style perk.
 - The Census API key must stay server/build-side only. The browser receives generated aggregate JSON, never the key.
 - GitHub scheduled refresh passes `CENSUS_API_KEY` from repository secrets when configured and falls back to Census Reporter when absent.
@@ -97,9 +99,11 @@ Civic map:
 ## Feature Log
 
 - Latest - Updated the civic data refresh to prefer the official U.S. Census API with `CENSUS_API_KEY`, auto-detect the newest available ACS 5-year release, and keep Census Reporter as an automatic fallback.
+- Latest - Improved civic map accuracy by switching wealth/children from census tracts to census block groups and selecting areas against the Princeton municipal boundary instead of a bounding box.
+- Latest - Added explicit ACS top-code and missing-estimate handling to the wealth layer after checking Library Place, Westcott Road, and Lytle Street.
 - Latest - Added a resident perks section covering free library-card benefits, library parking/study rooms/museum passes/technology, community auditing, Arts Council resources, the free Princeton Loop, Human Services, and Recreation.
-- Latest - Added civic map address lookup that places a marker and highlights the matching tract without storing the submitted address.
-- Latest - Added a plain-English "What is a tract?" explainer to the civic map.
+- Latest - Added civic map address lookup that places a marker and highlights the matching block group without storing the submitted address.
+- Latest - Added a plain-English Census geography explainer to the civic map.
 - Latest - Added U.S. benchmark comparisons to civic map metrics, generated from public Census/FEC sources during the civic data refresh.
 - Latest - Improved civic map hover/tap details, fixed lower/higher legends, and reflected official Princeton municipal presidential results on the voting layer.
 - Latest - Made the civic map distinction between children count and child share explicit, with separate green and blue scales.

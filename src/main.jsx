@@ -100,7 +100,8 @@ const fallbackCivicMap = {
   generatedAt: null,
   release: "Civic map loading",
   privacy:
-    "Neighborhood-scale public data only. PrincetonLive does not publish individual voter, household, or address-level records.",
+    "Block-group public data only. PrincetonLive does not publish individual voter, household, or address-level records.",
+  geography: "census block groups",
   viewBox: "0 0 100 72",
   mapProjection: null,
   features: [],
@@ -142,20 +143,21 @@ const civicMetrics = [
     key: "income",
     label: "Wealth",
     detail: "Median household income",
+    note: "ACS top-codes very high medians as $250,001+. Small block groups may have no published estimate.",
     icon: BadgeDollarSign,
   },
   {
     key: "children",
     label: "Children count",
     detail: "Residents under 18",
-    note: "Raw count of residents under 18 in the tract.",
+    note: "Raw count of residents under 18 in the block group.",
     icon: Baby,
   },
   {
     key: "childShare",
     label: "Child share",
     detail: "Children as share of population",
-    note: "Percentage of the tract population that is under 18.",
+    note: "Percentage of the block-group population that is under 18.",
     icon: Users,
   },
   {
@@ -388,17 +390,20 @@ function formatRefresh(value) {
 }
 
 function formatCivicValue(key, value) {
-  if (!Number.isFinite(value)) return "Source linked";
+  if (!Number.isFinite(value)) {
+    return key === "voting" || key === "voteMargin" ? "Source linked" : "No ACS estimate";
+  }
   if (key === "voting" || key === "voteMargin") {
     const points = Math.abs(value) * 100;
     return `${value >= 0 ? "Democratic" : "Republican"} +${points.toFixed(1)} pts`;
   }
   if (key === "income") {
-    return new Intl.NumberFormat("en-US", {
+    const formatted = new Intl.NumberFormat("en-US", {
       style: "currency",
       currency: "USD",
       maximumFractionDigits: 0,
     }).format(value);
+    return value >= 250001 ? `${formatted}+` : formatted;
   }
   if (key === "childShare") {
     return new Intl.NumberFormat("en-US", {
@@ -948,8 +953,8 @@ function App() {
             <h2>Public data, neighborhood scale.</h2>
           </div>
           <p>
-            Census tract boundaries and ACS estimates make the map useful without exposing
-            household-level records. Voting uses the official Princeton municipal result until
+            Census block-group boundaries and ACS estimates make the map more local without exposing
+            household-level records. Areas are selected against the Princeton municipal boundary. Voting uses the official Princeton municipal result until
             district-level results can be joined safely.
           </p>
         </div>
@@ -1014,7 +1019,7 @@ function App() {
               <svg
                 viewBox={civicMap.viewBox}
                 role="img"
-                aria-label={`Princeton-area tracts by ${activeCivicMetric.detail}`}
+                aria-label={`Princeton-area block groups by ${activeCivicMetric.detail}`}
                 onPointerMove={updateCivicTooltip}
                 onMouseMove={updateCivicTooltip}
                 onMouseLeave={() => setHoveredCivicFeature(null)}
@@ -1130,11 +1135,11 @@ function App() {
             </div>
             <div className="tract-explainer">
               <Info size={19} aria-hidden="true" />
-              <strong>What is a tract?</strong>
+              <strong>What is a block group?</strong>
               <span>
-                A census tract is a stable Census comparison area, often neighborhood-sized.
-                It is useful for statistics, but it is not a named neighborhood, voting precinct,
-                or exact address.
+                A block group is a Census area inside a tract, usually smaller than a neighborhood.
+                It is useful for local statistics, but it is still an aggregate area, not a named neighborhood,
+                voting precinct, or exact address.
               </span>
               <a href="https://www.census.gov/programs-surveys/geography/about/glossary.html">
                 Census glossary
@@ -1189,7 +1194,7 @@ function App() {
                   ))}
                 </div>
                 <div className="tract-rank">
-                  <h3>{hoveredCivicFeature ? "Hovered tract" : "Highest on this layer"}</h3>
+                  <h3>{hoveredCivicFeature ? "Hovered area" : "Highest on this layer"}</h3>
                   {hoveredCivicFeature ? (
                     <div>
                       <span>

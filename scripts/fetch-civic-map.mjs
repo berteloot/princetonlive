@@ -11,14 +11,14 @@ const SVG_WIDTH = 100;
 const SVG_HEIGHT = 72;
 const SVG_PAD = 2.5;
 
-const geometryUrl =
-  "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Tracts_Blocks/MapServer/7/query?where=STATE%3D%2734%27%20AND%20COUNTY%3D%27021%27&outFields=GEOID,BASENAME,NAME,CENTLAT,CENTLON&returnGeometry=true&outSR=4326&f=geojson";
 const censusReporterUrl =
-  "https://api.censusreporter.org/1.0/data/show/latest?table_ids=B19013,B01001&geo_ids=140%7C05000US34021";
-const tractCountUrl =
-  "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Tracts_Blocks/MapServer/7/query?where=1%3D1&returnCountOnly=true&f=json";
+  "https://api.censusreporter.org/1.0/data/show/latest?table_ids=B19013,B01001&geo_ids=150%7C05000US34021";
 const censusReporterBase = "https://api.censusreporter.org/1.0/data/show";
 const censusReporterHome = "https://api.censusreporter.org/";
+const tigerwebTractsBlocksBase =
+  "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Tracts_Blocks/MapServer";
+const tigerwebPlacesBase =
+  "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Places_CouSub_ConCity_SubMCD/MapServer";
 const fecNationalResultUrl = "https://www.fec.gov/documents/5644/2024presgeresults.pdf";
 const preferredCensusAcsYear = process.env.CENSUS_ACS_YEAR?.trim();
 const censusApiKey = process.env.CENSUS_API_KEY?.trim();
@@ -101,7 +101,8 @@ const fallback = {
   generatedAt: null,
   release: "Civic map unavailable",
   privacy:
-    "Neighborhood-scale public data only. PrincetonLive does not publish individual voter, household, or address-level records.",
+    "Block-group public data only. PrincetonLive does not publish individual voter, household, or address-level records.",
+  geography: "census block groups",
   viewBox: `0 0 ${SVG_WIDTH} ${SVG_HEIGHT}`,
   features: [],
   highlights: [],
@@ -130,7 +131,7 @@ const fallback = {
   sources: [
     {
       name: "U.S. Census TIGERweb",
-      url: "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Tracts_Blocks/MapServer",
+      url: tigerwebTractsBlocksBase,
     },
     {
       name: "U.S. Census API / ACS 5-year",
@@ -141,8 +142,12 @@ const fallback = {
       url: censusReporterHome,
     },
     {
-      name: "U.S. Census TIGERweb national tract count",
-      url: "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Tracts_Blocks/MapServer/7",
+      name: "U.S. Census TIGERweb national block-group count",
+      url: tigerwebTractsBlocksBase,
+    },
+    {
+      name: "U.S. Census TIGERweb Princeton municipal boundary",
+      url: tigerwebPlacesBase,
     },
     {
       name: "FEC official 2024 presidential general election results",
@@ -192,7 +197,7 @@ function sumRowValues(row, keys) {
 }
 
 function reporterTractStats(data, geoid) {
-  const key = `14000US${geoid}`;
+  const key = `15000US${geoid}`;
   const entry = data.data?.[key];
   const age = entry?.B01001?.estimate || {};
   const income = entry?.B19013?.estimate?.B19013001;
@@ -211,6 +216,51 @@ function candidateAcsYears() {
   if (preferredCensusAcsYear) return [preferredCensusAcsYear];
   const currentYear = new Date().getUTCFullYear();
   return Array.from({ length: 6 }, (_, index) => String(currentYear - 1 - index));
+}
+
+function acsYearFromRelease(release) {
+  return release?.name?.match(/ACS\s+(\d{4})/)?.[1] || null;
+}
+
+function tigerwebLayerIds(acsYear) {
+  if (acsYear === "2025") return { blockGroups: 5, countySubdivisions: 8 };
+  if (acsYear === "2024") return { blockGroups: 8, countySubdivisions: 15 };
+  if (acsYear === "2020") return { blockGroups: 11, countySubdivisions: 22 };
+  return { blockGroups: 1, countySubdivisions: 1 };
+}
+
+function blockGroupGeometryUrl(acsYear) {
+  const { blockGroups } = tigerwebLayerIds(acsYear);
+  const params = new URLSearchParams({
+    where: "STATE='34' AND COUNTY='021'",
+    outFields: "GEOID,BASENAME,NAME,CENTLAT,CENTLON,TRACT,BLKGRP",
+    returnGeometry: "true",
+    outSR: "4326",
+    f: "geojson",
+  });
+  return `${tigerwebTractsBlocksBase}/${blockGroups}/query?${params.toString()}`;
+}
+
+function blockGroupCountUrl(acsYear) {
+  const { blockGroups } = tigerwebLayerIds(acsYear);
+  const params = new URLSearchParams({
+    where: "1=1",
+    returnCountOnly: "true",
+    f: "json",
+  });
+  return `${tigerwebTractsBlocksBase}/${blockGroups}/query?${params.toString()}`;
+}
+
+function princetonBoundaryUrl(acsYear) {
+  const { countySubdivisions } = tigerwebLayerIds(acsYear);
+  const params = new URLSearchParams({
+    where: "STATE='34' AND COUNTY='021' AND BASENAME='Princeton'",
+    outFields: "GEOID,BASENAME,NAME,CENTLAT,CENTLON",
+    returnGeometry: "true",
+    outSR: "4326",
+    f: "geojson",
+  });
+  return `${tigerwebPlacesBase}/${countySubdivisions}/query?${params.toString()}`;
 }
 
 function officialRelease(acsYear) {
@@ -265,12 +315,12 @@ function buildBenchmarks({ release, nationalStats, nationalTracts, sourceName, s
       sourceUrl,
     },
     children: {
-      label: "U.S. average residents under 18 per census tract",
+      label: "U.S. average residents under 18 per census block group",
       value:
         nationalStats.children !== null && nationalTracts ? nationalStats.children / nationalTracts : null,
       unit: "number",
       release: release.name,
-      sourceName: `${sourceName} + TIGERweb tract count`,
+      sourceName: `${sourceName} + TIGERweb block-group count`,
       sourceUrl,
     },
     childShare: {
@@ -314,8 +364,8 @@ async function fetchOfficialCensusSnapshot() {
 async function fetchOfficialCensusSnapshotForYear(acsYear) {
   const tractParams = {
     get: officialCensusGet,
-    for: "tract:*",
-    in: "state:34 county:021",
+    for: "block group:*",
+    in: "state:34 county:021 tract:*",
   };
   const nationalParams = {
     get: officialCensusGet,
@@ -327,11 +377,11 @@ async function fetchOfficialCensusSnapshotForYear(acsYear) {
   const [tractRows, nationalRows, tractCount] = await Promise.all([
     fetchJson(tractUrl),
     fetchJson(nationalUrl),
-    fetchJson(tractCountUrl),
+    fetchJson(blockGroupCountUrl(acsYear)),
   ]);
   const statsByGeoid = Object.fromEntries(
     parseCensusRows(tractRows).map((row) => [
-      `${row.state}${row.county}${row.tract}`,
+      `${row.state}${row.county}${row.tract}${row["block group"]}`,
       officialStatsFromRow(row),
     ]),
   );
@@ -340,6 +390,7 @@ async function fetchOfficialCensusSnapshotForYear(acsYear) {
   const sourceName = `U.S. Census API / ${release.name}`;
 
   return {
+    acsYear,
     release,
     sourceName,
     sourceUrl: publicNationalUrl,
@@ -364,11 +415,12 @@ async function fetchReporterNationalBenchmarks(release) {
   const releaseId = release?.id || "latest";
   const releaseName = release?.name || "ACS latest";
   const nationalUrl = `${censusReporterBase}/${releaseId}?table_ids=B19013,B01001&geo_ids=01000US`;
+  const acsYear = acsYearFromRelease(release) || "2024";
 
   try {
     const [nationalCensus, tractCount] = await Promise.all([
       fetchJson(nationalUrl),
-      fetchJson(tractCountUrl),
+      fetchJson(blockGroupCountUrl(acsYear)),
     ]);
     const entry = nationalCensus.data?.["01000US"];
     const age = entry?.B01001?.estimate || {};
@@ -415,6 +467,7 @@ async function fetchCensusReporterSnapshot() {
     name: census.release?.name || "ACS latest 5-year",
   };
   return {
+    acsYear: acsYearFromRelease(release) || "2024",
     release,
     sourceName: `Census Reporter API / ${release.name}`,
     sourceUrl: censusReporterUrl,
@@ -447,6 +500,29 @@ function polygonRings(geometry) {
   if (geometry.type === "Polygon") return geometry.coordinates;
   if (geometry.type === "MultiPolygon") return geometry.coordinates.flat();
   return [];
+}
+
+function pointInRing([lon, lat], ring) {
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i, i += 1) {
+    const [xi, yi] = ring[i];
+    const [xj, yj] = ring[j];
+    const intersects = yi > lat !== yj > lat && lon < ((xj - xi) * (lat - yi)) / (yj - yi) + xi;
+    if (intersects) inside = !inside;
+  }
+  return inside;
+}
+
+function pointInGeometry(point, geometry) {
+  if (!geometry) return false;
+  if (geometry.type === "Polygon") {
+    const [outer, ...holes] = geometry.coordinates;
+    return pointInRing(point, outer) && !holes.some((ring) => pointInRing(point, ring));
+  }
+  if (geometry.type === "MultiPolygon") {
+    return geometry.coordinates.some(([outer, ...holes]) => pointInRing(point, outer) && !holes.some((ring) => pointInRing(point, ring)));
+  }
+  return false;
 }
 
 function allPoints(features) {
@@ -501,6 +577,13 @@ function areaLabel(feature) {
   return "Central Princeton area";
 }
 
+function formatTractNumber(value) {
+  const text = String(value || "").padStart(6, "0");
+  const whole = Number(text.slice(0, 4));
+  const decimals = text.slice(4).replace(/0+$/, "");
+  return decimals ? `${whole}.${decimals}` : String(whole);
+}
+
 function metricHighlight(features, key, title, formatter) {
   const feature = features
     .filter((item) => Number.isFinite(item[key]))
@@ -517,12 +600,14 @@ function metricHighlight(features, key, title, formatter) {
     : null;
 }
 
-const formatCurrency = (value) =>
-  new Intl.NumberFormat("en-US", {
+const formatCurrency = (value) => {
+  const formatted = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
     maximumFractionDigits: 0,
   }).format(value);
+  return value >= 250001 ? `${formatted}+` : formatted;
+};
 
 const formatNumber = (value) => new Intl.NumberFormat("en-US").format(value);
 
@@ -533,9 +618,19 @@ const formatPercent = (value) =>
   }).format(value);
 
 try {
-  const [geometry, censusSnapshot] = await Promise.all([fetchJson(geometryUrl), fetchCensusSnapshot()]);
+  const censusSnapshot = await fetchCensusSnapshot();
+  const geographyYear = censusSnapshot.acsYear || "2024";
+  const [geometry, boundary] = await Promise.all([
+    fetchJson(blockGroupGeometryUrl(geographyYear)),
+    fetchJson(princetonBoundaryUrl(geographyYear)),
+  ]);
   const benchmarks = censusSnapshot.benchmarks;
-  const selected = (geometry.features || []).filter(inPrincetonArea);
+  const princetonBoundary = boundary.features?.[0]?.geometry;
+  const selected = (geometry.features || []).filter((feature) => {
+    const lat = Number(feature.properties.CENTLAT);
+    const lon = Number(feature.properties.CENTLON);
+    return inPrincetonArea(feature) && pointInGeometry([lon, lat], princetonBoundary);
+  });
   const mapProjection = projectionForPoints(allPoints(selected));
   const project = (point) => projectPoint(point, mapProjection);
 
@@ -543,9 +638,13 @@ try {
     .map((feature) => {
       const geoid = feature.properties.GEOID;
       const stats = censusSnapshot.statsForGeoid(geoid);
+      const tractNumber = formatTractNumber(feature.properties.TRACT);
+      const blockGroupNumber = feature.properties.BLKGRP || feature.properties.BASENAME;
       return {
         geoid,
-        tractLabel: `Tract ${feature.properties.BASENAME}`,
+        tractLabel: `Block group ${blockGroupNumber}, tract ${tractNumber}`,
+        geographyLabel: `Block group ${blockGroupNumber}`,
+        parentTractLabel: `Tract ${tractNumber}`,
         areaLabel: areaLabel(feature),
         centroid: {
           lat: Number(Number(feature.properties.CENTLAT).toFixed(5)),
@@ -572,6 +671,7 @@ try {
     ...fallback,
     generatedAt: new Date().toISOString(),
     release: censusSnapshot.release?.name || "ACS latest 5-year",
+    geography: "census block groups",
     censusSource: censusSnapshot.sourceName,
     censusSourceUrl: censusSnapshot.sourceUrl,
     mapProjection,
