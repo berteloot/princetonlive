@@ -931,6 +931,10 @@ h3 {
   font-size: 1.16rem;
 }
 
+.practical-more {
+  margin-top: 18px;
+}
+
 .waste-tool {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.78fr);

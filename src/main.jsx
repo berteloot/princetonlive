@@ -943,6 +943,7 @@ function App() {
             <a href="#today">Today</a>
             <a href="#move">Move</a>
             <a href="#practical">Practical</a>
+            <a href="#waste">Trash</a>
             <a href="#perks">Perks</a>
             <a href="#civic">Civic map</a>
             <a href="#guides">Guides</a>
@@ -1149,23 +1150,19 @@ function App() {
         <div className="section-heading">
           <p className="eyebrow">Practical</p>
           <h2>Resident errands without the tab hunt.</h2>
-        </div>
-        <div className="tile-grid">
-          {practicalTiles.map(({ label, value, url, icon: Icon }) => (
-            <a className="utility-tile" href={url} key={label} {...externalLinkProps(url)}>
-              <Icon size={21} aria-hidden="true" />
-              <span>{label}</span>
-              <strong>{value}</strong>
-            </a>
-          ))}
+          <p>
+            Start with the street lookup below when you need trash day, bulk pickup rules,
+            or the yard-waste section for a Princeton street.
+          </p>
         </div>
         <section className="waste-tool" id="waste" aria-labelledby="waste-heading">
           <div className="waste-copy">
-            <p className="eyebrow">Waste by street</p>
-            <h3 id="waste-heading">Trash day, bulk pickup, and yard-waste section.</h3>
+            <p className="eyebrow">Trash pickup by street</p>
+            <h3 id="waste-heading">Type your street to find your Princeton trash day.</h3>
             <p>
-              Search a Princeton street from the town's public street schedules. PrincetonLive keeps
-              this lookup local in your browser; use Recycle Coach for live address reminders.
+              Search the town's public street schedule by street name only. The result shows regular
+              trash pickup, bulk pickup rules, and the yard-waste section used for leaves, branches,
+              and logs.
             </p>
             <label className="search-box waste-search">
               <Search size={18} aria-hidden="true" />
@@ -1256,6 +1253,15 @@ function App() {
             </div>
           </aside>
         </section>
+        <div className="tile-grid practical-more">
+          {practicalTiles.map(({ label, value, url, icon: Icon }) => (
+            <a className="utility-tile" href={url} key={label} {...externalLinkProps(url)}>
+              <Icon size={21} aria-hidden="true" />
+              <span>{label}</span>
+              <strong>{value}</strong>
+            </a>
+          ))}
+        </div>
       </section>
 
       <section className="section resident-perks" id="perks">
