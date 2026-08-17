@@ -654,16 +654,23 @@ function pathForGeometry(geometry, project) {
     .join(" Z ");
 }
 
+// These are compass bearings derived from a block group's centroid, not neighborhood
+// names. The previous version returned strings like "Northwest Princeton area" and
+// "Western edge", which read as proper nouns no resident uses and which do not
+// correspond to the real local names (Western Section, Riverside, Littlebrook,
+// Witherspoon-Jackson, Princeton Ridge). Those names are not assigned here because
+// Census block groups do not follow neighborhood boundaries, and guessing the mapping
+// would put a wrong neighborhood name on a resident's home.
 function areaLabel(feature) {
   const lat = Number(feature.properties.CENTLAT);
   const lon = Number(feature.properties.CENTLON);
-  if (lat >= 40.36 && lon <= -74.675) return "Northwest Princeton area";
-  if (lat >= 40.36) return "Northeast Princeton area";
-  if (lat <= 40.32 && lon <= -74.69) return "Western edge";
-  if (lat <= 40.32) return "Southern edge";
-  if (lon <= -74.68) return "West Princeton area";
-  if (lon >= -74.64) return "East Princeton area";
-  return "Central Princeton area";
+  if (lat >= 40.36 && lon <= -74.675) return "northwest Princeton";
+  if (lat >= 40.36) return "northeast Princeton";
+  if (lat <= 40.32 && lon <= -74.69) return "southwest Princeton";
+  if (lat <= 40.32) return "south Princeton";
+  if (lon <= -74.68) return "west Princeton";
+  if (lon >= -74.64) return "east Princeton";
+  return "central Princeton";
 }
 
 function formatTractNumber(value) {

@@ -277,7 +277,7 @@ const commuteCards = [
     title: "Philly route",
     detail: "Use Princeton Junction to Trenton, then SEPTA toward Center City. Compare Amtrak when timing matters.",
     action: "SEPTA schedules",
-    url: "https://api.septa.org/",
+    url: "https://www.septa.org/schedules/",
     icon: Route,
   },
   {
@@ -289,7 +289,7 @@ const commuteCards = [
   },
   {
     title: "No-car options",
-    detail: "TigerTransit, FreeB, walking, biking, and the Dinky cover more day-to-day trips than new residents expect.",
+    detail: "TigerTransit, the Princeton Loop, walking, biking, and the Dinky cover more day-to-day trips than new residents expect.",
     action: "Getting around",
     url: "https://www.princetonnj.gov/578/Getting-Around-Princeton",
     icon: Bus,

@@ -46,6 +46,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://princetonlive.berteloot.org/guides/princeton-garbage-schedule.html</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://princetonlive.berteloot.org/guides/moving-to-princeton.html</loc>
     <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>

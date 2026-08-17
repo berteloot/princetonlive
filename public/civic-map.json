@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T22:07:26.830Z",
+  "generatedAt": "2026-08-17T22:14:08.422Z",
   "release": "ACS 2024 5-year",
   "privacy": "Block-group public data only. PrincetonLive does not publish individual voter, household, or address-level records.",
   "geography": "census block groups",
@@ -10,7 +10,7 @@
       "tractLabel": "Block group 1, tract 40",
       "geographyLabel": "Block group 1",
       "parentTractLabel": "Tract 40",
-      "areaLabel": "Central Princeton area",
+      "areaLabel": "central Princeton",
       "centroid": {
         "lat": 40.35677,
         "lon": -74.64727
@@ -30,7 +30,7 @@
       "tractLabel": "Block group 1, tract 42.03",
       "geographyLabel": "Block group 1",
       "parentTractLabel": "Tract 42.03",
-      "areaLabel": "Northwest Princeton area",
+      "areaLabel": "northwest Princeton",
       "centroid": {
         "lat": 40.36162,
         "lon": -74.70046
@@ -50,7 +50,7 @@
       "tractLabel": "Block group 1, tract 42.04",
       "geographyLabel": "Block group 1",
       "parentTractLabel": "Tract 42.04",
-      "areaLabel": "Central Princeton area",
+      "areaLabel": "central Princeton",
       "centroid": {
         "lat": 40.33029,
         "lon": -74.66588
@@ -70,7 +70,7 @@
       "tractLabel": "Block group 1, tract 42.05",
       "geographyLabel": "Block group 1",
       "parentTractLabel": "Tract 42.05",
-      "areaLabel": "Northeast Princeton area",
+      "areaLabel": "northeast Princeton",
       "centroid": {
         "lat": 40.37937,
         "lon": -74.64976
@@ -90,7 +90,7 @@
       "tractLabel": "Block group 1, tract 42.06",
       "geographyLabel": "Block group 1",
       "parentTractLabel": "Tract 42.06",
-      "areaLabel": "Northeast Princeton area",
+      "areaLabel": "northeast Princeton",
       "centroid": {
         "lat": 40.36342,
         "lon": -74.65664
@@ -110,7 +110,7 @@
       "tractLabel": "Block group 1, tract 45.01",
       "geographyLabel": "Block group 1",
       "parentTractLabel": "Tract 45.01",
-      "areaLabel": "Central Princeton area",
+      "areaLabel": "central Princeton",
       "centroid": {
         "lat": 40.3459,
         "lon": -74.65981
@@ -130,7 +130,7 @@
       "tractLabel": "Block group 1, tract 45.02",
       "geographyLabel": "Block group 1",
       "parentTractLabel": "Tract 45.02",
-      "areaLabel": "Central Princeton area",
+      "areaLabel": "central Princeton",
       "centroid": {
         "lat": 40.35073,
         "lon": -74.67405
@@ -150,7 +150,7 @@
       "tractLabel": "Block group 2, tract 40",
       "geographyLabel": "Block group 2",
       "parentTractLabel": "Tract 40",
-      "areaLabel": "Central Princeton area",
+      "areaLabel": "central Princeton",
       "centroid": {
         "lat": 40.35463,
         "lon": -74.65738
@@ -170,7 +170,7 @@
       "tractLabel": "Block group 2, tract 42.03",
       "geographyLabel": "Block group 2",
       "parentTractLabel": "Tract 42.03",
-      "areaLabel": "Northeast Princeton area",
+      "areaLabel": "northeast Princeton",
       "centroid": {
         "lat": 40.37808,
         "lon": -74.66786
@@ -190,7 +190,7 @@
       "tractLabel": "Block group 2, tract 42.04",
       "geographyLabel": "Block group 2",
       "parentTractLabel": "Tract 42.04",
-      "areaLabel": "West Princeton area",
+      "areaLabel": "west Princeton",
       "centroid": {
         "lat": 40.33848,
         "lon": -74.6897
@@ -210,7 +210,7 @@
       "tractLabel": "Block group 2, tract 42.05",
       "geographyLabel": "Block group 2",
       "parentTractLabel": "Tract 42.05",
-      "areaLabel": "Northeast Princeton area",
+      "areaLabel": "northeast Princeton",
       "centroid": {
         "lat": 40.37148,
         "lon": -74.63422
@@ -230,7 +230,7 @@
       "tractLabel": "Block group 2, tract 42.06",
       "geographyLabel": "Block group 2",
       "parentTractLabel": "Tract 42.06",
-      "areaLabel": "Northeast Princeton area",
+      "areaLabel": "northeast Princeton",
       "centroid": {
         "lat": 40.36151,
         "lon": -74.66352
@@ -250,7 +250,7 @@
       "tractLabel": "Block group 2, tract 45.01",
       "geographyLabel": "Block group 2",
       "parentTractLabel": "Tract 45.01",
-      "areaLabel": "Central Princeton area",
+      "areaLabel": "central Princeton",
       "centroid": {
         "lat": 40.34395,
         "lon": -74.66431
@@ -270,7 +270,7 @@
       "tractLabel": "Block group 2, tract 45.02",
       "geographyLabel": "Block group 2",
       "parentTractLabel": "Tract 45.02",
-      "areaLabel": "Central Princeton area",
+      "areaLabel": "central Princeton",
       "centroid": {
         "lat": 40.34574,
         "lon": -74.66972
@@ -290,7 +290,7 @@
       "tractLabel": "Block group 3, tract 40",
       "geographyLabel": "Block group 3",
       "parentTractLabel": "Tract 40",
-      "areaLabel": "Central Princeton area",
+      "areaLabel": "central Princeton",
       "centroid": {
         "lat": 40.3503,
         "lon": -74.66294
@@ -310,7 +310,7 @@
       "tractLabel": "Block group 3, tract 42.03",
       "geographyLabel": "Block group 3",
       "parentTractLabel": "Tract 42.03",
-      "areaLabel": "Northwest Princeton area",
+      "areaLabel": "northwest Princeton",
       "centroid": {
         "lat": 40.36898,
         "lon": -74.68104
@@ -330,7 +330,7 @@
       "tractLabel": "Block group 3, tract 42.04",
       "geographyLabel": "Block group 3",
       "parentTractLabel": "Tract 42.04",
-      "areaLabel": "West Princeton area",
+      "areaLabel": "west Princeton",
       "centroid": {
         "lat": 40.32111,
         "lon": -74.6862
@@ -350,7 +350,7 @@
       "tractLabel": "Block group 3, tract 45.01",
       "geographyLabel": "Block group 3",
       "parentTractLabel": "Tract 45.01",
-      "areaLabel": "Central Princeton area",
+      "areaLabel": "central Princeton",
       "centroid": {
         "lat": 40.3511,
         "lon": -74.64696
@@ -370,7 +370,7 @@
       "tractLabel": "Block group 4, tract 40",
       "geographyLabel": "Block group 4",
       "parentTractLabel": "Tract 40",
-      "areaLabel": "Central Princeton area",
+      "areaLabel": "central Princeton",
       "centroid": {
         "lat": 40.35366,
         "lon": -74.6647
@@ -390,7 +390,7 @@
       "tractLabel": "Block group 4, tract 42.04",
       "geographyLabel": "Block group 4",
       "parentTractLabel": "Tract 42.04",
-      "areaLabel": "East Princeton area",
+      "areaLabel": "east Princeton",
       "centroid": {
         "lat": 40.35321,
         "lon": -74.63284
@@ -410,7 +410,7 @@
       "tractLabel": "Block group 4, tract 45.01",
       "geographyLabel": "Block group 4",
       "parentTractLabel": "Tract 45.01",
-      "areaLabel": "Central Princeton area",
+      "areaLabel": "central Princeton",
       "centroid": {
         "lat": 40.34685,
         "lon": -74.65665
@@ -430,7 +430,7 @@
     {
       "key": "income",
       "title": "Highest median household income",
-      "label": "Northwest Princeton area",
+      "label": "northwest Princeton",
       "tract": "Block group 1, tract 42.03",
       "value": "$250,001+",
       "rawValue": 250001
@@ -438,7 +438,7 @@
     {
       "key": "children",
       "title": "Most children under 18",
-      "label": "Northeast Princeton area",
+      "label": "northeast Princeton",
       "tract": "Block group 2, tract 42.05",
       "value": "1,286",
       "rawValue": 1286
@@ -446,7 +446,7 @@
     {
       "key": "childShare",
       "title": "Largest child share of population",
-      "label": "Northeast Princeton area",
+      "label": "northeast Princeton",
       "tract": "Block group 1, tract 42.06",
       "value": "38.2%",
       "rawValue": 0.3816912335143522

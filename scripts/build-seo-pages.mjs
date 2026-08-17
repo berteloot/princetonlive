@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const SITE_URL = "https://princetonlive.berteloot.org";
 // Stamped at build time. A frozen constant kept re-publishing the same lastmod and
@@ -386,6 +386,13 @@ ${jsonLd}
       .faq { display: grid; gap: 12px; }
       footer { color: #fff; background: var(--black); }
       footer a { color: #ffb27a; }
+      .table-scroll { overflow-x: auto; }
+      table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+      caption { padding-bottom: 10px; color: var(--muted); text-align: left; font-size: .85rem; }
+      th, td { padding: 9px 12px; border-bottom: 1px solid rgba(23, 31, 27, .22); text-align: left; vertical-align: top; }
+      thead th { position: sticky; top: 0; background: #fff; border-bottom-width: 2px; }
+      tbody th { font-weight: 700; }
+      .blocks { margin: 6px 0 0; padding-left: 18px; color: var(--muted); font-size: .88rem; }
       :focus-visible { outline: 3px solid #994400; outline-offset: 2px; border-radius: 4px; }
       footer :focus-visible { outline-color: #ffb27a; }
       .skip-link { position: absolute; left: -9999px; top: 0; z-index: 99; padding: 12px 18px; color: #fff; background: var(--black); text-decoration: none; }
@@ -548,6 +555,150 @@ ${cards}
   });
 }
 
+// Crawlable garbage schedule. Every street record lived only in client-side JSON, so
+// nothing containing a Princeton street name and a collection day was in any HTML a
+// search engine or an AI assistant could read. "Princeton NJ trash schedule" is the
+// highest-volume local query this site holds real data for, and it could not be won.
+async function garbageScheduleHtml() {
+  const waste = JSON.parse(
+    await readFile(new URL("../public/waste-data.json", import.meta.url), "utf8"),
+  );
+  const dayOrder = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY"];
+
+  const rows = waste.streets
+    .map((street) => {
+      const blocks = [];
+      if (street.trashVariesByBlock && street.trashBlocks?.length) {
+        blocks.push(
+          ...street.trashBlocks.map(
+            (b) => `<li>${escapeHtml(titleCase(b.segment))}: <strong>${escapeHtml(titleCase(b.value))}</strong></li>`,
+          ),
+        );
+      }
+      const dayCell = street.trashDay === "NOT INCLUDED"
+        ? "Not municipally collected"
+        : titleCase(street.trashDay);
+      const sectionCell = street.yardSection === "NOT INCLUDED"
+        ? "Not listed"
+        : escapeHtml(street.yardSection);
+      return `          <tr>
+            <th scope="row">${escapeHtml(titleCase(street.street))}</th>
+            <td>${escapeHtml(dayCell)}${blocks.length ? `<ul class="blocks">${blocks.join("")}</ul>` : ""}</td>
+            <td>${sectionCell}</td>
+          </tr>`;
+    })
+    .join("\n");
+
+  const byDay = dayOrder
+    .map((day) => {
+      const names = waste.streets
+        .filter((s) => s.trashDay.toUpperCase() === day)
+        .map((s) => escapeHtml(titleCase(s.street)));
+      if (!names.length) return "";
+      return `          <section id="day-${day.toLowerCase()}">
+            <h3>${titleCase(day)} garbage collection in Princeton</h3>
+            <p>${names.length} streets are collected on ${titleCase(day)}: ${names.join(", ")}.</p>
+          </section>`;
+    })
+    .filter(Boolean)
+    .join("\n");
+
+  const url = absolute("/guides/princeton-garbage-schedule.html");
+  const body = `
+    <main id="guide-main" tabindex="-1">
+      <div class="hero">
+        <p class="eyebrow">Garbage collection</p>
+        <h1>Princeton, NJ garbage collection schedule by street.</h1>
+        <p class="answer">Princeton collects household garbage on a fixed weekday that depends on your street. This page lists the collection day and the brush and leaf section for ${waste.streetCount} Princeton streets, taken from the Municipality of Princeton's published schedule.</p>
+      </div>
+      <div class="layout">
+        <article>
+          <section id="rules">
+            <h2>When to put garbage out in Princeton</h2>
+            <p>${escapeHtml(waste.rules.trash)}</p>
+            <p>${escapeHtml(waste.rules.bulk)}</p>
+            <p>${escapeHtml(waste.rules.recycling)}</p>
+            <p>${escapeHtml(waste.rules.notIncluded || "")}</p>
+          </section>
+          <section id="lookup">
+            <h2>Princeton garbage day by street</h2>
+            <p>Find your street below. Some streets span more than one collection route, and those list a day for each block. For an address-level answer, including recycling, use the lookup on the <a href="/#garbage">PrincetonLive garbage page</a>.</p>
+            <div class="table-scroll">
+              <table>
+                <caption>Princeton, NJ garbage collection day and brush section by street</caption>
+                <thead>
+                  <tr><th scope="col">Street</th><th scope="col">Garbage day</th><th scope="col">Brush and leaf section</th></tr>
+                </thead>
+                <tbody>
+${rows}
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section id="by-day">
+            <h2>Princeton streets grouped by collection day</h2>
+${byDay}
+          </section>
+        </article>
+        <aside aria-label="Official waste sources">
+          <div class="related">
+            <h2>Official sources</h2>
+${waste.sources.map((s) => `            <a href="${escapeHtml(s.url)}">${escapeHtml(s.name)}</a>`).join("\n")}
+            <a href="/#garbage">Street lookup on PrincetonLive</a>
+          </div>
+        </aside>
+      </div>
+    </main>`;
+
+  const faq = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What day is garbage collected in Princeton, NJ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Princeton collects household garbage on a fixed weekday determined by your street. This page lists the day for ${waste.streetCount} streets. Carts go out no earlier than 7 PM the day before and no later than 7 AM on collection day.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why does my Princeton street show more than one garbage day?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Some Princeton streets are long enough to span two collection routes. Those streets list a separate day for each block, using the block boundaries in the municipal schedule.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How does recycling work in Princeton, NJ?",
+        acceptedAnswer: { "@type": "Answer", text: waste.rules.recycling },
+      },
+    ],
+  };
+
+  return shell({
+    title: "Princeton NJ garbage collection schedule by street",
+    description: `Garbage collection day and brush and leaf section for ${waste.streetCount} Princeton, NJ streets, with the municipal rules on set-out times, bulk waste, and recycling.`,
+    url,
+    body,
+    jsonLd: JSON.stringify(faq, null, 2),
+    pageClass: "garbage-schedule",
+  });
+}
+
+// The municipal documents are all caps. Title-case them for reading, but leave the
+// "Varies by block" marker this build writes itself, which is already sentence case.
+function titleCase(value) {
+  const raw = String(value);
+  if (raw === "Varies by block") return raw;
+  return raw
+    .toLowerCase()
+    .replace(/\b([a-z])/g, (m) => m.toUpperCase())
+    .replace(/\b(To|And|Of|At|The)\b/g, (m) => m.toLowerCase());
+}
+
 // Disclaimer, privacy notice, and corrections route. The site publishes operational
 // facts a resident acts on (collection days, weather alerts, election dates) and carries
 // a town name plus a photograph of Nassau Hall, so the two exposures worth naming
@@ -643,6 +794,7 @@ function sitemapXml() {
     ...homepageRoutes,
     { url: "/guides/", priority: "0.9", changefreq: "weekly" },
     { url: "/legal.html", priority: "0.3", changefreq: "yearly" },
+    { url: "/guides/princeton-garbage-schedule.html", priority: "0.95", changefreq: "weekly" },
     ...pillarGuides.map((guide) => ({
       url: guidePath(guide.slug),
       priority: "0.85",
@@ -740,6 +892,10 @@ await Promise.all([
     writeFile(new URL(`../public/guides/${guide.slug}.html`, import.meta.url), guideHtml(guide)),
   ),
   writeFile(new URL("../public/legal.html", import.meta.url), legalHtml()),
+  writeFile(
+    new URL("../public/guides/princeton-garbage-schedule.html", import.meta.url),
+    await garbageScheduleHtml(),
+  ),
   writeFile(new URL("../public/sitemap.xml", import.meta.url), sitemapXml()),
   writeFile(new URL("../public/llms.txt", import.meta.url), llmsTxt()),
 ]);
