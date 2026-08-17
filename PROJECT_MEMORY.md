@@ -95,9 +95,11 @@ Civic map:
 - Resident perks must distinguish free benefits from access programs that cost money. Princeton University Community Auditing is resident-relevant, but it is tuition-based, not a free library-style perk.
 - The Census API key must stay server/build-side only. The browser receives generated aggregate JSON, never the key.
 - GitHub scheduled refresh passes `CENSUS_API_KEY` from repository secrets when configured and falls back to Census Reporter when absent.
+- External links should open in a new tab with `target="_blank"` and `rel="noopener noreferrer"` so visitors do not lose PrincetonLive. In-page hash navigation stays in the same tab.
 
 ## Feature Log
 
+- Latest - Updated external link handling so outbound and data-fed links open in a new tab while internal section navigation remains same-page.
 - Latest - Updated the civic data refresh to prefer the official U.S. Census API with `CENSUS_API_KEY`, auto-detect the newest available ACS 5-year release, and keep Census Reporter as an automatic fallback.
 - Latest - Improved civic map accuracy by switching wealth/children from census tracts to census block groups and selecting areas against the Princeton municipal boundary instead of a bounding box.
 - Latest - Added explicit ACS top-code and missing-estimate handling to the wealth layer after checking Library Place, Westcott Road, and Lytle Street.

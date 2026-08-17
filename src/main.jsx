@@ -130,6 +130,12 @@ const fallbackCivicMap = {
   sources: [],
 };
 
+function externalLinkProps(href) {
+  return typeof href === "string" && !href.startsWith("#")
+    ? { target: "_blank", rel: "noopener noreferrer" }
+    : {};
+}
+
 const agendaFilters = [
   ["all", "All", CalendarDays],
   ["new", "New here", Sparkles],
@@ -759,7 +765,11 @@ function App() {
           </div>
         </div>
         <aside className="daily-brief" aria-label="Today snapshot">
-          <a className="weather-summary-card" href={liveData.weather.sourceUrl}>
+          <a
+            className="weather-summary-card"
+            href={liveData.weather.sourceUrl}
+            {...externalLinkProps(liveData.weather.sourceUrl)}
+          >
             <span>Weather</span>
             <strong>
               {liveData.weather.temperature ? `${liveData.weather.temperature}°F, ` : ""}
@@ -770,11 +780,14 @@ function App() {
               {liveData.weather.detailedForecast}
             </small>
           </a>
-          <a href="https://www.weather.gov/phi/">
+          <a href="https://www.weather.gov/phi/" {...externalLinkProps("https://www.weather.gov/phi/")}>
             <span>Alerts</span>
             <strong>{alertCount ? `${alertCount} active weather alert${alertCount === 1 ? "" : "s"}` : "No active NWS alerts"}</strong>
           </a>
-          <a href={nextEvent?.url ?? "https://www.princeton.edu/events"}>
+          <a
+            href={nextEvent?.url ?? "https://www.princeton.edu/events"}
+            {...externalLinkProps(nextEvent?.url ?? "https://www.princeton.edu/events")}
+          >
             <span>Next useful item</span>
             <strong>{nextEvent ? nextEvent.title : "Check public calendars"}</strong>
           </a>
@@ -828,7 +841,12 @@ function App() {
         <div className="agenda-list" key={`agenda-${filter}-${query}-${liveData.generatedAt}`}>
           {visibleEvents.length ? (
             visibleEvents.map((event, index) => (
-              <a className="agenda-card" href={event.url} key={`${event.url}-${index}`}>
+              <a
+                className="agenda-card"
+                href={event.url}
+                key={`${event.url}-${index}`}
+                {...externalLinkProps(event.url)}
+              >
                 <time>
                   {event.dateLabel}
                   <small>{event.timeLabel}</small>
@@ -861,7 +879,7 @@ function App() {
           </div>
           <div className="alert-strip">
             {liveData.alerts.slice(0, 3).map((alert) => (
-              <a href={alert.url} key={alert.id}>
+              <a href={alert.url} key={alert.id} {...externalLinkProps(alert.url)}>
                 <AlertTriangle size={18} aria-hidden="true" />
                 <strong>{alert.event}</strong>
                 <span>{alert.headline}</span>
@@ -884,7 +902,7 @@ function App() {
         </div>
         <div className="commute-grid">
           {commuteCards.map(({ title, detail, action, url, icon: Icon }) => (
-            <a href={url} className="feature-card" key={title}>
+            <a href={url} className="feature-card" key={title} {...externalLinkProps(url)}>
               <Icon size={24} aria-hidden="true" />
               <h3>{title}</h3>
               <p>{detail}</p>
@@ -903,7 +921,7 @@ function App() {
         </div>
         <div className="tile-grid">
           {practicalTiles.map(({ label, value, url, icon: Icon }) => (
-            <a className="utility-tile" href={url} key={label}>
+            <a className="utility-tile" href={url} key={label} {...externalLinkProps(url)}>
               <Icon size={21} aria-hidden="true" />
               <span>{label}</span>
               <strong>{value}</strong>
@@ -931,7 +949,7 @@ function App() {
               </h3>
               <div className="perk-list">
                 {group.items.map(({ title, detail, action, url, icon: Icon }) => (
-                  <a className="perk-card" href={url} key={title}>
+                  <a className="perk-card" href={url} key={title} {...externalLinkProps(url)}>
                     <Icon size={21} aria-hidden="true" />
                     <span>{title}</span>
                     <p>{detail}</p>
@@ -981,7 +999,11 @@ function App() {
                 {activeCivicMetric.note ? <span>{activeCivicMetric.note}</span> : null}
               </div>
               {activeBenchmark ? (
-                <a className="benchmark-pill" href={activeBenchmark.sourceUrl}>
+                <a
+                  className="benchmark-pill"
+                  href={activeBenchmark.sourceUrl}
+                  {...externalLinkProps(activeBenchmark.sourceUrl)}
+                >
                   <span>U.S. benchmark</span>
                   <strong>
                     {formatCivicValue(activeBenchmarkValueKey, activeBenchmark.value)}
@@ -1141,7 +1163,10 @@ function App() {
                 It is useful for local statistics, but it is still an aggregate area, not a named neighborhood,
                 voting precinct, or exact address.
               </span>
-              <a href="https://www.census.gov/programs-surveys/geography/about/glossary.html">
+              <a
+                href="https://www.census.gov/programs-surveys/geography/about/glossary.html"
+                {...externalLinkProps("https://www.census.gov/programs-surveys/geography/about/glossary.html")}
+              >
                 Census glossary
               </a>
             </div>
@@ -1161,7 +1186,7 @@ function App() {
                 ) : null}
                 <div className="source-links compact">
                   {civicMap.voting.links.map((link) => (
-                    <a href={link.url} key={link.url}>
+                    <a href={link.url} key={link.url} {...externalLinkProps(link.url)}>
                       {link.label}
                     </a>
                   ))}
@@ -1280,10 +1305,30 @@ function App() {
             <span className="route-line" />
           </div>
           <div className="source-links">
-            <a href="https://www.princeton.edu/events">Princeton University events</a>
-            <a href="https://princetonlibrary.libnet.info/events">Princeton Public Library</a>
-            <a href="https://www.princetongardentheatre.org/">Garden Theatre</a>
-            <a href="https://www.mccarter.org/events">McCarter Theatre</a>
+            <a
+              href="https://www.princeton.edu/events"
+              {...externalLinkProps("https://www.princeton.edu/events")}
+            >
+              Princeton University events
+            </a>
+            <a
+              href="https://princetonlibrary.libnet.info/events"
+              {...externalLinkProps("https://princetonlibrary.libnet.info/events")}
+            >
+              Princeton Public Library
+            </a>
+            <a
+              href="https://www.princetongardentheatre.org/"
+              {...externalLinkProps("https://www.princetongardentheatre.org/")}
+            >
+              Garden Theatre
+            </a>
+            <a
+              href="https://www.mccarter.org/events"
+              {...externalLinkProps("https://www.mccarter.org/events")}
+            >
+              McCarter Theatre
+            </a>
           </div>
         </div>
       </section>
@@ -1314,7 +1359,12 @@ function App() {
           <strong>PrincetonLive</strong>
           <span>
             Vibe coded with love by{" "}
-            <a className="notranslate" translate="no" href="https://www.linkedin.com/in/berteloot">
+            <a
+              className="notranslate"
+              translate="no"
+              href="https://www.linkedin.com/in/berteloot"
+              {...externalLinkProps("https://www.linkedin.com/in/berteloot")}
+            >
               Stan Berteloot
             </a>
           </span>
