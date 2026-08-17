@@ -469,20 +469,66 @@ function getInitialLanguage() {
   return lang === "fr" || lang === "es" ? lang : "en";
 }
 
+function setGoogleTranslateCookie(targetLanguage) {
+  const expires = "expires=Fri, 31 Dec 9999 23:59:59 GMT";
+  const value = targetLanguage === "en" ? "/en/en" : `/en/${targetLanguage}`;
+  document.cookie = `googtrans=${value}; path=/; ${expires}`;
+  document.cookie = `googtrans=${value}; domain=.berteloot.org; path=/; ${expires}`;
+}
+
+function triggerGoogleTranslate(targetLanguage) {
+  const combo = document.querySelector(".goog-te-combo");
+  if (!combo) return false;
+  combo.value = targetLanguage;
+  combo.dispatchEvent(new Event("change"));
+  return true;
+}
+
 function App() {
   const [language, setLanguage] = useState(getInitialLanguage);
   const [persona, setPersona] = useState("new");
   const [query, setQuery] = useState("");
-  const t = translations[language];
+  const t = translations.en;
+
+  useEffect(() => {
+    if (window.google?.translate?.TranslateElement) return;
+
+    window.googleTranslateElementInit = () => {
+      if (!window.google?.translate?.TranslateElement) return;
+      new window.google.translate.TranslateElement(
+        {
+          pageLanguage: "en",
+          includedLanguages: "en,fr,es",
+          autoDisplay: false,
+          layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+        },
+        "google_translate_element",
+      );
+    };
+
+    const script = document.createElement("script");
+    script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+    script.async = true;
+    document.head.appendChild(script);
+  }, []);
 
   useEffect(() => {
     document.documentElement.lang = language;
-    document.title = t.meta.title;
+    document.title = translations[language].meta.title;
     const metaDescription = document.querySelector('meta[name="description"]');
-    metaDescription?.setAttribute("content", t.meta.description);
-  }, [language, t.meta.description, t.meta.title]);
+    metaDescription?.setAttribute("content", translations[language].meta.description);
+    setGoogleTranslateCookie(language);
+
+    const attempts = [250, 750, 1500, 2500].map((delay) =>
+      window.setTimeout(() => triggerGoogleTranslate(language), delay),
+    );
+    return () => attempts.forEach((attempt) => window.clearTimeout(attempt));
+  }, [language]);
 
   const selectLanguage = (nextLanguage) => {
+    if (nextLanguage === language) return;
+
+    setGoogleTranslateCookie(nextLanguage);
     setLanguage(nextLanguage);
     const url = new URL(window.location.href);
     if (nextLanguage === "en") {
@@ -490,7 +536,7 @@ function App() {
     } else {
       url.searchParams.set("lang", nextLanguage);
     }
-    window.history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
+    window.location.assign(`${url.pathname}${url.search}${url.hash}`);
   };
 
   const navItems = [
@@ -529,9 +575,9 @@ function App() {
     <main>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="PrincetonLive home">
-          <span className="brand-mark">PL</span>
+          <span className="brand-mark notranslate" translate="no">PL</span>
           <span>
-            PrincetonLive
+            <span className="notranslate" translate="no">PrincetonLive</span>
             <small>{t.brandSub}</small>
           </span>
         </a>
@@ -543,7 +589,8 @@ function App() {
               </a>
             ))}
           </nav>
-          <div className="language-switcher" aria-label={t.languageLabel}>
+          <div className="language-switcher notranslate" translate="no" aria-label={t.languageLabel}>
+            <span className="translation-provider">Google Translate</span>
             {languages.map((option) => (
               <button
                 key={option.code}
@@ -557,6 +604,7 @@ function App() {
               </button>
             ))}
           </div>
+          <div id="google_translate_element" className="google-translate-shell" />
         </div>
       </header>
 
