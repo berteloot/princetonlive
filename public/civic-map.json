@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T15:38:11.200Z",
+  "generatedAt": "2026-08-17T15:56:31.720Z",
   "release": "ACS 2024 5-year",
   "privacy": "Block-group public data only. PrincetonLive does not publish individual voter, household, or address-level records.",
   "geography": "census block groups",
@@ -486,6 +486,100 @@
       "sourceUrl": "https://www.fec.gov/documents/5644/2024presgeresults.pdf"
     }
   },
+  "schoolContext": {
+    "title": "Princeton Public Schools context",
+    "summary": "Public school points show Princeton Public Schools campuses with official district links. Use the district registration/address process for elementary assignment and NJDOE reports for performance context.",
+    "caveat": "This is not a ranking layer. PrincetonLive does not reduce schools to a single score, and private/independent schools should only be added from a reliable public directory with clear methodology.",
+    "districtUrl": "https://www.princetonk12.org/",
+    "registrationUrl": "https://www.princetonk12.org/families/registration",
+    "performanceReportsUrl": "https://www.nj.gov/education/spr/",
+    "schools": [
+      {
+        "id": "community-park",
+        "name": "Community Park School",
+        "type": "Public elementary",
+        "grades": "Elementary",
+        "address": "372 Witherspoon Street, Princeton, NJ 08540",
+        "lat": 40.3604807,
+        "lon": -74.6642668,
+        "sourceUrl": "https://www.princetonk12.org/community-park-elementary",
+        "marker": {
+          "x": 55.049,
+          "y": 26.265
+        }
+      },
+      {
+        "id": "johnson-park",
+        "name": "Johnson Park School",
+        "type": "Public elementary",
+        "grades": "Elementary",
+        "address": "285 Rosedale Road, Princeton, NJ 08540",
+        "lat": 40.3458134,
+        "lon": -74.6872758,
+        "sourceUrl": "https://www.princetonk12.org/johnson-park-elementary-home",
+        "marker": {
+          "x": 34.17,
+          "y": 37.669
+        }
+      },
+      {
+        "id": "littlebrook",
+        "name": "Littlebrook School",
+        "type": "Public elementary",
+        "grades": "Elementary",
+        "address": "39 Magnolia Lane, Princeton, NJ 08540",
+        "lat": 40.3640115,
+        "lon": -74.6377994,
+        "sourceUrl": "https://www.princetonk12.org/littlebrook-elementary-home",
+        "marker": {
+          "x": 79.066,
+          "y": 23.52
+        }
+      },
+      {
+        "id": "riverside",
+        "name": "Riverside School",
+        "type": "Public elementary",
+        "grades": "Elementary",
+        "address": "58 Riverside Drive, Princeton, NJ 08540",
+        "lat": 40.3546394,
+        "lon": -74.6377187,
+        "sourceUrl": "https://www.princetonk12.org/riverside-elementary-home",
+        "marker": {
+          "x": 79.139,
+          "y": 30.807
+        }
+      },
+      {
+        "id": "princeton-middle",
+        "name": "Princeton Middle School",
+        "type": "Public middle",
+        "grades": "Grades 6-8",
+        "address": "217 Walnut Lane, Princeton, NJ 08540",
+        "lat": 40.3606685,
+        "lon": -74.6545218,
+        "sourceUrl": "https://www.princetonk12.org/princeton-middle-school",
+        "marker": {
+          "x": 63.891,
+          "y": 26.119
+        }
+      },
+      {
+        "id": "princeton-high",
+        "name": "Princeton High School",
+        "type": "Public high",
+        "grades": "Grades 9-12",
+        "address": "151 Moore Street, Princeton, NJ 08540",
+        "lat": 40.3587009,
+        "lon": -74.6560332,
+        "sourceUrl": "https://www.princetonk12.org/princeton-high-school",
+        "marker": {
+          "x": 62.52,
+          "y": 27.649
+        }
+      }
+    ]
+  },
   "voting": {
     "status": "municipality-level",
     "title": "Voting layer",
@@ -573,6 +667,18 @@
     {
       "name": "Princeton elections",
       "url": "https://www.princetonnj.gov/192/Elections"
+    },
+    {
+      "name": "Princeton Public Schools",
+      "url": "https://www.princetonk12.org/"
+    },
+    {
+      "name": "Princeton Public Schools registration",
+      "url": "https://www.princetonk12.org/families/registration"
+    },
+    {
+      "name": "NJ School Performance Reports",
+      "url": "https://www.nj.gov/education/spr/"
     }
   ],
   "censusSource": "Census Reporter API / ACS 2024 5-year",

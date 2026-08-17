@@ -23,6 +23,82 @@ const fecNationalResultUrl = "https://www.fec.gov/documents/5644/2024presgeresul
 const preferredCensusAcsYear = process.env.CENSUS_ACS_YEAR?.trim();
 const censusApiKey = process.env.CENSUS_API_KEY?.trim();
 const censusApiDocsUrl = "https://www.census.gov/data/developers/data-sets/acs-5year.html";
+const princetonSchoolsUrl = "https://www.princetonk12.org/";
+const princetonSchoolsRegistrationUrl = "https://www.princetonk12.org/families/registration";
+const njSchoolPerformanceReportsUrl = "https://www.nj.gov/education/spr/";
+
+const publicSchoolContext = {
+  title: "Princeton Public Schools context",
+  summary:
+    "Public school points show Princeton Public Schools campuses with official district links. Use the district registration/address process for elementary assignment and NJDOE reports for performance context.",
+  caveat:
+    "This is not a ranking layer. PrincetonLive does not reduce schools to a single score, and private/independent schools should only be added from a reliable public directory with clear methodology.",
+  districtUrl: princetonSchoolsUrl,
+  registrationUrl: princetonSchoolsRegistrationUrl,
+  performanceReportsUrl: njSchoolPerformanceReportsUrl,
+  schools: [
+    {
+      id: "community-park",
+      name: "Community Park School",
+      type: "Public elementary",
+      grades: "Elementary",
+      address: "372 Witherspoon Street, Princeton, NJ 08540",
+      lat: 40.3604807,
+      lon: -74.6642668,
+      sourceUrl: "https://www.princetonk12.org/community-park-elementary",
+    },
+    {
+      id: "johnson-park",
+      name: "Johnson Park School",
+      type: "Public elementary",
+      grades: "Elementary",
+      address: "285 Rosedale Road, Princeton, NJ 08540",
+      lat: 40.3458134,
+      lon: -74.6872758,
+      sourceUrl: "https://www.princetonk12.org/johnson-park-elementary-home",
+    },
+    {
+      id: "littlebrook",
+      name: "Littlebrook School",
+      type: "Public elementary",
+      grades: "Elementary",
+      address: "39 Magnolia Lane, Princeton, NJ 08540",
+      lat: 40.3640115,
+      lon: -74.6377994,
+      sourceUrl: "https://www.princetonk12.org/littlebrook-elementary-home",
+    },
+    {
+      id: "riverside",
+      name: "Riverside School",
+      type: "Public elementary",
+      grades: "Elementary",
+      address: "58 Riverside Drive, Princeton, NJ 08540",
+      lat: 40.3546394,
+      lon: -74.6377187,
+      sourceUrl: "https://www.princetonk12.org/riverside-elementary-home",
+    },
+    {
+      id: "princeton-middle",
+      name: "Princeton Middle School",
+      type: "Public middle",
+      grades: "Grades 6-8",
+      address: "217 Walnut Lane, Princeton, NJ 08540",
+      lat: 40.3606685,
+      lon: -74.6545218,
+      sourceUrl: "https://www.princetonk12.org/princeton-middle-school",
+    },
+    {
+      id: "princeton-high",
+      name: "Princeton High School",
+      type: "Public high",
+      grades: "Grades 9-12",
+      address: "151 Moore Street, Princeton, NJ 08540",
+      lat: 40.3587009,
+      lon: -74.6560332,
+      sourceUrl: "https://www.princetonk12.org/princeton-high-school",
+    },
+  ],
+};
 
 const officialChildAgeKeys = [
   "B01001_003E",
@@ -107,6 +183,7 @@ const fallback = {
   features: [],
   highlights: [],
   benchmarks: {},
+  schoolContext: publicSchoolContext,
   voting: {
     status: "municipality-level",
     title: "Voting layer",
@@ -164,6 +241,18 @@ const fallback = {
     {
       name: "Princeton elections",
       url: "https://www.princetonnj.gov/192/Elections",
+    },
+    {
+      name: "Princeton Public Schools",
+      url: princetonSchoolsUrl,
+    },
+    {
+      name: "Princeton Public Schools registration",
+      url: princetonSchoolsRegistrationUrl,
+    },
+    {
+      name: "NJ School Performance Reports",
+      url: njSchoolPerformanceReportsUrl,
     },
   ],
 };
@@ -678,6 +767,16 @@ try {
     features,
     highlights,
     benchmarks,
+    schoolContext: {
+      ...publicSchoolContext,
+      schools: publicSchoolContext.schools.map((school) => ({
+        ...school,
+        marker: {
+          x: Number(projectPoint([school.lon, school.lat], mapProjection)[0].toFixed(3)),
+          y: Number(projectPoint([school.lon, school.lat], mapProjection)[1].toFixed(3)),
+        },
+      })),
+    },
   };
 
   await mkdir(new URL("../public", import.meta.url), { recursive: true });

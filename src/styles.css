@@ -1015,6 +1015,7 @@ h3 {
 .privacy-note,
 .tract-explainer,
 .voting-note,
+.school-context-panel,
 .highlight-list div,
 .tract-rank {
   background: #fff;
@@ -1211,6 +1212,13 @@ h3 {
     #eef3f7;
 }
 
+.metric-schools .civic-map-shell {
+  background:
+    linear-gradient(90deg, rgba(238, 127, 45, 0.08) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(238, 127, 45, 0.08) 1px, transparent 1px),
+    #f7f2e8;
+}
+
 .civic-map-shell svg {
   width: min(100%, 760px);
   max-height: 430px;
@@ -1239,6 +1247,34 @@ h3 {
 
 .address-marker {
   pointer-events: none;
+}
+
+.school-marker {
+  cursor: pointer;
+  outline: none;
+}
+
+.school-marker circle {
+  fill: var(--princeton-black);
+  stroke: #fffaf1;
+  stroke-width: 0.52;
+  transition:
+    fill 160ms ease,
+    transform 160ms ease;
+}
+
+.school-marker text {
+  fill: #fffaf1;
+  font-size: 2.7px;
+  font-weight: 950;
+  pointer-events: none;
+}
+
+.school-marker:hover circle,
+.school-marker:focus circle,
+.school-marker.is-hovered circle {
+  fill: var(--princeton-orange);
+  transform: scale(1.18);
 }
 
 .address-marker circle:first-child {
@@ -1349,6 +1385,10 @@ h3 {
   background: linear-gradient(90deg, #c94b43, #f3f1e7 50%, #1f67b1);
 }
 
+.metric-schools .legend-scale i {
+  background: linear-gradient(90deg, #f4efe4, #ee7f2d, #171f1b);
+}
+
 .civic-insights {
   display: grid;
   gap: 12px;
@@ -1433,10 +1473,92 @@ h3 {
 }
 
 .tract-rank h3,
-.voting-note h3 {
+.voting-note h3,
+.school-context-panel h3 {
   margin: 0;
   padding: 16px;
   border-bottom: 1px solid rgba(23, 32, 27, 0.08);
+}
+
+.school-context-panel {
+  overflow: hidden;
+}
+
+.school-context-panel > p {
+  margin: 0;
+  padding: 14px 16px;
+  color: #5e6a62;
+  line-height: 1.5;
+  border-bottom: 1px solid rgba(23, 32, 27, 0.08);
+}
+
+.active-school {
+  display: grid;
+  gap: 5px;
+  padding: 16px;
+  background: #fffaf1;
+  border-bottom: 1px solid rgba(23, 32, 27, 0.08);
+}
+
+.active-school span,
+.active-school small {
+  color: #5e6a62;
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.active-school strong {
+  color: var(--princeton-black);
+  font-size: 1.22rem;
+  line-height: 1.15;
+}
+
+.active-school p {
+  margin: 0;
+  color: #5e6a62;
+  line-height: 1.4;
+}
+
+.active-school a {
+  width: fit-content;
+  color: var(--orange-deep);
+  font-size: 0.84rem;
+  font-weight: 900;
+}
+
+.school-list {
+  display: grid;
+}
+
+.school-list button {
+  display: grid;
+  gap: 2px;
+  padding: 12px 16px;
+  text-align: left;
+  cursor: pointer;
+  background: #fff;
+  border: 0;
+  border-bottom: 1px solid rgba(23, 32, 27, 0.08);
+}
+
+.school-list button.is-active,
+.school-list button:hover {
+  background: #f8faf4;
+}
+
+.school-list span {
+  color: var(--princeton-black);
+  font-weight: 900;
+}
+
+.school-list small {
+  color: #5e6a62;
+  font-weight: 750;
+}
+
+.school-context-panel .school-caveat {
+  color: #7a4a22;
+  background: #fffaf1;
 }
 
 .tract-rank div {

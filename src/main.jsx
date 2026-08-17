@@ -23,6 +23,7 @@ import {
   Recycle,
   Route,
   Search,
+  School,
   Sparkles,
   Theater,
   Train,
@@ -107,6 +108,17 @@ const fallbackCivicMap = {
   features: [],
   highlights: [],
   benchmarks: {},
+  schoolContext: {
+    title: "School context",
+    summary:
+      "School context is loading. PrincetonLive uses official public school and performance-report links when available.",
+    caveat:
+      "This is not a ranking layer. Use official district and NJDOE sources for authoritative school information.",
+    schools: [],
+    districtUrl: "https://www.princetonk12.org/",
+    registrationUrl: "https://www.princetonk12.org/families/registration",
+    performanceReportsUrl: "https://www.nj.gov/education/spr/",
+  },
   voting: {
     title: "Voting layer",
     summary:
@@ -171,6 +183,13 @@ const civicMetrics = [
     label: "Voting",
     detail: "Democratic vs. Republican result",
     icon: Vote,
+  },
+  {
+    key: "schools",
+    label: "Schools",
+    detail: "Public school context",
+    note: "Campus points, grades, assignment caveats, and official report links. Not a ranking layer.",
+    icon: School,
   },
 ];
 
@@ -519,6 +538,7 @@ function tractFill(feature, key, domain) {
     const hue = margin >= 0 ? 214 : 5;
     return `hsl(${hue} 72% ${lightness}%)`;
   }
+  if (key === "schools") return "#f4efe4";
   const value = feature[key];
   if (!Number.isFinite(value)) return "#edf0e9";
   const [min, max] = domain;
@@ -543,6 +563,7 @@ function App() {
   const [civicMap, setCivicMap] = useState(fallbackCivicMap);
   const [civicMetric, setCivicMetric] = useState("income");
   const [hoveredCivicFeature, setHoveredCivicFeature] = useState(null);
+  const [hoveredSchool, setHoveredSchool] = useState(null);
   const [civicTooltip, setCivicTooltip] = useState({ x: 0, y: 0 });
   const [addressQuery, setAddressQuery] = useState("");
   const [addressLookup, setAddressLookup] = useState({
@@ -629,7 +650,9 @@ function App() {
   const activeCivicMetric =
     civicMetrics.find((metric) => metric.key === civicMetric) ?? civicMetrics[0];
   const civicDomain = metricDomain(civicMap.features, civicMetric);
-  const activeBenchmark = civicMap.benchmarks?.[civicMetric];
+  const activeBenchmark = civicMetric === "schools" ? null : civicMap.benchmarks?.[civicMetric];
+  const schoolContext = civicMap.schoolContext ?? fallbackCivicMap.schoolContext;
+  const activeSchool = hoveredSchool ?? schoolContext.schools?.[0] ?? null;
   const topCivicFeatures = civicMap.features
     .filter((feature) => Number.isFinite(feature[civicMetric]))
     .sort((a, b) => b[civicMetric] - a[civicMetric])
@@ -1044,7 +1067,10 @@ function App() {
                   key={key}
                   type="button"
                   className={civicMetric === key ? "is-active" : ""}
-                  onClick={() => setCivicMetric(key)}
+                  onClick={() => {
+                    setCivicMetric(key);
+                    setHoveredSchool(null);
+                  }}
                   aria-pressed={civicMetric === key}
                 >
                   <Icon size={17} aria-hidden="true" />
@@ -1153,6 +1179,56 @@ function App() {
                     </path>
                   );
                 })}
+                {civicMetric === "schools"
+                  ? schoolContext.schools?.map((school) => {
+                      const marker =
+                        school.marker ??
+                        projectCivicPoint(civicMap.mapProjection, school.lat, school.lon);
+                      if (!marker) return null;
+                      return (
+                        <g
+                          className={`school-marker${hoveredSchool?.id === school.id ? " is-hovered" : ""}`}
+                          key={school.id}
+                          role="button"
+                          tabIndex="0"
+                          transform={`translate(${marker.x.toFixed(3)} ${marker.y.toFixed(3)})`}
+                          aria-label={`${school.name}, ${school.type}, ${school.grades}`}
+                          onMouseEnter={(event) => {
+                            setHoveredSchool(school);
+                            setHoveredCivicFeature(null);
+                            updateCivicTooltip(event);
+                          }}
+                          onPointerEnter={(event) => {
+                            setHoveredSchool(school);
+                            setHoveredCivicFeature(null);
+                            updateCivicTooltip(event);
+                          }}
+                          onPointerMove={updateCivicTooltip}
+                          onClick={(event) => {
+                            setHoveredSchool(school);
+                            setHoveredCivicFeature(null);
+                            updateCivicTooltip(event);
+                          }}
+                          onFocus={() => setHoveredSchool(school)}
+                          onKeyDown={(event) => {
+                            if (event.key === "Enter" || event.key === " ") {
+                              event.preventDefault();
+                              setHoveredSchool(school);
+                              setHoveredCivicFeature(null);
+                            }
+                          }}
+                        >
+                          <circle r="2.2" />
+                          <text y="0.74" textAnchor="middle">
+                            S
+                          </text>
+                          <title>
+                            {school.name}: {school.grades}
+                          </title>
+                        </g>
+                      );
+                    })
+                  : null}
                 {addressMarker ? (
                   <g
                     className="address-marker"
@@ -1189,6 +1265,19 @@ function App() {
                         : activeBenchmark?.label)}
                   </small>
                 </div>
+              ) : civicMetric === "schools" && hoveredSchool ? (
+                <div
+                  className="civic-tooltip school-tooltip"
+                  style={{
+                    left: `${civicTooltip.x}px`,
+                    top: `${civicTooltip.y}px`,
+                  }}
+                >
+                  <strong>{hoveredSchool.name}</strong>
+                  <span>{hoveredSchool.type}</span>
+                  <b>{hoveredSchool.grades}</b>
+                  <small>{hoveredSchool.address}</small>
+                </div>
               ) : null}
               {civicMetric === "voting" ? (
                 <div className="vote-overlay">
@@ -1201,9 +1290,21 @@ function App() {
             <div className="civic-legend">
               <span>{activeCivicMetric.detail}</span>
               <div className="legend-scale">
-                <span>{civicMetric === "voting" ? "Republican" : "Lower"}</span>
+                <span>
+                  {civicMetric === "voting"
+                    ? "Republican"
+                    : civicMetric === "schools"
+                      ? "Context"
+                      : "Lower"}
+                </span>
                 <i aria-hidden="true" />
-                <span>{civicMetric === "voting" ? "Democratic" : "Higher"}</span>
+                <span>
+                  {civicMetric === "voting"
+                    ? "Democratic"
+                    : civicMetric === "schools"
+                      ? "Official links"
+                      : "Higher"}
+                </span>
               </div>
             </div>
           </div>
@@ -1249,6 +1350,56 @@ function App() {
                       {link.label}
                     </a>
                   ))}
+                </div>
+              </div>
+            ) : civicMetric === "schools" ? (
+              <div className="school-context-panel">
+                <h3>{schoolContext.title}</h3>
+                <p>{schoolContext.summary}</p>
+                {activeSchool ? (
+                  <div className="active-school">
+                    <span>{activeSchool.type}</span>
+                    <strong>{activeSchool.name}</strong>
+                    <small>{activeSchool.grades}</small>
+                    <p>{activeSchool.address}</p>
+                    <a href={activeSchool.sourceUrl} {...externalLinkProps(activeSchool.sourceUrl)}>
+                      Official school page
+                    </a>
+                  </div>
+                ) : null}
+                <div className="school-list">
+                  {schoolContext.schools?.map((school) => (
+                    <button
+                      type="button"
+                      key={school.id}
+                      className={activeSchool?.id === school.id ? "is-active" : ""}
+                      onClick={() => setHoveredSchool(school)}
+                    >
+                      <span>{school.name}</span>
+                      <small>{school.grades}</small>
+                    </button>
+                  ))}
+                </div>
+                <p className="school-caveat">{schoolContext.caveat}</p>
+                <div className="source-links compact">
+                  <a
+                    href={schoolContext.districtUrl}
+                    {...externalLinkProps(schoolContext.districtUrl)}
+                  >
+                    Princeton Public Schools
+                  </a>
+                  <a
+                    href={schoolContext.registrationUrl}
+                    {...externalLinkProps(schoolContext.registrationUrl)}
+                  >
+                    Registration and assignment
+                  </a>
+                  <a
+                    href={schoolContext.performanceReportsUrl}
+                    {...externalLinkProps(schoolContext.performanceReportsUrl)}
+                  >
+                    NJDOE performance reports
+                  </a>
                 </div>
               </div>
             ) : (
