@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "refresh:data": "node scripts/fetch-live-data.mjs",
-    "build": "npm run refresh:data && vite build",
+    "refresh:civic": "node scripts/fetch-civic-map.mjs",
+    "refresh:public": "npm run refresh:data && npm run refresh:civic",
+    "build": "npm run refresh:public && vite build",
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {

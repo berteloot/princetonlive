@@ -3,6 +3,9 @@ import { createRoot } from "react-dom/client";
 import {
   AlertTriangle,
   BatteryCharging,
+  Baby,
+  BadgeDollarSign,
+  BarChart3,
   Bike,
   BookOpen,
   Bus,
@@ -25,6 +28,7 @@ import {
   Trees,
   Umbrella,
   Users,
+  Vote,
 } from "lucide-react";
 import "./styles.css";
 
@@ -91,12 +95,65 @@ const fallbackData = {
   sources: [],
 };
 
+const fallbackCivicMap = {
+  generatedAt: null,
+  release: "Civic map loading",
+  privacy:
+    "Neighborhood-scale public data only. PrincetonLive does not publish individual voter, household, or address-level records.",
+  viewBox: "0 0 100 72",
+  features: [],
+  highlights: [],
+  voting: {
+    title: "Voting layer",
+    summary:
+      "Official election result links are available. Republican/Democrat neighborhood shading will only be added after official precinct totals can be safely joined to public district boundaries.",
+    links: [
+      {
+        label: "Mercer County archived election results",
+        url: "https://www.mercercounty.org/government/county-clerk-/elections/archived-election-results",
+      },
+      {
+        label: "Princeton elections",
+        url: "https://www.princetonnj.gov/192/Elections",
+      },
+    ],
+  },
+  sources: [],
+};
+
 const agendaFilters = [
   ["all", "All", CalendarDays],
   ["new", "New here", Sparkles],
   ["family", "Family", Users],
   ["rain", "Rain plan", Umbrella],
   ["culture", "Culture", Theater],
+];
+
+const civicMetrics = [
+  {
+    key: "income",
+    label: "Wealth",
+    detail: "Median household income",
+    icon: BadgeDollarSign,
+  },
+  {
+    key: "children",
+    label: "Children",
+    detail: "Residents under 18",
+    icon: Baby,
+  },
+  {
+    key: "childShare",
+    label: "Family share",
+    detail: "Children as share of population",
+    icon: Users,
+  },
+  {
+    key: "voting",
+    label: "Voting",
+    detail: "Official district sources",
+    icon: Vote,
+  },
 ];
 
 const commuteCards = [
@@ -211,17 +268,63 @@ function formatRefresh(value) {
   }).format(new Date(value));
 }
 
+function formatCivicValue(key, value) {
+  if (!Number.isFinite(value)) return "Source linked";
+  if (key === "income") {
+    return new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      maximumFractionDigits: 0,
+    }).format(value);
+  }
+  if (key === "childShare") {
+    return new Intl.NumberFormat("en-US", {
+      style: "percent",
+      maximumFractionDigits: 1,
+    }).format(value);
+  }
+  return new Intl.NumberFormat("en-US").format(value);
+}
+
+function metricDomain(features, key) {
+  const values = features.map((feature) => feature[key]).filter(Number.isFinite);
+  return values.length ? [Math.min(...values), Math.max(...values)] : [0, 1];
+}
+
+function tractFill(feature, key, domain) {
+  if (key === "voting") return "#d8ded5";
+  const value = feature[key];
+  if (!Number.isFinite(value)) return "#edf0e9";
+  const [min, max] = domain;
+  const ratio = max === min ? 0.62 : (value - min) / (max - min);
+  if (key === "income") {
+    const lightness = 88 - ratio * 48;
+    return `hsl(27 86% ${lightness}%)`;
+  }
+  const lightness = 86 - ratio * 43;
+  return `hsl(154 40% ${lightness}%)`;
+}
+
 function App() {
   const [language, setLanguage] = useState(getInitialLanguage);
   const [filter, setFilter] = useState("all");
   const [query, setQuery] = useState("");
   const [liveData, setLiveData] = useState(fallbackData);
+  const [civicMap, setCivicMap] = useState(fallbackCivicMap);
+  const [civicMetric, setCivicMetric] = useState("income");
 
   useEffect(() => {
     fetch(`/live-data.json?v=${Date.now()}`)
       .then((response) => (response.ok ? response.json() : fallbackData))
       .then((data) => setLiveData({ ...fallbackData, ...data }))
       .catch(() => setLiveData(fallbackData));
+  }, []);
+
+  useEffect(() => {
+    fetch(`/civic-map.json?v=${Date.now()}`)
+      .then((response) => (response.ok ? response.json() : fallbackCivicMap))
+      .then((data) => setCivicMap({ ...fallbackCivicMap, ...data }))
+      .catch(() => setCivicMap(fallbackCivicMap));
   }, []);
 
   useEffect(() => {
@@ -285,6 +388,13 @@ function App() {
   const visibleEvents = filteredEvents.slice(0, 10);
   const nextEvent = liveData.events[0];
   const alertCount = liveData.alerts?.length ?? 0;
+  const activeCivicMetric =
+    civicMetrics.find((metric) => metric.key === civicMetric) ?? civicMetrics[0];
+  const civicDomain = metricDomain(civicMap.features, civicMetric);
+  const topCivicFeatures = civicMap.features
+    .filter((feature) => Number.isFinite(feature[civicMetric]))
+    .sort((a, b) => b[civicMetric] - a[civicMetric])
+    .slice(0, 4);
 
   return (
     <main>
@@ -305,6 +415,7 @@ function App() {
             <a href="#today">Today</a>
             <a href="#move">Move</a>
             <a href="#practical">Practical</a>
+            <a href="#civic">Civic map</a>
             <a href="#explore">Explore</a>
           </nav>
           <div className="language-switcher notranslate" translate="no" aria-label="Language">
@@ -500,6 +611,117 @@ function App() {
               <strong>{value}</strong>
             </a>
           ))}
+        </div>
+      </section>
+
+      <section className="section civic-section" id="civic">
+        <div className="section-heading split">
+          <div>
+            <p className="eyebrow">Civic map</p>
+            <h2>Public data, neighborhood scale.</h2>
+          </div>
+          <p>
+            Census tract boundaries and ACS estimates make the map useful without exposing
+            household-level records. Voting is handled as official aggregate sources only.
+          </p>
+        </div>
+
+        <div className="civic-layout">
+          <div className={`civic-map-panel metric-${civicMetric}`}>
+            <div className="civic-toolbar" aria-label="Civic map metrics">
+              {civicMetrics.map(({ key, label, icon: Icon }) => (
+                <button
+                  key={key}
+                  type="button"
+                  className={civicMetric === key ? "is-active" : ""}
+                  onClick={() => setCivicMetric(key)}
+                  aria-pressed={civicMetric === key}
+                >
+                  <Icon size={17} aria-hidden="true" />
+                  {label}
+                </button>
+              ))}
+            </div>
+            <div className="civic-map-shell">
+              <svg
+                viewBox={civicMap.viewBox}
+                role="img"
+                aria-label={`Princeton-area tracts by ${activeCivicMetric.detail}`}
+              >
+                {civicMap.features.map((feature) => (
+                  <path
+                    key={feature.geoid}
+                    d={feature.path}
+                    fill={tractFill(feature, civicMetric, civicDomain)}
+                  >
+                    <title>
+                      {feature.areaLabel}, {feature.tractLabel}:{" "}
+                      {formatCivicValue(civicMetric, feature[civicMetric])}
+                    </title>
+                  </path>
+                ))}
+              </svg>
+              {civicMetric === "voting" ? (
+                <div className="vote-overlay">
+                  <Vote size={22} aria-hidden="true" />
+                  <strong>{civicMap.voting.title}</strong>
+                  <span>Aggregate district join pending</span>
+                </div>
+              ) : null}
+            </div>
+            <div className="civic-legend">
+              <span>{activeCivicMetric.detail}</span>
+              <div aria-hidden="true" />
+              <span>Higher</span>
+            </div>
+          </div>
+
+          <div className="civic-insights">
+            <div className="privacy-note">
+              <BarChart3 size={19} aria-hidden="true" />
+              <strong>{civicMap.release}</strong>
+              <span>{civicMap.privacy}</span>
+            </div>
+            {civicMetric === "voting" ? (
+              <div className="voting-note">
+                <h3>{civicMap.voting.title}</h3>
+                <p>{civicMap.voting.summary}</p>
+                <div className="source-links compact">
+                  {civicMap.voting.links.map((link) => (
+                    <a href={link.url} key={link.url}>
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <>
+                <div className="highlight-list">
+                  {civicMap.highlights.map((highlight) => (
+                    <div key={highlight.key}>
+                      <span>{highlight.title}</span>
+                      <strong>{highlight.value}</strong>
+                      <small>
+                        {highlight.label}, {highlight.tract}
+                      </small>
+                    </div>
+                  ))}
+                </div>
+                <div className="tract-rank">
+                  <h3>Highest on this layer</h3>
+                  {topCivicFeatures.map((feature) => (
+                    <div key={feature.geoid}>
+                      <span>
+                        {feature.areaLabel}
+                        <small>{feature.tractLabel}</small>
+                      </span>
+                      <strong>{formatCivicValue(civicMetric, feature[civicMetric])}</strong>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
         </div>
       </section>
 
