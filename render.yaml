@@ -15,6 +15,33 @@ services:
       - path: /*
         name: X-Content-Type-Options
         value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /*
+        name: Permissions-Policy
+        value: "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+      # Six months, no includeSubDomains yet. Widen only after every berteloot.org
+      # subdomain is confirmed HTTPS-only, because the directive is hard to walk back.
+      - path: /*
+        name: Strict-Transport-Security
+        value: "max-age=15552000"
+      # Report-only on purpose. Google Translate and Recycle Coach inject at runtime,
+      # so watch the console with the language switcher and the garbage lookup both
+      # exercised before promoting this to the enforcing Content-Security-Policy header.
+      - path: /*
+        name: Content-Security-Policy-Report-Only
+        value: "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://translate.google.com https://translate.googleapis.com https://cdn.recyclecoach.com https://*.recyclecoach.com; style-src 'self' 'unsafe-inline' https://www.gstatic.com https://fonts.googleapis.com https://translate.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://nominatim.openstreetmap.org https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://translate.googleapis.com https://*.recyclecoach.com; frame-src https://*.recyclecoach.com https://www.google.com; base-uri 'self'; form-action 'self'; object-src 'none'; frame-ancestors 'self'"
+      # The JSON feeds are advertised in llms.txt as machine-readable endpoints.
+      - path: /live-data.json
+        name: Access-Control-Allow-Origin
+        value: "*"
+      - path: /civic-map.json
+        name: Access-Control-Allow-Origin
+        value: "*"
+      - path: /waste-data.json
+        name: Access-Control-Allow-Origin
+        value: "*"
       - path: /assets/*
         name: Cache-Control
         value: public, max-age=31536000, immutable

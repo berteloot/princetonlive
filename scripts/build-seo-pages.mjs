@@ -446,7 +446,7 @@ function guideHtml(guide) {
       <div class="hero">
         <p class="eyebrow">PrincetonLive guide</p>
         <h1>${escapeHtml(guide.title)}</h1>
-        <p class="answer">${escapeHtml(guide.description)} ${escapeHtml(guide.intent)}</p>
+        <p class="answer">${escapeHtml(guide.description)}</p>
       </div>
       <div class="layout">
         <article>

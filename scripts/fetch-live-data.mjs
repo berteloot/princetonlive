@@ -45,9 +45,38 @@ const fallback = {
     sourceUrl: "https://www.weather.gov/",
   },
   alerts: [],
+  alertsAvailable: false,
   events: [],
   sources,
 };
+
+// Hosts we accept links from. Feed content is untrusted: an upstream feed can be
+// compromised, and an ordinary feed can carry a javascript: or off-domain URL that
+// would render under an official-looking label.
+const allowedLinkHosts = new Set([
+  "www.princeton.edu",
+  "princeton.edu",
+  "princetonlibrary.libnet.info",
+  "www.princetonlibrary.org",
+  "princetonlibrary.org",
+  "www.princetonnj.gov",
+  "princetonnj.gov",
+  "alerts.weather.gov",
+  "api.weather.gov",
+  "www.weather.gov",
+  "forecast.weather.gov",
+]);
+
+function safeUrl(value) {
+  if (typeof value !== "string" && typeof value !== "number") return null;
+  try {
+    const url = new URL(String(value));
+    if (url.protocol !== "https:" && url.protocol !== "http:") return null;
+    return allowedLinkHosts.has(url.hostname) ? url.href : null;
+  } catch {
+    return null;
+  }
+}
 
 function source(name) {
   return sources.find((item) => item.name === name);
@@ -162,12 +191,15 @@ async function weather() {
         event: feature.properties.event,
         headline: feature.properties.headline,
         severity: feature.properties.severity,
-        url: feature.properties.uri,
+        url: safeUrl(feature.properties.uri),
       })),
+      alertsAvailable: true,
     };
   } catch (error) {
     mark("National Weather Service", "error", error.message);
-    return { weather: fallback.weather, alerts: [] };
+    // An empty alert list here means "we do not know", never "there are no alerts".
+    // The flag is what lets the page tell those two apart.
+    return { weather: fallback.weather, alerts: [], alertsAvailable: false };
   }
 }
 
@@ -184,7 +216,7 @@ async function universityEvents() {
         dateLabel: dateLabel(start),
         timeLabel: timeLabel(start),
         location: "Princeton campus",
-        url: item.link,
+        url: safeUrl(item.link),
         sortTime: start.toISOString(),
         tags: classify(`${item.title} ${item.description} Princeton University`),
       };
@@ -212,7 +244,7 @@ async function libraryEvents() {
         dateLabel: event.simple_date || dateLabel(start),
         timeLabel: event.time_string || event.start_time || "Check time",
         location: [event.library, event.venues].filter(Boolean).join(" - "),
-        url: event.url,
+        url: safeUrl(event.url),
         sortTime: event.raw_start_time,
         tags: classify(`${event.title} ${event.description} ${event.tags} ${event.ages}`),
       };
@@ -245,7 +277,7 @@ async function municipalEvents() {
         dateLabel: details.date || dateLabel(parsed),
         timeLabel: details.time || "Check time",
         location: stripHtml(item["calendarEvent:Location"] || "Princeton, NJ"),
-        url: item.link,
+        url: safeUrl(item.link),
         sortTime: Number.isNaN(parsed.valueOf()) ? item.pubDate : parsed.toISOString(),
         tags: classify(`${item.title} municipal Princeton ${item.description}`),
       };

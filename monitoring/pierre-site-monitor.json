@@ -84,6 +84,14 @@
     },
     {
       "kind": "generated_json",
+      "name": "Live weather snapshot",
+      "url": "https://princetonlive.berteloot.org/live-data.json",
+      "expect_status": [200],
+      "json_path": "weather.temperature",
+      "max_age_hours": 8
+    },
+    {
+      "kind": "generated_json",
       "name": "Civic map data",
       "url": "https://princetonlive.berteloot.org/civic-map.json",
       "expect_status": [200],

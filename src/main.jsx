@@ -67,6 +67,14 @@ const languageMeta = {
   },
 };
 
+// Cache-busting bucket. A per-load Date.now() defeated the browser and CDN cache on
+// every visit. A 5-minute bucket matches the CDN s-maxage=300 and still picks up the
+// 3-hourly data refresh promptly.
+const DATA_VERSION = Math.floor(Date.now() / 300000);
+
+// alertsAvailable: null means "not loaded yet", false means "the feed failed".
+// Those two must never render as "no alerts", which is an affirmative safety claim.
+// eventsArePlaceholder marks the rows below as source links rather than real events.
 const fallbackData = {
   generatedAt: null,
   weather: {
@@ -77,6 +85,8 @@ const fallbackData = {
     sourceUrl: "https://www.weather.gov/",
   },
   alerts: [],
+  alertsAvailable: null,
+  eventsArePlaceholder: true,
   events: [
     {
       title: "Princeton University public events",
@@ -186,6 +196,20 @@ function externalLinkProps(href) {
   return typeof href === "string" && !href.startsWith("#")
     ? { target: "_blank", rel: "noopener noreferrer" }
     : {};
+}
+
+// Second line of defence for URLs that came from a public feed. The refresh script
+// validates them at fetch time; this catches anything already sitting in a cached
+// live-data.json. A card with no valid URL renders without a link.
+function safeHref(href) {
+  if (typeof href !== "string" || !href) return null;
+  if (href.startsWith("#")) return href;
+  try {
+    const url = new URL(href, window.location.origin);
+    return url.protocol === "https:" || url.protocol === "http:" ? url.href : null;
+  } catch {
+    return null;
+  }
 }
 
 const agendaFilters = [
@@ -810,21 +834,26 @@ function App() {
   }, [residentProfile]);
 
   useEffect(() => {
-    fetch(`/live-data.json?v=${Date.now()}`)
-      .then((response) => (response.ok ? response.json() : fallbackData))
-      .then((data) => setLiveData({ ...fallbackData, ...data }))
-      .catch(() => setLiveData(fallbackData));
+    fetch(`/live-data.json?v=${DATA_VERSION}`)
+      .then((response) => {
+        if (!response.ok) throw new Error(`live-data ${response.status}`);
+        return response.json();
+      })
+      // A successful fetch carries its own eventsArePlaceholder: false and the
+      // alertsAvailable flag written by the refresh script.
+      .then((data) => setLiveData({ ...fallbackData, eventsArePlaceholder: false, ...data }))
+      .catch(() => setLiveData({ ...fallbackData, alertsAvailable: false }));
   }, []);
 
   useEffect(() => {
-    fetch(`/civic-map.json?v=${Date.now()}`)
+    fetch(`/civic-map.json?v=${DATA_VERSION}`)
       .then((response) => (response.ok ? response.json() : fallbackCivicMap))
       .then((data) => setCivicMap({ ...fallbackCivicMap, ...data }))
       .catch(() => setCivicMap(fallbackCivicMap));
   }, []);
 
   useEffect(() => {
-    fetch(`/waste-data.json?v=${Date.now()}`)
+    fetch(`/waste-data.json?v=${DATA_VERSION}`)
       .then((response) => (response.ok ? response.json() : fallbackWasteData))
       .then((data) => setWasteData({ ...fallbackWasteData, ...data }))
       .catch(() => setWasteData(fallbackWasteData));
@@ -960,6 +989,17 @@ function App() {
     : null;
   const nextEvent = liveData.events[0];
   const alertCount = liveData.alerts?.length ?? 0;
+  // Never state "no alerts" unless the feed actually answered. A failed or pending
+  // fetch says so, because a resident checking during a storm reads silence as safety.
+  const alertsUnavailable = liveData.alertsAvailable === false;
+  const alertsPending = liveData.alertsAvailable === null || liveData.alertsAvailable === undefined;
+  const alertStatusLabel = alertCount
+    ? `${alertCount} active weather alert${alertCount === 1 ? "" : "s"}`
+    : alertsUnavailable
+      ? "Alert status unavailable"
+      : alertsPending
+        ? "Checking alerts"
+        : "No active NWS alerts";
   const activeCivicMetric =
     civicMetrics.find((metric) => metric.key === civicMetric) ?? civicMetrics[0];
   const civicDomain = metricDomain(civicMap.features, civicMetric);
@@ -1109,8 +1149,14 @@ function App() {
     setAddressLookup({ status: "idle", message: "", result: null });
   };
 
+  // <header> and <footer> sit outside <main> so they map to the banner and contentinfo
+  // landmarks. Nested inside <main>, HTML gives them the generic role and a screen
+  // reader gets no landmark rotor.
   return (
-    <main>
+    <>
+      <a className="skip-link" href="#top">
+        Skip to main content
+      </a>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="PrincetonLive home">
           <span className="brand-mark notranslate" translate="no">
@@ -1155,11 +1201,21 @@ function App() {
         </div>
       </header>
 
-      <section className="hero" id="top">
+      <main>
+      {/* tabIndex -1 so the skip link moves focus here, not just the scroll position. */}
+      <section className="hero" id="top" tabIndex={-1}>
         <div className="hero-media" aria-hidden="true">
+          {/* 421 KB, hotlinked from princeton.edu, and the LCP candidate. Dimensions and
+              fetchpriority reduce layout shift and pull it forward, but the real fix is a
+              self-hosted image we hold rights to. The ?itok= derivative token also expires
+              when the university rebuilds its image styles, which breaks this without warning. */}
           <img
             src="https://www.princeton.edu/sites/default/files/styles/half_2x/public/20161006_CL_DJA_028.jpg?itok=AGbX2ltx"
             alt=""
+            width="1920"
+            height="1280"
+            fetchPriority="high"
+            decoding="async"
           />
         </div>
         <div className="hero-copy">
@@ -1209,7 +1265,7 @@ function App() {
           </a>
           <a href="https://www.weather.gov/phi/" {...externalLinkProps("https://www.weather.gov/phi/")}>
             <span>Alerts</span>
-            <strong>{alertCount ? `${alertCount} active weather alert${alertCount === 1 ? "" : "s"}` : "No active NWS alerts"}</strong>
+            <strong>{alertStatusLabel}</strong>
           </a>
           <a
             href={nextEvent?.url ?? "https://www.princeton.edu/events"}
@@ -1405,12 +1461,18 @@ function App() {
         <div className="results-meta" aria-live="polite">
           Showing {visibleEvents.length} of {filteredEvents.length} matching public items
         </div>
+        {liveData.eventsArePlaceholder ? (
+          <p className="agenda-placeholder-note" role="status">
+            The Princeton event feeds did not load, so the entries below are links to the
+            official calendars rather than today's listings.
+          </p>
+        ) : null}
         <div className="agenda-list" key={`agenda-${filter}-${query}-${liveData.generatedAt}`}>
           {visibleEvents.length ? (
             visibleEvents.map((event, index) => (
               <a
                 className="agenda-card"
-                href={event.url}
+                href={safeHref(event.url) ?? undefined}
                 key={`${event.url}-${index}`}
                 {...externalLinkProps(event.url)}
               >
@@ -1432,26 +1494,42 @@ function App() {
         </div>
       </section>
 
-      {liveData.alerts.length ? (
+      {alertCount || alertsUnavailable ? (
         <section className="section alert-band" aria-labelledby="alerts-heading">
           <div className="section-heading split">
             <div>
               <p className="eyebrow">Active alerts</p>
-              <h2 id="alerts-heading">Weather items that need attention.</h2>
+              <h2 id="alerts-heading">
+                {alertsUnavailable
+                  ? "Alert status could not be checked."
+                  : "Weather items that need attention."}
+              </h2>
             </div>
             <p>
-              Current National Weather Service alerts for Princeton. When there are no active
-              alerts, this section is hidden so the page stays focused.
+              {alertsUnavailable
+                ? "The National Weather Service alert feed did not respond during the last refresh, so this page cannot tell you whether Princeton is under an alert. Check weather.gov directly."
+                : "Current National Weather Service alerts for Princeton. When there are no active alerts, this section is hidden so the page stays focused."}
             </p>
           </div>
           <div className="alert-strip">
-            {liveData.alerts.slice(0, 3).map((alert) => (
-              <a href={alert.url} key={alert.id} {...externalLinkProps(alert.url)}>
+            {alertsUnavailable ? (
+              <a
+                href="https://alerts.weather.gov/search?zone=NJZ016"
+                {...externalLinkProps("https://alerts.weather.gov/search?zone=NJZ016")}
+              >
                 <AlertTriangle size={18} aria-hidden="true" />
-                <strong>{alert.event}</strong>
-                <span>{alert.headline}</span>
+                <strong>Check weather.gov</strong>
+                <span>Live National Weather Service alerts for Mercer County</span>
               </a>
-            ))}
+            ) : (
+              liveData.alerts.slice(0, 3).map((alert) => (
+                <a href={safeHref(alert.url) ?? undefined} key={alert.id} {...externalLinkProps(alert.url)}>
+                  <AlertTriangle size={18} aria-hidden="true" />
+                  <strong>{alert.event}</strong>
+                  <span>{alert.headline}</span>
+                </a>
+              ))
+            )}
           </div>
         </section>
       ) : null}
@@ -2218,6 +2296,7 @@ function App() {
           })}
         </div>
       </section>
+      </main>
 
       <footer>
         <div>
@@ -2239,7 +2318,7 @@ function App() {
           Back to top
         </a>
       </footer>
-    </main>
+    </>
   );
 }
 

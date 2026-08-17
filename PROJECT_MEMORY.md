@@ -9,9 +9,9 @@ PrincetonLive is a static React/Vite website for residents and new arrivals in P
 Production:
 - Primary URL: https://princetonlive.berteloot.org
 - Render URL: https://princetonlive.onrender.com
-- Render service ID: `srv-da1fs149v7es73bavnq0`
+- Render service ID: kept in local notes outside this repo
 - GitHub repo: `berteloot/princetonlive`
-- Canonical local folder: `/Users/stanislasberteloot/Library/CloudStorage/Dropbox/Stan's Consulting/Nytro/NYTRO_AI/clients/altilead/Princeton`
+- Canonical local folder: kept in local notes outside this repo
 
 ## Architecture
 
@@ -75,7 +75,7 @@ Run Pierre's health monitor locally:
 python3 tools/site_monitor.py --config monitoring/pierre-site-monitor.json --state /tmp/princetonlive-monitor-state.json
 ```
 
-Render deploy status uses the API key in `/Users/stanislasberteloot/.config/nytro/.env`. Do not commit or display secrets.
+Render deploy status uses a local API key held outside this repo. Do not commit or display secrets.
 
 ## Public Data Sources
 
@@ -158,7 +158,7 @@ Explore walks:
 
 ## Feature Log
 
-- Latest - Moved the local working copy from `/Users/stanislasberteloot/Documents/ChatGPT/Princeton Live` into the intended Dropbox Princeton client folder and documented that folder as the canonical local workspace.
+- Latest - Moved the local working copy into its intended local workspace folder. Local absolute paths stay out of this repo.
 - Latest - Added Google tag / GA4 measurement ID `G-RL5N5X5EZE` to the app shell and generated SEO pillar pages.
 - Latest - Added guide and map links to every First-month Princeton walk card.
 - Latest - Renamed user-facing pickup language to garbage pickup.

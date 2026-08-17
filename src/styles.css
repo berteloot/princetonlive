@@ -7,7 +7,8 @@
   --paper-strong: #fffaf1;
   --civic-green: #2f6958;
   --ink-soft: #46554c;
-  --cool-gray: #7f7f83;
+  /* #7f7f83 measured 3.84:1 and 3.99:1 at the small sizes it is used at. 5.65:1 now. */
+  --cool-gray: #5e6a62;
   color: #171717;
   background: var(--paper);
   font-family:
@@ -27,6 +28,71 @@ html {
 
 [id] {
   scroll-margin-top: 92px;
+}
+
+/* A visible focus ring on every keyboard-focused control. Four inputs previously set
+   outline: 0 with nothing replacing it, so keyboard users could not tell which field
+   they were in. --orange-deep is used because it clears 3:1 on every background here. */
+:focus-visible {
+  outline: 3px solid var(--orange-deep);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.search-box:focus-within,
+.address-locator label:focus-within,
+.profile-setup label:focus-within {
+  border-color: var(--orange-deep);
+  box-shadow: 0 0 0 3px rgba(153, 68, 0, 0.18);
+}
+
+/* Bypass the 14 focusable elements in the sticky header. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 999;
+  padding: 12px 18px;
+  background: var(--princeton-black);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0 0 8px 0;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+/* The hero is a programmatic focus target for the skip link, so it should not paint
+   a ring of its own when focus lands there. */
+.hero:focus,
+.hero:focus-visible {
+  outline: none;
+}
+
+.agenda-placeholder-note {
+  margin: 0 0 14px;
+  padding: 12px 14px;
+  border-left: 4px solid var(--orange-deep);
+  background: rgba(153, 68, 0, 0.07);
+  color: #3a2a1c;
+  font-size: 0.92rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 body {
@@ -252,9 +318,12 @@ nav a:hover {
   max-width: 760px;
 }
 
+/* --princeton-orange measures 2.40:1 to 2.72:1 on the light section backgrounds,
+   below the 4.5:1 AA floor. --orange-deep is 6.60:1 on white and keeps the brand hue.
+   The orange stays as-is on dark surfaces, where it already passes. */
 .eyebrow {
   margin: 0 0 10px;
-  color: var(--princeton-orange);
+  color: var(--orange-deep);
   font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.08em;

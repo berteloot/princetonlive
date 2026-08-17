@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T21:06:32.702Z",
+  "generatedAt": "2026-08-17T21:24:26.287Z",
   "weather": {
     "temperature": 86,
     "shortForecast": "Mostly Sunny",
@@ -8,6 +8,7 @@
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
+  "alertsAvailable": true,
   "events": [
     {
       "title": "Workshop: Writers Room",
