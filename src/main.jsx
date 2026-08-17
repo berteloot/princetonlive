@@ -7,7 +7,6 @@ import {
   BookOpen,
   Bus,
   CalendarDays,
-  Car,
   ChevronRight,
   CloudRain,
   ExternalLink,
@@ -15,7 +14,6 @@ import {
   Landmark,
   Library,
   Map,
-  Moon,
   Navigation,
   ParkingCircle,
   Recycle,
@@ -184,7 +182,10 @@ function App() {
       <header className="site-header">
         <a className="brand" href="#top" aria-label="PrincetonLive home">
           <span className="brand-mark">PL</span>
-          <span>PrincetonLive</span>
+          <span>
+            PrincetonLive
+            <small>Independent resident guide</small>
+          </span>
         </a>
         <nav aria-label="Primary navigation">
           {navItems.map((item) => (
@@ -203,13 +204,17 @@ function App() {
           />
         </div>
         <div className="hero-copy">
-          <p className="eyebrow">Daily operating guide</p>
+          <p className="eyebrow">Orange and black, resident-first</p>
           <h1>Know what Princeton knows.</h1>
           <p>
             A calm civic notebook for new residents: commute, culture, lectures,
             parking, alerts, errands, public life, and the small decisions that
             turn Princeton into a usable home.
           </p>
+          <div className="identity-note" aria-label="Brand positioning note">
+            <span aria-hidden="true" />
+            <strong>Princeton spirit without official-university confusion.</strong>
+          </div>
           <div className="hero-actions">
             <a className="primary-action" href="#today">
               Start with today <ChevronRight size={18} aria-hidden="true" />
@@ -232,6 +237,10 @@ function App() {
             <span>Weather fallback</span>
             <strong>Library, lectures, cinema</strong>
           </div>
+          <div>
+            <span>Local signal</span>
+            <strong>Orange alerts, black type, quiet confidence</strong>
+          </div>
         </aside>
       </section>
 
@@ -244,6 +253,44 @@ function App() {
           PrincetonLive answers the new-resident question hiding underneath ten
           different tabs: what should I know today so I can live Princeton well?
         </p>
+      </section>
+
+      <section className="section identity-system" aria-labelledby="identity-heading">
+        <div>
+          <p className="eyebrow">Visual System</p>
+          <h2 id="identity-heading">A Princeton cue, not a Princeton costume.</h2>
+        </div>
+        <div className="identity-panels">
+          <article className="identity-panel color-panel">
+            <span className="panel-kicker">Palette</span>
+            <h3>Orange for signals. Black for trust.</h3>
+            <p>
+              PrincetonLive uses Princeton orange as a high-signal accent, then
+              gives the working interface room to breathe with warm civic
+              neutrals.
+            </p>
+            <div className="swatches" aria-label="PrincetonLive palette">
+              <span style={{ "--swatch": "#ee7f2d" }}>Orange</span>
+              <span style={{ "--swatch": "#0b0b0b" }}>Black</span>
+              <span style={{ "--swatch": "#f4efe6" }}>Paper</span>
+              <span style={{ "--swatch": "#2f6958" }}>Civic</span>
+            </div>
+          </article>
+          <article className="identity-panel tiger-panel">
+            <span className="panel-kicker">Mascot Energy</span>
+            <h3>Alert, quick, and a little spirited.</h3>
+            <p>
+              The tiger influence shows up as motion and hierarchy: crisp
+              diagonal signal bars, fast-to-scan cards, and sharp orange
+              moments where a resident needs to act.
+            </p>
+            <div className="signal-bars" aria-hidden="true">
+              <span />
+              <span />
+              <span />
+            </div>
+          </article>
+        </div>
       </section>
 
       <section className="section today-grid" id="today">
