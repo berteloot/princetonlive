@@ -332,6 +332,10 @@ nav a:hover {
   object-position: 58% 32%;
 }
 
+.hero-copy h1 {
+  overflow-wrap: break-word;
+}
+
 .hero-copy {
   position: relative;
   z-index: 2;
@@ -364,14 +368,14 @@ p {
 h1 {
   max-width: 720px;
   margin-bottom: 16px;
-  font-size: clamp(3.4rem, 7vw, 6.4rem);
+  font-size: clamp(2.4rem, 9vw, 6.4rem);
   line-height: 0.92;
   letter-spacing: 0;
 }
 
 h2 {
   margin-bottom: 12px;
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: clamp(1.7rem, 5vw, 4rem);
   line-height: 1;
   letter-spacing: 0;
 }
@@ -2477,18 +2481,18 @@ footer a {
 
 @media (max-width: 680px) {
   [id] {
-    scroll-margin-top: 206px;
+    scroll-margin-top: 84px;
   }
 
   .site-header {
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
   }
 
   .header-controls {
-    width: 100%;
-    align-items: flex-start;
-    flex-direction: column;
+    width: auto;
+    align-items: center;
+    flex-direction: row;
   }
 
   nav {
@@ -2512,11 +2516,11 @@ footer a {
   }
 
   h1 {
-    font-size: clamp(3rem, 14vw, 4.4rem);
+    font-size: clamp(2.15rem, 10.5vw, 4.4rem);
   }
 
   .hero-copy .hero-lede {
-    font-size: clamp(1.28rem, 7vw, 2.1rem);
+    font-size: clamp(1.15rem, 5.6vw, 2.1rem);
   }
 
   .daily-brief,
@@ -2740,4 +2744,109 @@ footer {
 /* The legal page reuses the guide shell, so it only needs readable measure. */
 .legal-page article section p + p {
   margin-top: 10px;
+}
+
+/* --- Mobile navigation --- */
+
+/* Desktop keeps the inline nav; the toggle only exists below 900px. */
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  color: var(--princeton-black);
+  background: transparent;
+  border: 1px solid rgba(23, 32, 27, 0.32);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-toggle:hover {
+  background: rgba(23, 32, 27, 0.06);
+}
+
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .site-header {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    gap: 10px;
+  }
+
+  /* Google Translate injects a 1px shell that still claimed a flex row. */
+  .google-translate-shell {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  /* The panel drops below the header bar and scrolls on its own if the viewport is
+     short, so every link stays reachable in landscape. */
+  .header-controls nav {
+    position: fixed;
+    top: var(--header-height, 68px);
+    right: 0;
+    left: 0;
+    z-index: 60;
+    display: none;
+    max-height: calc(100vh - var(--header-height, 68px));
+    padding: 10px clamp(14px, 5vw, 28px) 22px;
+    overflow-y: auto;
+    background: var(--paper-strong);
+    border-bottom: 1px solid rgba(23, 32, 27, 0.32);
+    box-shadow: 0 18px 40px rgba(23, 32, 27, 0.18);
+  }
+
+  .header-controls nav.is-open {
+    display: grid;
+    gap: 2px;
+  }
+
+  .header-controls nav a {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 6px 8px;
+    border-bottom: 1px solid rgba(23, 32, 27, 0.14);
+    font-size: 1.02rem;
+  }
+
+  .header-controls nav a:last-child {
+    border-bottom: 0;
+  }
+
+  /* The language switcher stays visible: a resident who needs it should not have to
+     find it inside a menu. */
+  .language-switcher {
+    flex-shrink: 0;
+  }
+
+  .language-switcher .translation-provider {
+    display: none;
+  }
+
+  .brand small {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand span:not(.brand-mark) {
+    font-size: 0.95rem;
+  }
 }

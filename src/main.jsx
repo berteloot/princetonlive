@@ -11,6 +11,8 @@ import {
   Bus,
   CalendarDays,
   ChevronRight,
+  Menu,
+  X,
   CloudRain,
   ExternalLink,
   Film,
@@ -219,6 +221,19 @@ function safeHref(href) {
     return null;
   }
 }
+
+const primaryNavLinks = [
+  ["#today", "Today"],
+  ["#my-princeton", "My"],
+  ["#move", "Move"],
+  ["#practical", "Practical"],
+  ["#waste", "Garbage"],
+  ["#perks", "Perks"],
+  ["#civic", "Neighborhood"],
+  ["#guides", "Guides"],
+  ["#faq", "FAQ"],
+  ["#explore", "Explore"],
+];
 
 const agendaFilters = [
   ["all", "All", CalendarDays],
@@ -552,6 +567,14 @@ const residentPerks = [
     group: "Resident resources worth knowing",
     items: [
       {
+        title: "Princeton University Art Museum",
+        detail:
+          "The rebuilt museum reopened with free admission for everyone, no ticket or membership needed. Check the calendar for current exhibitions, talks, and tours.",
+        action: "Exhibitions and events",
+        url: "https://artmuseum.princeton.edu/exhibitions-events",
+        icon: Theater,
+      },
+      {
         title: "Audit Princeton classes",
         detail:
           "The Community Auditing Program lets adults audit University lectures as non-credit silent students. Courses have tuition, with Princeton-affiliated/resident priority on day one.",
@@ -857,6 +880,7 @@ function App() {
   const [hoveredCivicFeature, setHoveredCivicFeature] = useState(null);
   const [hoveredSchool, setHoveredSchool] = useState(null);
   const [recycleCoachFailed, setRecycleCoachFailed] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
   const [civicTooltip, setCivicTooltip] = useState({ x: 0, y: 0 });
   const [addressQuery, setAddressQuery] = useState("");
   const [addressLookup, setAddressLookup] = useState({
@@ -898,6 +922,20 @@ function App() {
       .then((data) => setWasteData({ ...fallbackWasteData, ...data }))
       .catch(() => setWasteData(fallbackWasteData));
   }, []);
+
+  useEffect(() => {
+    if (!navOpen) return;
+    const onKey = (event) => {
+      if (event.key === "Escape") setNavOpen(false);
+    };
+    document.addEventListener("keydown", onKey);
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [navOpen]);
 
   useEffect(() => {
     if (document.getElementById("recyclecoach-loader")) return;
@@ -1231,17 +1269,29 @@ function App() {
           </span>
         </a>
         <div className="header-controls">
-          <nav aria-label="Primary navigation">
-            <a href="#today">Today</a>
-            <a href="#my-princeton">My</a>
-            <a href="#move">Move</a>
-            <a href="#practical">Practical</a>
-            <a href="#waste">Garbage</a>
-            <a href="#perks">Perks</a>
-            <a href="#civic">Neighborhood</a>
-            <a href="#guides">Guides</a>
-            <a href="#faq">FAQ</a>
-            <a href="#explore">Explore</a>
+          {/* On a phone the ten links plus the language switcher made a 206px header,
+              roughly a quarter of an 844px screen, before any content. Below 900px they
+              collapse behind this toggle. */}
+          <button
+            type="button"
+            className="nav-toggle"
+            aria-expanded={navOpen}
+            aria-controls="primary-nav"
+            aria-label={navOpen ? "Close navigation menu" : "Open navigation menu"}
+            onClick={() => setNavOpen((open) => !open)}
+          >
+            {navOpen ? <X size={22} aria-hidden="true" /> : <Menu size={22} aria-hidden="true" />}
+          </button>
+          <nav
+            id="primary-nav"
+            aria-label="Primary navigation"
+            className={navOpen ? "is-open" : ""}
+          >
+            {primaryNavLinks.map(([href, label]) => (
+              <a key={href} href={href} onClick={() => setNavOpen(false)}>
+                {label}
+              </a>
+            ))}
           </nav>
           {/* role="group" so the aria-label is honored: on a bare div it is dropped.
               aria-current marks the one active language, which is what a single-select
@@ -2429,6 +2479,12 @@ function App() {
               {...externalLinkProps("https://www.mccarter.org/events")}
             >
               McCarter Theatre
+            </a>
+            <a
+              href="https://artmuseum.princeton.edu/exhibitions-events"
+              {...externalLinkProps("https://artmuseum.princeton.edu/exhibitions-events")}
+            >
+              University Art Museum (free)
             </a>
           </div>
         </div>

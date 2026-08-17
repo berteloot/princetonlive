@@ -200,3 +200,31 @@ When changing the site:
 4. Commit and push.
 5. Confirm Render deployed the intended commit.
 6. Verify the public URL with a cache-busting `?v=COMMIT`.
+
+## Crime data (pending an API key)
+
+`scripts/fetch-crime-data.mjs` pulls town-level crime rates for Princeton from the FBI
+Crime Data Explorer and benchmarks them against New Jersey and the nation. Run it with
+`npm run refresh:crime`.
+
+It is deliberately not wired into `refresh:public` and has no UI yet, because it needs a
+free api.data.gov key. The shared `DEMO_KEY` allows only a few requests per hour and is
+exhausted immediately. Get a key at https://api.data.gov/signup/ and set
+`FBI_CRIME_API_KEY` in the environment, then run the script and build the panel.
+
+Verified while writing it: Princeton Police Department is ORI `NJ0111000`, Princeton
+University has its own department at `NJ0115000`, and both report monthly violent and
+property counts with populations, so the rate maths works once the key is in place.
+
+Crime is reported at municipal level only. There is no public block-group crime data for
+a town this size, and neighborhood-level crime shading is deliberately out of scope: it
+moves property values, tracks race and income in ways that entrench historic redlining,
+and at roughly 30,000 residents two incidents would swing a polygon from best to worst.
+
+## Princeton University Art Museum
+
+The rebuilt museum is free to all and is linked from the resident perks and the culture
+source list. Automated event ingestion is not possible today: artmuseum.princeton.edu is
+Drupal 11, its `/rss.xml` is an empty channel, and `/feed`, `/events/feed` and the Views
+JSON paths all 404. Adding its events needs either a feed they do not currently publish
+or an HTML scraper.
