@@ -102,6 +102,7 @@ const fallbackCivicMap = {
   privacy:
     "Neighborhood-scale public data only. PrincetonLive does not publish individual voter, household, or address-level records.",
   viewBox: "0 0 100 72",
+  mapProjection: null,
   features: [],
   highlights: [],
   benchmarks: {},
@@ -319,6 +320,16 @@ function benchmarkValueKey(key) {
   return key === "voting" ? "voting" : key;
 }
 
+function projectCivicPoint(projection, lat, lon) {
+  if (!projection || !Number.isFinite(lat) || !Number.isFinite(lon)) return null;
+  const drawWidth = projection.width - projection.pad * 2;
+  const drawHeight = projection.height - projection.pad * 2;
+  return {
+    x: projection.pad + ((lon - projection.minLon) / (projection.maxLon - projection.minLon)) * drawWidth,
+    y: projection.pad + ((projection.maxLat - lat) / (projection.maxLat - projection.minLat)) * drawHeight,
+  };
+}
+
 function metricDomain(features, key) {
   const values = features.map((feature) => feature[key]).filter(Number.isFinite);
   return values.length ? [Math.min(...values), Math.max(...values)] : [0, 1];
@@ -357,6 +368,12 @@ function App() {
   const [civicMetric, setCivicMetric] = useState("income");
   const [hoveredCivicFeature, setHoveredCivicFeature] = useState(null);
   const [civicTooltip, setCivicTooltip] = useState({ x: 0, y: 0 });
+  const [addressQuery, setAddressQuery] = useState("");
+  const [addressLookup, setAddressLookup] = useState({
+    status: "idle",
+    message: "",
+    result: null,
+  });
 
   useEffect(() => {
     fetch(`/live-data.json?v=${Date.now()}`)
@@ -451,6 +468,9 @@ function App() {
         ["Other", `${(votingResult.otherShare * 100).toFixed(1)}%`],
       ]
     : [];
+  const addressMarker = addressLookup.result
+    ? projectCivicPoint(civicMap.mapProjection, addressLookup.result.lat, addressLookup.result.lon)
+    : null;
 
   const updateCivicTooltip = (event) => {
     const shell = event.currentTarget.closest?.(".civic-map-shell") ?? event.currentTarget;
@@ -459,6 +479,104 @@ function App() {
       x: event.clientX - rect.left,
       y: event.clientY - rect.top,
     });
+  };
+
+  const locateAddress = async (event) => {
+    event.preventDefault();
+    const cleanQuery = addressQuery.trim();
+    if (!cleanQuery) {
+      setHoveredCivicFeature(null);
+      setAddressLookup({
+        status: "error",
+        message: "Type a Princeton address first.",
+        result: null,
+      });
+      return;
+    }
+
+    const searchQuery = /princeton/i.test(cleanQuery) ? cleanQuery : `${cleanQuery}, Princeton, NJ`;
+    const params = new URLSearchParams({
+      format: "jsonv2",
+      q: searchQuery,
+      countrycodes: "us",
+      limit: "1",
+      bounded: "1",
+      viewbox: "-74.75,40.42,-74.60,40.28",
+    });
+
+    setAddressLookup({
+      status: "loading",
+      message: "Looking up that address...",
+      result: null,
+    });
+
+    try {
+      const response = await fetch(`https://nominatim.openstreetmap.org/search?${params}`);
+      if (!response.ok) throw new Error("Address lookup failed.");
+      const [match] = await response.json();
+      const lat = Number(match?.lat);
+      const lon = Number(match?.lon);
+      if (!Number.isFinite(lat) || !Number.isFinite(lon)) {
+        setHoveredCivicFeature(null);
+        setAddressLookup({
+          status: "error",
+          message: "No Princeton match found. Try a street number and street name.",
+          result: null,
+        });
+        return;
+      }
+
+      const marker = projectCivicPoint(civicMap.mapProjection, lat, lon);
+      const svg = document.querySelector(".civic-map-shell svg");
+      const point = svg?.createSVGPoint?.();
+      if (point && marker) {
+        point.x = marker.x;
+        point.y = marker.y;
+      }
+      const matchedPath =
+        point &&
+        marker &&
+        Array.from(svg.querySelectorAll("path[data-geoid]")).find((path) =>
+          path.isPointInFill(point),
+        );
+      const feature = civicMap.features.find((item) => item.geoid === matchedPath?.dataset.geoid);
+      if (!feature) {
+        setHoveredCivicFeature(null);
+        setAddressLookup({
+          status: "error",
+          message: "Found the address, but it falls outside this Princeton civic map.",
+          result: null,
+        });
+        return;
+      }
+
+      setHoveredCivicFeature(feature);
+      setAddressLookup({
+        status: "success",
+        message: `${feature.tractLabel}: ${feature.areaLabel}`,
+        result: {
+          label: match.display_name,
+          lat,
+          lon,
+          geoid: feature.geoid,
+          tractLabel: feature.tractLabel,
+          areaLabel: feature.areaLabel,
+        },
+      });
+    } catch {
+      setHoveredCivicFeature(null);
+      setAddressLookup({
+        status: "error",
+        message: "Address lookup is unavailable right now. Try again in a moment.",
+        result: null,
+      });
+    }
+  };
+
+  const clearAddressLookup = () => {
+    setAddressQuery("");
+    setHoveredCivicFeature(null);
+    setAddressLookup({ status: "idle", message: "", result: null });
   };
 
   return (
@@ -722,6 +840,32 @@ function App() {
                 </a>
               ) : null}
             </div>
+            <form className="address-locator" onSubmit={locateAddress}>
+              <label htmlFor="address-search">Find an address on this map</label>
+              <div>
+                <Search size={17} aria-hidden="true" />
+                <input
+                  id="address-search"
+                  value={addressQuery}
+                  onChange={(event) => setAddressQuery(event.target.value)}
+                  placeholder="Try 400 Witherspoon St"
+                  autoComplete="street-address"
+                />
+                <button type="submit" disabled={addressLookup.status === "loading"}>
+                  <Navigation size={16} aria-hidden="true" />
+                  {addressLookup.status === "loading" ? "Locating" : "Locate"}
+                </button>
+                {addressLookup.result ? (
+                  <button type="button" className="clear-address" onClick={clearAddressLookup}>
+                    Clear
+                  </button>
+                ) : null}
+              </div>
+              <p className={`address-status is-${addressLookup.status}`} aria-live="polite">
+                {addressLookup.message ||
+                  "Uses OpenStreetMap address lookup. PrincetonLive does not store submitted addresses."}
+              </p>
+            </form>
             <div className="civic-map-shell">
               <svg
                 viewBox={civicMap.viewBox}
@@ -744,6 +888,7 @@ function App() {
                     <path
                       key={feature.geoid}
                       d={feature.path}
+                      data-geoid={feature.geoid}
                       fill={tractFill(feature, civicMetric, civicDomain)}
                       className={hoveredCivicFeature?.geoid === feature.geoid ? "is-hovered" : ""}
                       tabIndex="0"
@@ -778,6 +923,19 @@ function App() {
                     </path>
                   );
                 })}
+                {addressMarker ? (
+                  <g
+                    className="address-marker"
+                    transform={`translate(${addressMarker.x.toFixed(3)} ${addressMarker.y.toFixed(3)})`}
+                    aria-label={`Located address in ${addressLookup.result.tractLabel}`}
+                  >
+                    <circle r="2.1" />
+                    <circle r="0.72" />
+                    <title>
+                      {addressLookup.result.tractLabel}: {addressLookup.result.areaLabel}
+                    </title>
+                  </g>
+                ) : null}
               </svg>
               {hoveredCivicFeature ? (
                 <div

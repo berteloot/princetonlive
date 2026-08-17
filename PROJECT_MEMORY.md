@@ -67,6 +67,7 @@ Civic map:
 - Census Reporter API / ACS 2024 5-year estimates
 - Census Reporter API national ACS benchmarks, matched to the same ACS release as the Princeton tract feed
 - U.S. Census TIGERweb national tract count for children-per-tract normalization
+- OpenStreetMap Nominatim for submit-only address lookup on the civic map
 - NJ Division of Elections official 2024 Mercer presidential results PDF
 - FEC official 2024 presidential general election results PDF for national popular-vote benchmark
 - Mercer County archived election results links
@@ -86,9 +87,11 @@ Civic map:
 - Civic map regions should expose their current metric on hover, focus, and tap/click.
 - Civic map benchmarks must be generated from public data during refresh. Income and child-share use U.S. ACS values from the same release as Princeton tract estimates; children count is compared with U.S. average residents under 18 per census tract, not the national child total.
 - Explain Census terms in resident language. A tract should be presented as a stable Census comparison area, often neighborhood-sized, not as a named neighborhood, voting precinct, or address.
+- Civic address lookup should be submit-only, privacy-forward, and should not store searched addresses. The current implementation uses OpenStreetMap/Nominatim plus local tract geometry. Google Places autocomplete can be added later only after a Google Maps API key, billing, and domain restrictions are configured.
 
 ## Feature Log
 
+- Latest - Added civic map address lookup that places a marker and highlights the matching tract without storing the submitted address.
 - Latest - Added a plain-English "What is a tract?" explainer to the civic map.
 - Latest - Added U.S. benchmark comparisons to civic map metrics, generated from public Census/FEC sources during the civic data refresh.
 - Latest - Improved civic map hover/tap details, fixed lower/higher legends, and reflected official Princeton municipal presidential results on the voting layer.

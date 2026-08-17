@@ -1034,6 +1034,86 @@ h3 {
   border-color: rgba(238, 127, 45, 0.45);
 }
 
+.address-locator {
+  display: grid;
+  gap: 8px;
+  padding: 12px 14px 14px;
+  background: #fff;
+  border-bottom: 1px solid rgba(23, 32, 27, 0.08);
+}
+
+.address-locator label {
+  color: var(--princeton-black);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.address-locator > div {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr) auto auto;
+  gap: 8px;
+  align-items: center;
+  padding: 7px 7px 7px 10px;
+  background: #f8faf4;
+  border: 1px solid rgba(23, 32, 27, 0.11);
+  border-radius: 8px;
+}
+
+.address-locator svg {
+  color: #5e6a62;
+}
+
+.address-locator input {
+  width: 100%;
+  min-width: 0;
+  color: var(--princeton-black);
+  background: transparent;
+  border: 0;
+  outline: none;
+}
+
+.address-locator button {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 10px;
+  color: #fff;
+  cursor: pointer;
+  background: var(--princeton-black);
+  border: 0;
+  border-radius: 7px;
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.address-locator button:disabled {
+  cursor: wait;
+  opacity: 0.62;
+}
+
+.address-locator .clear-address {
+  color: var(--orange-deep);
+  background: #fff;
+  border: 1px solid rgba(238, 127, 45, 0.28);
+}
+
+.address-status {
+  margin: 0;
+  color: #5e6a62;
+  font-size: 0.78rem;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.address-status.is-success {
+  color: #2f6958;
+}
+
+.address-status.is-error {
+  color: #a13f21;
+}
+
 .civic-map-shell {
   position: relative;
   display: grid;
@@ -1078,6 +1158,20 @@ h3 {
   opacity: 0.86;
   stroke: #17201b;
   stroke-width: 0.68;
+}
+
+.address-marker {
+  pointer-events: none;
+}
+
+.address-marker circle:first-child {
+  fill: var(--princeton-black);
+  stroke: #fffaf1;
+  stroke-width: 0.42;
+}
+
+.address-marker circle:last-child {
+  fill: var(--princeton-orange);
 }
 
 .civic-tooltip {
@@ -1566,6 +1660,15 @@ footer a {
     min-width: 0;
     max-width: none;
     text-align: left;
+  }
+
+  .address-locator > div {
+    grid-template-columns: 18px minmax(0, 1fr);
+  }
+
+  .address-locator button {
+    grid-column: 1 / -1;
+    justify-content: center;
   }
 
   .civic-legend {

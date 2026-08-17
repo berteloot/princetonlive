@@ -265,21 +265,27 @@ function allPoints(features) {
   return features.flatMap((feature) => polygonRings(feature.geometry).flat());
 }
 
-function projectFactory(points) {
+function projectionForPoints(points) {
   const lons = points.map(([lon]) => lon);
   const lats = points.map(([, lat]) => lat);
-  const minLon = Math.min(...lons);
-  const maxLon = Math.max(...lons);
-  const minLat = Math.min(...lats);
-  const maxLat = Math.max(...lats);
-  const drawWidth = SVG_WIDTH - SVG_PAD * 2;
-  const drawHeight = SVG_HEIGHT - SVG_PAD * 2;
 
-  return ([lon, lat]) => {
-    const x = SVG_PAD + ((lon - minLon) / (maxLon - minLon)) * drawWidth;
-    const y = SVG_PAD + ((maxLat - lat) / (maxLat - minLat)) * drawHeight;
-    return [Number(x.toFixed(3)), Number(y.toFixed(3))];
+  return {
+    minLon: Math.min(...lons),
+    maxLon: Math.max(...lons),
+    minLat: Math.min(...lats),
+    maxLat: Math.max(...lats),
+    width: SVG_WIDTH,
+    height: SVG_HEIGHT,
+    pad: SVG_PAD,
   };
+}
+
+function projectPoint([lon, lat], projection) {
+  const drawWidth = projection.width - projection.pad * 2;
+  const drawHeight = projection.height - projection.pad * 2;
+  const x = projection.pad + ((lon - projection.minLon) / (projection.maxLon - projection.minLon)) * drawWidth;
+  const y = projection.pad + ((projection.maxLat - lat) / (projection.maxLat - projection.minLat)) * drawHeight;
+  return [Number(x.toFixed(3)), Number(y.toFixed(3))];
 }
 
 function pathForGeometry(geometry, project) {
@@ -342,7 +348,8 @@ try {
   const [geometry, census] = await Promise.all([fetchJson(geometryUrl), fetchJson(censusReporterUrl)]);
   const benchmarks = await fetchNationalBenchmarks(census.release);
   const selected = (geometry.features || []).filter(inPrincetonArea);
-  const project = projectFactory(allPoints(selected));
+  const mapProjection = projectionForPoints(allPoints(selected));
+  const project = (point) => projectPoint(point, mapProjection);
 
   const features = selected
     .map((feature) => {
@@ -377,6 +384,7 @@ try {
     ...fallback,
     generatedAt: new Date().toISOString(),
     release: census.release?.name || "ACS latest 5-year",
+    mapProjection,
     features,
     highlights,
     benchmarks,

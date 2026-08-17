@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T13:58:33.211Z",
+  "generatedAt": "2026-08-17T14:06:45.938Z",
   "release": "ACS 2024 5-year",
   "privacy": "Neighborhood-scale public data only. PrincetonLive does not publish individual voter, household, or address-level records.",
   "viewBox": "0 0 100 72",
@@ -397,5 +397,14 @@
       "name": "Princeton elections",
       "url": "https://www.princetonnj.gov/192/Elections"
     }
-  ]
+  ],
+  "mapProjection": {
+    "minLon": -74.76086799979213,
+    "maxLon": -74.58280499969442,
+    "minLat": 40.267259000116645,
+    "maxLat": 40.39104799966517,
+    "width": 100,
+    "height": 72,
+    "pad": 2.5
+  }
 }
