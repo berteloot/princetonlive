@@ -40,6 +40,18 @@ const languages = [
   { code: "es", short: "ES", label: "Espanol" },
 ];
 
+const profileStorageKey = "princetonlive.residentProfile";
+
+const defaultResidentProfile = {
+  street: "",
+  modes: {
+    family: false,
+    noCar: false,
+    culture: false,
+    rain: false,
+  },
+};
+
 const languageMeta = {
   en: {
     title: "PrincetonLive",
@@ -363,6 +375,37 @@ const newResidentChecklist = [
   },
 ];
 
+const profileModeOptions = [
+  {
+    key: "family",
+    label: "Family",
+    detail: "Prioritize kid-friendly events and library programs.",
+    icon: Users,
+    filter: "family",
+  },
+  {
+    key: "noCar",
+    label: "No car",
+    detail: "Keep transit, walking, biking, and shuttles close.",
+    icon: Train,
+    filter: null,
+  },
+  {
+    key: "culture",
+    label: "Culture",
+    detail: "Surface lectures, arts, films, and performances.",
+    icon: Theater,
+    filter: "culture",
+  },
+  {
+    key: "rain",
+    label: "Rain plan",
+    detail: "Favor indoor options when the weather gets annoying.",
+    icon: Umbrella,
+    filter: "rain",
+  },
+];
+
 const residentFaqs = [
   {
     question: "What is PrincetonLive?",
@@ -591,6 +634,20 @@ function getInitialLanguage() {
   return lang === "fr" || lang === "es" ? lang : "en";
 }
 
+function getStoredResidentProfile() {
+  try {
+    const raw = window.localStorage.getItem(profileStorageKey);
+    if (!raw) return defaultResidentProfile;
+    const parsed = JSON.parse(raw);
+    return {
+      street: typeof parsed.street === "string" ? parsed.street : "",
+      modes: { ...defaultResidentProfile.modes, ...(parsed.modes ?? {}) },
+    };
+  } catch {
+    return defaultResidentProfile;
+  }
+}
+
 function setGoogleTranslateCookie(targetLanguage) {
   const expires = "expires=Fri, 31 Dec 9999 23:59:59 GMT";
   const value = targetLanguage === "en" ? "/en/en" : `/en/${targetLanguage}`;
@@ -728,6 +785,7 @@ function App() {
   const [language, setLanguage] = useState(getInitialLanguage);
   const [filter, setFilter] = useState("all");
   const [query, setQuery] = useState("");
+  const [residentProfile, setResidentProfile] = useState(getStoredResidentProfile);
   const [liveData, setLiveData] = useState(fallbackData);
   const [wasteData, setWasteData] = useState(fallbackWasteData);
   const [wasteQuery, setWasteQuery] = useState("");
@@ -742,6 +800,14 @@ function App() {
     message: "",
     result: null,
   });
+
+  useEffect(() => {
+    try {
+      window.localStorage.setItem(profileStorageKey, JSON.stringify(residentProfile));
+    } catch {
+      // Local personalization is optional. If storage is blocked, the site still works.
+    }
+  }, [residentProfile]);
 
   useEffect(() => {
     fetch(`/live-data.json?v=${Date.now()}`)
@@ -848,6 +914,35 @@ function App() {
   }, [filter, liveData.events, query]);
 
   const visibleEvents = filteredEvents.slice(0, 10);
+  const normalizedProfileStreet = normalizeWasteStreet(residentProfile.street);
+  const profileWasteMatch = useMemo(() => {
+    if (!normalizedProfileStreet) return null;
+    return (
+      wasteData.streets.find(
+        (street) =>
+          street.normalized === normalizedProfileStreet ||
+          normalizeWasteStreet(street.street) === normalizedProfileStreet,
+      ) ??
+      wasteData.streets.find(
+        (street) =>
+          street.normalized?.includes(normalizedProfileStreet) ||
+          normalizeWasteStreet(street.street).includes(normalizedProfileStreet),
+      ) ??
+      null
+    );
+  }, [normalizedProfileStreet, wasteData.streets]);
+  const profileYardSchedule = profileWasteMatch
+    ? wasteSectionSchedule(wasteData, profileWasteMatch.yardSection)
+    : null;
+  const activeProfileModes = profileModeOptions.filter((mode) => residentProfile.modes[mode.key]);
+  const profileEventFilter = activeProfileModes.find((mode) => mode.filter)?.filter ?? "all";
+  const profileEvents = useMemo(() => {
+    const activeFilters = activeProfileModes.map((mode) => mode.filter).filter(Boolean);
+    if (!activeFilters.length) return liveData.events.slice(0, 3);
+    return liveData.events
+      .filter((event) => activeFilters.some((activeFilter) => event.tags?.includes(activeFilter)))
+      .slice(0, 3);
+  }, [activeProfileModes, liveData.events]);
   const normalizedWasteQuery = normalizeWasteStreet(wasteQuery);
   const wasteMatches = useMemo(() => {
     if (!normalizedWasteQuery) return [];
@@ -878,6 +973,24 @@ function App() {
   const metricValueKey = civicMetric === "voting" ? "voteMargin" : civicMetric;
   const activeBenchmarkValueKey = benchmarkValueKey(civicMetric);
   const votingResult = civicMap.voting?.result;
+
+  const updateResidentStreet = (street) => {
+    setResidentProfile((current) => ({ ...current, street }));
+  };
+
+  const toggleResidentMode = (key) => {
+    setResidentProfile((current) => ({
+      ...current,
+      modes: {
+        ...current.modes,
+        [key]: !current.modes[key],
+      },
+    }));
+  };
+
+  const resetResidentProfile = () => {
+    setResidentProfile(defaultResidentProfile);
+  };
   const votingStats = votingResult
     ? [
         ["Democratic", `${(votingResult.democratShare * 100).toFixed(1)}%`],
@@ -1013,6 +1126,7 @@ function App() {
         <div className="header-controls">
           <nav aria-label="Primary navigation">
             <a href="#today">Today</a>
+            <a href="#my-princeton">My</a>
             <a href="#move">Move</a>
             <a href="#practical">Practical</a>
             <a href="#waste">Garbage</a>
@@ -1109,6 +1223,120 @@ function App() {
             <strong>{formatRefresh(liveData.generatedAt)}</strong>
           </div>
         </aside>
+      </section>
+
+      <section className="section my-princeton" id="my-princeton">
+        <div className="section-heading split">
+          <div>
+            <p className="eyebrow">My Princeton</p>
+            <h2>Your local setup, saved on this device.</h2>
+          </div>
+          <p>
+            Add a street and a few resident modes. PrincetonLive keeps this in your browser only,
+            then turns the page into a lightweight dashboard for your week.
+          </p>
+        </div>
+        <div className="profile-layout">
+          <section className="profile-setup" aria-label="My Princeton setup">
+            <label>
+              <span>Street name</span>
+              <input
+                value={residentProfile.street}
+                onChange={(event) => updateResidentStreet(event.target.value)}
+                placeholder="Lytle Street, Library Place..."
+              />
+            </label>
+            <div className="profile-mode-grid" aria-label="Resident modes">
+              {profileModeOptions.map(({ key, label, detail, icon: Icon }) => (
+                <button
+                  type="button"
+                  key={key}
+                  className={residentProfile.modes[key] ? "is-active" : ""}
+                  onClick={() => toggleResidentMode(key)}
+                  aria-pressed={residentProfile.modes[key]}
+                >
+                  <Icon size={17} aria-hidden="true" />
+                  <strong>{label}</strong>
+                  <span>{detail}</span>
+                </button>
+              ))}
+            </div>
+            <div className="profile-privacy">
+              <span>No account. No address upload. Browser-only.</span>
+              <button type="button" onClick={resetResidentProfile}>
+                Reset
+              </button>
+            </div>
+          </section>
+
+          <aside className="profile-dashboard" aria-label="My Princeton dashboard">
+            <div className="profile-card is-primary">
+              <span>My garbage day</span>
+              <strong>
+                {profileWasteMatch
+                  ? `${profileWasteMatch.street}: ${profileWasteMatch.trashDay}`
+                  : residentProfile.street
+                    ? "Street not matched yet"
+                    : "Add your street"}
+              </strong>
+              <p>
+                {profileYardSchedule
+                  ? `Yard section ${profileWasteMatch.yardSection}; branch/log starts ${profileYardSchedule.branchAndLogs.slice(0, 3).join(", ")}.`
+                  : "Use the street lookup for pickup day, yard section, bulk rules, and Recycle Coach."}
+              </p>
+              <a
+                href="#waste"
+                onClick={() => {
+                  if (profileWasteMatch) setWasteQuery(profileWasteMatch.street);
+                }}
+              >
+                Open garbage lookup <ChevronRight size={15} aria-hidden="true" />
+              </a>
+            </div>
+            <div className="profile-card">
+              <span>{residentProfile.modes.noCar ? "No-car plan" : "Commute plan"}</span>
+              <strong>{residentProfile.modes.noCar ? "Transit first" : "Check transfer + parking"}</strong>
+              <p>
+                {residentProfile.modes.noCar
+                  ? "Keep the Dinky, Princeton Loop, walking, biking, and shuttles close."
+                  : "Compare the Dinky, Princeton Junction parking, downtown parking, and NYC/Philly route timing."}
+              </p>
+              <a href="#move">
+                Move around <ChevronRight size={15} aria-hidden="true" />
+              </a>
+            </div>
+            <div className="profile-card">
+              <span>Events for me</span>
+              <strong>
+                {activeProfileModes.length
+                  ? activeProfileModes.map((mode) => mode.label).join(" + ")
+                  : "Latest resident signals"}
+              </strong>
+              <p>
+                {profileEvents[0]
+                  ? `${profileEvents[0].title} (${profileEvents[0].source})`
+                  : "No matching public events in this refresh yet."}
+              </p>
+              <a
+                href="#today"
+                onClick={() => {
+                  setFilter(profileEventFilter);
+                  setQuery("");
+                }}
+              >
+                Show my events <ChevronRight size={15} aria-hidden="true" />
+              </a>
+            </div>
+            <div className="profile-card">
+              <span>Neighborhood</span>
+              <strong>Map context without private records</strong>
+              <p>Use public aggregate data, school context, and address lookup when you need orientation.</p>
+              <a href="#civic">
+                Open map <ChevronRight size={15} aria-hidden="true" />
+              </a>
+            </div>
+          </aside>
+        </div>
       </section>
 
       <section className="section resident-checklist" id="new-resident">

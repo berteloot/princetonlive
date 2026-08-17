@@ -215,6 +215,7 @@ const dataRoutes = [
 
 const internalAnchorLabels = {
   "#today": "Today agenda",
+  "#my-princeton": "My Princeton",
   "#move": "Move around Princeton",
   "#practical": "Practical services",
   "#waste": "Garbage by street",
@@ -392,6 +393,7 @@ ${jsonLd}
         <a href="/">Home</a>
         <a href="/guides/">Guides</a>
         <a href="/#today">Today</a>
+        <a href="/#my-princeton">My Princeton</a>
         <a href="/#move">Move</a>
         <a href="/#perks">Perks</a>
         <a href="/#civic">Neighborhood</a>

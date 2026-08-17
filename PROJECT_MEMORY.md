@@ -130,6 +130,7 @@ Explore walks:
 - First-month walk cards must include actionable guide/map links. Avoid listing walks that residents cannot open in a map or official/stable resource.
 - Garbage pickup by street is a primary resident tool. Keep it directly reachable from the top navigation as `#waste` and placed before lower-priority practical service tiles.
 - The homepage should behave like an operating guide before it behaves like a brochure: daily shortcuts, resident setup, garbage, transit, events, alerts, and neighborhood context should be reachable quickly.
+- My Princeton is a browser-local personalization panel. It may store street name and resident modes in `localStorage`, but must not create accounts, send addresses to PrincetonLive servers, or imply server-side storage.
 - The garbage lookup should be input-first. Do not show arbitrary alphabetical streets before the resident types or chooses an example.
 - Use resident-facing "Neighborhood map/context" in UI labels; keep civic-data language where it is useful for source notes, SEO, datasets, and technical documentation.
 - Civic data must be neighborhood-scale or aggregate only. Do not publish individual voter, household, or address-level data.
@@ -160,6 +161,7 @@ Explore walks:
 - Latest - Added guide and map links to every First-month Princeton walk card.
 - Latest - Renamed user-facing pickup language to garbage pickup.
 - Latest - Added homepage resident shortcuts, a first-week Princeton setup checklist, input-first garbage lookup examples, and Neighborhood map/context wording.
+- Latest - Added My Princeton browser-local profile with street-based garbage summary, resident modes, event filter shortcuts, commute shortcut, and neighborhood map link.
 - Latest - Promoted Garbage pickup by street into the primary navigation and moved the lookup above practical service tiles.
 - Latest - Added Pierre site health monitoring with 15-minute GitHub Actions checks and Telegram alert secrets, mirroring the Le Pouliguen Live monitoring pattern.
 - Latest - Fixed iPhone navigation wrapping and post-hydration hash scrolling for direct links such as Garbage by Street and Civic Map.
