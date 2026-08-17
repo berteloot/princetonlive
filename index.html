@@ -3,18 +3,258 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta
       name="description"
-      content="PrincetonLive is a daily operating guide for becoming a Princetonian."
+      content="PrincetonLive is an independent Princeton, NJ resident guide for public events, transit, weather alerts, library perks, town services, and neighborhood-scale civic data."
     />
+    <meta name="application-name" content="PrincetonLive" />
+    <meta name="author" content="Stan Berteloot" />
+    <meta name="geo.region" content="US-NJ" />
+    <meta name="geo.placename" content="Princeton, New Jersey" />
+    <meta name="geo.position" content="40.3573;-74.6672" />
+    <meta name="ICBM" content="40.3573, -74.6672" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PrincetonLive" />
+    <meta property="og:title" content="PrincetonLive | Princeton, NJ resident guide" />
+    <meta
+      property="og:description"
+      content="Daily Princeton resident signals: public events, transit, weather, alerts, library benefits, town services, and aggregate civic data."
+    />
+    <meta property="og:url" content="https://princetonlive.berteloot.org/" />
+    <meta
+      property="og:image"
+      content="https://www.princeton.edu/sites/default/files/styles/half_2x/public/20161006_CL_DJA_028.jpg?itok=AGbX2ltx"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PrincetonLive | Princeton, NJ resident guide" />
+    <meta
+      name="twitter:description"
+      content="An independent operating guide for Princeton residents: events, transit, services, perks, alerts, and civic data."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.princeton.edu/sites/default/files/styles/half_2x/public/20161006_CL_DJA_028.jpg?itok=AGbX2ltx"
+    />
+    <link rel="canonical" href="https://princetonlive.berteloot.org/" />
     <link rel="alternate" hreflang="en" href="https://princetonlive.berteloot.org/" />
     <link rel="alternate" hreflang="fr" href="https://princetonlive.berteloot.org/?lang=fr" />
     <link rel="alternate" hreflang="es" href="https://princetonlive.berteloot.org/?lang=es" />
     <link rel="alternate" hreflang="x-default" href="https://princetonlive.berteloot.org/" />
-    <title>PrincetonLive</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://princetonlive.berteloot.org/#organization",
+            "name": "PrincetonLive",
+            "url": "https://princetonlive.berteloot.org/",
+            "founder": {
+              "@type": "Person",
+              "name": "Stan Berteloot",
+              "sameAs": "https://www.linkedin.com/in/berteloot"
+            },
+            "description": "Independent resident guide for Princeton, New Jersey."
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://princetonlive.berteloot.org/#website",
+            "name": "PrincetonLive",
+            "url": "https://princetonlive.berteloot.org/",
+            "publisher": {
+              "@id": "https://princetonlive.berteloot.org/#organization"
+            },
+            "inLanguage": ["en", "fr", "es"]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://princetonlive.berteloot.org/#webpage",
+            "url": "https://princetonlive.berteloot.org/",
+            "name": "PrincetonLive - Princeton, NJ resident guide",
+            "isPartOf": {
+              "@id": "https://princetonlive.berteloot.org/#website"
+            },
+            "about": [
+              "Princeton NJ resident resources",
+              "Princeton public events",
+              "Princeton transit",
+              "Princeton library benefits",
+              "Princeton civic data"
+            ],
+            "description": "PrincetonLive helps Princeton, NJ residents find public events, transit links, weather alerts, municipal services, library benefits, resident perks, and aggregate neighborhood-scale civic data.",
+            "datePublished": "2026-08-17",
+            "dateModified": "2026-08-17",
+            "spatialCoverage": {
+              "@type": "Place",
+              "name": "Princeton, New Jersey",
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 40.3573,
+                "longitude": -74.6672
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Princeton",
+                "addressRegion": "NJ",
+                "addressCountry": "US"
+              }
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://www.princeton.edu/sites/default/files/styles/half_2x/public/20161006_CL_DJA_028.jpg?itok=AGbX2ltx"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://princetonlive.berteloot.org/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is PrincetonLive?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "PrincetonLive is an independent daily operating guide for Princeton, NJ residents and new arrivals. It organizes public events, transit links, weather, alerts, library benefits, resident services, and aggregate civic data in one place."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is PrincetonLive an official Princeton University or municipal website?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. PrincetonLive is independent. It links to official Princeton University, Princeton Public Library, municipal, Census, weather, transit, and election sources when residents need the authoritative source."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What public data does PrincetonLive use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "PrincetonLive uses public feeds and pages including National Weather Service data, Princeton University public events, Princeton Public Library events, municipal resources, U.S. Census ACS and TIGERweb data, and official election-result sources."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does the civic map show individual households or voters?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. The civic map uses aggregate Census block-group data and official municipality-level voting results. PrincetonLive does not publish individual voter, household, or address-level records."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "Dataset",
+            "@id": "https://princetonlive.berteloot.org/#civic-map-dataset",
+            "name": "PrincetonLive civic map snapshot",
+            "description": "Generated aggregate civic map data for Princeton, NJ, using Census block-group geometry, ACS estimates, and official municipality-level voting result links.",
+            "url": "https://princetonlive.berteloot.org/civic-map.json",
+            "distribution": {
+              "@type": "DataDownload",
+              "encodingFormat": "application/json",
+              "contentUrl": "https://princetonlive.berteloot.org/civic-map.json"
+            },
+            "spatialCoverage": {
+              "@type": "Place",
+              "name": "Princeton, New Jersey"
+            },
+            "variableMeasured": [
+              "Median household income",
+              "Residents under 18",
+              "Children as share of population",
+              "Municipality-level presidential voting margin"
+            ],
+            "creator": {
+              "@id": "https://princetonlive.berteloot.org/#organization"
+            },
+            "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+          }
+        ]
+      }
+    </script>
+    <title>PrincetonLive | Princeton, NJ resident guide</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <main>
+        <header>
+          <p>Princeton, NJ resident guide</p>
+          <h1>Princeton community resources, public events, transit, and civic data.</h1>
+          <p>
+            PrincetonLive is an independent daily operating guide for Princeton, New Jersey residents and new arrivals.
+            It helps people find public events, weather alerts, town services, transit links, library benefits,
+            resident resources, and aggregate neighborhood-scale civic data without hunting across separate official sites.
+          </p>
+        </header>
+        <nav aria-label="Crawlable PrincetonLive sections">
+          <a href="#today">Today</a>
+          <a href="#move">Getting around Princeton</a>
+          <a href="#practical">Practical resident services</a>
+          <a href="#perks">Resident perks</a>
+          <a href="#civic">Civic and demographic data</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <section id="today">
+          <h2>Local news, public events, and daily resident signals</h2>
+          <p>
+            PrincetonLive collects public Princeton sources such as Princeton University public events, Princeton Public
+            Library events, municipal calendar items, weather forecasts, and weather alerts so residents can quickly decide
+            what is useful today.
+          </p>
+        </section>
+        <section id="move">
+          <h2>Getting around Princeton</h2>
+          <p>
+            The guide links residents to official transit and mobility decision points, including the Princeton Dinky,
+            Princeton Junction train travel, New York and Philadelphia routes, downtown parking, Princeton Junction
+            parking, walking, biking, and free local bus options.
+          </p>
+        </section>
+        <section id="practical">
+          <h2>Practical resident services</h2>
+          <p>
+            PrincetonLive highlights Princeton town alerts, trash and recycling, SeeClickFix, parking information,
+            EV charging, municipal maps, parks, and other services that new residents often need before they know where
+            to look.
+          </p>
+        </section>
+        <section id="perks">
+          <h2>Resident services and benefits</h2>
+          <p>
+            Residents can use Princeton Public Library card benefits, study rooms, garage parking validation, museum
+            passes, technology loans, digital media, Arts Council resources, recreation programs, Human Services resources,
+            and Princeton University Community Auditing links.
+          </p>
+        </section>
+        <section id="civic">
+          <h2>Civic and demographic data for Princeton, NJ</h2>
+          <p>
+            The civic map uses public aggregate data only. It combines Census block-group geometry, ACS estimates,
+            National Weather Service and civic links, and official voting-result sources. It does not publish individual
+            voter, household, or address-level records.
+          </p>
+        </section>
+        <section id="faq">
+          <h2>PrincetonLive FAQ</h2>
+          <h3>What is PrincetonLive?</h3>
+          <p>
+            PrincetonLive is an independent daily operating guide for Princeton residents and new arrivals.
+          </p>
+          <h3>Is PrincetonLive official?</h3>
+          <p>
+            No. It is independent and links to official sources for authoritative details.
+          </p>
+          <h3>What data sources does it use?</h3>
+          <p>
+            It uses public weather, event, municipal, library, Census, transit, and election-result sources.
+          </p>
+          <h3>Does the civic map show individual people?</h3>
+          <p>
+            No. It uses aggregate public data and avoids individual household, voter, and address-level records.
+          </p>
+        </section>
+      </main>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

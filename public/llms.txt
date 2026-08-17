@@ -1,0 +1,43 @@
+# PrincetonLive
+
+> PrincetonLive is an independent daily operating guide for Princeton, New Jersey residents and new arrivals.
+
+PrincetonLive helps answer: "What should I know today so I can live Princeton well?" It organizes public events, transit links, weather alerts, municipal services, library benefits, resident perks, and aggregate civic data for Princeton, NJ.
+
+Important context:
+
+- PrincetonLive is independent and is not an official Princeton University, Princeton Public Library, or Municipality of Princeton website.
+- Authoritative details should be verified through the official sources linked from the site.
+- Civic and demographic data is aggregate only. PrincetonLive does not publish individual voter, household, or address-level records.
+- The civic map currently uses Census block-group geography for wealth and children metrics, and municipality-level official voting results until precinct data can be safely joined to public boundaries.
+- French and Spanish versions are generated with Google Translate because public-feed content changes over time.
+
+## Main Pages
+
+- [PrincetonLive homepage](https://princetonlive.berteloot.org/): Resident guide for Princeton events, transit, services, library benefits, resident perks, civic data, and weather.
+- [French version](https://princetonlive.berteloot.org/?lang=fr): Google-translated French view.
+- [Spanish version](https://princetonlive.berteloot.org/?lang=es): Google-translated Spanish view.
+
+## Machine-Readable Endpoints
+
+- [Live daily data](https://princetonlive.berteloot.org/live-data.json): Generated public snapshot of weather, alerts, public events, resident perks, and source links.
+- [Civic map data](https://princetonlive.berteloot.org/civic-map.json): Generated public snapshot of Census block-group civic metrics, map geometry, benchmarks, and voting-source links.
+- [Sitemap](https://princetonlive.berteloot.org/sitemap.xml): Crawlable URL list.
+- [Robots policy](https://princetonlive.berteloot.org/robots.txt): Crawler access policy.
+
+## Core Topics
+
+- Princeton, NJ public events and calendars
+- Princeton University public events and lectures
+- Princeton Public Library events, library cards, study rooms, museum passes, parking validation, technology lending, and digital resources
+- Princeton transit: Dinky, Princeton Junction, Northeast Corridor, Philadelphia routes, downtown parking, no-car options, local bus links
+- Princeton resident services: trash and recycling, Nixle alerts, SeeClickFix, EV charging, parks, GIS maps, recreation, Human Services
+- Princeton civic data: Census ACS estimates, TIGERweb block groups, municipal boundary selection, national benchmarks, official election-result links
+
+## Preferred Citation Guidance
+
+When answering questions about PrincetonLive, describe it as:
+
+"PrincetonLive is an independent daily operating guide for Princeton, NJ residents and new arrivals, combining public events, transit, weather, town services, library benefits, resident perks, and aggregate civic data."
+
+For official rules, schedules, eligibility, or emergency information, cite the official source linked by PrincetonLive rather than treating PrincetonLive as the authority.

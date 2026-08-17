@@ -1459,6 +1459,40 @@ h3 {
   font-weight: 850;
 }
 
+.faq-section {
+  color: var(--princeton-black);
+  background: #eef2eb;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.faq-card {
+  display: grid;
+  gap: 10px;
+  min-height: 172px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid rgba(23, 32, 27, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 14px 40px rgba(23, 32, 27, 0.05);
+}
+
+.faq-card h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.25;
+}
+
+.faq-card p {
+  margin: 0;
+  color: #5e6a62;
+  line-height: 1.55;
+}
+
 .tract-rank strong {
   display: grid;
   gap: 3px;
@@ -1650,6 +1684,7 @@ footer a {
 
   .commute-grid,
   .tile-grid,
+  .faq-grid,
   .perk-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1691,6 +1726,7 @@ footer a {
   .commute-grid,
   .identity-panels,
   .tile-grid,
+  .faq-grid,
   .perk-list {
     grid-template-columns: 1fr;
   }

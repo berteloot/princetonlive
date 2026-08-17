@@ -244,6 +244,29 @@ const practicalTiles = [
   },
 ];
 
+const residentFaqs = [
+  {
+    question: "What is PrincetonLive?",
+    answer:
+      "PrincetonLive is an independent daily operating guide for Princeton, NJ residents and new arrivals. It brings public events, transit, weather, alerts, town services, library benefits, resident perks, and aggregate civic data into one place.",
+  },
+  {
+    question: "Is PrincetonLive an official Princeton University or municipal website?",
+    answer:
+      "No. PrincetonLive is independent. It links to official Princeton University, Princeton Public Library, municipal, Census, weather, transit, and election sources when residents need the authoritative source.",
+  },
+  {
+    question: "What public data does PrincetonLive use?",
+    answer:
+      "PrincetonLive uses public feeds and pages including National Weather Service data, Princeton University public events, Princeton Public Library events, municipal resources, U.S. Census ACS and TIGERweb data, and official election-result sources.",
+  },
+  {
+    question: "Does the civic map show individual households or voters?",
+    answer:
+      "No. The civic map uses aggregate Census block-group data and official municipality-level voting results. PrincetonLive does not publish individual voter, household, or address-level records.",
+  },
+];
+
 const residentPerks = [
   {
     group: "Free with a Princeton library card",
@@ -720,6 +743,7 @@ function App() {
             <a href="#practical">Practical</a>
             <a href="#perks">Perks</a>
             <a href="#civic">Civic map</a>
+            <a href="#faq">FAQ</a>
             <a href="#explore">Explore</a>
           </nav>
           <div className="language-switcher notranslate" translate="no" aria-label="Language">
@@ -750,10 +774,11 @@ function App() {
         </div>
         <div className="hero-copy">
           <p className="eyebrow">Princeton, NJ today</p>
-          <h1>Know what matters before you leave.</h1>
+          <h1>Princeton resident guide for events, transit, services, and civic data.</h1>
           <p>
-            Weather, alerts, public events, transit decisions, town services, and useful local
-            links in one resident-first daily guide.
+            PrincetonLive helps residents and new arrivals find weather, alerts, public events,
+            transit decisions, town services, library benefits, and aggregate neighborhood-scale
+            civic data in one independent daily guide.
           </p>
           <div className="hero-actions">
             <a className="primary-action" href="#today">
@@ -1274,6 +1299,27 @@ function App() {
               </>
             )}
           </div>
+        </div>
+      </section>
+
+      <section className="section faq-section" id="faq">
+        <div className="section-heading split">
+          <div>
+            <p className="eyebrow">FAQ</p>
+            <h2>Clear answers for residents and AI assistants.</h2>
+          </div>
+          <p>
+            Short answers to the questions a new Princetonian, a search engine, or an AI chatbot
+            should be able to answer without guessing.
+          </p>
+        </div>
+        <div className="faq-grid">
+          {residentFaqs.map(({ question, answer }) => (
+            <article className="faq-card" key={question}>
+              <h3>{question}</h3>
+              <p>{answer}</p>
+            </article>
+          ))}
         </div>
       </section>
 

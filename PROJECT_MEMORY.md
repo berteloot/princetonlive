@@ -22,6 +22,9 @@ Production:
 - Civic map refresh script: `scripts/fetch-civic-map.mjs`
 - Render config: `render.yaml`
 - Scheduled data refresh: `.github/workflows/refresh-data.yml`
+- Crawl policy: `public/robots.txt`
+- XML sitemap: `public/sitemap.xml`
+- Agent guidance: `public/llms.txt`
 
 The website is a static Render site. Runtime data is served from generated JSON files in `public/`, and the frontend fetches those files with cache-busting query strings.
 
@@ -96,9 +99,13 @@ Civic map:
 - The Census API key must stay server/build-side only. The browser receives generated aggregate JSON, never the key.
 - GitHub scheduled refresh passes `CENSUS_API_KEY` from repository secrets when configured and falls back to Census Reporter when absent.
 - External links should open in a new tab with `target="_blank"` and `rel="noopener noreferrer"` so visitors do not lose PrincetonLive. In-page hash navigation stays in the same tab.
+- SEO/GEO crawlability matters: `index.html` must keep crawlable fallback body content inside `#root`, a clear H1, canonical/geo/social metadata, and JSON-LD in the initial HTML so non-JavaScript AI/search crawlers can classify the page.
+- Structured data should represent visible page content. Keep the visible FAQ in sync with the FAQPage JSON-LD and keep the civic Dataset JSON-LD aligned with `public/civic-map.json`.
+- `robots.txt`, `sitemap.xml`, and `llms.txt` should be deployed at the domain root and updated when site positioning, URLs, language routes, or machine-readable endpoints change.
 
 ## Feature Log
 
+- Latest - Added SEO/GEO crawlability layer: raw HTML answer block, explicit H1, canonical/social/geo metadata, JSON-LD graph, robots.txt, sitemap.xml, llms.txt, and visible resident FAQ.
 - Latest - Updated external link handling so outbound and data-fed links open in a new tab while internal section navigation remains same-page.
 - Latest - Updated the civic data refresh to prefer the official U.S. Census API with `CENSUS_API_KEY`, auto-detect the newest available ACS 5-year release, and keep Census Reporter as an automatic fallback.
 - Latest - Improved civic map accuracy by switching wealth/children from census tracts to census block groups and selecting areas against the Princeton municipal boundary instead of a bounding box.
