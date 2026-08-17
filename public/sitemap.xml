@@ -75,4 +75,22 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+  <url>
+    <loc>https://princetonlive.berteloot.org/live-data.json</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.45</priority>
+  </url>
+  <url>
+    <loc>https://princetonlive.berteloot.org/civic-map.json</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.45</priority>
+  </url>
+  <url>
+    <loc>https://princetonlive.berteloot.org/waste-data.json</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.45</priority>
+  </url>
 </urlset>

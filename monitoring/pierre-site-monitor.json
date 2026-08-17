@@ -1,0 +1,157 @@
+{
+  "project": "PrincetonLive",
+  "timeout_seconds": 15,
+  "checks": [
+    {
+      "kind": "http",
+      "name": "Canonical homepage",
+      "url": "https://princetonlive.berteloot.org/",
+      "expect_status": [200],
+      "contains": "PrincetonLive",
+      "min_bytes": 5000
+    },
+    {
+      "kind": "http",
+      "name": "Render origin homepage",
+      "url": "https://princetonlive.onrender.com/",
+      "expect_status": [200],
+      "contains": "PrincetonLive",
+      "min_bytes": 5000
+    },
+    {
+      "kind": "http",
+      "name": "Crawlable resident answer",
+      "url": "https://princetonlive.berteloot.org/",
+      "expect_status": [200],
+      "contains": "PrincetonLive is an independent daily operating guide for Princeton",
+      "min_bytes": 5000
+    },
+    {
+      "kind": "http",
+      "name": "Sitemap",
+      "url": "https://princetonlive.berteloot.org/sitemap.xml",
+      "expect_status": [200],
+      "contains": "https://princetonlive.berteloot.org/",
+      "min_bytes": 300
+    },
+    {
+      "kind": "http",
+      "name": "Robots policy",
+      "url": "https://princetonlive.berteloot.org/robots.txt",
+      "expect_status": [200],
+      "contains": "Sitemap: https://princetonlive.berteloot.org/sitemap.xml",
+      "min_bytes": 80
+    },
+    {
+      "kind": "http",
+      "name": "AI summary",
+      "url": "https://princetonlive.berteloot.org/llms.txt",
+      "expect_status": [200],
+      "contains": "PrincetonLive",
+      "min_bytes": 500
+    },
+    {
+      "kind": "http",
+      "name": "Resident guide hub",
+      "url": "https://princetonlive.berteloot.org/guides/",
+      "expect_status": [200],
+      "contains": "PrincetonLive resident guides",
+      "min_bytes": 3000
+    },
+    {
+      "kind": "http",
+      "name": "Resident services guide",
+      "url": "https://princetonlive.berteloot.org/guides/princeton-resident-services.html",
+      "expect_status": [200],
+      "contains": "Waste by street",
+      "min_bytes": 3000
+    },
+    {
+      "kind": "http",
+      "name": "Civic data guide",
+      "url": "https://princetonlive.berteloot.org/guides/princeton-civic-data.html",
+      "expect_status": [200],
+      "contains": "Census block groups",
+      "min_bytes": 3000
+    },
+    {
+      "kind": "generated_json",
+      "name": "Live daily data",
+      "url": "https://princetonlive.berteloot.org/live-data.json",
+      "expect_status": [200],
+      "json_path": "events",
+      "max_age_hours": 8
+    },
+    {
+      "kind": "generated_json",
+      "name": "Civic map data",
+      "url": "https://princetonlive.berteloot.org/civic-map.json",
+      "expect_status": [200],
+      "json_path": "features",
+      "max_age_hours": 8
+    },
+    {
+      "kind": "generated_json",
+      "name": "Waste street lookup",
+      "url": "https://princetonlive.berteloot.org/waste-data.json",
+      "expect_status": [200],
+      "json_path": "streets.0.street",
+      "max_age_hours": 8
+    },
+    {
+      "kind": "http",
+      "name": "National Weather Service forecast",
+      "url": "https://api.weather.gov/points/40.3573,-74.6672",
+      "expect_status": [200],
+      "json_path": "properties.forecast"
+    },
+    {
+      "kind": "http",
+      "name": "Princeton University events",
+      "url": "https://www.princeton.edu/events",
+      "expect_status": [200],
+      "contains": "Events",
+      "min_bytes": 5000
+    },
+    {
+      "kind": "http",
+      "name": "Princeton Public Library events",
+      "url": "https://princetonlibrary.libnet.info/events",
+      "expect_status": [200],
+      "contains": "Events",
+      "min_bytes": 5000
+    },
+    {
+      "kind": "http",
+      "name": "Princeton trash schedule source",
+      "url": "https://www.princetonnj.gov/DocumentCenter/View/969/Trash-Collection-Schedule-by-Street-PDF",
+      "expect_status": [200],
+      "min_bytes": 10000
+    },
+    {
+      "kind": "http",
+      "name": "Princeton brush and leaf source",
+      "url": "https://www.princetonnj.gov/DocumentCenter/View/1018/Residential-Brush-and-Leaf-Collection-Sections-PDF",
+      "expect_status": [200],
+      "min_bytes": 10000
+    },
+    {
+      "kind": "http",
+      "name": "Recycle Coach Princeton",
+      "url": "https://api-city.recyclecoach.com/city/search?term=Princeton%2C%20New%20Jersey%2C%20USA",
+      "expect_status": [200],
+      "contains": "Municipality of Princeton",
+      "min_bytes": 500,
+      "retries": 4,
+      "retry_delay_seconds": 2
+    },
+    {
+      "kind": "http",
+      "name": "Google Translate API",
+      "url": "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=fr&dt=t&q=Princeton",
+      "expect_status": [200],
+      "contains": "Princeton",
+      "min_bytes": 20
+    }
+  ]
+}

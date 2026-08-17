@@ -198,10 +198,17 @@ const homepageRoutes = [
   { url: "/?lang=es", priority: "0.8", changefreq: "daily" },
 ];
 
+const dataRoutes = [
+  { url: "/live-data.json", priority: "0.45", changefreq: "daily" },
+  { url: "/civic-map.json", priority: "0.45", changefreq: "daily" },
+  { url: "/waste-data.json", priority: "0.45", changefreq: "daily" },
+];
+
 const internalAnchorLabels = {
   "#today": "Today agenda",
   "#move": "Move around Princeton",
   "#practical": "Practical services",
+  "#waste": "Waste by street",
   "#perks": "Resident perks",
   "#civic": "Civic map",
   "#faq": "FAQ",
@@ -525,6 +532,7 @@ function sitemapXml() {
       priority: "0.85",
       changefreq: "monthly",
     })),
+    ...dataRoutes,
   ];
   const entries = routes
     .map((route) => {

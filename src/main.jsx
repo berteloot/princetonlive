@@ -688,6 +688,22 @@ function App() {
     return () => attempts.forEach((attempt) => window.clearTimeout(attempt));
   }, [language]);
 
+  useEffect(() => {
+    const scrollToHash = () => {
+      const hash = window.location.hash.slice(1);
+      if (!hash) return;
+      const target = document.getElementById(decodeURIComponent(hash));
+      target?.scrollIntoView({ block: "start" });
+    };
+
+    const timers = [120, 450, 900].map((delay) => window.setTimeout(scrollToHash, delay));
+    window.addEventListener("hashchange", scrollToHash);
+    return () => {
+      timers.forEach((timer) => window.clearTimeout(timer));
+      window.removeEventListener("hashchange", scrollToHash);
+    };
+  }, [liveData.generatedAt, civicMap.generatedAt, wasteData.generatedAt]);
+
   const selectLanguage = (nextLanguage) => {
     if (nextLanguage === language) return;
 

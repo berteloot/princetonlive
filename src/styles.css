@@ -2032,7 +2032,7 @@ footer a {
 
 @media (max-width: 680px) {
   [id] {
-    scroll-margin-top: 154px;
+    scroll-margin-top: 206px;
   }
 
   .site-header {
@@ -2047,7 +2047,15 @@ footer a {
   }
 
   nav {
+    flex-wrap: wrap;
+    gap: 4px 6px;
     width: 100%;
+    overflow: visible;
+  }
+
+  nav a {
+    padding: 7px 9px;
+    font-size: 0.9rem;
   }
 
   .language-switcher {

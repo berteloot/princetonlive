@@ -23,12 +23,16 @@ Production:
 - SEO pillar page generator: `scripts/build-seo-pages.mjs`
 - Render config: `render.yaml`
 - Scheduled data refresh: `.github/workflows/refresh-data.yml`
+- Pierre site monitor: `.github/workflows/pierre-site-monitor.yml`
+- Pierre monitor config: `monitoring/pierre-site-monitor.json`
+- Pierre monitor runner: `tools/site_monitor.py`
 - Crawl policy: `public/robots.txt`
 - XML sitemap: `public/sitemap.xml`
 - Agent guidance: `public/llms.txt`
 
 The website is a static Render site. Runtime data is served from generated JSON files in `public/`, and the frontend fetches those files with cache-busting query strings.
 SEO pillar pages are generated into `public/guides/` before each build, along with synced sitemap and llms.txt entries.
+Pierre monitors the website every 15 minutes from GitHub Actions, persists `.monitor-state.json` through the Actions cache, and sends Telegram alerts only on new failures or recoveries. The required GitHub repository secrets are `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`.
 
 ## Commands
 
@@ -61,6 +65,12 @@ Quick public verification after deploy:
 
 ```bash
 curl -fsS 'https://princetonlive.berteloot.org/civic-map.json?v=COMMIT' | node -e 'let s="";process.stdin.on("data",d=>s+=d);process.stdin.on("end",()=>{const j=JSON.parse(s); console.log(j.features.length, j.release);})'
+```
+
+Run Pierre's health monitor locally:
+
+```bash
+python3 tools/site_monitor.py --config monitoring/pierre-site-monitor.json --state /tmp/princetonlive-monitor-state.json
 ```
 
 Render deploy status uses the API key in `/Users/stanislasberteloot/.config/nytro/.env`. Do not commit or display secrets.
@@ -104,6 +114,8 @@ Waste:
 - Agenda filters and search must remain clickable after Google Translate mutates the DOM.
 - Weather appears in the top daily brief; do not duplicate weaker weather cards lower on the page.
 - Anchor links must account for the sticky header so section headings, controls, and map toolbars are not hidden when landing on a deep link.
+- Mobile navigation wraps cleanly on iPhone-width screens instead of clipping or requiring horizontal scrolling.
+- Deep links are re-applied after React/data hydration so links like `#waste` and `#civic` land on the correct section on mobile and desktop.
 - Civic data must be neighborhood-scale or aggregate only. Do not publish individual voter, household, or address-level data.
 - The voting layer may show official Princeton municipal-level Republican/Democrat results across the map, but neighborhood shading should only be added after official district totals are safely joined to public district boundaries.
 - Civic map legends must show both sides of the scale. For wealth/children layers, darker means higher. Children count and child share must use distinct labels and color scales because count and percentage answer different questions. For voting, red-to-blue means Republican-to-Democratic.
@@ -121,10 +133,15 @@ Waste:
 - SEO/GEO crawlability matters: `index.html` must keep crawlable fallback body content inside `#root`, a clear H1, canonical/geo/social metadata, and JSON-LD in the initial HTML so non-JavaScript AI/search crawlers can classify the page.
 - Structured data should represent visible page content. Keep the visible FAQ in sync with the FAQPage JSON-LD and keep the civic Dataset JSON-LD aligned with `public/civic-map.json`.
 - `robots.txt`, `sitemap.xml`, and `llms.txt` should be deployed at the domain root and updated when site positioning, URLs, language routes, or machine-readable endpoints change.
+- Machine-readable JSON endpoints (`/live-data.json`, `/civic-map.json`, `/waste-data.json`) belong in the sitemap and llms.txt so AI/search crawlers can discover the public data layer directly.
 - SEO pillar pages live under `/guides/` and are generated from `scripts/build-seo-pages.mjs`. Add new stable guide topics there first so the HTML page, guide hub, sitemap, and llms.txt stay synchronized.
+- Pierre monitoring should cover the canonical domain, Render origin, crawlability endpoints, generated JSON freshness, and important upstream public sources.
 
 ## Feature Log
 
+- Latest - Added Pierre site health monitoring with 15-minute GitHub Actions checks and Telegram alert secrets, mirroring the Le Pouliguen Live monitoring pattern.
+- Latest - Fixed iPhone navigation wrapping and post-hydration hash scrolling for direct links such as Waste by Street and Civic Map.
+- Latest - Added generated JSON endpoints to the sitemap for AI/chatbot SEO discoverability.
 - Latest - Added a generated SEO pillar guide cluster under `/guides/` for moving to Princeton, library benefits, transit, culture, civic data, and resident services, with homepage internal links.
 - Latest - Added a generated waste-data refresh and practical Waste by Street tool using Princeton public trash-day and brush/leaf section documents, plus Recycle Coach as the official live address calendar.
 - Latest - Reduced the homepage hero headline from a long descriptive sentence to `PrincetonLive`, with the resident-guide phrase moved into smaller lead copy for better first-viewport usability.
