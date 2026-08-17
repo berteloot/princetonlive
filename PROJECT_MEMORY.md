@@ -93,6 +93,7 @@ Civic map:
 
 - Keep PrincetonLive resident-first, not tourist-first.
 - Use Princeton orange and black with strong contrast; avoid white text on light backgrounds.
+- Keep the homepage hero hierarchy practical: `PrincetonLive` can be the large H1, while descriptive SEO/resident-guide language belongs in smaller lead/supporting copy so daily content remains visible in the first viewport.
 - Google Translate powers French and Spanish because the content is expected to update from public feeds.
 - Agenda filters and search must remain clickable after Google Translate mutates the DOM.
 - Weather appears in the top daily brief; do not duplicate weaker weather cards lower on the page.
@@ -118,6 +119,7 @@ Civic map:
 ## Feature Log
 
 - Latest - Added a generated SEO pillar guide cluster under `/guides/` for moving to Princeton, library benefits, transit, culture, civic data, and resident services, with homepage internal links.
+- Latest - Reduced the homepage hero headline from a long descriptive sentence to `PrincetonLive`, with the resident-guide phrase moved into smaller lead copy for better first-viewport usability.
 - Latest - Added a Schools layer to the civic map with Princeton Public Schools campus points, grade context, official district links, assignment caveat, and NJDOE report links.
 - Latest - Added SEO/GEO crawlability layer: raw HTML answer block, explicit H1, canonical/social/geo metadata, JSON-LD graph, robots.txt, sitemap.xml, llms.txt, and visible resident FAQ.
 - Latest - Updated external link handling so outbound and data-fed links open in a new tab while internal section navigation remains same-page.

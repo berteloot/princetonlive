@@ -274,9 +274,9 @@ p {
 
 h1 {
   max-width: 720px;
-  margin-bottom: 18px;
-  font-size: clamp(3.25rem, 8vw, 7.8rem);
-  line-height: 0.9;
+  margin-bottom: 16px;
+  font-size: clamp(3.4rem, 7vw, 6.4rem);
+  line-height: 0.92;
   letter-spacing: 0;
 }
 
@@ -293,7 +293,16 @@ h3 {
   line-height: 1.2;
 }
 
-.hero-copy p {
+.hero-copy .hero-lede {
+  max-width: 660px;
+  margin-bottom: 14px;
+  color: #fff;
+  font-size: clamp(1.4rem, 2.8vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.06;
+}
+
+.hero-copy .hero-summary {
   max-width: 660px;
   color: rgba(255, 255, 255, 0.86);
   font-size: clamp(1.05rem, 1.8vw, 1.28rem);
@@ -1893,11 +1902,15 @@ footer a {
   }
 
   .hero {
-    min-height: 92vh;
+    min-height: 86vh;
   }
 
   h1 {
-    font-size: clamp(3rem, 15vw, 4.9rem);
+    font-size: clamp(3rem, 14vw, 4.4rem);
+  }
+
+  .hero-copy .hero-lede {
+    font-size: clamp(1.28rem, 7vw, 2.1rem);
   }
 
   .daily-brief,

@@ -831,11 +831,14 @@ function App() {
         </div>
         <div className="hero-copy">
           <p className="eyebrow">Princeton, NJ today</p>
-          <h1>Princeton resident guide for events, transit, services, and civic data.</h1>
-          <p>
-            PrincetonLive helps residents and new arrivals find weather, alerts, public events,
-            transit decisions, town services, library benefits, and aggregate neighborhood-scale
-            civic data in one independent daily guide.
+          <h1>PrincetonLive</h1>
+          <p className="hero-lede">
+            A Princeton resident guide for events, transit, services, library benefits, and civic
+            data.
+          </p>
+          <p className="hero-summary">
+            Find weather, alerts, public events, transit decisions, town services, library perks,
+            and neighborhood-scale civic context in one independent daily guide.
           </p>
           <div className="hero-actions">
             <a className="primary-action" href="#today">
