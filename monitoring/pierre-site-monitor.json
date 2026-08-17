@@ -63,7 +63,7 @@
       "name": "Resident services guide",
       "url": "https://princetonlive.berteloot.org/guides/princeton-resident-services.html",
       "expect_status": [200],
-      "contains": "Waste by street",
+      "contains": "Garbage by street",
       "min_bytes": 3000
     },
     {
