@@ -291,6 +291,78 @@ const practicalTiles = [
   },
 ];
 
+const dailyShortcuts = [
+  {
+    label: "Garbage day",
+    value: "Street lookup",
+    url: "#waste",
+    icon: Recycle,
+  },
+  {
+    label: "Today",
+    value: "Events + alerts",
+    url: "#today",
+    icon: CalendarDays,
+  },
+  {
+    label: "Transit",
+    value: "NYC / Philly",
+    url: "#move",
+    icon: Train,
+  },
+  {
+    label: "Neighborhood",
+    value: "Map context",
+    url: "#civic",
+    icon: Map,
+  },
+];
+
+const newResidentChecklist = [
+  {
+    title: "Find your garbage day",
+    detail: "Type your street once and learn your pickup day, bulk rule, and yard-waste section.",
+    action: "Street lookup",
+    url: "#waste",
+    icon: Recycle,
+  },
+  {
+    title: "Sign up for town alerts",
+    detail: "Use Nixle for official emergency and municipal notifications.",
+    action: "Nixle alerts",
+    url: "https://www.princetonnj.gov/274/Emergency-Phone-Notifications",
+    icon: AlertTriangle,
+  },
+  {
+    title: "Get the library card",
+    detail: "Unlock study rooms, digital resources, museum passes, events, and resident benefits.",
+    action: "Library card",
+    url: "https://princetonlibrary.org/about-us/library-cards/",
+    icon: Library,
+  },
+  {
+    title: "Learn your transit pattern",
+    detail: "Know the Dinky, Princeton Junction, downtown parking, and no-car options before you need them.",
+    action: "Move around",
+    url: "#move",
+    icon: Train,
+  },
+  {
+    title: "Check neighborhood context",
+    detail: "Use aggregate public data, school context, and address lookup without exposing private records.",
+    action: "Neighborhood map",
+    url: "#civic",
+    icon: Map,
+  },
+  {
+    title: "Pick a first walk",
+    detail: "Start with the canal, Institute Woods, Battlefield, Community Park, or downtown side streets.",
+    action: "Walks",
+    url: "#explore",
+    icon: Trees,
+  },
+];
+
 const residentFaqs = [
   {
     question: "What is PrincetonLive?",
@@ -308,9 +380,9 @@ const residentFaqs = [
       "PrincetonLive uses public feeds and pages including National Weather Service data, Princeton University public events, Princeton Public Library events, municipal resources, U.S. Census ACS and TIGERweb data, and official election-result sources.",
   },
   {
-    question: "Does the civic map show individual households or voters?",
+    question: "Does the neighborhood map show individual households or voters?",
     answer:
-      "No. The civic map uses aggregate Census block-group data and official municipality-level voting results. PrincetonLive does not publish individual voter, household, or address-level records.",
+      "No. The neighborhood map uses aggregate Census block-group data and official municipality-level voting results. PrincetonLive does not publish individual voter, household, or address-level records.",
   },
 ];
 
@@ -778,7 +850,7 @@ function App() {
   const visibleEvents = filteredEvents.slice(0, 10);
   const normalizedWasteQuery = normalizeWasteStreet(wasteQuery);
   const wasteMatches = useMemo(() => {
-    if (!normalizedWasteQuery) return wasteData.streets.slice(0, 6);
+    if (!normalizedWasteQuery) return [];
     return wasteData.streets
       .filter(
         (street) =>
@@ -889,7 +961,7 @@ function App() {
         setHoveredCivicFeature(null);
         setAddressLookup({
           status: "error",
-          message: "Found the address, but it falls outside this Princeton civic map.",
+          message: "Found the address, but it falls outside this Princeton neighborhood map.",
           result: null,
         });
         return;
@@ -945,7 +1017,7 @@ function App() {
             <a href="#practical">Practical</a>
             <a href="#waste">Garbage</a>
             <a href="#perks">Perks</a>
-            <a href="#civic">Civic map</a>
+            <a href="#civic">Neighborhood</a>
             <a href="#guides">Guides</a>
             <a href="#faq">FAQ</a>
             <a href="#explore">Explore</a>
@@ -987,6 +1059,15 @@ function App() {
             Find weather, alerts, public events, transit decisions, town services, library perks,
             and neighborhood-scale civic context in one independent daily guide.
           </p>
+          <div className="daily-shortcuts" aria-label="Resident shortcuts">
+            {dailyShortcuts.map(({ label, value, url, icon: Icon }) => (
+              <a href={url} key={label} {...externalLinkProps(url)}>
+                <Icon size={17} aria-hidden="true" />
+                <span>{label}</span>
+                <strong>{value}</strong>
+              </a>
+            ))}
+          </div>
           <div className="hero-actions">
             <a className="primary-action" href="#today">
               Open today <ChevronRight size={18} aria-hidden="true" />
@@ -1028,6 +1109,32 @@ function App() {
             <strong>{formatRefresh(liveData.generatedAt)}</strong>
           </div>
         </aside>
+      </section>
+
+      <section className="section resident-checklist" id="new-resident">
+        <div className="section-heading split">
+          <div>
+            <p className="eyebrow">New here</p>
+            <h2>First-week Princeton setup.</h2>
+          </div>
+          <p>
+            A practical checklist for turning Princeton from a famous place into a usable home:
+            alerts, garbage pickup, library access, transit, neighborhood context, and first walks.
+          </p>
+        </div>
+        <div className="checklist-grid">
+          {newResidentChecklist.map(({ title, detail, action, url, icon: Icon }, index) => (
+            <a className="checklist-card" href={url} key={title} {...externalLinkProps(url)}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <Icon size={19} aria-hidden="true" />
+              <strong>{title}</strong>
+              <p>{detail}</p>
+              <b>
+                {action} <ChevronRight size={15} aria-hidden="true" />
+              </b>
+            </a>
+          ))}
+        </div>
       </section>
 
       <section className="section today-grid" id="today">
@@ -1170,7 +1277,7 @@ function App() {
               <input
                 value={wasteQuery}
                 onChange={(event) => setWasteQuery(event.target.value)}
-                placeholder="Try Lytle Street, Library Place, Witherspoon..."
+                placeholder="Street name, e.g. Lytle Street"
               />
               {wasteQuery ? (
                 <button type="button" onClick={() => setWasteQuery("")} aria-label="Clear street search">
@@ -1179,7 +1286,19 @@ function App() {
               ) : null}
             </label>
             <div className="waste-results" aria-live="polite">
-              {wasteMatches.length ? (
+              {!normalizedWasteQuery ? (
+                <div className="waste-prompt">
+                  <strong>Start with the street name only.</strong>
+                  <p>Do not enter a house number. Try one of these examples or type your street above.</p>
+                  <div>
+                    {["Lytle Street", "Library Place", "Witherspoon Street"].map((example) => (
+                      <button type="button" key={example} onClick={() => setWasteQuery(example)}>
+                        {example}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ) : wasteMatches.length ? (
                 wasteMatches.map((street) => {
                   const sectionSchedule = wasteSectionSchedule(wasteData, street.yardSection);
                   return (
@@ -1301,8 +1420,8 @@ function App() {
       <section className="section civic-section" id="civic">
         <div className="section-heading split">
           <div>
-            <p className="eyebrow">Civic map</p>
-            <h2>Public data, neighborhood scale.</h2>
+            <p className="eyebrow">Neighborhood context</p>
+            <h2>Public data, closer to daily life.</h2>
           </div>
           <p>
             Census block-group boundaries and ACS estimates make the map more local without exposing
@@ -1313,7 +1432,7 @@ function App() {
 
         <div className="civic-layout">
           <div className={`civic-map-panel metric-${civicMetric}`}>
-            <div className="civic-toolbar" aria-label="Civic map metrics">
+            <div className="civic-toolbar" aria-label="Neighborhood map metrics">
               {civicMetrics.map(({ key, label, icon: Icon }) => (
                 <button
                   key={key}

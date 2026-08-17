@@ -129,6 +129,9 @@ Explore walks:
 - Deep links are re-applied after React/data hydration so links like `#waste` and `#civic` land on the correct section on mobile and desktop.
 - First-month walk cards must include actionable guide/map links. Avoid listing walks that residents cannot open in a map or official/stable resource.
 - Garbage pickup by street is a primary resident tool. Keep it directly reachable from the top navigation as `#waste` and placed before lower-priority practical service tiles.
+- The homepage should behave like an operating guide before it behaves like a brochure: daily shortcuts, resident setup, garbage, transit, events, alerts, and neighborhood context should be reachable quickly.
+- The garbage lookup should be input-first. Do not show arbitrary alphabetical streets before the resident types or chooses an example.
+- Use resident-facing "Neighborhood map/context" in UI labels; keep civic-data language where it is useful for source notes, SEO, datasets, and technical documentation.
 - Civic data must be neighborhood-scale or aggregate only. Do not publish individual voter, household, or address-level data.
 - The voting layer may show official Princeton municipal-level Republican/Democrat results across the map, but neighborhood shading should only be added after official district totals are safely joined to public district boundaries.
 - Civic map legends must show both sides of the scale. For wealth/children layers, darker means higher. Children count and child share must use distinct labels and color scales because count and percentage answer different questions. For voting, red-to-blue means Republican-to-Democratic.
@@ -156,6 +159,7 @@ Explore walks:
 - Latest - Added Google tag / GA4 measurement ID `G-RL5N5X5EZE` to the app shell and generated SEO pillar pages.
 - Latest - Added guide and map links to every First-month Princeton walk card.
 - Latest - Renamed user-facing pickup language to garbage pickup.
+- Latest - Added homepage resident shortcuts, a first-week Princeton setup checklist, input-first garbage lookup examples, and Neighborhood map/context wording.
 - Latest - Promoted Garbage pickup by street into the primary navigation and moved the lookup above practical service tiles.
 - Latest - Added Pierre site health monitoring with 15-minute GitHub Actions checks and Telegram alert secrets, mirroring the Le Pouliguen Live monitoring pattern.
 - Latest - Fixed iPhone navigation wrapping and post-hydration hash scrolling for direct links such as Garbage by Street and Civic Map.

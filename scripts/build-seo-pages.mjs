@@ -219,7 +219,7 @@ const internalAnchorLabels = {
   "#practical": "Practical services",
   "#waste": "Garbage by street",
   "#perks": "Resident perks",
-  "#civic": "Civic map",
+  "#civic": "Neighborhood map",
   "#faq": "FAQ",
   "#explore": "Explore Princeton",
 };
@@ -394,7 +394,7 @@ ${jsonLd}
         <a href="/#today">Today</a>
         <a href="/#move">Move</a>
         <a href="/#perks">Perks</a>
-        <a href="/#civic">Civic map</a>
+        <a href="/#civic">Neighborhood</a>
       </nav>
     </header>
 ${body}
