@@ -350,12 +350,16 @@ function App() {
           </div>
         </div>
         <aside className="daily-brief" aria-label="Today snapshot">
-          <a href={liveData.weather.sourceUrl}>
+          <a className="weather-summary-card" href={liveData.weather.sourceUrl}>
             <span>Weather</span>
             <strong>
               {liveData.weather.temperature ? `${liveData.weather.temperature}°F, ` : ""}
               {liveData.weather.shortForecast}
             </strong>
+            <small>
+              {liveData.weather.wind ? `${liveData.weather.wind}. ` : ""}
+              {liveData.weather.detailedForecast}
+            </small>
           </a>
           <a href="https://www.weather.gov/phi/">
             <span>Alerts</span>
@@ -434,32 +438,29 @@ function App() {
         </div>
       </section>
 
-      <section className="section weather-band" aria-labelledby="weather-heading">
-        <div className="section-heading split">
-          <div>
-            <p className="eyebrow">Weather & alerts</p>
-            <h2 id="weather-heading">Plan the next few hours.</h2>
+      {liveData.alerts.length ? (
+        <section className="section alert-band" aria-labelledby="alerts-heading">
+          <div className="section-heading split">
+            <div>
+              <p className="eyebrow">Active alerts</p>
+              <h2 id="alerts-heading">Weather items that need attention.</h2>
+            </div>
+            <p>
+              Current National Weather Service alerts for Princeton. When there are no active
+              alerts, this section is hidden so the page stays focused.
+            </p>
           </div>
-          <p>{liveData.weather.detailedForecast}</p>
-        </div>
-        <div className="alert-strip">
-          {liveData.alerts.length ? (
-            liveData.alerts.slice(0, 3).map((alert) => (
+          <div className="alert-strip">
+            {liveData.alerts.slice(0, 3).map((alert) => (
               <a href={alert.url} key={alert.id}>
                 <AlertTriangle size={18} aria-hidden="true" />
                 <strong>{alert.event}</strong>
                 <span>{alert.headline}</span>
               </a>
-            ))
-          ) : (
-            <div>
-              <CloudRain size={18} aria-hidden="true" />
-              <strong>No active National Weather Service alerts for Princeton.</strong>
-              <span>{liveData.weather.wind}</span>
-            </div>
-          )}
-        </div>
-      </section>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <section className="section" id="move">
         <div className="section-heading split">
