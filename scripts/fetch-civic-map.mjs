@@ -20,6 +20,27 @@ const tractCountUrl =
 const censusReporterBase = "https://api.censusreporter.org/1.0/data/show";
 const censusReporterHome = "https://api.censusreporter.org/";
 const fecNationalResultUrl = "https://www.fec.gov/documents/5644/2024presgeresults.pdf";
+const preferredCensusAcsYear = process.env.CENSUS_ACS_YEAR?.trim();
+const censusApiKey = process.env.CENSUS_API_KEY?.trim();
+const censusApiDocsUrl = "https://www.census.gov/data/developers/data-sets/acs-5year.html";
+
+const officialChildAgeKeys = [
+  "B01001_003E",
+  "B01001_004E",
+  "B01001_005E",
+  "B01001_006E",
+  "B01001_027E",
+  "B01001_028E",
+  "B01001_029E",
+  "B01001_030E",
+];
+
+const officialCensusGet = [
+  "NAME",
+  "B19013_001E",
+  "B01001_001E",
+  ...officialChildAgeKeys,
+].join(",");
 
 const childAgeKeys = [
   "B01001003",
@@ -112,7 +133,11 @@ const fallback = {
       url: "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Tracts_Blocks/MapServer",
     },
     {
-      name: "Census Reporter API / ACS 2024 5-year",
+      name: "U.S. Census API / ACS 5-year",
+      url: censusApiDocsUrl,
+    },
+    {
+      name: "Census Reporter API / ACS 5-year fallback",
       url: censusReporterHome,
     },
     {
@@ -161,7 +186,12 @@ function sumEstimates(estimate, keys) {
   return values.length ? values.reduce((sum, value) => sum + value, 0) : null;
 }
 
-function tractStats(data, geoid) {
+function sumRowValues(row, keys) {
+  const values = keys.map((key) => numberOrNull(row[key])).filter(Number.isFinite);
+  return values.length ? values.reduce((sum, value) => sum + value, 0) : null;
+}
+
+function reporterTractStats(data, geoid) {
   const key = `14000US${geoid}`;
   const entry = data.data?.[key];
   const age = entry?.B01001?.estimate || {};
@@ -173,11 +203,164 @@ function tractStats(data, geoid) {
     income: numberOrNull(income),
     population,
     children,
-    childShare: population ? children / population : null,
+    childShare: population && children !== null ? children / population : null,
   };
 }
 
-async function fetchNationalBenchmarks(release) {
+function candidateAcsYears() {
+  if (preferredCensusAcsYear) return [preferredCensusAcsYear];
+  const currentYear = new Date().getUTCFullYear();
+  return Array.from({ length: 6 }, (_, index) => String(currentYear - 1 - index));
+}
+
+function officialRelease(acsYear) {
+  const year = Number(acsYear);
+  return {
+    id: `acs${acsYear}_5yr`,
+    name: `ACS ${acsYear} 5-year`,
+    years: Number.isFinite(year) ? `${year - 4}-${year}` : null,
+  };
+}
+
+function censusApiUrl(acsYear, params, { includeKey = false } = {}) {
+  const url = new URL(`https://api.census.gov/data/${acsYear}/acs/acs5`);
+  for (const [key, value] of Object.entries(params)) {
+    url.searchParams.set(key, value);
+  }
+  if (includeKey && censusApiKey) url.searchParams.set("key", censusApiKey);
+  return url.toString();
+}
+
+function parseCensusRows(rows) {
+  if (!Array.isArray(rows) || rows.length < 2) {
+    throw new Error("Census API returned no data rows");
+  }
+
+  const [headers, ...dataRows] = rows;
+  return dataRows.map((row) =>
+    Object.fromEntries(headers.map((header, index) => [header, row[index]])),
+  );
+}
+
+function officialStatsFromRow(row) {
+  const children = sumRowValues(row, officialChildAgeKeys);
+  const population = numberOrNull(row.B01001_001E);
+
+  return {
+    income: numberOrNull(row.B19013_001E),
+    population,
+    children,
+    childShare: population && children !== null ? children / population : null,
+  };
+}
+
+function buildBenchmarks({ release, nationalStats, nationalTracts, sourceName, sourceUrl }) {
+  return {
+    income: {
+      label: "U.S. median household income",
+      value: nationalStats.income,
+      unit: "currency",
+      release: release.name,
+      sourceName,
+      sourceUrl,
+    },
+    children: {
+      label: "U.S. average residents under 18 per census tract",
+      value:
+        nationalStats.children !== null && nationalTracts ? nationalStats.children / nationalTracts : null,
+      unit: "number",
+      release: release.name,
+      sourceName: `${sourceName} + TIGERweb tract count`,
+      sourceUrl,
+    },
+    childShare: {
+      label: "U.S. share of population under 18",
+      value:
+        nationalStats.population && nationalStats.children !== null
+          ? nationalStats.children / nationalStats.population
+          : null,
+      unit: "percent",
+      release: release.name,
+      sourceName,
+      sourceUrl,
+    },
+    voting: {
+      label: "U.S. 2024 presidential popular-vote margin",
+      value: votingSummary.nationalBenchmark.margin,
+      unit: "margin",
+      release: "FEC official 2024 result",
+      sourceName: nationalVoting.sourceName,
+      sourceUrl: nationalVoting.sourceUrl,
+    },
+  };
+}
+
+async function fetchOfficialCensusSnapshot() {
+  if (!censusApiKey) throw new Error("CENSUS_API_KEY not set");
+
+  let lastError = null;
+  for (const acsYear of candidateAcsYears()) {
+    try {
+      return await fetchOfficialCensusSnapshotForYear(acsYear);
+    } catch (error) {
+      lastError = error;
+      if (preferredCensusAcsYear) break;
+    }
+  }
+
+  throw new Error(`no official ACS release succeeded${lastError ? ` (${lastError.message})` : ""}`);
+}
+
+async function fetchOfficialCensusSnapshotForYear(acsYear) {
+  const tractParams = {
+    get: officialCensusGet,
+    for: "tract:*",
+    in: "state:34 county:021",
+  };
+  const nationalParams = {
+    get: officialCensusGet,
+    for: "us:1",
+  };
+  const tractUrl = censusApiUrl(acsYear, tractParams, { includeKey: true });
+  const nationalUrl = censusApiUrl(acsYear, nationalParams, { includeKey: true });
+  const publicNationalUrl = censusApiUrl(acsYear, nationalParams);
+  const [tractRows, nationalRows, tractCount] = await Promise.all([
+    fetchJson(tractUrl),
+    fetchJson(nationalUrl),
+    fetchJson(tractCountUrl),
+  ]);
+  const statsByGeoid = Object.fromEntries(
+    parseCensusRows(tractRows).map((row) => [
+      `${row.state}${row.county}${row.tract}`,
+      officialStatsFromRow(row),
+    ]),
+  );
+  const nationalStats = officialStatsFromRow(parseCensusRows(nationalRows)[0]);
+  const release = officialRelease(acsYear);
+  const sourceName = `U.S. Census API / ${release.name}`;
+
+  return {
+    release,
+    sourceName,
+    sourceUrl: publicNationalUrl,
+    statsForGeoid: (geoid) =>
+      statsByGeoid[geoid] || {
+        income: null,
+        population: null,
+        children: null,
+        childShare: null,
+      },
+    benchmarks: buildBenchmarks({
+      release,
+      nationalStats,
+      nationalTracts: numberOrNull(tractCount.count),
+      sourceName,
+      sourceUrl: publicNationalUrl,
+    }),
+  };
+}
+
+async function fetchReporterNationalBenchmarks(release) {
   const releaseId = release?.id || "latest";
   const releaseName = release?.name || "ACS latest";
   const nationalUrl = `${censusReporterBase}/${releaseId}?table_ids=B19013,B01001&geo_ids=01000US`;
@@ -195,40 +378,21 @@ async function fetchNationalBenchmarks(release) {
     const nationalTracts = numberOrNull(tractCount.count);
     const sourceName = `Census Reporter API / ${releaseName}`;
 
-    return {
-      income: {
-        label: "U.S. median household income",
-        value: income,
-        unit: "currency",
-        release: nationalCensus.release?.name || releaseName,
-        sourceName,
-        sourceUrl: nationalUrl,
+    return buildBenchmarks({
+      release: {
+        id: nationalCensus.release?.id || releaseId,
+        name: nationalCensus.release?.name || releaseName,
       },
-      children: {
-        label: "U.S. average residents under 18 per census tract",
-        value: children && nationalTracts ? children / nationalTracts : null,
-        unit: "number",
-        release: nationalCensus.release?.name || releaseName,
-        sourceName: `${sourceName} + TIGERweb tract count`,
-        sourceUrl: nationalUrl,
+      nationalStats: {
+        income,
+        population,
+        children,
+        childShare: population && children !== null ? children / population : null,
       },
-      childShare: {
-        label: "U.S. share of population under 18",
-        value: population && children ? children / population : null,
-        unit: "percent",
-        release: nationalCensus.release?.name || releaseName,
-        sourceName,
-        sourceUrl: nationalUrl,
-      },
-      voting: {
-        label: "U.S. 2024 presidential popular-vote margin",
-        value: votingSummary.nationalBenchmark.margin,
-        unit: "margin",
-        release: "FEC official 2024 result",
-        sourceName: nationalVoting.sourceName,
-        sourceUrl: nationalVoting.sourceUrl,
-      },
-    };
+      nationalTracts,
+      sourceName,
+      sourceUrl: nationalUrl,
+    });
   } catch (error) {
     console.warn(`National benchmark refresh failed: ${error.message}`);
     return {
@@ -241,6 +405,30 @@ async function fetchNationalBenchmarks(release) {
         sourceUrl: nationalVoting.sourceUrl,
       },
     };
+  }
+}
+
+async function fetchCensusReporterSnapshot() {
+  const census = await fetchJson(censusReporterUrl);
+  const release = {
+    id: census.release?.id || "latest",
+    name: census.release?.name || "ACS latest 5-year",
+  };
+  return {
+    release,
+    sourceName: `Census Reporter API / ${release.name}`,
+    sourceUrl: censusReporterUrl,
+    statsForGeoid: (geoid) => reporterTractStats(census, geoid),
+    benchmarks: await fetchReporterNationalBenchmarks(census.release),
+  };
+}
+
+async function fetchCensusSnapshot() {
+  try {
+    return await fetchOfficialCensusSnapshot();
+  } catch (error) {
+    console.warn(`Official Census API refresh unavailable: ${error.message}. Falling back to Census Reporter.`);
+    return fetchCensusReporterSnapshot();
   }
 }
 
@@ -345,8 +533,8 @@ const formatPercent = (value) =>
   }).format(value);
 
 try {
-  const [geometry, census] = await Promise.all([fetchJson(geometryUrl), fetchJson(censusReporterUrl)]);
-  const benchmarks = await fetchNationalBenchmarks(census.release);
+  const [geometry, censusSnapshot] = await Promise.all([fetchJson(geometryUrl), fetchCensusSnapshot()]);
+  const benchmarks = censusSnapshot.benchmarks;
   const selected = (geometry.features || []).filter(inPrincetonArea);
   const mapProjection = projectionForPoints(allPoints(selected));
   const project = (point) => projectPoint(point, mapProjection);
@@ -354,7 +542,7 @@ try {
   const features = selected
     .map((feature) => {
       const geoid = feature.properties.GEOID;
-      const stats = tractStats(census, geoid);
+      const stats = censusSnapshot.statsForGeoid(geoid);
       return {
         geoid,
         tractLabel: `Tract ${feature.properties.BASENAME}`,
@@ -383,7 +571,9 @@ try {
   const payload = {
     ...fallback,
     generatedAt: new Date().toISOString(),
-    release: census.release?.name || "ACS latest 5-year",
+    release: censusSnapshot.release?.name || "ACS latest 5-year",
+    censusSource: censusSnapshot.sourceName,
+    censusSourceUrl: censusSnapshot.sourceUrl,
     mapProjection,
     features,
     highlights,

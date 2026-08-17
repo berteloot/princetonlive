@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T14:11:08.073Z",
+  "generatedAt": "2026-08-17T14:18:12.633Z",
   "release": "ACS 2024 5-year",
   "privacy": "Neighborhood-scale public data only. PrincetonLive does not publish individual voter, household, or address-level records.",
   "viewBox": "0 0 100 72",
@@ -374,7 +374,11 @@
       "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Tracts_Blocks/MapServer"
     },
     {
-      "name": "Census Reporter API / ACS 2024 5-year",
+      "name": "U.S. Census API / ACS 5-year",
+      "url": "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+    },
+    {
+      "name": "Census Reporter API / ACS 5-year fallback",
       "url": "https://api.censusreporter.org/"
     },
     {
@@ -398,6 +402,8 @@
       "url": "https://www.princetonnj.gov/192/Elections"
     }
   ],
+  "censusSource": "Census Reporter API / ACS 2024 5-year",
+  "censusSourceUrl": "https://api.censusreporter.org/1.0/data/show/latest?table_ids=B19013,B01001&geo_ids=140%7C05000US34021",
   "mapProjection": {
     "minLon": -74.76086799979213,
     "maxLon": -74.58280499969442,

@@ -65,8 +65,9 @@ Daily operating data:
 
 Civic map:
 - U.S. Census TIGERweb tract geometry
-- Census Reporter API / ACS 2024 5-year estimates
-- Census Reporter API national ACS benchmarks, matched to the same ACS release as the Princeton tract feed
+- U.S. Census API / ACS 5-year estimates when `CENSUS_API_KEY` is available during build or refresh. The refresh tries the newest plausible ACS 5-year release first, steps backward if Census has not published that year yet, and can be pinned with `CENSUS_ACS_YEAR`.
+- Census Reporter API / ACS estimates as the automatic fallback if the official Census key is missing or the API is unavailable
+- U.S. Census API or Census Reporter national ACS benchmarks, matched to the same ACS release as the Princeton tract feed
 - U.S. Census TIGERweb national tract count for children-per-tract normalization
 - OpenStreetMap Nominatim for submit-only address lookup on the civic map
 - NJ Division of Elections official 2024 Mercer presidential results PDF
@@ -90,9 +91,12 @@ Civic map:
 - Explain Census terms in resident language. A tract should be presented as a stable Census comparison area, often neighborhood-sized, not as a named neighborhood, voting precinct, or address.
 - Civic address lookup should be submit-only, privacy-forward, and should not store searched addresses. The current implementation uses OpenStreetMap/Nominatim plus local tract geometry. Google Places autocomplete can be added later only after a Google Maps API key, billing, and domain restrictions are configured.
 - Resident perks must distinguish free benefits from access programs that cost money. Princeton University Community Auditing is resident-relevant, but it is tuition-based, not a free library-style perk.
+- The Census API key must stay server/build-side only. The browser receives generated aggregate JSON, never the key.
+- GitHub scheduled refresh passes `CENSUS_API_KEY` from repository secrets when configured and falls back to Census Reporter when absent.
 
 ## Feature Log
 
+- Latest - Updated the civic data refresh to prefer the official U.S. Census API with `CENSUS_API_KEY`, auto-detect the newest available ACS 5-year release, and keep Census Reporter as an automatic fallback.
 - Latest - Added a resident perks section covering free library-card benefits, library parking/study rooms/museum passes/technology, community auditing, Arts Council resources, the free Princeton Loop, Human Services, and Recreation.
 - Latest - Added civic map address lookup that places a marker and highlights the matching tract without storing the submitted address.
 - Latest - Added a plain-English "What is a tract?" explainer to the civic map.

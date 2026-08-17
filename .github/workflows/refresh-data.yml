@@ -26,6 +26,9 @@ jobs:
 
       - name: Refresh public data snapshot
         run: npm run refresh:public
+        env:
+          CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
+          CENSUS_ACS_YEAR: ${{ vars.CENSUS_ACS_YEAR }}
 
       - name: Commit data snapshot
         run: |
