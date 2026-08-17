@@ -2,6 +2,15 @@ import { mkdir, writeFile } from "node:fs/promises";
 
 const SITE_URL = "https://princetonlive.berteloot.org";
 const today = "2026-08-17";
+const googleTag = `    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RL5N5X5EZE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-RL5N5X5EZE');
+    </script>`;
 
 const pillarGuides = [
   {
@@ -338,6 +347,7 @@ function shell({ title, description, url, body, jsonLd, pageClass = "" }) {
 <html lang="en">
   <head>
 ${metaTags({ title, description, url })}
+${googleTag}
     <script type="application/ld+json">
 ${jsonLd}
     </script>

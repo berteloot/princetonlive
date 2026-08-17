@@ -29,6 +29,7 @@ Production:
 - Crawl policy: `public/robots.txt`
 - XML sitemap: `public/sitemap.xml`
 - Agent guidance: `public/llms.txt`
+- Analytics: Google tag `G-RL5N5X5EZE` in `index.html` and generated guide pages
 
 The website is a static Render site. Runtime data is served from generated JSON files in `public/`, and the frontend fetches those files with cache-busting query strings.
 SEO pillar pages are generated into `public/guides/` before each build, along with synced sitemap and llms.txt entries.
@@ -136,9 +137,11 @@ Waste:
 - Machine-readable JSON endpoints (`/live-data.json`, `/civic-map.json`, `/waste-data.json`) belong in the sitemap and llms.txt so AI/search crawlers can discover the public data layer directly.
 - SEO pillar pages live under `/guides/` and are generated from `scripts/build-seo-pages.mjs`. Add new stable guide topics there first so the HTML page, guide hub, sitemap, and llms.txt stay synchronized.
 - Pierre monitoring should cover the canonical domain, Render origin, crawlability endpoints, generated JSON freshness, and important upstream public sources.
+- Google Analytics must be added at source level: update `index.html` for the app shell and `scripts/build-seo-pages.mjs` for all generated `/guides/` pages.
 
 ## Feature Log
 
+- Latest - Added Google tag / GA4 measurement ID `G-RL5N5X5EZE` to the app shell and generated SEO pillar pages.
 - Latest - Added Pierre site health monitoring with 15-minute GitHub Actions checks and Telegram alert secrets, mirroring the Le Pouliguen Live monitoring pattern.
 - Latest - Fixed iPhone navigation wrapping and post-hydration hash scrolling for direct links such as Waste by Street and Civic Map.
 - Latest - Added generated JSON endpoints to the sitemap for AI/chatbot SEO discoverability.
