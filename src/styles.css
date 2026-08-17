@@ -600,6 +600,26 @@ h3 {
   outline: 0;
 }
 
+.search-box button {
+  flex: 0 0 auto;
+  min-height: 34px;
+  padding: 0 10px;
+  color: var(--orange-deep);
+  cursor: pointer;
+  background: #fff0dc;
+  border: 1px solid rgba(153, 68, 0, 0.14);
+  border-radius: 7px;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.results-meta {
+  grid-column: 2;
+  color: #5e6a62;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
 .agenda-list {
   display: grid;
   grid-column: 2;
@@ -1004,6 +1024,7 @@ footer a {
   }
 
   .today-grid .section-heading,
+  .results-meta,
   .agenda-list {
     grid-column: 1;
   }

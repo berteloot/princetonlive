@@ -282,6 +282,7 @@ function App() {
     });
   }, [filter, liveData.events, query]);
 
+  const visibleEvents = filteredEvents.slice(0, 10);
   const nextEvent = liveData.events[0];
   const alertCount = liveData.alerts?.length ?? 0;
 
@@ -387,6 +388,7 @@ function App() {
               type="button"
               className={filter === value ? "is-active" : ""}
               onClick={() => setFilter(value)}
+              aria-pressed={filter === value}
             >
               <Icon size={17} aria-hidden="true" />
               {label}
@@ -401,11 +403,19 @@ function App() {
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Search events, library, town, lectures..."
           />
+          {query ? (
+            <button type="button" onClick={() => setQuery("")} aria-label="Clear search">
+              Clear
+            </button>
+          ) : null}
         </label>
-        <div className="agenda-list">
-          {filteredEvents.length ? (
-            filteredEvents.slice(0, 10).map((event) => (
-              <a className="agenda-card" href={event.url} key={`${event.source}-${event.title}-${event.timeLabel}`}>
+        <div className="results-meta" aria-live="polite">
+          Showing {visibleEvents.length} of {filteredEvents.length} matching public items
+        </div>
+        <div className="agenda-list" key={`agenda-${filter}-${query}-${liveData.generatedAt}`}>
+          {visibleEvents.length ? (
+            visibleEvents.map((event, index) => (
+              <a className="agenda-card" href={event.url} key={`${event.url}-${index}`}>
                 <time>
                   {event.dateLabel}
                   <small>{event.timeLabel}</small>
