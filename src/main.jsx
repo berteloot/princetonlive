@@ -236,6 +236,115 @@ const practicalTiles = [
   },
 ];
 
+const residentPerks = [
+  {
+    group: "Free with a Princeton library card",
+    items: [
+      {
+        title: "Library card for residents",
+        detail:
+          "Residents and property owners in the Municipality of Princeton can get a free Princeton Public Library card with proof of eligibility.",
+        action: "Get a card",
+        url: "https://princetonlibrary.org/about-us/library-cards/",
+        icon: Library,
+      },
+      {
+        title: "Two hours of garage parking",
+        detail:
+          "PPL cardholders visiting the Sands Library Building can validate a Spring Street Garage paper ticket for up to two hours per day.",
+        action: "Parking details",
+        url: "https://princetonlibrary.org/about-us/location-hours-book-drops/",
+        icon: ParkingCircle,
+      },
+      {
+        title: "Study rooms",
+        detail:
+          "Cardholders can reserve one study room per day, up to 48 hours ahead. Rooms are generally 30 minutes to two hours.",
+        action: "Book a room",
+        url: "https://princetonlibrary.org/services/study-rooms/",
+        icon: BookOpen,
+      },
+      {
+        title: "Museum passes",
+        detail:
+          "Cardholders in good standing can reserve museum passes at no charge, subject to availability and each museum's rules.",
+        action: "Reserve a pass",
+        url: "https://princetonlibrary.org/services/museum-pass/",
+        icon: Landmark,
+      },
+      {
+        title: "Library of Things and tech",
+        detail:
+          "Borrow nontraditional items, use MacBooks in the library, borrow Chromebooks or hotspots, and access software and gadgets.",
+        action: "Technology services",
+        url: "https://princetonlibrary.org/services/technology-services/",
+        icon: BatteryCharging,
+      },
+      {
+        title: "Online learning and digital media",
+        detail:
+          "Use e-books, audiobooks, digital magazines, research databases, online courses, language learning, and homework help.",
+        action: "Card benefits",
+        url: "https://princetonlibrary.org/about-us/library-cards/#card-benefits",
+        icon: Sparkles,
+      },
+    ],
+  },
+  {
+    group: "Resident resources worth knowing",
+    items: [
+      {
+        title: "Audit Princeton classes",
+        detail:
+          "The Community Auditing Program lets adults audit University lectures as non-credit silent students. Courses have tuition, with Princeton-affiliated/resident priority on day one.",
+        action: "Auditing program",
+        url: "https://community.princeton.edu/community-auditing",
+        icon: BookOpen,
+      },
+      {
+        title: "Arts Council access",
+        detail:
+          "The Arts Council of Princeton offers free community programming, free or low-cost events, and need-based scholarships for classes.",
+        action: "Arts Council",
+        url: "https://artscouncilofprinceton.org/about/",
+        icon: Theater,
+      },
+      {
+        title: "Free art-making with PU Museum",
+        detail:
+          "ACP partners with the Princeton University Art Museum on free virtual art-making classes and recordings.",
+        action: "Art classes",
+        url: "https://artscouncilofprinceton.org/classes/free-virtual-art-making-with-pu-museum/",
+        icon: Film,
+      },
+      {
+        title: "Princeton Loop bus",
+        detail:
+          "The municipal Princeton Loop is a free bus service open to everyone, connecting housing, downtown, and the Princeton Shopping Center.",
+        action: "Loop details",
+        url: "https://www.princetonnj.gov/578/Getting-Around-Princeton",
+        icon: Bus,
+      },
+      {
+        title: "Human Services directory",
+        detail:
+          "The town maintains a resident resource guide for local services, assistance programs, transportation, seniors, veterans, and more.",
+        action: "Resource guide",
+        url: "https://www.princetonnj.gov/DocumentCenter/View/21016/Princeton-Resource-Guide-Updated-2025",
+        icon: Users,
+      },
+      {
+        title: "Recreation programs",
+        detail:
+          "Princeton Recreation runs programs, community events, trips, and classes for children, adults, and seniors.",
+        action: "Recreation",
+        url: "https://www.princetonnj.gov/1697/Recreation",
+        icon: Trees,
+      },
+    ],
+  },
+];
+
 const exploreStops = [
   ["D&R Canal towpath", "Flat, easy orientation walk along the water."],
   ["Institute Woods", "Shaded trails for a quiet first-month ritual."],
@@ -598,6 +707,7 @@ function App() {
             <a href="#today">Today</a>
             <a href="#move">Move</a>
             <a href="#practical">Practical</a>
+            <a href="#perks">Perks</a>
             <a href="#civic">Civic map</a>
             <a href="#explore">Explore</a>
           </nav>
@@ -793,6 +903,40 @@ function App() {
               <span>{label}</span>
               <strong>{value}</strong>
             </a>
+          ))}
+        </div>
+      </section>
+
+      <section className="section resident-perks" id="perks">
+        <div className="section-heading split">
+          <div>
+            <p className="eyebrow">Resident perks</p>
+            <h2>Things Princeton quietly makes available.</h2>
+          </div>
+          <p>
+            A resident-first checklist of library benefits, learning access, arts resources, and
+            civic services that are easy to miss when you first arrive.
+          </p>
+        </div>
+        <div className="perks-layout">
+          {residentPerks.map((group) => (
+            <section className="perk-group" key={group.group} aria-labelledby={`${group.group.replace(/\W+/g, "-").toLowerCase()}-heading`}>
+              <h3 id={`${group.group.replace(/\W+/g, "-").toLowerCase()}-heading`}>
+                {group.group}
+              </h3>
+              <div className="perk-list">
+                {group.items.map(({ title, detail, action, url, icon: Icon }) => (
+                  <a className="perk-card" href={url} key={title}>
+                    <Icon size={21} aria-hidden="true" />
+                    <span>{title}</span>
+                    <p>{detail}</p>
+                    <strong>
+                      {action} <ExternalLink size={14} aria-hidden="true" />
+                    </strong>
+                  </a>
+                ))}
+              </div>
+            </section>
           ))}
         </div>
       </section>

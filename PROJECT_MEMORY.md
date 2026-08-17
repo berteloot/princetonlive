@@ -61,6 +61,7 @@ Daily operating data:
 - Princeton University public events RSS
 - Princeton Public Library Communico events endpoint
 - Municipality of Princeton RSS calendar
+- Static resident-perk links verified from Princeton Public Library, Princeton University Community Auditing, Arts Council of Princeton, and Princeton municipal pages
 
 Civic map:
 - U.S. Census TIGERweb tract geometry
@@ -88,9 +89,11 @@ Civic map:
 - Civic map benchmarks must be generated from public data during refresh. Income and child-share use U.S. ACS values from the same release as Princeton tract estimates; children count is compared with U.S. average residents under 18 per census tract, not the national child total.
 - Explain Census terms in resident language. A tract should be presented as a stable Census comparison area, often neighborhood-sized, not as a named neighborhood, voting precinct, or address.
 - Civic address lookup should be submit-only, privacy-forward, and should not store searched addresses. The current implementation uses OpenStreetMap/Nominatim plus local tract geometry. Google Places autocomplete can be added later only after a Google Maps API key, billing, and domain restrictions are configured.
+- Resident perks must distinguish free benefits from access programs that cost money. Princeton University Community Auditing is resident-relevant, but it is tuition-based, not a free library-style perk.
 
 ## Feature Log
 
+- Latest - Added a resident perks section covering free library-card benefits, library parking/study rooms/museum passes/technology, community auditing, Arts Council resources, the free Princeton Loop, Human Services, and Recreation.
 - Latest - Added civic map address lookup that places a marker and highlights the matching tract without storing the submitted address.
 - Latest - Added a plain-English "What is a tract?" explainer to the civic map.
 - Latest - Added U.S. benchmark comparisons to civic map metrics, generated from public Census/FEC sources during the civic data refresh.
