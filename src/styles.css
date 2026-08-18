@@ -2943,3 +2943,157 @@ footer {
     font-size: 0.78rem;
   }
 }
+
+/* --- Garden Theatre now playing --- */
+
+.garden-theatre {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 22px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+}
+
+.garden-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.garden-head div {
+  display: grid;
+  flex: 1 1 200px;
+}
+
+.garden-head strong {
+  font-size: 1.02rem;
+}
+
+.garden-head small {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.8rem;
+}
+
+.garden-days {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 14px;
+}
+
+.garden-day > span {
+  display: block;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.garden-day ul {
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.garden-day li {
+  display: grid;
+  gap: 1px;
+  font-size: 0.9rem;
+}
+
+.garden-day li b {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.garden-note {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.78rem;
+}
+
+/* --- Verified local rules (parking, schools) --- */
+
+.local-rules {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.local-rule {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid rgba(23, 32, 27, 0.32);
+  border-radius: 8px;
+}
+
+.local-rule strong {
+  font-size: 1.02rem;
+}
+
+.local-rule p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.rule-headline {
+  padding: 10px 12px;
+  background: rgba(153, 68, 0, 0.08);
+  border-left: 3px solid var(--orange-deep);
+  border-radius: 0 6px 6px 0;
+  font-weight: 700;
+}
+
+.rule-caveat,
+.local-rule > p:not(.rule-headline) {
+  color: var(--ink-soft);
+}
+
+.rule-change {
+  color: var(--orange-deep);
+  font-weight: 700;
+}
+
+.local-rule dl {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+}
+
+.local-rule dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(23, 32, 27, 0.14);
+  font-size: 0.88rem;
+}
+
+.local-rule dt {
+  color: var(--ink-soft);
+}
+
+.local-rule dd {
+  margin: 0;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.rules-verified {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+}

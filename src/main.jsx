@@ -281,6 +281,74 @@ const civicMetrics = [
   },
 ];
 
+// Facts read off the official pages by hand, with the date each was checked. These are
+// rules residents act on, so each carries its source and the page shows how old the
+// check is. Re-verify when the verifiedOn date is more than a few months old.
+const localRules = {
+  verifiedOn: "2026-08-18",
+  parking: {
+    overnightBan: "No overnight parking on any former Princeton Borough street, 2 to 6 am.",
+    overnightCaveat: "Not all streets carry a sign saying so.",
+    meterHours: [
+      ["Monday to Thursday", "9 am to 8 pm"],
+      ["Friday and Saturday", "9 am to 9 pm"],
+      ["Sunday", "1 pm to 8 pm"],
+    ],
+    rateChange: "Meter rates rise on 14 September 2026: 30-minute spaces go from $1.00 to $1.25, and 90-minute zones from $3.00 to $3.50.",
+    note: "The 90-minute pay stations start at 10 am. The 15-minute Wawa meters are payable all day, every day.",
+    url: "https://www.princetonnj.gov/203/Parking-in-Princeton",
+  },
+  schools: {
+    firstDay: "2026-08-31",
+    firstDayLabel: "Monday 31 August 2026",
+    detail: "First day of school for students in Princeton Public Schools.",
+    url: "https://www.princetonk12.org/quick-links/calendars",
+  },
+  library: {
+    address: "65 Witherspoon Street",
+    // 0 = Sunday. Times are 24-hour local.
+    hours: {
+      0: [12, 17],
+      1: [9, 20],
+      2: [9, 20],
+      3: [9, 20],
+      4: [9, 20],
+      5: [9, 17],
+      6: [9, 17],
+    },
+    url: "https://princetonlibrary.org/",
+  },
+};
+
+// The library publishes hours as static text with no API and no holiday feed, so this
+// is computed from the posted weekly hours and says as much. It must never be presented
+// as authoritative on a holiday.
+function libraryStatus(now = new Date()) {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York",
+    weekday: "short",
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: false,
+  }).formatToParts(now);
+  const values = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  const dayIndex = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(values.weekday);
+  const span = localRules.library.hours[dayIndex];
+  if (!span) return { open: false, label: "Closed today" };
+  const minutes = Number(values.hour) * 60 + Number(values.minute);
+  const [openHour, closeHour] = span;
+  const open = minutes >= openHour * 60 && minutes < closeHour * 60;
+  const fmt = (hour) => {
+    const suffix = hour >= 12 ? "pm" : "am";
+    const twelve = hour % 12 === 0 ? 12 : hour % 12;
+    return `${twelve} ${suffix}`;
+  };
+  return {
+    open,
+    label: open ? `Open until ${fmt(closeHour)}` : `Closed, opens ${fmt(openHour)}`,
+  };
+}
+
 const commuteCards = [
   {
     title: "NYC by train",
@@ -298,8 +366,17 @@ const commuteCards = [
   },
   {
     title: "Downtown parking",
-    detail: "Meters, garages, permit zones, and Princeton Junction lots each work differently. Check before you commit.",
+    detail:
+      "Meters run 9 am to 8 pm Monday to Thursday, to 9 pm Friday and Saturday, and 1 pm to 8 pm Sunday. Rates rise on 14 September 2026.",
     action: "Parking rules",
+    url: "https://www.princetonnj.gov/203/Parking-in-Princeton",
+    icon: ParkingCircle,
+  },
+  {
+    title: "Overnight street parking",
+    detail:
+      "There is no overnight parking on any former Princeton Borough street between 2 and 6 am. Not every street carries a sign saying so.",
+    action: "Check the rule",
     url: "https://www.princetonnj.gov/203/Parking-in-Princeton",
     icon: ParkingCircle,
   },
@@ -883,6 +960,8 @@ function App() {
   const [recycleCoachFailed, setRecycleCoachFailed] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
   const [crimeData, setCrimeData] = useState(null);
+  const [gardenTheatre, setGardenTheatre] = useState(null);
+  const libraryOpen = useMemo(() => libraryStatus(), []);
   const [civicTooltip, setCivicTooltip] = useState({ x: 0, y: 0 });
   const [addressQuery, setAddressQuery] = useState("");
   const [addressLookup, setAddressLookup] = useState({
@@ -921,6 +1000,13 @@ function App() {
   useEffect(() => {
     // Absent or failed, the safety panel simply does not render. Crime figures are not
     // something to show a placeholder for.
+    fetch(`/garden-theatre.json?v=${DATA_VERSION}`)
+      .then((response) => (response.ok ? response.json() : null))
+      .then((data) => setGardenTheatre(data && data.filmCount ? data : null))
+      .catch(() => setGardenTheatre(null));
+  }, []);
+
+  useEffect(() => {
     fetch(`/crime-data.json?v=${DATA_VERSION}`)
       .then((response) => (response.ok ? response.json() : null))
       .then((data) => setCrimeData(data && data.year ? data : null))
@@ -1411,6 +1497,16 @@ function App() {
             <span>Alerts</span>
             <strong>{alertStatusLabel}</strong>
           </a>
+          {/* Library open/closed was one of the three named daily use cases and had no
+              answer anywhere on the site. Computed from the posted weekly hours, which is
+              the only form the library publishes: there is no API and no holiday feed. */}
+          <a
+            href={localRules.library.url}
+            {...externalLinkProps(localRules.library.url)}
+          >
+            <span>Public library</span>
+            <strong>{libraryOpen.label}</strong>
+          </a>
           <a
             href={nextEvent?.url ?? "https://www.princeton.edu/events"}
             {...externalLinkProps(nextEvent?.url ?? "https://www.princeton.edu/events")}
@@ -1899,6 +1995,46 @@ function App() {
             </div>
           </aside>
         </section>
+        <div className="local-rules">
+          <div className="local-rule">
+            <ParkingCircle size={19} aria-hidden="true" />
+            <strong>Parking, the rules that catch people out</strong>
+            <p className="rule-headline">{localRules.parking.overnightBan}</p>
+            <p className="rule-caveat">{localRules.parking.overnightCaveat}</p>
+            <dl>
+              {localRules.parking.meterHours.map(([when, hours]) => (
+                <div key={when}>
+                  <dt>{when}</dt>
+                  <dd>{hours}</dd>
+                </div>
+              ))}
+            </dl>
+            <p>{localRules.parking.note}</p>
+            <p className="rule-change">{localRules.parking.rateChange}</p>
+            <a href={localRules.parking.url} {...externalLinkProps(localRules.parking.url)}>
+              Official parking page
+            </a>
+          </div>
+          <div className="local-rule">
+            <CalendarDays size={19} aria-hidden="true" />
+            <strong>Princeton Public Schools</strong>
+            <p className="rule-headline">{localRules.schools.firstDayLabel}</p>
+            <p>{localRules.schools.detail}</p>
+            <a href={localRules.schools.url} {...externalLinkProps(localRules.schools.url)}>
+              District calendar
+            </a>
+          </div>
+          <p className="rules-verified">
+            Parking and school dates were read off the official pages on{" "}
+            {new Date(`${localRules.verifiedOn}T12:00:00Z`).toLocaleDateString("en-US", {
+              month: "long",
+              day: "numeric",
+              year: "numeric",
+              timeZone: "America/New_York",
+            })}
+            . Rules change, so confirm anything that carries a fine.
+          </p>
+        </div>
         <div className="tile-grid practical-more">
           {practicalTiles.map(({ label, value, url, icon: Icon }) => (
             <a className="utility-tile" href={url} key={label} {...externalLinkProps(url)}>
@@ -2503,6 +2639,47 @@ function App() {
             different silos. PrincetonLive keeps the useful public signals together.
           </p>
         </div>
+        {gardenTheatre ? (
+          <div className="garden-theatre">
+            <div className="garden-head">
+              <Film size={19} aria-hidden="true" />
+              <div>
+                <strong>Now playing at the Garden Theatre</strong>
+                <small>{gardenTheatre.address}</small>
+              </div>
+              <a
+                href={gardenTheatre.source}
+                {...externalLinkProps(gardenTheatre.source)}
+              >
+                Tickets and full schedule
+              </a>
+            </div>
+            <div className="garden-days">
+              {gardenTheatre.days.slice(0, 3).map((day) => (
+                <div className="garden-day" key={day.day}>
+                  <span>{day.day}</span>
+                  <ul>
+                    {day.screenings.map((film) => (
+                      <li key={film.slug}>
+                        <a href={film.url} {...externalLinkProps(film.url)}>
+                          {film.title}
+                        </a>
+                        <b>
+                          {film.times
+                            .map((slot) =>
+                              slot.badges?.length ? `${slot.time} ${slot.badges.join(" ")}` : slot.time,
+                            )
+                            .join("  ·  ")}
+                        </b>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+            <small className="garden-note">{gardenTheatre.note}</small>
+          </div>
+        ) : null}
         <div className="culture-layout">
           <div className="culture-map" aria-hidden="true">
             <span className="pin pin-library">

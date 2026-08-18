@@ -1,0 +1,301 @@
+{
+  "generatedAt": "2026-08-18T06:13:11.947Z",
+  "venue": "Princeton Garden Theatre",
+  "address": "160 Nassau Street, Princeton",
+  "source": "https://www.princetongardentheatre.org/",
+  "note": "Parsed from the theatre's published weekly schedule. Confirm showtimes and buy tickets on their site.",
+  "filmCount": 11,
+  "nowPlaying": [
+    {
+      "slug": "wild-inside",
+      "title": "Wild Inside",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-inside"
+    },
+    {
+      "slug": "the-odyssey",
+      "title": "The Odyssey",
+      "url": "https://www.princetongardentheatre.org/film?id=the-odyssey"
+    },
+    {
+      "slug": "catvideofest",
+      "title": "CatVideoFest 2026",
+      "url": "https://www.princetongardentheatre.org/film?id=catvideofest"
+    },
+    {
+      "slug": "strangers-on-a-train",
+      "title": "Strangers on a Train",
+      "url": "https://www.princetongardentheatre.org/film?id=strangers-on-a-train"
+    },
+    {
+      "slug": "princess-bride",
+      "title": "The Princess Bride",
+      "url": "https://www.princetongardentheatre.org/film?id=princess-bride"
+    },
+    {
+      "slug": "twin-peaks-s1-ep45",
+      "title": "Twin Peaks: Season 1 - Episodes 4 & 5",
+      "url": "https://www.princetongardentheatre.org/film?id=twin-peaks-s1-ep45"
+    },
+    {
+      "slug": "woodstock",
+      "title": "Woodstock",
+      "url": "https://www.princetongardentheatre.org/film?id=woodstock"
+    },
+    {
+      "slug": "hadestown-event",
+      "title": "Hadestown: The Musical",
+      "url": "https://www.princetongardentheatre.org/film?id=hadestown-event"
+    },
+    {
+      "slug": "love-finds-andy-hardy",
+      "title": "Love Finds Andy Hardy",
+      "url": "https://www.princetongardentheatre.org/film?id=love-finds-andy-hardy"
+    },
+    {
+      "slug": "taxi-driver",
+      "title": "Taxi Driver",
+      "url": "https://www.princetongardentheatre.org/film?id=taxi-driver"
+    },
+    {
+      "slug": "twin-peaks-s1-e67",
+      "title": "Twin Peaks: Season 1 - Episodes 6 & 7",
+      "url": "https://www.princetongardentheatre.org/film?id=twin-peaks-s1-e67"
+    }
+  ],
+  "days": [
+    {
+      "day": "Today",
+      "screenings": [
+        {
+          "slug": "wild-inside",
+          "title": "Wild Inside",
+          "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+          "times": [
+            {
+              "time": "3:45",
+              "badges": []
+            },
+            {
+              "time": "7:15",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "the-odyssey",
+          "title": "The Odyssey",
+          "url": "https://www.princetongardentheatre.org/film?id=the-odyssey",
+          "times": [
+            {
+              "time": "3:30",
+              "badges": []
+            },
+            {
+              "time": "7:10",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wed Aug 19",
+      "screenings": [
+        {
+          "slug": "wild-inside",
+          "title": "Wild Inside",
+          "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+          "times": [
+            {
+              "time": "3:45",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "the-odyssey",
+          "title": "The Odyssey",
+          "url": "https://www.princetongardentheatre.org/film?id=the-odyssey",
+          "times": [
+            {
+              "time": "12:05",
+              "badges": [
+                "OC"
+              ]
+            },
+            {
+              "time": "3:30",
+              "badges": [
+                "OC"
+              ]
+            },
+            {
+              "time": "7:10",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "catvideofest",
+          "title": "CatVideoFest 2026",
+          "url": "https://www.princetongardentheatre.org/film?id=catvideofest",
+          "times": [
+            {
+              "time": "1:00",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "strangers-on-a-train",
+          "title": "Strangers on a Train",
+          "url": "https://www.princetongardentheatre.org/film?id=strangers-on-a-train",
+          "times": [
+            {
+              "time": "7:00",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thu Aug 20",
+      "screenings": [
+        {
+          "slug": "wild-inside",
+          "title": "Wild Inside",
+          "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+          "times": [
+            {
+              "time": "3:45",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "the-odyssey",
+          "title": "The Odyssey",
+          "url": "https://www.princetongardentheatre.org/film?id=the-odyssey",
+          "times": [
+            {
+              "time": "3:30",
+              "badges": []
+            },
+            {
+              "time": "7:10",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "princess-bride",
+          "title": "The Princess Bride",
+          "url": "https://www.princetongardentheatre.org/film?id=princess-bride",
+          "times": [
+            {
+              "time": "7:00",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Fri Aug 21",
+      "screenings": [
+        {
+          "slug": "twin-peaks-s1-ep45",
+          "title": "Twin Peaks: Season 1 - Episodes 4 & 5",
+          "url": "https://www.princetongardentheatre.org/film?id=twin-peaks-s1-ep45",
+          "times": [
+            {
+              "time": "9:45 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Sun Aug 23",
+      "screenings": [
+        {
+          "slug": "woodstock",
+          "title": "Woodstock",
+          "url": "https://www.princetongardentheatre.org/film?id=woodstock",
+          "times": [
+            {
+              "time": "12:00",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Tue Aug 25",
+      "screenings": [
+        {
+          "slug": "hadestown-event",
+          "title": "Hadestown: The Musical",
+          "url": "https://www.princetongardentheatre.org/film?id=hadestown-event",
+          "times": [
+            {
+              "time": "7:00",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wed Aug 26",
+      "screenings": [
+        {
+          "slug": "love-finds-andy-hardy",
+          "title": "Love Finds Andy Hardy",
+          "url": "https://www.princetongardentheatre.org/film?id=love-finds-andy-hardy",
+          "times": [
+            {
+              "time": "7:00",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thu Aug 27",
+      "screenings": [
+        {
+          "slug": "taxi-driver",
+          "title": "Taxi Driver",
+          "url": "https://www.princetongardentheatre.org/film?id=taxi-driver",
+          "times": [
+            {
+              "time": "7:00",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Fri Aug 28",
+      "screenings": [
+        {
+          "slug": "twin-peaks-s1-e67",
+          "title": "Twin Peaks: Season 1 - Episodes 6 & 7",
+          "url": "https://www.princetongardentheatre.org/film?id=twin-peaks-s1-e67",
+          "times": [
+            {
+              "time": "9:45 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
