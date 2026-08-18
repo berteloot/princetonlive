@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-18T15:45:34.649Z",
+  "generatedAt": "2026-08-18T18:55:59.897Z",
   "weather": {
-    "temperature": 87,
+    "temperature": 85,
     "shortForecast": "Isolated Showers And Thunderstorms",
     "wind": "5 mph NW",
-    "detailedForecast": "Isolated showers and thunderstorms. Mostly sunny, with a high near 87. Northwest wind around 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
+    "detailedForecast": "Isolated showers and thunderstorms. Partly sunny, with a high near 85. Northwest wind around 5 mph. Chance of precipitation is 20%.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -113,18 +113,6 @@
       ]
     },
     {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Spruce Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 18, 2026",
-      "timeLabel": "01:00 PM - 01:45 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7336",
-      "tags": [
-        "family",
-        "practical"
-      ]
-    },
-    {
       "title": "Food Insecurity Task Force: Arm in Arm",
       "source": "Municipality of Princeton",
       "dateLabel": "August 18, 2026",
@@ -132,18 +120,6 @@
       "location": "Princeton, NJ 08540",
       "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7747",
       "tags": [
-        "practical"
-      ]
-    },
-    {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Redding Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 18, 2026",
-      "timeLabel": "02:00 PM - 02:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7388",
-      "tags": [
-        "family",
         "practical"
       ]
     },
@@ -228,6 +204,30 @@
         "family",
         "practical"
       ]
+    },
+    {
+      "title": "Kids: Baby Storytime",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 19",
+      "timeLabel": "11:30am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14662389",
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "title": "Kids: Baby Play Group",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 19",
+      "timeLabel": "12:00pm - 1:00pm",
+      "location": "Princeton Public Library",
+      "url": "https://princetonlibrary.libnet.info/event/14662322",
+      "tags": [
+        "new",
+        "family",
+        "practical"
+      ]
     }
   ],
   "sources": [
@@ -235,7 +235,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Isolated Showers And Thunderstorms, 87F"
+      "detail": "Isolated Showers And Thunderstorms, 85F"
     },
     {
       "name": "Princeton University Events",
@@ -253,7 +253,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "33 calendar items"
+      "detail": "31 calendar items"
     }
   ]
 }
