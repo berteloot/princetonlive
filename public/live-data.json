@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-18T09:10:22.511Z",
+  "generatedAt": "2026-08-18T09:48:42.160Z",
   "weather": {
     "temperature": 69,
     "shortForecast": "Patchy Fog",
     "wind": "0 mph ",
-    "detailedForecast": "Patchy fog and isolated showers and thunderstorms. Mostly cloudy, with a low around 69. Northeast wind around 0 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
+    "detailedForecast": "Patchy fog and isolated showers and thunderstorms. Mostly cloudy, with a low around 69. North wind around 0 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
