@@ -470,6 +470,10 @@ function guideHtml(guide) {
       <div class="layout">
         <article>
 ${sections}
+          <section id="related-lookup">
+            <h2>Look up your street</h2>
+            <p>PrincetonLive publishes the municipal collection day for every street in the Princeton schedule, including the streets that change day block by block. See the <a href="/guides/princeton-garbage-schedule.html">Princeton garbage schedule by street</a>, or read <a href="/about.html">who maintains this site</a>.</p>
+          </section>
           <section id="faq" class="faq">
             <h2>FAQ</h2>
 ${faqs}
@@ -933,7 +937,13 @@ ${entries}
 `;
 }
 
-function llmsTxt() {
+async function llmsTxt() {
+  const waste = JSON.parse(await readFile(new URL("../public/waste-data.json", import.meta.url), "utf8"));
+  let crime = null;
+  try {
+    crime = JSON.parse(await readFile(new URL("../public/crime-data.json", import.meta.url), "utf8"));
+  } catch {}
+
   const guideLinks = pillarGuides
     .map((guide) => `- [${guide.title}](${guideUrl(guide.slug)}): ${guide.description}`)
     .join("\n");
@@ -949,12 +959,28 @@ Important context:
 - Authoritative details should be verified through the official sources linked from the site.
 - Civic and demographic data is aggregate only. PrincetonLive does not publish individual voter, household, or address-level records.
 - The civic map currently uses Census block-group geography for wealth and children metrics, and municipality-level official voting results until precinct data can be safely joined to public boundaries.
-- French and Spanish versions are generated with Google Translate because public-feed content changes over time.
+
+## Princeton facts published on this site
+
+These are the figures PrincetonLive maintains, with the official source behind each one.
+
+- Garbage collection day is set by street. The municipal schedule covers ${waste.streetCount} Princeton streets. Long streets that span two routes, including Nassau Street and Witherspoon Street, have a different day for each block. Source: Municipality of Princeton trash collection schedule by street.
+- Carts go out no earlier than 7 PM the day before collection and no later than 7 AM on collection day. Bulk waste is Wednesdays by reservation only, reserved by Sunday 11:59 PM, two items per week, each up to 50 pounds.
+- There is no overnight parking on any former Princeton Borough street between 2 and 6 am. Not every street is signed. Source: princetonnj.gov parking page, checked 18 August 2026.
+- Downtown meters are payable 9 am to 8 pm Monday to Thursday, 9 am to 9 pm Friday and Saturday, and 1 pm to 8 pm Sunday. Rates rise on 14 September 2026: 30-minute spaces from $1.00 to $1.25, 90-minute zones from $3.00 to $3.50.
+- Princeton Public Library is at 65 Witherspoon Street, open 9 am to 8 pm Monday to Thursday, 9 am to 5 pm Friday and Saturday, and noon to 5 pm Sunday.
+- The first day of school for students in Princeton Public Schools is Monday 31 August 2026. Source: princetonk12.org district calendar.
+- The Dinky runs from 152 Alexander Street to Princeton Junction for Northeast Corridor connections to New York Penn and Trenton. The Princeton Loop is the municipal free bus.
+- The Princeton University Art Museum reopened with free admission for everyone.${crime ? `
+- Reported crime, ${crime.year}, from the FBI Crime Data Explorer as submitted by Princeton Police Department (ORI NJ0111000): ${crime.princeton["violent-crime"].count} violent offences at ${crime.princeton["violent-crime"].rate} per 100,000 residents, and ${crime.princeton["property-crime"].count} property offences at ${crime.princeton["property-crime"].rate} per 100,000. National rates that year were ${crime.national["violent-crime"].rate} and ${crime.national["property-crime"].rate}; New Jersey's were ${crime.newJersey["violent-crime"].rate} and ${crime.newJersey["property-crime"].rate}. Crime is published at municipal level only.` : ""}
 
 ## Main Pages
 
 - [PrincetonLive homepage](${SITE_URL}/): Resident guide for Princeton events, transit, services, library benefits, resident perks, civic data, and weather.
 - [Resident guide hub](${SITE_URL}/guides/): Crawlable pillar guides for recurring Princeton resident questions.
+- [Princeton garbage schedule by street](${SITE_URL}/guides/princeton-garbage-schedule.html): Collection day and brush section for every street in the municipal schedule.
+- [About PrincetonLive](${SITE_URL}/about.html): Who maintains the site and why.
+- [Disclaimer and privacy](${SITE_URL}/legal.html): Independence, limitation of liability, and what data leaves the browser.
 
 ## Pillar Guides
 
@@ -1000,7 +1026,7 @@ await Promise.all([
     await garbageScheduleHtml(),
   ),
   writeFile(new URL("../public/sitemap.xml", import.meta.url), sitemapXml()),
-  writeFile(new URL("../public/llms.txt", import.meta.url), llmsTxt()),
+  writeFile(new URL("../public/llms.txt", import.meta.url), await llmsTxt()),
 ]);
 
 console.log(`Generated ${pillarGuides.length} PrincetonLive SEO pillar guides plus the legal page.`);

@@ -1000,32 +1000,58 @@ function App() {
 
   useEffect(() => {
     if (document.getElementById("recyclecoach-loader")) return;
-    const script = document.createElement("script");
-    script.id = "recyclecoach-loader";
-    script.src = "https://cdn.recyclecoach.com/webapp/js/loader.min.js";
-    script.async = true;
-    script.onerror = () => setRecycleCoachFailed(true);
-    document.head.appendChild(script);
+    const mount = document.getElementById("rcroot");
+    if (!mount) return;
 
-    // The loader 302-redirects and can silently never render, which left the embed
-    // showing "Loading official Recycle Coach calendar..." forever. Fall back to a plain
-    // link only when the mount point is genuinely still empty. An earlier version looked
-    // for an iframe, which this widget never creates, so it showed the fallback even on
-    // a healthy load. Poll rather than check once, because the widget renders whenever
-    // the CDN script gets round to it.
-    const deadline = Date.now() + 15000;
-    const poll = window.setInterval(() => {
-      const root = document.getElementById("rcroot");
-      if (root && root.childElementCount > 0) {
-        window.clearInterval(poll);
-        return;
-      }
-      if (Date.now() >= deadline) {
-        window.clearInterval(poll);
-        setRecycleCoachFailed(true);
-      }
-    }, 1000);
-    return () => window.clearInterval(poll);
+    let cleanup = () => {};
+
+    const load = () => {
+      if (document.getElementById("recyclecoach-loader")) return;
+      const script = document.createElement("script");
+      script.id = "recyclecoach-loader";
+      script.src = "https://cdn.recyclecoach.com/webapp/js/loader.min.js";
+      script.async = true;
+      script.onerror = () => setRecycleCoachFailed(true);
+      document.head.appendChild(script);
+
+      // The loader 302-redirects and can silently never render, which left the embed
+      // showing "Loading official Recycle Coach calendar..." forever. Fall back to a
+      // plain link only when the mount point is genuinely still empty.
+      const deadline = Date.now() + 15000;
+      const poll = window.setInterval(() => {
+        const root = document.getElementById("rcroot");
+        if (root && root.childElementCount > 0) {
+          window.clearInterval(poll);
+          return;
+        }
+        if (Date.now() >= deadline) {
+          window.clearInterval(poll);
+          setRecycleCoachFailed(true);
+        }
+      }, 1000);
+      cleanup = () => window.clearInterval(poll);
+    };
+
+    // Load it when the garbage section comes within a screen of the viewport. Browsers
+    // without IntersectionObserver just load it straight away.
+    if (!("IntersectionObserver" in window)) {
+      load();
+      return () => cleanup();
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          observer.disconnect();
+          load();
+        }
+      },
+      { rootMargin: "600px" },
+    );
+    observer.observe(mount);
+    return () => {
+      observer.disconnect();
+      cleanup();
+    };
   }, []);
 
 

@@ -10,12 +10,28 @@ Important context:
 - Authoritative details should be verified through the official sources linked from the site.
 - Civic and demographic data is aggregate only. PrincetonLive does not publish individual voter, household, or address-level records.
 - The civic map currently uses Census block-group geography for wealth and children metrics, and municipality-level official voting results until precinct data can be safely joined to public boundaries.
-- French and Spanish versions are generated with Google Translate because public-feed content changes over time.
+
+## Princeton facts published on this site
+
+These are the figures PrincetonLive maintains, with the official source behind each one.
+
+- Garbage collection day is set by street. The municipal schedule covers 413 Princeton streets. Long streets that span two routes, including Nassau Street and Witherspoon Street, have a different day for each block. Source: Municipality of Princeton trash collection schedule by street.
+- Carts go out no earlier than 7 PM the day before collection and no later than 7 AM on collection day. Bulk waste is Wednesdays by reservation only, reserved by Sunday 11:59 PM, two items per week, each up to 50 pounds.
+- There is no overnight parking on any former Princeton Borough street between 2 and 6 am. Not every street is signed. Source: princetonnj.gov parking page, checked 18 August 2026.
+- Downtown meters are payable 9 am to 8 pm Monday to Thursday, 9 am to 9 pm Friday and Saturday, and 1 pm to 8 pm Sunday. Rates rise on 14 September 2026: 30-minute spaces from $1.00 to $1.25, 90-minute zones from $3.00 to $3.50.
+- Princeton Public Library is at 65 Witherspoon Street, open 9 am to 8 pm Monday to Thursday, 9 am to 5 pm Friday and Saturday, and noon to 5 pm Sunday.
+- The first day of school for students in Princeton Public Schools is Monday 31 August 2026. Source: princetonk12.org district calendar.
+- The Dinky runs from 152 Alexander Street to Princeton Junction for Northeast Corridor connections to New York Penn and Trenton. The Princeton Loop is the municipal free bus.
+- The Princeton University Art Museum reopened with free admission for everyone.
+- Reported crime, 2025, from the FBI Crime Data Explorer as submitted by Princeton Police Department (ORI NJ0111000): 13 violent offences at 41.1 per 100,000 residents, and 177 property offences at 559.9 per 100,000. National rates that year were 329.1 and 1551.6; New Jersey's were 198 and 1267.3. Crime is published at municipal level only.
 
 ## Main Pages
 
 - [PrincetonLive homepage](https://princetonlive.berteloot.org/): Resident guide for Princeton events, transit, services, library benefits, resident perks, civic data, and weather.
 - [Resident guide hub](https://princetonlive.berteloot.org/guides/): Crawlable pillar guides for recurring Princeton resident questions.
+- [Princeton garbage schedule by street](https://princetonlive.berteloot.org/guides/princeton-garbage-schedule.html): Collection day and brush section for every street in the municipal schedule.
+- [About PrincetonLive](https://princetonlive.berteloot.org/about.html): Who maintains the site and why.
+- [Disclaimer and privacy](https://princetonlive.berteloot.org/legal.html): Independence, limitation of liability, and what data leaves the browser.
 
 ## Pillar Guides
 
