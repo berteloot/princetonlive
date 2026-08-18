@@ -16,8 +16,6 @@ Important context:
 
 - [PrincetonLive homepage](https://princetonlive.berteloot.org/): Resident guide for Princeton events, transit, services, library benefits, resident perks, civic data, and weather.
 - [Resident guide hub](https://princetonlive.berteloot.org/guides/): Crawlable pillar guides for recurring Princeton resident questions.
-- [French version](https://princetonlive.berteloot.org/?lang=fr): Google-translated French view.
-- [Spanish version](https://princetonlive.berteloot.org/?lang=es): Google-translated Spanish view.
 
 ## Pillar Guides
 

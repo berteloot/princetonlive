@@ -33,7 +33,7 @@ services:
       # nothing was reported as violating while it ran in report-only mode.
       - path: /*
         name: Content-Security-Policy
-        value: "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://translate.google.com https://translate.googleapis.com https://cdn.recyclecoach.com https://*.recyclecoach.com; style-src 'self' 'unsafe-inline' https://www.gstatic.com https://fonts.googleapis.com https://translate.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://nominatim.openstreetmap.org https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://translate.googleapis.com https://*.recyclecoach.com; frame-src https://*.recyclecoach.com https://www.google.com; base-uri 'self'; form-action 'self'; object-src 'none'; frame-ancestors 'self'"
+        value: "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdn.recyclecoach.com https://*.recyclecoach.com; style-src 'self' 'unsafe-inline' https://www.gstatic.com https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://nominatim.openstreetmap.org https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.recyclecoach.com; frame-src https://*.recyclecoach.com https://www.google.com; base-uri 'self'; form-action 'self'; object-src 'none'; frame-ancestors 'self'"
       # The JSON feeds are advertised in llms.txt as machine-readable endpoints.
       - path: /live-data.json
         name: Access-Control-Allow-Origin

@@ -37,11 +37,6 @@ import {
 } from "lucide-react";
 import "./styles.css";
 
-const languages = [
-  { code: "en", short: "EN", label: "English" },
-  { code: "fr", short: "FR", label: "Francais" },
-  { code: "es", short: "ES", label: "Espanol" },
-];
 
 const profileStorageKey = "princetonlive.residentProfile";
 
@@ -60,23 +55,6 @@ const defaultResidentProfile = {
 // "PrincetonLive", which threw away the served title, and the fr/es entries were
 // English strings describing a translation ("PrincetonLive in French") that were
 // useless as a search snippet.
-const languageMeta = {
-  en: {
-    title: "PrincetonLive | Princeton, NJ resident guide",
-    description:
-      "Daily Princeton, NJ resident guide: garbage day by street, weather alerts, public events, transit, town services, and library benefits.",
-  },
-  fr: {
-    title: "PrincetonLive | Guide du résident de Princeton, NJ",
-    description:
-      "Guide quotidien pour les résidents de Princeton, NJ: jour de collecte des ordures par rue, alertes météo, événements publics, transports et services municipaux.",
-  },
-  es: {
-    title: "PrincetonLive | Guía para residentes de Princeton, NJ",
-    description:
-      "Guía diaria para residentes de Princeton, NJ: día de recogida de basura por calle, alertas meteorológicas, eventos públicos, transporte y servicios municipales.",
-  },
-};
 
 // Cache-busting bucket. A per-load Date.now() defeated the browser and CDN cache on
 // every visit. A 5-minute bucket matches the CDN s-maxage=300 and still picks up the
@@ -556,6 +534,11 @@ const residentFaqs = [
 
 const pillarGuides = [
   {
+    title: "Garbage schedule by street",
+    detail: "Collection day and brush section for every Princeton street, with the set-out times and bulk rules.",
+    url: "/guides/princeton-garbage-schedule.html",
+  },
+  {
     title: "Moving to Princeton",
     detail: "First-week orientation for new residents: alerts, transit, library cards, services, and local discovery.",
     url: "/guides/moving-to-princeton.html",
@@ -761,11 +744,6 @@ const exploreStops = [
   },
 ];
 
-function getInitialLanguage() {
-  const params = new URLSearchParams(window.location.search);
-  const lang = params.get("lang") || params.get("tl") || params.get("_x_tr_tl");
-  return lang === "fr" || lang === "es" ? lang : "en";
-}
 
 function getStoredResidentProfile() {
   try {
@@ -781,20 +759,7 @@ function getStoredResidentProfile() {
   }
 }
 
-function setGoogleTranslateCookie(targetLanguage) {
-  const expires = "expires=Fri, 31 Dec 9999 23:59:59 GMT";
-  const value = targetLanguage === "en" ? "/en/en" : `/en/${targetLanguage}`;
-  document.cookie = `googtrans=${value}; path=/; ${expires}`;
-  document.cookie = `googtrans=${value}; domain=.berteloot.org; path=/; ${expires}`;
-}
 
-function triggerGoogleTranslate(targetLanguage) {
-  const combo = document.querySelector(".goog-te-combo");
-  if (!combo) return false;
-  combo.value = targetLanguage;
-  combo.dispatchEvent(new Event("change"));
-  return true;
-}
 
 function normalizeWasteStreet(value) {
   return value
@@ -946,7 +911,6 @@ function tractFill(feature, key, domain) {
 }
 
 function App() {
-  const [language, setLanguage] = useState(getInitialLanguage);
   const [filter, setFilter] = useState("all");
   const [query, setQuery] = useState("");
   const [residentProfile, setResidentProfile] = useState(getStoredResidentProfile);
@@ -1064,40 +1028,10 @@ function App() {
     return () => window.clearInterval(poll);
   }, []);
 
+
   useEffect(() => {
-    if (window.google?.translate?.TranslateElement) return;
-
-    window.googleTranslateElementInit = () => {
-      if (!window.google?.translate?.TranslateElement) return;
-      new window.google.translate.TranslateElement(
-        {
-          pageLanguage: "en",
-          includedLanguages: "en,fr,es",
-          autoDisplay: false,
-          layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
-        },
-        "google_translate_element",
-      );
-    };
-
-    const script = document.createElement("script");
-    script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-    script.async = true;
-    document.head.appendChild(script);
+    document.documentElement.lang = "en";
   }, []);
-
-  useEffect(() => {
-    document.documentElement.lang = language;
-    document.title = languageMeta[language].title;
-    const metaDescription = document.querySelector('meta[name="description"]');
-    metaDescription?.setAttribute("content", languageMeta[language].description);
-    setGoogleTranslateCookie(language);
-
-    const attempts = [250, 750, 1500, 2500].map((delay) =>
-      window.setTimeout(() => triggerGoogleTranslate(language), delay),
-    );
-    return () => attempts.forEach((attempt) => window.clearTimeout(attempt));
-  }, [language]);
 
   useEffect(() => {
     const scrollToHash = () => {
@@ -1115,19 +1049,6 @@ function App() {
     };
   }, [liveData.generatedAt, civicMap.generatedAt, wasteData.generatedAt]);
 
-  const selectLanguage = (nextLanguage) => {
-    if (nextLanguage === language) return;
-
-    setGoogleTranslateCookie(nextLanguage);
-    setLanguage(nextLanguage);
-    const url = new URL(window.location.href);
-    if (nextLanguage === "en") {
-      url.searchParams.delete("lang");
-    } else {
-      url.searchParams.set("lang", nextLanguage);
-    }
-    window.location.assign(`${url.pathname}${url.search}${url.hash}`);
-  };
 
   const filteredEvents = useMemo(() => {
     const normalized = query.trim().toLowerCase();
@@ -1366,7 +1287,7 @@ function App() {
           </span>
         </a>
         <div className="header-controls">
-          {/* On a phone the ten links plus the language switcher made a 206px header,
+          {/* On a phone the ten links plus the header controls made a 206px header,
               roughly a quarter of an 844px screen, before any content. Below 900px they
               collapse behind this toggle. */}
           <button
@@ -1390,30 +1311,6 @@ function App() {
               </a>
             ))}
           </nav>
-          {/* role="group" so the aria-label is honored: on a bare div it is dropped.
-              aria-current marks the one active language, which is what a single-select
-              group means. aria-pressed described three independent toggles. */}
-          <div
-            className="language-switcher notranslate"
-            translate="no"
-            role="group"
-            aria-label="Page language"
-          >
-            <span className="translation-provider">Google Translate</span>
-            {languages.map((option) => (
-              <button
-                key={option.code}
-                type="button"
-                className={language === option.code ? "is-active" : ""}
-                onClick={() => selectLanguage(option.code)}
-                aria-current={language === option.code ? "true" : undefined}
-                aria-label={option.label}
-              >
-                {option.short}
-              </button>
-            ))}
-          </div>
-          <div id="google_translate_element" className="google-translate-shell" />
         </div>
       </header>
 
@@ -2587,7 +2484,7 @@ function App() {
         <div className="section-heading split">
           <div>
             <p className="eyebrow">FAQ</p>
-            <h2 id="faq-heading">Clear answers for residents and AI assistants.</h2>
+            <h2 id="faq-heading">Common questions about this site.</h2>
           </div>
           <p>
             Short answers to the questions a new Princetonian, a search engine, or an AI chatbot
@@ -2611,8 +2508,9 @@ function App() {
             <h2 id="guides-heading">Stable pages for recurring Princeton questions.</h2>
           </div>
           <p>
-            Crawlable resident guides give search engines and AI assistants durable pages to cite,
-            while the homepage stays focused on live daily signals.
+            The homepage answers what is happening today. These pages answer the questions that
+            stay the same: what a library card gets you, how to reach New York without a car,
+            which day your street is collected.
           </p>
         </div>
         <div className="guide-grid">

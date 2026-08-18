@@ -209,8 +209,6 @@ const pillarGuides = [
 
 const homepageRoutes = [
   { url: "/", priority: "1.0", changefreq: "daily" },
-  { url: "/?lang=fr", priority: "0.8", changefreq: "daily" },
-  { url: "/?lang=es", priority: "0.8", changefreq: "daily" },
 ];
 
 const dataRoutes = [
@@ -916,13 +914,7 @@ function sitemapXml() {
   ];
   const entries = routes
     .map((route) => {
-      const alternates = route.url === "/" || route.url.startsWith("/?lang=")
-        ? `
-    <xhtml:link rel="alternate" hreflang="en" href="${SITE_URL}/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="${SITE_URL}/?lang=fr" />
-    <xhtml:link rel="alternate" hreflang="es" href="${SITE_URL}/?lang=es" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}/" />`
-        : "";
+      const alternates = "";
       return `  <url>
     <loc>${absolute(route.url)}</loc>
     <lastmod>${today}</lastmod>
@@ -963,8 +955,6 @@ Important context:
 
 - [PrincetonLive homepage](${SITE_URL}/): Resident guide for Princeton events, transit, services, library benefits, resident perks, civic data, and weather.
 - [Resident guide hub](${SITE_URL}/guides/): Crawlable pillar guides for recurring Princeton resident questions.
-- [French version](${SITE_URL}/?lang=fr): Google-translated French view.
-- [Spanish version](${SITE_URL}/?lang=es): Google-translated Spanish view.
 
 ## Pillar Guides
 
