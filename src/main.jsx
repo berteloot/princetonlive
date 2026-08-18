@@ -2801,6 +2801,8 @@ function App() {
             for severe weather.
           </p>
           <p>
+            <a href="/about.html">About this site</a>
+            {"  ·  "}
             <a href="/legal.html">Disclaimer, terms, and privacy</a>
           </p>
         </div>

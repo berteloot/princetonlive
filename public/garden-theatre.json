@@ -1,97 +1,470 @@
 {
-  "generatedAt": "2026-08-18T06:13:27.284Z",
+  "generatedAt": "2026-08-18T06:24:56.097Z",
   "venue": "Princeton Garden Theatre",
   "address": "160 Nassau Street, Princeton",
   "source": "https://www.princetongardentheatre.org/",
-  "note": "Parsed from the theatre's published weekly schedule. Confirm showtimes and buy tickets on their site.",
-  "filmCount": 11,
+  "sourceUsed": "veezi-storefront",
+  "note": "Read from the theatre's own ticketing system. Confirm showtimes and buy tickets on their site.",
+  "filmCount": 61,
   "nowPlaying": [
-    {
-      "slug": "wild-inside",
-      "title": "Wild Inside",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-inside"
-    },
     {
       "slug": "the-odyssey",
       "title": "The Odyssey",
-      "url": "https://www.princetongardentheatre.org/film?id=the-odyssey"
+      "url": "https://www.princetongardentheatre.org/film?id=the-odyssey",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007604",
+      "rating": "for violence and some language."
     },
     {
-      "slug": "catvideofest",
+      "slug": "wild-inside",
+      "title": "Wild Inside",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007852",
+      "rating": ""
+    },
+    {
+      "slug": "catvideofest-2026",
       "title": "CatVideoFest 2026",
-      "url": "https://www.princetongardentheatre.org/film?id=catvideofest"
+      "url": "https://www.princetongardentheatre.org/film?id=catvideofest-2026",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007765",
+      "rating": "NR"
     },
     {
       "slug": "strangers-on-a-train",
       "title": "Strangers on a Train",
-      "url": "https://www.princetongardentheatre.org/film?id=strangers-on-a-train"
+      "url": "https://www.princetongardentheatre.org/film?id=strangers-on-a-train",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007311",
+      "rating": "PG for some violence and tension"
     },
     {
-      "slug": "princess-bride",
+      "slug": "the-princess-bride",
       "title": "The Princess Bride",
-      "url": "https://www.princetongardentheatre.org/film?id=princess-bride"
+      "url": "https://www.princetongardentheatre.org/film?id=the-princess-bride",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000001843",
+      "rating": "PG"
     },
     {
-      "slug": "twin-peaks-s1-ep45",
+      "slug": "twin-peaks-season-1-episodes-4-5",
       "title": "Twin Peaks: Season 1 - Episodes 4 & 5",
-      "url": "https://www.princetongardentheatre.org/film?id=twin-peaks-s1-ep45"
+      "url": "https://www.princetongardentheatre.org/film?id=twin-peaks-season-1-episodes-4-5",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000006773",
+      "rating": ""
     },
     {
       "slug": "woodstock",
       "title": "Woodstock",
-      "url": "https://www.princetongardentheatre.org/film?id=woodstock"
+      "url": "https://www.princetongardentheatre.org/film?id=woodstock",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000001576",
+      "rating": "R"
     },
     {
-      "slug": "hadestown-event",
+      "slug": "hadestown-the-musical",
       "title": "Hadestown: The Musical",
-      "url": "https://www.princetongardentheatre.org/film?id=hadestown-event"
+      "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007850",
+      "rating": "NR"
     },
     {
       "slug": "love-finds-andy-hardy",
       "title": "Love Finds Andy Hardy",
-      "url": "https://www.princetongardentheatre.org/film?id=love-finds-andy-hardy"
+      "url": "https://www.princetongardentheatre.org/film?id=love-finds-andy-hardy",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007437",
+      "rating": ""
     },
     {
       "slug": "taxi-driver",
       "title": "Taxi Driver",
-      "url": "https://www.princetongardentheatre.org/film?id=taxi-driver"
+      "url": "https://www.princetongardentheatre.org/film?id=taxi-driver",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007309",
+      "rating": "R"
     },
     {
-      "slug": "twin-peaks-s1-e67",
+      "slug": "twin-peaks-season-1-episodes-6-7",
       "title": "Twin Peaks: Season 1 - Episodes 6 & 7",
-      "url": "https://www.princetongardentheatre.org/film?id=twin-peaks-s1-e67"
+      "url": "https://www.princetongardentheatre.org/film?id=twin-peaks-season-1-episodes-6-7",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000006773",
+      "rating": ""
+    },
+    {
+      "slug": "leonardo-the-works",
+      "title": "Leonardo: The Works",
+      "url": "https://www.princetongardentheatre.org/film?id=leonardo-the-works",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007498",
+      "rating": ""
+    },
+    {
+      "slug": "call-northside-777",
+      "title": "Call Northside 777",
+      "url": "https://www.princetongardentheatre.org/film?id=call-northside-777",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007342",
+      "rating": ""
+    },
+    {
+      "slug": "newsies",
+      "title": "Newsies",
+      "url": "https://www.princetongardentheatre.org/film?id=newsies",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007284",
+      "rating": "PG"
+    },
+    {
+      "slug": "dodsworth",
+      "title": "Dodsworth",
+      "url": "https://www.princetongardentheatre.org/film?id=dodsworth",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007386",
+      "rating": ""
+    },
+    {
+      "slug": "queen-kelly",
+      "title": "Queen Kelly",
+      "url": "https://www.princetongardentheatre.org/film?id=queen-kelly",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007394",
+      "rating": ""
+    },
+    {
+      "slug": "the-great-escape",
+      "title": "The Great Escape",
+      "url": "https://www.princetongardentheatre.org/film?id=the-great-escape",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000004236",
+      "rating": ""
+    },
+    {
+      "slug": "robert-irwin-a-desert-of-pure-feeling",
+      "title": "Robert Irwin: A Desert Of Pure Feeling",
+      "url": "https://www.princetongardentheatre.org/film?id=robert-irwin-a-desert-of-pure-feeling",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007836",
+      "rating": ""
+    },
+    {
+      "slug": "death-taxes",
+      "title": "Death & Taxes",
+      "url": "https://www.princetongardentheatre.org/film?id=death-taxes",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007728",
+      "rating": ""
+    },
+    {
+      "slug": "legacy-apartheid-s-shadow",
+      "title": "Legacy: Apartheid's Shadow",
+      "url": "https://www.princetongardentheatre.org/film?id=legacy-apartheid-s-shadow",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007747",
+      "rating": ""
+    },
+    {
+      "slug": "wildwood-nj",
+      "title": "Wildwood, NJ",
+      "url": "https://www.princetongardentheatre.org/film?id=wildwood-nj",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007622",
+      "rating": ""
+    },
+    {
+      "slug": "seminar-city-of-god",
+      "title": "Seminar: City of God",
+      "url": "https://www.princetongardentheatre.org/film?id=seminar-city-of-god",
+      "poster": "https://ticketing.useast.veezi.com/Content/Images/filmdefault.png",
+      "rating": ""
+    },
+    {
+      "slug": "city-of-god",
+      "title": "City of God",
+      "url": "https://www.princetongardentheatre.org/film?id=city-of-god",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007751",
+      "rating": "R for strong brutal violence, sexuality, drug content and language"
+    },
+    {
+      "slug": "dune-1984",
+      "title": "Dune (1984)",
+      "url": "https://www.princetongardentheatre.org/film?id=dune-1984",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007614",
+      "rating": "PG-13"
+    },
+    {
+      "slug": "how-to-train-your-dragon",
+      "title": "How to Train Your Dragon",
+      "url": "https://www.princetongardentheatre.org/film?id=how-to-train-your-dragon",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007207",
+      "rating": "PG for sequences of intense action and some scary images, and brief mild language"
+    },
+    {
+      "slug": "ntlive-the-misanthrope",
+      "title": "NTLive: The Misanthrope",
+      "url": "https://www.princetongardentheatre.org/film?id=ntlive-the-misanthrope",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007834",
+      "rating": ""
+    },
+    {
+      "slug": "the-joy-luck-club",
+      "title": "The Joy Luck Club",
+      "url": "https://www.princetongardentheatre.org/film?id=the-joy-luck-club",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007736",
+      "rating": "R for strong depiction of thematic material"
+    },
+    {
+      "slug": "the-trouble-with-harry",
+      "title": "The Trouble with Harry",
+      "url": "https://www.princetongardentheatre.org/film?id=the-trouble-with-harry",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007665",
+      "rating": "PG"
+    },
+    {
+      "slug": "james-mcneill-whistler",
+      "title": "James McNeill Whistler",
+      "url": "https://www.princetongardentheatre.org/film?id=james-mcneill-whistler",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007839",
+      "rating": ""
+    },
+    {
+      "slug": "the-cat-and-the-canary",
+      "title": "The Cat and the Canary",
+      "url": "https://www.princetongardentheatre.org/film?id=the-cat-and-the-canary",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007657",
+      "rating": ""
+    },
+    {
+      "slug": "my-brain-after-the-rupture",
+      "title": "My Brain: After the Rupture",
+      "url": "https://www.princetongardentheatre.org/film?id=my-brain-after-the-rupture",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007753",
+      "rating": ""
+    },
+    {
+      "slug": "close-up",
+      "title": "Close-Up",
+      "url": "https://www.princetongardentheatre.org/film?id=close-up",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000002042",
+      "rating": ""
+    },
+    {
+      "slug": "garden-goes-global-passports",
+      "title": "Garden Goes Global - Passports",
+      "url": "https://www.princetongardentheatre.org/film?id=garden-goes-global-passports",
+      "poster": "https://ticketing.useast.veezi.com/Content/Images/filmdefault.png",
+      "rating": ""
+    },
+    {
+      "slug": "dogtooth",
+      "title": "Dogtooth",
+      "url": "https://www.princetongardentheatre.org/film?id=dogtooth",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007564",
+      "rating": ""
+    },
+    {
+      "slug": "faust",
+      "title": "Faust",
+      "url": "https://www.princetongardentheatre.org/film?id=faust",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007578",
+      "rating": ""
+    },
+    {
+      "slug": "touki-bouki",
+      "title": "Touki Bouki",
+      "url": "https://www.princetongardentheatre.org/film?id=touki-bouki",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007581",
+      "rating": ""
+    },
+    {
+      "slug": "weekend",
+      "title": "Weekend",
+      "url": "https://www.princetongardentheatre.org/film?id=weekend",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007569",
+      "rating": ""
+    },
+    {
+      "slug": "the-raid",
+      "title": "The Raid",
+      "url": "https://www.princetongardentheatre.org/film?id=the-raid",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007566",
+      "rating": "R for strong brutal bloody violence throughout, and language"
+    },
+    {
+      "slug": "good-morning",
+      "title": "Good Morning",
+      "url": "https://www.princetongardentheatre.org/film?id=good-morning",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007575",
+      "rating": ""
+    },
+    {
+      "slug": "restless-blood",
+      "title": "Restless Blood",
+      "url": "https://www.princetongardentheatre.org/film?id=restless-blood",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007585",
+      "rating": ""
+    },
+    {
+      "slug": "viridiana",
+      "title": "Viridiana",
+      "url": "https://www.princetongardentheatre.org/film?id=viridiana",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007572",
+      "rating": ""
+    },
+    {
+      "slug": "mississippi-masala",
+      "title": "Mississippi Masala",
+      "url": "https://www.princetongardentheatre.org/film?id=mississippi-masala",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007730",
+      "rating": "R for sensuality and language"
+    },
+    {
+      "slug": "they-live",
+      "title": "They Live",
+      "url": "https://www.princetongardentheatre.org/film?id=they-live",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000001983",
+      "rating": "R"
+    },
+    {
+      "slug": "the-addams-family-2019",
+      "title": "The Addams Family (2019)",
+      "url": "https://www.princetongardentheatre.org/film?id=the-addams-family-2019",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007442",
+      "rating": "PG for macabre and suggestive humor, and some action."
+    },
+    {
+      "slug": "the-bad-seed",
+      "title": "The Bad Seed",
+      "url": "https://www.princetongardentheatre.org/film?id=the-bad-seed",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007646",
+      "rating": ""
+    },
+    {
+      "slug": "bob-dylan-dont-look-back",
+      "title": "Bob Dylan: Dont Look Back",
+      "url": "https://www.princetongardentheatre.org/film?id=bob-dylan-dont-look-back",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007626",
+      "rating": ""
+    },
+    {
+      "slug": "carrie",
+      "title": "Carrie",
+      "url": "https://www.princetongardentheatre.org/film?id=carrie",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000002678",
+      "rating": "R"
+    },
+    {
+      "slug": "fallen-angels-by-noel-coward",
+      "title": "Fallen Angels by Noel Coward",
+      "url": "https://www.princetongardentheatre.org/film?id=fallen-angels-by-noel-coward",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007846",
+      "rating": ""
+    },
+    {
+      "slug": "the-sixth-sense",
+      "title": "The Sixth Sense",
+      "url": "https://www.princetongardentheatre.org/film?id=the-sixth-sense",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000005293",
+      "rating": "PG-13"
+    },
+    {
+      "slug": "the-wolf-man",
+      "title": "The Wolf Man",
+      "url": "https://www.princetongardentheatre.org/film?id=the-wolf-man",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000006319",
+      "rating": ""
+    },
+    {
+      "slug": "a-nightmare-on-elm-street",
+      "title": "A Nightmare on Elm Street",
+      "url": "https://www.princetongardentheatre.org/film?id=a-nightmare-on-elm-street",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000002003",
+      "rating": "R"
+    },
+    {
+      "slug": "throne-of-blood",
+      "title": "Throne of Blood",
+      "url": "https://www.princetongardentheatre.org/film?id=throne-of-blood",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007742",
+      "rating": ""
+    },
+    {
+      "slug": "seminar-network",
+      "title": "Seminar: Network",
+      "url": "https://www.princetongardentheatre.org/film?id=seminar-network",
+      "poster": "https://ticketing.useast.veezi.com/Content/Images/filmdefault.png",
+      "rating": ""
+    },
+    {
+      "slug": "network",
+      "title": "Network",
+      "url": "https://www.princetongardentheatre.org/film?id=network",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007290",
+      "rating": "R"
+    },
+    {
+      "slug": "willy-wonka-the-chocolate-factory",
+      "title": "Willy Wonka & the Chocolate Factory",
+      "url": "https://www.princetongardentheatre.org/film?id=willy-wonka-the-chocolate-factory",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000000927",
+      "rating": "G"
+    },
+    {
+      "slug": "love-me-or-leave-me",
+      "title": "Love Me or Leave Me",
+      "url": "https://www.princetongardentheatre.org/film?id=love-me-or-leave-me",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007651",
+      "rating": ""
+    },
+    {
+      "slug": "seminar-ali-fear-eats-the-soul",
+      "title": "Seminar: Ali: Fear Eats the Soul",
+      "url": "https://www.princetongardentheatre.org/film?id=seminar-ali-fear-eats-the-soul",
+      "poster": "https://ticketing.useast.veezi.com/Content/Images/filmdefault.png",
+      "rating": ""
+    },
+    {
+      "slug": "ali-fear-eats-the-soul",
+      "title": "Ali: Fear Eats the Soul",
+      "url": "https://www.princetongardentheatre.org/film?id=ali-fear-eats-the-soul",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007739",
+      "rating": ""
+    },
+    {
+      "slug": "becoming-american-philadelphia-s-story",
+      "title": "Becoming American: Philadelphia's Story",
+      "url": "https://www.princetongardentheatre.org/film?id=becoming-american-philadelphia-s-story",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007757",
+      "rating": ""
+    },
+    {
+      "slug": "four-rational-people",
+      "title": "Four Rational People",
+      "url": "https://www.princetongardentheatre.org/film?id=four-rational-people",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007508",
+      "rating": ""
+    },
+    {
+      "slug": "giant-the-play",
+      "title": "GIANT - The Play",
+      "url": "https://www.princetongardentheatre.org/film?id=giant-the-play",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007863",
+      "rating": "R"
     }
   ],
   "days": [
     {
-      "day": "Today",
+      "day": "Tuesday 18, August",
       "screenings": [
-        {
-          "slug": "wild-inside",
-          "title": "Wild Inside",
-          "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
-          "times": [
-            {
-              "time": "3:45",
-              "badges": []
-            },
-            {
-              "time": "7:15",
-              "badges": []
-            }
-          ]
-        },
         {
           "slug": "the-odyssey",
           "title": "The Odyssey",
           "url": "https://www.princetongardentheatre.org/film?id=the-odyssey",
           "times": [
             {
-              "time": "3:30",
+              "time": "3:30 PM",
               "badges": []
             },
             {
-              "time": "7:10",
+              "time": "7:10 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "wild-inside",
+          "title": "Wild Inside",
+          "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+          "times": [
+            {
+              "time": "3:45 PM",
+              "badges": []
+            },
+            {
+              "time": "7:15 PM",
               "badges": []
             }
           ]
@@ -99,49 +472,49 @@
       ]
     },
     {
-      "day": "Wed Aug 19",
+      "day": "Wednesday 19, August",
       "screenings": [
-        {
-          "slug": "wild-inside",
-          "title": "Wild Inside",
-          "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
-          "times": [
-            {
-              "time": "3:45",
-              "badges": []
-            }
-          ]
-        },
         {
           "slug": "the-odyssey",
           "title": "The Odyssey",
           "url": "https://www.princetongardentheatre.org/film?id=the-odyssey",
           "times": [
             {
-              "time": "12:05",
+              "time": "12:05 PM",
               "badges": [
                 "OC"
               ]
             },
             {
-              "time": "3:30",
+              "time": "3:30 PM",
               "badges": [
                 "OC"
               ]
             },
             {
-              "time": "7:10",
+              "time": "7:10 PM",
               "badges": []
             }
           ]
         },
         {
-          "slug": "catvideofest",
+          "slug": "catvideofest-2026",
           "title": "CatVideoFest 2026",
-          "url": "https://www.princetongardentheatre.org/film?id=catvideofest",
+          "url": "https://www.princetongardentheatre.org/film?id=catvideofest-2026",
           "times": [
             {
-              "time": "1:00",
+              "time": "1:00 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "wild-inside",
+          "title": "Wild Inside",
+          "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+          "times": [
+            {
+              "time": "3:45 PM",
               "badges": []
             }
           ]
@@ -152,7 +525,7 @@
           "url": "https://www.princetongardentheatre.org/film?id=strangers-on-a-train",
           "times": [
             {
-              "time": "7:00",
+              "time": "7:00 PM",
               "badges": []
             }
           ]
@@ -160,41 +533,41 @@
       ]
     },
     {
-      "day": "Thu Aug 20",
+      "day": "Thursday 20, August",
       "screenings": [
-        {
-          "slug": "wild-inside",
-          "title": "Wild Inside",
-          "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
-          "times": [
-            {
-              "time": "3:45",
-              "badges": []
-            }
-          ]
-        },
         {
           "slug": "the-odyssey",
           "title": "The Odyssey",
           "url": "https://www.princetongardentheatre.org/film?id=the-odyssey",
           "times": [
             {
-              "time": "3:30",
+              "time": "3:30 PM",
               "badges": []
             },
             {
-              "time": "7:10",
+              "time": "7:10 PM",
               "badges": []
             }
           ]
         },
         {
-          "slug": "princess-bride",
-          "title": "The Princess Bride",
-          "url": "https://www.princetongardentheatre.org/film?id=princess-bride",
+          "slug": "wild-inside",
+          "title": "Wild Inside",
+          "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
           "times": [
             {
-              "time": "7:00",
+              "time": "3:45 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "the-princess-bride",
+          "title": "The Princess Bride",
+          "url": "https://www.princetongardentheatre.org/film?id=the-princess-bride",
+          "times": [
+            {
+              "time": "7:00 PM",
               "badges": []
             }
           ]
@@ -202,12 +575,12 @@
       ]
     },
     {
-      "day": "Fri Aug 21",
+      "day": "Friday 21, August",
       "screenings": [
         {
-          "slug": "twin-peaks-s1-ep45",
+          "slug": "twin-peaks-season-1-episodes-4-5",
           "title": "Twin Peaks: Season 1 - Episodes 4 & 5",
-          "url": "https://www.princetongardentheatre.org/film?id=twin-peaks-s1-ep45",
+          "url": "https://www.princetongardentheatre.org/film?id=twin-peaks-season-1-episodes-4-5",
           "times": [
             {
               "time": "9:45 PM",
@@ -218,7 +591,7 @@
       ]
     },
     {
-      "day": "Sun Aug 23",
+      "day": "Sunday 23, August",
       "screenings": [
         {
           "slug": "woodstock",
@@ -226,7 +599,7 @@
           "url": "https://www.princetongardentheatre.org/film?id=woodstock",
           "times": [
             {
-              "time": "12:00",
+              "time": "12:00 PM",
               "badges": []
             }
           ]
@@ -234,15 +607,15 @@
       ]
     },
     {
-      "day": "Tue Aug 25",
+      "day": "Tuesday 25, August",
       "screenings": [
         {
-          "slug": "hadestown-event",
+          "slug": "hadestown-the-musical",
           "title": "Hadestown: The Musical",
-          "url": "https://www.princetongardentheatre.org/film?id=hadestown-event",
+          "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
           "times": [
             {
-              "time": "7:00",
+              "time": "7:00 PM",
               "badges": []
             }
           ]
@@ -250,7 +623,7 @@
       ]
     },
     {
-      "day": "Wed Aug 26",
+      "day": "Wednesday 26, August",
       "screenings": [
         {
           "slug": "love-finds-andy-hardy",
@@ -258,7 +631,7 @@
           "url": "https://www.princetongardentheatre.org/film?id=love-finds-andy-hardy",
           "times": [
             {
-              "time": "7:00",
+              "time": "7:00 PM",
               "badges": []
             }
           ]
@@ -266,7 +639,7 @@
       ]
     },
     {
-      "day": "Thu Aug 27",
+      "day": "Thursday 27, August",
       "screenings": [
         {
           "slug": "taxi-driver",
@@ -274,7 +647,7 @@
           "url": "https://www.princetongardentheatre.org/film?id=taxi-driver",
           "times": [
             {
-              "time": "7:00",
+              "time": "7:00 PM",
               "badges": []
             }
           ]
@@ -282,15 +655,797 @@
       ]
     },
     {
-      "day": "Fri Aug 28",
+      "day": "Friday 28, August",
       "screenings": [
         {
-          "slug": "twin-peaks-s1-e67",
+          "slug": "twin-peaks-season-1-episodes-6-7",
           "title": "Twin Peaks: Season 1 - Episodes 6 & 7",
-          "url": "https://www.princetongardentheatre.org/film?id=twin-peaks-s1-e67",
+          "url": "https://www.princetongardentheatre.org/film?id=twin-peaks-season-1-episodes-6-7",
           "times": [
             {
               "time": "9:45 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Sunday 30, August",
+      "screenings": [
+        {
+          "slug": "leonardo-the-works",
+          "title": "Leonardo: The Works",
+          "url": "https://www.princetongardentheatre.org/film?id=leonardo-the-works",
+          "times": [
+            {
+              "time": "1:15 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wednesday 2, September",
+      "screenings": [
+        {
+          "slug": "call-northside-777",
+          "title": "Call Northside 777",
+          "url": "https://www.princetongardentheatre.org/film?id=call-northside-777",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thursday 3, September",
+      "screenings": [
+        {
+          "slug": "newsies",
+          "title": "Newsies",
+          "url": "https://www.princetongardentheatre.org/film?id=newsies",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Sunday 6, September",
+      "screenings": [
+        {
+          "slug": "dodsworth",
+          "title": "Dodsworth",
+          "url": "https://www.princetongardentheatre.org/film?id=dodsworth",
+          "times": [
+            {
+              "time": "1:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wednesday 9, September",
+      "screenings": [
+        {
+          "slug": "queen-kelly",
+          "title": "Queen Kelly",
+          "url": "https://www.princetongardentheatre.org/film?id=queen-kelly",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thursday 10, September",
+      "screenings": [
+        {
+          "slug": "the-great-escape",
+          "title": "The Great Escape",
+          "url": "https://www.princetongardentheatre.org/film?id=the-great-escape",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Sunday 13, September",
+      "screenings": [
+        {
+          "slug": "robert-irwin-a-desert-of-pure-feeling",
+          "title": "Robert Irwin: A Desert Of Pure Feeling",
+          "url": "https://www.princetongardentheatre.org/film?id=robert-irwin-a-desert-of-pure-feeling",
+          "times": [
+            {
+              "time": "1:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wednesday 16, September",
+      "screenings": [
+        {
+          "slug": "death-taxes",
+          "title": "Death & Taxes",
+          "url": "https://www.princetongardentheatre.org/film?id=death-taxes",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thursday 17, September",
+      "screenings": [
+        {
+          "slug": "legacy-apartheid-s-shadow",
+          "title": "Legacy: Apartheid's Shadow",
+          "url": "https://www.princetongardentheatre.org/film?id=legacy-apartheid-s-shadow",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Sunday 20, September",
+      "screenings": [
+        {
+          "slug": "wildwood-nj",
+          "title": "Wildwood, NJ",
+          "url": "https://www.princetongardentheatre.org/film?id=wildwood-nj",
+          "times": [
+            {
+              "time": "1:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wednesday 23, September",
+      "screenings": [
+        {
+          "slug": "seminar-city-of-god",
+          "title": "Seminar: City of God",
+          "url": "https://www.princetongardentheatre.org/film?id=seminar-city-of-god",
+          "times": [
+            {
+              "time": "6:30 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "city-of-god",
+          "title": "City of God",
+          "url": "https://www.princetongardentheatre.org/film?id=city-of-god",
+          "times": [
+            {
+              "time": "7:15 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thursday 24, September",
+      "screenings": [
+        {
+          "slug": "dune-1984",
+          "title": "Dune (1984)",
+          "url": "https://www.princetongardentheatre.org/film?id=dune-1984",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Saturday 26, September",
+      "screenings": [
+        {
+          "slug": "how-to-train-your-dragon",
+          "title": "How to Train Your Dragon",
+          "url": "https://www.princetongardentheatre.org/film?id=how-to-train-your-dragon",
+          "times": [
+            {
+              "time": "10:00 AM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Sunday 27, September",
+      "screenings": [
+        {
+          "slug": "ntlive-the-misanthrope",
+          "title": "NTLive: The Misanthrope",
+          "url": "https://www.princetongardentheatre.org/film?id=ntlive-the-misanthrope",
+          "times": [
+            {
+              "time": "1:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wednesday 30, September",
+      "screenings": [
+        {
+          "slug": "the-joy-luck-club",
+          "title": "The Joy Luck Club",
+          "url": "https://www.princetongardentheatre.org/film?id=the-joy-luck-club",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thursday 1, October",
+      "screenings": [
+        {
+          "slug": "the-trouble-with-harry",
+          "title": "The Trouble with Harry",
+          "url": "https://www.princetongardentheatre.org/film?id=the-trouble-with-harry",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Sunday 4, October",
+      "screenings": [
+        {
+          "slug": "james-mcneill-whistler",
+          "title": "James McNeill Whistler",
+          "url": "https://www.princetongardentheatre.org/film?id=james-mcneill-whistler",
+          "times": [
+            {
+              "time": "1:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wednesday 7, October",
+      "screenings": [
+        {
+          "slug": "the-cat-and-the-canary",
+          "title": "The Cat and the Canary",
+          "url": "https://www.princetongardentheatre.org/film?id=the-cat-and-the-canary",
+          "times": [
+            {
+              "time": "7:30 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thursday 8, October",
+      "screenings": [
+        {
+          "slug": "my-brain-after-the-rupture",
+          "title": "My Brain: After the Rupture",
+          "url": "https://www.princetongardentheatre.org/film?id=my-brain-after-the-rupture",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Friday 9, October",
+      "screenings": [
+        {
+          "slug": "close-up",
+          "title": "Close-Up",
+          "url": "https://www.princetongardentheatre.org/film?id=close-up",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "garden-goes-global-passports",
+          "title": "Garden Goes Global - Passports",
+          "url": "https://www.princetongardentheatre.org/film?id=garden-goes-global-passports",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "dogtooth",
+          "title": "Dogtooth",
+          "url": "https://www.princetongardentheatre.org/film?id=dogtooth",
+          "times": [
+            {
+              "time": "9:30 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Saturday 10, October",
+      "screenings": [
+        {
+          "slug": "faust",
+          "title": "Faust",
+          "url": "https://www.princetongardentheatre.org/film?id=faust",
+          "times": [
+            {
+              "time": "12:00 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "touki-bouki",
+          "title": "Touki Bouki",
+          "url": "https://www.princetongardentheatre.org/film?id=touki-bouki",
+          "times": [
+            {
+              "time": "3:30 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "weekend",
+          "title": "Weekend",
+          "url": "https://www.princetongardentheatre.org/film?id=weekend",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "the-raid",
+          "title": "The Raid",
+          "url": "https://www.princetongardentheatre.org/film?id=the-raid",
+          "times": [
+            {
+              "time": "9:30 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Sunday 11, October",
+      "screenings": [
+        {
+          "slug": "good-morning",
+          "title": "Good Morning",
+          "url": "https://www.princetongardentheatre.org/film?id=good-morning",
+          "times": [
+            {
+              "time": "1:00 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "restless-blood",
+          "title": "Restless Blood",
+          "url": "https://www.princetongardentheatre.org/film?id=restless-blood",
+          "times": [
+            {
+              "time": "3:30 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "viridiana",
+          "title": "Viridiana",
+          "url": "https://www.princetongardentheatre.org/film?id=viridiana",
+          "times": [
+            {
+              "time": "6:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wednesday 14, October",
+      "screenings": [
+        {
+          "slug": "mississippi-masala",
+          "title": "Mississippi Masala",
+          "url": "https://www.princetongardentheatre.org/film?id=mississippi-masala",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thursday 15, October",
+      "screenings": [
+        {
+          "slug": "they-live",
+          "title": "They Live",
+          "url": "https://www.princetongardentheatre.org/film?id=they-live",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Saturday 17, October",
+      "screenings": [
+        {
+          "slug": "the-addams-family-2019",
+          "title": "The Addams Family (2019)",
+          "url": "https://www.princetongardentheatre.org/film?id=the-addams-family-2019",
+          "times": [
+            {
+              "time": "10:00 AM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Sunday 18, October",
+      "screenings": [
+        {
+          "slug": "the-bad-seed",
+          "title": "The Bad Seed",
+          "url": "https://www.princetongardentheatre.org/film?id=the-bad-seed",
+          "times": [
+            {
+              "time": "1:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wednesday 21, October",
+      "screenings": [
+        {
+          "slug": "bob-dylan-dont-look-back",
+          "title": "Bob Dylan: Dont Look Back",
+          "url": "https://www.princetongardentheatre.org/film?id=bob-dylan-dont-look-back",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thursday 22, October",
+      "screenings": [
+        {
+          "slug": "carrie",
+          "title": "Carrie",
+          "url": "https://www.princetongardentheatre.org/film?id=carrie",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Sunday 25, October",
+      "screenings": [
+        {
+          "slug": "fallen-angels-by-noel-coward",
+          "title": "Fallen Angels by Noel Coward",
+          "url": "https://www.princetongardentheatre.org/film?id=fallen-angels-by-noel-coward",
+          "times": [
+            {
+              "time": "1:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wednesday 28, October",
+      "screenings": [
+        {
+          "slug": "the-sixth-sense",
+          "title": "The Sixth Sense",
+          "url": "https://www.princetongardentheatre.org/film?id=the-sixth-sense",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thursday 29, October",
+      "screenings": [
+        {
+          "slug": "the-wolf-man",
+          "title": "The Wolf Man",
+          "url": "https://www.princetongardentheatre.org/film?id=the-wolf-man",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Saturday 31, October",
+      "screenings": [
+        {
+          "slug": "a-nightmare-on-elm-street",
+          "title": "A Nightmare on Elm Street",
+          "url": "https://www.princetongardentheatre.org/film?id=a-nightmare-on-elm-street",
+          "times": [
+            {
+              "time": "9:30 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Tuesday 3, November",
+      "screenings": [
+        {
+          "slug": "fallen-angels-by-noel-coward",
+          "title": "Fallen Angels by Noel Coward",
+          "url": "https://www.princetongardentheatre.org/film?id=fallen-angels-by-noel-coward",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wednesday 4, November",
+      "screenings": [
+        {
+          "slug": "throne-of-blood",
+          "title": "Throne of Blood",
+          "url": "https://www.princetongardentheatre.org/film?id=throne-of-blood",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thursday 5, November",
+      "screenings": [
+        {
+          "slug": "seminar-network",
+          "title": "Seminar: Network",
+          "url": "https://www.princetongardentheatre.org/film?id=seminar-network",
+          "times": [
+            {
+              "time": "6:30 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "network",
+          "title": "Network",
+          "url": "https://www.princetongardentheatre.org/film?id=network",
+          "times": [
+            {
+              "time": "7:15 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Saturday 7, November",
+      "screenings": [
+        {
+          "slug": "willy-wonka-the-chocolate-factory",
+          "title": "Willy Wonka & the Chocolate Factory",
+          "url": "https://www.princetongardentheatre.org/film?id=willy-wonka-the-chocolate-factory",
+          "times": [
+            {
+              "time": "10:00 AM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Sunday 8, November",
+      "screenings": [
+        {
+          "slug": "love-me-or-leave-me",
+          "title": "Love Me or Leave Me",
+          "url": "https://www.princetongardentheatre.org/film?id=love-me-or-leave-me",
+          "times": [
+            {
+              "time": "1:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wednesday 11, November",
+      "screenings": [
+        {
+          "slug": "seminar-ali-fear-eats-the-soul",
+          "title": "Seminar: Ali: Fear Eats the Soul",
+          "url": "https://www.princetongardentheatre.org/film?id=seminar-ali-fear-eats-the-soul",
+          "times": [
+            {
+              "time": "6:30 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "ali-fear-eats-the-soul",
+          "title": "Ali: Fear Eats the Soul",
+          "url": "https://www.princetongardentheatre.org/film?id=ali-fear-eats-the-soul",
+          "times": [
+            {
+              "time": "7:15 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thursday 12, November",
+      "screenings": [
+        {
+          "slug": "becoming-american-philadelphia-s-story",
+          "title": "Becoming American: Philadelphia's Story",
+          "url": "https://www.princetongardentheatre.org/film?id=becoming-american-philadelphia-s-story",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wednesday 18, November",
+      "screenings": [
+        {
+          "slug": "four-rational-people",
+          "title": "Four Rational People",
+          "url": "https://www.princetongardentheatre.org/film?id=four-rational-people",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thursday 19, November",
+      "screenings": [
+        {
+          "slug": "giant-the-play",
+          "title": "GIANT - The Play",
+          "url": "https://www.princetongardentheatre.org/film?id=giant-the-play",
+          "times": [
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Sunday 22, November",
+      "screenings": [
+        {
+          "slug": "giant-the-play",
+          "title": "GIANT - The Play",
+          "url": "https://www.princetongardentheatre.org/film?id=giant-the-play",
+          "times": [
+            {
+              "time": "1:00 PM",
               "badges": []
             }
           ]

@@ -411,6 +411,7 @@ ${jsonLd}
       <nav aria-label="Guide navigation">
         <a href="/">Home</a>
         <a href="/guides/">Guides</a>
+        <a href="/about.html">About</a>
         <a href="/#today">Today</a>
         <a href="/#my-princeton">My Princeton</a>
         <a href="/#move">Move</a>
@@ -699,6 +700,116 @@ function titleCase(value) {
     .replace(/\b(To|And|Of|At|The)\b/g, (m) => m.toLowerCase());
 }
 
+// About page. A resident checking a trash day deserves to know who is behind the site
+// and why it exists, which is also what keeps the independence claim credible.
+// Every outbound link opens in a new tab, matching the rest of the site.
+function ext(url, label) {
+  return `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
+}
+
+async function aboutHtml() {
+  const waste = JSON.parse(
+    await readFile(new URL("../public/waste-data.json", import.meta.url), "utf8"),
+  );
+  const url = absolute("/about.html");
+  const body = `
+    <main id="guide-main" tabindex="-1">
+      <div class="hero">
+        <p class="eyebrow">About</p>
+        <h1>Who makes PrincetonLive.</h1>
+        <p class="answer">PrincetonLive is built and maintained by Stan Berteloot, who lives in Princeton. It is a personal project with no funding, no advertising, and no affiliation with the University or the municipality. The photograph at the top of the site is his.</p>
+      </div>
+      <div class="layout">
+        <article>
+          <section id="why">
+            <h2>Why this site exists</h2>
+            <p>Princeton publishes what a resident needs across a dozen systems. Garbage day sits in a municipal PDF keyed to street names. Weather alerts come from the National Weather Service. Events are split between the University, the Public Library, McCarter, the Garden Theatre, and the town calendar. Each one is reasonable on its own, and none of them answers the question you actually have at 7 AM on a Tuesday.</p>
+            <p>This site pulls those public sources into one page and keeps them current automatically. It publishes the collection day for ${waste.streetCount} streets, the National Weather Service alert state, and what is showing at the Garden Theatre tonight. When a source fails, the page says so, because a resident checking for a storm warning should never read silence as safety.</p>
+          </section>
+
+          <section id="background">
+            <h2>Background</h2>
+            <p>Stan is a French-American and a former Reuters journalist. He is Chief Innovation Officer at ${ext("https://www.nytromarketing.com/", "Nytro Marketing")}, where he designed and deployed a 14-agent AI marketing team that runs real client work across positioning, demand generation, outbound, analytics, and executive assistance.</p>
+            <p>Through ${ext("https://altilead.com/", "Altilead")} he builds B2B demand engines for technology and services companies, taking on the architecture, copy, integrations, and tracking in a single engagement. Most B2B outbound stalls because it reaches the right companies at the wrong time, and that is the problem the infrastructure is built to solve. He also created ${ext("https://getvoicestream.com/", "VoiceStream")}, an AI platform for turning talk into published work.</p>
+            <p>The journalism and the engineering meet in projects like this one: public sources, checked, and presented so someone can act on them.</p>
+          </section>
+
+          <section id="podcasts">
+            <h2>Three podcasts, three different reasons</h2>
+            <h3>${ext("https://backinamericathepodcast.com/", "Back in America")}</h3>
+            <p>Long-form interviews with people whose stories illuminate what it means to live in America today. A Capitol Police sergeant. A Boston Ballet principal. One of France's most prominent rabbis. Each episode is a conversation that could not happen anywhere else. 122 episodes since 2020.</p>
+            <h3>${ext("https://ai-in-marketing.transistor.fm/", "AI in Marketing")}</h3>
+            <p>A daily podcast and LinkedIn newsletter, human-curated and AI-generated, covering how artificial intelligence is reshaping business, marketing, and professional identity.</p>
+            <h3>${ext("https://fivethingsgoingright.transistor.fm/", "Five Things Going Right")}</h3>
+            <p>Five minutes every weekday morning on real, verifiable progress in science, medicine, technology, and the environment. Hosts Grace and Josh walk through five stories that actually happened, each checked against the original reporting from the WHO, the IEA, Nature, and university research. A calm, fact-grounded start to the day.</p>
+          </section>
+
+          <section id="nonprofit">
+            <h2>Share My Meals</h2>
+            <p>Stan is co-founder and a board member of ${ext("https://sharemymeals.org/", "Share My Meals")}, a New Jersey nonprofit that recovers prepared meals that would otherwise be thrown away and delivers them to people who need them. It addresses food insecurity and the environmental cost of food waste with the same delivery, which is what makes it work.</p>
+          </section>
+
+          <section id="canoe">
+            <h2>Away from the desk</h2>
+            <p>In July, Stan and his daughter Violette paddled ${ext("https://canoe-verendrye.berteloot.org/", "a 69 km canoe loop in La Vérendrye")}, SEPAQ's Petite boucle Chochocouane, counter-clockwise through the western sector of the Réserve faunique. Twenty-one portages, taking out at Lac Lavis. SEPAQ maps it as a five-day route and they paddled it in four. There is no road access past the put-in, and across the whole trip they did not meet another soul.</p>
+          </section>
+
+          <section id="corrections">
+            <h2>Corrections</h2>
+            <p>If something on this site is wrong, out of date, or should not be published, please say so and it will be fixed or removed. This is one resident maintaining it, and Princeton changes faster than one person notices. Corrections are genuinely useful.</p>
+            <p>${ext("https://www.linkedin.com/in/berteloot", "Reach Stan on LinkedIn")}, or read the ${'<a href="/legal.html">disclaimer, terms, and privacy</a>'}.</p>
+          </section>
+        </article>
+        <aside aria-label="Elsewhere">
+          <div class="related">
+            <h2>Elsewhere</h2>
+            ${ext("https://backinamericathepodcast.com/", "Back in America")}
+            ${ext("https://ai-in-marketing.transistor.fm/", "AI in Marketing")}
+            ${ext("https://fivethingsgoingright.transistor.fm/", "Five Things Going Right")}
+            ${ext("https://altilead.com/", "Altilead")}
+            ${ext("https://www.nytromarketing.com/", "Nytro Marketing")}
+            ${ext("https://sharemymeals.org/", "Share My Meals")}
+            ${ext("https://canoe-verendrye.berteloot.org/", "La Vérendrye canoe loop")}
+            <a href="/">Back to PrincetonLive</a>
+          </div>
+        </aside>
+      </div>
+    </main>`;
+
+  return shell({
+    title: "About PrincetonLive and Stan Berteloot",
+    description:
+      "PrincetonLive is an independent resident guide built and maintained by Stan Berteloot, a Princeton resident, French-American former Reuters journalist, and Chief Innovation Officer at Nytro Marketing.",
+    url,
+    body,
+    jsonLd: JSON.stringify(
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        name: "About PrincetonLive",
+        url,
+        dateModified: today,
+        mainEntity: {
+          "@type": "Person",
+          name: "Stan Berteloot",
+          jobTitle: "Chief Innovation Officer",
+          worksFor: { "@type": "Organization", name: "Nytro Marketing", url: "https://www.nytromarketing.com/" },
+          nationality: "French-American",
+          sameAs: [
+            "https://www.linkedin.com/in/berteloot",
+            "https://backinamericathepodcast.com/",
+            "https://altilead.com/",
+            "https://sharemymeals.org/",
+          ],
+        },
+      },
+      null,
+      2,
+    ),
+    pageClass: "about-page",
+  });
+}
+
 // Disclaimer, privacy notice, and corrections route. The site publishes operational
 // facts a resident acts on (collection days, weather alerts, election dates) and carries
 // a town name plus a photograph of Nassau Hall, so the two exposures worth naming
@@ -793,6 +904,7 @@ function sitemapXml() {
   const routes = [
     ...homepageRoutes,
     { url: "/guides/", priority: "0.9", changefreq: "weekly" },
+    { url: "/about.html", priority: "0.6", changefreq: "monthly" },
     { url: "/legal.html", priority: "0.3", changefreq: "yearly" },
     { url: "/guides/princeton-garbage-schedule.html", priority: "0.95", changefreq: "weekly" },
     ...pillarGuides.map((guide) => ({
@@ -892,6 +1004,7 @@ await Promise.all([
     writeFile(new URL(`../public/guides/${guide.slug}.html`, import.meta.url), guideHtml(guide)),
   ),
   writeFile(new URL("../public/legal.html", import.meta.url), legalHtml()),
+  writeFile(new URL("../public/about.html", import.meta.url), await aboutHtml()),
   writeFile(
     new URL("../public/guides/princeton-garbage-schedule.html", import.meta.url),
     await garbageScheduleHtml(),
