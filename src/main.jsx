@@ -911,6 +911,25 @@ function App() {
   const [crimeData, setCrimeData] = useState(null);
   const [gardenTheatre, setGardenTheatre] = useState(null);
   const libraryOpen = useMemo(() => libraryStatus(), []);
+  // Hand-maintained facts carry a date, and the wording follows the date rather than
+  // asserting a past event is still upcoming.
+  const parkingRateLine = useMemo(() => {
+    const next = localRules.parking.rates.next;
+    const effective = new Date(`${next.effectiveFrom}T00:00:00-04:00`);
+    const label = effective.toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric", timeZone: "America/New_York" });
+    if (Date.now() >= effective.getTime()) {
+      return `Thirty-minute spaces cost ${next.thirtyMinute} and 90-minute zones ${next.ninetyMinute}, after the increase on ${label}.`;
+    }
+    const cur = localRules.parking.rates.current;
+    return `Thirty-minute spaces cost ${cur.thirtyMinute} and 90-minute zones ${cur.ninetyMinute}. Rates rise on ${label}, to ${next.thirtyMinute} and ${next.ninetyMinute}.`;
+  }, []);
+  const schoolLine = useMemo(() => {
+    const start = new Date(`${localRules.schools.termStart}T00:00:00-04:00`);
+    if (Date.now() < start.getTime()) {
+      return { headline: localRules.schools.termStartLabel, detail: `First day of school for students in Princeton Public Schools, ${localRules.schools.schoolYear}.` };
+    }
+    return { headline: `${localRules.schools.schoolYear} school year`, detail: "The Princeton Public Schools year is under way. Check the district calendar for breaks and closures." };
+  }, []);
   const [civicTooltip, setCivicTooltip] = useState({ x: 0, y: 0 });
   const [addressQuery, setAddressQuery] = useState("");
   const [addressLookup, setAddressLookup] = useState({
@@ -1918,7 +1937,7 @@ function App() {
               ))}
             </dl>
             <p>{localRules.parking.note}</p>
-            <p className="rule-change">{localRules.parking.rateChange}</p>
+            <p className="rule-change">{parkingRateLine}</p>
             <a href={localRules.parking.url} {...externalLinkProps(localRules.parking.url)}>
               Official parking page
             </a>
@@ -1926,8 +1945,8 @@ function App() {
           <div className="local-rule">
             <CalendarDays size={19} aria-hidden="true" />
             <strong>Princeton Public Schools</strong>
-            <p className="rule-headline">{localRules.schools.firstDayLabel}</p>
-            <p>{localRules.schools.detail}</p>
+            <p className="rule-headline">{schoolLine.headline}</p>
+            <p>{schoolLine.detail}</p>
             <a href={localRules.schools.url} {...externalLinkProps(localRules.schools.url)}>
               District calendar
             </a>

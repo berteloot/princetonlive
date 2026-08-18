@@ -1159,6 +1159,14 @@ ${crime.sources.map((src) => `            <a href="${escapeHtml(src.url)}" targe
 async function parkingHtml() {
   const rules = JSON.parse(await readFile(new URL("../src/data/local-rules.json", import.meta.url), "utf8"));
   const url = absolute("/guides/princeton-parking-rules.html");
+  const now = buildDate;
+  const next = rules.parking.rates.next;
+  const changed = now >= new Date(`${next.effectiveFrom}T00:00:00-04:00`);
+  const cur = changed ? next : rules.parking.rates.current;
+  const changeLabel = new Date(`${next.effectiveFrom}T12:00:00Z`).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric", timeZone: "America/New_York" });
+  const rateCopy = changed
+    ? `Thirty-minute spaces cost ${escapeHtml(cur.thirtyMinute)} and 90-minute zones ${escapeHtml(cur.ninetyMinute)}, following the increase that took effect on ${escapeHtml(changeLabel)}.`
+    : `Thirty-minute spaces cost ${escapeHtml(rules.parking.rates.current.thirtyMinute)} and 90-minute zones ${escapeHtml(rules.parking.rates.current.ninetyMinute)}. Rates rise on ${escapeHtml(changeLabel)}, to ${escapeHtml(next.thirtyMinute)} and ${escapeHtml(next.ninetyMinute)}.`;
   const verified = new Date(`${rules.verifiedOn}T12:00:00Z`).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "America/New_York" });
   const body = `
     <main id="guide-main" tabindex="-1">
@@ -1187,8 +1195,8 @@ ${rules.parking.meterHours.map(([w, h]) => `                  <tr><th scope="row
             <p>${escapeHtml(rules.parking.note)}</p>
           </section>
           <section id="rates">
-            <h2>Rate change</h2>
-            <p>${escapeHtml(rules.parking.rateChange)}</p>
+            <h2>Meter rates</h2>
+            <p>${rateCopy}</p>
           </section>
           <section id="related">
             <h2>Before an evening downtown</h2>

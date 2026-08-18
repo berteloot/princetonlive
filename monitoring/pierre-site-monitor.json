@@ -192,16 +192,6 @@
       "retry_delay_seconds": 2
     },
     {
-      "kind": "http",
-      "name": "Google Translate API",
-      "url": "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=fr&dt=t&q=Princeton",
-      "expect_status": [
-        200
-      ],
-      "contains": "Princeton",
-      "min_bytes": 20
-    },
-    {
       "kind": "generated_json",
       "name": "Garden Theatre schedule",
       "url": "https://princetonlive.berteloot.org/garden-theatre.json",
@@ -220,6 +210,127 @@
       ],
       "json_path": "princeton.violent-crime.rate",
       "max_age_hours": 9000
+    },
+    {
+      "kind": "http",
+      "name": "Garbage schedule page",
+      "url": "https://princetonlive.berteloot.org/guides/princeton-garbage-schedule.html",
+      "expect_status": [
+        200
+      ],
+      "contains": "Witherspoon Street",
+      "min_bytes": 30000
+    },
+    {
+      "kind": "http",
+      "name": "Leaf and brush page",
+      "url": "https://princetonlive.berteloot.org/guides/princeton-leaf-and-brush-schedule.html",
+      "expect_status": [
+        200
+      ],
+      "contains": "Section 5",
+      "min_bytes": 8000
+    },
+    {
+      "kind": "http",
+      "name": "Parking rules page",
+      "url": "https://princetonlive.berteloot.org/guides/princeton-parking-rules.html",
+      "expect_status": [
+        200
+      ],
+      "contains": "2 to 6 am",
+      "min_bytes": 5000
+    },
+    {
+      "kind": "http",
+      "name": "Garden Theatre page",
+      "url": "https://princetonlive.berteloot.org/guides/princeton-garden-theatre-showtimes.html",
+      "expect_status": [
+        200
+      ],
+      "contains": "160 Nassau Street",
+      "min_bytes": 5000
+    },
+    {
+      "kind": "http",
+      "name": "Crime rate page",
+      "url": "https://princetonlive.berteloot.org/guides/princeton-crime-rate.html",
+      "expect_status": [
+        200
+      ],
+      "contains": "per 100,000",
+      "min_bytes": 5000
+    },
+    {
+      "kind": "http",
+      "name": "Moving to Princeton guide",
+      "url": "https://princetonlive.berteloot.org/guides/moving-to-princeton.html",
+      "expect_status": [
+        200
+      ],
+      "contains": "First-month discovery",
+      "min_bytes": 5000
+    },
+    {
+      "kind": "http",
+      "name": "Library benefits guide",
+      "url": "https://princetonlive.berteloot.org/guides/princeton-library-benefits.html",
+      "expect_status": [
+        200
+      ],
+      "contains": "Spring Street Garage",
+      "min_bytes": 5000
+    },
+    {
+      "kind": "http",
+      "name": "Getting around guide",
+      "url": "https://princetonlive.berteloot.org/guides/getting-around-princeton.html",
+      "expect_status": [
+        200
+      ],
+      "contains": "Princeton Junction",
+      "min_bytes": 5000
+    },
+    {
+      "kind": "http",
+      "name": "Events and culture guide",
+      "url": "https://princetonlive.berteloot.org/guides/princeton-public-events-culture.html",
+      "expect_status": [
+        200
+      ],
+      "contains": "McCarter",
+      "min_bytes": 5000
+    },
+    {
+      "kind": "http",
+      "name": "About page",
+      "url": "https://princetonlive.berteloot.org/about.html",
+      "expect_status": [
+        200
+      ],
+      "contains": "Stan Berteloot",
+      "min_bytes": 5000
+    },
+    {
+      "kind": "http",
+      "name": "Disclaimer and privacy",
+      "url": "https://princetonlive.berteloot.org/legal.html",
+      "expect_status": [
+        200
+      ],
+      "contains": "no affiliation",
+      "min_bytes": 5000
+    },
+    {
+      "kind": "http",
+      "name": "Hand-verified facts still current",
+      "url": "https://princetonlive.berteloot.org/freshness.json",
+      "expect_status": [
+        200
+      ],
+      "max_age_hours": 8,
+      "contains": "\"ok\": true",
+      "min_bytes": 200
     }
   ]
 }
