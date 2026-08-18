@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-18T18:55:59.897Z",
+  "generatedAt": "2026-08-18T21:37:16.020Z",
   "weather": {
     "temperature": 85,
     "shortForecast": "Isolated Showers And Thunderstorms",
-    "wind": "5 mph NW",
-    "detailedForecast": "Isolated showers and thunderstorms. Partly sunny, with a high near 85. Northwest wind around 5 mph. Chance of precipitation is 20%.",
+    "wind": "5 mph W",
+    "detailedForecast": "Isolated showers and thunderstorms. Partly sunny, with a high near 85. West wind around 5 mph. Chance of precipitation is 20%.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -124,34 +124,12 @@
       ]
     },
     {
-      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At YMCA",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 18, 2026",
-      "timeLabel": "03:15 PM - 04:15 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7128",
-      "tags": [
-        "practical"
-      ]
-    },
-    {
       "title": "Council Virtual Closed Session",
       "source": "Municipality of Princeton",
       "dateLabel": "August 18, 2026",
       "timeLabel": "03:30 PM - 11:59 PM",
       "location": "Princeton, NJ 08540",
       "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7905",
-      "tags": [
-        "practical"
-      ]
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At Redding Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 18, 2026",
-      "timeLabel": "03:30 PM - 04:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7542",
       "tags": [
         "practical"
       ]
@@ -228,6 +206,29 @@
         "family",
         "practical"
       ]
+    },
+    {
+      "title": "English Conversation (virtual)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 19",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Virtual - Google Meet",
+      "url": "https://princetonlibrary.libnet.info/event/16837150",
+      "tags": [
+        "practical"
+      ]
+    },
+    {
+      "title": "Journaling Club",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 19",
+      "timeLabel": "5:00pm - 6:00pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/16862221",
+      "tags": [
+        "family",
+        "practical"
+      ]
     }
   ],
   "sources": [
@@ -253,7 +254,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "31 calendar items"
+      "detail": "29 calendar items"
     }
   ]
 }
