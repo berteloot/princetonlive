@@ -188,7 +188,20 @@ def validate_http_response(
                 item["url"],
                 elapsed_ms,
             )
-        if found in (None, "", [], {}):
+        # `found in (None, "", [], {})` misses boolean False, because False equals none
+        # of those. A check pointed at a health flag would therefore pass while the flag
+        # said the thing was unhealthy: a fail-open. False is an explicit failure here.
+        # Numeric 0 is deliberately NOT a failure, because 0 is a legitimate reading for
+        # a temperature or a count.
+        if found is False:
+            return CheckResult(
+                item["name"],
+                False,
+                f"json path {json_path} is false",
+                item["url"],
+                elapsed_ms,
+            )
+        if found is None or (isinstance(found, (str, list, dict, tuple)) and len(found) == 0):
             return CheckResult(
                 item["name"],
                 False,
