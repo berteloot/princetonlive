@@ -63,7 +63,7 @@ function pickSeries(block, matcher) {
 
 // Population basis: participated_population is the population actually covered by
 // reporting agencies in that month. Using it for all three levels keeps the comparison
-// like-for-like, because state and national offence counts only include agencies that
+// like-for-like, because state and national offense counts only include agencies that
 // reported.
 function populationFor(payload, matcher, year) {
   const participated = pickSeries(payload.populations?.participated_population, matcher);
@@ -89,8 +89,8 @@ async function fetchScope(path, matcher, year) {
     const payload = await getJson(
       `${BASE}/summarized/${path}/${offense}?from=01-${year}&to=12-${year}&API_KEY=${API_KEY}`,
     );
-    const offences = pickSeries(payload.offenses?.actuals, new RegExp(`${matcher.source}.*Offenses`, "i"));
-    const { total, months } = sumYear(offences, year);
+    const offenses = pickSeries(payload.offenses?.actuals, new RegExp(`${matcher.source}.*Offenses`, "i"));
+    const { total, months } = sumYear(offenses, year);
     const population = populationFor(payload, matcher, year);
     result[offense] = { count: total, monthsReported: months, population, rate: rate(total, population) };
   }
@@ -104,8 +104,8 @@ async function latestCompleteYear() {
     const payload = await getJson(
       `${BASE}/summarized/agency/${PRINCETON_ORI}/property-crime?from=01-${year}&to=12-${year}&API_KEY=${API_KEY}`,
     );
-    const offences = pickSeries(payload.offenses?.actuals, /Princeton.*Offenses/i);
-    const { months } = sumYear(offences, year);
+    const offenses = pickSeries(payload.offenses?.actuals, /Princeton.*Offenses/i);
+    const { months } = sumYear(offenses, year);
     if (months >= 12) return year;
   }
   return null;
@@ -144,9 +144,9 @@ const payload = {
   year,
   source: "FBI Crime Data Explorer (Uniform Crime Reporting), as submitted by Princeton Police Department",
   basis:
-    "Rates are offences per 100,000 residents for the calendar year shown, using the population covered by reporting agencies so the three levels compare like for like.",
+    "Rates are offenses per 100,000 residents for the calendar year shown, using the population covered by reporting agencies so the three levels compare like for like.",
   caveat:
-    "Princeton is a small town, so a handful of incidents moves the rate noticeably from one year to the next. Treat a single year as a rough indicator and read the trend instead. These counts cover the municipal police department only.",
+    "Princeton is a small town, so a handful of incidents moves the rate noticeably from one year to the next. Read several years together to see a trend; one year on its own is a rough indicator. These counts cover the municipal police department only.",
   princeton,
   princetonUniversity: university,
   newJersey: state,

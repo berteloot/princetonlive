@@ -18,6 +18,101 @@ const googleTag = `    <!-- Google tag (gtag.js) -->
       gtag('config', 'G-RL5N5X5EZE');
     </script>`;
 
+const guideSources = {
+  "moving-to-princeton": [
+    [
+      "Municipality of Princeton",
+      "https://www.princetonnj.gov/"
+    ],
+    [
+      "Princeton Public Library",
+      "https://princetonlibrary.org/"
+    ],
+    [
+      "Princeton Public Schools",
+      "https://www.princetonk12.org/"
+    ],
+    [
+      "Town alerts",
+      "https://www.princetonnj.gov/274/Emergency-Phone-Notifications"
+    ]
+  ],
+  "princeton-library-benefits": [
+    [
+      "Princeton Public Library",
+      "https://princetonlibrary.org/"
+    ]
+  ],
+  "getting-around-princeton": [
+    [
+      "NJ Transit Princeton Dinky",
+      "https://www.njtransit.com/destinations/princeton-dinky"
+    ],
+    [
+      "Getting around Princeton",
+      "https://www.princetonnj.gov/578/Getting-Around-Princeton"
+    ],
+    [
+      "SEPTA schedules",
+      "https://www.septa.org/schedules/"
+    ],
+    [
+      "Princeton parking",
+      "https://www.princetonnj.gov/203/Parking-in-Princeton"
+    ]
+  ],
+  "princeton-public-events-culture": [
+    [
+      "Princeton University events",
+      "https://www.princeton.edu/events"
+    ],
+    [
+      "Princeton Public Library",
+      "https://princetonlibrary.org/"
+    ],
+    [
+      "McCarter Theatre",
+      "https://www.mccarter.org/events"
+    ],
+    [
+      "Princeton Garden Theatre",
+      "https://www.princetongardentheatre.org/"
+    ],
+    [
+      "Princeton University Art Museum",
+      "https://artmuseum.princeton.edu/exhibitions-events"
+    ]
+  ],
+  "princeton-civic-data": [
+    [
+      "US Census American Community Survey",
+      "https://www.census.gov/programs-surveys/acs"
+    ],
+    [
+      "Municipality of Princeton",
+      "https://www.princetonnj.gov/"
+    ]
+  ],
+  "princeton-resident-services": [
+    [
+      "Municipality of Princeton",
+      "https://www.princetonnj.gov/"
+    ],
+    [
+      "Trash collection",
+      "https://www.princetonnj.gov/1359/Trash-Collection"
+    ],
+    [
+      "Princeton recycling",
+      "https://www.princetonnj.gov/449/Recycling"
+    ],
+    [
+      "Town alerts",
+      "https://www.princetonnj.gov/274/Emergency-Phone-Notifications"
+    ]
+  ]
+};
+
 const pillarGuides = [
   {
     slug: "moving-to-princeton",
@@ -90,7 +185,7 @@ const pillarGuides = [
       {
         heading: "The transfer matters",
         body:
-          "Many Princeton trips hinge on one transfer: the Dinky to Princeton Junction, then Northeast Corridor trains toward New York Penn, Trenton, or onward connections. PrincetonLive treats transit as a decision layer, not a list of disconnected links.",
+          "Many Princeton trips hinge on one transfer: the Dinky to Princeton Junction, then Northeast Corridor trains toward New York Penn, Trenton, or onward connections. The Dinky runs from 152 Alexander Street to Princeton Junction, where Northeast Corridor trains continue to New York Penn and Trenton. Most trips out of Princeton depend on that one connection.",
       },
       {
         heading: "Parking is not one rule",
@@ -150,7 +245,7 @@ const pillarGuides = [
       {
         heading: "What the civic map can and cannot show",
         body:
-          "PrincetonLive uses aggregate public data, not individual records. The map can compare Census block groups for measures such as median household income, residents under 18, and child share. It should not be read as a household, property, or individual-voter map.",
+          "PrincetonLive uses aggregate public data only. Individual records are never published. The map can compare Census block groups for measures such as median household income, residents under 18, and child share. It should not be read as a household, property, or individual-voter map.",
       },
       {
         heading: "Why block groups are better than tracts",
@@ -165,7 +260,7 @@ const pillarGuides = [
     ],
     faqs: [
       ["Does PrincetonLive show individual household wealth?", "No. It only shows aggregate Census estimates for block groups."],
-      ["Why are some wealthy areas shown as $250,001+?", "ACS top-codes very high median household income estimates, so those areas should be read as at least $250,001, not as an exact value."],
+      ["Why are some wealthy areas shown as $250,001+?", "ACS top-codes very high median household income estimates, so those areas should be read as at least $250,001. The true figure is unknown above that ceiling."],
     ],
     relatedAnchors: ["#civic", "#faq"],
   },
@@ -438,6 +533,9 @@ function guideHtml(guide) {
     .filter((item) => item.slug !== guide.slug)
     .map((item) => `<a href="${guidePath(item.slug)}">${escapeHtml(item.title)}</a>`)
     .join("\n");
+  const guideSourceLinks = (guideSources[guide.slug] || [])
+    .map(([label, href]) => `            <a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`)
+    .join("\n");
   const relatedAnchors = guide.relatedAnchors
     .map((anchor) => `<a href="/${anchor}">${escapeHtml(internalAnchorLabels[anchor] || anchor)}</a>`)
     .join("\n");
@@ -484,6 +582,10 @@ ${faqs}
             <h2>On this page</h2>
 ${sectionNav}
             <a href="#faq">FAQ</a>
+          </div>
+          <div class="related" style="margin-top: 22px;">
+            <h2>Official sources</h2>
+${guideSourceLinks}
           </div>
           <div class="related" style="margin-top: 22px;">
             <h2>Related PrincetonLive guides</h2>
@@ -660,7 +762,7 @@ ${byDay}
         <aside aria-label="Official waste sources">
           <div class="related">
             <h2>Official sources</h2>
-${waste.sources.map((s) => `            <a href="${escapeHtml(s.url)}">${escapeHtml(s.name)}</a>`).join("\n")}
+${waste.sources.map((s) => `            <a href="${escapeHtml(s.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(s.name)}</a>`).join("\n")}
             <a href="/#garbage">Street lookup on PrincetonLive</a>
           </div>
         </aside>
@@ -872,14 +974,21 @@ async function yardWasteHtml() {
       <div class="hero">
         <p class="eyebrow">Yard waste</p>
         <h1>Princeton leaf, brush and log collection schedule.</h1>
-        <p class="answer">Princeton splits the municipality into five collection sections, and your section decides when branches, loose leaves and bagged leaves are picked up. This page lists the ${year} dates for all five sections and the streets in each one.</p>
+        <p class="answer">Princeton splits the municipality into five collection sections, and your section decides when branches, loose leaves and bagged leaves are picked up. This page lists the ${year} dates for all five sections and the streets in each one, taken from the municipality's ${year} waste collection brochure.</p>
       </div>
       <div class="layout">
         <article>
           <section id="rules">
             <h2>How yard waste collection works</h2>
-            <p>${escapeHtml(waste.rules.yard)}</p>
+            <p>Princeton runs leaf, branch and log collection by section, and collection begins on the date listed for your section. Branches and logs, loose leaves and bagged leaves each run on their own dates.</p>
             <p>Find your section by street below, or use the <a href="/guides/princeton-garbage-schedule.html">garbage schedule by street</a>, which lists the section alongside the weekly collection day.</p>
+          </section>
+          <section id="placement">
+            <h2>Placement rules</h2>
+            <p>These are the rules the municipality publishes in its ${year} waste brochure, and they are the ones residents are most often caught by.</p>
+            <p>Material must be at the curb before 7:00 a.m. on your section's start date, and no sooner than one week before it. Once a street has been collected, crews do not return to it until the next collection, so material put out late waits for the following date.</p>
+            <p>Leaf piles must be no more than 3 feet high and 3 feet wide, and must not run longer than your property frontage. Branches and logs must be no longer than 3 feet and go in a single pile no more than 3 feet high, 3 feet wide and 12 feet long.</p>
+            <p>Loose material and leaf bags must sit at least 10 feet from storm drain inlets, fire hydrants and crosswalks. Nothing may be placed on islands or roundabouts. The municipality notes that non-compliance can carry a penalty.</p>
           </section>
           <section id="sections">
             <h2>${year} dates by section</h2>
@@ -889,8 +998,9 @@ ${sectionBlocks}
         <aside aria-label="Official sources">
           <div class="related">
             <h2>Official sources</h2>
-            <a href="https://www.princetonnj.gov/450/Leaf-Branch-and-Log-Collection">Leaf, branch and log collection</a>
-            <a href="https://www.princetonnj.gov/DocumentCenter/View/1018/Residential-Brush-and-Leaf-Collection-Sections-PDF">Brush and leaf sections list</a>
+            <a href="https://www.princetonnj.gov/DocumentCenter/View/22550/2026-Waste-Mailer---English" target="_blank" rel="noopener noreferrer">${year} waste collection brochure (PDF), the source of these dates</a>
+            <a href="https://www.princetonnj.gov/450/Leaf-Branch-and-Log-Collection" target="_blank" rel="noopener noreferrer">Leaf, branch and log collection</a>
+            <a href="https://www.princetonnj.gov/DocumentCenter/View/1018/Residential-Brush-and-Leaf-Collection-Sections-PDF" target="_blank" rel="noopener noreferrer">Brush and leaf sections list (PDF)</a>
             <a href="/guides/princeton-garbage-schedule.html">Garbage schedule by street</a>
             <a href="/">PrincetonLive</a>
           </div>
@@ -944,7 +1054,7 @@ ${day.screenings.map((film) => `              <li><a href="${escapeHtml(film.url
       <div class="layout">
         <article>
           <section id="schedule">
-            <h2>What is playing this week</h2>
+            <h2>What is playing</h2>
 ${dayBlocks}
           </section>
           <section id="context">
@@ -964,7 +1074,7 @@ ${dayBlocks}
     </main>`;
 
   return shell({
-    title: "Princeton Garden Theatre showtimes this week",
+    title: "Princeton Garden Theatre showtimes",
     description: `Current showtimes at the Princeton Garden Theatre, ${garden.address}, read from the theatre's ticketing system and refreshed through the day.`,
     url,
     body,
@@ -993,7 +1103,7 @@ async function crimeHtml() {
       <div class="hero">
         <p class="eyebrow">Safety</p>
         <h1>Princeton, NJ crime rate.</h1>
-        <p class="answer">In ${crime.year} Princeton Police Department reported ${p["violent-crime"].count} violent offences and ${p["property-crime"].count} property offences for a municipality of about ${p["violent-crime"].population.toLocaleString()} residents. That is ${p["violent-crime"].rate} violent and ${p["property-crime"].rate} property offences per 100,000 people, against national rates of ${n["violent-crime"].rate} and ${n["property-crime"].rate}.</p>
+        <p class="answer">In ${crime.year} Princeton Police Department reported ${p["violent-crime"].count} violent offenses and ${p["property-crime"].count} property offenses for a municipality of about ${p["violent-crime"].population.toLocaleString()} residents. That is ${p["violent-crime"].rate} violent and ${p["property-crime"].rate} property offenses per 100,000 people, against national rates of ${n["violent-crime"].rate} and ${n["property-crime"].rate}.</p>
       </div>
       <div class="layout">
         <article>
@@ -1001,8 +1111,8 @@ async function crimeHtml() {
             <h2>Princeton compared with New Jersey and the nation</h2>
             <div class="table-scroll">
               <table>
-                <caption>Reported offences per 100,000 residents, ${crime.year}</caption>
-                <thead><tr><th scope="col">Offence type</th><th scope="col">Princeton count</th><th scope="col">Princeton rate</th><th scope="col">New Jersey</th><th scope="col">United States</th></tr></thead>
+                <caption>Reported offenses per 100,000 residents, ${crime.year}</caption>
+                <thead><tr><th scope="col">Offense type</th><th scope="col">Princeton count</th><th scope="col">Princeton rate</th><th scope="col">New Jersey</th><th scope="col">United States</th></tr></thead>
                 <tbody>
 ${row("Violent crime", "violent-crime")}
 ${row("Property crime", "property-crime")}
@@ -1014,7 +1124,7 @@ ${row("Property crime", "property-crime")}
           <section id="caveats">
             <h2>How to read these numbers</h2>
             <p>${escapeHtml(crime.caveat)}</p>
-            <p>PrincetonLive publishes crime at municipal level only. No public dataset reports crime by block group for a town this size, and shading neighbourhoods by crime moves property values and tracks income and race in ways that entrench historic patterns. The <a href="/guides/princeton-civic-data.html">neighbourhood data guide</a> explains what the map does show.</p>
+            <p>PrincetonLive publishes crime at municipal level only. No public dataset reports crime by block group for a town this size, and shading neighborhoods by crime moves property values and tracks income and race in ways that entrench historic patterns. The <a href="/guides/princeton-civic-data.html">neighborhood data guide</a> explains what the map does show.</p>
           </section>
         </article>
         <aside aria-label="Official sources">
@@ -1038,7 +1148,7 @@ ${crime.sources.map((src) => `            <a href="${escapeHtml(src.url)}" targe
       mainEntity: [{
         "@type": "Question",
         name: "Is Princeton, NJ safe?",
-        acceptedAnswer: { "@type": "Answer", text: `In ${crime.year} Princeton reported ${p["violent-crime"].rate} violent offences per 100,000 residents against a national rate of ${n["violent-crime"].rate}, and ${p["property-crime"].rate} property offences against a national ${n["property-crime"].rate}. Figures come from the FBI Crime Data Explorer as submitted by Princeton Police Department.` },
+        acceptedAnswer: { "@type": "Answer", text: `In ${crime.year} Princeton reported ${p["violent-crime"].rate} violent offenses per 100,000 residents against a national rate of ${n["violent-crime"].rate}, and ${p["property-crime"].rate} property offenses against a national ${n["property-crime"].rate}. Figures come from the FBI Crime Data Explorer as submitted by Princeton Police Department.` },
       }],
     }, null, 2),
     pageClass: "crime-page",
@@ -1061,7 +1171,7 @@ async function parkingHtml() {
         <article>
           <section id="overnight">
             <h2>The overnight ban</h2>
-            <p>${escapeHtml(rules.parking.overnightBan)} This is the rule new residents break most often, and the municipality notes that ${escapeHtml(rules.parking.overnightCaveat.toLowerCase())}</p>
+            <p>${escapeHtml(rules.parking.overnightBan)} It applies to every former Borough street overnight, and the municipality notes that ${escapeHtml(rules.parking.overnightCaveat.toLowerCase())} Check the sign, or check the official page, before leaving a car out.</p>
           </section>
           <section id="meters">
             <h2>Meter hours</h2>
@@ -1177,10 +1287,10 @@ function legalHtml() {
         <aside aria-label="Official Princeton sources">
           <div class="related">
             <h2>Official sources</h2>
-            <a href="https://www.princetonnj.gov/">Municipality of Princeton</a>
-            <a href="https://www.weather.gov/phi/">National Weather Service</a>
-            <a href="https://princetonlibrary.org/">Princeton Public Library</a>
-            <a href="https://www.princetonk12.org/">Princeton Public Schools</a>
+            <a href="https://www.princetonnj.gov/" target="_blank" rel="noopener noreferrer">Municipality of Princeton</a>
+            <a href="https://www.weather.gov/phi/" target="_blank" rel="noopener noreferrer">National Weather Service</a>
+            <a href="https://princetonlibrary.org/" target="_blank" rel="noopener noreferrer">Princeton Public Library</a>
+            <a href="https://www.princetonk12.org/" target="_blank" rel="noopener noreferrer">Princeton Public Schools</a>
             <a href="/">Return to PrincetonLive</a>
           </div>
         </aside>
@@ -1283,7 +1393,7 @@ These are the figures PrincetonLive maintains, with the official source behind e
 - The first day of school for students in Princeton Public Schools is Monday 31 August 2026. Source: princetonk12.org district calendar.
 - The Dinky runs from 152 Alexander Street to Princeton Junction for Northeast Corridor connections to New York Penn and Trenton. The Princeton Loop is the municipal free bus.
 - The Princeton University Art Museum reopened with free admission for everyone.${crime ? `
-- Reported crime, ${crime.year}, from the FBI Crime Data Explorer as submitted by Princeton Police Department (ORI NJ0111000): ${crime.princeton["violent-crime"].count} violent offences at ${crime.princeton["violent-crime"].rate} per 100,000 residents, and ${crime.princeton["property-crime"].count} property offences at ${crime.princeton["property-crime"].rate} per 100,000. National rates that year were ${crime.national["violent-crime"].rate} and ${crime.national["property-crime"].rate}; New Jersey's were ${crime.newJersey["violent-crime"].rate} and ${crime.newJersey["property-crime"].rate}. Crime is published at municipal level only.` : ""}
+- Reported crime, ${crime.year}, from the FBI Crime Data Explorer as submitted by Princeton Police Department (ORI NJ0111000): ${crime.princeton["violent-crime"].count} violent offenses at ${crime.princeton["violent-crime"].rate} per 100,000 residents, and ${crime.princeton["property-crime"].count} property offenses at ${crime.princeton["property-crime"].rate} per 100,000. National rates that year were ${crime.national["violent-crime"].rate} and ${crime.national["property-crime"].rate}; New Jersey's were ${crime.newJersey["violent-crime"].rate} and ${crime.newJersey["property-crime"].rate}. Crime is published at municipal level only.` : ""}
 
 ## Main Pages
 

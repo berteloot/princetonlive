@@ -23,7 +23,7 @@ These are the figures PrincetonLive maintains, with the official source behind e
 - The first day of school for students in Princeton Public Schools is Monday 31 August 2026. Source: princetonk12.org district calendar.
 - The Dinky runs from 152 Alexander Street to Princeton Junction for Northeast Corridor connections to New York Penn and Trenton. The Princeton Loop is the municipal free bus.
 - The Princeton University Art Museum reopened with free admission for everyone.
-- Reported crime, 2025, from the FBI Crime Data Explorer as submitted by Princeton Police Department (ORI NJ0111000): 13 violent offences at 41.1 per 100,000 residents, and 177 property offences at 559.9 per 100,000. National rates that year were 329.1 and 1551.6; New Jersey's were 198 and 1267.3. Crime is published at municipal level only.
+- Reported crime, 2025, from the FBI Crime Data Explorer as submitted by Princeton Police Department (ORI NJ0111000): 13 violent offenses at 41.1 per 100,000 residents, and 177 property offenses at 559.9 per 100,000. National rates that year were 329.1 and 1551.6; New Jersey's were 198 and 1267.3. Crime is published at municipal level only.
 
 ## Main Pages
 

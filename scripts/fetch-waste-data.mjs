@@ -217,7 +217,7 @@ const payload = {
     projectId: "537",
     districtId: "PR",
     pluginToken: "TVRJek53PT0=",
-    url: "https://recyclecoach.com/cities/usa-nj-municipality-of-princeton/",
+    url: "https://www.princetonnj.gov/449/Recycling",
     citySearchUrl: "https://api-city.recyclecoach.com/city/search?term=Princeton%2C%20New%20Jersey%2C%20USA",
     apiNote:
       "Recycle Coach city lookup is publicly reachable, but PrincetonLive uses official municipal documents for local street lookup and links/embeds Recycle Coach for live address-specific reminders.",
@@ -232,7 +232,7 @@ const payload = {
     recycling:
       "Recycling is handled through Mercer County Improvement Authority; use Recycle Coach for address-specific recycling dates and reminders.",
     notIncluded:
-      "Municipal garbage collection covers buildings of one to four dwelling units. Larger buildings and most commercial properties arrange private collection, which is why some streets are listed as not included.",
+      "Municipal garbage collection covers buildings of one to four dwelling units. Larger buildings and most commercial properties arrange private collection. Streets made up of those properties appear here as not included.",
   },
   yardSchedule2026,
   streets,
@@ -242,7 +242,7 @@ const payload = {
     { name: "Leaf, branch, and log collection", url: "https://www.princetonnj.gov/450/Leaf-Branch-and-Log-Collection" },
     { name: "Residential brush and leaf collection sections", url: yardSectionUrl },
     { name: "2026 waste collection brochure", url: wasteMailerUrl },
-    { name: "Recycle Coach Princeton", url: "https://recyclecoach.com/cities/usa-nj-municipality-of-princeton/" },
+    { name: "Princeton recycling", url: "https://www.princetonnj.gov/449/Recycling" },
   ],
 };
 

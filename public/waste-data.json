@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T08:30:46.057Z",
+  "generatedAt": "2026-08-18T08:47:24.933Z",
   "source": "Municipality of Princeton public waste documents",
   "streetCount": 413,
   "completeStreetCount": 408,
@@ -9,7 +9,7 @@
     "projectId": "537",
     "districtId": "PR",
     "pluginToken": "TVRJek53PT0=",
-    "url": "https://recyclecoach.com/cities/usa-nj-municipality-of-princeton/",
+    "url": "https://www.princetonnj.gov/449/Recycling",
     "citySearchUrl": "https://api-city.recyclecoach.com/city/search?term=Princeton%2C%20New%20Jersey%2C%20USA",
     "apiNote": "Recycle Coach city lookup is publicly reachable, but PrincetonLive uses official municipal documents for local street lookup and links/embeds Recycle Coach for live address-specific reminders."
   },
@@ -18,7 +18,7 @@
     "bulk": "Bulk waste is collected Wednesdays by reservation only. Reserve by Sunday 11:59 PM; maximum two eligible items per week, each up to 50 pounds.",
     "yard": "Leaf, branch, and log collection begins on the listed section date. Put material out by 7 AM on the start date, no more than 7 days prior.",
     "recycling": "Recycling is handled through Mercer County Improvement Authority; use Recycle Coach for address-specific recycling dates and reminders.",
-    "notIncluded": "Municipal garbage collection covers buildings of one to four dwelling units. Larger buildings and most commercial properties arrange private collection, which is why some streets are listed as not included."
+    "notIncluded": "Municipal garbage collection covers buildings of one to four dwelling units. Larger buildings and most commercial properties arrange private collection. Streets made up of those properties appear here as not included."
   },
   "yardSchedule2026": {
     "1": {
@@ -4526,8 +4526,8 @@
       "url": "https://www.princetonnj.gov/DocumentCenter/View/22550/2026-Waste-Mailer---English"
     },
     {
-      "name": "Recycle Coach Princeton",
-      "url": "https://recyclecoach.com/cities/usa-nj-municipality-of-princeton/"
+      "name": "Princeton recycling",
+      "url": "https://www.princetonnj.gov/449/Recycling"
     }
   ]
 }

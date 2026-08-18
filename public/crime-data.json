@@ -2,8 +2,8 @@
   "generatedAt": "2026-08-17T22:57:07.785Z",
   "year": 2025,
   "source": "FBI Crime Data Explorer (Uniform Crime Reporting), as submitted by Princeton Police Department",
-  "basis": "Rates are offences per 100,000 residents for the calendar year shown, using the population covered by reporting agencies so the three levels compare like for like.",
-  "caveat": "Princeton is a small town, so a handful of incidents moves the rate noticeably from one year to the next. Treat a single year as a rough indicator and read the trend instead. These counts cover the municipal police department only.",
+  "basis": "Rates are offenses per 100,000 residents for the calendar year shown, using the population covered by reporting agencies so the three levels compare like for like.",
+  "caveat": "Princeton is a small town, so a handful of incidents moves the rate noticeably from one year to the next. Read several years together to see a trend; one year on its own is a rough indicator. These counts cover the municipal police department only.",
   "princeton": {
     "violent-crime": {
       "count": 13,

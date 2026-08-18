@@ -55,7 +55,7 @@ function buildFallback() {
     .join(". ");
 
   const crimeLine = crime
-    ? `In ${crime.year} Princeton recorded ${crime.princeton["violent-crime"].count} violent offences and ${crime.princeton["property-crime"].count} property offences, a rate of ${crime.princeton["violent-crime"].rate} and ${crime.princeton["property-crime"].rate} per 100,000 residents. The national rates that year were ${crime.national["violent-crime"].rate} and ${crime.national["property-crime"].rate}, and New Jersey's were ${crime.newJersey["violent-crime"].rate} and ${crime.newJersey["property-crime"].rate}.`
+    ? `In ${crime.year} Princeton recorded ${crime.princeton["violent-crime"].count} violent offenses and ${crime.princeton["property-crime"].count} property offenses, a rate of ${crime.princeton["violent-crime"].rate} and ${crime.princeton["property-crime"].rate} per 100,000 residents. The national rates that year were ${crime.national["violent-crime"].rate} and ${crime.national["property-crime"].rate}, and New Jersey's were ${crime.newJersey["violent-crime"].rate} and ${crime.newJersey["property-crime"].rate}.`
     : "";
 
   const films = (garden?.nowPlaying ?? []).slice(0, 6).map((f) => esc(f.title)).join(", ");
