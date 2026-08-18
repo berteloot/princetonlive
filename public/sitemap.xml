@@ -34,6 +34,30 @@
     <priority>0.95</priority>
   </url>
   <url>
+    <loc>https://princetonlive.berteloot.org/guides/princeton-leaf-and-brush-schedule.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://princetonlive.berteloot.org/guides/princeton-parking-rules.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://princetonlive.berteloot.org/guides/princeton-garden-theatre-showtimes.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://princetonlive.berteloot.org/guides/princeton-crime-rate.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://princetonlive.berteloot.org/guides/moving-to-princeton.html</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>

@@ -509,6 +509,19 @@ ${relatedAnchors}
 
 function guidesIndexHtml() {
   const url = absolute("/guides/");
+  const dataPages = [
+    ["/guides/princeton-garbage-schedule.html", "Princeton garbage schedule by street", "Collection day and brush section for every street in the municipal schedule."],
+    ["/guides/princeton-leaf-and-brush-schedule.html", "Princeton leaf and brush schedule", "Branch, loose leaf and bagged leaf dates for all five collection sections."],
+    ["/guides/princeton-parking-rules.html", "Princeton parking rules", "The overnight ban, meter hours by day, and the September rate change."],
+    ["/guides/princeton-garden-theatre-showtimes.html", "Princeton Garden Theatre showtimes", "What is playing on Nassau Street, from the theatre ticketing system."],
+    ["/guides/princeton-crime-rate.html", "Princeton crime rate", "Municipal violent and property crime against state and national rates."],
+  ]
+    .map(([href, title, detail]) => `
+          <section>
+            <h2><a href="${href}">${escapeHtml(title)}</a></h2>
+            <p>${escapeHtml(detail)}</p>
+          </section>`)
+    .join("\n");
   const cards = pillarGuides
     .map(
       (guide) => `
@@ -543,6 +556,7 @@ function guidesIndexHtml() {
         <p class="answer">Stable, crawlable Princeton guides for residents, search engines, and AI assistants. These pages explain the recurring questions behind the live daily guide.</p>
       </div>
       <article>
+${dataPages}
 ${cards}
       </article>
     </main>`;
@@ -812,6 +826,299 @@ async function aboutHtml() {
   });
 }
 
+// ---------------------------------------------------------------- Tier 1 data pages
+// Each page below is generated from JSON the site already refreshes, so none of them
+// needs writing to stay current, and each answers a question a resident types.
+
+async function readPublic(name) {
+  try {
+    return JSON.parse(await readFile(new URL(`../public/${name}`, import.meta.url), "utf8"));
+  } catch {
+    return null;
+  }
+}
+
+// Leaf, brush and log collection. The dates and the street-to-section mapping were
+// already parsed for the street lookup; nothing here is newly scraped.
+async function yardWasteHtml() {
+  const waste = await readPublic("waste-data.json");
+  if (!waste) return null;
+  const year = waste.yardScheduleYear ?? 2026;
+  const sections = Object.entries(waste.yardSchedule2026 || {});
+
+  const streetsBySection = {};
+  for (const street of waste.streets) {
+    const s = street.yardSection;
+    if (!/^[1-5]$/.test(s)) continue;
+    (streetsBySection[s] = streetsBySection[s] || []).push(titleCase(street.street));
+  }
+
+  const sectionBlocks = sections
+    .map(([id, sched]) => {
+      const streets = (streetsBySection[id] || []).sort();
+      return `          <section id="section-${id}">
+            <h3>Section ${id}</h3>
+            <p><strong>Branch and log collection starts:</strong> ${escapeHtml(sched.branchAndLogs.join(", "))}.</p>
+            <p><strong>Loose leaf collection starts:</strong> ${escapeHtml(sched.looseLeaves.join(", "))}.</p>
+            <p><strong>Bagged leaf collection:</strong> ${escapeHtml(sched.baggedLeaves.join(", "))}.</p>
+            <p>${streets.length} streets are in section ${id}${streets.length ? `: ${escapeHtml(streets.join(", "))}` : ""}.</p>
+          </section>`;
+    })
+    .join("\n");
+
+  const url = absolute("/guides/princeton-leaf-and-brush-schedule.html");
+  const body = `
+    <main id="guide-main" tabindex="-1">
+      <div class="hero">
+        <p class="eyebrow">Yard waste</p>
+        <h1>Princeton leaf, brush and log collection schedule.</h1>
+        <p class="answer">Princeton splits the municipality into five collection sections, and your section decides when branches, loose leaves and bagged leaves are picked up. This page lists the ${year} dates for all five sections and the streets in each one.</p>
+      </div>
+      <div class="layout">
+        <article>
+          <section id="rules">
+            <h2>How yard waste collection works</h2>
+            <p>${escapeHtml(waste.rules.yard)}</p>
+            <p>Find your section by street below, or use the <a href="/guides/princeton-garbage-schedule.html">garbage schedule by street</a>, which lists the section alongside the weekly collection day.</p>
+          </section>
+          <section id="sections">
+            <h2>${year} dates by section</h2>
+${sectionBlocks}
+          </section>
+        </article>
+        <aside aria-label="Official sources">
+          <div class="related">
+            <h2>Official sources</h2>
+            <a href="https://www.princetonnj.gov/450/Leaf-Branch-and-Log-Collection">Leaf, branch and log collection</a>
+            <a href="https://www.princetonnj.gov/DocumentCenter/View/1018/Residential-Brush-and-Leaf-Collection-Sections-PDF">Brush and leaf sections list</a>
+            <a href="/guides/princeton-garbage-schedule.html">Garbage schedule by street</a>
+            <a href="/">PrincetonLive</a>
+          </div>
+        </aside>
+      </div>
+    </main>`;
+
+  return shell({
+    title: `Princeton NJ leaf, brush and log collection schedule ${year}`,
+    description: `The ${year} Princeton leaf, branch and log collection dates for all five municipal sections, with the streets in each section.`,
+    url,
+    body,
+    jsonLd: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        { "@type": "Question", name: "When is leaf collection in Princeton, NJ?",
+          acceptedAnswer: { "@type": "Answer", text: `Princeton runs leaf and brush collection by section. There are five sections, each with its own ${year} start dates for branches, loose leaves and bagged leaves. Your street determines your section.` } },
+        { "@type": "Question", name: "How do I find my Princeton yard waste section?",
+          acceptedAnswer: { "@type": "Answer", text: "Look up your street on the PrincetonLive garbage schedule, which lists the brush and leaf section beside the weekly collection day." } },
+      ],
+    }, null, 2),
+    pageClass: "yard-waste",
+  });
+}
+
+// Garden Theatre showtimes, read from the theatre's ticketing system every refresh.
+async function gardenTheatreHtml() {
+  const garden = await readPublic("garden-theatre.json");
+  if (!garden || !garden.filmCount) return null;
+
+  const dayBlocks = garden.days
+    .slice(0, 14)
+    .map((day) => `          <section>
+            <h3>${escapeHtml(day.day)}</h3>
+            <ul>
+${day.screenings.map((film) => `              <li><a href="${escapeHtml(film.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(film.title)}</a>: ${escapeHtml(film.times.map((t) => (t.badges?.length ? `${t.time} (${t.badges.join(", ")})` : t.time)).join(", "))}</li>`).join("\n")}
+            </ul>
+          </section>`)
+    .join("\n");
+
+  const titles = garden.nowPlaying.slice(0, 12).map((f) => escapeHtml(f.title)).join(", ");
+  const url = absolute("/guides/princeton-garden-theatre-showtimes.html");
+  const body = `
+    <main id="guide-main" tabindex="-1">
+      <div class="hero">
+        <p class="eyebrow">Cinema</p>
+        <h1>Princeton Garden Theatre showtimes.</h1>
+        <p class="answer">The Garden Theatre at ${escapeHtml(garden.address)} is currently showing ${titles}. Showtimes below are read from the theatre's own ticketing system and refresh through the day. Buy tickets and confirm times on the theatre's site.</p>
+      </div>
+      <div class="layout">
+        <article>
+          <section id="schedule">
+            <h2>What is playing this week</h2>
+${dayBlocks}
+          </section>
+          <section id="context">
+            <h2>Going to the Garden</h2>
+            <p>The Garden Theatre sits on Nassau Street in the middle of downtown Princeton. Downtown meters are payable until 8 pm Monday to Thursday and until 9 pm Friday and Saturday, so an evening screening usually falls inside paid hours. See the <a href="/guides/princeton-parking-rules.html">Princeton parking rules</a> before an evening show, and the <a href="/guides/princeton-public-events-culture.html">public events and culture guide</a> for the rest of the town's calendar.</p>
+          </section>
+        </article>
+        <aside aria-label="Official sources">
+          <div class="related">
+            <h2>Official sources</h2>
+            <a href="${escapeHtml(garden.source)}" target="_blank" rel="noopener noreferrer">Princeton Garden Theatre</a>
+            <a href="/guides/princeton-public-events-culture.html">Public events and culture</a>
+            <a href="/">PrincetonLive</a>
+          </div>
+        </aside>
+      </div>
+    </main>`;
+
+  return shell({
+    title: "Princeton Garden Theatre showtimes this week",
+    description: `Current showtimes at the Princeton Garden Theatre, ${garden.address}, read from the theatre's ticketing system and refreshed through the day.`,
+    url,
+    body,
+    jsonLd: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "MovieTheater",
+      name: "Princeton Garden Theatre",
+      address: { "@type": "PostalAddress", streetAddress: "160 Nassau Street", addressLocality: "Princeton", addressRegion: "NJ", addressCountry: "US" },
+      url: garden.source,
+    }, null, 2),
+    pageClass: "garden-theatre-page",
+  });
+}
+
+// Municipal crime figures against state and national rates.
+async function crimeHtml() {
+  const crime = await readPublic("crime-data.json");
+  if (!crime) return null;
+  const p = crime.princeton, s = crime.newJersey, n = crime.national;
+  const row = (label, key) =>
+    `            <tr><th scope="row">${label}</th><td>${p[key].count}</td><td>${p[key].rate}</td><td>${s[key].rate}</td><td>${n[key].rate}</td></tr>`;
+
+  const url = absolute("/guides/princeton-crime-rate.html");
+  const body = `
+    <main id="guide-main" tabindex="-1">
+      <div class="hero">
+        <p class="eyebrow">Safety</p>
+        <h1>Princeton, NJ crime rate.</h1>
+        <p class="answer">In ${crime.year} Princeton Police Department reported ${p["violent-crime"].count} violent offences and ${p["property-crime"].count} property offences for a municipality of about ${p["violent-crime"].population.toLocaleString()} residents. That is ${p["violent-crime"].rate} violent and ${p["property-crime"].rate} property offences per 100,000 people, against national rates of ${n["violent-crime"].rate} and ${n["property-crime"].rate}.</p>
+      </div>
+      <div class="layout">
+        <article>
+          <section id="figures">
+            <h2>Princeton compared with New Jersey and the nation</h2>
+            <div class="table-scroll">
+              <table>
+                <caption>Reported offences per 100,000 residents, ${crime.year}</caption>
+                <thead><tr><th scope="col">Offence type</th><th scope="col">Princeton count</th><th scope="col">Princeton rate</th><th scope="col">New Jersey</th><th scope="col">United States</th></tr></thead>
+                <tbody>
+${row("Violent crime", "violent-crime")}
+${row("Property crime", "property-crime")}
+                </tbody>
+              </table>
+            </div>
+            <p>${escapeHtml(crime.basis)} Figures are reported by Princeton Police Department, which files under ORI NJ0111000. Princeton University runs its own department, reported separately, so campus incidents are not included here.</p>
+          </section>
+          <section id="caveats">
+            <h2>How to read these numbers</h2>
+            <p>${escapeHtml(crime.caveat)}</p>
+            <p>PrincetonLive publishes crime at municipal level only. No public dataset reports crime by block group for a town this size, and shading neighbourhoods by crime moves property values and tracks income and race in ways that entrench historic patterns. The <a href="/guides/princeton-civic-data.html">neighbourhood data guide</a> explains what the map does show.</p>
+          </section>
+        </article>
+        <aside aria-label="Official sources">
+          <div class="related">
+            <h2>Official sources</h2>
+${crime.sources.map((src) => `            <a href="${escapeHtml(src.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(src.name)}</a>`).join("\n")}
+            <a href="/">PrincetonLive</a>
+          </div>
+        </aside>
+      </div>
+    </main>`;
+
+  return shell({
+    title: `Princeton NJ crime rate ${crime.year}`,
+    description: `Princeton, NJ violent and property crime for ${crime.year} from the FBI Crime Data Explorer, compared with New Jersey and national rates per 100,000 residents.`,
+    url,
+    body,
+    jsonLd: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [{
+        "@type": "Question",
+        name: "Is Princeton, NJ safe?",
+        acceptedAnswer: { "@type": "Answer", text: `In ${crime.year} Princeton reported ${p["violent-crime"].rate} violent offences per 100,000 residents against a national rate of ${n["violent-crime"].rate}, and ${p["property-crime"].rate} property offences against a national ${n["property-crime"].rate}. Figures come from the FBI Crime Data Explorer as submitted by Princeton Police Department.` },
+      }],
+    }, null, 2),
+    pageClass: "crime-page",
+  });
+}
+
+// Parking rules, from the verified facts shared with the app.
+async function parkingHtml() {
+  const rules = JSON.parse(await readFile(new URL("../src/data/local-rules.json", import.meta.url), "utf8"));
+  const url = absolute("/guides/princeton-parking-rules.html");
+  const verified = new Date(`${rules.verifiedOn}T12:00:00Z`).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "America/New_York" });
+  const body = `
+    <main id="guide-main" tabindex="-1">
+      <div class="hero">
+        <p class="eyebrow">Parking</p>
+        <h1>Princeton, NJ parking rules and meter hours.</h1>
+        <p class="answer">${escapeHtml(rules.parking.overnightBan)} ${escapeHtml(rules.parking.overnightCaveat)} Downtown meters are payable ${escapeHtml(rules.parking.meterHours.map(([w, h]) => `${w.toLowerCase()} ${h}`).join(", "))}.</p>
+      </div>
+      <div class="layout">
+        <article>
+          <section id="overnight">
+            <h2>The overnight ban</h2>
+            <p>${escapeHtml(rules.parking.overnightBan)} This is the rule new residents break most often, and the municipality notes that ${escapeHtml(rules.parking.overnightCaveat.toLowerCase())}</p>
+          </section>
+          <section id="meters">
+            <h2>Meter hours</h2>
+            <div class="table-scroll">
+              <table>
+                <caption>When payment is required at Princeton meters and pay stations</caption>
+                <thead><tr><th scope="col">Days</th><th scope="col">Hours</th></tr></thead>
+                <tbody>
+${rules.parking.meterHours.map(([w, h]) => `                  <tr><th scope="row">${escapeHtml(w)}</th><td>${escapeHtml(h)}</td></tr>`).join("\n")}
+                </tbody>
+              </table>
+            </div>
+            <p>${escapeHtml(rules.parking.note)}</p>
+          </section>
+          <section id="rates">
+            <h2>Rate change</h2>
+            <p>${escapeHtml(rules.parking.rateChange)}</p>
+          </section>
+          <section id="related">
+            <h2>Before an evening downtown</h2>
+            <p>Meters run into the evening, so a show at the <a href="/guides/princeton-garden-theatre-showtimes.html">Garden Theatre</a> usually falls inside paid hours. Princeton Public Library cardholders can validate a Spring Street Garage ticket at the Sands Library Building; see <a href="/guides/princeton-library-benefits.html">library benefits</a>.</p>
+          </section>
+          <section id="verified">
+            <h2>How current this is</h2>
+            <p>These rules were read off the municipal parking page on ${verified}. Parking rules change and carry fines, so confirm on the official page before you rely on them. Residential permit costs and applications are not published on the municipal parking page, so PrincetonLive does not list them.</p>
+          </section>
+        </article>
+        <aside aria-label="Official sources">
+          <div class="related">
+            <h2>Official sources</h2>
+            <a href="${escapeHtml(rules.parking.url)}" target="_blank" rel="noopener noreferrer">Municipality of Princeton parking</a>
+            <a href="/guides/princeton-garden-theatre-showtimes.html">Garden Theatre showtimes</a>
+            <a href="/">PrincetonLive</a>
+          </div>
+        </aside>
+      </div>
+    </main>`;
+
+  return shell({
+    title: "Princeton NJ parking rules, meter hours and the overnight ban",
+    description: "Princeton, NJ parking: the 2 to 6 am overnight ban on former Borough streets, downtown meter hours by day, and the 14 September 2026 rate change.",
+    url,
+    body,
+    jsonLd: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        { "@type": "Question", name: "Can you park overnight on the street in Princeton, NJ?",
+          acceptedAnswer: { "@type": "Answer", text: `${rules.parking.overnightBan} ${rules.parking.overnightCaveat}` } },
+        { "@type": "Question", name: "What hours do Princeton parking meters run?",
+          acceptedAnswer: { "@type": "Answer", text: rules.parking.meterHours.map(([w, h]) => `${w}: ${h}`).join(". ") + ". " + rules.parking.note } },
+      ],
+    }, null, 2),
+    pageClass: "parking-page",
+  });
+}
+
 // Disclaimer, privacy notice, and corrections route. The site publishes operational
 // facts a resident acts on (collection days, weather alerts, election dates) and carries
 // a town name plus a photograph of Nassau Hall, so the two exposures worth naming
@@ -909,6 +1216,10 @@ function sitemapXml() {
     { url: "/about.html", priority: "0.6", changefreq: "monthly" },
     { url: "/legal.html", priority: "0.3", changefreq: "yearly" },
     { url: "/guides/princeton-garbage-schedule.html", priority: "0.95", changefreq: "weekly" },
+    { url: "/guides/princeton-leaf-and-brush-schedule.html", priority: "0.9", changefreq: "monthly" },
+    { url: "/guides/princeton-parking-rules.html", priority: "0.9", changefreq: "monthly" },
+    { url: "/guides/princeton-garden-theatre-showtimes.html", priority: "0.85", changefreq: "daily" },
+    { url: "/guides/princeton-crime-rate.html", priority: "0.8", changefreq: "yearly" },
     ...pillarGuides.map((guide) => ({
       url: guidePath(guide.slug),
       priority: "0.85",
@@ -979,6 +1290,10 @@ These are the figures PrincetonLive maintains, with the official source behind e
 - [PrincetonLive homepage](${SITE_URL}/): Resident guide for Princeton events, transit, services, library benefits, resident perks, civic data, and weather.
 - [Resident guide hub](${SITE_URL}/guides/): Crawlable pillar guides for recurring Princeton resident questions.
 - [Princeton garbage schedule by street](${SITE_URL}/guides/princeton-garbage-schedule.html): Collection day and brush section for every street in the municipal schedule.
+- [Princeton leaf and brush schedule](${SITE_URL}/guides/princeton-leaf-and-brush-schedule.html): Branch, loose leaf and bagged leaf dates for all five collection sections, with the streets in each.
+- [Princeton parking rules](${SITE_URL}/guides/princeton-parking-rules.html): The 2 to 6 am overnight ban, meter hours by day, and the 14 September 2026 rate change.
+- [Princeton Garden Theatre showtimes](${SITE_URL}/guides/princeton-garden-theatre-showtimes.html): Current screenings read from the theatre ticketing system.
+- [Princeton crime rate](${SITE_URL}/guides/princeton-crime-rate.html): Municipal violent and property crime against state and national rates.
 - [About PrincetonLive](${SITE_URL}/about.html): Who maintains the site and why.
 - [Disclaimer and privacy](${SITE_URL}/legal.html): Independence, limitation of liability, and what data leaves the browser.
 
@@ -1021,6 +1336,19 @@ await Promise.all([
   ),
   writeFile(new URL("../public/legal.html", import.meta.url), legalHtml()),
   writeFile(new URL("../public/about.html", import.meta.url), await aboutHtml()),
+  ...(await Promise.all([
+    ["princeton-leaf-and-brush-schedule.html", yardWasteHtml],
+    ["princeton-garden-theatre-showtimes.html", gardenTheatreHtml],
+    ["princeton-crime-rate.html", crimeHtml],
+    ["princeton-parking-rules.html", parkingHtml],
+  ].map(async ([name, fn]) => {
+    const html = await fn();
+    if (!html) {
+      console.warn(`Skipped ${name}: source data missing.`);
+      return null;
+    }
+    return writeFile(new URL(`../public/guides/${name}`, import.meta.url), html);
+  }))).filter(Boolean),
   writeFile(
     new URL("../public/guides/princeton-garbage-schedule.html", import.meta.url),
     await garbageScheduleHtml(),

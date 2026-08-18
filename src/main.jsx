@@ -1,5 +1,8 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
+// Verified local facts live in one JSON file so the page generator and the app cannot
+// drift apart on a rule that carries a fine.
+import localRules from "./data/local-rules.json";
 import {
   AlertTriangle,
   BatteryCharging,
@@ -259,44 +262,6 @@ const civicMetrics = [
   },
 ];
 
-// Facts read off the official pages by hand, with the date each was checked. These are
-// rules residents act on, so each carries its source and the page shows how old the
-// check is. Re-verify when the verifiedOn date is more than a few months old.
-const localRules = {
-  verifiedOn: "2026-08-18",
-  parking: {
-    overnightBan: "No overnight parking on any former Princeton Borough street, 2 to 6 am.",
-    overnightCaveat: "Not all streets carry a sign saying so.",
-    meterHours: [
-      ["Monday to Thursday", "9 am to 8 pm"],
-      ["Friday and Saturday", "9 am to 9 pm"],
-      ["Sunday", "1 pm to 8 pm"],
-    ],
-    rateChange: "Meter rates rise on 14 September 2026: 30-minute spaces go from $1.00 to $1.25, and 90-minute zones from $3.00 to $3.50.",
-    note: "The 90-minute pay stations start at 10 am. The 15-minute Wawa meters are payable all day, every day.",
-    url: "https://www.princetonnj.gov/203/Parking-in-Princeton",
-  },
-  schools: {
-    firstDay: "2026-08-31",
-    firstDayLabel: "Monday 31 August 2026",
-    detail: "First day of school for students in Princeton Public Schools.",
-    url: "https://www.princetonk12.org/quick-links/calendars",
-  },
-  library: {
-    address: "65 Witherspoon Street",
-    // 0 = Sunday. Times are 24-hour local.
-    hours: {
-      0: [12, 17],
-      1: [9, 20],
-      2: [9, 20],
-      3: [9, 20],
-      4: [9, 20],
-      5: [9, 17],
-      6: [9, 17],
-    },
-    url: "https://princetonlibrary.org/",
-  },
-};
 
 // The library publishes hours as static text with no API and no holiday feed, so this
 // is computed from the posted weekly hours and says as much. It must never be presented
@@ -537,6 +502,26 @@ const pillarGuides = [
     title: "Garbage schedule by street",
     detail: "Collection day and brush section for every Princeton street, with the set-out times and bulk rules.",
     url: "/guides/princeton-garbage-schedule.html",
+  },
+  {
+    title: "Leaf and brush schedule",
+    detail: "Branch, loose leaf and bagged leaf dates for all five collection sections, and the streets in each.",
+    url: "/guides/princeton-leaf-and-brush-schedule.html",
+  },
+  {
+    title: "Parking rules",
+    detail: "The 2 to 6 am overnight ban, downtown meter hours by day, and the September rate change.",
+    url: "/guides/princeton-parking-rules.html",
+  },
+  {
+    title: "Garden Theatre showtimes",
+    detail: "What is playing on Nassau Street this week, read from the theatre's ticketing system.",
+    url: "/guides/princeton-garden-theatre-showtimes.html",
+  },
+  {
+    title: "Princeton crime rate",
+    detail: "Municipal violent and property crime against New Jersey and national rates.",
+    url: "/guides/princeton-crime-rate.html",
   },
   {
     title: "Moving to Princeton",

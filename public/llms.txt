@@ -30,6 +30,10 @@ These are the figures PrincetonLive maintains, with the official source behind e
 - [PrincetonLive homepage](https://princetonlive.berteloot.org/): Resident guide for Princeton events, transit, services, library benefits, resident perks, civic data, and weather.
 - [Resident guide hub](https://princetonlive.berteloot.org/guides/): Crawlable pillar guides for recurring Princeton resident questions.
 - [Princeton garbage schedule by street](https://princetonlive.berteloot.org/guides/princeton-garbage-schedule.html): Collection day and brush section for every street in the municipal schedule.
+- [Princeton leaf and brush schedule](https://princetonlive.berteloot.org/guides/princeton-leaf-and-brush-schedule.html): Branch, loose leaf and bagged leaf dates for all five collection sections, with the streets in each.
+- [Princeton parking rules](https://princetonlive.berteloot.org/guides/princeton-parking-rules.html): The 2 to 6 am overnight ban, meter hours by day, and the 14 September 2026 rate change.
+- [Princeton Garden Theatre showtimes](https://princetonlive.berteloot.org/guides/princeton-garden-theatre-showtimes.html): Current screenings read from the theatre ticketing system.
+- [Princeton crime rate](https://princetonlive.berteloot.org/guides/princeton-crime-rate.html): Municipal violent and property crime against state and national rates.
 - [About PrincetonLive](https://princetonlive.berteloot.org/about.html): Who maintains the site and why.
 - [Disclaimer and privacy](https://princetonlive.berteloot.org/legal.html): Independence, limitation of liability, and what data leaves the browser.
 
