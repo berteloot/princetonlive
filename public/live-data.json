@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-19T13:08:06.635Z",
+  "generatedAt": "2026-08-19T15:45:37.051Z",
   "weather": {
     "temperature": 87,
     "shortForecast": "Sunny",
-    "wind": "0 to 5 mph W",
-    "detailedForecast": "Sunny, with a high near 87. West wind 0 to 5 mph.",
+    "wind": "5 mph W",
+    "detailedForecast": "Sunny, with a high near 87. West wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -105,17 +105,6 @@
       "url": "https://princetonlibrary.libnet.info/event/15121282",
       "tags": [
         "rain",
-        "practical"
-      ]
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Mobile Food Pantry",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 19, 2026",
-      "timeLabel": "09:00 AM - 11:30 AM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7594",
-      "tags": [
         "practical"
       ]
     },
@@ -224,6 +213,19 @@
         "family",
         "practical"
       ]
+    },
+    {
+      "title": "Kids: Baby Play Group",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 20",
+      "timeLabel": "12:00pm - 1:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14662537",
+      "tags": [
+        "new",
+        "family",
+        "practical"
+      ]
     }
   ],
   "sources": [
@@ -249,7 +251,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "30 calendar items"
+      "detail": "29 calendar items"
     }
   ]
 }
