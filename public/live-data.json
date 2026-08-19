@@ -1,13 +1,21 @@
 {
-  "generatedAt": "2026-08-19T15:45:37.051Z",
+  "generatedAt": "2026-08-19T18:52:34.055Z",
   "weather": {
-    "temperature": 87,
+    "temperature": 86,
     "shortForecast": "Sunny",
     "wind": "5 mph W",
-    "detailedForecast": "Sunny, with a high near 87. West wind around 5 mph.",
+    "detailedForecast": "Sunny, with a high near 86. West wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
-  "alerts": [],
+  "alerts": [
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b732b2848140eff7da7b0b9c6454fd4f21980e34.001.1",
+      "event": "Flood Watch",
+      "headline": "Flood Watch issued August 19 at 2:08PM EDT until August 21 at 2:00AM EDT by NWS Mount Holly NJ",
+      "severity": "Severe",
+      "url": null
+    }
+  ],
   "alertsAvailable": true,
   "events": [
     {
@@ -105,17 +113,6 @@
       "url": "https://princetonlibrary.libnet.info/event/15121282",
       "tags": [
         "rain",
-        "practical"
-      ]
-    },
-    {
-      "title": "Leighton Listens",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 19, 2026",
-      "timeLabel": "11:00 AM - 12:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8101",
-      "tags": [
         "practical"
       ]
     },
@@ -226,6 +223,18 @@
         "family",
         "practical"
       ]
+    },
+    {
+      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Griggs Farm",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 20, 2026",
+      "timeLabel": "03:30 PM - 04:00 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7438",
+      "tags": [
+        "family",
+        "practical"
+      ]
     }
   ],
   "sources": [
@@ -233,7 +242,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 87F"
+      "detail": "Sunny, 86F"
     },
     {
       "name": "Princeton University Events",
@@ -251,7 +260,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "29 calendar items"
+      "detail": "28 calendar items"
     }
   ]
 }
