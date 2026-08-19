@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-19T18:52:34.055Z",
+  "generatedAt": "2026-08-19T21:39:47.065Z",
   "weather": {
-    "temperature": 86,
+    "temperature": 87,
     "shortForecast": "Sunny",
     "wind": "5 mph W",
-    "detailedForecast": "Sunny, with a high near 86. West wind around 5 mph.",
+    "detailedForecast": "Sunny, with a high near 87. West wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
@@ -97,7 +97,7 @@
       "source": "Princeton Public Library",
       "dateLabel": "Aug 19",
       "timeLabel": "5:00pm - 6:00pm",
-      "location": "Princeton Public Library - Quiet Room",
+      "location": "Princeton Public Library - Tower Room",
       "url": "https://princetonlibrary.libnet.info/event/16862221",
       "tags": [
         "family",
@@ -113,17 +113,6 @@
       "url": "https://princetonlibrary.libnet.info/event/15121282",
       "tags": [
         "rain",
-        "practical"
-      ]
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Alliance Church",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 19, 2026",
-      "timeLabel": "02:30 PM - 04:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7232",
-      "tags": [
         "practical"
       ]
     },
@@ -235,6 +224,19 @@
         "family",
         "practical"
       ]
+    },
+    {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Aug 20",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-76",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ]
     }
   ],
   "sources": [
@@ -242,7 +244,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 86F"
+      "detail": "Sunny, 87F"
     },
     {
       "name": "Princeton University Events",
@@ -260,7 +262,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "28 calendar items"
+      "detail": "27 calendar items"
     }
   ]
 }
