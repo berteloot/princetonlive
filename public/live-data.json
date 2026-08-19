@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-18T21:37:16.020Z",
+  "generatedAt": "2026-08-19T01:52:24.641Z",
   "weather": {
-    "temperature": 85,
-    "shortForecast": "Isolated Showers And Thunderstorms",
-    "wind": "5 mph W",
-    "detailedForecast": "Isolated showers and thunderstorms. Partly sunny, with a high near 85. West wind around 5 mph. Chance of precipitation is 20%.",
+    "temperature": 66,
+    "shortForecast": "Partly Cloudy then Patchy Fog",
+    "wind": "0 to 5 mph SW",
+    "detailedForecast": "Patchy fog after 3am. Partly cloudy, with a low around 66. Southwest wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -109,17 +109,6 @@
       "tags": [
         "culture",
         "rain",
-        "practical"
-      ]
-    },
-    {
-      "title": "Food Insecurity Task Force: Arm in Arm",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 18, 2026",
-      "timeLabel": "01:00 PM - 07:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7747",
-      "tags": [
         "practical"
       ]
     },
@@ -229,6 +218,20 @@
         "family",
         "practical"
       ]
+    },
+    {
+      "title": "Film: \"Project Hail Mary\"",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 19",
+      "timeLabel": "5:00pm - 7:20pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/16985040",
+      "tags": [
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ]
     }
   ],
   "sources": [
@@ -236,7 +239,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Isolated Showers And Thunderstorms, 85F"
+      "detail": "Partly Cloudy then Patchy Fog, 66F"
     },
     {
       "name": "Princeton University Events",
@@ -254,7 +257,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "29 calendar items"
+      "detail": "28 calendar items"
     }
   ]
 }
