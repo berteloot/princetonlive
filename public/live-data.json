@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-19T09:48:47.468Z",
+  "generatedAt": "2026-08-19T13:08:06.635Z",
   "weather": {
-    "temperature": 65,
-    "shortForecast": "Patchy Fog",
-    "wind": "0 mph ",
-    "detailedForecast": "Patchy fog. Partly cloudy, with a low around 65. North wind around 0 mph.",
+    "temperature": 87,
+    "shortForecast": "Sunny",
+    "wind": "0 to 5 mph W",
+    "detailedForecast": "Sunny, with a high near 87. West wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -231,7 +231,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Patchy Fog, 65F"
+      "detail": "Sunny, 87F"
     },
     {
       "name": "Princeton University Events",
