@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-19T07:05:08.882Z",
+  "generatedAt": "2026-08-19T09:48:47.468Z",
   "weather": {
     "temperature": 65,
     "shortForecast": "Patchy Fog",
     "wind": "0 mph ",
-    "detailedForecast": "Patchy fog. Partly cloudy, with a low around 65. Northwest wind around 0 mph.",
+    "detailedForecast": "Patchy fog. Partly cloudy, with a low around 65. North wind around 0 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
