@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 // Verified local facts live in one JSON file so the page generator and the app cannot
 // drift apart on a rule that carries a fine.
@@ -220,6 +220,13 @@ const primaryNavLinks = [
   ["#guides", "Guides"],
   ["#faq", "FAQ"],
 ];
+
+// School markers draw in CSS pixels: an 18px dot inside a 28px hit target, which clears
+// the 24px minimum for a touch point.
+const SCHOOL_DOT_PX = 9;
+const SCHOOL_HIT_PX = 14;
+// Used until the map reports its width, one frame at most.
+const CIVIC_MAP_FALLBACK_WIDTH = 900;
 
 // 5 PM is where "after work" starts for the evening filter, and the first show at the
 // Garden Theatre most nights.
@@ -920,6 +927,12 @@ function App() {
   const [civicMetric, setCivicMetric] = useState("income");
   const [hoveredCivicFeature, setHoveredCivicFeature] = useState(null);
   const [hoveredSchool, setHoveredSchool] = useState(null);
+  // The map is drawn in a 100-unit viewBox, so anything sized in user units grows with
+  // the container. School markers are places, not quantities, and a place marker should
+  // be the same size on every screen. Measuring the rendered width lets the marker draw
+  // in pixels: 1 unit inside the marker group is 1 CSS pixel.
+  const [civicMapBox, setCivicMapBox] = useState(null);
+  const civicMapResize = useRef(null);
   const [recycleCoachFailed, setRecycleCoachFailed] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
   const [crimeData, setCrimeData] = useState(null);
@@ -1176,6 +1189,19 @@ function App() {
   const civicDomain = metricDomain(civicMap.features, civicMetric);
   const activeBenchmark = civicMetric === "schools" ? null : civicMap.benchmarks?.[civicMetric];
   const schoolContext = civicMap.schoolContext ?? fallbackCivicMap.schoolContext;
+  // viewBox units per CSS pixel. Applied to the marker group, it cancels the map's own
+  // scaling, so the dot stays 18px whether the map is 360px or 1200px wide. The svg keeps
+  // its aspect ratio, so the smaller of the two axes sets the scale; measuring width alone
+  // drew the marker short whenever the shell was height-constrained.
+  const schoolMarkerScale = useMemo(() => {
+    const [, , boxWidth, boxHeight] = String(civicMap.viewBox ?? "0 0 100 72")
+      .split(/\s+/)
+      .map(Number);
+    const width = civicMapBox?.width || CIVIC_MAP_FALLBACK_WIDTH;
+    const height = civicMapBox?.height || (CIVIC_MAP_FALLBACK_WIDTH * boxHeight) / boxWidth;
+    const pixelsPerUnit = Math.min(width / boxWidth, height / boxHeight);
+    return pixelsPerUnit > 0 ? 1 / pixelsPerUnit : 0.1;
+  }, [civicMap.viewBox, civicMapBox]);
   const activeSchool = hoveredSchool ?? schoolContext.schools?.[0] ?? null;
   const topCivicFeatures = civicMap.features
     .filter((feature) => Number.isFinite(feature[civicMetric]))
@@ -1212,6 +1238,37 @@ function App() {
   const addressMarker = addressLookup.result
     ? projectCivicPoint(civicMap.mapProjection, addressLookup.result.lat, addressLookup.result.lon)
     : null;
+
+  // A callback ref rather than an effect, so it still works if the map ever moves behind
+  // a lazy boundary the way the garbage widget already does.
+  //
+  // Two things keep this from looping. The ref is stable, so React does not detach and
+  // reattach it on every render, and the setter returns the previous object when the size
+  // has not moved. Storing a fresh object unconditionally re-rendered, which re-ran the
+  // ref, which stored another object: React error #185.
+  const applyCivicMapBox = useCallback((width, height) => {
+    setCivicMapBox((current) =>
+      current && Math.abs(current.width - width) < 0.5 && Math.abs(current.height - height) < 0.5
+        ? current
+        : { width, height },
+    );
+  }, []);
+
+  const measureCivicMap = useCallback(
+    (node) => {
+      civicMapResize.current?.disconnect();
+      civicMapResize.current = null;
+      if (!node) return;
+      const rect = node.getBoundingClientRect();
+      applyCivicMapBox(rect.width, rect.height);
+      if (typeof ResizeObserver === "undefined") return;
+      civicMapResize.current = new ResizeObserver(([entry]) => {
+        applyCivicMapBox(entry.contentRect.width, entry.contentRect.height);
+      });
+      civicMapResize.current.observe(node);
+    },
+    [applyCivicMapBox],
+  );
 
   const updateCivicTooltip = (event) => {
     const shell = event.currentTarget.closest?.(".civic-map-shell") ?? event.currentTarget;
@@ -2326,6 +2383,7 @@ function App() {
             </form>
             <div className="civic-map-shell">
               <svg
+                ref={measureCivicMap}
                 viewBox={civicMap.viewBox}
                 role="img"
                 aria-label={`Princeton-area block groups by ${activeCivicMetric.detail}`}
@@ -2398,7 +2456,7 @@ function App() {
                           key={school.id}
                           role="button"
                           tabIndex="0"
-                          transform={`translate(${marker.x.toFixed(3)} ${marker.y.toFixed(3)})`}
+                          transform={`translate(${marker.x.toFixed(3)} ${marker.y.toFixed(3)}) scale(${schoolMarkerScale.toFixed(4)})`}
                           aria-label={`${school.name}, ${school.type}, ${school.grades}`}
                           onMouseEnter={(event) => {
                             setHoveredSchool(school);
@@ -2425,14 +2483,18 @@ function App() {
                             }
                           }}
                         >
-                          {/* The visible marker is 7.3px across on a 360px phone, well
-                              under the 24px minimum. This invisible circle enlarges the
-                              hit area without changing the design. */}
-                          <circle className="school-marker-hit" r="8" />
-                          <circle r="2.2" />
-                          <text y="0.74" textAnchor="middle">
-                            S
-                          </text>
+                          {/* Invisible, and larger than the dot, so the touch target
+                              clears 24px without changing the design. */}
+                          <circle className="school-marker-hit" r={SCHOOL_HIT_PX} />
+                          <circle className="school-marker-dot" r={SCHOOL_DOT_PX} />
+                          {/* A mortarboard. The old marker was the letter S set in a
+                              filled circle, which read as a dollar sign, the symbol the
+                              wealth layer uses. */}
+                          <path
+                            className="school-marker-glyph"
+                            d="M -6.2 -1.4 L 0 -4.6 L 6.2 -1.4 L 0 1.8 Z"
+                          />
+                          <path className="school-marker-band" d="M -3.6 0.3 V 3 Q 0 4.6 3.6 3 V 0.3" />
                           <title>
                             {school.name}: {school.grades}
                           </title>
@@ -2488,6 +2550,13 @@ function App() {
                   <span>{hoveredSchool.type}</span>
                   <b>{hoveredSchool.grades}</b>
                   <small>{hoveredSchool.address}</small>
+                  {hoveredSchool.usNews ? (
+                    <small className="school-tooltip-rank">
+                      US News {hoveredSchool.usNews.edition}: #
+                      {hoveredSchool.usNews.nationalRank.toLocaleString()} nationally, #
+                      {hoveredSchool.usNews.stateRank} in New Jersey
+                    </small>
+                  ) : null}
                 </div>
               ) : null}
               {civicMetric === "voting" ? (
@@ -2626,9 +2695,34 @@ function App() {
                     <strong>{activeSchool.name}</strong>
                     <small>{activeSchool.grades}</small>
                     <p>{activeSchool.address}</p>
+                    {activeSchool.usNews ? (
+                      <p className="school-rank">
+                        US News {activeSchool.usNews.edition}: #
+                        {activeSchool.usNews.nationalRank.toLocaleString()} of{" "}
+                        {activeSchool.usNews.rankedNationally.toLocaleString()} nationally, #
+                        {activeSchool.usNews.stateRank} of {activeSchool.usNews.rankedInState} in New
+                        Jersey.
+                      </p>
+                    ) : null}
                     <a href={activeSchool.sourceUrl} {...externalLinkProps(activeSchool.sourceUrl)}>
                       Official school page
                     </a>
+                    {activeSchool.usNews ? (
+                      <>
+                        <a
+                          href={activeSchool.usNews.url}
+                          {...externalLinkProps(activeSchool.usNews.url)}
+                        >
+                          US News listing
+                        </a>
+                        <a
+                          href={activeSchool.usNews.methodologyUrl}
+                          {...externalLinkProps(activeSchool.usNews.methodologyUrl)}
+                        >
+                          How that rank is built
+                        </a>
+                      </>
+                    ) : null}
                   </div>
                 ) : null}
                 <div className="school-list">

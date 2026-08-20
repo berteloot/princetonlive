@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T09:54:39.510Z",
+  "generatedAt": "2026-08-20T15:37:11.350Z",
   "minDaysUntilReview": 11,
   "overdueCount": 0,
   "ok": true,
@@ -21,6 +21,12 @@
       "detail": "Term start for 2026-27. Replace with the next school year's calendar once published.",
       "dueInDays": 11,
       "source": "https://www.princetonk12.org/quick-links/calendars"
+    },
+    {
+      "name": "US News high school rank",
+      "detail": "The 2026-2027 rank for Princeton High School was read off the listing by hand. US News publishes the next edition each August.",
+      "dueInDays": 365,
+      "source": "https://www.usnews.com/education/best-high-schools/new-jersey/districts/princeton-public-schools/princeton-high-school-12735"
     }
   ]
 }

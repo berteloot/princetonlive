@@ -32,7 +32,7 @@ const publicSchoolContext = {
   summary:
     "Public school points show Princeton Public Schools campuses with official district links. Use the district registration/address process for elementary assignment and NJDOE reports for performance context.",
   caveat:
-    "This is not a ranking layer. PrincetonLive does not reduce schools to a single score, and private/independent schools should only be added from a reliable public directory with clear methodology.",
+    "The map does not rank schools. Every marker is the same size, position is all it carries, and the one rank shown belongs to US News with its method linked beside it. US News ranks high schools, so the elementary and middle campuses carry no rank.",
   districtUrl: princetonSchoolsUrl,
   registrationUrl: princetonSchoolsRegistrationUrl,
   performanceReportsUrl: njSchoolPerformanceReportsUrl,
@@ -96,6 +96,21 @@ const publicSchoolContext = {
       lat: 40.3587009,
       lon: -74.6560332,
       sourceUrl: "https://www.princetonk12.org/princeton-high-school",
+      // Read by hand off the free US News listing on the date below, not scraped: their
+      // terms do not allow automated collection, and the table is republished once a
+      // year. The methodology link ships with the figure because a rank without its
+      // method is a number nobody can check.
+      usNews: {
+        edition: "2026-2027",
+        nationalRank: 616,
+        rankedNationally: 17945,
+        stateRank: 37,
+        rankedInState: 415,
+        url: "https://www.usnews.com/education/best-high-schools/new-jersey/districts/princeton-public-schools/princeton-high-school-12735",
+        methodologyUrl:
+          "https://www.usnews.com/education/best-high-schools/articles/how-us-news-calculated-the-rankings",
+        readOn: "2026-08-20",
+      },
     },
   ],
 };

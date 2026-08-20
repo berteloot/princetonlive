@@ -13,6 +13,9 @@ const rules = JSON.parse(
 const waste = JSON.parse(
   await readFile(new URL("../public/waste-data.json", import.meta.url), "utf8"),
 );
+const civic = JSON.parse(
+  await readFile(new URL("../public/civic-map.json", import.meta.url), "utf8"),
+);
 
 const now = new Date();
 const days = (iso) => Math.round((new Date(`${iso}T12:00:00Z`) - now) / 86400000);
@@ -37,6 +40,19 @@ const items = [
     source: rules.schools.url,
   },
 ];
+
+// The US News rank is the one figure on the site that comes from a third party and was
+// typed in by hand. They republish the table every August, so it goes stale on a clock.
+const rankedSchool = civic.schoolContext?.schools?.find((school) => school.usNews);
+if (rankedSchool) {
+  const [year, month, day] = rankedSchool.usNews.readOn.split("-").map(Number);
+  items.push({
+    name: "US News high school rank",
+    detail: `The ${rankedSchool.usNews.edition} rank for ${rankedSchool.name} was read off the listing by hand. US News publishes the next edition each August.`,
+    dueInDays: days(`${year + 1}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`),
+    source: rankedSchool.usNews.url,
+  });
+}
 
 const overdue = items.filter((i) => i.dueInDays <= 0);
 const payload = {

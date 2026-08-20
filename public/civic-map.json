@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T14:05:38.306Z",
+  "generatedAt": "2026-08-20T15:36:36.471Z",
   "release": "ACS 2024 5-year",
   "privacy": "Block-group public data only. PrincetonLive does not publish individual voter, household, or address-level records.",
   "geography": "census block groups",
@@ -489,7 +489,7 @@
   "schoolContext": {
     "title": "Princeton Public Schools context",
     "summary": "Public school points show Princeton Public Schools campuses with official district links. Use the district registration/address process for elementary assignment and NJDOE reports for performance context.",
-    "caveat": "This is not a ranking layer. PrincetonLive does not reduce schools to a single score, and private/independent schools should only be added from a reliable public directory with clear methodology.",
+    "caveat": "The map does not rank schools. Every marker is the same size, position is all it carries, and the one rank shown belongs to US News with its method linked beside it. US News ranks high schools, so the elementary and middle campuses carry no rank.",
     "districtUrl": "https://www.princetonk12.org/",
     "registrationUrl": "https://www.princetonk12.org/families/registration",
     "performanceReportsUrl": "https://www.nj.gov/education/spr/",
@@ -573,6 +573,16 @@
         "lat": 40.3587009,
         "lon": -74.6560332,
         "sourceUrl": "https://www.princetonk12.org/princeton-high-school",
+        "usNews": {
+          "edition": "2026-2027",
+          "nationalRank": 616,
+          "rankedNationally": 17945,
+          "stateRank": 37,
+          "rankedInState": 415,
+          "url": "https://www.usnews.com/education/best-high-schools/new-jersey/districts/princeton-public-schools/princeton-high-school-12735",
+          "methodologyUrl": "https://www.usnews.com/education/best-high-schools/articles/how-us-news-calculated-the-rankings",
+          "readOn": "2026-08-20"
+        },
         "marker": {
           "x": 62.52,
           "y": 27.649

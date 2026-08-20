@@ -1918,27 +1918,53 @@ h3 {
   outline: none;
 }
 
-.school-marker circle {
+/* One attributed third-party figure, set apart from the district's own facts. */
+.school-rank {
+  margin: 6px 0 0;
+  padding: 8px 10px;
+  color: var(--orange-deep);
+  background: #fff0dc;
+  border-radius: 7px;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.school-tooltip-rank {
+  color: var(--orange-soft);
+  font-weight: 800;
+}
+
+/* Sized in CSS pixels: the marker group carries a scale that cancels the map's own.
+   These rules target the dot by class. Styling every circle in the group also painted
+   the invisible hit circle, which is why the markers were reading as huge black discs
+   that covered the block groups underneath. */
+.school-marker-dot {
   fill: var(--princeton-black);
   stroke: #fffaf1;
-  stroke-width: 0.52;
+  stroke-width: 2;
   transition:
     fill 160ms ease,
     transform 160ms ease;
 }
 
-.school-marker text {
+.school-marker-glyph {
   fill: #fffaf1;
-  font-size: 2.7px;
-  font-weight: 950;
   pointer-events: none;
 }
 
-.school-marker:hover circle,
-.school-marker:focus circle,
-.school-marker.is-hovered circle {
+.school-marker-band {
+  fill: none;
+  stroke: #fffaf1;
+  stroke-width: 1.2;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+.school-marker:hover .school-marker-dot,
+.school-marker:focus .school-marker-dot,
+.school-marker.is-hovered .school-marker-dot {
   fill: var(--princeton-orange);
-  transform: scale(1.18);
+  transform: scale(1.14);
 }
 
 .address-marker circle:first-child {
