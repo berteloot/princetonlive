@@ -327,7 +327,7 @@ const commuteCards = [
   {
     title: "Overnight street parking",
     detail:
-      "There is no overnight parking on any former Princeton Borough street between 2 and 6 am. Not every street carries a sign saying so.",
+      "No overnight parking on any former Princeton Borough street between 2 and 6 am, and not every street is signed. A home without a driveway can buy one on-street permit, $30 a quarter, good from 6 pm to 9 am.",
     action: "Check the rule",
     url: "https://www.princetonnj.gov/203/Parking-in-Princeton",
     icon: ParkingCircle,
@@ -1959,7 +1959,9 @@ function App() {
             <ParkingCircle size={19} aria-hidden="true" />
             <strong>Parking, the rules that catch people out</strong>
             <p className="rule-headline">{localRules.parking.overnightBan}</p>
-            <p className="rule-caveat">{localRules.parking.overnightCaveat}</p>
+            <p className="rule-caveat">
+            {localRules.parking.overnightCaveat} {localRules.parking.overnightPermit}
+          </p>
             <dl>
               {localRules.parking.meterHours.map(([when, hours]) => (
                 <div key={when}>
@@ -1972,6 +1974,12 @@ function App() {
             <p className="rule-change">{parkingRateLine}</p>
             <a href={localRules.parking.url} {...externalLinkProps(localRules.parking.url)}>
               Official parking page
+            </a>
+            <a
+              href={localRules.parking.permitUrl}
+              {...externalLinkProps(localRules.parking.permitUrl)}
+            >
+              On-street permits
             </a>
           </div>
           <div className="local-rule">

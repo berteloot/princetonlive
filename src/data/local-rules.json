@@ -5,16 +5,34 @@
     "overnightBan": "No overnight parking on any former Princeton Borough street, 2 to 6 am.",
     "overnightCaveat": "Not all streets carry a sign saying so.",
     "meterHours": [
-      ["Monday to Thursday", "9 am to 8 pm"],
-      ["Friday and Saturday", "9 am to 9 pm"],
-      ["Sunday", "1 pm to 8 pm"]
+      [
+        "Monday to Thursday",
+        "9 am to 8 pm"
+      ],
+      [
+        "Friday and Saturday",
+        "9 am to 9 pm"
+      ],
+      [
+        "Sunday",
+        "1 pm to 8 pm"
+      ]
     ],
     "note": "The 90-minute pay stations start at 10 am. The 15-minute Wawa meters are payable all day, every day.",
     "rates": {
-      "current": { "thirtyMinute": "$1.00", "ninetyMinute": "$3.00" },
-      "next": { "effectiveFrom": "2026-09-14", "thirtyMinute": "$1.25", "ninetyMinute": "$3.50" }
+      "current": {
+        "thirtyMinute": "$1.00",
+        "ninetyMinute": "$3.00"
+      },
+      "next": {
+        "effectiveFrom": "2026-09-14",
+        "thirtyMinute": "$1.25",
+        "ninetyMinute": "$3.50"
+      }
     },
-    "url": "https://www.princetonnj.gov/203/Parking-in-Princeton"
+    "url": "https://www.princetonnj.gov/203/Parking-in-Princeton",
+    "permitUrl": "https://www.princetonnj.gov/200/On-Street-Parking",
+    "overnightPermit": "A home with no driveway can buy one on-street permit from the Clerk's Office, $30 a quarter, valid 6 pm to 9 am on your own street."
   },
   "schools": {
     "termStart": "2026-08-31",
@@ -24,7 +42,36 @@
   },
   "library": {
     "address": "65 Witherspoon Street",
-    "hours": { "0": [12, 17], "1": [9, 20], "2": [9, 20], "3": [9, 20], "4": [9, 20], "5": [9, 17], "6": [9, 17] },
+    "hours": {
+      "0": [
+        12,
+        17
+      ],
+      "1": [
+        9,
+        20
+      ],
+      "2": [
+        9,
+        20
+      ],
+      "3": [
+        9,
+        20
+      ],
+      "4": [
+        9,
+        20
+      ],
+      "5": [
+        9,
+        17
+      ],
+      "6": [
+        9,
+        17
+      ]
+    },
     "url": "https://princetonlibrary.org/"
   }
 }

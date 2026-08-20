@@ -1173,13 +1173,13 @@ async function parkingHtml() {
       <div class="hero">
         <p class="eyebrow">Parking</p>
         <h1>Princeton, NJ parking rules and meter hours.</h1>
-        <p class="answer">${escapeHtml(rules.parking.overnightBan)} ${escapeHtml(rules.parking.overnightCaveat)} Downtown meters are payable ${escapeHtml(rules.parking.meterHours.map(([w, h]) => `${w.toLowerCase()} ${h}`).join(", "))}.</p>
+        <p class="answer">${escapeHtml(rules.parking.overnightBan)} ${escapeHtml(rules.parking.overnightCaveat)} ${escapeHtml(rules.parking.overnightPermit)} Downtown meters are payable ${escapeHtml(rules.parking.meterHours.map(([w, h]) => `${w.toLowerCase()} ${h}`).join(", "))}.</p>
       </div>
       <div class="layout">
         <article>
           <section id="overnight">
             <h2>The overnight ban</h2>
-            <p>${escapeHtml(rules.parking.overnightBan)} It applies to every former Borough street overnight, and the municipality notes that ${escapeHtml(rules.parking.overnightCaveat.toLowerCase())} Check the sign, or check the official page, before leaving a car out.</p>
+            <p>${escapeHtml(rules.parking.overnightBan)} It applies to every former Borough street overnight, and the municipality notes that ${escapeHtml(rules.parking.overnightCaveat.toLowerCase())} ${escapeHtml(rules.parking.overnightPermit)} Check the sign, or check the official page, before leaving a car out.</p>
           </section>
           <section id="meters">
             <h2>Meter hours</h2>
@@ -1228,7 +1228,7 @@ ${rules.parking.meterHours.map(([w, h]) => `                  <tr><th scope="row
       "@type": "FAQPage",
       mainEntity: [
         { "@type": "Question", name: "Can you park overnight on the street in Princeton, NJ?",
-          acceptedAnswer: { "@type": "Answer", text: `${rules.parking.overnightBan} ${rules.parking.overnightCaveat}` } },
+          acceptedAnswer: { "@type": "Answer", text: `${rules.parking.overnightBan} ${rules.parking.overnightCaveat} ${rules.parking.overnightPermit}` } },
         { "@type": "Question", name: "What hours do Princeton parking meters run?",
           acceptedAnswer: { "@type": "Answer", text: rules.parking.meterHours.map(([w, h]) => `${w}: ${h}`).join(". ") + ". " + rules.parking.note } },
       ],
