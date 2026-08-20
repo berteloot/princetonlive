@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T14:20:44.083Z",
+  "generatedAt": "2026-08-20T15:48:37.103Z",
   "weather": {
     "temperature": 83,
     "shortForecast": "Slight Chance Rain Showers then Showers And Thunderstorms",
@@ -105,6 +105,20 @@
       "startHour": 13
     },
     {
+      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Griggs Farm",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 20, 2026",
+      "timeLabel": "03:30 PM - 04:00 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7438",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-08-20",
+      "startHour": 15
+    },
+    {
       "title": "The Odyssey",
       "source": "Garden Theatre",
       "dateLabel": "Aug 20",
@@ -131,6 +145,19 @@
       ],
       "isoDate": "2026-08-20",
       "startHour": 15
+    },
+    {
+      "title": "Food Insecurity Task Force: Princeton Alliance Church",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 20, 2026",
+      "timeLabel": "06:00 PM - 07:30 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7284",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-08-20",
+      "startHour": 18
     },
     {
       "title": "Princeton Bachata Club",
@@ -717,6 +744,20 @@
       "startHour": 19
     },
     {
+      "title": "Council Meeting",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 24, 2026",
+      "timeLabel": "07:00 PM - 11:59 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7930",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-08-24",
+      "startHour": 19
+    },
+    {
       "title": "Wild Inside",
       "source": "Garden Theatre",
       "dateLabel": "Aug 24",
@@ -807,6 +848,73 @@
       "startHour": 13
     },
     {
+      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Spruce Circle",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 25, 2026",
+      "timeLabel": "01:00 PM - 01:45 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7337",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-08-25",
+      "startHour": 13
+    },
+    {
+      "title": "Food Insecurity Task Force: Arm in Arm",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 25, 2026",
+      "timeLabel": "01:00 PM - 07:00 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7748",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-08-25",
+      "startHour": 13
+    },
+    {
+      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Redding Circle",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 25, 2026",
+      "timeLabel": "02:00 PM - 02:30 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7389",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-08-25",
+      "startHour": 14
+    },
+    {
+      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At YMCA",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 25, 2026",
+      "timeLabel": "03:15 PM - 04:15 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7129",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-08-25",
+      "startHour": 15
+    },
+    {
+      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At Redding Circle",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 25, 2026",
+      "timeLabel": "03:30 PM - 04:30 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7543",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-08-25",
+      "startHour": 15
+    },
+    {
       "title": "Mercer County Community ID",
       "source": "Princeton Public Library",
       "dateLabel": "Aug 25",
@@ -890,6 +998,20 @@
       "startHour": 18
     },
     {
+      "title": "Council Meeting - Extra Meeting (If needed)",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 25, 2026",
+      "timeLabel": "07:00 PM - 11:59 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7950",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-08-25",
+      "startHour": 19
+    },
+    {
       "title": "Hadestown: The Musical",
       "source": "Garden Theatre",
       "dateLabel": "Aug 25",
@@ -916,6 +1038,19 @@
       ],
       "isoDate": "2026-08-25",
       "startHour": 19
+    },
+    {
+      "title": "Food Insecurity Task Force: Princeton Mobile Food Pantry",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 26, 2026",
+      "timeLabel": "09:00 AM - 11:30 AM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7595",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 9
     },
     {
       "title": "Drop in and Knit",
@@ -945,6 +1080,19 @@
       ],
       "isoDate": "2026-08-26",
       "startHour": 10
+    },
+    {
+      "title": "Leighton Listens",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 26, 2026",
+      "timeLabel": "11:00 AM - 12:30 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8102",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 11
     },
     {
       "title": "Kids: Baby Storytime",
@@ -1043,6 +1191,19 @@
       "startHour": 13
     },
     {
+      "title": "Food Insecurity Task Force: Princeton Alliance Church",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 26, 2026",
+      "timeLabel": "02:30 PM - 04:00 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7233",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 14
+    },
+    {
       "title": "Kids: Cooks + Books",
       "source": "Princeton Public Library",
       "dateLabel": "Aug 26",
@@ -1100,6 +1261,19 @@
       "startHour": 16
     },
     {
+      "title": "Food Insecurity Task Force: Princeton Cornerstone Kitchen",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 26, 2026",
+      "timeLabel": "05:00 PM - 06:30 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=6922",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 17
+    },
+    {
       "title": "Love Finds Andy Hardy",
       "source": "Garden Theatre",
       "dateLabel": "Aug 26",
@@ -1123,6 +1297,20 @@
       "tags": [
         "culture",
         "rain"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 19
+    },
+    {
+      "title": "Zoning Board of Adjustment Meeting - Virtual",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 26, 2026",
+      "timeLabel": "07:30 PM - 11:59 PM",
+      "location": "Princeton, NJ",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7813",
+      "tags": [
+        "rain",
+        "practical"
       ],
       "isoDate": "2026-08-26",
       "startHour": 19
@@ -1333,7 +1521,7 @@
       "iso": "2026-08-20",
       "label": "Aug 20",
       "weekday": "Thu",
-      "count": 12
+      "count": 14
     },
     {
       "iso": "2026-08-21",
@@ -1357,19 +1545,19 @@
       "iso": "2026-08-24",
       "label": "Aug 24",
       "weekday": "Mon",
-      "count": 10
+      "count": 11
     },
     {
       "iso": "2026-08-25",
       "label": "Aug 25",
       "weekday": "Tue",
-      "count": 11
+      "count": 17
     },
     {
       "iso": "2026-08-26",
       "label": "Aug 26",
       "weekday": "Wed",
-      "count": 15
+      "count": 20
     }
   ],
   "windowDays": 7,
@@ -1481,8 +1669,8 @@
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
-      "status": "error",
-      "detail": "fetch failed"
+      "status": "ok",
+      "detail": "27 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
