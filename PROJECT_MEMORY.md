@@ -17,7 +17,7 @@ Production:
 
 - App entry: `src/main.jsx`
 - Styling: `src/styles.css`
-- Live daily data output: `public/live-data.json`
+- Live daily data output: `public/live-data.json`, holding `events` (seven days, each with `isoDate` and `startHour`), `days` (the picker with per-day counts), and `trackedSeries`
 - Civic map data output: `public/civic-map.json`
 - Daily data refresh script: `scripts/fetch-live-data.mjs`
 - Civic map refresh script: `scripts/fetch-civic-map.mjs`
@@ -51,6 +51,9 @@ Refresh public data:
 npm run refresh:public
 ```
 
+Order matters: the cinema schedule is written first because the day list reads it. A garden
+failure logs and continues, so weather and events still refresh.
+
 Generate SEO pillar pages:
 
 ```bash
@@ -82,6 +85,8 @@ Render deploy status uses a local API key held outside this repo. Do not commit 
 Daily operating data:
 - National Weather Service forecast and alerts
 - Princeton University public events RSS
+- Princeton Garden Theatre showtimes, read from `public/garden-theatre.json` rather than fetched twice. `refresh:garden` therefore runs BEFORE `refresh:data` in `refresh:public`, and it is guarded so a cinema outage cannot stop the daily data refresh
+- Tracked series, currently the Seuls en Scene French Theater Festival at arts.princeton.edu/french-theater-festival. The Lewis Center host sits behind a Cloudflare challenge and returns 403 to any scheduled fetch, so the performance dates are read out of the university events feed by title match and the arts page is used as the resident-facing link
 - Princeton Public Library Communico events endpoint
 - Municipality of Princeton RSS calendar
 - Static resident-perk links verified from Princeton Public Library, Princeton University Community Auditing, Arts Council of Princeton, and Princeton municipal pages
@@ -120,6 +125,11 @@ Explore walks:
 ## UX Decisions
 
 - Keep PrincetonLive resident-first, not tourist-first.
+- The event list is a day view, not a next-N list. It carries seven days, each event stamped with its Eastern day and start hour at build time, and the visitor picks a day and can filter to 5 PM onward. This came from user feedback: the question a resident actually asks is what is on Tuesday evening, and a flat 18-event cut answered about two days and hid everything else.
+- Every source that publishes local wall-clock time goes through `easternInstant()`. Node reads an unzoned date string in the machine's zone, which is UTC on the GitHub runner and Eastern on a laptop, so before this the library, town and cinema events sorted differently depending on where the refresh ran.
+- Section order follows what a visitor needs first: alerts, the day list, the cinema, town services and garbage, personalization, transit, first week, perks, walks, neighborhood data, guides, FAQ. The FAQ is about the site itself, so it stays last. The top navigation mirrors that order.
+- Page copy follows `memory/writing_guide.md` and passes `integrations/quality_gate.py`. No noun piles standing in for a description, no editorial adjectives, no slogan headings. A heading names what the section holds.
+- A tracked series pins a dated run that is too far out for the agenda list. The list keeps the next 18 events, which is about two days, so a festival a month away would never appear on date order alone. Series are declared in `trackedSeries` in `scripts/fetch-live-data.mjs`: every matching date joins the event list regardless of the cut, and the series gets one card above the list. The card disappears on its own once the last performance is 12 hours past, so no one has to remove it.
 - Use Princeton orange and black with strong contrast; avoid white text on light backgrounds.
 - Keep the homepage hero hierarchy practical: `PrincetonLive` can be the large H1, while descriptive SEO/resident-guide language belongs in smaller lead/supporting copy so daily content remains visible in the first viewport.
 - Google Translate powers French and Spanish because the content is expected to update from public feeds.

@@ -104,6 +104,16 @@
     },
     {
       "kind": "generated_json",
+      "name": "Day view window",
+      "url": "https://princetonlive.berteloot.org/live-data.json",
+      "expect_status": [
+        200
+      ],
+      "json_path": "days.0.iso",
+      "max_age_hours": 8
+    },
+    {
+      "kind": "generated_json",
       "name": "Live weather snapshot",
       "url": "https://princetonlive.berteloot.org/live-data.json",
       "expect_status": [

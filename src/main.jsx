@@ -24,6 +24,7 @@ import {
   Landmark,
   Library,
   Map,
+  Moon,
   Navigation,
   ParkingCircle,
   Recycle,
@@ -108,6 +109,9 @@ const fallbackData = {
       tags: ["practical", "new"],
     },
   ],
+  days: [],
+  windowDays: 7,
+  trackedSeries: [],
   sources: [],
 };
 
@@ -206,16 +210,21 @@ function safeHref(href) {
 
 const primaryNavLinks = [
   ["#today", "Today"],
+  ["#practical", "Services"],
+  ["#waste", "Garbage"],
   ["#my-princeton", "My"],
   ["#move", "Move"],
-  ["#practical", "Practical"],
-  ["#waste", "Garbage"],
   ["#perks", "Perks"],
+  ["#explore", "Explore"],
   ["#civic", "Neighborhood"],
   ["#guides", "Guides"],
   ["#faq", "FAQ"],
-  ["#explore", "Explore"],
 ];
+
+// 5 PM is where "after work" starts for the evening filter, and the first show at the
+// Garden Theatre most nights.
+const EVENING_HOUR = 17;
+const DAY_PREVIEW_COUNT = 12;
 
 const agendaFilters = [
   ["all", "All", CalendarDays],
@@ -325,7 +334,7 @@ const commuteCards = [
   },
   {
     title: "No-car options",
-    detail: "TigerTransit, the Princeton Loop, walking, biking, and the Dinky cover more day-to-day trips than new residents expect.",
+    detail: "TigerTransit, the Princeton Loop, walking, biking and the Dinky cover most day-to-day trips.",
     action: "Getting around",
     url: "https://www.princetonnj.gov/578/Getting-Around-Princeton",
     icon: Bus,
@@ -415,7 +424,7 @@ const newResidentChecklist = [
   },
   {
     title: "Get the library card",
-    detail: "Unlock study rooms, digital resources, museum passes, events, and resident benefits.",
+    detail: "A free card covers study rooms, museum passes and digital media.",
     action: "Library card",
     url: "https://princetonlibrary.org/about-us/library-cards/",
     icon: Library,
@@ -461,14 +470,14 @@ const profileModeOptions = [
   {
     key: "culture",
     label: "Culture",
-    detail: "Surface lectures, arts, films, and performances.",
+    detail: "Show lectures, films and performances.",
     icon: Theater,
     filter: "culture",
   },
   {
     key: "rain",
     label: "Rain plan",
-    detail: "Favor indoor options when the weather gets annoying.",
+    detail: "Favor indoor options when it rains.",
     icon: Umbrella,
     filter: "rain",
   },
@@ -478,12 +487,12 @@ const residentFaqs = [
   {
     question: "What is PrincetonLive?",
     answer:
-      "PrincetonLive is an independent daily operating guide for Princeton, NJ residents and new arrivals. It brings public events, transit, weather, alerts, town services, library benefits, resident perks, and aggregate civic data into one place.",
+      "PrincetonLive is an independent daily operating guide for Princeton, NJ residents and new arrivals. It puts the day's public listings, garbage day by street, transit links and neighborhood data on one page.",
   },
   {
     question: "Is PrincetonLive an official Princeton University or municipal website?",
     answer:
-      "No. PrincetonLive is independent. It links to official Princeton University, Princeton Public Library, municipal, Census, weather, transit, and election sources when residents need the authoritative source.",
+      "No. It is independent, and it links to the official university, library, municipal, Census and weather pages whenever you need the source itself.",
   },
   {
     question: "What public data does PrincetonLive use?",
@@ -525,7 +534,7 @@ const pillarGuides = [
   },
   {
     title: "Moving to Princeton",
-    detail: "First-week orientation for new residents: alerts, transit, library cards, services, and local discovery.",
+    detail: "First-week orientation for new residents: alerts, transit, library cards, town services and first walks.",
     url: "/guides/moving-to-princeton.html",
   },
   {
@@ -684,7 +693,7 @@ const exploreStops = [
   },
   {
     stop: "Institute Woods",
-    note: "Shaded trails for a quiet first-month ritual.",
+    note: "Shaded, flat trails behind the Institute.",
     guideLabel: "Town guide",
     guideUrl: "https://www.princetonnj.gov/1765/Institute-Woods",
     mapLabel: "Trail map",
@@ -693,7 +702,7 @@ const exploreStops = [
   },
   {
     stop: "Princeton Battlefield",
-    note: "History, fields, and a useful western anchor.",
+    note: "Open fields and the battle monument, west of town.",
     guideLabel: "Park guide",
     guideUrl: "https://dep.nj.gov/parksandforests/state-park/princeton-battlefield-state-park/",
     mapLabel: "Open map",
@@ -702,7 +711,7 @@ const exploreStops = [
   },
   {
     stop: "Stony Brook paths",
-    note: "Good for nature breaks and weekend resets.",
+    note: "Water and woods, quiet on a weekday.",
     guideLabel: "Iron Mike",
     guideUrl: "https://www.princetonnj.gov/1771/Iron-Mike-Trail",
     mapLabel: "Trail maps",
@@ -711,7 +720,7 @@ const exploreStops = [
   },
   {
     stop: "Community Park",
-    note: "Playgrounds, pool, fields, and everyday family logistics.",
+    note: "Playgrounds, a pool and fields.",
     guideLabel: "North park",
     guideUrl: "https://www.princetonnj.gov/1605/Community-Park-North",
     mapLabel: "South park",
@@ -898,6 +907,11 @@ function tractFill(feature, key, domain) {
 function App() {
   const [filter, setFilter] = useState("all");
   const [query, setQuery] = useState("");
+  // null means "the first day the data offers", which is today. Storing the choice as a
+  // date string rather than an index keeps a selected day valid across a data refresh.
+  const [selectedDay, setSelectedDay] = useState(null);
+  const [eveningOnly, setEveningOnly] = useState(false);
+  const [showWholeDay, setShowWholeDay] = useState(false);
   const [residentProfile, setResidentProfile] = useState(getStoredResidentProfile);
   const [liveData, setLiveData] = useState(fallbackData);
   const [wasteData, setWasteData] = useState(fallbackWasteData);
@@ -1080,16 +1094,26 @@ function App() {
   }, [liveData.generatedAt, civicMap.generatedAt, wasteData.generatedAt]);
 
 
+  const days = liveData.days ?? [];
+  // A day the visitor picked can fall out of the window when the data refreshes at
+  // midnight. Falling back to the first day keeps the list from going blank.
+  const activeDay = days.some((day) => day.iso === selectedDay) ? selectedDay : days[0]?.iso ?? null;
+  const activeDayMeta = days.find((day) => day.iso === activeDay) ?? null;
+
   const filteredEvents = useMemo(() => {
     const normalized = query.trim().toLowerCase();
     return liveData.events.filter((event) => {
+      // With no day window the feeds failed and the placeholder rows carry no date, so
+      // the day filter has to let them through rather than empty the section.
+      const dayMatch = !activeDay || !event.isoDate || event.isoDate === activeDay;
+      const eveningMatch = !eveningOnly || (event.startHour ?? -1) >= EVENING_HOUR;
       const tagMatch = filter === "all" || event.tags?.includes(filter);
       const text = `${event.title} ${event.source} ${event.location} ${event.dateLabel} ${event.timeLabel}`.toLowerCase();
-      return tagMatch && (!normalized || text.includes(normalized));
+      return dayMatch && eveningMatch && tagMatch && (!normalized || text.includes(normalized));
     });
-  }, [filter, liveData.events, query]);
+  }, [activeDay, eveningOnly, filter, liveData.events, query]);
 
-  const visibleEvents = filteredEvents.slice(0, 10);
+  const visibleEvents = showWholeDay ? filteredEvents : filteredEvents.slice(0, DAY_PREVIEW_COUNT);
   const normalizedProfileStreet = normalizeWasteStreet(residentProfile.street);
   const profileWasteMatch = useMemo(() => {
     if (!normalizedProfileStreet) return null;
@@ -1379,12 +1403,12 @@ function App() {
           <p className="eyebrow">Princeton, NJ today</p>
           <h1>PrincetonLive</h1>
           <p className="hero-lede">
-            A Princeton resident guide for events, transit, services, library benefits, and civic
-            data.
+            What is on in Princeton today, and the town facts you look up all year.
           </p>
           <p className="hero-summary">
-            Find weather, alerts, public events, transit decisions, town services, library perks,
-            and neighborhood-scale civic context in one independent daily guide.
+            Public listings from the university, the library, the town and the Garden Theatre,
+            read again every three hours. Garbage day by street, parking rules and the
+            neighborhood map are further down.
           </p>
           <div className="daily-shortcuts" role="group" aria-label="Resident shortcuts">
             {dailyShortcuts.map(({ label, value, url, icon: Icon }) => (
@@ -1438,7 +1462,7 @@ function App() {
             href={nextEvent?.url ?? "https://www.princeton.edu/events"}
             {...externalLinkProps(nextEvent?.url ?? "https://www.princeton.edu/events")}
           >
-            <span>Next useful item</span>
+            <span>Next up today</span>
             <strong>{nextEvent ? nextEvent.title : "Check public calendars"}</strong>
           </a>
           <div>
@@ -1446,228 +1470,6 @@ function App() {
             <strong>{formatRefresh(liveData.generatedAt)}</strong>
           </div>
         </aside>
-      </section>
-
-      <section className="section my-princeton" id="my-princeton" aria-labelledby="my-princeton-heading">
-        <div className="section-heading split">
-          <div>
-            <p className="eyebrow">My Princeton</p>
-            <h2 id="my-princeton-heading">Your local setup, saved on this device.</h2>
-          </div>
-          <p>
-            Add a street and a few resident modes. PrincetonLive keeps this in your browser only,
-            then turns the page into a lightweight dashboard for your week.
-          </p>
-        </div>
-        <div className="profile-layout">
-          <section className="profile-setup" aria-label="My Princeton setup">
-            <label>
-              <span>Street name</span>
-              <input
-                value={residentProfile.street}
-                onChange={(event) => updateResidentStreet(event.target.value)}
-                placeholder="Lytle Street, Library Place..."
-              />
-            </label>
-            <div className="profile-mode-grid" aria-label="Resident modes">
-              {profileModeOptions.map(({ key, label, detail, icon: Icon }) => (
-                <button
-                  type="button"
-                  key={key}
-                  className={residentProfile.modes[key] ? "is-active" : ""}
-                  onClick={() => toggleResidentMode(key)}
-                  aria-pressed={residentProfile.modes[key]}
-                >
-                  <Icon size={17} aria-hidden="true" />
-                  <strong>{label}</strong>
-                  <span>{detail}</span>
-                </button>
-              ))}
-            </div>
-            <div className="profile-privacy">
-              <span>No account. No address upload. Browser-only.</span>
-              <button type="button" onClick={resetResidentProfile}>
-                Reset
-              </button>
-            </div>
-          </section>
-
-          <aside className="profile-dashboard" aria-label="My Princeton dashboard">
-            <div className="profile-card is-primary">
-              <span>My garbage day</span>
-              <strong>
-                {profileWasteMatch
-                  ? `${profileWasteMatch.street}: ${profileWasteMatch.trashDay}`
-                  : residentProfile.street
-                    ? "Street not matched yet"
-                    : "Add your street"}
-              </strong>
-              <p>
-                {profileYardSchedule
-                  ? `Yard section ${profileWasteMatch.yardSection}; next branch and log starts ${
-                      upcomingYardDates(profileYardSchedule.branchAndLogs, wasteData.yardScheduleYear)
-                        .slice(0, 3)
-                        .join(", ") || `none left in ${wasteData.yardScheduleYear}`
-                    }.`
-                  : "Use the street lookup for pickup day, yard section, bulk rules, and Recycle Coach."}
-              </p>
-              <a
-                href="#waste"
-                onClick={() => {
-                  if (profileWasteMatch) setWasteQuery(profileWasteMatch.street);
-                }}
-              >
-                Open garbage lookup <ChevronRight size={15} aria-hidden="true" />
-              </a>
-            </div>
-            <div className="profile-card">
-              <span>{residentProfile.modes.noCar ? "No-car plan" : "Commute plan"}</span>
-              <strong>{residentProfile.modes.noCar ? "Transit first" : "Check transfer + parking"}</strong>
-              <p>
-                {residentProfile.modes.noCar
-                  ? "Keep the Dinky, Princeton Loop, walking, biking, and shuttles close."
-                  : "Compare the Dinky, Princeton Junction parking, downtown parking, and NYC/Philly route timing."}
-              </p>
-              <a href="#move">
-                Move around <ChevronRight size={15} aria-hidden="true" />
-              </a>
-            </div>
-            <div className="profile-card">
-              <span>Events for me</span>
-              <strong>
-                {activeProfileModes.length
-                  ? activeProfileModes.map((mode) => mode.label).join(" + ")
-                  : "Latest resident signals"}
-              </strong>
-              <p>
-                {profileEvents[0]
-                  ? `${profileEvents[0].title} (${profileEvents[0].source})`
-                  : "No matching public events in this refresh yet."}
-              </p>
-              <a
-                href="#today"
-                onClick={() => {
-                  setFilter(profileEventFilter);
-                  setQuery("");
-                }}
-              >
-                Show my events <ChevronRight size={15} aria-hidden="true" />
-              </a>
-            </div>
-            <div className="profile-card">
-              <span>Neighborhood</span>
-              <strong>Map context without private records</strong>
-              <p>Use public aggregate data, school context, and address lookup when you need orientation.</p>
-              <a href="#civic">
-                Open map <ChevronRight size={15} aria-hidden="true" />
-              </a>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section className="section resident-checklist" id="new-resident" aria-labelledby="new-resident-heading">
-        <div className="section-heading split">
-          <div>
-            <p className="eyebrow">New here</p>
-            <h2 id="new-resident-heading">First-week Princeton setup.</h2>
-          </div>
-          <p>
-            A practical checklist for turning Princeton from a famous place into a usable home:
-            alerts, garbage pickup, library access, transit, neighborhood context, and first walks.
-          </p>
-        </div>
-        <div className="checklist-grid">
-          {newResidentChecklist.map(({ title, detail, action, url, icon: Icon }, index) => (
-            <a className="checklist-card" href={url} key={title} {...externalLinkProps(url)}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <Icon size={19} aria-hidden="true" />
-              <strong>{title}</strong>
-              <p>{detail}</p>
-              <b>
-                {action} <ChevronRight size={15} aria-hidden="true" />
-              </b>
-            </a>
-          ))}
-        </div>
-      </section>
-
-      <section className="section today-grid" id="today" aria-labelledby="today-heading">
-        <div className="section-heading">
-          <p className="eyebrow">Today</p>
-          <h2 id="today-heading">Public events and resident signals.</h2>
-          <p>
-            Pulled from public Princeton sources, then trimmed into a short list that is useful
-            for a resident deciding what to do next.
-          </p>
-        </div>
-        <div className="control-row" role="group" aria-label="Agenda filters">
-          {agendaFilters.map(([value, label, Icon]) => (
-            <button
-              key={value}
-              type="button"
-              className={filter === value ? "is-active" : ""}
-              onClick={() => setFilter(value)}
-              aria-current={filter === value ? "true" : undefined}
-            >
-              <Icon size={17} aria-hidden="true" />
-              {label}
-            </button>
-          ))}
-        </div>
-        {/* The Clear button used to sit inside the <label>, which is invalid and makes a
-            click on it also activate the input. The label now wraps only the field. */}
-        <div className="search-box">
-          <label htmlFor="agenda-search">
-            <Search size={18} aria-hidden="true" />
-            <span className="sr-only">Search agenda</span>
-          </label>
-          <input
-            id="agenda-search"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search events, library, town, lectures..."
-          />
-          {query ? (
-            <button type="button" onClick={() => setQuery("")} aria-label="Clear search">
-              Clear
-            </button>
-          ) : null}
-        </div>
-        <div className="results-meta" aria-live="polite">
-          Showing {visibleEvents.length} of {filteredEvents.length} matching public items
-        </div>
-        {liveData.eventsArePlaceholder ? (
-          <p className="agenda-placeholder-note" role="status">
-            The Princeton event feeds did not load. The entries below link to each official
-            calendar, so you can check today's listings at the source.
-          </p>
-        ) : null}
-        <div className="agenda-list" key={`agenda-${filter}-${query}-${liveData.generatedAt}`}>
-          {visibleEvents.length ? (
-            visibleEvents.map((event, index) => (
-              <a
-                className="agenda-card"
-                href={safeHref(event.url) ?? undefined}
-                key={`${event.url}-${index}`}
-                {...externalLinkProps(event.url)}
-              >
-                <time>
-                  {event.dateLabel}
-                  <small>{event.timeLabel}</small>
-                </time>
-                <div>
-                  <h3>{event.title}</h3>
-                  <p>{event.location}</p>
-                </div>
-                <span>{event.source}</span>
-                <ExternalLink size={16} aria-hidden="true" />
-              </a>
-            ))
-          ) : (
-            <div className="empty-state">No matching items in the current public-data snapshot.</div>
-          )}
-        </div>
       </section>
 
       {alertCount || alertsUnavailable ? (
@@ -1678,7 +1480,7 @@ function App() {
               <h2 id="alerts-heading">
                 {alertsUnavailable
                   ? "Alert status could not be checked."
-                  : "Weather items that need attention."}
+                  : "Active weather alerts for Princeton."}
               </h2>
             </div>
             <p>
@@ -1710,35 +1512,265 @@ function App() {
         </section>
       ) : null}
 
-      <section className="section" id="move" aria-labelledby="move-heading">
-        <div className="section-heading split">
-          <div>
-            <p className="eyebrow">Move</p>
-            <h2 id="move-heading">Make the commute choice before the calendar choice.</h2>
-          </div>
+      <section className="section today-grid" id="today" aria-labelledby="today-heading">
+        <div className="section-heading">
+          <p className="eyebrow">What is on</p>
+          <h2 id="today-heading">Everything happening in Princeton, one day at a time.</h2>
           <p>
-            Princeton trips often hinge on one transfer, one parking rule, or one missed shuttle.
-            These links get residents to the official decision points quickly.
+            Pick a day and see everything public that is on it, from morning story time to the
+            last film. Filter to the evening when you are deciding where to go tonight.
           </p>
         </div>
-        <div className="commute-grid">
-          {commuteCards.map(({ title, detail, action, url, icon: Icon }) => (
-            <a href={url} className="feature-card" key={title} {...externalLinkProps(url)}>
-              <Icon size={24} aria-hidden="true" />
-              <h3>{title}</h3>
-              <p>{detail}</p>
-              <span>
-                {action} <ChevronRight size={16} aria-hidden="true" />
-              </span>
-            </a>
+        <div className="agenda-controls">
+        {days.length ? (
+          <div className="control-row day-row" role="group" aria-label="Pick a day">
+            {days.map((day, index) => (
+              <button
+                key={day.iso}
+                type="button"
+                className={day.iso === activeDay ? "is-active" : ""}
+                onClick={() => {
+                  setSelectedDay(day.iso);
+                  setShowWholeDay(false);
+                }}
+                aria-current={day.iso === activeDay ? "true" : undefined}
+              >
+                {index === 0 ? "Today" : `${day.weekday} ${day.label}`}
+                <span className="day-count">{day.count}</span>
+              </button>
+            ))}
+          </div>
+        ) : null}
+        <div className="control-row" role="group" aria-label="Agenda filters">
+          {agendaFilters.map(([value, label, Icon]) => (
+            <button
+              key={value}
+              type="button"
+              className={filter === value ? "is-active" : ""}
+              onClick={() => setFilter(value)}
+              aria-current={filter === value ? "true" : undefined}
+            >
+              <Icon size={17} aria-hidden="true" />
+              {label}
+            </button>
           ))}
+          <button
+            type="button"
+            className={eveningOnly ? "is-active" : ""}
+            onClick={() => setEveningOnly((current) => !current)}
+            aria-pressed={eveningOnly}
+          >
+            <Moon size={17} aria-hidden="true" />
+            Evening
+          </button>
+        </div>
+        {/* The Clear button used to sit inside the <label>, which is invalid and makes a
+            click on it also activate the input. The label now wraps only the field. */}
+        <div className="search-box">
+          <label htmlFor="agenda-search">
+            <Search size={18} aria-hidden="true" />
+            <span className="sr-only">Search agenda</span>
+          </label>
+          <input
+            id="agenda-search"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="Search events, library, town, lectures..."
+          />
+          {query ? (
+            <button type="button" onClick={() => setQuery("")} aria-label="Clear search">
+              Clear
+            </button>
+          ) : null}
+        </div>
+        </div>
+        <div className="results-meta" aria-live="polite">
+          Showing {visibleEvents.length} of {filteredEvents.length} listings
+          {activeDayMeta ? ` for ${activeDayMeta.weekday} ${activeDayMeta.label}` : ""}
+          {eveningOnly ? ", 5 PM onward" : ""}
+        </div>
+        {liveData.eventsArePlaceholder ? (
+          <p className="agenda-placeholder-note" role="status">
+            The Princeton event feeds did not load. The entries below link to each official
+            calendar, so you can check today's listings at the source.
+          </p>
+        ) : null}
+        {/* Tracked runs sit above the list because their dates are weeks out, past the
+            point where date order alone would ever show them on this page. */}
+        {liveData.trackedSeries?.length ? (
+          <div className="tracked-strip">
+            {liveData.trackedSeries.map((series) => (
+              <a
+                className="tracked-card"
+                href={safeHref(series.url) ?? undefined}
+                key={series.id}
+                {...externalLinkProps(series.url)}
+              >
+                <p className="tracked-eyebrow">{series.label}</p>
+                <h3>{series.name}</h3>
+                <p>
+                  {series.startLabel} to {series.endLabel}, {series.count}{" "}
+                  {series.count === 1 ? "performance" : "performances"} at {series.venue}.
+                </p>
+                {series.next ? (
+                  <p className="tracked-next">
+                    Next: {series.next.title} on {series.next.dateLabel} at{" "}
+                    {series.next.timeLabel}.
+                  </p>
+                ) : null}
+                <span>
+                  Festival page and tickets <ExternalLink size={15} aria-hidden="true" />
+                </span>
+              </a>
+            ))}
+          </div>
+        ) : null}
+        <div
+          className="agenda-list"
+          key={`agenda-${activeDay}-${filter}-${query}-${eveningOnly}-${liveData.generatedAt}`}
+        >
+          {visibleEvents.length ? (
+            visibleEvents.map((event, index) => (
+              <a
+                className="agenda-card"
+                href={safeHref(event.url) ?? undefined}
+                key={`${event.url}-${index}`}
+                {...externalLinkProps(event.url)}
+              >
+                <time>
+                  {event.dateLabel}
+                  <small>{event.timeLabel}</small>
+                </time>
+                <div>
+                  <h3>{event.title}</h3>
+                  <p>{event.location}</p>
+                </div>
+                <span>{event.source}</span>
+                <ExternalLink size={16} aria-hidden="true" />
+              </a>
+            ))
+          ) : (
+            <div className="empty-state">
+              {activeDayMeta
+                ? `Nothing public is listed for ${activeDayMeta.weekday} ${activeDayMeta.label} under these filters.`
+                : "No matching items in the current public-data snapshot."}
+            </div>
+          )}
+        </div>
+        {!showWholeDay && filteredEvents.length > visibleEvents.length ? (
+          <button type="button" className="day-more" onClick={() => setShowWholeDay(true)}>
+            Show all {filteredEvents.length} listings
+          </button>
+        ) : null}
+      </section>
+
+      <section className="section culture-band" aria-labelledby="culture-heading">
+        <div className="section-heading split">
+          <div>
+            <p className="eyebrow">Culture</p>
+            <h2 id="culture-heading">What is playing at the Garden Theatre.</h2>
+          </div>
+          <p>
+            Showtimes come from the cinema's own ticketing system and also sit in the day list
+            above. McCarter, the art museum and the Arts Council run their own calendars.
+          </p>
+        </div>
+        {gardenTheatre ? (
+          <div className="garden-theatre">
+            <div className="garden-head">
+              <Film size={19} aria-hidden="true" />
+              <div>
+                <strong>Now playing at the Garden Theatre</strong>
+                <small>{gardenTheatre.address}</small>
+              </div>
+              <a
+                href={gardenTheatre.source}
+                {...externalLinkProps(gardenTheatre.source)}
+              >
+                Tickets and full schedule
+              </a>
+            </div>
+            <div className="garden-days">
+              {gardenTheatre.days.slice(0, 3).map((day) => (
+                <div className="garden-day" key={day.day}>
+                  <span>{day.day}</span>
+                  <ul>
+                    {day.screenings.map((film) => (
+                      <li key={film.slug}>
+                        <a href={film.url} {...externalLinkProps(film.url)}>
+                          {film.title}
+                        </a>
+                        <b>
+                          {film.times
+                            .map((slot) =>
+                              slot.badges?.length ? `${slot.time} ${slot.badges.join(" ")}` : slot.time,
+                            )
+                            .join("  ·  ")}
+                        </b>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+            <small className="garden-note">{gardenTheatre.note}</small>
+          </div>
+        ) : null}
+        <div className="culture-layout">
+          <div className="culture-map" aria-hidden="true">
+            <span className="pin pin-library">
+              <Library size={18} />
+            </span>
+            <span className="pin pin-film">
+              <Film size={18} />
+            </span>
+            <span className="pin pin-theater">
+              <Theater size={18} />
+            </span>
+            <span className="pin pin-campus">
+              <BookOpen size={18} />
+            </span>
+            <span className="route-line" />
+          </div>
+          <div className="source-links">
+            <a
+              href="https://www.princeton.edu/events"
+              {...externalLinkProps("https://www.princeton.edu/events")}
+            >
+              Princeton University events
+            </a>
+            <a
+              href="https://princetonlibrary.libnet.info/events"
+              {...externalLinkProps("https://princetonlibrary.libnet.info/events")}
+            >
+              Princeton Public Library
+            </a>
+            <a
+              href="https://www.princetongardentheatre.org/"
+              {...externalLinkProps("https://www.princetongardentheatre.org/")}
+            >
+              Garden Theatre
+            </a>
+            <a
+              href="https://www.mccarter.org/events"
+              {...externalLinkProps("https://www.mccarter.org/events")}
+            >
+              McCarter Theatre
+            </a>
+            <a
+              href="https://artmuseum.princeton.edu/exhibitions-events"
+              {...externalLinkProps("https://artmuseum.princeton.edu/exhibitions-events")}
+            >
+              University Art Museum (free)
+            </a>
+          </div>
         </div>
       </section>
 
       <section className="section practical" id="practical" aria-labelledby="practical-heading">
         <div className="section-heading">
-          <p className="eyebrow">Practical</p>
-          <h2 id="practical-heading">Resident errands without the tab hunt.</h2>
+          <p className="eyebrow">Town services</p>
+          <h2 id="practical-heading">Garbage, parking, schools and permits.</h2>
           <p>
             Start with the street lookup below when you need garbage day, bulk pickup rules,
             or the yard-waste section for a Princeton street.
@@ -1973,15 +2005,184 @@ function App() {
         </div>
       </section>
 
+      <section className="section my-princeton" id="my-princeton" aria-labelledby="my-princeton-heading">
+        <div className="section-heading split">
+          <div>
+            <p className="eyebrow">My Princeton</p>
+            <h2 id="my-princeton-heading">Your local setup, saved on this device.</h2>
+          </div>
+          <p>
+            Add your street and pick the modes that fit your week. It stays in your browser,
+            and the page then shows your garbage day and the listings that match.
+          </p>
+        </div>
+        <div className="profile-layout">
+          <section className="profile-setup" aria-label="My Princeton setup">
+            <label>
+              <span>Street name</span>
+              <input
+                value={residentProfile.street}
+                onChange={(event) => updateResidentStreet(event.target.value)}
+                placeholder="Lytle Street, Library Place..."
+              />
+            </label>
+            <div className="profile-mode-grid" aria-label="Resident modes">
+              {profileModeOptions.map(({ key, label, detail, icon: Icon }) => (
+                <button
+                  type="button"
+                  key={key}
+                  className={residentProfile.modes[key] ? "is-active" : ""}
+                  onClick={() => toggleResidentMode(key)}
+                  aria-pressed={residentProfile.modes[key]}
+                >
+                  <Icon size={17} aria-hidden="true" />
+                  <strong>{label}</strong>
+                  <span>{detail}</span>
+                </button>
+              ))}
+            </div>
+            <div className="profile-privacy">
+              <span>No account. No address upload. Browser-only.</span>
+              <button type="button" onClick={resetResidentProfile}>
+                Reset
+              </button>
+            </div>
+          </section>
+
+          <aside className="profile-dashboard" aria-label="My Princeton dashboard">
+            <div className="profile-card is-primary">
+              <span>My garbage day</span>
+              <strong>
+                {profileWasteMatch
+                  ? `${profileWasteMatch.street}: ${profileWasteMatch.trashDay}`
+                  : residentProfile.street
+                    ? "Street not matched yet"
+                    : "Add your street"}
+              </strong>
+              <p>
+                {profileYardSchedule
+                  ? `Yard section ${profileWasteMatch.yardSection}; next branch and log starts ${
+                      upcomingYardDates(profileYardSchedule.branchAndLogs, wasteData.yardScheduleYear)
+                        .slice(0, 3)
+                        .join(", ") || `none left in ${wasteData.yardScheduleYear}`
+                    }.`
+                  : "Use the street lookup for pickup day, yard section, bulk rules, and Recycle Coach."}
+              </p>
+              <a
+                href="#waste"
+                onClick={() => {
+                  if (profileWasteMatch) setWasteQuery(profileWasteMatch.street);
+                }}
+              >
+                Open garbage lookup <ChevronRight size={15} aria-hidden="true" />
+              </a>
+            </div>
+            <div className="profile-card">
+              <span>{residentProfile.modes.noCar ? "No-car plan" : "Commute plan"}</span>
+              <strong>{residentProfile.modes.noCar ? "Transit first" : "Check transfer + parking"}</strong>
+              <p>
+                {residentProfile.modes.noCar
+                  ? "Keep the Dinky, Princeton Loop, walking, biking, and shuttles close."
+                  : "Compare the Dinky, Princeton Junction parking, downtown parking, and NYC/Philly route timing."}
+              </p>
+              <a href="#move">
+                Move around <ChevronRight size={15} aria-hidden="true" />
+              </a>
+            </div>
+            <div className="profile-card">
+              <span>Events for me</span>
+              <strong>
+                {activeProfileModes.length
+                  ? activeProfileModes.map((mode) => mode.label).join(" + ")
+                  : "Latest resident signals"}
+              </strong>
+              <p>
+                {profileEvents[0]
+                  ? `${profileEvents[0].title} (${profileEvents[0].source})`
+                  : "No matching public events in this refresh yet."}
+              </p>
+              <a
+                href="#today"
+                onClick={() => {
+                  setFilter(profileEventFilter);
+                  setQuery("");
+                }}
+              >
+                Show my events <ChevronRight size={15} aria-hidden="true" />
+              </a>
+            </div>
+            <div className="profile-card">
+              <span>Neighborhood</span>
+              <strong>Map context without private records</strong>
+              <p>Use public aggregate data, school context, and address lookup when you need orientation.</p>
+              <a href="#civic">
+                Open map <ChevronRight size={15} aria-hidden="true" />
+              </a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section className="section" id="move" aria-labelledby="move-heading">
+        <div className="section-heading split">
+          <div>
+            <p className="eyebrow">Move</p>
+            <h2 id="move-heading">How to reach New York and Philadelphia, and where to park.</h2>
+          </div>
+          <p>
+            Official schedules for the Dinky and NJ Transit, SEPTA fares through Trenton, and the
+            two parking rules that catch new residents.
+          </p>
+        </div>
+        <div className="commute-grid">
+          {commuteCards.map(({ title, detail, action, url, icon: Icon }) => (
+            <a href={url} className="feature-card" key={title} {...externalLinkProps(url)}>
+              <Icon size={24} aria-hidden="true" />
+              <h3>{title}</h3>
+              <p>{detail}</p>
+              <span>
+                {action} <ChevronRight size={16} aria-hidden="true" />
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section className="section resident-checklist" id="new-resident" aria-labelledby="new-resident-heading">
+        <div className="section-heading split">
+          <div>
+            <p className="eyebrow">New here</p>
+            <h2 id="new-resident-heading">First-week Princeton setup.</h2>
+          </div>
+          <p>
+            What to set up in the first week: town alerts, your garbage day, a library card and
+            a transit pattern that works from where you live.
+          </p>
+        </div>
+        <div className="checklist-grid">
+          {newResidentChecklist.map(({ title, detail, action, url, icon: Icon }, index) => (
+            <a className="checklist-card" href={url} key={title} {...externalLinkProps(url)}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <Icon size={19} aria-hidden="true" />
+              <strong>{title}</strong>
+              <p>{detail}</p>
+              <b>
+                {action} <ChevronRight size={15} aria-hidden="true" />
+              </b>
+            </a>
+          ))}
+        </div>
+      </section>
+
       <section className="section resident-perks" id="perks" aria-labelledby="perks-heading">
         <div className="section-heading split">
           <div>
             <p className="eyebrow">Resident perks</p>
-            <h2 id="perks-heading">Things Princeton quietly makes available.</h2>
+            <h2 id="perks-heading">What a library card and a Princeton address get you.</h2>
           </div>
           <p>
-            A resident-first checklist of library benefits, learning access, arts resources, and
-            civic services that are easy to miss when you first arrive.
+            Two hours of garage parking, museum passes, free admission at the university art
+            museum, and classes residents can audit.
           </p>
         </div>
         <div className="perks-layout">
@@ -2007,11 +2208,43 @@ function App() {
         </div>
       </section>
 
+      <section className="section explore" id="explore" aria-labelledby="explore-heading">
+        <div>
+          <p className="eyebrow">Explore</p>
+          <h2 id="explore-heading">First-month Princeton walks.</h2>
+          <p>
+            Six walks that teach the town: the canal towpath, Institute Woods, the battlefield,
+            Stony Brook, Community Park and the side streets off Nassau.
+          </p>
+        </div>
+        <div className="walk-list">
+          {exploreStops.map((walk, index) => {
+            const WalkIcon = walk.icon;
+            return (
+              <article key={walk.stop}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <strong>{walk.stop}</strong>
+                <small>{walk.note}</small>
+                <div className="walk-actions">
+                  <a href={walk.guideUrl} {...externalLinkProps(walk.guideUrl)}>
+                    {walk.guideLabel} <ExternalLink size={13} aria-hidden="true" />
+                  </a>
+                  <a href={walk.mapUrl} {...externalLinkProps(walk.mapUrl)}>
+                    {walk.mapLabel} <Map size={13} aria-hidden="true" />
+                  </a>
+                </div>
+                <WalkIcon size={18} aria-hidden="true" />
+              </article>
+            );
+          })}
+        </div>
+      </section>
+
       <section className="section civic-section" id="civic" aria-labelledby="civic-heading">
         <div className="section-heading split">
           <div>
             <p className="eyebrow">Neighborhood context</p>
-            <h2 id="civic-heading">Public data, closer to daily life.</h2>
+            <h2 id="civic-heading">Census estimates and election results, by block group.</h2>
           </div>
           <p>
             Census block-group boundaries and ACS estimates make the map more local without exposing
@@ -2510,27 +2743,6 @@ function App() {
         </div>
       </section>
 
-      <section className="section faq-section" id="faq" aria-labelledby="faq-heading">
-        <div className="section-heading split">
-          <div>
-            <p className="eyebrow">FAQ</p>
-            <h2 id="faq-heading">Common questions about this site.</h2>
-          </div>
-          <p>
-            Short answers to the questions a new Princetonian, a search engine, or an AI chatbot
-            should be able to answer without guessing.
-          </p>
-        </div>
-        <div className="faq-grid">
-          {residentFaqs.map(({ question, answer }) => (
-            <article className="faq-card" key={question}>
-              <h3>{question}</h3>
-              <p>{answer}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
       <section className="section guides-section" id="guides" aria-labelledby="guides-heading">
         <div className="section-heading split">
           <div>
@@ -2556,138 +2768,23 @@ function App() {
         </div>
       </section>
 
-      <section className="section culture-band" aria-labelledby="culture-heading">
+      <section className="section faq-section" id="faq" aria-labelledby="faq-heading">
         <div className="section-heading split">
           <div>
-            <p className="eyebrow">Culture</p>
-            <h2 id="culture-heading">One evening, several Princeton layers.</h2>
+            <p className="eyebrow">FAQ</p>
+            <h2 id="faq-heading">Common questions about this site.</h2>
           </div>
           <p>
-            The library, university, Garden Theatre, McCarter, museum, and town calendars are
-            different silos. PrincetonLive keeps the useful public signals together.
+            What this site is, who runs it, and where the data comes from.
           </p>
         </div>
-        {gardenTheatre ? (
-          <div className="garden-theatre">
-            <div className="garden-head">
-              <Film size={19} aria-hidden="true" />
-              <div>
-                <strong>Now playing at the Garden Theatre</strong>
-                <small>{gardenTheatre.address}</small>
-              </div>
-              <a
-                href={gardenTheatre.source}
-                {...externalLinkProps(gardenTheatre.source)}
-              >
-                Tickets and full schedule
-              </a>
-            </div>
-            <div className="garden-days">
-              {gardenTheatre.days.slice(0, 3).map((day) => (
-                <div className="garden-day" key={day.day}>
-                  <span>{day.day}</span>
-                  <ul>
-                    {day.screenings.map((film) => (
-                      <li key={film.slug}>
-                        <a href={film.url} {...externalLinkProps(film.url)}>
-                          {film.title}
-                        </a>
-                        <b>
-                          {film.times
-                            .map((slot) =>
-                              slot.badges?.length ? `${slot.time} ${slot.badges.join(" ")}` : slot.time,
-                            )
-                            .join("  ·  ")}
-                        </b>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-            <small className="garden-note">{gardenTheatre.note}</small>
-          </div>
-        ) : null}
-        <div className="culture-layout">
-          <div className="culture-map" aria-hidden="true">
-            <span className="pin pin-library">
-              <Library size={18} />
-            </span>
-            <span className="pin pin-film">
-              <Film size={18} />
-            </span>
-            <span className="pin pin-theater">
-              <Theater size={18} />
-            </span>
-            <span className="pin pin-campus">
-              <BookOpen size={18} />
-            </span>
-            <span className="route-line" />
-          </div>
-          <div className="source-links">
-            <a
-              href="https://www.princeton.edu/events"
-              {...externalLinkProps("https://www.princeton.edu/events")}
-            >
-              Princeton University events
-            </a>
-            <a
-              href="https://princetonlibrary.libnet.info/events"
-              {...externalLinkProps("https://princetonlibrary.libnet.info/events")}
-            >
-              Princeton Public Library
-            </a>
-            <a
-              href="https://www.princetongardentheatre.org/"
-              {...externalLinkProps("https://www.princetongardentheatre.org/")}
-            >
-              Garden Theatre
-            </a>
-            <a
-              href="https://www.mccarter.org/events"
-              {...externalLinkProps("https://www.mccarter.org/events")}
-            >
-              McCarter Theatre
-            </a>
-            <a
-              href="https://artmuseum.princeton.edu/exhibitions-events"
-              {...externalLinkProps("https://artmuseum.princeton.edu/exhibitions-events")}
-            >
-              University Art Museum (free)
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section className="section explore" id="explore" aria-labelledby="explore-heading">
-        <div>
-          <p className="eyebrow">Explore</p>
-          <h2 id="explore-heading">First-month Princeton walks.</h2>
-          <p>
-            Short local anchors for learning the town beyond Nassau Street, selected for everyday
-            usefulness rather than tourism.
-          </p>
-        </div>
-        <div className="walk-list">
-          {exploreStops.map((walk, index) => {
-            const WalkIcon = walk.icon;
-            return (
-              <article key={walk.stop}>
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <strong>{walk.stop}</strong>
-                <small>{walk.note}</small>
-                <div className="walk-actions">
-                  <a href={walk.guideUrl} {...externalLinkProps(walk.guideUrl)}>
-                    {walk.guideLabel} <ExternalLink size={13} aria-hidden="true" />
-                  </a>
-                  <a href={walk.mapUrl} {...externalLinkProps(walk.mapUrl)}>
-                    {walk.mapLabel} <Map size={13} aria-hidden="true" />
-                  </a>
-                </div>
-                <WalkIcon size={18} aria-hidden="true" />
-              </article>
-            );
-          })}
+        <div className="faq-grid">
+          {residentFaqs.map(({ question, answer }) => (
+            <article className="faq-card" key={question}>
+              <h3>{question}</h3>
+              <p>{answer}</p>
+            </article>
+          ))}
         </div>
       </section>
       </main>

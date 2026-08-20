@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-08-18T09:10:29.394Z",
-  "minDaysUntilReview": 13,
+  "generatedAt": "2026-08-20T09:54:39.510Z",
+  "minDaysUntilReview": 11,
   "overdueCount": 0,
   "ok": true,
   "items": [
     {
       "name": "Verified local rules review",
       "detail": "Parking, school and library facts were last read off the official pages by hand.",
-      "dueInDays": 92,
+      "dueInDays": 90,
       "source": "https://www.princetonnj.gov/203/Parking-in-Princeton"
     },
     {
       "name": "Yard waste schedule year",
       "detail": "The leaf and brush dates are for calendar 2026 and must be replaced for the next year.",
-      "dueInDays": 119,
+      "dueInDays": 117,
       "source": "https://www.princetonnj.gov/450/Leaf-Branch-and-Log-Collection"
     },
     {
       "name": "School year start",
       "detail": "Term start for 2026-27. Replace with the next school year's calendar once published.",
-      "dueInDays": 13,
+      "dueInDays": 11,
       "source": "https://www.princetonk12.org/quick-links/calendars"
     }
   ]

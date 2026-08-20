@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-18T09:10:29.291Z",
+  "generatedAt": "2026-08-20T14:20:33.407Z",
   "venue": "Princeton Garden Theatre",
   "address": "160 Nassau Street, Princeton",
   "source": "https://www.princetongardentheatre.org/",
   "sourceUsed": "veezi-storefront",
   "note": "Read from the theatre's own ticketing system. Confirm showtimes and buy tickets on their site.",
-  "filmCount": 61,
+  "filmCount": 60,
   "nowPlaying": [
     {
       "slug": "the-odyssey",
@@ -22,25 +22,25 @@
       "rating": ""
     },
     {
-      "slug": "catvideofest-2026",
-      "title": "CatVideoFest 2026",
-      "url": "https://www.princetongardentheatre.org/film?id=catvideofest-2026",
-      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007765",
-      "rating": "NR"
-    },
-    {
-      "slug": "strangers-on-a-train",
-      "title": "Strangers on a Train",
-      "url": "https://www.princetongardentheatre.org/film?id=strangers-on-a-train",
-      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007311",
-      "rating": "PG for some violence and tension"
-    },
-    {
       "slug": "the-princess-bride",
       "title": "The Princess Bride",
       "url": "https://www.princetongardentheatre.org/film?id=the-princess-bride",
       "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000001843",
       "rating": "PG"
+    },
+    {
+      "slug": "tony",
+      "title": "Tony",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007858",
+      "rating": "R for pervasive language, drug use, and sexual content/nudity."
+    },
+    {
+      "slug": "hadestown-the-musical",
+      "title": "Hadestown: The Musical",
+      "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
+      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007850",
+      "rating": "NR"
     },
     {
       "slug": "twin-peaks-season-1-episodes-4-5",
@@ -55,13 +55,6 @@
       "url": "https://www.princetongardentheatre.org/film?id=woodstock",
       "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000001576",
       "rating": "R"
-    },
-    {
-      "slug": "hadestown-the-musical",
-      "title": "Hadestown: The Musical",
-      "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
-      "poster": "https://ticketing.useast.veezi.com/Media/Poster?siteToken=af0wawfbmqctzhm3rh7b4exs10&code=0000007850",
-      "rating": "NR"
     },
     {
       "slug": "love-finds-andy-hardy",
@@ -437,102 +430,6 @@
   ],
   "days": [
     {
-      "day": "Tuesday 18, August",
-      "screenings": [
-        {
-          "slug": "the-odyssey",
-          "title": "The Odyssey",
-          "url": "https://www.princetongardentheatre.org/film?id=the-odyssey",
-          "times": [
-            {
-              "time": "3:30 PM",
-              "badges": []
-            },
-            {
-              "time": "7:10 PM",
-              "badges": []
-            }
-          ]
-        },
-        {
-          "slug": "wild-inside",
-          "title": "Wild Inside",
-          "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
-          "times": [
-            {
-              "time": "3:45 PM",
-              "badges": []
-            },
-            {
-              "time": "7:15 PM",
-              "badges": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "day": "Wednesday 19, August",
-      "screenings": [
-        {
-          "slug": "the-odyssey",
-          "title": "The Odyssey",
-          "url": "https://www.princetongardentheatre.org/film?id=the-odyssey",
-          "times": [
-            {
-              "time": "12:05 PM",
-              "badges": [
-                "OC"
-              ]
-            },
-            {
-              "time": "3:30 PM",
-              "badges": [
-                "OC"
-              ]
-            },
-            {
-              "time": "7:10 PM",
-              "badges": []
-            }
-          ]
-        },
-        {
-          "slug": "catvideofest-2026",
-          "title": "CatVideoFest 2026",
-          "url": "https://www.princetongardentheatre.org/film?id=catvideofest-2026",
-          "times": [
-            {
-              "time": "1:00 PM",
-              "badges": []
-            }
-          ]
-        },
-        {
-          "slug": "wild-inside",
-          "title": "Wild Inside",
-          "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
-          "times": [
-            {
-              "time": "3:45 PM",
-              "badges": []
-            }
-          ]
-        },
-        {
-          "slug": "strangers-on-a-train",
-          "title": "Strangers on a Train",
-          "url": "https://www.princetongardentheatre.org/film?id=strangers-on-a-train",
-          "times": [
-            {
-              "time": "7:00 PM",
-              "badges": []
-            }
-          ]
-        }
-      ]
-    },
-    {
       "day": "Thursday 20, August",
       "screenings": [
         {
@@ -578,12 +475,99 @@
       "day": "Friday 21, August",
       "screenings": [
         {
+          "slug": "tony",
+          "title": "Tony",
+          "url": "https://www.princetongardentheatre.org/film?id=tony",
+          "times": [
+            {
+              "time": "4:15 PM",
+              "badges": []
+            },
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "wild-inside",
+          "title": "Wild Inside",
+          "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+          "times": [
+            {
+              "time": "4:25 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "hadestown-the-musical",
+          "title": "Hadestown: The Musical",
+          "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
+          "times": [
+            {
+              "time": "7:15 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
           "slug": "twin-peaks-season-1-episodes-4-5",
           "title": "Twin Peaks: Season 1 - Episodes 4 & 5",
           "url": "https://www.princetongardentheatre.org/film?id=twin-peaks-season-1-episodes-4-5",
           "times": [
             {
               "time": "9:45 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Saturday 22, August",
+      "screenings": [
+        {
+          "slug": "tony",
+          "title": "Tony",
+          "url": "https://www.princetongardentheatre.org/film?id=tony",
+          "times": [
+            {
+              "time": "1:30 PM",
+              "badges": []
+            },
+            {
+              "time": "4:15 PM",
+              "badges": []
+            },
+            {
+              "time": "7:00 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "wild-inside",
+          "title": "Wild Inside",
+          "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+          "times": [
+            {
+              "time": "1:45 PM",
+              "badges": []
+            },
+            {
+              "time": "4:25 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "hadestown-the-musical",
+          "title": "Hadestown: The Musical",
+          "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
+          "times": [
+            {
+              "time": "7:15 PM",
               "badges": []
             }
           ]
@@ -603,12 +587,121 @@
               "badges": []
             }
           ]
+        },
+        {
+          "slug": "tony",
+          "title": "Tony",
+          "url": "https://www.princetongardentheatre.org/film?id=tony",
+          "times": [
+            {
+              "time": "1:45 PM",
+              "badges": []
+            },
+            {
+              "time": "4:45 PM",
+              "badges": []
+            },
+            {
+              "time": "7:25 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "hadestown-the-musical",
+          "title": "Hadestown: The Musical",
+          "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
+          "times": [
+            {
+              "time": "4:25 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "wild-inside",
+          "title": "Wild Inside",
+          "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+          "times": [
+            {
+              "time": "7:35 PM",
+              "badges": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Monday 24, August",
+      "screenings": [
+        {
+          "slug": "hadestown-the-musical",
+          "title": "Hadestown: The Musical",
+          "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
+          "times": [
+            {
+              "time": "4:00 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "tony",
+          "title": "Tony",
+          "url": "https://www.princetongardentheatre.org/film?id=tony",
+          "times": [
+            {
+              "time": "4:15 PM",
+              "badges": []
+            },
+            {
+              "time": "7:15 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "wild-inside",
+          "title": "Wild Inside",
+          "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+          "times": [
+            {
+              "time": "7:10 PM",
+              "badges": []
+            }
+          ]
         }
       ]
     },
     {
       "day": "Tuesday 25, August",
       "screenings": [
+        {
+          "slug": "tony",
+          "title": "Tony",
+          "url": "https://www.princetongardentheatre.org/film?id=tony",
+          "times": [
+            {
+              "time": "4:15 PM",
+              "badges": []
+            },
+            {
+              "time": "7:15 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "wild-inside",
+          "title": "Wild Inside",
+          "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+          "times": [
+            {
+              "time": "4:20 PM",
+              "badges": []
+            }
+          ]
+        },
         {
           "slug": "hadestown-the-musical",
           "title": "Hadestown: The Musical",
@@ -626,6 +719,53 @@
       "day": "Wednesday 26, August",
       "screenings": [
         {
+          "slug": "hadestown-the-musical",
+          "title": "Hadestown: The Musical",
+          "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
+          "times": [
+            {
+              "time": "1:00 PM",
+              "badges": [
+                "OC"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "tony",
+          "title": "Tony",
+          "url": "https://www.princetongardentheatre.org/film?id=tony",
+          "times": [
+            {
+              "time": "1:15 PM",
+              "badges": []
+            },
+            {
+              "time": "4:15 PM",
+              "badges": [
+                "OC"
+              ]
+            },
+            {
+              "time": "7:15 PM",
+              "badges": [
+                "OC"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "wild-inside",
+          "title": "Wild Inside",
+          "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+          "times": [
+            {
+              "time": "4:20 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
           "slug": "love-finds-andy-hardy",
           "title": "Love Finds Andy Hardy",
           "url": "https://www.princetongardentheatre.org/film?id=love-finds-andy-hardy",
@@ -641,6 +781,32 @@
     {
       "day": "Thursday 27, August",
       "screenings": [
+        {
+          "slug": "hadestown-the-musical",
+          "title": "Hadestown: The Musical",
+          "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
+          "times": [
+            {
+              "time": "4:00 PM",
+              "badges": []
+            }
+          ]
+        },
+        {
+          "slug": "tony",
+          "title": "Tony",
+          "url": "https://www.princetongardentheatre.org/film?id=tony",
+          "times": [
+            {
+              "time": "4:15 PM",
+              "badges": []
+            },
+            {
+              "time": "7:15 PM",
+              "badges": []
+            }
+          ]
+        },
         {
           "slug": "taxi-driver",
           "title": "Taxi Driver",

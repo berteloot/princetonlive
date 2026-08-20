@@ -5,109 +5,109 @@
 >
   <url>
     <loc>https://princetonlive.berteloot.org/</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://princetonlive.berteloot.org/guides/</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://princetonlive.berteloot.org/about.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://princetonlive.berteloot.org/legal.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://princetonlive.berteloot.org/guides/princeton-garbage-schedule.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://princetonlive.berteloot.org/guides/princeton-leaf-and-brush-schedule.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://princetonlive.berteloot.org/guides/princeton-parking-rules.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://princetonlive.berteloot.org/guides/princeton-garden-theatre-showtimes.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://princetonlive.berteloot.org/guides/princeton-crime-rate.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://princetonlive.berteloot.org/guides/moving-to-princeton.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://princetonlive.berteloot.org/guides/princeton-library-benefits.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://princetonlive.berteloot.org/guides/getting-around-princeton.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://princetonlive.berteloot.org/guides/princeton-public-events-culture.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://princetonlive.berteloot.org/guides/princeton-civic-data.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://princetonlive.berteloot.org/guides/princeton-resident-services.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://princetonlive.berteloot.org/live-data.json</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.45</priority>
   </url>
   <url>
     <loc>https://princetonlive.berteloot.org/civic-map.json</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.45</priority>
   </url>
   <url>
     <loc>https://princetonlive.berteloot.org/waste-data.json</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.45</priority>
   </url>

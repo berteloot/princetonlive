@@ -948,8 +948,11 @@ h3 {
   background: #eef2eb;
 }
 
+/* The heading shares row one with the controls block and bottom-aligns with it. It used
+   to span two rows, which was right when filters and search were two loose children and
+   wrong once they were grouped: the spare height opened a gap under the result count. */
 .today-grid .section-heading {
-  grid-row: span 2;
+  grid-row: span 1;
 }
 
 .control-row {
@@ -957,6 +960,46 @@ h3 {
   flex-wrap: wrap;
   gap: 8px;
   align-self: end;
+}
+
+/* Day picker, filters and search are one block. Left loose in the two-column today
+   grid they would land in three separate grid rows and drift apart vertically. */
+.agenda-controls {
+  display: grid;
+  grid-column: 2;
+  gap: 10px;
+  align-self: end;
+}
+
+.day-row button {
+  font-weight: 800;
+}
+
+.day-count {
+  padding: 2px 7px;
+  color: var(--orange-deep);
+  background: #fff0dc;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 900;
+}
+
+.day-row button.is-active .day-count {
+  color: var(--princeton-black);
+  background: var(--orange-soft);
+}
+
+.day-more {
+  justify-self: start;
+  grid-column: 2;
+  min-height: 40px;
+  padding: 10px 14px;
+  color: var(--orange-deep);
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid var(--orange-deep);
+  border-radius: 7px;
+  font-weight: 800;
 }
 
 .control-row button {
@@ -1020,6 +1063,57 @@ h3 {
   display: grid;
   grid-column: 2;
   gap: 10px;
+}
+
+/* A tracked run announced weeks ahead. It reads darker than an agenda card so it does
+   not compete with today's list for the same glance. */
+.tracked-strip {
+  display: grid;
+  grid-column: 2;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tracked-card {
+  display: grid;
+  gap: 6px;
+  padding: 18px;
+  color: var(--princeton-black);
+  background: #fff8ef;
+  border: 1px solid var(--orange-deep);
+  border-left-width: 5px;
+  border-radius: 8px;
+}
+
+.tracked-eyebrow {
+  margin: 0;
+  color: var(--orange-deep);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tracked-card h3 {
+  margin: 0;
+}
+
+.tracked-card p {
+  margin: 0;
+  color: #4a4238;
+}
+
+.tracked-card .tracked-next {
+  font-weight: 700;
+}
+
+.tracked-card > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--orange-deep);
+  font-size: 0.86rem;
+  font-weight: 800;
 }
 
 .agenda-card {
@@ -2463,7 +2557,10 @@ footer a {
   }
 
   .today-grid .section-heading,
+  .agenda-controls,
   .results-meta,
+  .tracked-strip,
+  .day-more,
   .agenda-list {
     grid-column: 1;
   }

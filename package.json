@@ -9,7 +9,7 @@
     "refresh:data": "node scripts/fetch-live-data.mjs",
     "refresh:civic": "node scripts/fetch-civic-map.mjs",
     "refresh:waste": "node scripts/fetch-waste-data.mjs",
-    "refresh:public": "npm run refresh:data && npm run refresh:civic && npm run refresh:waste && npm run refresh:garden && npm run build:freshness",
+    "refresh:public": "npm run refresh:garden || echo \"Garden refresh failed, keeping the previous schedule\" && npm run refresh:data && npm run refresh:civic && npm run refresh:waste && npm run build:freshness",
     "build:hero": "node scripts/build-hero-image.mjs",
     "build": "npm run refresh:public && npm run build:seo && vite build",
     "preview": "vite preview --host 0.0.0.0",

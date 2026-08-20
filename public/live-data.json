@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-20T13:10:45.800Z",
+  "generatedAt": "2026-08-20T14:20:44.083Z",
   "weather": {
     "temperature": 83,
     "shortForecast": "Slight Chance Rain Showers then Showers And Thunderstorms",
     "wind": "0 to 5 mph E",
-    "detailedForecast": "A slight chance of rain showers between 10am and noon, then showers and thunderstorms. Partly sunny. High near 83, with temperatures falling to around 76 in the afternoon. East wind 0 to 5 mph. Chance of precipitation is 90%. New rainfall amounts between 1 and 2 inches possible.",
+    "detailedForecast": "A slight chance of rain showers before noon, then showers and thunderstorms. Mostly cloudy. High near 83, with temperatures falling to around 76 in the afternoon. East wind 0 to 5 mph. Chance of precipitation is 90%. New rainfall amounts between 1 and 2 inches possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
@@ -27,7 +27,9 @@
       "url": "https://princetonlibrary.libnet.info/event/17174127",
       "tags": [
         "practical"
-      ]
+      ],
+      "isoDate": "2026-08-20",
+      "startHour": 10
     },
     {
       "title": "Kids: Storytime!",
@@ -39,7 +41,9 @@
       "tags": [
         "family",
         "practical"
-      ]
+      ],
+      "isoDate": "2026-08-20",
+      "startHour": 10
     },
     {
       "title": "Kids: Baby Storytime",
@@ -51,7 +55,9 @@
       "tags": [
         "family",
         "practical"
-      ]
+      ],
+      "isoDate": "2026-08-20",
+      "startHour": 11
     },
     {
       "title": "Kids: Baby Play Group",
@@ -64,19 +70,9 @@
         "new",
         "family",
         "practical"
-      ]
-    },
-    {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Griggs Farm",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 20, 2026",
-      "timeLabel": "03:30 PM - 04:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7438",
-      "tags": [
-        "family",
-        "practical"
-      ]
+      ],
+      "isoDate": "2026-08-20",
+      "startHour": 12
     },
     {
       "title": "Pre-Read Book Discussion for Staff: Reader, Come Home",
@@ -89,7 +85,9 @@
         "new",
         "culture",
         "rain"
-      ]
+      ],
+      "isoDate": "2026-08-20",
+      "startHour": 13
     },
     {
       "title": "Open Studio",
@@ -102,18 +100,37 @@
         "new",
         "culture",
         "rain"
-      ]
+      ],
+      "isoDate": "2026-08-20",
+      "startHour": 13
     },
     {
-      "title": "Food Insecurity Task Force: Princeton Alliance Church",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 20, 2026",
-      "timeLabel": "06:00 PM - 07:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7284",
+      "title": "The Odyssey",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 20",
+      "timeLabel": "3:30 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-odyssey",
       "tags": [
-        "practical"
-      ]
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-20",
+      "startHour": 15
+    },
+    {
+      "title": "Wild Inside",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 20",
+      "timeLabel": "3:45 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-20",
+      "startHour": 15
     },
     {
       "title": "Princeton Bachata Club",
@@ -122,7 +139,9 @@
       "timeLabel": "6:30 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/princeton-bachata-club-9",
-      "tags": []
+      "tags": [],
+      "isoDate": "2026-08-20",
+      "startHour": 18
     },
     {
       "title": "Women's Soccer vs Loyola Md.",
@@ -131,45 +150,37 @@
       "timeLabel": "7:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-loyola-md",
-      "tags": []
+      "tags": [],
+      "isoDate": "2026-08-20",
+      "startHour": 19
     },
     {
-      "title": "Job Seekers: Optimize Your Resume",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 21",
-      "timeLabel": "10:00am - 12:00pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/16881003",
+      "title": "The Princess Bride",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 20",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-princess-bride",
       "tags": [
         "culture",
-        "practical"
-      ]
+        "rain"
+      ],
+      "isoDate": "2026-08-20",
+      "startHour": 19
     },
     {
-      "title": "Teens: Drop In and Edit (Adobe Creative Cloud)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 21",
-      "timeLabel": "2:00pm - 3:00pm",
-      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
-      "url": "https://princetonlibrary.libnet.info/event/16783762",
+      "title": "The Odyssey",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 20",
+      "timeLabel": "7:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-odyssey",
       "tags": [
-        "new",
-        "family",
-        "practical"
-      ]
-    },
-    {
-      "title": "Dancing Under the Stars",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 21",
-      "timeLabel": "7:00pm - 10:00pm",
-      "location": "Princeton Public Library - Community Room,Hinds Plaza",
-      "url": "https://princetonlibrary.libnet.info/event/16266281",
-      "tags": [
-        "family",
         "culture",
-        "practical"
-      ]
+        "rain"
+      ],
+      "isoDate": "2026-08-20",
+      "startHour": 19
     },
     {
       "title": "Open Studio",
@@ -182,7 +193,23 @@
         "new",
         "culture",
         "rain"
-      ]
+      ],
+      "isoDate": "2026-08-21",
+      "startHour": 10
+    },
+    {
+      "title": "Job Seekers: Optimize Your Resume",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 21",
+      "timeLabel": "10:00am - 12:00pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/16881003",
+      "tags": [
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-08-21",
+      "startHour": 10
     },
     {
       "title": "Muslim Life Program Friday Jummah Congregational Prayer",
@@ -191,7 +218,109 @@
       "timeLabel": "12:30 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/muslim-life-program-friday-jummah-congregational-prayer-19",
-      "tags": []
+      "tags": [],
+      "isoDate": "2026-08-21",
+      "startHour": 12
+    },
+    {
+      "title": "Teens: Drop In and Edit (Adobe Creative Cloud)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 21",
+      "timeLabel": "2:00pm - 3:00pm",
+      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "url": "https://princetonlibrary.libnet.info/event/16783762",
+      "tags": [
+        "new",
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-08-21",
+      "startHour": 14
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 21",
+      "timeLabel": "4:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-21",
+      "startHour": 16
+    },
+    {
+      "title": "Wild Inside",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 21",
+      "timeLabel": "4:25 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-21",
+      "startHour": 16
+    },
+    {
+      "title": "Dancing Under the Stars",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 21",
+      "timeLabel": "7:00pm - 10:00pm",
+      "location": "Princeton Public Library - Community Room,Hinds Plaza",
+      "url": "https://princetonlibrary.libnet.info/event/16266281",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-08-21",
+      "startHour": 19
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 21",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-21",
+      "startHour": 19
+    },
+    {
+      "title": "Hadestown: The Musical",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 21",
+      "timeLabel": "7:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-21",
+      "startHour": 19
+    },
+    {
+      "title": "Twin Peaks: Season 1 - Episodes 4 & 5",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 21",
+      "timeLabel": "9:45 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=twin-peaks-season-1-episodes-4-5",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-21",
+      "startHour": 21
     },
     {
       "title": "Kids: Saturday Storytime!",
@@ -203,7 +332,52 @@
       "tags": [
         "family",
         "practical"
-      ]
+      ],
+      "isoDate": "2026-08-22",
+      "startHour": 10
+    },
+    {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Aug 22",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-78",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-22",
+      "startHour": 13
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 22",
+      "timeLabel": "1:30 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-22",
+      "startHour": 13
+    },
+    {
+      "title": "Wild Inside",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 22",
+      "timeLabel": "1:45 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-22",
+      "startHour": 13
     },
     {
       "title": "Kids: Chemistry Saturdays",
@@ -216,7 +390,9 @@
         "family",
         "rain",
         "practical"
-      ]
+      ],
+      "isoDate": "2026-08-22",
+      "startHour": 14
     },
     {
       "title": "Kids: Chemistry Saturdays",
@@ -229,6 +405,1057 @@
         "family",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-08-22",
+      "startHour": 14
+    },
+    {
+      "title": "Kids & Teens: Drop-In Chess Sessions",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 22",
+      "timeLabel": "3:00pm - 4:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/16556680",
+      "tags": [
+        "new",
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-08-22",
+      "startHour": 15
+    },
+    {
+      "title": "Tango Practica",
+      "source": "Princeton University",
+      "dateLabel": "Aug 22",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/tango-practica-9",
+      "tags": [],
+      "isoDate": "2026-08-22",
+      "startHour": 16
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 22",
+      "timeLabel": "4:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-22",
+      "startHour": 16
+    },
+    {
+      "title": "Wild Inside",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 22",
+      "timeLabel": "4:25 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-22",
+      "startHour": 16
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 22",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-22",
+      "startHour": 19
+    },
+    {
+      "title": "Hadestown: The Musical",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 22",
+      "timeLabel": "7:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-22",
+      "startHour": 19
+    },
+    {
+      "title": "Roman Catholic Sunday Mass",
+      "source": "Princeton University",
+      "dateLabel": "Aug 23",
+      "timeLabel": "9:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/roman-catholic-sunday-mass",
+      "tags": [],
+      "isoDate": "2026-08-23",
+      "startHour": 9
+    },
+    {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Aug 23",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-79",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-23",
+      "startHour": 12
+    },
+    {
+      "title": "Woodstock",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 23",
+      "timeLabel": "12:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=woodstock",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-23",
+      "startHour": 12
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 23",
+      "timeLabel": "1:45 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-23",
+      "startHour": 13
+    },
+    {
+      "title": "Music: Novo Rodeo",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 23",
+      "timeLabel": "3:00pm - 4:15pm",
+      "location": "Princeton Public Library - Hinds Plaza",
+      "url": "https://princetonlibrary.libnet.info/event/16859742",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-08-23",
+      "startHour": 15
+    },
+    {
+      "title": "Hadestown: The Musical",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 23",
+      "timeLabel": "4:25 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-23",
+      "startHour": 16
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 23",
+      "timeLabel": "4:45 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-23",
+      "startHour": 16
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 23",
+      "timeLabel": "7:25 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-23",
+      "startHour": 19
+    },
+    {
+      "title": "Wild Inside",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 23",
+      "timeLabel": "7:35 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-23",
+      "startHour": 19
+    },
+    {
+      "title": "Call for Entries: \"We Are America at 250\" Self Portraits",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 24",
+      "timeLabel": "All day",
+      "location": "Princeton Public Library - 3rd Floor Pop-up Programming Area",
+      "url": "https://princetonlibrary.libnet.info/event/17112308",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-08-24",
+      "startHour": 0
+    },
+    {
+      "title": "Lewis Center for the Arts Class of 2030 Info Session",
+      "source": "Princeton University",
+      "dateLabel": "Aug 24",
+      "timeLabel": "10:15 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/lewis-center-arts-class-2030-info-session",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-24",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Playtime Fun: Build it!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 24",
+      "timeLabel": "11:00am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14760954",
+      "tags": [
+        "new",
+        "family",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-08-24",
+      "startHour": 11
+    },
+    {
+      "title": "English Conversation (in person)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 24",
+      "timeLabel": "12:00pm - 1:30pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/16932153",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-08-24",
+      "startHour": 12
+    },
+    {
+      "title": "Hadestown: The Musical",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 24",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-24",
+      "startHour": 16
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 24",
+      "timeLabel": "4:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-24",
+      "startHour": 16
+    },
+    {
+      "title": "English Conversation (Virtual)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 24",
+      "timeLabel": "7:00pm - 8:30pm",
+      "location": "Virtual - Google Meet",
+      "url": "https://princetonlibrary.libnet.info/event/16624385",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-08-24",
+      "startHour": 19
+    },
+    {
+      "title": "Wild Inside",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 24",
+      "timeLabel": "7:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-24",
+      "startHour": 19
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 24",
+      "timeLabel": "7:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-24",
+      "startHour": 19
+    },
+    {
+      "title": "Princeton Tango Club Weekly Class",
+      "source": "Princeton University",
+      "dateLabel": "Aug 24",
+      "timeLabel": "8:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-tango-club-weekly-class-2",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-24",
+      "startHour": 20
+    },
+    {
+      "title": "Kids: Playtime Fun: Build it!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 25",
+      "timeLabel": "11:00am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14760955",
+      "tags": [
+        "new",
+        "family",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-08-25",
+      "startHour": 11
+    },
+    {
+      "title": "What's the Library Zine Cart? An orientation for instructors",
+      "source": "Princeton University",
+      "dateLabel": "Aug 25",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/whats-library-zine-cart-orientation-instructors",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-08-25",
+      "startHour": 12
+    },
+    {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Aug 25",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-80",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-25",
+      "startHour": 13
+    },
+    {
+      "title": "Mercer County Community ID",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 25",
+      "timeLabel": "4:00pm - 6:30pm",
+      "location": "Princeton Public Library - Conference Room",
+      "url": "https://princetonlibrary.libnet.info/event/15432407",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-08-25",
+      "startHour": 16
+    },
+    {
+      "title": "Catherine Project Weekly Book Discussion Series",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 25",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/16570102",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-08-25",
+      "startHour": 16
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 25",
+      "timeLabel": "4:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-25",
+      "startHour": 16
+    },
+    {
+      "title": "Wild Inside",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 25",
+      "timeLabel": "4:20 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-25",
+      "startHour": 16
+    },
+    {
+      "title": "Princeton Shotokan Karate Organization",
+      "source": "Princeton University",
+      "dateLabel": "Aug 25",
+      "timeLabel": "6:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-shotokan-karate-organization-24",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-08-25",
+      "startHour": 18
+    },
+    {
+      "title": "Homeschooling Basics in New Jersey",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 25",
+      "timeLabel": "6:30pm - 7:30pm",
+      "location": "Princeton Public Library - Newsroom",
+      "url": "https://princetonlibrary.libnet.info/event/16546927",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-08-25",
+      "startHour": 18
+    },
+    {
+      "title": "Hadestown: The Musical",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 25",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-25",
+      "startHour": 19
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 25",
+      "timeLabel": "7:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-25",
+      "startHour": 19
+    },
+    {
+      "title": "Drop in and Knit",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 26",
+      "timeLabel": "10:00am - 12:00pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/16065896",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Storytime!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 26",
+      "timeLabel": "10:30am - 11:00am",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14660955",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Baby Storytime",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 26",
+      "timeLabel": "11:30am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14662390",
+      "tags": [
+        "family"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 11
+    },
+    {
+      "title": "TEST GIS 1",
+      "source": "Princeton University",
+      "dateLabel": "Aug 26",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/test-gis-1",
+      "tags": [],
+      "isoDate": "2026-08-26",
+      "startHour": 12
+    },
+    {
+      "title": "Kids: Baby Play Group",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 26",
+      "timeLabel": "12:00pm - 1:00pm",
+      "location": "Princeton Public Library",
+      "url": "https://princetonlibrary.libnet.info/event/14662323",
+      "tags": [
+        "new",
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 12
+    },
+    {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Aug 26",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-81",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 13
+    },
+    {
+      "title": "Tech: Beyond Cable",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 26",
+      "timeLabel": "1:00pm - 2:00pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/16873467",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 13
+    },
+    {
+      "title": "Hadestown: The Musical",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 26",
+      "timeLabel": "1:00 PM (OC)",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 13
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 26",
+      "timeLabel": "1:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 13
+    },
+    {
+      "title": "Kids: Cooks + Books",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 26",
+      "timeLabel": "3:00pm - 4:00pm",
+      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "url": "https://princetonlibrary.libnet.info/event/16330076",
+      "tags": [
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 15
+    },
+    {
+      "title": "English Conversation (virtual)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 26",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Virtual - Google Meet",
+      "url": "https://princetonlibrary.libnet.info/event/16837151",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 16
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 26",
+      "timeLabel": "4:15 PM (OC)",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 16
+    },
+    {
+      "title": "Wild Inside",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 26",
+      "timeLabel": "4:20 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 16
+    },
+    {
+      "title": "Love Finds Andy Hardy",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 26",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=love-finds-andy-hardy",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 19
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 26",
+      "timeLabel": "7:15 PM (OC)",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-26",
+      "startHour": 19
+    },
+    {
+      "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
+      "source": "Princeton University",
+      "dateLabel": "Sep 18",
+      "timeLabel": "8:00 PM",
+      "location": "Lewis Center for the Arts, Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-barbara-par-barbara-marie-sophie-ferdane-emmanuel-noblet",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-18",
+      "startHour": 20,
+      "series": "Seuls en Scène",
+      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
+    },
+    {
+      "title": "Seuls en Scène 2026 presents Nom by Constance Debré",
+      "source": "Princeton University",
+      "dateLabel": "Sep 19",
+      "timeLabel": "5:00 PM",
+      "location": "Lewis Center for the Arts, Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-nom-constance-debre",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-19",
+      "startHour": 17,
+      "series": "Seuls en Scène",
+      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
+    },
+    {
+      "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
+      "source": "Princeton University",
+      "dateLabel": "Sep 19",
+      "timeLabel": "8:00 PM",
+      "location": "Lewis Center for the Arts, Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-barbara-par-barbara-marie-sophie-ferdane-emmanuel-noblet-0",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-19",
+      "startHour": 20,
+      "series": "Seuls en Scène",
+      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
+    },
+    {
+      "title": "Seuls en Scène 2026 presents Nom by Constance Debré",
+      "source": "Princeton University",
+      "dateLabel": "Sep 20",
+      "timeLabel": "5:00 PM",
+      "location": "Lewis Center for the Arts, Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-nom-constance-debre-0",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-20",
+      "startHour": 17,
+      "series": "Seuls en Scène",
+      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
+    },
+    {
+      "title": "Seuls en Scène 2026 presents L’Événement by Annie Ernaux",
+      "source": "Princeton University",
+      "dateLabel": "Sep 23",
+      "timeLabel": "8:00 PM",
+      "location": "Lewis Center for the Arts, Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-levenement-annie-ernaux",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-23",
+      "startHour": 20,
+      "series": "Seuls en Scène",
+      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
+    },
+    {
+      "title": "Seuls en Scène 2026 presents L’Aube des questions - Festival d’Avignon 2026 with Aurélie Charon, Emma Prat & Oksana Leuta",
+      "source": "Princeton University",
+      "dateLabel": "Sep 24",
+      "timeLabel": "4:30 PM",
+      "location": "Lewis Center for the Arts, Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-laube-des-questions-festival-davignon-2026-aurelie-charon",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-24",
+      "startHour": 16,
+      "series": "Seuls en Scène",
+      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
+    },
+    {
+      "title": "Seuls en Scène 2026 presents Génération Mitterand – Huit rois (nos présidents), Episode 2 by Léo Cohen-Paperman & Émilien Diard-Detoeuf",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "6:00 PM",
+      "location": "Lewis Center for the Arts, Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-generation-mitterand-huit-rois-nos-presidents-episode-2",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-25",
+      "startHour": 18,
+      "series": "Seuls en Scène",
+      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
+    },
+    {
+      "title": "Seuls en Scène 2026 presents Vivantes by Aurélie Charon",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "8:00 PM",
+      "location": "Lewis Center for the Arts, Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-vivantes-aurelie-charon",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-25",
+      "startHour": 20,
+      "series": "Seuls en Scène",
+      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
+    },
+    {
+      "title": "Seuls en Scène 2026 presents Losing Your Bag by Pascal Rambert",
+      "source": "Princeton University",
+      "dateLabel": "Sep 26",
+      "timeLabel": "2:30 PM",
+      "location": "Lewis Center for the Arts, Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-losing-your-bag-pascal-rambert",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-26",
+      "startHour": 14,
+      "series": "Seuls en Scène",
+      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
+    },
+    {
+      "title": "Seuls en Scène 2026 presents Génération Mitterand – Huit rois (nos présidents), Episode 2 by Léo Cohen-Paperman & Émilien Diard-Detoeuf",
+      "source": "Princeton University",
+      "dateLabel": "Sep 26",
+      "timeLabel": "5:00 PM",
+      "location": "Lewis Center for the Arts, Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-generation-mitterand-huit-rois-nos-presidents-episode-2-0",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-26",
+      "startHour": 17,
+      "series": "Seuls en Scène",
+      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
+    },
+    {
+      "title": "Seuls en Scène 2026 presents Vivantes by Aurélie Charon",
+      "source": "Princeton University",
+      "dateLabel": "Sep 26",
+      "timeLabel": "8:00 PM",
+      "location": "Lewis Center for the Arts, Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-vivantes-aurelie-charon-0",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-26",
+      "startHour": 20,
+      "series": "Seuls en Scène",
+      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
+    }
+  ],
+  "days": [
+    {
+      "iso": "2026-08-20",
+      "label": "Aug 20",
+      "weekday": "Thu",
+      "count": 12
+    },
+    {
+      "iso": "2026-08-21",
+      "label": "Aug 21",
+      "weekday": "Fri",
+      "count": 10
+    },
+    {
+      "iso": "2026-08-22",
+      "label": "Aug 22",
+      "weekday": "Sat",
+      "count": 12
+    },
+    {
+      "iso": "2026-08-23",
+      "label": "Aug 23",
+      "weekday": "Sun",
+      "count": 9
+    },
+    {
+      "iso": "2026-08-24",
+      "label": "Aug 24",
+      "weekday": "Mon",
+      "count": 10
+    },
+    {
+      "iso": "2026-08-25",
+      "label": "Aug 25",
+      "weekday": "Tue",
+      "count": 11
+    },
+    {
+      "iso": "2026-08-26",
+      "label": "Aug 26",
+      "weekday": "Wed",
+      "count": 15
+    }
+  ],
+  "windowDays": 7,
+  "trackedSeries": [
+    {
+      "id": "french-theater-festival",
+      "name": "Seuls en Scène",
+      "label": "French Theater Festival",
+      "venue": "Lewis Center for the Arts, Princeton campus",
+      "url": "https://arts.princeton.edu/french-theater-festival",
+      "count": 11,
+      "startLabel": "Sep 18",
+      "endLabel": "Sep 26",
+      "next": {
+        "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
+        "dateLabel": "Sep 18",
+        "timeLabel": "8:00 PM",
+        "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-barbara-par-barbara-marie-sophie-ferdane-emmanuel-noblet"
+      },
+      "dates": [
+        {
+          "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
+          "dateLabel": "Sep 18",
+          "timeLabel": "8:00 PM",
+          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-barbara-par-barbara-marie-sophie-ferdane-emmanuel-noblet"
+        },
+        {
+          "title": "Seuls en Scène 2026 presents Nom by Constance Debré",
+          "dateLabel": "Sep 19",
+          "timeLabel": "5:00 PM",
+          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-nom-constance-debre"
+        },
+        {
+          "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
+          "dateLabel": "Sep 19",
+          "timeLabel": "8:00 PM",
+          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-barbara-par-barbara-marie-sophie-ferdane-emmanuel-noblet-0"
+        },
+        {
+          "title": "Seuls en Scène 2026 presents Nom by Constance Debré",
+          "dateLabel": "Sep 20",
+          "timeLabel": "5:00 PM",
+          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-nom-constance-debre-0"
+        },
+        {
+          "title": "Seuls en Scène 2026 presents L’Événement by Annie Ernaux",
+          "dateLabel": "Sep 23",
+          "timeLabel": "8:00 PM",
+          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-levenement-annie-ernaux"
+        },
+        {
+          "title": "Seuls en Scène 2026 presents L’Aube des questions - Festival d’Avignon 2026 with Aurélie Charon, Emma Prat & Oksana Leuta",
+          "dateLabel": "Sep 24",
+          "timeLabel": "4:30 PM",
+          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-laube-des-questions-festival-davignon-2026-aurelie-charon"
+        },
+        {
+          "title": "Seuls en Scène 2026 presents Génération Mitterand – Huit rois (nos présidents), Episode 2 by Léo Cohen-Paperman & Émilien Diard-Detoeuf",
+          "dateLabel": "Sep 25",
+          "timeLabel": "6:00 PM",
+          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-generation-mitterand-huit-rois-nos-presidents-episode-2"
+        },
+        {
+          "title": "Seuls en Scène 2026 presents Vivantes by Aurélie Charon",
+          "dateLabel": "Sep 25",
+          "timeLabel": "8:00 PM",
+          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-vivantes-aurelie-charon"
+        },
+        {
+          "title": "Seuls en Scène 2026 presents Losing Your Bag by Pascal Rambert",
+          "dateLabel": "Sep 26",
+          "timeLabel": "2:30 PM",
+          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-losing-your-bag-pascal-rambert"
+        },
+        {
+          "title": "Seuls en Scène 2026 presents Génération Mitterand – Huit rois (nos présidents), Episode 2 by Léo Cohen-Paperman & Émilien Diard-Detoeuf",
+          "dateLabel": "Sep 26",
+          "timeLabel": "5:00 PM",
+          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-generation-mitterand-huit-rois-nos-presidents-episode-2-0"
+        },
+        {
+          "title": "Seuls en Scène 2026 presents Vivantes by Aurélie Charon",
+          "dateLabel": "Sep 26",
+          "timeLabel": "8:00 PM",
+          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-vivantes-aurelie-charon-0"
+        }
       ]
     }
   ],
@@ -254,8 +1481,20 @@
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
+      "status": "error",
+      "detail": "fetch failed"
+    },
+    {
+      "name": "Princeton Garden Theatre",
+      "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "27 calendar items"
+      "detail": "92 showtimes"
+    },
+    {
+      "name": "Seuls en Scène (French Theater Festival)",
+      "url": "https://arts.princeton.edu/french-theater-festival",
+      "status": "ok",
+      "detail": "11 upcoming dates"
     }
   ]
 }
