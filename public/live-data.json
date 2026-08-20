@@ -1,17 +1,24 @@
 {
-  "generatedAt": "2026-08-20T15:48:37.103Z",
+  "generatedAt": "2026-08-20T18:58:38.989Z",
   "weather": {
     "temperature": 83,
-    "shortForecast": "Slight Chance Rain Showers then Showers And Thunderstorms",
-    "wind": "0 to 5 mph E",
-    "detailedForecast": "A slight chance of rain showers before noon, then showers and thunderstorms. Mostly cloudy. High near 83, with temperatures falling to around 76 in the afternoon. East wind 0 to 5 mph. Chance of precipitation is 90%. New rainfall amounts between 1 and 2 inches possible.",
+    "shortForecast": "Showers And Thunderstorms",
+    "wind": "5 mph SE",
+    "detailedForecast": "Showers and thunderstorms. Some of the storms could produce heavy rain. Mostly cloudy. High near 83, with temperatures falling to around 77 in the afternoon. Southeast wind around 5 mph. Chance of precipitation is 80%. New rainfall amounts between 1 and 2 inches possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ad9df347f66d0090fc333c1a4a1de68611d4803d.002.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cbecb267704da1969b780ca68c6c29667f7d1dc8.001.1",
+      "event": "Severe Thunderstorm Watch",
+      "headline": "Severe Thunderstorm Watch issued August 20 at 2:32PM EDT until August 20 at 10:00PM EDT by NWS Mount Holly NJ",
+      "severity": "Severe",
+      "url": null
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c5427b617d1a67661dc9fe8124682252042f8170.002.1",
       "event": "Flood Watch",
-      "headline": "Flood Watch issued August 20 at 1:39AM EDT until August 21 at 2:00AM EDT by NWS Mount Holly NJ",
+      "headline": "Flood Watch issued August 20 at 12:55PM EDT until August 21 at 2:00AM EDT by NWS Mount Holly NJ",
       "severity": "Severe",
       "url": null
     }
@@ -185,7 +192,7 @@
       "title": "The Princess Bride",
       "source": "Garden Theatre",
       "dateLabel": "Aug 20",
-      "timeLabel": "7:00 PM",
+      "timeLabel": "7:00 PM (SELLING FAST)",
       "location": "160 Nassau Street",
       "url": "https://www.princetongardentheatre.org/film?id=the-princess-bride",
       "tags": [
@@ -1302,20 +1309,6 @@
       "startHour": 19
     },
     {
-      "title": "Zoning Board of Adjustment Meeting - Virtual",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 26, 2026",
-      "timeLabel": "07:30 PM - 11:59 PM",
-      "location": "Princeton, NJ",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7813",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-08-26",
-      "startHour": 19
-    },
-    {
       "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
       "source": "Princeton University",
       "dateLabel": "Sep 18",
@@ -1384,6 +1377,23 @@
       ],
       "isoDate": "2026-09-20",
       "startHour": 17,
+      "series": "Seuls en Scène",
+      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
+    },
+    {
+      "title": "Seuls en Scène 2026 presents a film screening of De la Comédie-Française by Martin Darondeau & Bertrand Usclat",
+      "source": "Princeton University",
+      "dateLabel": "Sep 22",
+      "timeLabel": "4:00 PM",
+      "location": "Lewis Center for the Arts, Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-film-screening-de-la-comedie-francaise-martin-darondeau",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-22",
+      "startHour": 16,
       "series": "Seuls en Scène",
       "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
     },
@@ -1557,7 +1567,7 @@
       "iso": "2026-08-26",
       "label": "Aug 26",
       "weekday": "Wed",
-      "count": 20
+      "count": 19
     }
   ],
   "windowDays": 7,
@@ -1568,7 +1578,7 @@
       "label": "French Theater Festival",
       "venue": "Lewis Center for the Arts, Princeton campus",
       "url": "https://arts.princeton.edu/french-theater-festival",
-      "count": 11,
+      "count": 12,
       "startLabel": "Sep 18",
       "endLabel": "Sep 26",
       "next": {
@@ -1601,6 +1611,12 @@
           "dateLabel": "Sep 20",
           "timeLabel": "5:00 PM",
           "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-nom-constance-debre-0"
+        },
+        {
+          "title": "Seuls en Scène 2026 presents a film screening of De la Comédie-Française by Martin Darondeau & Bertrand Usclat",
+          "dateLabel": "Sep 22",
+          "timeLabel": "4:00 PM",
+          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-film-screening-de-la-comedie-francaise-martin-darondeau"
         },
         {
           "title": "Seuls en Scène 2026 presents L’Événement by Annie Ernaux",
@@ -1652,7 +1668,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Slight Chance Rain Showers then Showers And Thunderstorms, 83F"
+      "detail": "Showers And Thunderstorms, 83F"
     },
     {
       "name": "Princeton University Events",
@@ -1670,7 +1686,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "27 calendar items"
+      "detail": "26 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
@@ -1682,7 +1698,7 @@
       "name": "Seuls en Scène (French Theater Festival)",
       "url": "https://arts.princeton.edu/french-theater-festival",
       "status": "ok",
-      "detail": "11 upcoming dates"
+      "detail": "12 upcoming dates"
     }
   ]
 }
