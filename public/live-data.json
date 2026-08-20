@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-20T09:49:50.124Z",
+  "generatedAt": "2026-08-20T13:10:45.800Z",
   "weather": {
-    "temperature": 66,
-    "shortForecast": "Mostly Clear",
-    "wind": "5 mph NW",
-    "detailedForecast": "Mostly clear, with a low around 66. Northwest wind around 5 mph.",
+    "temperature": 83,
+    "shortForecast": "Slight Chance Rain Showers then Showers And Thunderstorms",
+    "wind": "0 to 5 mph E",
+    "detailedForecast": "A slight chance of rain showers between 10am and noon, then showers and thunderstorms. Partly sunny. High near 83, with temperatures falling to around 76 in the afternoon. East wind 0 to 5 mph. Chance of precipitation is 90%. New rainfall amounts between 1 and 2 inches possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
@@ -79,12 +79,12 @@
       ]
     },
     {
-      "title": "Open Studio",
+      "title": "Pre-Read Book Discussion for Staff: Reader, Come Home",
       "source": "Princeton University",
       "dateLabel": "Aug 20",
       "timeLabel": "1:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/open-studio-76",
+      "url": "https://www.princeton.edu/events/2026/pre-read-book-discussion-staff-reader-come-home",
       "tags": [
         "new",
         "culture",
@@ -92,12 +92,12 @@
       ]
     },
     {
-      "title": "Pre-Read Book Discussion for Staff: Reader, Come Home",
+      "title": "Open Studio",
       "source": "Princeton University",
       "dateLabel": "Aug 20",
       "timeLabel": "1:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/pre-read-book-discussion-staff-reader-come-home",
+      "url": "https://www.princeton.edu/events/2026/open-studio-76",
       "tags": [
         "new",
         "culture",
@@ -237,7 +237,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Clear, 66F"
+      "detail": "Slight Chance Rain Showers then Showers And Thunderstorms, 83F"
     },
     {
       "name": "Princeton University Events",
