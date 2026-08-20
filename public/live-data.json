@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T03:58:28.204Z",
+  "generatedAt": "2026-08-20T07:05:51.147Z",
   "weather": {
     "temperature": 67,
     "shortForecast": "Mostly Clear",
@@ -9,151 +9,15 @@
   },
   "alerts": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b732b2848140eff7da7b0b9c6454fd4f21980e34.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ad9df347f66d0090fc333c1a4a1de68611d4803d.002.1",
       "event": "Flood Watch",
-      "headline": "Flood Watch issued August 19 at 2:08PM EDT until August 21 at 2:00AM EDT by NWS Mount Holly NJ",
+      "headline": "Flood Watch issued August 20 at 1:39AM EDT until August 21 at 2:00AM EDT by NWS Mount Holly NJ",
       "severity": "Severe",
       "url": null
     }
   ],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Drop in and Knit",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 19",
-      "timeLabel": "10:00am - 12:00pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/16065895",
-      "tags": [
-        "new",
-        "culture",
-        "practical"
-      ]
-    },
-    {
-      "title": "Kids: Storytime!",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 19",
-      "timeLabel": "10:30am - 11:00am",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14660954",
-      "tags": [
-        "family",
-        "practical"
-      ]
-    },
-    {
-      "title": "Kids: Baby Storytime",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 19",
-      "timeLabel": "11:30am - 12:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14662389",
-      "tags": [
-        "family"
-      ]
-    },
-    {
-      "title": "Kids: Baby Play Group",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 19",
-      "timeLabel": "12:00pm - 1:00pm",
-      "location": "Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/14662322",
-      "tags": [
-        "new",
-        "family",
-        "practical"
-      ]
-    },
-    {
-      "title": "English Conversation (virtual)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 19",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Virtual - Google Meet",
-      "url": "https://princetonlibrary.libnet.info/event/16837150",
-      "tags": [
-        "practical"
-      ]
-    },
-    {
-      "title": "Film: \"Project Hail Mary\"",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 19",
-      "timeLabel": "5:00pm - 7:20pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/16985040",
-      "tags": [
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ]
-    },
-    {
-      "title": "Journaling Club",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 19",
-      "timeLabel": "5:00pm - 6:00pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/16862221",
-      "tags": [
-        "family",
-        "practical"
-      ]
-    },
-    {
-      "title": "Board of Trustees Meeting",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 19",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Newsroom",
-      "url": "https://princetonlibrary.libnet.info/event/15121282",
-      "tags": [
-        "rain",
-        "practical"
-      ]
-    },
-    {
-      "title": "Open Studio",
-      "source": "Princeton University",
-      "dateLabel": "Aug 19",
-      "timeLabel": "1:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/open-studio-75",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ]
-    },
-    {
-      "title": "Library Board of Trustees Meeting",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 19, 2026",
-      "timeLabel": "06:00 PM - 11:59 PM",
-      "location": "65 Witherspoon StreetPrinceton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7829",
-      "tags": [
-        "rain",
-        "practical"
-      ]
-    },
-    {
-      "title": "Princeton Housing Authority Meeting - Virtual",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 19, 2026",
-      "timeLabel": "06:15 PM - 11:59 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8028",
-      "tags": [
-        "culture",
-        "rain",
-        "practical"
-      ]
-    },
     {
       "title": "English Conversation",
       "source": "Princeton Public Library",
@@ -239,6 +103,133 @@
         "culture",
         "rain"
       ]
+    },
+    {
+      "title": "Food Insecurity Task Force: Princeton Alliance Church",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 20, 2026",
+      "timeLabel": "06:00 PM - 07:30 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7284",
+      "tags": [
+        "practical"
+      ]
+    },
+    {
+      "title": "Princeton Bachata Club",
+      "source": "Princeton University",
+      "dateLabel": "Aug 20",
+      "timeLabel": "6:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-bachata-club-9",
+      "tags": []
+    },
+    {
+      "title": "Women's Soccer vs Loyola Md.",
+      "source": "Princeton University",
+      "dateLabel": "Aug 20",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-loyola-md",
+      "tags": []
+    },
+    {
+      "title": "Job Seekers: Optimize Your Resume",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 21",
+      "timeLabel": "10:00am - 12:00pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/16881003",
+      "tags": [
+        "culture",
+        "practical"
+      ]
+    },
+    {
+      "title": "Teens: Drop In and Edit (Adobe Creative Cloud)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 21",
+      "timeLabel": "2:00pm - 3:00pm",
+      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "url": "https://princetonlibrary.libnet.info/event/16783762",
+      "tags": [
+        "new",
+        "family",
+        "practical"
+      ]
+    },
+    {
+      "title": "Dancing Under the Stars",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 21",
+      "timeLabel": "7:00pm - 10:00pm",
+      "location": "Princeton Public Library - Community Room,Hinds Plaza",
+      "url": "https://princetonlibrary.libnet.info/event/16266281",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ]
+    },
+    {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Aug 21",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-77",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ]
+    },
+    {
+      "title": "Muslim Life Program Friday Jummah Congregational Prayer",
+      "source": "Princeton University",
+      "dateLabel": "Aug 21",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/muslim-life-program-friday-jummah-congregational-prayer-19",
+      "tags": []
+    },
+    {
+      "title": "Kids: Saturday Storytime!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 22",
+      "timeLabel": "10:30am - 11:00am",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14662002",
+      "tags": [
+        "family",
+        "practical"
+      ]
+    },
+    {
+      "title": "Kids: Chemistry Saturdays",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 22",
+      "timeLabel": "2:00pm - 2:30pm",
+      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "url": "https://princetonlibrary.libnet.info/event/16948149",
+      "tags": [
+        "family",
+        "rain",
+        "practical"
+      ]
+    },
+    {
+      "title": "Kids: Chemistry Saturdays",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 22",
+      "timeLabel": "2:30pm - 3:00pm",
+      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "url": "https://princetonlibrary.libnet.info/event/16948150",
+      "tags": [
+        "family",
+        "rain",
+        "practical"
+      ]
     }
   ],
   "sources": [
@@ -258,13 +249,13 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "35 events"
+      "detail": "33 events"
     },
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "26 calendar items"
+      "detail": "27 calendar items"
     }
   ]
 }
