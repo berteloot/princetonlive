@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-19T21:39:47.065Z",
+  "generatedAt": "2026-08-20T01:51:04.085Z",
   "weather": {
-    "temperature": 87,
-    "shortForecast": "Sunny",
-    "wind": "5 mph W",
-    "detailedForecast": "Sunny, with a high near 87. West wind around 5 mph.",
+    "temperature": 67,
+    "shortForecast": "Mostly Clear",
+    "wind": "0 mph ",
+    "detailedForecast": "Mostly clear, with a low around 67. West wind around 0 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
@@ -130,17 +130,6 @@
       ]
     },
     {
-      "title": "Food Insecurity Task Force: Princeton Cornerstone Kitchen",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 19, 2026",
-      "timeLabel": "05:00 PM - 06:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=6921",
-      "tags": [
-        "practical"
-      ]
-    },
-    {
       "title": "Library Board of Trustees Meeting",
       "source": "Municipality of Princeton",
       "dateLabel": "August 19, 2026",
@@ -237,6 +226,19 @@
         "culture",
         "rain"
       ]
+    },
+    {
+      "title": "Pre-Read Book Discussion for Staff: Reader, Come Home",
+      "source": "Princeton University",
+      "dateLabel": "Aug 20",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/pre-read-book-discussion-staff-reader-come-home",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ]
     }
   ],
   "sources": [
@@ -244,7 +246,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 87F"
+      "detail": "Mostly Clear, 67F"
     },
     {
       "name": "Princeton University Events",
@@ -262,7 +264,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "27 calendar items"
+      "detail": "26 calendar items"
     }
   ]
 }
