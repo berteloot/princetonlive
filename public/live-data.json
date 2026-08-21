@@ -1,71 +1,15 @@
 {
-  "generatedAt": "2026-08-21T03:59:50.156Z",
+  "generatedAt": "2026-08-21T07:07:22.013Z",
   "weather": {
     "temperature": 62,
     "shortForecast": "Slight Chance Rain Showers",
     "wind": "5 mph N",
-    "detailedForecast": "A slight chance of rain showers before 5am. Mostly cloudy, with a low around 62. North wind around 5 mph, with gusts as high as 25 mph. Chance of precipitation is 20%. New rainfall amounts between a quarter and half of an inch possible.",
+    "detailedForecast": "A slight chance of rain showers before 5am. Mostly cloudy, with a low around 62. North wind around 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "English Conversation",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 20",
-      "timeLabel": "10:00am - 11:30am",
-      "location": "Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/17174127",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-08-20",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Storytime!",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 20",
-      "timeLabel": "10:30am - 11:00am",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14661270",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-08-20",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Baby Storytime",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 20",
-      "timeLabel": "11:30am - 12:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14661584",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-08-20",
-      "startHour": 11
-    },
-    {
-      "title": "Kids: Baby Play Group",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 20",
-      "timeLabel": "12:00pm - 1:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14662537",
-      "tags": [
-        "new",
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-08-20",
-      "startHour": 12
-    },
     {
       "title": "Open Studio",
       "source": "Princeton University",
@@ -1173,6 +1117,235 @@
       "startHour": 19
     },
     {
+      "title": "English Conversation",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 27",
+      "timeLabel": "10:00am - 11:30am",
+      "location": "Princeton Public Library",
+      "url": "https://princetonlibrary.libnet.info/event/17174128",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-08-27",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Storytime!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 27",
+      "timeLabel": "10:30am - 11:00am",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14661271",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-08-27",
+      "startHour": 10
+    },
+    {
+      "title": "Meet Catholic Charities NJ4S Mercer Hub",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 27",
+      "timeLabel": "11:00am - 1:00pm",
+      "location": "Princeton Public Library - Lobby",
+      "url": "https://princetonlibrary.libnet.info/event/16857500",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-08-27",
+      "startHour": 11
+    },
+    {
+      "title": "Kids: Baby Storytime",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 27",
+      "timeLabel": "11:30am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14661585",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-08-27",
+      "startHour": 11
+    },
+    {
+      "title": "TEST GIS 2",
+      "source": "Princeton University",
+      "dateLabel": "Aug 27",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/test-gis-2",
+      "tags": [],
+      "isoDate": "2026-08-27",
+      "startHour": 12
+    },
+    {
+      "title": "Kids: Baby Play Group",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 27",
+      "timeLabel": "12:00pm - 1:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14662538",
+      "tags": [
+        "new",
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-08-27",
+      "startHour": 12
+    },
+    {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Aug 27",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-82",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-27",
+      "startHour": 13
+    },
+    {
+      "title": "Teens: Craft, Chat and Chill",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 27",
+      "timeLabel": "3:00pm - 4:00pm",
+      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "url": "https://princetonlibrary.libnet.info/event/16972773",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-08-27",
+      "startHour": 15
+    },
+    {
+      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Griggs Farm",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 27, 2026",
+      "timeLabel": "03:30 PM - 04:00 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7439",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-08-27",
+      "startHour": 15
+    },
+    {
+      "title": "Meadows Welcome Back Ice Cream Social",
+      "source": "Princeton University",
+      "dateLabel": "Aug 27",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/meadows-welcome-back-ice-cream-social",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-08-27",
+      "startHour": 16
+    },
+    {
+      "title": "Hadestown: The Musical",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 27",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-27",
+      "startHour": 16
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 27",
+      "timeLabel": "4:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-27",
+      "startHour": 16
+    },
+    {
+      "title": "Food Insecurity Task Force: Princeton Alliance Church",
+      "source": "Municipality of Princeton",
+      "dateLabel": "August 27, 2026",
+      "timeLabel": "06:00 PM - 07:30 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7285",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-08-27",
+      "startHour": 18
+    },
+    {
+      "title": "Princeton Bachata Club",
+      "source": "Princeton University",
+      "dateLabel": "Aug 27",
+      "timeLabel": "6:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-bachata-club-10",
+      "tags": [],
+      "isoDate": "2026-08-27",
+      "startHour": 18
+    },
+    {
+      "title": "Women's Soccer vs West Virginia",
+      "source": "Princeton University",
+      "dateLabel": "Aug 27",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-west-virginia",
+      "tags": [],
+      "isoDate": "2026-08-27",
+      "startHour": 19
+    },
+    {
+      "title": "Taxi Driver",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 27",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=taxi-driver",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-27",
+      "startHour": 19
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 27",
+      "timeLabel": "7:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-27",
+      "startHour": 19
+    },
+    {
       "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
       "source": "Princeton University",
       "dateLabel": "Sep 18",
@@ -1392,12 +1565,6 @@
   ],
   "days": [
     {
-      "iso": "2026-08-20",
-      "label": "Aug 20",
-      "weekday": "Thu",
-      "count": 4
-    },
-    {
       "iso": "2026-08-21",
       "label": "Aug 21",
       "weekday": "Fri",
@@ -1432,6 +1599,12 @@
       "label": "Aug 26",
       "weekday": "Wed",
       "count": 20
+    },
+    {
+      "iso": "2026-08-27",
+      "label": "Aug 27",
+      "weekday": "Thu",
+      "count": 17
     }
   ],
   "windowDays": 7,
@@ -1544,7 +1717,7 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "33 events"
+      "detail": "32 events"
     },
     {
       "name": "Municipality of Princeton",
