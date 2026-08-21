@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-21T15:48:20.283Z",
+  "generatedAt": "2026-08-21T18:55:51.125Z",
   "weather": {
     "temperature": 80,
     "shortForecast": "Mostly Sunny",
-    "wind": "5 to 10 mph NE",
-    "detailedForecast": "Mostly sunny, with a high near 80. Northeast wind 5 to 10 mph.",
+    "wind": "0 to 5 mph NE",
+    "detailedForecast": "Mostly sunny, with a high near 80. Northeast wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -242,7 +242,7 @@
       "source": "Princeton Public Library",
       "dateLabel": "Aug 22",
       "timeLabel": "3:00pm - 4:00pm",
-      "location": "Princeton Public Library - Story Room",
+      "location": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/event/16556680",
       "tags": [
         "new",
@@ -1117,19 +1117,6 @@
       "startHour": 19
     },
     {
-      "title": "English Conversation",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 27",
-      "timeLabel": "10:00am - 11:30am",
-      "location": "Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/17174128",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-08-27",
-      "startHour": 10
-    },
-    {
       "title": "Kids: Storytime!",
       "source": "Princeton Public Library",
       "dateLabel": "Aug 27",
@@ -1604,7 +1591,7 @@
       "iso": "2026-08-27",
       "label": "Aug 27",
       "weekday": "Thu",
-      "count": 17
+      "count": 16
     }
   ],
   "windowDays": 7,
@@ -1717,7 +1704,7 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "32 events"
+      "detail": "31 events"
     },
     {
       "name": "Municipality of Princeton",
