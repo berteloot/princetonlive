@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-21T18:55:51.125Z",
+  "generatedAt": "2026-08-21T21:37:23.291Z",
   "weather": {
     "temperature": 80,
     "shortForecast": "Mostly Sunny",
-    "wind": "0 to 5 mph NE",
-    "detailedForecast": "Mostly sunny, with a high near 80. Northeast wind 0 to 5 mph.",
+    "wind": "0 mph ",
+    "detailedForecast": "Mostly sunny, with a high near 80. Northeast wind around 0 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -64,34 +64,6 @@
       ],
       "isoDate": "2026-08-21",
       "startHour": 14
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 21",
-      "timeLabel": "4:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-21",
-      "startHour": 16
-    },
-    {
-      "title": "Wild Inside",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 21",
-      "timeLabel": "4:25 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-21",
-      "startHour": 16
     },
     {
       "title": "Dancing Under the Stars",
@@ -1555,7 +1527,7 @@
       "iso": "2026-08-21",
       "label": "Aug 21",
       "weekday": "Fri",
-      "count": 10
+      "count": 8
     },
     {
       "iso": "2026-08-22",
@@ -1716,7 +1688,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "88 showtimes"
+      "detail": "86 showtimes"
     },
     {
       "name": "Seuls en Scène (French Theater Festival)",
