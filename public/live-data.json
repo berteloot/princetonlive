@@ -1,21 +1,13 @@
 {
-  "generatedAt": "2026-08-21T01:56:55.350Z",
+  "generatedAt": "2026-08-21T03:59:50.156Z",
   "weather": {
     "temperature": 62,
-    "shortForecast": "Showers And Thunderstorms Likely",
+    "shortForecast": "Slight Chance Rain Showers",
     "wind": "5 mph N",
-    "detailedForecast": "Showers and thunderstorms likely before 5am. Mostly cloudy, with a low around 62. North wind around 5 mph, with gusts as high as 30 mph. Chance of precipitation is 70%. New rainfall amounts between a quarter and half of an inch possible.",
+    "detailedForecast": "A slight chance of rain showers before 5am. Mostly cloudy, with a low around 62. North wind around 5 mph, with gusts as high as 25 mph. Chance of precipitation is 20%. New rainfall amounts between a quarter and half of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
-  "alerts": [
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2b536d9a258c6a935b9d94b01af4fb551d3b1d79.001.1",
-      "event": "Flash Flood Warning",
-      "headline": "Flash Flood Warning issued August 20 at 8:46PM EDT until August 20 at 10:30PM EDT by NWS Mount Holly NJ",
-      "severity": "Severe",
-      "url": null
-    }
-  ],
+  "alerts": [],
   "alertsAvailable": true,
   "events": [
     {
@@ -1540,7 +1532,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Showers And Thunderstorms Likely, 62F"
+      "detail": "Slight Chance Rain Showers, 62F"
     },
     {
       "name": "Princeton University Events",
