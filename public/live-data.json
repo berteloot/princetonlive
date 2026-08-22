@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-22T15:34:51.402Z",
+  "generatedAt": "2026-08-22T18:48:16.045Z",
   "weather": {
     "temperature": 76,
     "shortForecast": "Chance Rain Showers",
-    "wind": "5 mph E",
-    "detailedForecast": "A chance of rain showers and patchy fog. Cloudy, with a high near 76. East wind around 5 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
+    "wind": "5 mph SE",
+    "detailedForecast": "A chance of rain showers. Mostly cloudy, with a high near 76. Southeast wind around 5 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -33,34 +33,6 @@
       "url": "https://www.princeton.edu/events/2026/open-studio-78",
       "tags": [
         "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-22",
-      "startHour": 13
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 22",
-      "timeLabel": "1:30 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-22",
-      "startHour": 13
-    },
-    {
-      "title": "Wild Inside",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 22",
-      "timeLabel": "1:45 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
-      "tags": [
         "culture",
         "rain"
       ],
@@ -1510,7 +1482,7 @@
       "iso": "2026-08-22",
       "label": "Aug 22",
       "weekday": "Sat",
-      "count": 12
+      "count": 10
     },
     {
       "iso": "2026-08-23",
@@ -1671,7 +1643,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "83 showtimes"
+      "detail": "81 showtimes"
     },
     {
       "name": "Seuls en Scène (French Theater Festival)",
