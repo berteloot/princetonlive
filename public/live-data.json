@@ -1,59 +1,15 @@
 {
-  "generatedAt": "2026-08-22T03:55:31.149Z",
+  "generatedAt": "2026-08-22T06:58:42.527Z",
   "weather": {
-    "temperature": 63,
-    "shortForecast": "Mostly Cloudy",
+    "temperature": 65,
+    "shortForecast": "Patchy Fog",
     "wind": "0 mph ",
-    "detailedForecast": "Mostly cloudy, with a low around 63. Southeast wind around 0 mph.",
+    "detailedForecast": "Patchy fog. Mostly cloudy, with a low around 65. East wind around 0 mph. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Job Seekers: Optimize Your Resume",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 21",
-      "timeLabel": "10:00am - 12:00pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/16881003",
-      "tags": [
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-08-21",
-      "startHour": 10
-    },
-    {
-      "title": "Teens: Drop In and Edit (Adobe Creative Cloud)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 21",
-      "timeLabel": "2:00pm - 3:00pm",
-      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
-      "url": "https://princetonlibrary.libnet.info/event/16783762",
-      "tags": [
-        "new",
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-08-21",
-      "startHour": 14
-    },
-    {
-      "title": "Dancing Under the Stars",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 21",
-      "timeLabel": "7:00pm - 10:00pm",
-      "location": "Princeton Public Library - Community Room,Hinds Plaza",
-      "url": "https://princetonlibrary.libnet.info/event/16266281",
-      "tags": [
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-08-21",
-      "startHour": 19
-    },
     {
       "title": "Kids: Saturday Storytime!",
       "source": "Princeton Public Library",
@@ -1237,6 +1193,101 @@
       "startHour": 19
     },
     {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Aug 28",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-83",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-28",
+      "startHour": 10
+    },
+    {
+      "title": "Community Archiving: The Paul Robeson House of Princeton",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 28",
+      "timeLabel": "10:00am - 12:00pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/17225505",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-08-28",
+      "startHour": 10
+    },
+    {
+      "title": "Muslim Life Program Friday Jummah Congregational Prayer",
+      "source": "Princeton University",
+      "dateLabel": "Aug 28",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/muslim-life-program-friday-jummah-congregational-prayer-20",
+      "tags": [],
+      "isoDate": "2026-08-28",
+      "startHour": 12
+    },
+    {
+      "title": "Teens: Drop In and Edit (Adobe Creative Cloud)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 28",
+      "timeLabel": "2:00pm - 3:00pm",
+      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "url": "https://princetonlibrary.libnet.info/event/16783763",
+      "tags": [
+        "new",
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-08-28",
+      "startHour": 14
+    },
+    {
+      "title": "Teens: Take & Make",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 28",
+      "timeLabel": "3:00pm - 4:00pm",
+      "location": "Princeton Public Library - Teen Center",
+      "url": "https://princetonlibrary.libnet.info/event/17250233",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-08-28",
+      "startHour": 15
+    },
+    {
+      "title": "Men's Soccer vs Villanova",
+      "source": "Princeton University",
+      "dateLabel": "Aug 28",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-villanova",
+      "tags": [],
+      "isoDate": "2026-08-28",
+      "startHour": 19
+    },
+    {
+      "title": "Twin Peaks: Season 1 - Episodes 6 & 7",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 28",
+      "timeLabel": "9:45 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=twin-peaks-season-1-episodes-6-7",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-28",
+      "startHour": 21
+    },
+    {
       "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
       "source": "Princeton University",
       "dateLabel": "Sep 18",
@@ -1456,12 +1507,6 @@
   ],
   "days": [
     {
-      "iso": "2026-08-21",
-      "label": "Aug 21",
-      "weekday": "Fri",
-      "count": 3
-    },
-    {
       "iso": "2026-08-22",
       "label": "Aug 22",
       "weekday": "Sat",
@@ -1496,6 +1541,12 @@
       "label": "Aug 27",
       "weekday": "Thu",
       "count": 16
+    },
+    {
+      "iso": "2026-08-28",
+      "label": "Aug 28",
+      "weekday": "Fri",
+      "count": 7
     }
   ],
   "windowDays": 7,
@@ -1596,7 +1647,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Cloudy, 63F"
+      "detail": "Patchy Fog, 65F"
     },
     {
       "name": "Princeton University Events",
@@ -1608,7 +1659,7 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "31 events"
+      "detail": "29 events"
     },
     {
       "name": "Municipality of Princeton",
