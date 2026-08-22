@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-22T12:59:51.755Z",
+  "generatedAt": "2026-08-22T15:34:51.402Z",
   "weather": {
     "temperature": 76,
     "shortForecast": "Chance Rain Showers",
-    "wind": "0 to 5 mph E",
-    "detailedForecast": "A chance of rain showers and patchy fog. Cloudy, with a high near 76. East wind 0 to 5 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
+    "wind": "5 mph E",
+    "detailedForecast": "A chance of rain showers and patchy fog. Cloudy, with a high near 76. East wind around 5 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
