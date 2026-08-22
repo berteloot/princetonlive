@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T01:49:38.949Z",
+  "generatedAt": "2026-08-22T03:55:31.149Z",
   "weather": {
     "temperature": 63,
     "shortForecast": "Mostly Cloudy",
@@ -10,21 +10,6 @@
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Open Studio",
-      "source": "Princeton University",
-      "dateLabel": "Aug 21",
-      "timeLabel": "10:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/open-studio-77",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-21",
-      "startHour": 10
-    },
     {
       "title": "Job Seekers: Optimize Your Resume",
       "source": "Princeton Public Library",
@@ -38,17 +23,6 @@
       ],
       "isoDate": "2026-08-21",
       "startHour": 10
-    },
-    {
-      "title": "Muslim Life Program Friday Jummah Congregational Prayer",
-      "source": "Princeton University",
-      "dateLabel": "Aug 21",
-      "timeLabel": "12:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/muslim-life-program-friday-jummah-congregational-prayer-19",
-      "tags": [],
-      "isoDate": "2026-08-21",
-      "startHour": 12
     },
     {
       "title": "Teens: Drop In and Edit (Adobe Creative Cloud)",
@@ -1485,7 +1459,7 @@
       "iso": "2026-08-21",
       "label": "Aug 21",
       "weekday": "Fri",
-      "count": 5
+      "count": 3
     },
     {
       "iso": "2026-08-22",
