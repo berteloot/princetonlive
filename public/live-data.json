@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-21T21:37:23.291Z",
+  "generatedAt": "2026-08-22T01:49:38.949Z",
   "weather": {
-    "temperature": 80,
-    "shortForecast": "Mostly Sunny",
+    "temperature": 63,
+    "shortForecast": "Mostly Cloudy",
     "wind": "0 mph ",
-    "detailedForecast": "Mostly sunny, with a high near 80. Northeast wind around 0 mph.",
+    "detailedForecast": "Mostly cloudy, with a low around 63. Southeast wind around 0 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -79,48 +79,6 @@
       ],
       "isoDate": "2026-08-21",
       "startHour": 19
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 21",
-      "timeLabel": "7:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-21",
-      "startHour": 19
-    },
-    {
-      "title": "Hadestown: The Musical",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 21",
-      "timeLabel": "7:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-21",
-      "startHour": 19
-    },
-    {
-      "title": "Twin Peaks: Season 1 - Episodes 4 & 5",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 21",
-      "timeLabel": "9:45 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=twin-peaks-season-1-episodes-4-5",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-21",
-      "startHour": 21
     },
     {
       "title": "Kids: Saturday Storytime!",
@@ -1527,7 +1485,7 @@
       "iso": "2026-08-21",
       "label": "Aug 21",
       "weekday": "Fri",
-      "count": 8
+      "count": 5
     },
     {
       "iso": "2026-08-22",
@@ -1664,7 +1622,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Sunny, 80F"
+      "detail": "Mostly Cloudy, 63F"
     },
     {
       "name": "Princeton University Events",
@@ -1688,7 +1646,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "86 showtimes"
+      "detail": "83 showtimes"
     },
     {
       "name": "Seuls en Scène (French Theater Festival)",
