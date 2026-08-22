@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-22T18:48:16.045Z",
+  "generatedAt": "2026-08-22T21:34:55.027Z",
   "weather": {
-    "temperature": 76,
-    "shortForecast": "Chance Rain Showers",
+    "temperature": 80,
+    "shortForecast": "Mostly Cloudy",
     "wind": "5 mph SE",
-    "detailedForecast": "A chance of rain showers. Mostly cloudy, with a high near 76. Southeast wind around 5 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
+    "detailedForecast": "Mostly cloudy, with a high near 80. Southeast wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -92,34 +92,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/tango-practica-9",
       "tags": [],
-      "isoDate": "2026-08-22",
-      "startHour": 16
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 22",
-      "timeLabel": "4:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-22",
-      "startHour": 16
-    },
-    {
-      "title": "Wild Inside",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 22",
-      "timeLabel": "4:25 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
-      "tags": [
-        "culture",
-        "rain"
-      ],
       "isoDate": "2026-08-22",
       "startHour": 16
     },
@@ -1482,7 +1454,7 @@
       "iso": "2026-08-22",
       "label": "Aug 22",
       "weekday": "Sat",
-      "count": 10
+      "count": 8
     },
     {
       "iso": "2026-08-23",
@@ -1619,7 +1591,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Chance Rain Showers, 76F"
+      "detail": "Mostly Cloudy, 80F"
     },
     {
       "name": "Princeton University Events",
@@ -1643,7 +1615,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "81 showtimes"
+      "detail": "79 showtimes"
     },
     {
       "name": "Seuls en Scène (French Theater Festival)",
