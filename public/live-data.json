@@ -1,74 +1,15 @@
 {
-  "generatedAt": "2026-08-23T01:58:57.611Z",
+  "generatedAt": "2026-08-23T04:00:00.513Z",
   "weather": {
     "temperature": 66,
     "shortForecast": "Chance Showers And Thunderstorms",
-    "wind": "0 to 5 mph E",
-    "detailedForecast": "A slight chance of rain showers between 10pm and midnight, then a chance of showers and thunderstorms between midnight and 1am, then a chance of showers and thunderstorms between 1am and 3am, then patchy fog and showers and thunderstorms likely between 3am and 4am, then patchy fog and a chance of showers and thunderstorms between 4am and 5am, then patchy fog and a chance of showers and thunderstorms. Mostly cloudy, with a low around 66. East wind 0 to 5 mph. Chance of precipitation is 60%. New rainfall amounts between a tenth and quarter of an inch possible.",
+    "wind": "0 mph ",
+    "detailedForecast": "A chance of showers and thunderstorms before 1am, then a chance of showers and thunderstorms between 1am and 3am, then patchy fog and showers and thunderstorms likely between 3am and 4am, then patchy fog and a chance of showers and thunderstorms between 4am and 5am, then patchy fog and a chance of showers and thunderstorms. Mostly cloudy, with a low around 66. Northeast wind around 0 mph. Chance of precipitation is 60%. New rainfall amounts between a tenth and quarter of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Kids: Saturday Storytime!",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 22",
-      "timeLabel": "10:30am - 11:00am",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14662002",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-08-22",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Chemistry Saturdays",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 22",
-      "timeLabel": "2:00pm - 2:30pm",
-      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
-      "url": "https://princetonlibrary.libnet.info/event/16948149",
-      "tags": [
-        "family",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-08-22",
-      "startHour": 14
-    },
-    {
-      "title": "Kids: Chemistry Saturdays",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 22",
-      "timeLabel": "2:30pm - 3:00pm",
-      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
-      "url": "https://princetonlibrary.libnet.info/event/16948150",
-      "tags": [
-        "family",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-08-22",
-      "startHour": 14
-    },
-    {
-      "title": "Kids & Teens: Drop-In Chess Sessions",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 22",
-      "timeLabel": "3:00pm - 4:00pm",
-      "location": "Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/16556680",
-      "tags": [
-        "new",
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-08-22",
-      "startHour": 15
-    },
     {
       "title": "Roman Catholic Sunday Mass",
       "source": "Princeton University",
@@ -1178,6 +1119,75 @@
       "startHour": 21
     },
     {
+      "title": "Members Preview Day: Defying Authority: Takeda Hideo's Genpei",
+      "source": "Princeton University",
+      "dateLabel": "Aug 29",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/members-preview-day-defying-authority-takeda-hideos-genpei",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-08-29",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Saturday Storytime!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 29",
+      "timeLabel": "10:30am - 11:00am",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14662003",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-08-29",
+      "startHour": 10
+    },
+    {
+      "title": "Field Hockey vs University of British Columbia (Exhibition)",
+      "source": "Princeton University",
+      "dateLabel": "Aug 29",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-university-british-columbia-exhibition",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-08-29",
+      "startHour": 13
+    },
+    {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Aug 29",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-84",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-29",
+      "startHour": 13
+    },
+    {
+      "title": "Tango Practica",
+      "source": "Princeton University",
+      "dateLabel": "Aug 29",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/tango-practica-10",
+      "tags": [],
+      "isoDate": "2026-08-29",
+      "startHour": 16
+    },
+    {
       "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
       "source": "Princeton University",
       "dateLabel": "Sep 18",
@@ -1397,12 +1407,6 @@
   ],
   "days": [
     {
-      "iso": "2026-08-22",
-      "label": "Aug 22",
-      "weekday": "Sat",
-      "count": 4
-    },
-    {
       "iso": "2026-08-23",
       "label": "Aug 23",
       "weekday": "Sun",
@@ -1437,6 +1441,12 @@
       "label": "Aug 28",
       "weekday": "Fri",
       "count": 7
+    },
+    {
+      "iso": "2026-08-29",
+      "label": "Aug 29",
+      "weekday": "Sat",
+      "count": 5
     }
   ],
   "windowDays": 7,
