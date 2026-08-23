@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-23T15:35:50.821Z",
+  "generatedAt": "2026-08-23T18:47:55.683Z",
   "weather": {
     "temperature": 82,
-    "shortForecast": "Slight Chance Showers And Thunderstorms then Mostly Sunny",
-    "wind": "5 to 10 mph SW",
-    "detailedForecast": "A slight chance of showers and thunderstorms before noon. Mostly sunny, with a high near 82. Southwest wind 5 to 10 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
+    "shortForecast": "Mostly Sunny",
+    "wind": "10 mph W",
+    "detailedForecast": "Mostly sunny, with a high near 82. West wind around 10 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -35,34 +35,6 @@
       ],
       "isoDate": "2026-08-23",
       "startHour": 12
-    },
-    {
-      "title": "Woodstock",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 23",
-      "timeLabel": "12:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=woodstock",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-23",
-      "startHour": 12
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 23",
-      "timeLabel": "1:45 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-23",
-      "startHour": 13
     },
     {
       "title": "Music: Novo Rodeo",
@@ -1410,7 +1382,7 @@
       "iso": "2026-08-23",
       "label": "Aug 23",
       "weekday": "Sun",
-      "count": 9
+      "count": 7
     },
     {
       "iso": "2026-08-24",
@@ -1547,7 +1519,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Slight Chance Showers And Thunderstorms then Mostly Sunny, 82F"
+      "detail": "Mostly Sunny, 82F"
     },
     {
       "name": "Princeton University Events",
@@ -1571,7 +1543,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "77 showtimes"
+      "detail": "75 showtimes"
     },
     {
       "name": "Seuls en Scène (French Theater Festival)",
