@@ -1294,11 +1294,23 @@ function App() {
       target?.scrollIntoView({ block: "start" });
     };
 
+    // A click on a link whose hash is already in the URL fires no hashchange, so the
+    // page stayed put when a visitor chose the same nav entry twice or used the Garbage
+    // tile after landing on #waste. Catch those clicks and scroll by hand.
+    const onSameHashClick = (event) => {
+      const link = event.target.closest?.('a[href^="#"]');
+      if (!link || event.defaultPrevented) return;
+      const href = link.getAttribute("href");
+      if (href.length > 1 && href === window.location.hash) scrollToHash();
+    };
+
     const timers = [120, 450, 900].map((delay) => window.setTimeout(scrollToHash, delay));
     window.addEventListener("hashchange", scrollToHash);
+    document.addEventListener("click", onSameHashClick);
     return () => {
       timers.forEach((timer) => window.clearTimeout(timer));
       window.removeEventListener("hashchange", scrollToHash);
+      document.removeEventListener("click", onSameHashClick);
     };
   }, [liveData.generatedAt, civicMap.generatedAt, wasteData.generatedAt]);
 
