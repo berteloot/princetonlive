@@ -427,11 +427,11 @@ const dailyShortcuts = [
     icon: Train,
   },
   {
-    key: "civic",
-    label: "Neighborhood",
-    value: "Map context",
-    url: "#civic",
-    icon: Map,
+    key: "setup",
+    label: "New to town?",
+    value: "First-week setup",
+    url: "#new-resident",
+    icon: Sparkles,
   },
 ];
 
@@ -793,6 +793,13 @@ function getStoredResidentProfile() {
 
 
 
+// The street schedule is upper-case in the town PDF; a heading reads better in title case.
+function titleCase(value) {
+  return String(value ?? "")
+    .toLowerCase()
+    .replace(/(^|[\s-])([a-z])/g, (match, lead, letter) => `${lead}${letter.toUpperCase()}`);
+}
+
 function normalizeWasteStreet(value) {
   return value
     .toUpperCase()
@@ -948,8 +955,10 @@ function tractFill(feature, key, domain) {
 // events. A street result fills the garbage lookup; an event result opens its day.
 const SEARCH_RESULT_LIMIT = 8;
 
-function SiteSearch({ entries, onPick }) {
+function SiteSearch({ entries, onPick, onClose, autoFocus = false }) {
   const [term, setTerm] = useState("");
+  const [activeIndex, setActiveIndex] = useState(-1);
+  const inputRef = useRef(null);
   const inputId = "site-search-input";
   const listId = "site-search-results";
   const needle = term.trim().toLowerCase();
@@ -965,6 +974,46 @@ function SiteSearch({ entries, onPick }) {
     }
     return [...starts, ...contains].slice(0, SEARCH_RESULT_LIMIT);
   }, [entries, needle]);
+  const open = needle.length >= 2;
+  const activeId = activeIndex >= 0 && results[activeIndex] ? `${listId}-${activeIndex}` : undefined;
+
+  useEffect(() => {
+    if (autoFocus) inputRef.current?.focus();
+  }, [autoFocus]);
+
+  const pick = (entry) => {
+    onPick?.(entry);
+    setTerm("");
+    setActiveIndex(-1);
+    onClose?.();
+  };
+
+  const onKeyDown = (event) => {
+    if (event.key === "Escape") {
+      event.preventDefault();
+      if (term) {
+        setTerm("");
+        setActiveIndex(-1);
+      } else {
+        onClose?.();
+      }
+      return;
+    }
+    if (!open || !results.length) return;
+    if (event.key === "ArrowDown") {
+      event.preventDefault();
+      setActiveIndex((index) => (index + 1) % results.length);
+    } else if (event.key === "ArrowUp") {
+      event.preventDefault();
+      setActiveIndex((index) => (index <= 0 ? results.length - 1 : index - 1));
+    } else if (event.key === "Enter" && activeIndex >= 0) {
+      event.preventDefault();
+      const entry = results[activeIndex];
+      pick(entry);
+      if (entry.url.startsWith("#")) window.location.hash = entry.url;
+      else window.open(entry.url, "_blank", "noopener,noreferrer");
+    }
+  };
 
   return (
     <div className="site-search" role="search">
@@ -973,30 +1022,45 @@ function SiteSearch({ entries, onPick }) {
         <Search size={18} aria-hidden="true" />
         <input
           id={inputId}
+          ref={inputRef}
           type="search"
+          role="combobox"
           value={term}
           placeholder="A street, an event, a guide, a question"
           autoComplete="off"
+          aria-autocomplete="list"
+          aria-expanded={open}
           aria-controls={listId}
-          onChange={(event) => setTerm(event.target.value)}
-          onKeyDown={(event) => {
-            if (event.key === "Escape") setTerm("");
+          aria-activedescendant={activeId}
+          onChange={(event) => {
+            setTerm(event.target.value);
+            setActiveIndex(-1);
           }}
+          onKeyDown={onKeyDown}
         />
       </div>
-      {needle.length >= 2 ? (
-        <ul id={listId} className="site-search-results" aria-live="polite">
+      {/* The announcement is a count. Reading eight records on every keystroke is noise. */}
+      <div className="sr-only" aria-live="polite">
+        {open ? `${results.length} result${results.length === 1 ? "" : "s"}` : ""}
+      </div>
+      {open ? (
+        <ul id={listId} className="site-search-results" role="listbox" aria-label="Search results">
           {results.length ? (
             results.map((entry, index) => (
               // Two showtimes of one film share title and URL, so the key carries the index.
-              <li key={`${index}-${entry.kind}-${entry.label}`}>
+              <li
+                key={`${index}-${entry.kind}-${entry.label}`}
+                id={`${listId}-${index}`}
+                role="option"
+                aria-selected={index === activeIndex}
+                className={index === activeIndex ? "is-active" : ""}
+              >
                 <a
                   href={entry.url}
+                  tabIndex={-1}
                   {...externalLinkProps(entry.url)}
-                  onClick={() => {
-                    onPick?.(entry);
-                    setTerm("");
-                  }}
+                  onMouseEnter={() => setActiveIndex(index)}
+                  onClick={() => pick(entry)}
                 >
                   <span>{entry.kind}</span>
                   <strong>{entry.label}</strong>
@@ -1005,7 +1069,7 @@ function SiteSearch({ entries, onPick }) {
               </li>
             ))
           ) : (
-            <li className="site-search-empty">
+            <li className="site-search-empty" role="presentation">
               Nothing on this page matches. The guides and the FAQ are further down.
             </li>
           )}
@@ -1039,6 +1103,9 @@ function App() {
   const civicMapResize = useRef(null);
   const [recycleCoachFailed, setRecycleCoachFailed] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+  // A saved street collapses the garbage tool to its answer. Opening it again is one click.
+  const [wasteToolOpen, setWasteToolOpen] = useState(false);
   const [crimeData, setCrimeData] = useState(null);
   const [gardenTheatre, setGardenTheatre] = useState(null);
   const libraryOpen = useMemo(() => libraryStatus(), []);
@@ -1134,6 +1201,15 @@ function App() {
       .then((data) => setWasteData({ ...fallbackWasteData, ...data }))
       .catch(() => setWasteData(fallbackWasteData));
   }, [dataVersion]);
+
+  useEffect(() => {
+    if (!searchOpen) return;
+    const onPointer = (event) => {
+      if (!event.target.closest?.(".site-search-panel, .search-toggle")) setSearchOpen(false);
+    };
+    document.addEventListener("pointerdown", onPointer);
+    return () => document.removeEventListener("pointerdown", onPointer);
+  }, [searchOpen]);
 
   useEffect(() => {
     if (!navOpen) return;
@@ -1269,19 +1345,29 @@ function App() {
     : null;
   // Garbage day is a once-and-done question: once the street is saved, the hero tile
   // states the day. The lookup stays further down for anyone else.
+  // The four tiles are the daily questions; one-time lookups (the neighborhood map,
+  // perks, walks) live in the nav. With a street saved, the first tile states the day
+  // and the last one becomes the visitor's own dashboard.
   const heroShortcuts = dailyShortcuts.map((shortcut) => {
-    if (shortcut.key !== "garbage" || !profileWasteMatch) return shortcut;
-    const day = profileWasteMatch.trashDay;
-    return {
-      ...shortcut,
-      label: "Your garbage day",
-      value:
-        day === "NOT INCLUDED"
-          ? "Not on the town route"
-          : day.charAt(0) + day.slice(1).toLowerCase(),
-      url: "#my-princeton",
-    };
+    if (!profileWasteMatch) return shortcut;
+    if (shortcut.key === "garbage") {
+      const day = profileWasteMatch.trashDay;
+      return {
+        ...shortcut,
+        label: "Your garbage day",
+        value:
+          day === "NOT INCLUDED"
+            ? "Not on the town route"
+            : day.charAt(0) + day.slice(1).toLowerCase(),
+        url: "#my-princeton",
+      };
+    }
+    if (shortcut.key === "setup") {
+      return { ...shortcut, label: "My Princeton", value: "Your saved setup", url: "#my-princeton" };
+    }
+    return shortcut;
   });
+  const wasteToolCollapsed = Boolean(profileWasteMatch) && !wasteToolOpen && !wasteQuery;
   const searchIndex = useMemo(() => {
     const entries = [];
     const add = (kind, label, url, detail = "") =>
@@ -1587,6 +1673,20 @@ function App() {
               collapse behind this toggle. */}
           <button
             type="button"
+            className="search-toggle"
+            aria-expanded={searchOpen}
+            aria-controls="site-search-panel"
+            aria-label={searchOpen ? "Close search" : "Search this site"}
+            onClick={() => {
+              setSearchOpen((open) => !open);
+              setNavOpen(false);
+            }}
+          >
+            {searchOpen ? <X size={20} aria-hidden="true" /> : <Search size={20} aria-hidden="true" />}
+            <span>Search</span>
+          </button>
+          <button
+            type="button"
             className="nav-toggle"
             aria-expanded={navOpen}
             aria-controls="primary-nav"
@@ -1607,6 +1707,26 @@ function App() {
             ))}
           </nav>
         </div>
+        {searchOpen ? (
+          <div className="site-search-panel" id="site-search-panel">
+            <SiteSearch
+              autoFocus
+              entries={searchIndex}
+              onClose={() => setSearchOpen(false)}
+              onPick={(entry) => {
+                if (entry.kind === "street") {
+                  setWasteToolOpen(true);
+                  setWasteQuery(entry.street);
+                }
+                if (entry.kind === "event") {
+                  setQuery(entry.title);
+                  setFilter("all");
+                  setSelectedDay(entry.isoDate);
+                }
+              }}
+            />
+          </div>
+        ) : null}
       </header>
 
       <main>
@@ -1660,28 +1780,7 @@ function App() {
               </a>
             ))}
           </div>
-          <div className="hero-actions">
-            <a className="primary-action" href="#today">
-              Open today <ChevronRight size={18} aria-hidden="true" />
-            </a>
-            <a
-              className="secondary-action"
-              href={profileWasteMatch ? "#my-princeton" : "#new-resident"}
-            >
-              {profileWasteMatch ? "My Princeton" : "New to town?"}
-            </a>
-          </div>
-          <SiteSearch
-            entries={searchIndex}
-            onPick={(entry) => {
-              if (entry.kind === "street") setWasteQuery(entry.street);
-              if (entry.kind === "event") {
-                setQuery(entry.title);
-                setFilter("all");
-                setSelectedDay(entry.isoDate);
-              }
-            }}
-          />
+
         </div>
         <aside className="daily-brief" aria-label="Today snapshot">
           <a
@@ -2032,6 +2131,36 @@ function App() {
             or the yard-waste section for a Princeton street.
           </p>
         </div>
+        {wasteToolCollapsed ? (
+        <section className="waste-tool is-collapsed" id="waste" aria-labelledby="waste-heading">
+          <div className="waste-copy">
+            <p className="eyebrow">Garbage pickup by street</p>
+            <h3 id="waste-heading">
+              {titleCase(profileWasteMatch.street)}: garbage{" "}
+              {profileWasteMatch.trashDay === "NOT INCLUDED"
+                ? "is not on the town route"
+                : `on ${profileWasteMatch.trashDay.charAt(0)}${profileWasteMatch.trashDay.slice(1).toLowerCase()}`}
+              .
+            </h3>
+            <p>
+              {profileYardSchedule
+                ? `Yard section ${profileWasteMatch.yardSection}; next branch and log starts ${
+                    upcomingYardDates(profileYardSchedule.branchAndLogs, wasteData.yardScheduleYear)
+                      .slice(0, 3)
+                      .join(", ") || `none left in ${wasteData.yardScheduleYear}`
+                  }.`
+                : "Yard section varies by block on this street; open the lookup for the block list."}{" "}
+              Saved on this device from My Princeton.
+            </p>
+            <div className="waste-collapsed-actions">
+              <button type="button" onClick={() => setWasteToolOpen(true)}>
+                Open the full lookup
+              </button>
+              <a href="#my-princeton">Change street</a>
+            </div>
+          </div>
+        </section>
+        ) : (
         <section className="waste-tool" id="waste" aria-labelledby="waste-heading">
           <div className="waste-copy">
             <p className="eyebrow">Garbage pickup by street</p>
@@ -2210,6 +2339,7 @@ function App() {
             </div>
           </aside>
         </section>
+        )}
         <div className="local-rules">
           <div className="local-rule">
             <ParkingCircle size={19} aria-hidden="true" />
