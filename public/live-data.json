@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-22T21:34:55.027Z",
+  "generatedAt": "2026-08-23T01:58:57.611Z",
   "weather": {
-    "temperature": 80,
-    "shortForecast": "Mostly Cloudy",
-    "wind": "5 mph SE",
-    "detailedForecast": "Mostly cloudy, with a high near 80. Southeast wind around 5 mph.",
+    "temperature": 66,
+    "shortForecast": "Chance Showers And Thunderstorms",
+    "wind": "0 to 5 mph E",
+    "detailedForecast": "A slight chance of rain showers between 10pm and midnight, then a chance of showers and thunderstorms between midnight and 1am, then a chance of showers and thunderstorms between 1am and 3am, then patchy fog and showers and thunderstorms likely between 3am and 4am, then patchy fog and a chance of showers and thunderstorms between 4am and 5am, then patchy fog and a chance of showers and thunderstorms. Mostly cloudy, with a low around 66. East wind 0 to 5 mph. Chance of precipitation is 60%. New rainfall amounts between a tenth and quarter of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -23,21 +23,6 @@
       ],
       "isoDate": "2026-08-22",
       "startHour": 10
-    },
-    {
-      "title": "Open Studio",
-      "source": "Princeton University",
-      "dateLabel": "Aug 22",
-      "timeLabel": "1:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/open-studio-78",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-22",
-      "startHour": 13
     },
     {
       "title": "Kids: Chemistry Saturdays",
@@ -83,45 +68,6 @@
       ],
       "isoDate": "2026-08-22",
       "startHour": 15
-    },
-    {
-      "title": "Tango Practica",
-      "source": "Princeton University",
-      "dateLabel": "Aug 22",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/tango-practica-9",
-      "tags": [],
-      "isoDate": "2026-08-22",
-      "startHour": 16
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 22",
-      "timeLabel": "7:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-22",
-      "startHour": 19
-    },
-    {
-      "title": "Hadestown: The Musical",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 22",
-      "timeLabel": "7:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-22",
-      "startHour": 19
     },
     {
       "title": "Roman Catholic Sunday Mass",
@@ -1454,7 +1400,7 @@
       "iso": "2026-08-22",
       "label": "Aug 22",
       "weekday": "Sat",
-      "count": 8
+      "count": 4
     },
     {
       "iso": "2026-08-23",
@@ -1591,7 +1537,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Cloudy, 80F"
+      "detail": "Chance Showers And Thunderstorms, 66F"
     },
     {
       "name": "Princeton University Events",
@@ -1615,7 +1561,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "79 showtimes"
+      "detail": "77 showtimes"
     },
     {
       "name": "Seuls en Scène (French Theater Festival)",
