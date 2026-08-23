@@ -63,7 +63,11 @@ const defaultResidentProfile = {
 // Cache-busting bucket. A per-load Date.now() defeated the browser and CDN cache on
 // every visit. A 5-minute bucket matches the CDN s-maxage=300 and still picks up the
 // 3-hourly data refresh promptly.
-const DATA_VERSION = Math.floor(Date.now() / 300000);
+// Five-minute buckets: a cache-busting query string for the generated JSON files.
+const dataVersionNow = () => Math.floor(Date.now() / 300000);
+// A tab left open overnight was showing yesterday's events. After this many buckets
+// (30 minutes) away, coming back to the tab re-reads every data file.
+const STALE_AFTER_BUCKETS = 6;
 
 // alertsAvailable: null means "not loaded yet", false means "the feed failed".
 // Those two must never render as "no alerts", which is an affirmative safety claim.
@@ -208,18 +212,23 @@ function safeHref(href) {
   }
 }
 
+// Eight entries, one per question a visitor arrives with. Perks, walks and My Princeton
+// are reached from "New to town?", which groups the things a newcomer does once. A reader
+// of the first version read "Move" as house-moving and "My" as nothing at all.
 const primaryNavLinks = [
   ["#today", "Today"],
-  ["#practical", "Services"],
   ["#waste", "Garbage"],
-  ["#my-princeton", "My"],
-  ["#move", "Move"],
-  ["#perks", "Perks"],
-  ["#explore", "Explore"],
+  ["#practical", "Services"],
+  ["#move", "Transit"],
+  ["#new-resident", "New to town?"],
   ["#civic", "Neighborhood"],
   ["#guides", "Guides"],
   ["#faq", "FAQ"],
 ];
+
+// Tooltip box plus its 14px offset, and the room it needs above and below the pointer.
+const TOOLTIP_WIDTH = 290;
+const TOOLTIP_EDGE_PAD = 76;
 
 // School markers draw in CSS pixels: an 18px dot inside a 28px hit target, which clears
 // the 24px minimum for a touch point.
@@ -310,6 +319,14 @@ function libraryStatus(now = new Date()) {
 
 const commuteCards = [
   {
+    title: "Live departures",
+    detail:
+      "NJ Transit DepartureVision for Princeton Junction: the next trains, their tracks and any delay, as the station board shows them. Everything else on this page is a published schedule.",
+    action: "DepartureVision",
+    url: "https://www.njtransit.com/dv-to/Princeton%20Junction",
+    icon: Train,
+  },
+  {
     title: "NYC by train",
     detail: "Dinky to Princeton Junction, then Northeast Corridor to New York Penn. Check the transfer before you leave.",
     action: "NJ Transit Dinky",
@@ -389,24 +406,28 @@ const practicalTiles = [
 
 const dailyShortcuts = [
   {
+    key: "garbage",
     label: "Garbage day",
     value: "Street lookup",
     url: "#waste",
     icon: Recycle,
   },
   {
+    key: "today",
     label: "Today",
     value: "Events + alerts",
     url: "#today",
     icon: CalendarDays,
   },
   {
+    key: "transit",
     label: "Transit",
     value: "NYC / Philly",
     url: "#move",
     icon: Train,
   },
   {
+    key: "civic",
     label: "Neighborhood",
     value: "Map context",
     url: "#civic",
@@ -510,6 +531,16 @@ const residentFaqs = [
     question: "Does the neighborhood map show individual households or voters?",
     answer:
       "No. The neighborhood map uses aggregate Census block-group data and official municipality-level voting results. PrincetonLive does not publish individual voter, household, or address-level records.",
+  },
+  {
+    question: "Can I send an event or a listing to be posted?",
+    answer:
+      "No. PrincetonLive takes no submissions and has no editor. It reads the public calendars of the university, the library, the town and the Garden Theatre every three hours, so an event posted on one of those appears here on its own.",
+  },
+  {
+    question: "How current is the page I am looking at?",
+    answer:
+      "The Updated time in the top panel says when the data was last read. The page reloads its data when you return to the tab after half an hour; a manual refresh does the same at any time.",
   },
 ];
 
@@ -911,6 +942,79 @@ function tractFill(feature, key, domain) {
   return `hsl(154 40% ${lightness}%)`;
 }
 
+// Site-wide search (a reader asked for one). Everything on the page is already in memory,
+// so this is a substring match over a flat index: sections, guides, FAQ, transit and
+// service tiles, perks, walks, every street in the garbage schedule and this week's
+// events. A street result fills the garbage lookup; an event result opens its day.
+const SEARCH_RESULT_LIMIT = 8;
+
+function SiteSearch({ entries, onPick }) {
+  const [term, setTerm] = useState("");
+  const inputId = "site-search-input";
+  const listId = "site-search-results";
+  const needle = term.trim().toLowerCase();
+  const results = useMemo(() => {
+    if (needle.length < 2) return [];
+    const starts = [];
+    const contains = [];
+    for (const entry of entries) {
+      const hay = entry.text.toLowerCase();
+      if (hay.startsWith(needle) || entry.label.toLowerCase().startsWith(needle)) starts.push(entry);
+      else if (hay.includes(needle)) contains.push(entry);
+      if (starts.length >= SEARCH_RESULT_LIMIT) break;
+    }
+    return [...starts, ...contains].slice(0, SEARCH_RESULT_LIMIT);
+  }, [entries, needle]);
+
+  return (
+    <div className="site-search" role="search">
+      <label htmlFor={inputId}>Find on this site</label>
+      <div className="site-search-field">
+        <Search size={18} aria-hidden="true" />
+        <input
+          id={inputId}
+          type="search"
+          value={term}
+          placeholder="A street, an event, a guide, a question"
+          autoComplete="off"
+          aria-controls={listId}
+          onChange={(event) => setTerm(event.target.value)}
+          onKeyDown={(event) => {
+            if (event.key === "Escape") setTerm("");
+          }}
+        />
+      </div>
+      {needle.length >= 2 ? (
+        <ul id={listId} className="site-search-results" aria-live="polite">
+          {results.length ? (
+            results.map((entry, index) => (
+              // Two showtimes of one film share title and URL, so the key carries the index.
+              <li key={`${index}-${entry.kind}-${entry.label}`}>
+                <a
+                  href={entry.url}
+                  {...externalLinkProps(entry.url)}
+                  onClick={() => {
+                    onPick?.(entry);
+                    setTerm("");
+                  }}
+                >
+                  <span>{entry.kind}</span>
+                  <strong>{entry.label}</strong>
+                  {entry.detail ? <small>{entry.detail}</small> : null}
+                </a>
+              </li>
+            ))
+          ) : (
+            <li className="site-search-empty">
+              Nothing on this page matches. The guides and the FAQ are further down.
+            </li>
+          )}
+        </ul>
+      ) : null}
+    </div>
+  );
+}
+
 function App() {
   const [filter, setFilter] = useState("all");
   const [query, setQuery] = useState("");
@@ -957,7 +1061,7 @@ function App() {
     }
     return { headline: `${localRules.schools.schoolYear} school year`, detail: "The Princeton Public Schools year is under way. Check the district calendar for breaks and closures." };
   }, []);
-  const [civicTooltip, setCivicTooltip] = useState({ x: 0, y: 0 });
+  const [civicTooltip, setCivicTooltip] = useState({ x: 0, y: 0, flip: false });
   const [addressQuery, setAddressQuery] = useState("");
   const [addressLookup, setAddressLookup] = useState({
     status: "idle",
@@ -973,8 +1077,24 @@ function App() {
     }
   }, [residentProfile]);
 
+  const [dataVersion, setDataVersion] = useState(dataVersionNow);
+
   useEffect(() => {
-    fetch(`/live-data.json?v=${DATA_VERSION}`)
+    const onVisible = () => {
+      if (document.visibilityState !== "visible") return;
+      const now = dataVersionNow();
+      if (now - dataVersion >= STALE_AFTER_BUCKETS) setDataVersion(now);
+    };
+    document.addEventListener("visibilitychange", onVisible);
+    window.addEventListener("focus", onVisible);
+    return () => {
+      document.removeEventListener("visibilitychange", onVisible);
+      window.removeEventListener("focus", onVisible);
+    };
+  }, [dataVersion]);
+
+  useEffect(() => {
+    fetch(`/live-data.json?v=${dataVersion}`)
       .then((response) => {
         if (!response.ok) throw new Error(`live-data ${response.status}`);
         return response.json();
@@ -983,37 +1103,37 @@ function App() {
       // alertsAvailable flag written by the refresh script.
       .then((data) => setLiveData({ ...fallbackData, eventsArePlaceholder: false, ...data }))
       .catch(() => setLiveData({ ...fallbackData, alertsAvailable: false }));
-  }, []);
+  }, [dataVersion]);
 
   useEffect(() => {
-    fetch(`/civic-map.json?v=${DATA_VERSION}`)
+    fetch(`/civic-map.json?v=${dataVersion}`)
       .then((response) => (response.ok ? response.json() : fallbackCivicMap))
       .then((data) => setCivicMap({ ...fallbackCivicMap, ...data }))
       .catch(() => setCivicMap(fallbackCivicMap));
-  }, []);
+  }, [dataVersion]);
 
   useEffect(() => {
     // Absent or failed, the safety panel simply does not render. Crime figures are not
     // something to show a placeholder for.
-    fetch(`/garden-theatre.json?v=${DATA_VERSION}`)
+    fetch(`/garden-theatre.json?v=${dataVersion}`)
       .then((response) => (response.ok ? response.json() : null))
       .then((data) => setGardenTheatre(data && data.filmCount ? data : null))
       .catch(() => setGardenTheatre(null));
-  }, []);
+  }, [dataVersion]);
 
   useEffect(() => {
-    fetch(`/crime-data.json?v=${DATA_VERSION}`)
+    fetch(`/crime-data.json?v=${dataVersion}`)
       .then((response) => (response.ok ? response.json() : null))
       .then((data) => setCrimeData(data && data.year ? data : null))
       .catch(() => setCrimeData(null));
-  }, []);
+  }, [dataVersion]);
 
   useEffect(() => {
-    fetch(`/waste-data.json?v=${DATA_VERSION}`)
+    fetch(`/waste-data.json?v=${dataVersion}`)
       .then((response) => (response.ok ? response.json() : fallbackWasteData))
       .then((data) => setWasteData({ ...fallbackWasteData, ...data }))
       .catch(() => setWasteData(fallbackWasteData));
-  }, []);
+  }, [dataVersion]);
 
   useEffect(() => {
     if (!navOpen) return;
@@ -1147,6 +1267,62 @@ function App() {
   const profileYardSchedule = profileWasteMatch
     ? wasteSectionSchedule(wasteData, profileWasteMatch.yardSection)
     : null;
+  // Garbage day is a once-and-done question: once the street is saved, the hero tile
+  // states the day. The lookup stays further down for anyone else.
+  const heroShortcuts = dailyShortcuts.map((shortcut) => {
+    if (shortcut.key !== "garbage" || !profileWasteMatch) return shortcut;
+    const day = profileWasteMatch.trashDay;
+    return {
+      ...shortcut,
+      label: "Your garbage day",
+      value:
+        day === "NOT INCLUDED"
+          ? "Not on the town route"
+          : day.charAt(0) + day.slice(1).toLowerCase(),
+      url: "#my-princeton",
+    };
+  });
+  const searchIndex = useMemo(() => {
+    const entries = [];
+    const add = (kind, label, url, detail = "") =>
+      entries.push({ kind, label, url, detail, text: `${label} ${detail}` });
+    primaryNavLinks.forEach(([href, label]) => add("section", label, href));
+    add("section", "My Princeton", "#my-princeton", "Save your street and resident modes on this device");
+    add("section", "Perks", "#perks", "What a library card and a Princeton address get you");
+    add("section", "Walks", "#explore", "First-month Princeton walks");
+    add("section", "Garden Theatre", "#culture", "What is playing this week");
+    pillarGuides.forEach((guide) => add("guide", guide.title, guide.url, guide.detail));
+    residentFaqs.forEach((faq) => add("question", faq.question, "#faq", faq.answer));
+    commuteCards.forEach((card) => add("transit", card.title, card.url, card.detail));
+    practicalTiles.forEach((tile) => add("service", tile.label, tile.url, tile.value));
+    newResidentChecklist.forEach((item) => add("new to town", item.title, item.url, item.detail));
+    residentPerks.forEach((group) =>
+      group.items.forEach((item) => add("perk", item.title, item.url, item.detail)),
+    );
+    exploreStops.forEach((stop) => add("walk", stop.stop, stop.guideUrl, stop.note));
+    wasteData.streets.forEach((street) =>
+      entries.push({
+        kind: "street",
+        label: street.street,
+        url: "#waste",
+        detail: street.trashDay === "NOT INCLUDED" ? "Not on the town route" : `Garbage: ${street.trashDay}`,
+        text: street.street,
+        street: street.street,
+      }),
+    );
+    liveData.events.forEach((event) =>
+      entries.push({
+        kind: "event",
+        label: event.title,
+        url: "#today",
+        detail: [event.dateLabel, event.timeLabel, event.location].filter(Boolean).join(", "),
+        text: `${event.title} ${event.location ?? ""} ${event.source ?? ""}`,
+        title: event.title,
+        isoDate: event.isoDate,
+      }),
+    );
+    return entries;
+  }, [wasteData.streets, liveData.events]);
   const activeProfileModes = profileModeOptions.filter((mode) => residentProfile.modes[mode.key]);
   const profileEventFilter = activeProfileModes.find((mode) => mode.filter)?.filter ?? "all";
   const profileEvents = useMemo(() => {
@@ -1273,9 +1449,17 @@ function App() {
   const updateCivicTooltip = (event) => {
     const shell = event.currentTarget.closest?.(".civic-map-shell") ?? event.currentTarget;
     const rect = shell.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+    const edge = Math.min(TOOLTIP_EDGE_PAD, rect.height / 2);
     setCivicTooltip({
-      x: event.clientX - rect.left,
-      y: event.clientY - rect.top,
+      x,
+      // Centred on the pointer, so it needs half its height of room at the top and bottom.
+      y: Math.min(Math.max(y, edge), rect.height - edge),
+      // The map panel clips its overflow to keep its rounded corners, so a tooltip opened
+      // to the right of a marker near the right edge was being cut in half. Past that
+      // point it opens to the left of the pointer instead.
+      flip: x > rect.width - TOOLTIP_WIDTH,
     });
   };
 
@@ -1468,7 +1652,7 @@ function App() {
             neighborhood map are further down.
           </p>
           <div className="daily-shortcuts" role="group" aria-label="Resident shortcuts">
-            {dailyShortcuts.map(({ label, value, url, icon: Icon }) => (
+            {heroShortcuts.map(({ label, value, url, icon: Icon }) => (
               <a href={url} key={label} {...externalLinkProps(url)}>
                 <Icon size={17} aria-hidden="true" />
                 <span>{label}</span>
@@ -1480,10 +1664,24 @@ function App() {
             <a className="primary-action" href="#today">
               Open today <ChevronRight size={18} aria-hidden="true" />
             </a>
-            <a className="secondary-action" href="#move">
-              Check transit
+            <a
+              className="secondary-action"
+              href={profileWasteMatch ? "#my-princeton" : "#new-resident"}
+            >
+              {profileWasteMatch ? "My Princeton" : "New to town?"}
             </a>
           </div>
+          <SiteSearch
+            entries={searchIndex}
+            onPick={(entry) => {
+              if (entry.kind === "street") setWasteQuery(entry.street);
+              if (entry.kind === "event") {
+                setQuery(entry.title);
+                setFilter("all");
+                setSelectedDay(entry.isoDate);
+              }
+            }}
+          />
         </div>
         <aside className="daily-brief" aria-label="Today snapshot">
           <a
@@ -1525,6 +1723,7 @@ function App() {
           <div>
             <span>Updated</span>
             <strong>{formatRefresh(liveData.generatedAt)}</strong>
+            <small>Read again every three hours. Reload the page for the latest.</small>
           </div>
         </aside>
       </section>
@@ -1721,7 +1920,7 @@ function App() {
         ) : null}
       </section>
 
-      <section className="section culture-band" aria-labelledby="culture-heading">
+      <section className="section culture-band" id="culture" aria-labelledby="culture-heading">
         <div className="section-heading split">
           <div>
             <p className="eyebrow">Culture</p>
@@ -2216,12 +2415,15 @@ function App() {
       <section className="section resident-checklist" id="new-resident" aria-labelledby="new-resident-heading">
         <div className="section-heading split">
           <div>
-            <p className="eyebrow">New here</p>
+            <p className="eyebrow">New to town?</p>
             <h2 id="new-resident-heading">First-week Princeton setup.</h2>
           </div>
           <p>
             What to set up in the first week: town alerts, your garbage day, a library card and
-            a transit pattern that works from where you live.
+            a transit pattern that works from where you live. The two sections after this one,{" "}
+            <a href="#perks">perks</a> and <a href="#explore">walks</a>, are for the first month.
+            Save your street in <a href="#my-princeton">My Princeton</a> and the garbage tile at
+            the top shows your day from then on.
           </p>
         </div>
         <div className="checklist-grid">
@@ -2518,7 +2720,7 @@ function App() {
               </svg>
               {hoveredCivicFeature ? (
                 <div
-                  className="civic-tooltip"
+                  className={`civic-tooltip${civicTooltip.flip ? " is-flipped" : ""}`}
                   style={{
                     left: `${civicTooltip.x}px`,
                     top: `${civicTooltip.y}px`,
@@ -2540,7 +2742,7 @@ function App() {
                 </div>
               ) : civicMetric === "schools" && hoveredSchool ? (
                 <div
-                  className="civic-tooltip school-tooltip"
+                  className={`civic-tooltip school-tooltip${civicTooltip.flip ? " is-flipped" : ""}`}
                   style={{
                     left: `${civicTooltip.x}px`,
                     top: `${civicTooltip.y}px`,

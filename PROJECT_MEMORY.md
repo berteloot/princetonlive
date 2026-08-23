@@ -139,6 +139,10 @@ Explore walks:
 - Mobile navigation wraps cleanly on iPhone-width screens instead of clipping or requiring horizontal scrolling.
 - Deep links are re-applied after React/data hydration so links like `#waste` and `#civic` land on the correct section on mobile and desktop.
 - First-month walk cards must include actionable guide/map links. Avoid listing walks that residents cannot open in a map or official/stable resource.
+- The site serves two readers, a resident and a newcomer, and the layout separates them (reader feedback, Aug 2026). Garbage day is a once-and-done question: once a street is saved in My Princeton, the hero tile states the day and links to the profile; the lookup itself stays in Services for everyone else. Newcomer steps group under "New to town?" in the nav, with perks and walks reached from that section rather than from the nav. The nav holds eight entries, one per question a visitor arrives with; "Move" and "My" were read as house-moving and as nothing.
+- The hero offers one site-wide search over everything already in memory: sections, guides, FAQ, transit and service tiles, perks, walks, every street in the garbage schedule and the week's events. A street result fills the garbage lookup, an event result opens its day. No server, no index build.
+- Live data is pulled, not pushed. A tab returning to the foreground after 30 minutes re-reads every JSON file (`dataVersion` state, visibilitychange + focus), and the Updated tile says how to force it by hand.
+- PrincetonLive takes no submissions. The FAQ says so and points to the public calendars it reads; keep it that way for a hobby site.
 - Garbage pickup by street is a primary resident tool. Keep it directly reachable from the top navigation as `#waste` and placed before lower-priority practical service tiles.
 - The homepage should behave like an operating guide before it behaves like a brochure: daily shortcuts, resident setup, garbage, transit, events, alerts, and neighborhood context should be reachable quickly.
 - My Princeton is a browser-local personalization panel. It may store street name and resident modes in `localStorage`, but must not create accounts, send addresses to PrincetonLive servers, or imply server-side storage.
@@ -168,6 +172,7 @@ Explore walks:
 
 ## Feature Log
 
+- Latest - Reader feedback round (Karin, Aug 2026): nav relabelled and cut to eight entries, "New to town?" groups newcomer steps, the garbage hero tile shows the saved day, a live NJ Transit DepartureVision card replaces the duplicate "Check transit" button, site-wide search in the hero, data re-read on return to the tab, and two FAQ entries (no submissions; how current the page is) mirrored in the JSON-LD.
 - Latest - Moved the local working copy into its intended local workspace folder. Local absolute paths stay out of this repo.
 - Latest - Added Google tag / GA4 measurement ID `G-RL5N5X5EZE` to the app shell and generated SEO pillar pages.
 - Latest - Added guide and map links to every First-month Princeton walk card.
