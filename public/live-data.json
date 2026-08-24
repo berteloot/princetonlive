@@ -1,41 +1,15 @@
 {
-  "generatedAt": "2026-08-23T21:35:13.457Z",
+  "generatedAt": "2026-08-24T01:57:03.177Z",
   "weather": {
-    "temperature": 82,
-    "shortForecast": "Sunny",
-    "wind": "5 mph W",
-    "detailedForecast": "Sunny, with a high near 82. West wind around 5 mph.",
+    "temperature": 59,
+    "shortForecast": "Clear",
+    "wind": "0 to 5 mph W",
+    "detailedForecast": "Clear, with a low around 59. West wind 0 to 5 mph. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Roman Catholic Sunday Mass",
-      "source": "Princeton University",
-      "dateLabel": "Aug 23",
-      "timeLabel": "9:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/roman-catholic-sunday-mass",
-      "tags": [],
-      "isoDate": "2026-08-23",
-      "startHour": 9
-    },
-    {
-      "title": "Open Studio",
-      "source": "Princeton University",
-      "dateLabel": "Aug 23",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/open-studio-79",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-23",
-      "startHour": 12
-    },
     {
       "title": "Music: Novo Rodeo",
       "source": "Princeton Public Library",
@@ -50,34 +24,6 @@
       ],
       "isoDate": "2026-08-23",
       "startHour": 15
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 23",
-      "timeLabel": "7:25 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-23",
-      "startHour": 19
-    },
-    {
-      "title": "Wild Inside",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 23",
-      "timeLabel": "7:35 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-23",
-      "startHour": 19
     },
     {
       "title": "Call for Entries: \"We Are America at 250\" Self Portraits",
@@ -1354,7 +1300,7 @@
       "iso": "2026-08-23",
       "label": "Aug 23",
       "weekday": "Sun",
-      "count": 5
+      "count": 1
     },
     {
       "iso": "2026-08-24",
@@ -1491,7 +1437,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 82F"
+      "detail": "Clear, 59F"
     },
     {
       "name": "Princeton University Events",
@@ -1515,7 +1461,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "73 showtimes"
+      "detail": "71 showtimes"
     },
     {
       "name": "Seuls en Scène (French Theater Festival)",
