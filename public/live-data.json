@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-24T15:55:07.874Z",
+  "generatedAt": "2026-08-24T18:58:21.580Z",
   "weather": {
     "temperature": 81,
-    "shortForecast": "Sunny then Isolated Showers And Thunderstorms",
-    "wind": "5 mph SW",
-    "detailedForecast": "Isolated showers and thunderstorms after 2pm. Sunny, with a high near 81. Southwest wind around 5 mph. Chance of precipitation is 20%.",
+    "shortForecast": "Isolated Showers And Thunderstorms",
+    "wind": "5 mph W",
+    "detailedForecast": "Isolated showers and thunderstorms. Mostly sunny, with a high near 81. West wind around 5 mph. Chance of precipitation is 20%.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -1329,24 +1329,6 @@
       "startHour": 17,
       "series": "Seuls en Scène",
       "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
-    },
-    {
-      "title": "Seuls en Scène 2026 presents Vivantes by Aurélie Charon",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "8:00 PM",
-      "location": "Lewis Center for the Arts, Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-vivantes-aurelie-charon-0",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 20,
-      "series": "Seuls en Scène",
-      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
     }
   ],
   "days": [
@@ -1401,7 +1383,7 @@
       "label": "French Theater Festival",
       "venue": "Lewis Center for the Arts, Princeton campus",
       "url": "https://arts.princeton.edu/french-theater-festival",
-      "count": 12,
+      "count": 11,
       "startLabel": "Sep 18",
       "endLabel": "Sep 26",
       "next": {
@@ -1476,12 +1458,6 @@
           "dateLabel": "Sep 26",
           "timeLabel": "5:00 PM",
           "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-generation-mitterand-huit-rois-nos-presidents-episode-2-0"
-        },
-        {
-          "title": "Seuls en Scène 2026 presents Vivantes by Aurélie Charon",
-          "dateLabel": "Sep 26",
-          "timeLabel": "8:00 PM",
-          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-vivantes-aurelie-charon-0"
         }
       ]
     }
@@ -1491,7 +1467,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny then Isolated Showers And Thunderstorms, 81F"
+      "detail": "Isolated Showers And Thunderstorms, 81F"
     },
     {
       "name": "Princeton University Events",
@@ -1509,7 +1485,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "26 calendar items"
+      "detail": "27 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
@@ -1521,7 +1497,7 @@
       "name": "Seuls en Scène (French Theater Festival)",
       "url": "https://arts.princeton.edu/french-theater-festival",
       "status": "ok",
-      "detail": "12 upcoming dates"
+      "detail": "11 upcoming dates"
     }
   ]
 }
