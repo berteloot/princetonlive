@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-25T13:10:47.131Z",
+  "generatedAt": "2026-08-25T15:59:11.495Z",
   "weather": {
     "temperature": 81,
-    "shortForecast": "Sunny",
+    "shortForecast": "Mostly Sunny",
     "wind": "5 mph W",
-    "detailedForecast": "Sunny, with a high near 81. West wind around 5 mph.",
+    "detailedForecast": "Mostly sunny, with a high near 81. West wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -812,6 +812,34 @@
       "startHour": 15
     },
     {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 28",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-28",
+      "startHour": 16
+    },
+    {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 28",
+      "timeLabel": "4:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-28",
+      "startHour": 16
+    },
+    {
       "title": "Men's Soccer vs Villanova",
       "source": "Princeton University",
       "dateLabel": "Aug 28",
@@ -819,6 +847,34 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-villanova",
       "tags": [],
+      "isoDate": "2026-08-28",
+      "startHour": 19
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 28",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-28",
+      "startHour": 19
+    },
+    {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 28",
+      "timeLabel": "7:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
+      ],
       "isoDate": "2026-08-28",
       "startHour": 19
     },
@@ -895,6 +951,34 @@
       "startHour": 13
     },
     {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 29",
+      "timeLabel": "1:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-29",
+      "startHour": 13
+    },
+    {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 29",
+      "timeLabel": "1:25 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-29",
+      "startHour": 13
+    },
+    {
       "title": "Tango Practica",
       "source": "Princeton University",
       "dateLabel": "Aug 29",
@@ -904,6 +988,62 @@
       "tags": [],
       "isoDate": "2026-08-29",
       "startHour": 16
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 29",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-29",
+      "startHour": 16
+    },
+    {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 29",
+      "timeLabel": "4:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-29",
+      "startHour": 16
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 29",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-29",
+      "startHour": 19
+    },
+    {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 29",
+      "timeLabel": "7:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-29",
+      "startHour": 19
     },
     {
       "title": "Women's Soccer vs JMU",
@@ -946,6 +1086,20 @@
       "startHour": 13
     },
     {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 30",
+      "timeLabel": "1:25 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-30",
+      "startHour": 13
+    },
+    {
       "title": "Concert: The Beagles with Joy Album Release",
       "source": "Princeton Public Library",
       "dateLabel": "Aug 30",
@@ -973,6 +1127,62 @@
       ],
       "isoDate": "2026-08-30",
       "startHour": 15
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 30",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-30",
+      "startHour": 16
+    },
+    {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 30",
+      "timeLabel": "4:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-30",
+      "startHour": 16
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 30",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-30",
+      "startHour": 19
+    },
+    {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 30",
+      "timeLabel": "7:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-30",
+      "startHour": 19
     },
     {
       "title": "Kids: Playtime Fun: Music & Movement",
@@ -1020,6 +1230,34 @@
       "startHour": 13
     },
     {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 31",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-31",
+      "startHour": 16
+    },
+    {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 31",
+      "timeLabel": "4:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-31",
+      "startHour": 16
+    },
+    {
       "title": "Princeton Tango Club Weekly Classes",
       "source": "Princeton University",
       "dateLabel": "Aug 31",
@@ -1054,6 +1292,34 @@
       "url": "https://princetonlibrary.libnet.info/event/16624386",
       "tags": [
         "practical"
+      ],
+      "isoDate": "2026-08-31",
+      "startHour": 19
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 31",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-31",
+      "startHour": 19
+    },
+    {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Aug 31",
+      "timeLabel": "7:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-08-31",
       "startHour": 19
@@ -1281,25 +1547,25 @@
       "iso": "2026-08-28",
       "label": "Aug 28",
       "weekday": "Fri",
-      "count": 7
+      "count": 11
     },
     {
       "iso": "2026-08-29",
       "label": "Aug 29",
       "weekday": "Sat",
-      "count": 5
+      "count": 11
     },
     {
       "iso": "2026-08-30",
       "label": "Aug 30",
       "weekday": "Sun",
-      "count": 5
+      "count": 10
     },
     {
       "iso": "2026-08-31",
       "label": "Aug 31",
       "weekday": "Mon",
-      "count": 6
+      "count": 10
     }
   ],
   "windowDays": 7,
@@ -1394,7 +1660,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 81F"
+      "detail": "Mostly Sunny, 81F"
     },
     {
       "name": "Princeton University Events",
@@ -1418,7 +1684,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "67 showtimes"
+      "detail": "98 showtimes"
     },
     {
       "name": "Seuls en Scène (French Theater Festival)",
