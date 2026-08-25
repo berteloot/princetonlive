@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T15:59:11.495Z",
+  "generatedAt": "2026-08-25T18:56:18.036Z",
   "weather": {
     "temperature": 81,
     "shortForecast": "Mostly Sunny",
@@ -58,20 +58,6 @@
       "startHour": 13
     },
     {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Spruce Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 25, 2026",
-      "timeLabel": "01:00 PM - 01:45 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7337",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-08-25",
-      "startHour": 13
-    },
-    {
       "title": "Food Insecurity Task Force: Arm in Arm",
       "source": "Municipality of Princeton",
       "dateLabel": "August 25, 2026",
@@ -83,20 +69,6 @@
       ],
       "isoDate": "2026-08-25",
       "startHour": 13
-    },
-    {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Redding Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 25, 2026",
-      "timeLabel": "02:00 PM - 02:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7389",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-08-25",
-      "startHour": 14
     },
     {
       "title": "Food Insecurity Task Force: Princeton Kindness Food Project At YMCA",
@@ -1258,6 +1230,17 @@
       "startHour": 16
     },
     {
+      "title": "Men's Soccer vs Portland",
+      "source": "Princeton University",
+      "dateLabel": "Aug 31",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-portland",
+      "tags": [],
+      "isoDate": "2026-08-31",
+      "startHour": 19
+    },
+    {
       "title": "Princeton Tango Club Weekly Classes",
       "source": "Princeton University",
       "dateLabel": "Aug 31",
@@ -1269,17 +1252,6 @@
         "culture",
         "rain"
       ],
-      "isoDate": "2026-08-31",
-      "startHour": 19
-    },
-    {
-      "title": "Men's Soccer vs Portland",
-      "source": "Princeton University",
-      "dateLabel": "Aug 31",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-portland",
-      "tags": [],
       "isoDate": "2026-08-31",
       "startHour": 19
     },
@@ -1484,44 +1456,6 @@
       "startHour": 20,
       "series": "Seuls en Scène",
       "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
-    },
-    {
-      "title": "Seuls en Scène 2026 presents Losing Your Bag by Pascal Rambert",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "2:30 PM",
-      "location": "Lewis Center for the Arts, Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-losing-your-bag-pascal-rambert",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 14,
-      "series": "Seuls en Scène",
-      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
-    },
-    {
-      "title": "Seuls en Scène 2026 presents Génération Mitterand – Huit rois (nos présidents), Episode 2 by Léo Cohen-Paperman & Émilien Diard-Detoeuf",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "5:00 PM",
-      "location": "Lewis Center for the Arts, Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-generation-mitterand-huit-rois-nos-presidents-episode-2-0",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 17,
-      "series": "Seuls en Scène",
-      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
     }
   ],
   "days": [
@@ -1529,7 +1463,7 @@
       "iso": "2026-08-25",
       "label": "Aug 25",
       "weekday": "Tue",
-      "count": 17
+      "count": 15
     },
     {
       "iso": "2026-08-26",
@@ -1576,9 +1510,9 @@
       "label": "French Theater Festival",
       "venue": "Lewis Center for the Arts, Princeton campus",
       "url": "https://arts.princeton.edu/french-theater-festival",
-      "count": 11,
+      "count": 9,
       "startLabel": "Sep 18",
-      "endLabel": "Sep 26",
+      "endLabel": "Sep 25",
       "next": {
         "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
         "dateLabel": "Sep 18",
@@ -1639,18 +1573,6 @@
           "dateLabel": "Sep 25",
           "timeLabel": "8:00 PM",
           "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-vivantes-aurelie-charon"
-        },
-        {
-          "title": "Seuls en Scène 2026 presents Losing Your Bag by Pascal Rambert",
-          "dateLabel": "Sep 26",
-          "timeLabel": "2:30 PM",
-          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-losing-your-bag-pascal-rambert"
-        },
-        {
-          "title": "Seuls en Scène 2026 presents Génération Mitterand – Huit rois (nos présidents), Episode 2 by Léo Cohen-Paperman & Émilien Diard-Detoeuf",
-          "dateLabel": "Sep 26",
-          "timeLabel": "5:00 PM",
-          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-generation-mitterand-huit-rois-nos-presidents-episode-2-0"
         }
       ]
     }
@@ -1678,7 +1600,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "32 calendar items"
+      "detail": "30 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
@@ -1690,7 +1612,7 @@
       "name": "Seuls en Scène (French Theater Festival)",
       "url": "https://arts.princeton.edu/french-theater-festival",
       "status": "ok",
-      "detail": "11 upcoming dates"
+      "detail": "9 upcoming dates"
     }
   ]
 }
