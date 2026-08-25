@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-25T09:50:57.930Z",
+  "generatedAt": "2026-08-25T13:10:47.131Z",
   "weather": {
-    "temperature": 59,
-    "shortForecast": "Clear",
-    "wind": "0 mph ",
-    "detailedForecast": "Clear, with a low around 59. West wind around 0 mph.",
+    "temperature": 81,
+    "shortForecast": "Sunny",
+    "wind": "5 mph W",
+    "detailedForecast": "Sunny, with a high near 81. West wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -1020,17 +1020,6 @@
       "startHour": 13
     },
     {
-      "title": "Men's Soccer vs Portland",
-      "source": "Princeton University",
-      "dateLabel": "Aug 31",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-portland",
-      "tags": [],
-      "isoDate": "2026-08-31",
-      "startHour": 19
-    },
-    {
       "title": "Princeton Tango Club Weekly Classes",
       "source": "Princeton University",
       "dateLabel": "Aug 31",
@@ -1042,6 +1031,17 @@
         "culture",
         "rain"
       ],
+      "isoDate": "2026-08-31",
+      "startHour": 19
+    },
+    {
+      "title": "Men's Soccer vs Portland",
+      "source": "Princeton University",
+      "dateLabel": "Aug 31",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-portland",
+      "tags": [],
       "isoDate": "2026-08-31",
       "startHour": 19
     },
@@ -1394,7 +1394,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Clear, 59F"
+      "detail": "Sunny, 81F"
     },
     {
       "name": "Princeton University Events",
