@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-24T21:43:21.106Z",
+  "generatedAt": "2026-08-25T01:51:51.805Z",
   "weather": {
-    "temperature": 81,
-    "shortForecast": "Isolated Rain Showers",
-    "wind": "10 mph W",
-    "detailedForecast": "Isolated rain showers. Mostly sunny, with a high near 81. West wind around 10 mph. Chance of precipitation is 20%.",
+    "temperature": 59,
+    "shortForecast": "Mostly Clear",
+    "wind": "5 mph W",
+    "detailedForecast": "Mostly clear, with a low around 59. West wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -74,7 +74,7 @@
       "source": "Princeton Public Library",
       "dateLabel": "Aug 24",
       "timeLabel": "7:00pm - 8:30pm",
-      "location": "Virtual - Google Meet",
+      "location": "Virtual",
       "url": "https://princetonlibrary.libnet.info/event/16624385",
       "tags": [
         "practical"
@@ -92,34 +92,6 @@
       "tags": [
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-08-24",
-      "startHour": 19
-    },
-    {
-      "title": "Wild Inside",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 24",
-      "timeLabel": "7:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-24",
-      "startHour": 19
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 24",
-      "timeLabel": "7:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-08-24",
       "startHour": 19
@@ -1289,7 +1261,7 @@
       "iso": "2026-08-24",
       "label": "Aug 24",
       "weekday": "Mon",
-      "count": 9
+      "count": 7
     },
     {
       "iso": "2026-08-25",
@@ -1414,7 +1386,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Isolated Rain Showers, 81F"
+      "detail": "Mostly Clear, 59F"
     },
     {
       "name": "Princeton University Events",
@@ -1438,7 +1410,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "69 showtimes"
+      "detail": "67 showtimes"
     },
     {
       "name": "Seuls en Scène (French Theater Festival)",
