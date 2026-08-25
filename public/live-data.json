@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T03:58:53.386Z",
+  "generatedAt": "2026-08-25T07:07:39.312Z",
   "weather": {
     "temperature": 59,
     "shortForecast": "Mostly Clear",
@@ -10,107 +10,6 @@
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Call for Entries: \"We Are America at 250\" Self Portraits",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 24",
-      "timeLabel": "All day",
-      "location": "Princeton Public Library - 3rd Floor Pop-up Programming Area",
-      "url": "https://princetonlibrary.libnet.info/event/17112308",
-      "tags": [
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-08-24",
-      "startHour": 0
-    },
-    {
-      "title": "Lewis Center for the Arts Class of 2030 Info Session",
-      "source": "Princeton University",
-      "dateLabel": "Aug 24",
-      "timeLabel": "10:15 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/lewis-center-arts-class-2030-info-session",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-24",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Playtime Fun: Build it!",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 24",
-      "timeLabel": "11:00am - 12:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14760954",
-      "tags": [
-        "new",
-        "family",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-08-24",
-      "startHour": 11
-    },
-    {
-      "title": "English Conversation (in person)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 24",
-      "timeLabel": "12:00pm - 1:30pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/16932153",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-08-24",
-      "startHour": 12
-    },
-    {
-      "title": "English Conversation (Virtual)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 24",
-      "timeLabel": "7:00pm - 8:30pm",
-      "location": "Virtual",
-      "url": "https://princetonlibrary.libnet.info/event/16624385",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-08-24",
-      "startHour": 19
-    },
-    {
-      "title": "Council Meeting",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 24, 2026",
-      "timeLabel": "07:00 PM - 11:59 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7930",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-08-24",
-      "startHour": 19
-    },
-    {
-      "title": "Princeton Tango Club Weekly Class",
-      "source": "Princeton University",
-      "dateLabel": "Aug 24",
-      "timeLabel": "8:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-tango-club-weekly-class-2",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-24",
-      "startHour": 20
-    },
     {
       "title": "Kids: Playtime Fun: Build it!",
       "source": "Princeton Public Library",
@@ -1076,6 +975,90 @@
       "startHour": 15
     },
     {
+      "title": "Kids: Playtime Fun: Music & Movement",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 31",
+      "timeLabel": "11:00am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14760891",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-08-31",
+      "startHour": 11
+    },
+    {
+      "title": "English Conversation (in person)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 31",
+      "timeLabel": "12:00pm - 1:30pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/16932154",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-08-31",
+      "startHour": 12
+    },
+    {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Aug 31",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-86",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-31",
+      "startHour": 13
+    },
+    {
+      "title": "Men's Soccer vs Portland",
+      "source": "Princeton University",
+      "dateLabel": "Aug 31",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-portland",
+      "tags": [],
+      "isoDate": "2026-08-31",
+      "startHour": 19
+    },
+    {
+      "title": "Princeton Tango Club Weekly Classes",
+      "source": "Princeton University",
+      "dateLabel": "Aug 31",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-tango-club-weekly-classes",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-08-31",
+      "startHour": 19
+    },
+    {
+      "title": "English Conversation (Virtual)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Aug 31",
+      "timeLabel": "7:00pm - 8:30pm",
+      "location": "Virtual - Google Meet",
+      "url": "https://princetonlibrary.libnet.info/event/16624386",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-08-31",
+      "startHour": 19
+    },
+    {
       "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
       "source": "Princeton University",
       "dateLabel": "Sep 18",
@@ -1254,15 +1237,28 @@
       "startHour": 14,
       "series": "Seuls en Scène",
       "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
+    },
+    {
+      "title": "Seuls en Scène 2026 presents Génération Mitterand – Huit rois (nos présidents), Episode 2 by Léo Cohen-Paperman & Émilien Diard-Detoeuf",
+      "source": "Princeton University",
+      "dateLabel": "Sep 26",
+      "timeLabel": "5:00 PM",
+      "location": "Lewis Center for the Arts, Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-generation-mitterand-huit-rois-nos-presidents-episode-2-0",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-26",
+      "startHour": 17,
+      "series": "Seuls en Scène",
+      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
     }
   ],
   "days": [
-    {
-      "iso": "2026-08-24",
-      "label": "Aug 24",
-      "weekday": "Mon",
-      "count": 7
-    },
     {
       "iso": "2026-08-25",
       "label": "Aug 25",
@@ -1298,6 +1294,12 @@
       "label": "Aug 30",
       "weekday": "Sun",
       "count": 5
+    },
+    {
+      "iso": "2026-08-31",
+      "label": "Aug 31",
+      "weekday": "Mon",
+      "count": 6
     }
   ],
   "windowDays": 7,
@@ -1308,7 +1310,7 @@
       "label": "French Theater Festival",
       "venue": "Lewis Center for the Arts, Princeton campus",
       "url": "https://arts.princeton.edu/french-theater-festival",
-      "count": 10,
+      "count": 11,
       "startLabel": "Sep 18",
       "endLabel": "Sep 26",
       "next": {
@@ -1377,6 +1379,12 @@
           "dateLabel": "Sep 26",
           "timeLabel": "2:30 PM",
           "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-losing-your-bag-pascal-rambert"
+        },
+        {
+          "title": "Seuls en Scène 2026 presents Génération Mitterand – Huit rois (nos présidents), Episode 2 by Léo Cohen-Paperman & Émilien Diard-Detoeuf",
+          "dateLabel": "Sep 26",
+          "timeLabel": "5:00 PM",
+          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-generation-mitterand-huit-rois-nos-presidents-episode-2-0"
         }
       ]
     }
@@ -1404,7 +1412,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "27 calendar items"
+      "detail": "32 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
@@ -1416,7 +1424,7 @@
       "name": "Seuls en Scène (French Theater Festival)",
       "url": "https://arts.princeton.edu/french-theater-festival",
       "status": "ok",
-      "detail": "10 upcoming dates"
+      "detail": "11 upcoming dates"
     }
   ]
 }
