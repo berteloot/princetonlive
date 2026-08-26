@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T13:16:27.861Z",
+  "generatedAt": "2026-08-26T16:34:14.403Z",
   "weather": {
     "temperature": 85,
     "shortForecast": "Sunny",
@@ -10,19 +10,6 @@
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Food Insecurity Task Force: Princeton Mobile Food Pantry",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 26, 2026",
-      "timeLabel": "09:00 AM - 11:30 AM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7595",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-08-26",
-      "startHour": 9
-    },
     {
       "title": "Drop in and Knit",
       "source": "Princeton Public Library",
@@ -51,19 +38,6 @@
       ],
       "isoDate": "2026-08-26",
       "startHour": 10
-    },
-    {
-      "title": "Leighton Listens",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 26, 2026",
-      "timeLabel": "11:00 AM - 12:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8102",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-08-26",
-      "startHour": 11
     },
     {
       "title": "Kids: Baby Storytime",
@@ -1342,7 +1316,7 @@
       "iso": "2026-08-26",
       "label": "Aug 26",
       "weekday": "Wed",
-      "count": 20
+      "count": 18
     },
     {
       "iso": "2026-08-27",
@@ -1406,7 +1380,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "30 calendar items"
+      "detail": "27 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
