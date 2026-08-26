@@ -86,7 +86,7 @@ Daily operating data:
 - National Weather Service forecast and alerts
 - Princeton University public events RSS
 - Princeton Garden Theatre showtimes, read from `public/garden-theatre.json` rather than fetched twice. `refresh:garden` therefore runs BEFORE `refresh:data` in `refresh:public`, and it is guarded so a cinema outage cannot stop the daily data refresh
-- Tracked series, currently the Seuls en Scene French Theater Festival at arts.princeton.edu/french-theater-festival. The Lewis Center host sits behind a Cloudflare challenge and returns 403 to any scheduled fetch, so the performance dates are read out of the university events feed by title match and the arts page is used as the resident-facing link
+- Tracked series, currently none. The Seuls en Scene French Theater Festival was carried here until Stan removed it on 2026-08-26. If a series returns: the Lewis Center host (arts.princeton.edu) sits behind a Cloudflare challenge and returns 403 to any scheduled fetch, so read performance dates out of the university events feed by title match and use the arts page as the resident-facing link
 - Princeton Public Library Communico events endpoint
 - Municipality of Princeton RSS calendar
 - Static resident-perk links verified from Princeton Public Library, Princeton University Community Auditing, Arts Council of Princeton, and Princeton municipal pages
@@ -124,8 +124,8 @@ Explore walks:
 
 ## UX Decisions
 
-- Keep PrincetonLive resident-first, not tourist-first.
-- The event list is a day view, not a next-N list. It carries seven days, each event stamped with its Eastern day and start hour at build time, and the visitor picks a day and can filter to 5 PM onward. This came from user feedback: the question a resident actually asks is what is on Tuesday evening, and a flat 18-event cut answered about two days and hid everything else.
+- Keep PrincetonLive resident-first. Tourist content only earns space when residents also use it.
+- The event list is a day view. It carries seven days, each event stamped with its Eastern day and start hour at build time, and the visitor picks a day and can filter to 5 PM onward. This came from user feedback: the question a resident actually asks is what is on Tuesday evening, and a flat 18-event cut answered about two days and hid everything else.
 - Every source that publishes local wall-clock time goes through `easternInstant()`. Node reads an unzoned date string in the machine's zone, which is UTC on the GitHub runner and Eastern on a laptop, so before this the library, town and cinema events sorted differently depending on where the refresh ran.
 - Section order follows what a visitor needs first: alerts, the day list, the cinema, town services and garbage, personalization, transit, first week, perks, walks, neighborhood data, guides, FAQ. The FAQ is about the site itself, so it stays last. The top navigation mirrors that order.
 - Page copy follows `memory/writing_guide.md` and passes `integrations/quality_gate.py`. No noun piles standing in for a description, no editorial adjectives, no slogan headings. A heading names what the section holds.
@@ -136,12 +136,12 @@ Explore walks:
 - Agenda filters and search must remain clickable after Google Translate mutates the DOM.
 - Weather appears in the top daily brief; do not duplicate weaker weather cards lower on the page.
 - Anchor links must account for the sticky header so section headings, controls, and map toolbars are not hidden when landing on a deep link.
-- Mobile navigation wraps cleanly on iPhone-width screens instead of clipping or requiring horizontal scrolling.
+- Mobile navigation wraps cleanly on iPhone-width screens, with no clipping and no horizontal scrolling.
 - Deep links are re-applied after React/data hydration so links like `#waste` and `#civic` land on the correct section on mobile and desktop.
 - First-month walk cards must include actionable guide/map links. Avoid listing walks that residents cannot open in a map or official/stable resource.
 - The site serves two readers, a resident and a newcomer, and the layout separates them (reader feedback, Aug 2026). Garbage day is a once-and-done question: once a street is saved in My Princeton, the hero tile states the day and the garbage tool collapses to the answer with one control to reopen the full lookup. The hero carries four tiles and no buttons: one link per daily question, and one-time lookups (neighborhood map, perks, walks) stay in the nav. Newcomer steps group under "New to town?" in the nav, with perks and walks reached from that section rather than from the nav. The nav holds eight entries, one per question a visitor arrives with; "Move" and "My" were read as house-moving and as nothing.
 - Search lives in the sticky header (a Search button opens a panel under the header row), so it is one click away anywhere on the page. It is a combobox: arrow keys, Enter, Escape, click outside closes. It covers everything already in memory: sections, guides, FAQ, transit and service tiles, perks, walks, every street in the garbage schedule and the week's events. A street result fills the garbage lookup, an event result opens its day. No server, no index build.
-- Live data is pulled, not pushed. A tab returning to the foreground after 30 minutes re-reads every JSON file (`dataVersion` state, visibilitychange + focus), and the Updated tile says how to force it by hand.
+- Live data refreshes only when the reader's tab asks for it. A tab returning to the foreground after 30 minutes re-reads every JSON file (`dataVersion` state, visibilitychange + focus), and the Updated tile says how to force it by hand.
 - PrincetonLive takes no submissions. The FAQ says so and points to the public calendars it reads; keep it that way for a hobby site.
 - Garbage pickup by street is a primary resident tool. Keep it directly reachable from the top navigation as `#waste` and placed before lower-priority practical service tiles.
 - The homepage should behave like an operating guide before it behaves like a brochure: daily shortcuts, resident setup, garbage, transit, events, alerts, and neighborhood context should be reachable quickly.
@@ -152,15 +152,15 @@ Explore walks:
 - The voting layer may show official Princeton municipal-level Republican/Democrat results across the map, but neighborhood shading should only be added after official district totals are safely joined to public district boundaries.
 - Civic map legends must show both sides of the scale. For wealth/children layers, darker means higher. Children count and child share must use distinct labels and color scales because count and percentage answer different questions. For voting, red-to-blue means Republican-to-Democratic.
 - Civic map regions should expose their current metric on hover, focus, and tap/click.
-- Civic map benchmarks must be generated from public data during refresh. Income and child-share use U.S. ACS values from the same release as Princeton block-group estimates; children count is compared with U.S. average residents under 18 per census block group, not the national child total.
+- Civic map benchmarks must be generated from public data during refresh. Income and child-share use U.S. ACS values from the same release as Princeton block-group estimates; children count is compared with U.S. average residents under 18 per census block group; comparing against the national child total would be wrong.
 - Explain Census terms in resident language. A block group is a smaller aggregate area inside a tract; it is still not a named neighborhood, voting precinct, household, or exact address.
 - Wealth UI must explain that ACS median household income is top-coded at `$250,001+`; missing small-area estimates should read as "No ACS estimate," not low wealth.
 - Civic address lookup should be submit-only, privacy-forward, and should not store searched addresses. The current implementation uses OpenStreetMap/Nominatim plus local block-group geometry. Google Places autocomplete can be added later only after a Google Maps API key, billing, and domain restrictions are configured.
-- School context belongs on the civic map as point/context data, not as a ranking heatmap. Use official public school locations, district assignment links, and NJDOE performance-report links. Do not mix in private-school rankings or third-party scores unless the source methodology is explicit and worth showing.
-- Resident perks must distinguish free benefits from access programs that cost money. Princeton University Community Auditing is resident-relevant, but it is tuition-based, not a free library-style perk.
+- School context belongs on the civic map as point/context data. A ranking heatmap is out of scope. Use official public school locations, district assignment links, and NJDOE performance-report links. Do not mix in private-school rankings or third-party scores unless the source methodology is explicit and worth showing.
+- Resident perks must distinguish free benefits from access programs that cost money. Princeton University Community Auditing is resident-relevant but tuition-based, so it must never be listed among the free library-style perks.
 - The Census API key must stay server/build-side only. The browser receives generated aggregate JSON, never the key.
 - GitHub scheduled refresh passes `CENSUS_API_KEY` from repository secrets when configured and falls back to Census Reporter when absent.
-- Waste pickup should be resident-first and street/address-first. Use official Princeton street schedules to generate a local searchable garbage-day and yard-section lookup. Recycle Coach has a public city lookup and official widget, but no documented stable schedule API for PrincetonLive use, so link/embed Recycle Coach for live address-specific reminders instead of reverse-engineering private schedule endpoints.
+- Waste pickup should be resident-first and street/address-first. Use official Princeton street schedules to generate a local searchable garbage-day and yard-section lookup. Recycle Coach has a public city lookup and official widget, but no documented stable schedule API for PrincetonLive use, so link/embed Recycle Coach for live address-specific reminders; reverse-engineering private schedule endpoints is off the table.
 - External links should open in a new tab with `target="_blank"` and `rel="noopener noreferrer"` so visitors do not lose PrincetonLive. In-page hash navigation stays in the same tab.
 - SEO/GEO crawlability matters: `index.html` must keep crawlable fallback body content inside `#root`, a clear H1, canonical/geo/social metadata, and JSON-LD in the initial HTML so non-JavaScript AI/search crawlers can classify the page.
 - Structured data should represent visible page content. Keep the visible FAQ in sync with the FAQPage JSON-LD and keep the civic Dataset JSON-LD aligned with `public/civic-map.json`.
@@ -172,6 +172,7 @@ Explore walks:
 
 ## Feature Log
 
+- Latest - Removed the Seuls en Scène French Theater Festival tracked series at Stan's request (Aug 26, 2026). The tracked-series machinery stays in `fetch-live-data.mjs` with an empty list.
 - Latest - Reader feedback round (Karin, Aug 2026): nav relabelled and cut to eight entries, "New to town?" groups newcomer steps, the garbage hero tile shows the saved day, a live NJ Transit DepartureVision card replaces the duplicate "Check transit" button, site-wide search in the hero, data re-read on return to the tab, and two FAQ entries (no submissions; how current the page is) mirrored in the JSON-LD.
 - Latest - Moved the local working copy into its intended local workspace folder. Local absolute paths stay out of this repo.
 - Latest - Added Google tag / GA4 measurement ID `G-RL5N5X5EZE` to the app shell and generated SEO pillar pages.

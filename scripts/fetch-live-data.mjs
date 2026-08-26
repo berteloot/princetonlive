@@ -14,22 +14,8 @@ const MAX_EVENTS_PER_DAY = 60;
 // Series worth carrying past the 18-event window. That window covers about two days, so
 // a festival announced a month out never reaches the page on date order alone. A tracked
 // series keeps its dates in the list and gets its own card until the run is over.
-//
-// Seuls en Scène is published by the Lewis Center for the Arts at arts.princeton.edu,
-// but that host sits behind a Cloudflare challenge and returns 403 to a scheduled fetch,
-// so the dates are read from the university events feed, which carries every performance
-// with its real start time. The arts page stays as the link a resident should open.
-const trackedSeries = [
-  {
-    id: "french-theater-festival",
-    name: "Seuls en Scène",
-    label: "French Theater Festival",
-    match: /seuls en sc[eè]ne|french theater festival/i,
-    venue: "Lewis Center for the Arts, Princeton campus",
-    url: "https://arts.princeton.edu/french-theater-festival",
-    maxDates: 12,
-  },
-];
+// Entry shape: { id, name, label, match: /regex/i, venue, url, maxDates }.
+const trackedSeries = [];
 
 const parser = new XMLParser({
   ignoreAttributes: false,
