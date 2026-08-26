@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T01:57:53.682Z",
+  "generatedAt": "2026-08-26T04:02:12.326Z",
   "weather": {
     "temperature": 60,
     "shortForecast": "Mostly Clear",
@@ -10,122 +10,6 @@
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Kids: Playtime Fun: Build it!",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 25",
-      "timeLabel": "11:00am - 12:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14760955",
-      "tags": [
-        "new",
-        "family",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-08-25",
-      "startHour": 11
-    },
-    {
-      "title": "What's the Library Zine Cart? An orientation for instructors",
-      "source": "Princeton University",
-      "dateLabel": "Aug 25",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/whats-library-zine-cart-orientation-instructors",
-      "tags": [
-        "new",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-08-25",
-      "startHour": 12
-    },
-    {
-      "title": "Open Studio",
-      "source": "Princeton University",
-      "dateLabel": "Aug 25",
-      "timeLabel": "1:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/open-studio-80",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-25",
-      "startHour": 13
-    },
-    {
-      "title": "Catherine Project Weekly Book Discussion Series",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 25",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/16570102",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-08-25",
-      "startHour": 16
-    },
-    {
-      "title": "Mercer County Community ID",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 25",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Princeton Public Library - Conference Room",
-      "url": "https://princetonlibrary.libnet.info/event/15432407",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-08-25",
-      "startHour": 16
-    },
-    {
-      "title": "Princeton Shotokan Karate Organization",
-      "source": "Princeton University",
-      "dateLabel": "Aug 25",
-      "timeLabel": "6:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-shotokan-karate-organization-24",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-08-25",
-      "startHour": 18
-    },
-    {
-      "title": "Homeschooling Basics in New Jersey",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 25",
-      "timeLabel": "6:30pm - 7:30pm",
-      "location": "Princeton Public Library - Newsroom",
-      "url": "https://princetonlibrary.libnet.info/event/16546927",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-08-25",
-      "startHour": 18
-    },
-    {
-      "title": "Council Meeting - Extra Meeting (If needed)",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 25, 2026",
-      "timeLabel": "07:00 PM - 11:59 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7950",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-08-25",
-      "startHour": 19
-    },
     {
       "title": "Food Insecurity Task Force: Princeton Mobile Food Pantry",
       "source": "Municipality of Princeton",
@@ -1202,6 +1086,244 @@
       "startHour": 19
     },
     {
+      "title": "Kids: Playtime Fun: Music & Movement",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 01",
+      "timeLabel": "11:00am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14760892",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-01",
+      "startHour": 11
+    },
+    {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Sep 1",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-87",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-01",
+      "startHour": 13
+    },
+    {
+      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Spruce Circle",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 1, 2026",
+      "timeLabel": "01:00 PM - 01:45 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7338",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-09-01",
+      "startHour": 13
+    },
+    {
+      "title": "Food Insecurity Task Force: Arm in Arm",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 1, 2026",
+      "timeLabel": "01:00 PM - 07:00 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7749",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-09-01",
+      "startHour": 13
+    },
+    {
+      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Redding Circle",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 1, 2026",
+      "timeLabel": "02:00 PM - 02:30 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7390",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-09-01",
+      "startHour": 14
+    },
+    {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Sep 1",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge",
+      "tags": [],
+      "isoDate": "2026-09-01",
+      "startHour": 15
+    },
+    {
+      "title": "Dance Placement Class",
+      "source": "Princeton University",
+      "dateLabel": "Sep 1",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/dance-placement-class",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-01",
+      "startHour": 15
+    },
+    {
+      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At YMCA",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 1, 2026",
+      "timeLabel": "03:15 PM - 04:15 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7130",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-09-01",
+      "startHour": 15
+    },
+    {
+      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At Redding Circle",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 1, 2026",
+      "timeLabel": "03:30 PM - 04:30 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7544",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-09-01",
+      "startHour": 15
+    },
+    {
+      "title": "Catherine Project Weekly Book Discussion Series",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 01",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/16570103",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-09-01",
+      "startHour": 16
+    },
+    {
+      "title": "Mercer County Community ID",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 01",
+      "timeLabel": "4:00pm - 6:30pm",
+      "location": "Princeton Public Library - Conference Room",
+      "url": "https://princetonlibrary.libnet.info/event/15432408",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-09-01",
+      "startHour": 16
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 1",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-01",
+      "startHour": 16
+    },
+    {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 1",
+      "timeLabel": "4:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-01",
+      "startHour": 16
+    },
+    {
+      "title": "Workshop: Writers Room",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 01",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/15468612",
+      "tags": [
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-01",
+      "startHour": 18
+    },
+    {
+      "title": "Princeton Shotokan Karate Organization",
+      "source": "Princeton University",
+      "dateLabel": "Sep 1",
+      "timeLabel": "6:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-shotokan-karate-organization-25",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-01",
+      "startHour": 18
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 1",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-01",
+      "startHour": 19
+    },
+    {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 1",
+      "timeLabel": "7:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-01",
+      "startHour": 19
+    },
+    {
       "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
       "source": "Princeton University",
       "dateLabel": "Sep 18",
@@ -1365,12 +1487,6 @@
   ],
   "days": [
     {
-      "iso": "2026-08-25",
-      "label": "Aug 25",
-      "weekday": "Tue",
-      "count": 8
-    },
-    {
       "iso": "2026-08-26",
       "label": "Aug 26",
       "weekday": "Wed",
@@ -1405,6 +1521,12 @@
       "label": "Aug 31",
       "weekday": "Mon",
       "count": 10
+    },
+    {
+      "iso": "2026-09-01",
+      "label": "Sep 1",
+      "weekday": "Tue",
+      "count": 17
     }
   ],
   "windowDays": 7,
@@ -1499,13 +1621,13 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "28 events"
+      "detail": "31 events"
     },
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "27 calendar items"
+      "detail": "30 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
