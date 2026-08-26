@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-26T07:08:03.900Z",
+  "generatedAt": "2026-08-26T09:57:09.805Z",
   "weather": {
     "temperature": 60,
     "shortForecast": "Mostly Clear",
-    "wind": "0 mph ",
-    "detailedForecast": "Mostly clear, with a low around 60. Northwest wind around 0 mph.",
+    "wind": "5 mph NW",
+    "detailedForecast": "Mostly clear, with a low around 60. Northwest wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
