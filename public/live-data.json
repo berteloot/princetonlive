@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-26T09:57:09.805Z",
+  "generatedAt": "2026-08-26T13:16:27.861Z",
   "weather": {
-    "temperature": 60,
-    "shortForecast": "Mostly Clear",
-    "wind": "5 mph NW",
-    "detailedForecast": "Mostly clear, with a low around 60. Northwest wind around 5 mph.",
+    "temperature": 85,
+    "shortForecast": "Sunny",
+    "wind": "0 to 5 mph W",
+    "detailedForecast": "Sunny, with a high near 85. West wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -1324,165 +1324,17 @@
       "startHour": 19
     },
     {
-      "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
+      "title": "Liars' Club Opening Night",
       "source": "Princeton University",
-      "dateLabel": "Sep 18",
-      "timeLabel": "8:00 PM",
-      "location": "Lewis Center for the Arts, Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-barbara-par-barbara-marie-sophie-ferdane-emmanuel-noblet",
+      "dateLabel": "Sep 1",
+      "timeLabel": "9:15 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/liars-club-opening-night",
       "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
+        "new"
       ],
-      "isoDate": "2026-09-18",
-      "startHour": 20,
-      "series": "Seuls en Scène",
-      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
-    },
-    {
-      "title": "Seuls en Scène 2026 presents Nom by Constance Debré",
-      "source": "Princeton University",
-      "dateLabel": "Sep 19",
-      "timeLabel": "5:00 PM",
-      "location": "Lewis Center for the Arts, Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-nom-constance-debre",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-19",
-      "startHour": 17,
-      "series": "Seuls en Scène",
-      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
-    },
-    {
-      "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
-      "source": "Princeton University",
-      "dateLabel": "Sep 19",
-      "timeLabel": "8:00 PM",
-      "location": "Lewis Center for the Arts, Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-barbara-par-barbara-marie-sophie-ferdane-emmanuel-noblet-0",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-19",
-      "startHour": 20,
-      "series": "Seuls en Scène",
-      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
-    },
-    {
-      "title": "Seuls en Scène 2026 presents Nom by Constance Debré",
-      "source": "Princeton University",
-      "dateLabel": "Sep 20",
-      "timeLabel": "5:00 PM",
-      "location": "Lewis Center for the Arts, Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-nom-constance-debre-0",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-20",
-      "startHour": 17,
-      "series": "Seuls en Scène",
-      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
-    },
-    {
-      "title": "Seuls en Scène 2026 presents a film screening of De la Comédie-Française by Martin Darondeau & Bertrand Usclat",
-      "source": "Princeton University",
-      "dateLabel": "Sep 22",
-      "timeLabel": "4:00 PM",
-      "location": "Lewis Center for the Arts, Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-film-screening-de-la-comedie-francaise-martin-darondeau",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-22",
-      "startHour": 16,
-      "series": "Seuls en Scène",
-      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
-    },
-    {
-      "title": "Seuls en Scène 2026 presents L’Événement by Annie Ernaux",
-      "source": "Princeton University",
-      "dateLabel": "Sep 23",
-      "timeLabel": "8:00 PM",
-      "location": "Lewis Center for the Arts, Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-levenement-annie-ernaux",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-23",
-      "startHour": 20,
-      "series": "Seuls en Scène",
-      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
-    },
-    {
-      "title": "Seuls en Scène 2026 presents L’Aube des questions - Festival d’Avignon 2026 with Aurélie Charon, Emma Prat & Oksana Leuta",
-      "source": "Princeton University",
-      "dateLabel": "Sep 24",
-      "timeLabel": "4:30 PM",
-      "location": "Lewis Center for the Arts, Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-laube-des-questions-festival-davignon-2026-aurelie-charon",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-24",
-      "startHour": 16,
-      "series": "Seuls en Scène",
-      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
-    },
-    {
-      "title": "Seuls en Scène 2026 presents Génération Mitterand – Huit rois (nos présidents), Episode 2 by Léo Cohen-Paperman & Émilien Diard-Detoeuf",
-      "source": "Princeton University",
-      "dateLabel": "Sep 25",
-      "timeLabel": "6:00 PM",
-      "location": "Lewis Center for the Arts, Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-generation-mitterand-huit-rois-nos-presidents-episode-2",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-25",
-      "startHour": 18,
-      "series": "Seuls en Scène",
-      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
-    },
-    {
-      "title": "Seuls en Scène 2026 presents Vivantes by Aurélie Charon",
-      "source": "Princeton University",
-      "dateLabel": "Sep 25",
-      "timeLabel": "8:00 PM",
-      "location": "Lewis Center for the Arts, Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-vivantes-aurelie-charon",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-25",
-      "startHour": 20,
-      "series": "Seuls en Scène",
-      "seriesUrl": "https://arts.princeton.edu/french-theater-festival"
+      "isoDate": "2026-09-01",
+      "startHour": 21
     }
   ],
   "days": [
@@ -1526,90 +1378,17 @@
       "iso": "2026-09-01",
       "label": "Sep 1",
       "weekday": "Tue",
-      "count": 17
+      "count": 18
     }
   ],
   "windowDays": 7,
-  "trackedSeries": [
-    {
-      "id": "french-theater-festival",
-      "name": "Seuls en Scène",
-      "label": "French Theater Festival",
-      "venue": "Lewis Center for the Arts, Princeton campus",
-      "url": "https://arts.princeton.edu/french-theater-festival",
-      "count": 9,
-      "startLabel": "Sep 18",
-      "endLabel": "Sep 25",
-      "next": {
-        "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
-        "dateLabel": "Sep 18",
-        "timeLabel": "8:00 PM",
-        "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-barbara-par-barbara-marie-sophie-ferdane-emmanuel-noblet"
-      },
-      "dates": [
-        {
-          "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
-          "dateLabel": "Sep 18",
-          "timeLabel": "8:00 PM",
-          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-barbara-par-barbara-marie-sophie-ferdane-emmanuel-noblet"
-        },
-        {
-          "title": "Seuls en Scène 2026 presents Nom by Constance Debré",
-          "dateLabel": "Sep 19",
-          "timeLabel": "5:00 PM",
-          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-nom-constance-debre"
-        },
-        {
-          "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
-          "dateLabel": "Sep 19",
-          "timeLabel": "8:00 PM",
-          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-barbara-par-barbara-marie-sophie-ferdane-emmanuel-noblet-0"
-        },
-        {
-          "title": "Seuls en Scène 2026 presents Nom by Constance Debré",
-          "dateLabel": "Sep 20",
-          "timeLabel": "5:00 PM",
-          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-nom-constance-debre-0"
-        },
-        {
-          "title": "Seuls en Scène 2026 presents a film screening of De la Comédie-Française by Martin Darondeau & Bertrand Usclat",
-          "dateLabel": "Sep 22",
-          "timeLabel": "4:00 PM",
-          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-film-screening-de-la-comedie-francaise-martin-darondeau"
-        },
-        {
-          "title": "Seuls en Scène 2026 presents L’Événement by Annie Ernaux",
-          "dateLabel": "Sep 23",
-          "timeLabel": "8:00 PM",
-          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-levenement-annie-ernaux"
-        },
-        {
-          "title": "Seuls en Scène 2026 presents L’Aube des questions - Festival d’Avignon 2026 with Aurélie Charon, Emma Prat & Oksana Leuta",
-          "dateLabel": "Sep 24",
-          "timeLabel": "4:30 PM",
-          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-laube-des-questions-festival-davignon-2026-aurelie-charon"
-        },
-        {
-          "title": "Seuls en Scène 2026 presents Génération Mitterand – Huit rois (nos présidents), Episode 2 by Léo Cohen-Paperman & Émilien Diard-Detoeuf",
-          "dateLabel": "Sep 25",
-          "timeLabel": "6:00 PM",
-          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-generation-mitterand-huit-rois-nos-presidents-episode-2"
-        },
-        {
-          "title": "Seuls en Scène 2026 presents Vivantes by Aurélie Charon",
-          "dateLabel": "Sep 25",
-          "timeLabel": "8:00 PM",
-          "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-vivantes-aurelie-charon"
-        }
-      ]
-    }
-  ],
+  "trackedSeries": [],
   "sources": [
     {
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Clear, 60F"
+      "detail": "Sunny, 85F"
     },
     {
       "name": "Princeton University Events",
@@ -1634,12 +1413,6 @@
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
       "detail": "94 showtimes"
-    },
-    {
-      "name": "Seuls en Scène (French Theater Festival)",
-      "url": "https://arts.princeton.edu/french-theater-festival",
-      "status": "ok",
-      "detail": "9 upcoming dates"
     }
   ]
 }
