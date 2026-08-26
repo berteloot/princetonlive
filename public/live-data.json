@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-25T21:43:47.216Z",
+  "generatedAt": "2026-08-26T01:57:53.682Z",
   "weather": {
-    "temperature": 81,
-    "shortForecast": "Mostly Sunny",
-    "wind": "5 mph NW",
-    "detailedForecast": "Mostly sunny, with a high near 81. Northwest wind around 5 mph.",
+    "temperature": 60,
+    "shortForecast": "Mostly Clear",
+    "wind": "0 mph ",
+    "detailedForecast": "Mostly clear, with a low around 60. Northwest wind around 0 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -53,19 +53,6 @@
         "new",
         "culture",
         "rain"
-      ],
-      "isoDate": "2026-08-25",
-      "startHour": 13
-    },
-    {
-      "title": "Food Insecurity Task Force: Arm in Arm",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 25, 2026",
-      "timeLabel": "01:00 PM - 07:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7748",
-      "tags": [
-        "practical"
       ],
       "isoDate": "2026-08-25",
       "startHour": 13
@@ -135,34 +122,6 @@
       "tags": [
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-08-25",
-      "startHour": 19
-    },
-    {
-      "title": "Hadestown: The Musical",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 25",
-      "timeLabel": "7:00 PM (SELLING FAST)",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-25",
-      "startHour": 19
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 25",
-      "timeLabel": "7:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-08-25",
       "startHour": 19
@@ -1409,7 +1368,7 @@
       "iso": "2026-08-25",
       "label": "Aug 25",
       "weekday": "Tue",
-      "count": 11
+      "count": 8
     },
     {
       "iso": "2026-08-26",
@@ -1528,7 +1487,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Sunny, 81F"
+      "detail": "Mostly Clear, 60F"
     },
     {
       "name": "Princeton University Events",
@@ -1546,13 +1505,13 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "28 calendar items"
+      "detail": "27 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "96 showtimes"
+      "detail": "94 showtimes"
     },
     {
       "name": "Seuls en Scène (French Theater Festival)",
