@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-26T20:01:20.913Z",
+  "generatedAt": "2026-08-27T00:47:13.882Z",
   "weather": {
-    "temperature": 85,
-    "shortForecast": "Sunny",
-    "wind": "0 to 5 mph W",
-    "detailedForecast": "Sunny, with a high near 85. West wind 0 to 5 mph.",
+    "temperature": 67,
+    "shortForecast": "Mostly Cloudy",
+    "wind": "0 to 5 mph S",
+    "detailedForecast": "Mostly cloudy, with a low around 67. South wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
@@ -143,75 +143,6 @@
       ],
       "isoDate": "2026-08-26",
       "startHour": 16
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 26",
-      "timeLabel": "4:15 PM (OC)",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-26",
-      "startHour": 16
-    },
-    {
-      "title": "Wild Inside",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 26",
-      "timeLabel": "4:20 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-inside",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-26",
-      "startHour": 16
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Cornerstone Kitchen",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 26, 2026",
-      "timeLabel": "05:00 PM - 06:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=6922",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-08-26",
-      "startHour": 17
-    },
-    {
-      "title": "Love Finds Andy Hardy",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 26",
-      "timeLabel": "7:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=love-finds-andy-hardy",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-26",
-      "startHour": 19
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 26",
-      "timeLabel": "7:15 PM (OC)",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-26",
-      "startHour": 19
     },
     {
       "title": "Zoning Board of Adjustment Meeting - Virtual",
@@ -960,6 +891,17 @@
       "startHour": 16
     },
     {
+      "title": "Men's Soccer vs Portland",
+      "source": "Princeton University",
+      "dateLabel": "Aug 31",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-portland",
+      "tags": [],
+      "isoDate": "2026-08-31",
+      "startHour": 19
+    },
+    {
       "title": "Princeton Tango Club Weekly Classes",
       "source": "Princeton University",
       "dateLabel": "Aug 31",
@@ -971,17 +913,6 @@
         "culture",
         "rain"
       ],
-      "isoDate": "2026-08-31",
-      "startHour": 19
-    },
-    {
-      "title": "Men's Soccer vs Portland",
-      "source": "Princeton University",
-      "dateLabel": "Aug 31",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-portland",
-      "tags": [],
       "isoDate": "2026-08-31",
       "startHour": 19
     },
@@ -1100,6 +1031,17 @@
       "startHour": 14
     },
     {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Sep 1",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge",
+      "tags": [],
+      "isoDate": "2026-09-01",
+      "startHour": 15
+    },
+    {
       "title": "Dance Placement Class",
       "source": "Princeton University",
       "dateLabel": "Sep 1",
@@ -1112,17 +1054,6 @@
         "rain",
         "practical"
       ],
-      "isoDate": "2026-09-01",
-      "startHour": 15
-    },
-    {
-      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
-      "source": "Princeton University",
-      "dateLabel": "Sep 1",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge",
-      "tags": [],
       "isoDate": "2026-09-01",
       "startHour": 15
     },
@@ -1283,7 +1214,7 @@
       "iso": "2026-08-26",
       "label": "Aug 26",
       "weekday": "Wed",
-      "count": 15
+      "count": 10
     },
     {
       "iso": "2026-08-27",
@@ -1329,7 +1260,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 85F"
+      "detail": "Mostly Cloudy, 67F"
     },
     {
       "name": "Princeton University Events",
@@ -1347,13 +1278,13 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "26 calendar items"
+      "detail": "25 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "92 showtimes"
+      "detail": "88 showtimes"
     }
   ]
 }
