@@ -1,163 +1,23 @@
 {
-  "generatedAt": "2026-08-28T00:24:42.605Z",
+  "generatedAt": "2026-08-28T13:21:35.416Z",
   "weather": {
-    "temperature": 67,
-    "shortForecast": "Chance Showers And Thunderstorms",
+    "temperature": 84,
+    "shortForecast": "Partly Sunny then Slight Chance Showers And Thunderstorms",
     "wind": "0 mph ",
-    "detailedForecast": "A chance of showers and thunderstorms before 1am. Mostly cloudy, with a low around 67. Southwest wind around 0 mph. Chance of precipitation is 40%. New rainfall amounts less than a tenth of an inch possible.",
+    "detailedForecast": "A slight chance of showers and thunderstorms between noon and 2pm, then a chance of showers and thunderstorms between 2pm and 3pm, then a slight chance of showers and thunderstorms between 3pm and 5pm. Partly sunny, with a high near 84. Northwest wind around 0 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.31c7952b3db7735159154ef8b0a288d571a84775.001.1",
-      "event": "Flood Warning",
-      "headline": "Flood Warning issued August 27 at 8:09PM EDT until August 28 at 3:00AM EDT by NWS Mount Holly NJ",
-      "severity": "Severe",
-      "url": null
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.49af91ccd71ceca4329f7dc2356d75f97fc632a3.002.1",
-      "event": "Flood Watch",
-      "headline": "Flood Watch issued August 27 at 10:26AM EDT until August 28 at 4:00AM EDT by NWS Mount Holly NJ",
-      "severity": "Severe",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9fda18b6df449596b14bea888c9155f89ee960e4.001.1",
+      "event": "Special Weather Statement",
+      "headline": "Special Weather Statement issued August 28 at 7:41AM EDT by NWS Mount Holly NJ",
+      "severity": "Moderate",
       "url": null
     }
   ],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Kids: Storytime!",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 27",
-      "timeLabel": "10:30am - 11:00am",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14661271",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-08-27",
-      "startHour": 10
-    },
-    {
-      "title": "Meet Catholic Charities NJ4S Mercer Hub",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 27",
-      "timeLabel": "11:00am - 1:00pm",
-      "location": "Princeton Public Library - Lobby",
-      "url": "https://princetonlibrary.libnet.info/event/16857500",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-08-27",
-      "startHour": 11
-    },
-    {
-      "title": "Kids: Baby Storytime",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 27",
-      "timeLabel": "11:30am - 12:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14661585",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-08-27",
-      "startHour": 11
-    },
-    {
-      "title": "TEST GIS 2",
-      "source": "Princeton University",
-      "dateLabel": "Aug 27",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/test-gis-2",
-      "tags": [],
-      "isoDate": "2026-08-27",
-      "startHour": 12
-    },
-    {
-      "title": "Kids: Baby Play Group",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 27",
-      "timeLabel": "12:00pm - 1:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14662538",
-      "tags": [
-        "new",
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-08-27",
-      "startHour": 12
-    },
-    {
-      "title": "Open Studio",
-      "source": "Princeton University",
-      "dateLabel": "Aug 27",
-      "timeLabel": "1:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/open-studio-82",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-27",
-      "startHour": 13
-    },
-    {
-      "title": "Teens: Craft, Chat and Chill",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 27",
-      "timeLabel": "3:00pm - 4:00pm",
-      "location": "Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/16972773",
-      "tags": [
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-08-27",
-      "startHour": 15
-    },
-    {
-      "title": "Meadows Welcome Back Ice Cream Social",
-      "source": "Princeton University",
-      "dateLabel": "Aug 27",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/meadows-welcome-back-ice-cream-social",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-08-27",
-      "startHour": 16
-    },
-    {
-      "title": "Princeton Bachata Club",
-      "source": "Princeton University",
-      "dateLabel": "Aug 27",
-      "timeLabel": "6:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-bachata-club-10",
-      "tags": [],
-      "isoDate": "2026-08-27",
-      "startHour": 18
-    },
-    {
-      "title": "Women's Soccer vs West Virginia",
-      "source": "Princeton University",
-      "dateLabel": "Aug 27",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-west-virginia",
-      "tags": [],
-      "isoDate": "2026-08-27",
-      "startHour": 19
-    },
     {
       "title": "Open Studio",
       "source": "Princeton University",
@@ -868,12 +728,12 @@
       "startHour": 15
     },
     {
-      "title": "Mercer County Community ID",
+      "title": "Catherine Project Weekly Book Discussion Series",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 01",
-      "timeLabel": "4:00pm - 6:30pm",
-      "location": "Princeton Public Library - Conference Room",
-      "url": "https://princetonlibrary.libnet.info/event/15432408",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/16570103",
       "tags": [
         "family",
         "practical"
@@ -882,12 +742,12 @@
       "startHour": 16
     },
     {
-      "title": "Catherine Project Weekly Book Discussion Series",
+      "title": "Mercer County Community ID",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 01",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/16570103",
+      "timeLabel": "4:00pm - 6:30pm",
+      "location": "Princeton Public Library - Conference Room",
+      "url": "https://princetonlibrary.libnet.info/event/15432408",
       "tags": [
         "family",
         "practical"
@@ -1269,15 +1129,302 @@
       ],
       "isoDate": "2026-09-02",
       "startHour": 19
+    },
+    {
+      "title": "Kids: Storytime!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 03",
+      "timeLabel": "10:30am - 11:00am",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14661272",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Baby Storytime",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 03",
+      "timeLabel": "11:30am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14661586",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 11
+    },
+    {
+      "title": "Kids: Baby Play Group",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 03",
+      "timeLabel": "12:00pm - 1:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14662539",
+      "tags": [
+        "new",
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 12
+    },
+    {
+      "title": "Study Abroad Beyond the Bubble Info Session",
+      "source": "Princeton University",
+      "dateLabel": "Sep 3",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/study-abroad-beyond-bubble-info-session",
+      "tags": [],
+      "isoDate": "2026-09-03",
+      "startHour": 12
+    },
+    {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Sep 3",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-89",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 13
+    },
+    {
+      "title": "Tech Help from Bloomberg",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 03",
+      "timeLabel": "3:00pm - 5:00pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/16612542",
+      "tags": [
+        "new",
+        "practical"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 15
+    },
+    {
+      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Griggs Farm",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 3, 2026",
+      "timeLabel": "03:30 PM - 04:00 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7440",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 15
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 3",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 16
+    },
+    {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 3",
+      "timeLabel": "4:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 16
+    },
+    {
+      "title": "Performance Opportunity Workshops: Explore Spring 2027 Senior Dance Projects",
+      "source": "Princeton University",
+      "dateLabel": "Sep 3",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/performance-opportunity-workshops-explore-spring-2027-senior-dance-projects-0",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 16
+    },
+    {
+      "title": "Performance Opportunity Workshops: Explore Spring 2027 Senior Dance Projects",
+      "source": "Princeton University",
+      "dateLabel": "Sep 3",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/performance-opportunity-workshops-explore-spring-2027-senior-dance-projects",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 16
+    },
+    {
+      "title": "Celebrating Dorothy Maynor",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 03",
+      "timeLabel": "4:30pm - 5:30pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17150963",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 16
+    },
+    {
+      "title": "Try on Theater: Casting Workshops",
+      "source": "Princeton University",
+      "dateLabel": "Sep 3",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/try-theater-casting-workshops",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 18
+    },
+    {
+      "title": "Food Insecurity Task Force: Princeton Alliance Church",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 3, 2026",
+      "timeLabel": "06:00 PM - 07:30 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7286",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 18
+    },
+    {
+      "title": "Princeton Bachata Club",
+      "source": "Princeton University",
+      "dateLabel": "Sep 3",
+      "timeLabel": "6:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-bachata-club-11",
+      "tags": [],
+      "isoDate": "2026-09-03",
+      "startHour": 18
+    },
+    {
+      "title": "Lutheran Campus Ministry Table Talk",
+      "source": "Princeton University",
+      "dateLabel": "Sep 3",
+      "timeLabel": "6:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/lutheran-campus-ministry-table-talk",
+      "tags": [],
+      "isoDate": "2026-09-03",
+      "startHour": 18
+    },
+    {
+      "title": "Lecture: Dorothy Maynor in Princeton and Beyond",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 03",
+      "timeLabel": "6:30pm - 7:30pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17150967",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 18
+    },
+    {
+      "title": "Planning Board Virtual Meeting",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 3, 2026",
+      "timeLabel": "07:00 PM - 11:00 PM",
+      "location": "Princeton, NJ",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7885",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 19
+    },
+    {
+      "title": "Newsies",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 3",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=newsies",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 19
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 3",
+      "timeLabel": "7:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 19
+    },
+    {
+      "title": "KoKo Pops Open House",
+      "source": "Princeton University",
+      "dateLabel": "Sep 3",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/koko-pops-open-house",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 20
     }
   ],
   "days": [
-    {
-      "iso": "2026-08-27",
-      "label": "Aug 27",
-      "weekday": "Thu",
-      "count": 10
-    },
     {
       "iso": "2026-08-28",
       "label": "Aug 28",
@@ -1313,6 +1460,12 @@
       "label": "Sep 2",
       "weekday": "Wed",
       "count": 20
+    },
+    {
+      "iso": "2026-09-03",
+      "label": "Sep 3",
+      "weekday": "Thu",
+      "count": 21
     }
   ],
   "windowDays": 7,
@@ -1322,7 +1475,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Chance Showers And Thunderstorms, 67F"
+      "detail": "Partly Sunny then Slight Chance Showers And Thunderstorms, 84F"
     },
     {
       "name": "Princeton University Events",
@@ -1334,7 +1487,7 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "30 events"
+      "detail": "25 events"
     },
     {
       "name": "Municipality of Princeton",
