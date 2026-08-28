@@ -1,17 +1,24 @@
 {
-  "generatedAt": "2026-08-27T14:10:49.456Z",
+  "generatedAt": "2026-08-28T00:24:42.605Z",
   "weather": {
-    "temperature": 84,
-    "shortForecast": "Showers And Thunderstorms Likely then Chance Showers And Thunderstorms",
-    "wind": "5 mph S",
-    "detailedForecast": "Showers and thunderstorms likely before 11am, then a chance of showers and thunderstorms between 11am and 1pm, then showers and thunderstorms between 1pm and 4pm, then a chance of showers and thunderstorms. Mostly cloudy, with a high near 84. South wind around 5 mph. Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible.",
+    "temperature": 67,
+    "shortForecast": "Chance Showers And Thunderstorms",
+    "wind": "0 mph ",
+    "detailedForecast": "A chance of showers and thunderstorms before 1am. Mostly cloudy, with a low around 67. Southwest wind around 0 mph. Chance of precipitation is 40%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ce4b6379710e4fb8fddb2d3722885d068ead32fb.002.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.31c7952b3db7735159154ef8b0a288d571a84775.001.1",
+      "event": "Flood Warning",
+      "headline": "Flood Warning issued August 27 at 8:09PM EDT until August 28 at 3:00AM EDT by NWS Mount Holly NJ",
+      "severity": "Severe",
+      "url": null
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.49af91ccd71ceca4329f7dc2356d75f97fc632a3.002.1",
       "event": "Flood Watch",
-      "headline": "Flood Watch issued August 27 at 2:39AM EDT until August 28 at 4:00AM EDT by NWS Mount Holly NJ",
+      "headline": "Flood Watch issued August 27 at 10:26AM EDT until August 28 at 4:00AM EDT by NWS Mount Holly NJ",
       "severity": "Severe",
       "url": null
     }
@@ -106,25 +113,11 @@
       "source": "Princeton Public Library",
       "dateLabel": "Aug 27",
       "timeLabel": "3:00pm - 4:00pm",
-      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "location": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/event/16972773",
       "tags": [
         "family",
         "culture",
-        "practical"
-      ],
-      "isoDate": "2026-08-27",
-      "startHour": 15
-    },
-    {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Griggs Farm",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 27, 2026",
-      "timeLabel": "03:30 PM - 04:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7439",
-      "tags": [
-        "family",
         "practical"
       ],
       "isoDate": "2026-08-27",
@@ -142,47 +135,6 @@
       ],
       "isoDate": "2026-08-27",
       "startHour": 16
-    },
-    {
-      "title": "Hadestown: The Musical",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 27",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=hadestown-the-musical",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-27",
-      "startHour": 16
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 27",
-      "timeLabel": "4:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-27",
-      "startHour": 16
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Alliance Church",
-      "source": "Municipality of Princeton",
-      "dateLabel": "August 27, 2026",
-      "timeLabel": "06:00 PM - 07:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7285",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-08-27",
-      "startHour": 18
     },
     {
       "title": "Princeton Bachata Club",
@@ -203,34 +155,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-west-virginia",
       "tags": [],
-      "isoDate": "2026-08-27",
-      "startHour": 19
-    },
-    {
-      "title": "Taxi Driver",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 27",
-      "timeLabel": "7:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=taxi-driver",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-27",
-      "startHour": 19
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 27",
-      "timeLabel": "7:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
       "isoDate": "2026-08-27",
       "startHour": 19
     },
@@ -1352,7 +1276,7 @@
       "iso": "2026-08-27",
       "label": "Aug 27",
       "weekday": "Thu",
-      "count": 16
+      "count": 10
     },
     {
       "iso": "2026-08-28",
@@ -1398,7 +1322,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Showers And Thunderstorms Likely then Chance Showers And Thunderstorms, 84F"
+      "detail": "Chance Showers And Thunderstorms, 67F"
     },
     {
       "name": "Princeton University Events",
@@ -1416,13 +1340,13 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "26 calendar items"
+      "detail": "24 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "88 showtimes"
+      "detail": "84 showtimes"
     }
   ]
 }
