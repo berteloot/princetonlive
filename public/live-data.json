@@ -1,30 +1,15 @@
 {
-  "generatedAt": "2026-08-28T15:20:57.055Z",
+  "generatedAt": "2026-08-29T01:44:47.956Z",
   "weather": {
-    "temperature": 84,
-    "shortForecast": "Partly Sunny then Slight Chance Showers And Thunderstorms",
-    "wind": "0 mph ",
-    "detailedForecast": "A slight chance of showers and thunderstorms between noon and 2pm, then a chance of showers and thunderstorms between 2pm and 3pm, then a slight chance of showers and thunderstorms between 3pm and 5pm. Partly sunny, with a high near 84. Northwest wind around 0 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
+    "temperature": 58,
+    "shortForecast": "Mostly Clear",
+    "wind": "5 mph N",
+    "detailedForecast": "Mostly clear, with a low around 58. North wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Open Studio",
-      "source": "Princeton University",
-      "dateLabel": "Aug 28",
-      "timeLabel": "10:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/open-studio-83",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-28",
-      "startHour": 10
-    },
     {
       "title": "Community Archiving: The Paul Robeson House of Princeton",
       "source": "Princeton Public Library",
@@ -38,17 +23,6 @@
       ],
       "isoDate": "2026-08-28",
       "startHour": 10
-    },
-    {
-      "title": "Muslim Life Program Friday Jummah Congregational Prayer",
-      "source": "Princeton University",
-      "dateLabel": "Aug 28",
-      "timeLabel": "12:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/muslim-life-program-friday-jummah-congregational-prayer-20",
-      "tags": [],
-      "isoDate": "2026-08-28",
-      "startHour": 12
     },
     {
       "title": "Teens: Drop In and Edit (Adobe Creative Cloud)",
@@ -79,73 +53,6 @@
       ],
       "isoDate": "2026-08-28",
       "startHour": 15
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 28",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-28",
-      "startHour": 16
-    },
-    {
-      "title": "The Marching Band",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 28",
-      "timeLabel": "4:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-28",
-      "startHour": 16
-    },
-    {
-      "title": "Men's Soccer vs Villanova",
-      "source": "Princeton University",
-      "dateLabel": "Aug 28",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-villanova",
-      "tags": [],
-      "isoDate": "2026-08-28",
-      "startHour": 19
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 28",
-      "timeLabel": "7:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-28",
-      "startHour": 19
-    },
-    {
-      "title": "The Marching Band",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 28",
-      "timeLabel": "7:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-28",
-      "startHour": 19
     },
     {
       "title": "Twin Peaks: Season 1 - Episodes 6 & 7",
@@ -322,6 +229,19 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-jmu",
       "tags": [],
+      "isoDate": "2026-08-30",
+      "startHour": 11
+    },
+    {
+      "title": "Worship Service in the University Chapel",
+      "source": "Princeton University",
+      "dateLabel": "Aug 30",
+      "timeLabel": "11:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/worship-service-university-chapel",
+      "tags": [
+        "new"
+      ],
       "isoDate": "2026-08-30",
       "startHour": 11
     },
@@ -1248,6 +1168,23 @@
       "startHour": 16
     },
     {
+      "title": "Inquisition Trials and the Table: The Culinary Legacy of the Sephardic Jews from Spain to the Americas",
+      "source": "Princeton University",
+      "dateLabel": "Sep 3",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/inquisition-trials-and-table-culinary-legacy-sephardic-jews-spain-americas",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 16
+    },
+    {
       "title": "Performance Opportunity Workshops: Explore Spring 2027 Senior Dance Projects",
       "source": "Princeton University",
       "dateLabel": "Sep 3",
@@ -1421,7 +1358,7 @@
       "iso": "2026-08-28",
       "label": "Aug 28",
       "weekday": "Fri",
-      "count": 11
+      "count": 4
     },
     {
       "iso": "2026-08-29",
@@ -1433,7 +1370,7 @@
       "iso": "2026-08-30",
       "label": "Aug 30",
       "weekday": "Sun",
-      "count": 10
+      "count": 11
     },
     {
       "iso": "2026-08-31",
@@ -1457,7 +1394,7 @@
       "iso": "2026-09-03",
       "label": "Sep 3",
       "weekday": "Thu",
-      "count": 21
+      "count": 22
     }
   ],
   "windowDays": 7,
@@ -1467,7 +1404,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Partly Sunny then Slight Chance Showers And Thunderstorms, 84F"
+      "detail": "Mostly Clear, 58F"
     },
     {
       "name": "Princeton University Events",
@@ -1491,7 +1428,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "84 showtimes"
+      "detail": "80 showtimes"
     }
   ]
 }
