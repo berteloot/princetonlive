@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-29T10:02:11.503Z",
+  "generatedAt": "2026-08-29T16:42:46.660Z",
   "weather": {
     "temperature": 81,
     "shortForecast": "Sunny",
-    "wind": "0 to 5 mph N",
-    "detailedForecast": "Sunny, with a high near 81. North wind 0 to 5 mph.",
+    "wind": "0 to 5 mph NW",
+    "detailedForecast": "Sunny, with a high near 81. Northwest wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
