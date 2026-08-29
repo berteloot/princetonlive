@@ -1,73 +1,15 @@
 {
-  "generatedAt": "2026-08-29T01:44:47.956Z",
+  "generatedAt": "2026-08-29T10:02:11.503Z",
   "weather": {
-    "temperature": 58,
-    "shortForecast": "Mostly Clear",
-    "wind": "5 mph N",
-    "detailedForecast": "Mostly clear, with a low around 58. North wind around 5 mph.",
+    "temperature": 81,
+    "shortForecast": "Sunny",
+    "wind": "0 to 5 mph N",
+    "detailedForecast": "Sunny, with a high near 81. North wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Community Archiving: The Paul Robeson House of Princeton",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 28",
-      "timeLabel": "10:00am - 12:00pm",
-      "location": "Princeton Public Library - Tech Center",
-      "url": "https://princetonlibrary.libnet.info/event/17225505",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-08-28",
-      "startHour": 10
-    },
-    {
-      "title": "Teens: Drop In and Edit (Adobe Creative Cloud)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 28",
-      "timeLabel": "2:00pm - 3:00pm",
-      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
-      "url": "https://princetonlibrary.libnet.info/event/16783763",
-      "tags": [
-        "new",
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-08-28",
-      "startHour": 14
-    },
-    {
-      "title": "Teens: Take & Make",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 28",
-      "timeLabel": "3:00pm - 4:00pm",
-      "location": "Princeton Public Library - Teen Center",
-      "url": "https://princetonlibrary.libnet.info/event/17250233",
-      "tags": [
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-08-28",
-      "startHour": 15
-    },
-    {
-      "title": "Twin Peaks: Season 1 - Episodes 6 & 7",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 28",
-      "timeLabel": "9:45 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=twin-peaks-season-1-episodes-6-7",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-28",
-      "startHour": 21
-    },
     {
       "title": "Members Preview Day: Defying Authority: Takeda Hideo's Genpei",
       "source": "Princeton University",
@@ -640,12 +582,12 @@
       "startHour": 15
     },
     {
-      "title": "Catherine Project Weekly Book Discussion Series",
+      "title": "Mercer County Community ID",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 01",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/16570103",
+      "timeLabel": "4:00pm - 6:30pm",
+      "location": "Princeton Public Library - Conference Room",
+      "url": "https://princetonlibrary.libnet.info/event/15432408",
       "tags": [
         "family",
         "practical"
@@ -654,12 +596,12 @@
       "startHour": 16
     },
     {
-      "title": "Mercer County Community ID",
+      "title": "Catherine Project Weekly Book Discussion Series",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 01",
-      "timeLabel": "4:00pm - 6:30pm",
-      "location": "Princeton Public Library - Conference Room",
-      "url": "https://princetonlibrary.libnet.info/event/15432408",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/16570103",
       "tags": [
         "family",
         "practical"
@@ -1351,15 +1293,121 @@
       ],
       "isoDate": "2026-09-03",
       "startHour": 20
+    },
+    {
+      "title": "Tentative: Open Studio TBC",
+      "source": "Princeton University",
+      "dateLabel": "Sep 4",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/tentative-open-studio-tbc",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-04",
+      "startHour": 10
+    },
+    {
+      "title": "Muslim Life Program Friday Jummah Congregational Prayer",
+      "source": "Princeton University",
+      "dateLabel": "Sep 4",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/muslim-life-program-friday-jummah-congregational-prayer-21",
+      "tags": [],
+      "isoDate": "2026-09-04",
+      "startHour": 12
+    },
+    {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Sep 4",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-90",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-04",
+      "startHour": 13
+    },
+    {
+      "title": "Taste of North Africa: SNAP Welcome Back Event",
+      "source": "Princeton University",
+      "dateLabel": "Sep 4",
+      "timeLabel": "3:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/taste-north-africa-snap-welcome-back-event",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-04",
+      "startHour": 15
+    },
+    {
+      "title": "Guest Choreographer Auditions for 2026 Princeton Dance Festival",
+      "source": "Princeton University",
+      "dateLabel": "Sep 4",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/guest-choreographer-auditions-2026-princeton-dance-festival",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-04",
+      "startHour": 16
+    },
+    {
+      "title": "Try on Theater: Casting Workshops",
+      "source": "Princeton University",
+      "dateLabel": "Sep 4",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/try-theater-casting-workshops-0",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-04",
+      "startHour": 18
+    },
+    {
+      "title": "Try on Theater: Directing Workshop",
+      "source": "Princeton University",
+      "dateLabel": "Sep 4",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/try-theater-directing-workshop",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-04",
+      "startHour": 18
+    },
+    {
+      "title": "Men's Soccer vs JMU",
+      "source": "Princeton University",
+      "dateLabel": "Sep 4",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-jmu",
+      "tags": [],
+      "isoDate": "2026-09-04",
+      "startHour": 19
     }
   ],
   "days": [
-    {
-      "iso": "2026-08-28",
-      "label": "Aug 28",
-      "weekday": "Fri",
-      "count": 4
-    },
     {
       "iso": "2026-08-29",
       "label": "Aug 29",
@@ -1395,6 +1443,12 @@
       "label": "Sep 3",
       "weekday": "Thu",
       "count": 22
+    },
+    {
+      "iso": "2026-09-04",
+      "label": "Sep 4",
+      "weekday": "Fri",
+      "count": 8
     }
   ],
   "windowDays": 7,
@@ -1404,7 +1458,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Clear, 58F"
+      "detail": "Sunny, 81F"
     },
     {
       "name": "Princeton University Events",
@@ -1416,7 +1470,7 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "25 events"
+      "detail": "24 events"
     },
     {
       "name": "Municipality of Princeton",
@@ -1428,7 +1482,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "80 showtimes"
+      "detail": "79 showtimes"
     }
   ]
 }
