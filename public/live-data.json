@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-30T21:04:32.263Z",
+  "generatedAt": "2026-08-30T23:29:00.963Z",
   "weather": {
-    "temperature": 85,
-    "shortForecast": "Chance Showers And Thunderstorms",
-    "wind": "5 mph SW",
-    "detailedForecast": "A chance of showers and thunderstorms. Partly sunny, with a high near 85. Southwest wind around 5 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
+    "temperature": 67,
+    "shortForecast": "Showers And Thunderstorms Likely",
+    "wind": "0 to 5 mph SW",
+    "detailedForecast": "Showers and thunderstorms likely. Mostly cloudy, with a low around 67. Southwest wind 0 to 5 mph. Chance of precipitation is 60%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -77,34 +77,6 @@
       ],
       "isoDate": "2026-08-30",
       "startHour": 15
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 30",
-      "timeLabel": "7:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-30",
-      "startHour": 19
-    },
-    {
-      "title": "The Marching Band",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 30",
-      "timeLabel": "7:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-30",
-      "startHour": 19
     },
     {
       "title": "Kids: Playtime Fun: Music & Movement",
@@ -1371,7 +1343,7 @@
       "iso": "2026-08-30",
       "label": "Aug 30",
       "weekday": "Sun",
-      "count": 7
+      "count": 5
     },
     {
       "iso": "2026-08-31",
@@ -1417,7 +1389,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Chance Showers And Thunderstorms, 85F"
+      "detail": "Showers And Thunderstorms Likely, 67F"
     },
     {
       "name": "Princeton University Events",
@@ -1441,7 +1413,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "69 showtimes"
+      "detail": "67 showtimes"
     }
   ]
 }
