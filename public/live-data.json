@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T23:18:42.322Z",
+  "generatedAt": "2026-08-30T05:23:07.651Z",
   "weather": {
     "temperature": 59,
     "shortForecast": "Mostly Clear then Patchy Fog",
@@ -10,75 +10,6 @@
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Members Preview Day: Defying Authority: Takeda Hideo's Genpei",
-      "source": "Princeton University",
-      "dateLabel": "Aug 29",
-      "timeLabel": "10:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/members-preview-day-defying-authority-takeda-hideos-genpei",
-      "tags": [
-        "new",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-08-29",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Saturday Storytime!",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 29",
-      "timeLabel": "10:30am - 11:00am",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14662003",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-08-29",
-      "startHour": 10
-    },
-    {
-      "title": "Field Hockey vs University of British Columbia (Exhibition)",
-      "source": "Princeton University",
-      "dateLabel": "Aug 29",
-      "timeLabel": "1:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-university-british-columbia-exhibition",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-08-29",
-      "startHour": 13
-    },
-    {
-      "title": "Open Studio",
-      "source": "Princeton University",
-      "dateLabel": "Aug 29",
-      "timeLabel": "1:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/open-studio-84",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-29",
-      "startHour": 13
-    },
-    {
-      "title": "Tango Practica",
-      "source": "Princeton University",
-      "dateLabel": "Aug 29",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/tango-practica-10",
-      "tags": [],
-      "isoDate": "2026-08-29",
-      "startHour": 16
-    },
     {
       "title": "Women's Soccer vs JMU",
       "source": "Princeton University",
@@ -1335,15 +1266,163 @@
       "tags": [],
       "isoDate": "2026-09-04",
       "startHour": 19
+    },
+    {
+      "title": "Princeton Mock Trial Open House",
+      "source": "Princeton University",
+      "dateLabel": "Sep 5",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-mock-trial-open-house",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-09-05",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Take & Make",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 05",
+      "timeLabel": "10:00am - 2:00pm",
+      "location": "Princeton Public Library - 3rd Floor Pop-up Programming Area",
+      "url": "https://princetonlibrary.libnet.info/event/17253008",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-09-05",
+      "startHour": 10
+    },
+    {
+      "title": "Guest Choreographer Auditions for 2026 Princeton Dance Festival",
+      "source": "Princeton University",
+      "dateLabel": "Sep 5",
+      "timeLabel": "10:30 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/guest-choreographer-auditions-2026-princeton-dance-festival-0",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-05",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Saturday Storytime!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 05",
+      "timeLabel": "10:30am - 11:00am",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14662004",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-09-05",
+      "startHour": 10
+    },
+    {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Sep 5",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-91",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-05",
+      "startHour": 13
+    },
+    {
+      "title": "Guest Choreographer Auditions for 2026 Princeton Dance Festival",
+      "source": "Princeton University",
+      "dateLabel": "Sep 5",
+      "timeLabel": "1:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/guest-choreographer-auditions-2026-princeton-dance-festival-1",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-05",
+      "startHour": 13
+    },
+    {
+      "title": "Baha'i Devotional Gathering",
+      "source": "Princeton University",
+      "dateLabel": "Sep 5",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/bahai-devotional-gathering-1",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-09-05",
+      "startHour": 14
+    },
+    {
+      "title": "Latino Graduate Student Association Welcome Barbeque",
+      "source": "Princeton University",
+      "dateLabel": "Sep 5",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/latino-graduate-student-association-welcome-barbeque",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-05",
+      "startHour": 15
+    },
+    {
+      "title": "Tango Practica",
+      "source": "Princeton University",
+      "dateLabel": "Sep 5",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/tango-practica-11",
+      "tags": [],
+      "isoDate": "2026-09-05",
+      "startHour": 16
+    },
+    {
+      "title": "First Practice - Quiz Bowl",
+      "source": "Princeton University",
+      "dateLabel": "Sep 5",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/first-practice-quiz-bowl",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-05",
+      "startHour": 16
+    },
+    {
+      "title": "Magic: The Gathering Club Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Sep 5",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/magic-gathering-club-meeting",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-09-05",
+      "startHour": 19
     }
   ],
   "days": [
-    {
-      "iso": "2026-08-29",
-      "label": "Aug 29",
-      "weekday": "Sat",
-      "count": 5
-    },
     {
       "iso": "2026-08-30",
       "label": "Aug 30",
@@ -1379,6 +1458,12 @@
       "label": "Sep 4",
       "weekday": "Fri",
       "count": 8
+    },
+    {
+      "iso": "2026-09-05",
+      "label": "Sep 5",
+      "weekday": "Sat",
+      "count": 11
     }
   ],
   "windowDays": 7,
