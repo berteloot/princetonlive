@@ -1,83 +1,15 @@
 {
-  "generatedAt": "2026-08-30T23:29:00.963Z",
+  "generatedAt": "2026-08-31T05:32:47.397Z",
   "weather": {
     "temperature": 67,
     "shortForecast": "Showers And Thunderstorms Likely",
-    "wind": "0 to 5 mph SW",
-    "detailedForecast": "Showers and thunderstorms likely. Mostly cloudy, with a low around 67. Southwest wind 0 to 5 mph. Chance of precipitation is 60%. New rainfall amounts less than a tenth of an inch possible.",
+    "wind": "0 mph ",
+    "detailedForecast": "Showers and thunderstorms likely. Mostly cloudy, with a low around 67. West wind around 0 mph. Chance of precipitation is 60%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Women's Soccer vs JMU",
-      "source": "Princeton University",
-      "dateLabel": "Aug 30",
-      "timeLabel": "11:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-jmu",
-      "tags": [],
-      "isoDate": "2026-08-30",
-      "startHour": 11
-    },
-    {
-      "title": "Worship Service in the University Chapel",
-      "source": "Princeton University",
-      "dateLabel": "Aug 30",
-      "timeLabel": "11:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/worship-service-university-chapel",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-08-30",
-      "startHour": 11
-    },
-    {
-      "title": "Open Studio",
-      "source": "Princeton University",
-      "dateLabel": "Aug 30",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/open-studio-85",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-30",
-      "startHour": 12
-    },
-    {
-      "title": "Concert: The Beagles with Joy Album Release",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 30",
-      "timeLabel": "2:00pm - 3:15pm",
-      "location": "Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/17175825",
-      "tags": [
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-08-30",
-      "startHour": 14
-    },
-    {
-      "title": "Opening Exercises",
-      "source": "Princeton University",
-      "dateLabel": "Aug 30",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/opening-exercises",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-30",
-      "startHour": 15
-    },
     {
       "title": "Kids: Playtime Fun: Music & Movement",
       "source": "Princeton Public Library",
@@ -292,6 +224,17 @@
       "startHour": 14
     },
     {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Sep 1",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge",
+      "tags": [],
+      "isoDate": "2026-09-01",
+      "startHour": 15
+    },
+    {
       "title": "Dance Placement Class",
       "source": "Princeton University",
       "dateLabel": "Sep 1",
@@ -304,17 +247,6 @@
         "rain",
         "practical"
       ],
-      "isoDate": "2026-09-01",
-      "startHour": 15
-    },
-    {
-      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
-      "source": "Princeton University",
-      "dateLabel": "Sep 1",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge",
-      "tags": [],
       "isoDate": "2026-09-01",
       "startHour": 15
     },
@@ -1142,6 +1074,21 @@
       "startHour": 16
     },
     {
+      "title": "Try on Theater: Directing Workshop",
+      "source": "Princeton University",
+      "dateLabel": "Sep 4",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/try-theater-directing-workshop",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-04",
+      "startHour": 18
+    },
+    {
       "title": "Try on Theater: Casting Workshops",
       "source": "Princeton University",
       "dateLabel": "Sep 4",
@@ -1153,21 +1100,6 @@
         "culture",
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-09-04",
-      "startHour": 18
-    },
-    {
-      "title": "Try on Theater: Directing Workshop",
-      "source": "Princeton University",
-      "dateLabel": "Sep 4",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/try-theater-directing-workshop",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-09-04",
       "startHour": 18
@@ -1336,15 +1268,93 @@
       ],
       "isoDate": "2026-09-05",
       "startHour": 19
+    },
+    {
+      "title": "Worship Service in the University Chapel",
+      "source": "Princeton University",
+      "dateLabel": "Sep 6",
+      "timeLabel": "11:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/worship-service-university-chapel-0",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-06",
+      "startHour": 11
+    },
+    {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Sep 6",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-92",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-06",
+      "startHour": 12
+    },
+    {
+      "title": "Writers Project Workshop",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 06",
+      "timeLabel": "12:30pm - 2:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/16308350",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-06",
+      "startHour": 12
+    },
+    {
+      "title": "Tentative: Open Studio TBC",
+      "source": "Princeton University",
+      "dateLabel": "Sep 6",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/tentative-open-studio-tbc-0",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-06",
+      "startHour": 13
+    },
+    {
+      "title": "Dodsworth",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 6",
+      "timeLabel": "1:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=dodsworth",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-06",
+      "startHour": 13
+    },
+    {
+      "title": "Princeton Poker Club Fall Kickoff Tournament",
+      "source": "Princeton University",
+      "dateLabel": "Sep 6",
+      "timeLabel": "6:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-poker-club-fall-kickoff-tournament",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-06",
+      "startHour": 18
     }
   ],
   "days": [
-    {
-      "iso": "2026-08-30",
-      "label": "Aug 30",
-      "weekday": "Sun",
-      "count": 5
-    },
     {
       "iso": "2026-08-31",
       "label": "Aug 31",
@@ -1380,6 +1390,12 @@
       "label": "Sep 5",
       "weekday": "Sat",
       "count": 11
+    },
+    {
+      "iso": "2026-09-06",
+      "label": "Sep 6",
+      "weekday": "Sun",
+      "count": 6
     }
   ],
   "windowDays": 7,
@@ -1401,13 +1417,13 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "24 events"
+      "detail": "23 events"
     },
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "24 calendar items"
+      "detail": "25 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
