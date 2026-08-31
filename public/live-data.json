@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-31T13:47:33.275Z",
+  "generatedAt": "2026-08-31T20:49:42.359Z",
   "weather": {
     "temperature": 82,
     "shortForecast": "Isolated Rain Showers",
-    "wind": "0 to 5 mph E",
-    "detailedForecast": "Isolated rain showers. Mostly cloudy, with a high near 82. East wind 0 to 5 mph. Chance of precipitation is 20%.",
+    "wind": "0 mph ",
+    "detailedForecast": "Isolated rain showers. Mostly cloudy, with a high near 82. Southeast wind around 0 mph. Chance of precipitation is 20%.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -54,34 +54,6 @@
       ],
       "isoDate": "2026-08-31",
       "startHour": 13
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 31",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-31",
-      "startHour": 16
-    },
-    {
-      "title": "The Marching Band",
-      "source": "Garden Theatre",
-      "dateLabel": "Aug 31",
-      "timeLabel": "4:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-31",
-      "startHour": 16
     },
     {
       "title": "Men's Soccer vs Portland",
@@ -224,17 +196,6 @@
       "startHour": 14
     },
     {
-      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
-      "source": "Princeton University",
-      "dateLabel": "Sep 1",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge",
-      "tags": [],
-      "isoDate": "2026-09-01",
-      "startHour": 15
-    },
-    {
       "title": "Dance Placement Class",
       "source": "Princeton University",
       "dateLabel": "Sep 1",
@@ -247,6 +208,17 @@
         "rain",
         "practical"
       ],
+      "isoDate": "2026-09-01",
+      "startHour": 15
+    },
+    {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Sep 1",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge",
+      "tags": [],
       "isoDate": "2026-09-01",
       "startHour": 15
     },
@@ -455,6 +427,19 @@
       ],
       "isoDate": "2026-09-02",
       "startHour": 10
+    },
+    {
+      "title": "Leighton Listens",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 2, 2026",
+      "timeLabel": "11:00 AM - 12:30 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8116",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-09-02",
+      "startHour": 11
     },
     {
       "title": "Kids: Baby Storytime",
@@ -1019,6 +1004,20 @@
       "startHour": 10
     },
     {
+      "title": "Flood and Storm Water Commission -Virtual Meeting- Cancelled",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 4, 2026",
+      "timeLabel": "10:00 AM - 11:30 AM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7993",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-04",
+      "startHour": 10
+    },
+    {
       "title": "Muslim Life Program Friday Jummah Congregational Prayer",
       "source": "Princeton University",
       "dateLabel": "Sep 4",
@@ -1074,21 +1073,6 @@
       "startHour": 16
     },
     {
-      "title": "Try on Theater: Directing Workshop",
-      "source": "Princeton University",
-      "dateLabel": "Sep 4",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/try-theater-directing-workshop",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-04",
-      "startHour": 18
-    },
-    {
       "title": "Try on Theater: Casting Workshops",
       "source": "Princeton University",
       "dateLabel": "Sep 4",
@@ -1100,6 +1084,21 @@
         "culture",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-09-04",
+      "startHour": 18
+    },
+    {
+      "title": "Try on Theater: Directing Workshop",
+      "source": "Princeton University",
+      "dateLabel": "Sep 4",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/try-theater-directing-workshop",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-09-04",
       "startHour": 18
@@ -1359,7 +1358,7 @@
       "iso": "2026-08-31",
       "label": "Aug 31",
       "weekday": "Mon",
-      "count": 10
+      "count": 8
     },
     {
       "iso": "2026-09-01",
@@ -1371,7 +1370,7 @@
       "iso": "2026-09-02",
       "label": "Sep 2",
       "weekday": "Wed",
-      "count": 20
+      "count": 21
     },
     {
       "iso": "2026-09-03",
@@ -1383,7 +1382,7 @@
       "iso": "2026-09-04",
       "label": "Sep 4",
       "weekday": "Fri",
-      "count": 8
+      "count": 9
     },
     {
       "iso": "2026-09-05",
@@ -1423,13 +1422,13 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "25 calendar items"
+      "detail": "28 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "67 showtimes"
+      "detail": "65 showtimes"
     }
   ]
 }
