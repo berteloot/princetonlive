@@ -1,17 +1,24 @@
 {
-  "generatedAt": "2026-09-01T18:29:41.041Z",
+  "generatedAt": "2026-09-01T23:17:48.349Z",
   "weather": {
-    "temperature": 88,
-    "shortForecast": "Chance Showers And Thunderstorms",
-    "wind": "5 mph W",
-    "detailedForecast": "A chance of showers and thunderstorms. Some of the storms could be severe and produce heavy rain. Partly sunny, with a high near 88. West wind around 5 mph. Chance of precipitation is 40%. New rainfall amounts less than a tenth of an inch possible.",
+    "temperature": 67,
+    "shortForecast": "Scattered Showers And Thunderstorms then Mostly Cloudy",
+    "wind": "0 to 5 mph NE",
+    "detailedForecast": "Scattered showers and thunderstorms before 11pm. Some of the storms could be severe. Mostly cloudy, with a low around 67. Northeast wind 0 to 5 mph. Chance of precipitation is 50%. New rainfall amounts between a tenth and quarter of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.865b2d8c0f9e4092b89fbf381d6e9f97fd3aca8b.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c5087f9f01ee9d5cc13bca1747b7b1b098944e08.001.1",
+      "event": "Severe Thunderstorm Watch",
+      "headline": "Severe Thunderstorm Watch issued September 1 at 4:35PM EDT until September 2 at 12:00AM EDT by NWS Mount Holly NJ",
+      "severity": "Severe",
+      "url": null
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8e3e6bf27e717788141218e15372e3d0ac227c28.001.1",
       "event": "Heat Advisory",
-      "headline": "Heat Advisory issued September 1 at 2:30AM EDT until September 1 at 8:00PM EDT by NWS Mount Holly NJ",
+      "headline": "Heat Advisory issued September 1 at 3:15PM EDT until September 1 at 8:00PM EDT by NWS Mount Holly NJ",
       "severity": "Moderate",
       "url": null
     }
@@ -51,33 +58,6 @@
       "startHour": 13
     },
     {
-      "title": "Food Insecurity Task Force: Arm in Arm",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 1, 2026",
-      "timeLabel": "01:00 PM - 07:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7749",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-01",
-      "startHour": 13
-    },
-    {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Redding Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 1, 2026",
-      "timeLabel": "02:00 PM - 02:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7390",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-09-01",
-      "startHour": 14
-    },
-    {
       "title": "Dance Placement Class",
       "source": "Princeton University",
       "dateLabel": "Sep 1",
@@ -105,30 +85,17 @@
       "startHour": 15
     },
     {
-      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At YMCA",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 1, 2026",
-      "timeLabel": "03:15 PM - 04:15 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7130",
+      "title": "Progressive Coalition Open House",
+      "source": "Princeton University",
+      "dateLabel": "Sep 1",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/progressive-coalition-open-house",
       "tags": [
-        "practical"
+        "new"
       ],
       "isoDate": "2026-09-01",
-      "startHour": 15
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At Redding Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 1, 2026",
-      "timeLabel": "03:30 PM - 04:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7544",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-01",
-      "startHour": 15
+      "startHour": 16
     },
     {
       "title": "Catherine Project Weekly Book Discussion Series",
@@ -154,34 +121,6 @@
       "tags": [
         "family",
         "practical"
-      ],
-      "isoDate": "2026-09-01",
-      "startHour": 16
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 1",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-01",
-      "startHour": 16
-    },
-    {
-      "title": "The Marching Band",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 1",
-      "timeLabel": "4:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
-      "tags": [
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-09-01",
       "startHour": 16
@@ -213,34 +152,6 @@
       ],
       "isoDate": "2026-09-01",
       "startHour": 18
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 1",
-      "timeLabel": "7:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-01",
-      "startHour": 19
-    },
-    {
-      "title": "The Marching Band",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 1",
-      "timeLabel": "7:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-01",
-      "startHour": 19
     },
     {
       "title": "Liars' Club Opening Night",
@@ -601,6 +512,19 @@
       "startHour": 12
     },
     {
+      "title": "After Noon Concert Series",
+      "source": "Princeton University",
+      "dateLabel": "Sep 3",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/after-noon-concert-series",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 12
+    },
+    {
       "title": "Open Studio",
       "source": "Princeton University",
       "dateLabel": "Sep 3",
@@ -672,6 +596,22 @@
       "startHour": 16
     },
     {
+      "title": "Performance Opportunity Workshops: Explore Spring 2027 Senior Dance Projects",
+      "source": "Princeton University",
+      "dateLabel": "Sep 3",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/performance-opportunity-workshops-explore-spring-2027-senior-dance-projects-0",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 16
+    },
+    {
       "title": "Inquisition Trials and the Table: The Culinary Legacy of the Sephardic Jews from Spain to the Americas",
       "source": "Princeton University",
       "dateLabel": "Sep 3",
@@ -681,22 +621,6 @@
       "tags": [
         "new",
         "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-03",
-      "startHour": 16
-    },
-    {
-      "title": "Performance Opportunity Workshops: Explore Spring 2027 Senior Dance Projects",
-      "source": "Princeton University",
-      "dateLabel": "Sep 3",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/performance-opportunity-workshops-explore-spring-2027-senior-dance-projects-0",
-      "tags": [
-        "new",
         "culture",
         "rain",
         "practical"
@@ -1338,9 +1262,7 @@
       "timeLabel": "11:00 AM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/worship-service-university-chapel-0",
-      "tags": [
-        "new"
-      ],
+      "tags": [],
       "isoDate": "2026-09-06",
       "startHour": 11
     },
@@ -1671,7 +1593,7 @@
       "iso": "2026-09-01",
       "label": "Sep 1",
       "weekday": "Tue",
-      "count": 17
+      "count": 10
     },
     {
       "iso": "2026-09-02",
@@ -1683,7 +1605,7 @@
       "iso": "2026-09-03",
       "label": "Sep 3",
       "weekday": "Thu",
-      "count": 25
+      "count": 26
     },
     {
       "iso": "2026-09-04",
@@ -1717,7 +1639,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Chance Showers And Thunderstorms, 88F"
+      "detail": "Scattered Showers And Thunderstorms then Mostly Cloudy, 67F"
     },
     {
       "name": "Princeton University Events",
@@ -1735,13 +1657,13 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "32 calendar items"
+      "detail": "28 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "96 showtimes"
+      "detail": "92 showtimes"
     }
   ]
 }
