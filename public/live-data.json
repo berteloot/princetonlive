@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-01T14:08:51.034Z",
+  "generatedAt": "2026-09-01T18:29:41.041Z",
   "weather": {
     "temperature": 88,
-    "shortForecast": "Partly Sunny then Chance Showers And Thunderstorms",
-    "wind": "5 mph SW",
-    "detailedForecast": "A chance of showers and thunderstorms after noon. Some of the storms could be severe and produce heavy rain. Partly sunny, with a high near 88. Southwest wind around 5 mph. Chance of precipitation is 40%. New rainfall amounts between a tenth and quarter of an inch possible.",
+    "shortForecast": "Chance Showers And Thunderstorms",
+    "wind": "5 mph W",
+    "detailedForecast": "A chance of showers and thunderstorms. Some of the storms could be severe and produce heavy rain. Partly sunny, with a high near 88. West wind around 5 mph. Chance of precipitation is 40%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
@@ -46,20 +46,6 @@
         "new",
         "culture",
         "rain"
-      ],
-      "isoDate": "2026-09-01",
-      "startHour": 13
-    },
-    {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Spruce Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 1, 2026",
-      "timeLabel": "01:00 PM - 01:45 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7338",
-      "tags": [
-        "family",
-        "practical"
       ],
       "isoDate": "2026-09-01",
       "startHour": 13
@@ -149,7 +135,7 @@
       "source": "Princeton Public Library",
       "dateLabel": "Sep 01",
       "timeLabel": "4:00pm - 5:30pm",
-      "location": "Princeton Public Library - Tower Room",
+      "location": "Zoom",
       "url": "https://princetonlibrary.libnet.info/event/16570103",
       "tags": [
         "family",
@@ -733,6 +719,21 @@
       "startHour": 16
     },
     {
+      "title": "Teens: Craft, Chat and Chill",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 03",
+      "timeLabel": "4:30pm - 5:30pm",
+      "location": "Princeton Public Library",
+      "url": "https://princetonlibrary.libnet.info/event/17311346",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 16
+    },
+    {
       "title": "Celebrating Dorothy Maynor",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 03",
@@ -966,6 +967,34 @@
       "startHour": 15
     },
     {
+      "title": "The Salt Path",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 4",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-04",
+      "startHour": 16
+    },
+    {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 4",
+      "timeLabel": "4:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-04",
+      "startHour": 16
+    },
+    {
       "title": "Guest Choreographer Auditions for 2026 Princeton Dance Festival",
       "source": "Princeton University",
       "dateLabel": "Sep 4",
@@ -1020,6 +1049,34 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-jmu",
       "tags": [],
+      "isoDate": "2026-09-04",
+      "startHour": 19
+    },
+    {
+      "title": "The Salt Path",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 4",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-04",
+      "startHour": 19
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 4",
+      "timeLabel": "7:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
       "isoDate": "2026-09-04",
       "startHour": 19
     },
@@ -1098,6 +1155,34 @@
       "startHour": 13
     },
     {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 5",
+      "timeLabel": "1:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-05",
+      "startHour": 13
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 5",
+      "timeLabel": "1:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-05",
+      "startHour": 13
+    },
+    {
       "title": "Guest Choreographer Auditions for 2026 Princeton Dance Festival",
       "source": "Princeton University",
       "dateLabel": "Sep 5",
@@ -1164,6 +1249,34 @@
       "startHour": 16
     },
     {
+      "title": "The Salt Path",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 5",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-05",
+      "startHour": 16
+    },
+    {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 5",
+      "timeLabel": "4:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-05",
+      "startHour": 16
+    },
+    {
       "title": "First Practice - Quiz Bowl",
       "source": "Princeton University",
       "dateLabel": "Sep 5",
@@ -1185,6 +1298,34 @@
       "url": "https://www.princeton.edu/events/2026/magic-gathering-club-meeting",
       "tags": [
         "new",
+        "rain"
+      ],
+      "isoDate": "2026-09-05",
+      "startHour": 19
+    },
+    {
+      "title": "The Salt Path",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 5",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-05",
+      "startHour": 19
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 5",
+      "timeLabel": "7:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
         "rain"
       ],
       "isoDate": "2026-09-05",
@@ -1262,6 +1403,48 @@
       "startHour": 13
     },
     {
+      "title": "The Salt Path",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 6",
+      "timeLabel": "1:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-06",
+      "startHour": 13
+    },
+    {
+      "title": "The Salt Path",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 6",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-06",
+      "startHour": 16
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 6",
+      "timeLabel": "4:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-06",
+      "startHour": 16
+    },
+    {
       "title": "Princeton Poker Club Fall Kickoff Tournament",
       "source": "Princeton University",
       "dateLabel": "Sep 6",
@@ -1273,6 +1456,34 @@
       ],
       "isoDate": "2026-09-06",
       "startHour": 18
+    },
+    {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 6",
+      "timeLabel": "7:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-06",
+      "startHour": 19
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 6",
+      "timeLabel": "7:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-06",
+      "startHour": 19
     },
     {
       "title": "University Holiday - Labor Day",
@@ -1312,6 +1523,62 @@
       ],
       "isoDate": "2026-09-07",
       "startHour": 10
+    },
+    {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 7",
+      "timeLabel": "1:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-07",
+      "startHour": 13
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 7",
+      "timeLabel": "1:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-07",
+      "startHour": 13
+    },
+    {
+      "title": "The Salt Path",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 7",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-07",
+      "startHour": 16
+    },
+    {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 7",
+      "timeLabel": "4:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-07",
+      "startHour": 16
     },
     {
       "title": "Civic Leadership Council (Pace) Weekly Meeting",
@@ -1369,6 +1636,34 @@
       ],
       "isoDate": "2026-09-07",
       "startHour": 19
+    },
+    {
+      "title": "The Salt Path",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 7",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-07",
+      "startHour": 19
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 7",
+      "timeLabel": "7:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-07",
+      "startHour": 19
     }
   ],
   "days": [
@@ -1376,7 +1671,7 @@
       "iso": "2026-09-01",
       "label": "Sep 1",
       "weekday": "Tue",
-      "count": 18
+      "count": 17
     },
     {
       "iso": "2026-09-02",
@@ -1388,31 +1683,31 @@
       "iso": "2026-09-03",
       "label": "Sep 3",
       "weekday": "Thu",
-      "count": 24
+      "count": 25
     },
     {
       "iso": "2026-09-04",
       "label": "Sep 4",
       "weekday": "Fri",
-      "count": 9
+      "count": 13
     },
     {
       "iso": "2026-09-05",
       "label": "Sep 5",
       "weekday": "Sat",
-      "count": 12
+      "count": 18
     },
     {
       "iso": "2026-09-06",
       "label": "Sep 6",
       "weekday": "Sun",
-      "count": 6
+      "count": 11
     },
     {
       "iso": "2026-09-07",
       "label": "Sep 7",
       "weekday": "Mon",
-      "count": 7
+      "count": 13
     }
   ],
   "windowDays": 7,
@@ -1422,7 +1717,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Partly Sunny then Chance Showers And Thunderstorms, 88F"
+      "detail": "Chance Showers And Thunderstorms, 88F"
     },
     {
       "name": "Princeton University Events",
@@ -1434,19 +1729,19 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "25 events"
+      "detail": "26 events"
     },
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "33 calendar items"
+      "detail": "32 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "63 showtimes"
+      "detail": "96 showtimes"
     }
   ]
 }
