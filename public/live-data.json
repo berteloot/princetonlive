@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-01T08:37:52.920Z",
+  "generatedAt": "2026-09-01T14:08:51.034Z",
   "weather": {
-    "temperature": 69,
-    "shortForecast": "Chance Showers And Thunderstorms",
-    "wind": "0 mph ",
-    "detailedForecast": "A chance of showers and thunderstorms. Mostly cloudy, with a low around 69. Southwest wind around 0 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
+    "temperature": 88,
+    "shortForecast": "Partly Sunny then Chance Showers And Thunderstorms",
+    "wind": "5 mph SW",
+    "detailedForecast": "A chance of showers and thunderstorms after noon. Some of the storms could be severe and produce heavy rain. Partly sunny, with a high near 88. Southwest wind around 5 mph. Chance of precipitation is 40%. New rainfall amounts between a tenth and quarter of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
@@ -885,6 +885,19 @@
       "startHour": 20
     },
     {
+      "title": "SpaceXAI x HackPrinceton: Grok Bot Build Night",
+      "source": "Princeton University",
+      "dateLabel": "Sep 3",
+      "timeLabel": "9:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/spacexai-x-hackprinceton-grok-bot-build-night",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 21
+    },
+    {
       "title": "Tentative: Open Studio TBC",
       "source": "Princeton University",
       "dateLabel": "Sep 4",
@@ -1114,6 +1127,19 @@
       "startHour": 14
     },
     {
+      "title": "Welcome Talk on Socially Impactful Careers, with Guest Speaker Matt Reardon!",
+      "source": "Princeton University",
+      "dateLabel": "Sep 5",
+      "timeLabel": "2:45 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/welcome-talk-socially-impactful-careers-guest-speaker-matt-reardon",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-05",
+      "startHour": 14
+    },
+    {
       "title": "Latino Graduate Student Association Welcome Barbeque",
       "source": "Princeton University",
       "dateLabel": "Sep 5",
@@ -1273,6 +1299,21 @@
       "startHour": 0
     },
     {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Sep 7",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-93",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-07",
+      "startHour": 10
+    },
+    {
       "title": "Civic Leadership Council (Pace) Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Sep 7",
@@ -1347,7 +1388,7 @@
       "iso": "2026-09-03",
       "label": "Sep 3",
       "weekday": "Thu",
-      "count": 23
+      "count": 24
     },
     {
       "iso": "2026-09-04",
@@ -1359,7 +1400,7 @@
       "iso": "2026-09-05",
       "label": "Sep 5",
       "weekday": "Sat",
-      "count": 11
+      "count": 12
     },
     {
       "iso": "2026-09-06",
@@ -1371,7 +1412,7 @@
       "iso": "2026-09-07",
       "label": "Sep 7",
       "weekday": "Mon",
-      "count": 6
+      "count": 7
     }
   ],
   "windowDays": 7,
@@ -1381,7 +1422,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Chance Showers And Thunderstorms, 69F"
+      "detail": "Partly Sunny then Chance Showers And Thunderstorms, 88F"
     },
     {
       "name": "Princeton University Events",
