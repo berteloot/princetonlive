@@ -1,99 +1,23 @@
 {
-  "generatedAt": "2026-09-01T00:37:02.969Z",
+  "generatedAt": "2026-09-01T08:37:52.920Z",
   "weather": {
     "temperature": 69,
     "shortForecast": "Chance Showers And Thunderstorms",
-    "wind": "0 to 5 mph S",
-    "detailedForecast": "A chance of showers and thunderstorms before 4am, then a slight chance of showers and thunderstorms. Mostly cloudy, with a low around 69. South wind 0 to 5 mph. Chance of precipitation is 30%. New rainfall amounts between a tenth and quarter of an inch possible.",
+    "wind": "0 mph ",
+    "detailedForecast": "A chance of showers and thunderstorms. Mostly cloudy, with a low around 69. Southwest wind around 0 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
-  "alerts": [],
+  "alerts": [
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.865b2d8c0f9e4092b89fbf381d6e9f97fd3aca8b.001.1",
+      "event": "Heat Advisory",
+      "headline": "Heat Advisory issued September 1 at 2:30AM EDT until September 1 at 8:00PM EDT by NWS Mount Holly NJ",
+      "severity": "Moderate",
+      "url": null
+    }
+  ],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Kids: Playtime Fun: Music & Movement",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 31",
-      "timeLabel": "11:00am - 12:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14760891",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-08-31",
-      "startHour": 11
-    },
-    {
-      "title": "English Conversation (in person)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 31",
-      "timeLabel": "12:00pm - 1:30pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/16932154",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-08-31",
-      "startHour": 12
-    },
-    {
-      "title": "Open Studio",
-      "source": "Princeton University",
-      "dateLabel": "Aug 31",
-      "timeLabel": "1:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/open-studio-86",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-31",
-      "startHour": 13
-    },
-    {
-      "title": "Men's Soccer vs Portland",
-      "source": "Princeton University",
-      "dateLabel": "Aug 31",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-portland",
-      "tags": [],
-      "isoDate": "2026-08-31",
-      "startHour": 19
-    },
-    {
-      "title": "Princeton Tango Club Weekly Classes",
-      "source": "Princeton University",
-      "dateLabel": "Aug 31",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-tango-club-weekly-classes",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-08-31",
-      "startHour": 19
-    },
-    {
-      "title": "English Conversation (Virtual)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Aug 31",
-      "timeLabel": "7:00pm - 8:30pm",
-      "location": "Virtual - Google Meet",
-      "url": "https://princetonlibrary.libnet.info/event/16624386",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-08-31",
-      "startHour": 19
-    },
     {
       "title": "Kids: Playtime Fun: Music & Movement",
       "source": "Princeton Public Library",
@@ -221,12 +145,12 @@
       "startHour": 15
     },
     {
-      "title": "Mercer County Community ID",
+      "title": "Catherine Project Weekly Book Discussion Series",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 01",
-      "timeLabel": "4:00pm - 6:30pm",
-      "location": "Princeton Public Library - Conference Room",
-      "url": "https://princetonlibrary.libnet.info/event/15432408",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/16570103",
       "tags": [
         "family",
         "practical"
@@ -235,12 +159,12 @@
       "startHour": 16
     },
     {
-      "title": "Catherine Project Weekly Book Discussion Series",
+      "title": "Mercer County Community ID",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 01",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/16570103",
+      "timeLabel": "4:00pm - 6:30pm",
+      "location": "Princeton Public Library - Conference Room",
+      "url": "https://princetonlibrary.libnet.info/event/15432408",
       "tags": [
         "family",
         "practical"
@@ -1323,15 +1247,90 @@
       ],
       "isoDate": "2026-09-06",
       "startHour": 18
+    },
+    {
+      "title": "University Holiday - Labor Day",
+      "source": "Princeton University",
+      "dateLabel": "Sep 7",
+      "timeLabel": "12:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/university-holiday-labor-day",
+      "tags": [],
+      "isoDate": "2026-09-07",
+      "startHour": 0
+    },
+    {
+      "title": "Labor Day - Municipal Offices Closed",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 7, 2026",
+      "timeLabel": "12:00 AM - 11:59 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=6372",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-09-07",
+      "startHour": 0
+    },
+    {
+      "title": "Civic Leadership Council (Pace) Weekly Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Sep 7",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/civic-leadership-council-pace-weekly-meeting",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-07",
+      "startHour": 16
+    },
+    {
+      "title": "YDSA Kickoff Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Sep 7",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/ydsa-kickoff-meeting",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-09-07",
+      "startHour": 17
+    },
+    {
+      "title": "Princeton Tango Club Weekly Classes",
+      "source": "Princeton University",
+      "dateLabel": "Sep 7",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-tango-club-weekly-classes-0",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-07",
+      "startHour": 19
+    },
+    {
+      "title": "What is Philosophy and What is its Value?",
+      "source": "Princeton University",
+      "dateLabel": "Sep 7",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/what-philosophy-and-what-its-value",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-07",
+      "startHour": 19
     }
   ],
   "days": [
-    {
-      "iso": "2026-08-31",
-      "label": "Aug 31",
-      "weekday": "Mon",
-      "count": 6
-    },
     {
       "iso": "2026-09-01",
       "label": "Sep 1",
@@ -1367,6 +1366,12 @@
       "label": "Sep 6",
       "weekday": "Sun",
       "count": 6
+    },
+    {
+      "iso": "2026-09-07",
+      "label": "Sep 7",
+      "weekday": "Mon",
+      "count": 6
     }
   ],
   "windowDays": 7,
@@ -1388,13 +1393,13 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "23 events"
+      "detail": "25 events"
     },
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "28 calendar items"
+      "detail": "33 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
