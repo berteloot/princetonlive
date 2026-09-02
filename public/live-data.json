@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-02T11:17:26.647Z",
+  "generatedAt": "2026-09-02T16:33:44.364Z",
   "weather": {
-    "temperature": 76,
-    "shortForecast": "Patchy Fog then Slight Chance Rain Showers",
+    "temperature": 75,
+    "shortForecast": "Chance Rain Showers",
     "wind": "5 mph E",
-    "detailedForecast": "Patchy fog before 10am, then a slight chance of rain showers. Mostly cloudy, with a high near 76. East wind around 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
+    "detailedForecast": "A chance of rain showers. Cloudy, with a high near 75. East wind around 5 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
@@ -30,19 +30,6 @@
       ],
       "isoDate": "2026-09-02",
       "startHour": 8
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Mobile Food Pantry",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 2, 2026",
-      "timeLabel": "09:00 AM - 11:30 AM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7596",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-02",
-      "startHour": 9
     },
     {
       "title": "Drop in and Knit",
@@ -72,19 +59,6 @@
       ],
       "isoDate": "2026-09-02",
       "startHour": 10
-    },
-    {
-      "title": "Leighton Listens",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 2, 2026",
-      "timeLabel": "11:00 AM - 12:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8116",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-02",
-      "startHour": 11
     },
     {
       "title": "Kids: Baby Storytime",
@@ -702,6 +676,19 @@
       ],
       "isoDate": "2026-09-04",
       "startHour": 10
+    },
+    {
+      "title": "Beyond College Career Mentorship Infosession",
+      "source": "Princeton University",
+      "dateLabel": "Sep 4",
+      "timeLabel": "11:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/beyond-college-career-mentorship-infosession",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-09-04",
+      "startHour": 11
     },
     {
       "title": "Muslim Life Program Friday Jummah Congregational Prayer",
@@ -1663,6 +1650,34 @@
       "startHour": 16
     },
     {
+      "title": "Black Pre-Law Society's Open House",
+      "source": "Princeton University",
+      "dateLabel": "Sep 8",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/black-pre-law-societys-open-house",
+      "tags": [
+        "new",
+        "practical"
+      ],
+      "isoDate": "2026-09-08",
+      "startHour": 16
+    },
+    {
+      "title": "Welcome Back PPL Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Sep 8",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/welcome-back-ppl-meeting",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-09-08",
+      "startHour": 16
+    },
+    {
       "title": "Princeton Students in Quantum Weekly Workshop",
       "source": "Princeton University",
       "dateLabel": "Sep 8",
@@ -1780,7 +1795,7 @@
       "iso": "2026-09-02",
       "label": "Sep 2",
       "weekday": "Wed",
-      "count": 21
+      "count": 19
     },
     {
       "iso": "2026-09-03",
@@ -1792,7 +1807,7 @@
       "iso": "2026-09-04",
       "label": "Sep 4",
       "weekday": "Fri",
-      "count": 13
+      "count": 14
     },
     {
       "iso": "2026-09-05",
@@ -1816,7 +1831,7 @@
       "iso": "2026-09-08",
       "label": "Sep 8",
       "weekday": "Tue",
-      "count": 24
+      "count": 26
     }
   ],
   "windowDays": 7,
@@ -1826,7 +1841,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Patchy Fog then Slight Chance Rain Showers, 76F"
+      "detail": "Chance Rain Showers, 75F"
     },
     {
       "name": "Princeton University Events",
@@ -1844,7 +1859,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "34 calendar items"
+      "detail": "32 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
