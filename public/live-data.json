@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-09-02T16:33:44.364Z",
+  "generatedAt": "2026-09-02T21:02:55.371Z",
   "weather": {
     "temperature": 75,
-    "shortForecast": "Chance Rain Showers",
+    "shortForecast": "Slight Chance Rain Showers",
     "wind": "5 mph E",
-    "detailedForecast": "A chance of rain showers. Cloudy, with a high near 75. East wind around 5 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
+    "detailedForecast": "A slight chance of rain showers. Cloudy, with a high near 75. East wind around 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.11ee71df42f8147b7b142a282ecc2acce8f804d8.002.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c2e87cc1fc92cd941c24b71439e79cd22d523f66.003.1",
       "event": "Heat Advisory",
-      "headline": "Heat Advisory issued September 2 at 3:53AM EDT until September 3 at 8:00PM EDT by NWS Mount Holly NJ",
+      "headline": "Heat Advisory issued September 2 at 2:10PM EDT until September 3 at 8:00PM EDT by NWS Mount Holly NJ",
       "severity": "Moderate",
       "url": null
     }
@@ -118,47 +118,6 @@
       "startHour": 13
     },
     {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 2",
-      "timeLabel": "1:10 PM (OC)",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-02",
-      "startHour": 13
-    },
-    {
-      "title": "The Marching Band",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 2",
-      "timeLabel": "1:20 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-02",
-      "startHour": 13
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Alliance Church",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 2, 2026",
-      "timeLabel": "02:30 PM - 04:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7234",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-02",
-      "startHour": 14
-    },
-    {
       "title": "English Conversation (virtual)",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 02",
@@ -167,34 +126,6 @@
       "url": "https://princetonlibrary.libnet.info/event/16837152",
       "tags": [
         "practical"
-      ],
-      "isoDate": "2026-09-02",
-      "startHour": 16
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 2",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-02",
-      "startHour": 16
-    },
-    {
-      "title": "The Marching Band",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 2",
-      "timeLabel": "4:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
-      "tags": [
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-09-02",
       "startHour": 16
@@ -1369,12 +1300,12 @@
       "startHour": 17
     },
     {
-      "title": "What is Philosophy and What is its Value?",
+      "title": "Princeton Tango Club Weekly Classes",
       "source": "Princeton University",
       "dateLabel": "Sep 7",
       "timeLabel": "7:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/what-philosophy-and-what-its-value",
+      "url": "https://www.princeton.edu/events/2026/princeton-tango-club-weekly-classes-0",
       "tags": [
         "new",
         "culture",
@@ -1384,12 +1315,12 @@
       "startHour": 19
     },
     {
-      "title": "Princeton Tango Club Weekly Classes",
+      "title": "What is Philosophy and What is its Value?",
       "source": "Princeton University",
       "dateLabel": "Sep 7",
       "timeLabel": "7:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-tango-club-weekly-classes-0",
+      "url": "https://www.princeton.edu/events/2026/what-philosophy-and-what-its-value",
       "tags": [
         "new",
         "culture",
@@ -1795,7 +1726,7 @@
       "iso": "2026-09-02",
       "label": "Sep 2",
       "weekday": "Wed",
-      "count": 19
+      "count": 14
     },
     {
       "iso": "2026-09-03",
@@ -1841,7 +1772,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Chance Rain Showers, 75F"
+      "detail": "Slight Chance Rain Showers, 75F"
     },
     {
       "name": "Princeton University Events",
@@ -1859,13 +1790,13 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "32 calendar items"
+      "detail": "31 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "92 showtimes"
+      "detail": "88 showtimes"
     }
   ]
 }
