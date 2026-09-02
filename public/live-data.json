@@ -1,13 +1,21 @@
 {
-  "generatedAt": "2026-09-02T04:31:55.378Z",
+  "generatedAt": "2026-09-02T11:17:26.647Z",
   "weather": {
-    "temperature": 67,
-    "shortForecast": "Mostly Cloudy",
-    "wind": "0 to 5 mph NE",
-    "detailedForecast": "Mostly cloudy, with a low around 67. Northeast wind 0 to 5 mph. New rainfall amounts less than a tenth of an inch possible.",
+    "temperature": 76,
+    "shortForecast": "Patchy Fog then Slight Chance Rain Showers",
+    "wind": "5 mph E",
+    "detailedForecast": "Patchy fog before 10am, then a slight chance of rain showers. Mostly cloudy, with a high near 76. East wind around 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
-  "alerts": [],
+  "alerts": [
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.11ee71df42f8147b7b142a282ecc2acce8f804d8.002.1",
+      "event": "Heat Advisory",
+      "headline": "Heat Advisory issued September 2 at 3:53AM EDT until September 3 at 8:00PM EDT by NWS Mount Holly NJ",
+      "severity": "Moderate",
+      "url": null
+    }
+  ],
   "alertsAvailable": true,
   "events": [
     {
@@ -1818,7 +1826,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Cloudy, 67F"
+      "detail": "Patchy Fog then Slight Chance Rain Showers, 76F"
     },
     {
       "name": "Princeton University Events",
