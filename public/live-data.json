@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-03T11:13:09.790Z",
+  "generatedAt": "2026-09-03T16:24:42.101Z",
   "weather": {
     "temperature": 88,
-    "shortForecast": "Chance Showers And Thunderstorms",
-    "wind": "5 mph SW",
-    "detailedForecast": "A chance of showers and thunderstorms. Some of the storms could produce heavy rain. Partly sunny, with a high near 88. Southwest wind around 5 mph. Chance of precipitation is 50%. New rainfall amounts between a quarter and half of an inch possible.",
+    "shortForecast": "Slight Chance Showers And Thunderstorms",
+    "wind": "5 mph W",
+    "detailedForecast": "A slight chance of showers and thunderstorms after 5pm. Partly sunny, with a high near 88. West wind around 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
@@ -830,6 +830,20 @@
       "startHour": 19
     },
     {
+      "title": "Liars' Club meeting",
+      "source": "Princeton University",
+      "dateLabel": "Sep 5",
+      "timeLabel": "9:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/liars-club-meeting",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-09-05",
+      "startHour": 21
+    },
+    {
       "title": "Worship Service in the University Chapel",
       "source": "Princeton University",
       "dateLabel": "Sep 6",
@@ -1104,12 +1118,12 @@
       "startHour": 17
     },
     {
-      "title": "What is Philosophy and What is its Value?",
+      "title": "Princeton Tango Club Weekly Classes",
       "source": "Princeton University",
       "dateLabel": "Sep 7",
       "timeLabel": "7:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/what-philosophy-and-what-its-value",
+      "url": "https://www.princeton.edu/events/2026/princeton-tango-club-weekly-classes-0",
       "tags": [
         "new",
         "culture",
@@ -1119,12 +1133,12 @@
       "startHour": 19
     },
     {
-      "title": "Princeton Tango Club Weekly Classes",
+      "title": "What is Philosophy and What is its Value?",
       "source": "Princeton University",
       "dateLabel": "Sep 7",
       "timeLabel": "7:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-tango-club-weekly-classes-0",
+      "url": "https://www.princeton.edu/events/2026/what-philosophy-and-what-its-value",
       "tags": [
         "new",
         "culture",
@@ -1385,6 +1399,20 @@
       "startHour": 16
     },
     {
+      "title": "Princeton Students in Quantum Weekly Workshop",
+      "source": "Princeton University",
+      "dateLabel": "Sep 8",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-students-quantum-weekly-workshop",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-09-08",
+      "startHour": 16
+    },
+    {
       "title": "Black Pre-Law Society's Open House",
       "source": "Princeton University",
       "dateLabel": "Sep 8",
@@ -1413,18 +1441,17 @@
       "startHour": 16
     },
     {
-      "title": "Princeton Students in Quantum Weekly Workshop",
+      "title": "Princeton Club Swim Info Meeting",
       "source": "Princeton University",
       "dateLabel": "Sep 8",
-      "timeLabel": "4:30 PM",
+      "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-students-quantum-weekly-workshop",
+      "url": "https://www.princeton.edu/events/2026/princeton-club-swim-info-meeting",
       "tags": [
-        "new",
         "rain"
       ],
       "isoDate": "2026-09-08",
-      "startHour": 16
+      "startHour": 17
     },
     {
       "title": "Opus Open House",
@@ -1436,19 +1463,6 @@
       "tags": [
         "new",
         "culture"
-      ],
-      "isoDate": "2026-09-08",
-      "startHour": 17
-    },
-    {
-      "title": "Princeton Club Swim Info Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Sep 8",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-club-swim-info-meeting",
-      "tags": [
-        "rain"
       ],
       "isoDate": "2026-09-08",
       "startHour": 17
@@ -1548,6 +1562,20 @@
       "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7597",
       "tags": [
         "practical"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 9
+    },
+    {
+      "title": "AI Resource Workshop",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "9:30 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/ai-resource-workshop",
+      "tags": [
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-09-09",
       "startHour": 9
@@ -1752,7 +1780,7 @@
       "source": "Princeton Public Library",
       "dateLabel": "Sep 09",
       "timeLabel": "4:00pm - 5:30pm",
-      "location": "Virtual - Google Meet",
+      "location": "Virtual",
       "url": "https://princetonlibrary.libnet.info/event/16837153",
       "tags": [
         "practical"
@@ -1813,19 +1841,6 @@
       "startHour": 16
     },
     {
-      "title": "Academic Success Today Mentor Orientation",
-      "source": "Princeton University",
-      "dateLabel": "Sep 9",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/academic-success-today-mentor-orientation",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 17
-    },
-    {
       "title": "Premed 101",
       "source": "Princeton University",
       "dateLabel": "Sep 9",
@@ -1864,6 +1879,19 @@
         "new",
         "culture",
         "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 17
+    },
+    {
+      "title": "Academic Success Today Mentor Orientation",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/academic-success-today-mentor-orientation",
+      "tags": [
+        "new"
       ],
       "isoDate": "2026-09-09",
       "startHour": 17
@@ -1984,7 +2012,7 @@
       "iso": "2026-09-05",
       "label": "Sep 5",
       "weekday": "Sat",
-      "count": 18
+      "count": 19
     },
     {
       "iso": "2026-09-06",
@@ -2008,7 +2036,7 @@
       "iso": "2026-09-09",
       "label": "Sep 9",
       "weekday": "Wed",
-      "count": 32
+      "count": 33
     }
   ],
   "windowDays": 7,
@@ -2018,7 +2046,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Chance Showers And Thunderstorms, 88F"
+      "detail": "Slight Chance Showers And Thunderstorms, 88F"
     },
     {
       "name": "Princeton University Events",
