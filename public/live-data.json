@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-02T23:18:20.490Z",
+  "generatedAt": "2026-09-03T04:22:10.512Z",
   "weather": {
     "temperature": 67,
     "shortForecast": "Showers And Thunderstorms Likely",
-    "wind": "0 to 5 mph S",
-    "detailedForecast": "A chance of rain showers before 11pm, then showers and thunderstorms likely. Mostly cloudy, with a low around 67. South wind 0 to 5 mph. Chance of precipitation is 60%. New rainfall amounts between a tenth and quarter of an inch possible.",
+    "wind": "0 mph ",
+    "detailedForecast": "Showers and thunderstorms likely. Mostly cloudy, with a low around 67. South wind around 0 mph. Chance of precipitation is 60%. New rainfall amounts between a tenth and quarter of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
@@ -18,161 +18,6 @@
   ],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Fall Term Classes Begin",
-      "source": "Princeton University",
-      "dateLabel": "Sep 2",
-      "timeLabel": "8:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/fall-term-classes-begin",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-09-02",
-      "startHour": 8
-    },
-    {
-      "title": "Drop in and Knit",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 02",
-      "timeLabel": "10:00am - 12:00pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/17144881",
-      "tags": [
-        "new",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-09-02",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Storytime!",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 02",
-      "timeLabel": "10:30am - 11:00am",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14660956",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-09-02",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Baby Storytime",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 02",
-      "timeLabel": "11:30am - 12:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14662391",
-      "tags": [
-        "family"
-      ],
-      "isoDate": "2026-09-02",
-      "startHour": 11
-    },
-    {
-      "title": "Kids: Baby Play Group",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 02",
-      "timeLabel": "12:00pm - 1:00pm",
-      "location": "Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/14662324",
-      "tags": [
-        "new",
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-09-02",
-      "startHour": 12
-    },
-    {
-      "title": "Open Studio",
-      "source": "Princeton University",
-      "dateLabel": "Sep 2",
-      "timeLabel": "1:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/open-studio-88",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-02",
-      "startHour": 13
-    },
-    {
-      "title": "Tech: Preparing Your Digital Legacy",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 02",
-      "timeLabel": "1:00pm - 2:30pm",
-      "location": "Princeton Public Library - Tech Center",
-      "url": "https://princetonlibrary.libnet.info/event/17236234",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-02",
-      "startHour": 13
-    },
-    {
-      "title": "English Conversation (virtual)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 02",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Virtual - Google Meet",
-      "url": "https://princetonlibrary.libnet.info/event/16837152",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-02",
-      "startHour": 16
-    },
-    {
-      "title": "Journaling Club",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 02",
-      "timeLabel": "5:00pm - 6:00pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/16862222",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-09-02",
-      "startHour": 17
-    },
-    {
-      "title": "Try on Theater: Community Day",
-      "source": "Princeton University",
-      "dateLabel": "Sep 2",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/try-theater-community-day",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-02",
-      "startHour": 18
-    },
-    {
-      "title": "InterVarsity Christian Fellowship Succulent Giveaway",
-      "source": "Princeton University",
-      "dateLabel": "Sep 2",
-      "timeLabel": "7:45 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-christian-fellowship-succulent-giveaway",
-      "tags": [
-        "new",
-        "rain"
-      ],
-      "isoDate": "2026-09-02",
-      "startHour": 19
-    },
     {
       "title": "Kids: Storytime!",
       "source": "Princeton Public Library",
@@ -1259,12 +1104,12 @@
       "startHour": 17
     },
     {
-      "title": "Princeton Tango Club Weekly Classes",
+      "title": "What is Philosophy and What is its Value?",
       "source": "Princeton University",
       "dateLabel": "Sep 7",
       "timeLabel": "7:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-tango-club-weekly-classes-0",
+      "url": "https://www.princeton.edu/events/2026/what-philosophy-and-what-its-value",
       "tags": [
         "new",
         "culture",
@@ -1274,12 +1119,12 @@
       "startHour": 19
     },
     {
-      "title": "What is Philosophy and What is its Value?",
+      "title": "Princeton Tango Club Weekly Classes",
       "source": "Princeton University",
       "dateLabel": "Sep 7",
       "timeLabel": "7:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/what-philosophy-and-what-its-value",
+      "url": "https://www.princeton.edu/events/2026/princeton-tango-club-weekly-classes-0",
       "tags": [
         "new",
         "culture",
@@ -1346,6 +1191,21 @@
       "startHour": 10
     },
     {
+      "title": "Tech: Digital Download Help",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 08",
+      "timeLabel": "11:00am - 1:00pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/17235180",
+      "tags": [
+        "new",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-08",
+      "startHour": 11
+    },
+    {
       "title": "Kids: Playtime Fun: Puppet Play",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 08",
@@ -1355,21 +1215,6 @@
       "tags": [
         "new",
         "family",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-08",
-      "startHour": 11
-    },
-    {
-      "title": "Tech: Digital Download Help",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 08",
-      "timeLabel": "11:00am - 1:00pm",
-      "location": "Princeton Public Library - Tech Center",
-      "url": "https://princetonlibrary.libnet.info/event/17235180",
-      "tags": [
-        "new",
         "rain",
         "practical"
       ],
@@ -1678,15 +1523,451 @@
       ],
       "isoDate": "2026-09-08",
       "startHour": 19
+    },
+    {
+      "title": "Out After Dark: Exhibition by Tamara Santibañez",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "12:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/out-after-dark-exhibition-tamara-santibanez-0",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 0
+    },
+    {
+      "title": "Food Insecurity Task Force: Princeton Mobile Food Pantry",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 9, 2026",
+      "timeLabel": "09:00 AM - 11:30 AM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7597",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 9
+    },
+    {
+      "title": "Drop in and Knit",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 09",
+      "timeLabel": "10:00am - 12:00pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/17144882",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Storytime!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 09",
+      "timeLabel": "10:30am - 11:00am",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14660957",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 10
+    },
+    {
+      "title": "Getting Started with Sysrev: A Platform for Systematic Literature Reviews",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "11:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/getting-started-sysrev-platform-systematic-literature-reviews",
+      "tags": [
+        "new",
+        "culture"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 11
+    },
+    {
+      "title": "Kids: Baby Storytime",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 09",
+      "timeLabel": "11:30am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14662392",
+      "tags": [
+        "family"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 11
+    },
+    {
+      "title": "Kids: Baby Play Group",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 09",
+      "timeLabel": "12:00pm - 1:00pm",
+      "location": "Princeton Public Library",
+      "url": "https://princetonlibrary.libnet.info/event/14662325",
+      "tags": [
+        "new",
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 12
+    },
+    {
+      "title": "Community Development Block Grant Annual Plan Hearing",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 09",
+      "timeLabel": "12:00pm - 1:30pm",
+      "location": "Princeton Public Library - Newsroom",
+      "url": "https://princetonlibrary.libnet.info/event/17212630",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 12
+    },
+    {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-95",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 13
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 9",
+      "timeLabel": "1:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 13
+    },
+    {
+      "title": "The Salt Path",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 9",
+      "timeLabel": "1:10 PM (OC)",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 13
+    },
+    {
+      "title": "Introduction to QGIS",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "1:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2025/introduction-qgis-0",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 13
+    },
+    {
+      "title": "Introduction to QGIS",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "1:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/introduction-qgis",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 13
+    },
+    {
+      "title": "Tech: ChatGPT and the AI Revolution",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 09",
+      "timeLabel": "2:00pm - 3:30pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/17226207",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 14
+    },
+    {
+      "title": "Food Insecurity Task Force: Princeton Alliance Church",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 9, 2026",
+      "timeLabel": "02:30 PM - 04:00 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7235",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 14
+    },
+    {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-1",
+      "tags": [],
+      "isoDate": "2026-09-09",
+      "startHour": 15
+    },
+    {
+      "title": "English Conversation (virtual)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 09",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Virtual - Google Meet",
+      "url": "https://princetonlibrary.libnet.info/event/16837153",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 16
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 9",
+      "timeLabel": "4:00 PM (OC)",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 16
+    },
+    {
+      "title": "InterVarsity Flower Giveaway!",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "4:15 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-flower-giveaway",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 16
+    },
+    {
+      "title": "The Marching Band",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 9",
+      "timeLabel": "4:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 16
+    },
+    {
+      "title": "SPIA Centers & Programs Fair",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/spia-centers-programs-fair",
+      "tags": [],
+      "isoDate": "2026-09-09",
+      "startHour": 16
+    },
+    {
+      "title": "Academic Success Today Mentor Orientation",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/academic-success-today-mentor-orientation",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 17
+    },
+    {
+      "title": "Premed 101",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/premed-101",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 17
+    },
+    {
+      "title": "The Paleo Ponies of Princeton: 150 Years of Princeton Paleontology",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/paleo-ponies-princeton-150-years-princeton-paleontology",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 17
+    },
+    {
+      "title": "Princeton Acting Ensemble Workshops",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-acting-ensemble-workshops",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 17
+    },
+    {
+      "title": "Food Insecurity Task Force: Princeton Cornerstone Kitchen",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 9, 2026",
+      "timeLabel": "05:00 PM - 06:30 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=6924",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 17
+    },
+    {
+      "title": "McCarter Live at the Library",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 09",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17235662",
+      "tags": [
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 18
+    },
+    {
+      "title": "Leighton Listens",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 9, 2026",
+      "timeLabel": "06:00 PM - 07:30 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8117",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 18
+    },
+    {
+      "title": "Princeton Acting Ensemble Workshops",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-acting-ensemble-workshops-0",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 19
+    },
+    {
+      "title": "Pedestrian and Bicycle Advisory Committee - Virtual Meeting",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 9, 2026",
+      "timeLabel": "07:00 PM - 09:00 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7983",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 19
+    },
+    {
+      "title": "Queen Kelly",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 9",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=queen-kelly",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 19
+    },
+    {
+      "title": "The Salt Path",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 9",
+      "timeLabel": "7:10 PM (OC)",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 19
     }
   ],
   "days": [
-    {
-      "iso": "2026-09-02",
-      "label": "Sep 2",
-      "weekday": "Wed",
-      "count": 11
-    },
     {
       "iso": "2026-09-03",
       "label": "Sep 3",
@@ -1722,6 +2003,12 @@
       "label": "Sep 8",
       "weekday": "Tue",
       "count": 26
+    },
+    {
+      "iso": "2026-09-09",
+      "label": "Sep 9",
+      "weekday": "Wed",
+      "count": 32
     }
   ],
   "windowDays": 7,
@@ -1749,7 +2036,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "30 calendar items"
+      "detail": "34 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
