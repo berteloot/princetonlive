@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-09-03T16:24:42.101Z",
+  "generatedAt": "2026-09-03T21:01:27.694Z",
   "weather": {
     "temperature": 88,
-    "shortForecast": "Slight Chance Showers And Thunderstorms",
+    "shortForecast": "Partly Sunny",
     "wind": "5 mph W",
-    "detailedForecast": "A slight chance of showers and thunderstorms after 5pm. Partly sunny, with a high near 88. West wind around 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
+    "detailedForecast": "Partly sunny, with a high near 88. West wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dd7ba224ba257df64dfdd701ca2bc5aaf7e82c4d.003.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5281790ad0ad9b8a55eb2576ebe167adb5a93537.003.1",
       "event": "Heat Advisory",
-      "headline": "Heat Advisory issued September 3 at 1:26AM EDT until September 3 at 8:00PM EDT by NWS Mount Holly NJ",
+      "headline": "Heat Advisory issued September 3 at 2:03PM EDT until September 3 at 8:00PM EDT by NWS Mount Holly NJ",
       "severity": "Moderate",
       "url": null
     }
@@ -62,6 +62,17 @@
       "startHour": 12
     },
     {
+      "title": "Study Abroad Beyond the Bubble Info Session",
+      "source": "Princeton University",
+      "dateLabel": "Sep 3",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/study-abroad-beyond-bubble-info-session",
+      "tags": [],
+      "isoDate": "2026-09-03",
+      "startHour": 12
+    },
+    {
       "title": "After Noon Concert Series",
       "source": "Princeton University",
       "dateLabel": "Sep 3",
@@ -71,17 +82,6 @@
       "tags": [
         "culture"
       ],
-      "isoDate": "2026-09-03",
-      "startHour": 12
-    },
-    {
-      "title": "Study Abroad Beyond the Bubble Info Session",
-      "source": "Princeton University",
-      "dateLabel": "Sep 3",
-      "timeLabel": "12:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/study-abroad-beyond-bubble-info-session",
-      "tags": [],
       "isoDate": "2026-09-03",
       "startHour": 12
     },
@@ -115,57 +115,14 @@
       "startHour": 15
     },
     {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Griggs Farm",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 3, 2026",
-      "timeLabel": "03:30 PM - 04:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7440",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-09-03",
-      "startHour": 15
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 3",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-03",
-      "startHour": 16
-    },
-    {
-      "title": "The Marching Band",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 3",
-      "timeLabel": "4:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-03",
-      "startHour": 16
-    },
-    {
-      "title": "Inquisition Trials and the Table: The Culinary Legacy of the Sephardic Jews from Spain to the Americas",
+      "title": "Performance Opportunity Workshops: Explore Spring 2027 Senior Dance Projects",
       "source": "Princeton University",
       "dateLabel": "Sep 3",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/inquisition-trials-and-table-culinary-legacy-sephardic-jews-spain-americas",
+      "url": "https://www.princeton.edu/events/2026/performance-opportunity-workshops-explore-spring-2027-senior-dance-projects-0",
       "tags": [
         "new",
-        "family",
         "culture",
         "rain",
         "practical"
@@ -188,14 +145,15 @@
       "startHour": 16
     },
     {
-      "title": "Performance Opportunity Workshops: Explore Spring 2027 Senior Dance Projects",
+      "title": "Inquisition Trials and the Table: The Culinary Legacy of the Sephardic Jews from Spain to the Americas",
       "source": "Princeton University",
       "dateLabel": "Sep 3",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/performance-opportunity-workshops-explore-spring-2027-senior-dance-projects-0",
+      "url": "https://www.princeton.edu/events/2026/inquisition-trials-and-table-culinary-legacy-sephardic-jews-spain-americas",
       "tags": [
         "new",
+        "family",
         "culture",
         "rain",
         "practical"
@@ -234,20 +192,6 @@
       "startHour": 16
     },
     {
-      "title": "SoA Lecture Series: Go Hasegawa",
-      "source": "Princeton University",
-      "dateLabel": "Sep 3",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/soa-lecture-series-go-hasegawa",
-      "tags": [
-        "new",
-        "culture"
-      ],
-      "isoDate": "2026-09-03",
-      "startHour": 18
-    },
-    {
       "title": "Try on Theater: Casting Workshops",
       "source": "Princeton University",
       "dateLabel": "Sep 3",
@@ -259,6 +203,20 @@
         "culture",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-09-03",
+      "startHour": 18
+    },
+    {
+      "title": "SoA Lecture Series: Go Hasegawa",
+      "source": "Princeton University",
+      "dateLabel": "Sep 3",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/soa-lecture-series-go-hasegawa",
+      "tags": [
+        "new",
+        "culture"
       ],
       "isoDate": "2026-09-03",
       "startHour": 18
@@ -384,21 +342,6 @@
       "startHour": 21
     },
     {
-      "title": "Tentative: Open Studio TBC",
-      "source": "Princeton University",
-      "dateLabel": "Sep 4",
-      "timeLabel": "10:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/tentative-open-studio-tbc",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-04",
-      "startHour": 10
-    },
-    {
       "title": "Flood and Storm Water Commission -Virtual Meeting- Cancelled",
       "source": "Municipality of Princeton",
       "dateLabel": "September 4, 2026",
@@ -509,6 +452,21 @@
       "startHour": 16
     },
     {
+      "title": "Try on Theater: Directing Workshop",
+      "source": "Princeton University",
+      "dateLabel": "Sep 4",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/try-theater-directing-workshop",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-04",
+      "startHour": 18
+    },
+    {
       "title": "Try on Theater: Casting Workshops",
       "source": "Princeton University",
       "dateLabel": "Sep 4",
@@ -520,21 +478,6 @@
         "culture",
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-09-04",
-      "startHour": 18
-    },
-    {
-      "title": "Try on Theater: Directing Workshop",
-      "source": "Princeton University",
-      "dateLabel": "Sep 4",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/try-theater-directing-workshop",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-09-04",
       "startHour": 18
@@ -882,21 +825,6 @@
       ],
       "isoDate": "2026-09-06",
       "startHour": 12
-    },
-    {
-      "title": "Tentative: Open Studio TBC",
-      "source": "Princeton University",
-      "dateLabel": "Sep 6",
-      "timeLabel": "1:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/tentative-open-studio-tbc-0",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-06",
-      "startHour": 13
     },
     {
       "title": "Dodsworth",
@@ -1399,20 +1327,6 @@
       "startHour": 16
     },
     {
-      "title": "Princeton Students in Quantum Weekly Workshop",
-      "source": "Princeton University",
-      "dateLabel": "Sep 8",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-students-quantum-weekly-workshop",
-      "tags": [
-        "new",
-        "rain"
-      ],
-      "isoDate": "2026-09-08",
-      "startHour": 16
-    },
-    {
       "title": "Black Pre-Law Society's Open House",
       "source": "Princeton University",
       "dateLabel": "Sep 8",
@@ -1441,17 +1355,18 @@
       "startHour": 16
     },
     {
-      "title": "Princeton Club Swim Info Meeting",
+      "title": "Princeton Students in Quantum Weekly Workshop",
       "source": "Princeton University",
       "dateLabel": "Sep 8",
-      "timeLabel": "5:00 PM",
+      "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-club-swim-info-meeting",
+      "url": "https://www.princeton.edu/events/2026/princeton-students-quantum-weekly-workshop",
       "tags": [
+        "new",
         "rain"
       ],
       "isoDate": "2026-09-08",
-      "startHour": 17
+      "startHour": 16
     },
     {
       "title": "Opus Open House",
@@ -1463,6 +1378,19 @@
       "tags": [
         "new",
         "culture"
+      ],
+      "isoDate": "2026-09-08",
+      "startHour": 17
+    },
+    {
+      "title": "Princeton Club Swim Info Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Sep 8",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-club-swim-info-meeting",
+      "tags": [
+        "rain"
       ],
       "isoDate": "2026-09-08",
       "startHour": 17
@@ -1841,13 +1769,15 @@
       "startHour": 16
     },
     {
-      "title": "Premed 101",
+      "title": "Princeton Acting Ensemble Workshops",
       "source": "Princeton University",
       "dateLabel": "Sep 9",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/premed-101",
+      "url": "https://www.princeton.edu/events/2026/princeton-acting-ensemble-workshops",
       "tags": [
+        "new",
+        "culture",
         "rain"
       ],
       "isoDate": "2026-09-09",
@@ -1869,21 +1799,6 @@
       "startHour": 17
     },
     {
-      "title": "Princeton Acting Ensemble Workshops",
-      "source": "Princeton University",
-      "dateLabel": "Sep 9",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-acting-ensemble-workshops",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 17
-    },
-    {
       "title": "Academic Success Today Mentor Orientation",
       "source": "Princeton University",
       "dateLabel": "Sep 9",
@@ -1892,6 +1807,19 @@
       "url": "https://www.princeton.edu/events/2026/academic-success-today-mentor-orientation",
       "tags": [
         "new"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 17
+    },
+    {
+      "title": "Premed 101",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/premed-101",
+      "tags": [
+        "rain"
       ],
       "isoDate": "2026-09-09",
       "startHour": 17
@@ -2000,13 +1928,13 @@
       "iso": "2026-09-03",
       "label": "Sep 3",
       "weekday": "Thu",
-      "count": 26
+      "count": 23
     },
     {
       "iso": "2026-09-04",
       "label": "Sep 4",
       "weekday": "Fri",
-      "count": 14
+      "count": 13
     },
     {
       "iso": "2026-09-05",
@@ -2018,7 +1946,7 @@
       "iso": "2026-09-06",
       "label": "Sep 6",
       "weekday": "Sun",
-      "count": 11
+      "count": 10
     },
     {
       "iso": "2026-09-07",
@@ -2046,7 +1974,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Slight Chance Showers And Thunderstorms, 88F"
+      "detail": "Partly Sunny, 88F"
     },
     {
       "name": "Princeton University Events",
@@ -2064,13 +1992,13 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "34 calendar items"
+      "detail": "33 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "86 showtimes"
+      "detail": "84 showtimes"
     }
   ]
 }
