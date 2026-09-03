@@ -38,7 +38,8 @@
     "termStart": "2026-08-31",
     "termStartLabel": "Monday 31 August 2026",
     "schoolYear": "2026-27",
-    "url": "https://www.princetonk12.org/quick-links/calendars"
+    "url": "https://www.princetonk12.org/quick-links/calendars",
+    "nextCalendarCheck": "2027-03-01"
   },
   "library": {
     "address": "65 Witherspoon Street",

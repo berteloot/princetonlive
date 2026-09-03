@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-08-20T15:37:11.350Z",
-  "minDaysUntilReview": 11,
+  "generatedAt": "2026-09-03T13:03:02.471Z",
+  "minDaysUntilReview": 76,
   "overdueCount": 0,
   "ok": true,
   "items": [
     {
       "name": "Verified local rules review",
       "detail": "Parking, school and library facts were last read off the official pages by hand.",
-      "dueInDays": 90,
+      "dueInDays": 76,
       "source": "https://www.princetonnj.gov/203/Parking-in-Princeton"
     },
     {
       "name": "Yard waste schedule year",
       "detail": "The leaf and brush dates are for calendar 2026 and must be replaced for the next year.",
-      "dueInDays": 117,
+      "dueInDays": 103,
       "source": "https://www.princetonnj.gov/450/Leaf-Branch-and-Log-Collection"
     },
     {
       "name": "School year start",
-      "detail": "Term start for 2026-27. Replace with the next school year's calendar once published.",
-      "dueInDays": 11,
+      "detail": "First day for 2026-27 is 2026-08-31. Read the next school year's first day off the district calendar by 2027-03-01.",
+      "dueInDays": 179,
       "source": "https://www.princetonk12.org/quick-links/calendars"
     },
     {
       "name": "US News high school rank",
       "detail": "The 2026-2027 rank for Princeton High School was read off the listing by hand. US News publishes the next edition each August.",
-      "dueInDays": 365,
+      "dueInDays": 351,
       "source": "https://www.usnews.com/education/best-high-schools/new-jersey/districts/princeton-public-schools/princeton-high-school-12735"
     }
   ]

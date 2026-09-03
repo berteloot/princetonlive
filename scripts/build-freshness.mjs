@@ -34,9 +34,12 @@ const items = [
     source: "https://www.princetonnj.gov/450/Leaf-Branch-and-Log-Collection",
   },
   {
+    // The site copy handles a term start that has passed on its own (main.jsx switches to
+    // "the year is under way"), so the date going by is not staleness. What goes stale is
+    // the absence of the next year's first day, and districts publish that around March.
     name: "School year start",
-    detail: `Term start for ${rules.schools.schoolYear}. Replace with the next school year's calendar once published.`,
-    dueInDays: days(rules.schools.termStart),
+    detail: `First day for ${rules.schools.schoolYear} is ${rules.schools.termStart}. Read the next school year's first day off the district calendar by ${rules.schools.nextCalendarCheck}.`,
+    dueInDays: days(rules.schools.nextCalendarCheck),
     source: rules.schools.url,
   },
 ];
