@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-09-03T04:22:10.512Z",
+  "generatedAt": "2026-09-03T11:13:09.790Z",
   "weather": {
-    "temperature": 67,
-    "shortForecast": "Showers And Thunderstorms Likely",
-    "wind": "0 mph ",
-    "detailedForecast": "Showers and thunderstorms likely. Mostly cloudy, with a low around 67. South wind around 0 mph. Chance of precipitation is 60%. New rainfall amounts between a tenth and quarter of an inch possible.",
+    "temperature": 88,
+    "shortForecast": "Chance Showers And Thunderstorms",
+    "wind": "5 mph SW",
+    "detailedForecast": "A chance of showers and thunderstorms. Some of the storms could produce heavy rain. Partly sunny, with a high near 88. Southwest wind around 5 mph. Chance of precipitation is 50%. New rainfall amounts between a quarter and half of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c2e87cc1fc92cd941c24b71439e79cd22d523f66.003.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dd7ba224ba257df64dfdd701ca2bc5aaf7e82c4d.003.1",
       "event": "Heat Advisory",
-      "headline": "Heat Advisory issued September 2 at 2:10PM EDT until September 3 at 8:00PM EDT by NWS Mount Holly NJ",
+      "headline": "Heat Advisory issued September 3 at 1:26AM EDT until September 3 at 8:00PM EDT by NWS Mount Holly NJ",
       "severity": "Moderate",
       "url": null
     }
@@ -2018,7 +2018,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Showers And Thunderstorms Likely, 67F"
+      "detail": "Chance Showers And Thunderstorms, 88F"
     },
     {
       "name": "Princeton University Events",
