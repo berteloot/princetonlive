@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-03T21:01:27.694Z",
+  "generatedAt": "2026-09-03T23:16:30.640Z",
   "weather": {
-    "temperature": 88,
-    "shortForecast": "Partly Sunny",
-    "wind": "5 mph W",
-    "detailedForecast": "Partly sunny, with a high near 88. West wind around 5 mph.",
+    "temperature": 69,
+    "shortForecast": "Chance Showers And Thunderstorms",
+    "wind": "0 to 5 mph W",
+    "detailedForecast": "A slight chance of showers and thunderstorms before 9pm, then a chance of showers and thunderstorms between 9pm and 10pm, then a chance of showers and thunderstorms between 10pm and 2am, then a chance of showers and thunderstorms between 2am and 4am, then a slight chance of showers and thunderstorms between 4am and 5am. Mostly cloudy, with a low around 69. West wind 0 to 5 mph. Chance of precipitation is 50%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
@@ -281,34 +281,6 @@
       "tags": [
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-09-03",
-      "startHour": 19
-    },
-    {
-      "title": "Newsies",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 3",
-      "timeLabel": "7:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=newsies",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-03",
-      "startHour": 19
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 3",
-      "timeLabel": "7:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-09-03",
       "startHour": 19
@@ -1928,7 +1900,7 @@
       "iso": "2026-09-03",
       "label": "Sep 3",
       "weekday": "Thu",
-      "count": 23
+      "count": 21
     },
     {
       "iso": "2026-09-04",
@@ -1974,7 +1946,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Partly Sunny, 88F"
+      "detail": "Chance Showers And Thunderstorms, 69F"
     },
     {
       "name": "Princeton University Events",
@@ -1998,7 +1970,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "84 showtimes"
+      "detail": "82 showtimes"
     }
   ]
 }
