@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-04T04:31:23.544Z",
+  "generatedAt": "2026-09-04T11:19:55.310Z",
   "weather": {
-    "temperature": 69,
-    "shortForecast": "Chance Showers And Thunderstorms",
-    "wind": "0 to 5 mph W",
-    "detailedForecast": "A chance of showers and thunderstorms before 2am, then a chance of showers and thunderstorms between 2am and 4am, then a slight chance of showers and thunderstorms between 4am and 5am. Mostly cloudy, with a low around 69. West wind 0 to 5 mph. Chance of precipitation is 50%. New rainfall amounts less than a tenth of an inch possible.",
+    "temperature": 85,
+    "shortForecast": "Mostly Sunny then Slight Chance Showers And Thunderstorms",
+    "wind": "0 to 5 mph NW",
+    "detailedForecast": "A slight chance of showers and thunderstorms between 3pm and 4pm, then a chance of showers and thunderstorms. Mostly sunny, with a high near 85. Northwest wind 0 to 5 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -1973,7 +1973,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Chance Showers And Thunderstorms, 69F"
+      "detail": "Mostly Sunny then Slight Chance Showers And Thunderstorms, 85F"
     },
     {
       "name": "Princeton University Events",
