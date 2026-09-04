@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-04T16:20:30.430Z",
+  "generatedAt": "2026-09-04T20:45:06.206Z",
   "weather": {
     "temperature": 85,
-    "shortForecast": "Slight Chance Showers And Thunderstorms",
+    "shortForecast": "Mostly Sunny",
     "wind": "5 mph NW",
-    "detailedForecast": "A slight chance of showers and thunderstorms between 3pm and 4pm, then a chance of showers and thunderstorms. Mostly sunny, with a high near 85. Northwest wind around 5 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
+    "detailedForecast": "Mostly sunny, with a high near 85. Northwest wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -61,34 +61,6 @@
       ],
       "isoDate": "2026-09-04",
       "startHour": 15
-    },
-    {
-      "title": "The Salt Path",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 4",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-04",
-      "startHour": 16
-    },
-    {
-      "title": "The Marching Band",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 4",
-      "timeLabel": "4:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-04",
-      "startHour": 16
     },
     {
       "title": "Guest Choreographer Auditions for 2026 Princeton Dance Festival",
@@ -834,6 +806,17 @@
       "startHour": 12
     },
     {
+      "title": "Criminal Justice Introductory Events",
+      "source": "Princeton University",
+      "dateLabel": "Sep 8",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/criminal-justice-introductory-events",
+      "tags": [],
+      "isoDate": "2026-09-08",
+      "startHour": 12
+    },
+    {
       "title": "Open Studio",
       "source": "Princeton University",
       "dateLabel": "Sep 8",
@@ -982,15 +965,15 @@
       "startHour": 16
     },
     {
-      "title": "Princeton Students in Quantum Weekly Workshop",
+      "title": "Black Pre-Law Society's Open House",
       "source": "Princeton University",
       "dateLabel": "Sep 8",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-students-quantum-weekly-workshop",
+      "url": "https://www.princeton.edu/events/2026/black-pre-law-societys-open-house",
       "tags": [
         "new",
-        "rain"
+        "practical"
       ],
       "isoDate": "2026-09-08",
       "startHour": 16
@@ -1010,31 +993,18 @@
       "startHour": 16
     },
     {
-      "title": "Black Pre-Law Society's Open House",
+      "title": "Princeton Students in Quantum Weekly Workshop",
       "source": "Princeton University",
       "dateLabel": "Sep 8",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/black-pre-law-societys-open-house",
+      "url": "https://www.princeton.edu/events/2026/princeton-students-quantum-weekly-workshop",
       "tags": [
         "new",
-        "practical"
-      ],
-      "isoDate": "2026-09-08",
-      "startHour": 16
-    },
-    {
-      "title": "Princeton Club Swim Info Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Sep 8",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-club-swim-info-meeting",
-      "tags": [
         "rain"
       ],
       "isoDate": "2026-09-08",
-      "startHour": 17
+      "startHour": 16
     },
     {
       "title": "Opus Open House",
@@ -1046,6 +1016,19 @@
       "tags": [
         "new",
         "culture"
+      ],
+      "isoDate": "2026-09-08",
+      "startHour": 17
+    },
+    {
+      "title": "Princeton Club Swim Info Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Sep 8",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-club-swim-info-meeting",
+      "tags": [
+        "rain"
       ],
       "isoDate": "2026-09-08",
       "startHour": 17
@@ -1439,6 +1422,19 @@
       "startHour": 17
     },
     {
+      "title": "Academic Success Today Mentor Orientation",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/academic-success-today-mentor-orientation",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 17
+    },
+    {
       "title": "Princeton Acting Ensemble Workshops",
       "source": "Princeton University",
       "dateLabel": "Sep 9",
@@ -1462,19 +1458,6 @@
       "url": "https://www.princeton.edu/events/2026/premed-101",
       "tags": [
         "rain"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 17
-    },
-    {
-      "title": "Academic Success Today Mentor Orientation",
-      "source": "Princeton University",
-      "dateLabel": "Sep 9",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/academic-success-today-mentor-orientation",
-      "tags": [
-        "new"
       ],
       "isoDate": "2026-09-09",
       "startHour": 17
@@ -1926,7 +1909,7 @@
       "iso": "2026-09-04",
       "label": "Sep 4",
       "weekday": "Fri",
-      "count": 12
+      "count": 10
     },
     {
       "iso": "2026-09-05",
@@ -1950,7 +1933,7 @@
       "iso": "2026-09-08",
       "label": "Sep 8",
       "weekday": "Tue",
-      "count": 26
+      "count": 27
     },
     {
       "iso": "2026-09-09",
@@ -1972,7 +1955,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Slight Chance Showers And Thunderstorms, 85F"
+      "detail": "Mostly Sunny, 85F"
     },
     {
       "name": "Princeton University Events",
@@ -1996,7 +1979,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "82 showtimes"
+      "detail": "80 showtimes"
     }
   ]
 }
