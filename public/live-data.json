@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-04T20:45:06.206Z",
+  "generatedAt": "2026-09-04T23:02:39.837Z",
   "weather": {
-    "temperature": 85,
-    "shortForecast": "Mostly Sunny",
-    "wind": "5 mph NW",
-    "detailedForecast": "Mostly sunny, with a high near 85. Northwest wind around 5 mph.",
+    "temperature": 64,
+    "shortForecast": "Mostly Cloudy",
+    "wind": "0 to 5 mph N",
+    "detailedForecast": "Mostly cloudy, with a low around 64. North wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -117,20 +117,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-jmu",
       "tags": [],
-      "isoDate": "2026-09-04",
-      "startHour": 19
-    },
-    {
-      "title": "The Salt Path",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 4",
-      "timeLabel": "7:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
-      "tags": [
-        "culture",
-        "rain"
-      ],
       "isoDate": "2026-09-04",
       "startHour": 19
     },
@@ -1532,20 +1518,6 @@
       "startHour": 19
     },
     {
-      "title": "Pedestrian and Bicycle Advisory Committee - Virtual Meeting",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 9, 2026",
-      "timeLabel": "07:00 PM - 09:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7983",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 19
-    },
-    {
       "title": "Queen Kelly",
       "source": "Garden Theatre",
       "dateLabel": "Sep 9",
@@ -1909,7 +1881,7 @@
       "iso": "2026-09-04",
       "label": "Sep 4",
       "weekday": "Fri",
-      "count": 10
+      "count": 9
     },
     {
       "iso": "2026-09-05",
@@ -1939,7 +1911,7 @@
       "iso": "2026-09-09",
       "label": "Sep 9",
       "weekday": "Wed",
-      "count": 34
+      "count": 33
     },
     {
       "iso": "2026-09-10",
@@ -1955,7 +1927,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Sunny, 85F"
+      "detail": "Mostly Cloudy, 64F"
     },
     {
       "name": "Princeton University Events",
@@ -1973,13 +1945,13 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "31 calendar items"
+      "detail": "30 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "80 showtimes"
+      "detail": "79 showtimes"
     }
   ]
 }
