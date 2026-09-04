@@ -1,29 +1,15 @@
 {
-  "generatedAt": "2026-09-04T11:19:55.310Z",
+  "generatedAt": "2026-09-04T16:20:30.430Z",
   "weather": {
     "temperature": 85,
-    "shortForecast": "Mostly Sunny then Slight Chance Showers And Thunderstorms",
-    "wind": "0 to 5 mph NW",
-    "detailedForecast": "A slight chance of showers and thunderstorms between 3pm and 4pm, then a chance of showers and thunderstorms. Mostly sunny, with a high near 85. Northwest wind 0 to 5 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
+    "shortForecast": "Slight Chance Showers And Thunderstorms",
+    "wind": "5 mph NW",
+    "detailedForecast": "A slight chance of showers and thunderstorms between 3pm and 4pm, then a chance of showers and thunderstorms. Mostly sunny, with a high near 85. Northwest wind around 5 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Flood and Storm Water Commission -Virtual Meeting- Cancelled",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 4, 2026",
-      "timeLabel": "10:00 AM - 11:30 AM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7993",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-04",
-      "startHour": 10
-    },
     {
       "title": "Beyond College Career Mentorship Infosession",
       "source": "Princeton University",
@@ -715,12 +701,12 @@
       "startHour": 17
     },
     {
-      "title": "What is Philosophy and What is its Value?",
+      "title": "Princeton Tango Club Weekly Classes",
       "source": "Princeton University",
       "dateLabel": "Sep 7",
       "timeLabel": "7:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/what-philosophy-and-what-its-value",
+      "url": "https://www.princeton.edu/events/2026/princeton-tango-club-weekly-classes-0",
       "tags": [
         "new",
         "culture",
@@ -730,12 +716,12 @@
       "startHour": 19
     },
     {
-      "title": "Princeton Tango Club Weekly Classes",
+      "title": "What is Philosophy and What is its Value?",
       "source": "Princeton University",
       "dateLabel": "Sep 7",
       "timeLabel": "7:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-tango-club-weekly-classes-0",
+      "url": "https://www.princeton.edu/events/2026/what-philosophy-and-what-its-value",
       "tags": [
         "new",
         "culture",
@@ -802,6 +788,22 @@
       "startHour": 10
     },
     {
+      "title": "Kids: Playtime Fun: Puppet Play",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 08",
+      "timeLabel": "10:30am - 12:00pm",
+      "location": "Princeton Public Library",
+      "url": "https://princetonlibrary.libnet.info/event/14760835",
+      "tags": [
+        "new",
+        "family",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-08",
+      "startHour": 10
+    },
+    {
       "title": "Tech: Digital Download Help",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 08",
@@ -810,22 +812,6 @@
       "url": "https://princetonlibrary.libnet.info/event/17235180",
       "tags": [
         "new",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-08",
-      "startHour": 11
-    },
-    {
-      "title": "Kids: Playtime Fun: Puppet Play",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 08",
-      "timeLabel": "11:00am - 12:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14760835",
-      "tags": [
-        "new",
-        "family",
         "rain",
         "practical"
       ],
@@ -996,15 +982,15 @@
       "startHour": 16
     },
     {
-      "title": "Black Pre-Law Society's Open House",
+      "title": "Princeton Students in Quantum Weekly Workshop",
       "source": "Princeton University",
       "dateLabel": "Sep 8",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/black-pre-law-societys-open-house",
+      "url": "https://www.princeton.edu/events/2026/princeton-students-quantum-weekly-workshop",
       "tags": [
         "new",
-        "practical"
+        "rain"
       ],
       "isoDate": "2026-09-08",
       "startHour": 16
@@ -1024,18 +1010,31 @@
       "startHour": 16
     },
     {
-      "title": "Princeton Students in Quantum Weekly Workshop",
+      "title": "Black Pre-Law Society's Open House",
       "source": "Princeton University",
       "dateLabel": "Sep 8",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-students-quantum-weekly-workshop",
+      "url": "https://www.princeton.edu/events/2026/black-pre-law-societys-open-house",
       "tags": [
         "new",
-        "rain"
+        "practical"
       ],
       "isoDate": "2026-09-08",
       "startHour": 16
+    },
+    {
+      "title": "Princeton Club Swim Info Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Sep 8",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-club-swim-info-meeting",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-09-08",
+      "startHour": 17
     },
     {
       "title": "Opus Open House",
@@ -1047,19 +1046,6 @@
       "tags": [
         "new",
         "culture"
-      ],
-      "isoDate": "2026-09-08",
-      "startHour": 17
-    },
-    {
-      "title": "Princeton Club Swim Info Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Sep 8",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-club-swim-info-meeting",
-      "tags": [
-        "rain"
       ],
       "isoDate": "2026-09-08",
       "startHour": 17
@@ -1438,32 +1424,6 @@
       "startHour": 16
     },
     {
-      "title": "Academic Success Today Mentor Orientation",
-      "source": "Princeton University",
-      "dateLabel": "Sep 9",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/academic-success-today-mentor-orientation",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 17
-    },
-    {
-      "title": "Premed 101",
-      "source": "Princeton University",
-      "dateLabel": "Sep 9",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/premed-101",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 17
-    },
-    {
       "title": "The Paleo Ponies of Princeton: 150 Years of Princeton Paleontology",
       "source": "Princeton University",
       "dateLabel": "Sep 9",
@@ -1494,6 +1454,32 @@
       "startHour": 17
     },
     {
+      "title": "Premed 101",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/premed-101",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 17
+    },
+    {
+      "title": "Academic Success Today Mentor Orientation",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/academic-success-today-mentor-orientation",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 17
+    },
+    {
       "title": "Food Insecurity Task Force: Princeton Cornerstone Kitchen",
       "source": "Municipality of Princeton",
       "dateLabel": "September 9, 2026",
@@ -1502,6 +1488,19 @@
       "url": "https://www.princetonnj.gov/Calendar.aspx?EID=6924",
       "tags": [
         "practical"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 17
+    },
+    {
+      "title": "A Panel of Lightning Presentations on Impactful Internships and Careers!",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "5:45 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/panel-lightning-presentations-impactful-internships-and-careers",
+      "tags": [
+        "rain"
       ],
       "isoDate": "2026-09-09",
       "startHour": 17
@@ -1674,12 +1673,12 @@
       "startHour": 12
     },
     {
-      "title": "After Noon Concert Series",
+      "title": "Study Abroad Info Session: European Based Programs in the Local Langauge",
       "source": "Princeton University",
       "dateLabel": "Sep 10",
       "timeLabel": "12:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/after-noon-concert-series-0",
+      "url": "https://www.princeton.edu/events/2026/study-abroad-info-session-european-based-programs-local-langauge",
       "tags": [
         "culture"
       ],
@@ -1687,12 +1686,12 @@
       "startHour": 12
     },
     {
-      "title": "Study Abroad Info Session: European Based Programs in the Local Langauge",
+      "title": "After Noon Concert Series",
       "source": "Princeton University",
       "dateLabel": "Sep 10",
       "timeLabel": "12:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/study-abroad-info-session-european-based-programs-local-langauge",
+      "url": "https://www.princeton.edu/events/2026/after-noon-concert-series-0",
       "tags": [
         "culture"
       ],
@@ -1927,7 +1926,7 @@
       "iso": "2026-09-04",
       "label": "Sep 4",
       "weekday": "Fri",
-      "count": 13
+      "count": 12
     },
     {
       "iso": "2026-09-05",
@@ -1957,7 +1956,7 @@
       "iso": "2026-09-09",
       "label": "Sep 9",
       "weekday": "Wed",
-      "count": 33
+      "count": 34
     },
     {
       "iso": "2026-09-10",
@@ -1973,7 +1972,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Sunny then Slight Chance Showers And Thunderstorms, 85F"
+      "detail": "Slight Chance Showers And Thunderstorms, 85F"
     },
     {
       "name": "Princeton University Events",
@@ -1991,7 +1990,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "32 calendar items"
+      "detail": "31 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
