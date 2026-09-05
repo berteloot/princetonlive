@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T23:02:39.837Z",
+  "generatedAt": "2026-09-05T04:26:34.849Z",
   "weather": {
     "temperature": 64,
     "shortForecast": "Mostly Cloudy",
@@ -10,130 +10,6 @@
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Beyond College Career Mentorship Infosession",
-      "source": "Princeton University",
-      "dateLabel": "Sep 4",
-      "timeLabel": "11:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/beyond-college-career-mentorship-infosession",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-09-04",
-      "startHour": 11
-    },
-    {
-      "title": "Muslim Life Program Friday Jummah Congregational Prayer",
-      "source": "Princeton University",
-      "dateLabel": "Sep 4",
-      "timeLabel": "12:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/muslim-life-program-friday-jummah-congregational-prayer-21",
-      "tags": [],
-      "isoDate": "2026-09-04",
-      "startHour": 12
-    },
-    {
-      "title": "Open Studio",
-      "source": "Princeton University",
-      "dateLabel": "Sep 4",
-      "timeLabel": "1:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/open-studio-90",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-04",
-      "startHour": 13
-    },
-    {
-      "title": "Taste of North Africa: SNAP Welcome Back Event",
-      "source": "Princeton University",
-      "dateLabel": "Sep 4",
-      "timeLabel": "3:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/taste-north-africa-snap-welcome-back-event",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-09-04",
-      "startHour": 15
-    },
-    {
-      "title": "Guest Choreographer Auditions for 2026 Princeton Dance Festival",
-      "source": "Princeton University",
-      "dateLabel": "Sep 4",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/guest-choreographer-auditions-2026-princeton-dance-festival",
-      "tags": [
-        "new",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-04",
-      "startHour": 16
-    },
-    {
-      "title": "Try on Theater: Casting Workshops",
-      "source": "Princeton University",
-      "dateLabel": "Sep 4",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/try-theater-casting-workshops-0",
-      "tags": [
-        "new",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-04",
-      "startHour": 18
-    },
-    {
-      "title": "Try on Theater: Directing Workshop",
-      "source": "Princeton University",
-      "dateLabel": "Sep 4",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/try-theater-directing-workshop",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-04",
-      "startHour": 18
-    },
-    {
-      "title": "Men's Soccer vs JMU",
-      "source": "Princeton University",
-      "dateLabel": "Sep 4",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-jmu",
-      "tags": [],
-      "isoDate": "2026-09-04",
-      "startHour": 19
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 4",
-      "timeLabel": "7:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-04",
-      "startHour": 19
-    },
     {
       "title": "Princeton Mock Trial Open House",
       "source": "Princeton University",
@@ -951,15 +827,15 @@
       "startHour": 16
     },
     {
-      "title": "Black Pre-Law Society's Open House",
+      "title": "Princeton Students in Quantum Weekly Workshop",
       "source": "Princeton University",
       "dateLabel": "Sep 8",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/black-pre-law-societys-open-house",
+      "url": "https://www.princeton.edu/events/2026/princeton-students-quantum-weekly-workshop",
       "tags": [
         "new",
-        "practical"
+        "rain"
       ],
       "isoDate": "2026-09-08",
       "startHour": 16
@@ -979,18 +855,31 @@
       "startHour": 16
     },
     {
-      "title": "Princeton Students in Quantum Weekly Workshop",
+      "title": "Black Pre-Law Society's Open House",
       "source": "Princeton University",
       "dateLabel": "Sep 8",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-students-quantum-weekly-workshop",
+      "url": "https://www.princeton.edu/events/2026/black-pre-law-societys-open-house",
       "tags": [
         "new",
-        "rain"
+        "practical"
       ],
       "isoDate": "2026-09-08",
       "startHour": 16
+    },
+    {
+      "title": "Princeton Club Swim Info Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Sep 8",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-club-swim-info-meeting",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-09-08",
+      "startHour": 17
     },
     {
       "title": "Opus Open House",
@@ -1002,19 +891,6 @@
       "tags": [
         "new",
         "culture"
-      ],
-      "isoDate": "2026-09-08",
-      "startHour": 17
-    },
-    {
-      "title": "Princeton Club Swim Info Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Sep 8",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-club-swim-info-meeting",
-      "tags": [
-        "rain"
       ],
       "isoDate": "2026-09-08",
       "startHour": 17
@@ -1408,19 +1284,6 @@
       "startHour": 17
     },
     {
-      "title": "Academic Success Today Mentor Orientation",
-      "source": "Princeton University",
-      "dateLabel": "Sep 9",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/academic-success-today-mentor-orientation",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 17
-    },
-    {
       "title": "Princeton Acting Ensemble Workshops",
       "source": "Princeton University",
       "dateLabel": "Sep 9",
@@ -1444,6 +1307,19 @@
       "url": "https://www.princeton.edu/events/2026/premed-101",
       "tags": [
         "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 17
+    },
+    {
+      "title": "Academic Success Today Mentor Orientation",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/academic-success-today-mentor-orientation",
+      "tags": [
+        "new"
       ],
       "isoDate": "2026-09-09",
       "startHour": 17
@@ -1561,19 +1437,6 @@
       "startHour": 0
     },
     {
-      "title": "Fiction Book Group",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 10",
-      "timeLabel": "10:30am - 11:30am",
-      "location": "Princeton Public Library - Conference Room",
-      "url": "https://princetonlibrary.libnet.info/event/16012014",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-10",
-      "startHour": 10
-    },
-    {
       "title": "Kids: Storytime!",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 10",
@@ -1582,6 +1445,19 @@
       "url": "https://princetonlibrary.libnet.info/event/14661273",
       "tags": [
         "family",
+        "practical"
+      ],
+      "isoDate": "2026-09-10",
+      "startHour": 10
+    },
+    {
+      "title": "Fiction Book Group",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 10",
+      "timeLabel": "10:30am - 11:30am",
+      "location": "Princeton Public Library - Conference Room",
+      "url": "https://princetonlibrary.libnet.info/event/16012014",
+      "tags": [
         "practical"
       ],
       "isoDate": "2026-09-10",
@@ -1874,15 +1750,111 @@
       ],
       "isoDate": "2026-09-10",
       "startHour": 19
+    },
+    {
+      "title": "Out After Dark: Exhibition by Tamara Santibañez",
+      "source": "Princeton University",
+      "dateLabel": "Sep 11",
+      "timeLabel": "12:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/out-after-dark-exhibition-tamara-santibanez-2",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-11",
+      "startHour": 0
+    },
+    {
+      "title": "Annual 9/11 Remembrance Ceremony",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 11",
+      "timeLabel": "12:00pm - 1:00pm",
+      "location": "Off-Site - Princeton First Aid and Rescue Squad",
+      "url": "https://princetonlibrary.libnet.info/event/17164593",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-09-11",
+      "startHour": 12
+    },
+    {
+      "title": "Study Abroad Fair 2026",
+      "source": "Princeton University",
+      "dateLabel": "Sep 11",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/study-abroad-fair-2026",
+      "tags": [],
+      "isoDate": "2026-09-11",
+      "startHour": 12
+    },
+    {
+      "title": "Muslim Life Program Friday Jummah Congregational Prayer",
+      "source": "Princeton University",
+      "dateLabel": "Sep 11",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/muslim-life-program-friday-jummah-congregational-prayer-22",
+      "tags": [],
+      "isoDate": "2026-09-11",
+      "startHour": 12
+    },
+    {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Sep 11",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-97",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-11",
+      "startHour": 13
+    },
+    {
+      "title": "Men's Water Polo vs St. Mary's - Princeton Invitational",
+      "source": "Princeton University",
+      "dateLabel": "Sep 11",
+      "timeLabel": "3:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-st-marys-princeton-invitational",
+      "tags": [],
+      "isoDate": "2026-09-11",
+      "startHour": 15
+    },
+    {
+      "title": "Kalaa Open House and New Members Workshop",
+      "source": "Princeton University",
+      "dateLabel": "Sep 11",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/kalaa-open-house-and-new-members-workshop",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-11",
+      "startHour": 16
+    },
+    {
+      "title": "Field Hockey vs Rutgers",
+      "source": "Princeton University",
+      "dateLabel": "Sep 11",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-rutgers",
+      "tags": [],
+      "isoDate": "2026-09-11",
+      "startHour": 17
     }
   ],
   "days": [
-    {
-      "iso": "2026-09-04",
-      "label": "Sep 4",
-      "weekday": "Fri",
-      "count": 9
-    },
     {
       "iso": "2026-09-05",
       "label": "Sep 5",
@@ -1918,6 +1890,12 @@
       "label": "Sep 10",
       "weekday": "Thu",
       "count": 24
+    },
+    {
+      "iso": "2026-09-11",
+      "label": "Sep 11",
+      "weekday": "Fri",
+      "count": 8
     }
   ],
   "windowDays": 7,
@@ -1939,7 +1917,7 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "24 events"
+      "detail": "28 events"
     },
     {
       "name": "Municipality of Princeton",
@@ -1951,7 +1929,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "79 showtimes"
+      "detail": "78 showtimes"
     }
   ]
 }
