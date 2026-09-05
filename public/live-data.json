@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T15:12:40.199Z",
+  "generatedAt": "2026-09-05T17:20:42.943Z",
   "weather": {
     "temperature": 82,
     "shortForecast": "Mostly Sunny",
@@ -78,34 +78,6 @@
       "url": "https://www.princeton.edu/events/2026/open-studio-91",
       "tags": [
         "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-05",
-      "startHour": 13
-    },
-    {
-      "title": "The Marching Band",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 5",
-      "timeLabel": "1:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-05",
-      "startHour": 13
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 5",
-      "timeLabel": "1:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
         "culture",
         "rain"
       ],
@@ -1859,7 +1831,7 @@
       "iso": "2026-09-05",
       "label": "Sep 5",
       "weekday": "Sat",
-      "count": 19
+      "count": 17
     },
     {
       "iso": "2026-09-06",
@@ -1929,7 +1901,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "78 showtimes"
+      "detail": "76 showtimes"
     }
   ]
 }
