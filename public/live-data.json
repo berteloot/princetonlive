@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-05T17:20:42.943Z",
+  "generatedAt": "2026-09-05T20:19:38.368Z",
   "weather": {
     "temperature": 82,
-    "shortForecast": "Mostly Sunny",
+    "shortForecast": "Sunny",
     "wind": "5 mph N",
-    "detailedForecast": "Mostly sunny, with a high near 82. North wind around 5 mph.",
+    "detailedForecast": "Sunny, with a high near 82. North wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -147,34 +147,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/tango-practica-11",
       "tags": [],
-      "isoDate": "2026-09-05",
-      "startHour": 16
-    },
-    {
-      "title": "The Salt Path",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 5",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-05",
-      "startHour": 16
-    },
-    {
-      "title": "The Marching Band",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 5",
-      "timeLabel": "4:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
-      "tags": [
-        "culture",
-        "rain"
-      ],
       "isoDate": "2026-09-05",
       "startHour": 16
     },
@@ -1831,7 +1803,7 @@
       "iso": "2026-09-05",
       "label": "Sep 5",
       "weekday": "Sat",
-      "count": 17
+      "count": 15
     },
     {
       "iso": "2026-09-06",
@@ -1877,7 +1849,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Sunny, 82F"
+      "detail": "Sunny, 82F"
     },
     {
       "name": "Princeton University Events",
@@ -1901,7 +1873,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "76 showtimes"
+      "detail": "74 showtimes"
     }
   ]
 }
