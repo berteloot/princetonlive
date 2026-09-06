@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-06T15:27:23.261Z",
+  "generatedAt": "2026-09-06T20:23:19.350Z",
   "weather": {
-    "temperature": 76,
-    "shortForecast": "Partly Sunny",
+    "temperature": 77,
+    "shortForecast": "Isolated Rain Showers",
     "wind": "5 mph NE",
-    "detailedForecast": "Partly sunny, with a high near 76. Northeast wind around 5 mph.",
+    "detailedForecast": "Isolated rain showers. Partly sunny, with a high near 77. Northeast wind around 5 mph. Chance of precipitation is 20%.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -49,62 +49,6 @@
       ],
       "isoDate": "2026-09-06",
       "startHour": 12
-    },
-    {
-      "title": "Dodsworth",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 6",
-      "timeLabel": "1:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=dodsworth",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-06",
-      "startHour": 13
-    },
-    {
-      "title": "The Salt Path",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 6",
-      "timeLabel": "1:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-06",
-      "startHour": 13
-    },
-    {
-      "title": "The Salt Path",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 6",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-06",
-      "startHour": 16
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 6",
-      "timeLabel": "4:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-06",
-      "startHour": 16
     },
     {
       "title": "Princeton Poker Club Fall Kickoff Tournament",
@@ -1744,7 +1688,7 @@
       "iso": "2026-09-06",
       "label": "Sep 6",
       "weekday": "Sun",
-      "count": 10
+      "count": 6
     },
     {
       "iso": "2026-09-07",
@@ -1790,7 +1734,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Partly Sunny, 76F"
+      "detail": "Isolated Rain Showers, 77F"
     },
     {
       "name": "Princeton University Events",
@@ -1814,7 +1758,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "72 showtimes"
+      "detail": "68 showtimes"
     }
   ]
 }
