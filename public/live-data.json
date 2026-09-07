@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-07T12:30:30.134Z",
+  "generatedAt": "2026-09-07T19:09:03.848Z",
   "weather": {
     "temperature": 80,
     "shortForecast": "Sunny",
-    "wind": "0 to 5 mph N",
-    "detailedForecast": "Sunny, with a high near 80. North wind 0 to 5 mph.",
+    "wind": "0 to 5 mph NW",
+    "detailedForecast": "Sunny, with a high near 80. Northwest wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -48,34 +48,6 @@
       ],
       "isoDate": "2026-09-07",
       "startHour": 10
-    },
-    {
-      "title": "The Marching Band",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 7",
-      "timeLabel": "1:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-07",
-      "startHour": 13
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 7",
-      "timeLabel": "1:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-07",
-      "startHour": 13
     },
     {
       "title": "The Salt Path",
@@ -1729,7 +1701,7 @@
       "iso": "2026-09-07",
       "label": "Sep 7",
       "weekday": "Mon",
-      "count": 13
+      "count": 11
     },
     {
       "iso": "2026-09-08",
@@ -1799,7 +1771,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "66 showtimes"
+      "detail": "64 showtimes"
     }
   ]
 }
