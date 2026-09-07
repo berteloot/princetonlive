@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-07T19:09:03.848Z",
+  "generatedAt": "2026-09-07T23:29:24.986Z",
   "weather": {
-    "temperature": 80,
-    "shortForecast": "Sunny",
+    "temperature": 57,
+    "shortForecast": "Mostly Clear",
     "wind": "0 to 5 mph NW",
-    "detailedForecast": "Sunny, with a high near 80. Northwest wind 0 to 5 mph.",
+    "detailedForecast": "Mostly clear, with a low around 57. Northwest wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -48,34 +48,6 @@
       ],
       "isoDate": "2026-09-07",
       "startHour": 10
-    },
-    {
-      "title": "The Salt Path",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 7",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-07",
-      "startHour": 16
-    },
-    {
-      "title": "The Marching Band",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 7",
-      "timeLabel": "4:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-07",
-      "startHour": 16
     },
     {
       "title": "Civic Leadership Council (Pace) Weekly Meeting",
@@ -128,34 +100,6 @@
       "url": "https://www.princeton.edu/events/2026/what-philosophy-and-what-its-value",
       "tags": [
         "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-07",
-      "startHour": 19
-    },
-    {
-      "title": "The Salt Path",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 7",
-      "timeLabel": "7:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-07",
-      "startHour": 19
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 7",
-      "timeLabel": "7:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
         "culture",
         "rain"
       ],
@@ -1701,7 +1645,7 @@
       "iso": "2026-09-07",
       "label": "Sep 7",
       "weekday": "Mon",
-      "count": 11
+      "count": 7
     },
     {
       "iso": "2026-09-08",
@@ -1747,7 +1691,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 80F"
+      "detail": "Mostly Clear, 57F"
     },
     {
       "name": "Princeton University Events",
@@ -1771,7 +1715,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "64 showtimes"
+      "detail": "60 showtimes"
     }
   ]
 }
