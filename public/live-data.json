@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-08T16:37:53.218Z",
+  "generatedAt": "2026-09-08T21:08:45.012Z",
   "weather": {
-    "temperature": 82,
+    "temperature": 84,
     "shortForecast": "Mostly Sunny",
-    "wind": "5 mph NW",
-    "detailedForecast": "Mostly sunny, with a high near 82. Northwest wind around 5 mph.",
+    "wind": "0 mph ",
+    "detailedForecast": "Mostly sunny, with a high near 84. West wind around 0 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -112,20 +112,6 @@
       "startHour": 13
     },
     {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Spruce Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 8, 2026",
-      "timeLabel": "01:00 PM - 01:45 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7339",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-09-08",
-      "startHour": 13
-    },
-    {
       "title": "Food Insecurity Task Force: Arm in Arm",
       "source": "Municipality of Princeton",
       "dateLabel": "September 8, 2026",
@@ -139,20 +125,6 @@
       "startHour": 13
     },
     {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Redding Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 8, 2026",
-      "timeLabel": "02:00 PM - 02:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7391",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-09-08",
-      "startHour": 14
-    },
-    {
       "title": "McGraw Undergraduate Learning Program - Learning Concierge",
       "source": "Princeton University",
       "dateLabel": "Sep 8",
@@ -160,19 +132,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-0",
       "tags": [],
-      "isoDate": "2026-09-08",
-      "startHour": 15
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At YMCA",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 8, 2026",
-      "timeLabel": "03:15 PM - 04:15 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7131",
-      "tags": [
-        "practical"
-      ],
       "isoDate": "2026-09-08",
       "startHour": 15
     },
@@ -190,19 +149,6 @@
       "startHour": 15
     },
     {
-      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At Redding Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 8, 2026",
-      "timeLabel": "03:30 PM - 04:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7545",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-08",
-      "startHour": 15
-    },
-    {
       "title": "Mercer County Community ID",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 08",
@@ -212,34 +158,6 @@
       "tags": [
         "family",
         "practical"
-      ],
-      "isoDate": "2026-09-08",
-      "startHour": 16
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 8",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-08",
-      "startHour": 16
-    },
-    {
-      "title": "The Salt Path",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 8",
-      "timeLabel": "4:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
-      "tags": [
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-09-08",
       "startHour": 16
@@ -700,6 +618,19 @@
       "startHour": 17
     },
     {
+      "title": "Premed 101",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/premed-101",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 17
+    },
+    {
       "title": "The Paleo Ponies of Princeton: 150 Years of Princeton Paleontology",
       "source": "Princeton University",
       "dateLabel": "Sep 9",
@@ -709,19 +640,6 @@
       "tags": [
         "new",
         "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 17
-    },
-    {
-      "title": "Premed 101",
-      "source": "Princeton University",
-      "dateLabel": "Sep 9",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/premed-101",
-      "tags": [
         "rain"
       ],
       "isoDate": "2026-09-09",
@@ -759,7 +677,7 @@
       "title": "A Panel of Lightning Presentations on Impactful Internships and Careers!",
       "source": "Princeton University",
       "dateLabel": "Sep 9",
-      "timeLabel": "5:15 PM",
+      "timeLabel": "5:45 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/panel-lightning-presentations-impactful-internships-and-careers",
       "tags": [
@@ -922,12 +840,12 @@
       "startHour": 12
     },
     {
-      "title": "Study Abroad Info Session: European Based Programs in the Local Langauge",
+      "title": "After Noon Concert Series",
       "source": "Princeton University",
       "dateLabel": "Sep 10",
       "timeLabel": "12:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/study-abroad-info-session-european-based-programs-local-langauge",
+      "url": "https://www.princeton.edu/events/2026/after-noon-concert-series-0",
       "tags": [
         "culture"
       ],
@@ -935,12 +853,12 @@
       "startHour": 12
     },
     {
-      "title": "After Noon Concert Series",
+      "title": "Study Abroad Info Session: European Based Programs in the Local Langauge",
       "source": "Princeton University",
       "dateLabel": "Sep 10",
       "timeLabel": "12:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/after-noon-concert-series-0",
+      "url": "https://www.princeton.edu/events/2026/study-abroad-info-session-european-based-programs-local-langauge",
       "tags": [
         "culture"
       ],
@@ -1196,6 +1114,21 @@
       ],
       "isoDate": "2026-09-11",
       "startHour": 0
+    },
+    {
+      "title": "9/11 Service of Remembrance",
+      "source": "Princeton University",
+      "dateLabel": "Sep 11",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/911-service-remembrance",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-09-11",
+      "startHour": 12
     },
     {
       "title": "Annual 9/11 Remembrance Ceremony",
@@ -1799,7 +1732,7 @@
       "iso": "2026-09-08",
       "label": "Sep 8",
       "weekday": "Tue",
-      "count": 27
+      "count": 21
     },
     {
       "iso": "2026-09-09",
@@ -1817,7 +1750,7 @@
       "iso": "2026-09-11",
       "label": "Sep 11",
       "weekday": "Fri",
-      "count": 8
+      "count": 9
     },
     {
       "iso": "2026-09-12",
@@ -1845,7 +1778,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Sunny, 82F"
+      "detail": "Mostly Sunny, 84F"
     },
     {
       "name": "Princeton University Events",
@@ -1863,13 +1796,13 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "37 calendar items"
+      "detail": "33 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "60 showtimes"
+      "detail": "58 showtimes"
     }
   ]
 }
