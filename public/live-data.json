@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-08T11:17:13.881Z",
+  "generatedAt": "2026-09-08T16:37:53.218Z",
   "weather": {
     "temperature": 82,
-    "shortForecast": "Sunny",
-    "wind": "0 to 5 mph NW",
-    "detailedForecast": "Sunny, with a high near 82. Northwest wind 0 to 5 mph.",
+    "shortForecast": "Mostly Sunny",
+    "wind": "5 mph NW",
+    "detailedForecast": "Mostly sunny, with a high near 82. Northwest wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -687,6 +687,19 @@
       "startHour": 16
     },
     {
+      "title": "Academic Success Today Mentor Orientation",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/academic-success-today-mentor-orientation",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 17
+    },
+    {
       "title": "The Paleo Ponies of Princeton: 150 Years of Princeton Paleontology",
       "source": "Princeton University",
       "dateLabel": "Sep 9",
@@ -702,6 +715,19 @@
       "startHour": 17
     },
     {
+      "title": "Premed 101",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/premed-101",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 17
+    },
+    {
       "title": "Princeton Acting Ensemble Workshops",
       "source": "Princeton University",
       "dateLabel": "Sep 9",
@@ -711,32 +737,6 @@
       "tags": [
         "new",
         "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 17
-    },
-    {
-      "title": "Academic Success Today Mentor Orientation",
-      "source": "Princeton University",
-      "dateLabel": "Sep 9",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/academic-success-today-mentor-orientation",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 17
-    },
-    {
-      "title": "Premed 101",
-      "source": "Princeton University",
-      "dateLabel": "Sep 9",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/premed-101",
-      "tags": [
         "rain"
       ],
       "isoDate": "2026-09-09",
@@ -759,7 +759,7 @@
       "title": "A Panel of Lightning Presentations on Impactful Internships and Careers!",
       "source": "Princeton University",
       "dateLabel": "Sep 9",
-      "timeLabel": "5:45 PM",
+      "timeLabel": "5:15 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/panel-lightning-presentations-impactful-internships-and-careers",
       "tags": [
@@ -1050,6 +1050,19 @@
       "startHour": 16
     },
     {
+      "title": "PBC General Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Sep 10",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/pbc-general-meeting",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-09-10",
+      "startHour": 16
+    },
+    {
       "title": "New Jersey Night",
       "source": "Princeton University",
       "dateLabel": "Sep 10",
@@ -1198,23 +1211,23 @@
       "startHour": 12
     },
     {
-      "title": "Study Abroad Fair 2026",
-      "source": "Princeton University",
-      "dateLabel": "Sep 11",
-      "timeLabel": "12:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/study-abroad-fair-2026",
-      "tags": [],
-      "isoDate": "2026-09-11",
-      "startHour": 12
-    },
-    {
       "title": "Muslim Life Program Friday Jummah Congregational Prayer",
       "source": "Princeton University",
       "dateLabel": "Sep 11",
       "timeLabel": "12:30 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/muslim-life-program-friday-jummah-congregational-prayer-22",
+      "tags": [],
+      "isoDate": "2026-09-11",
+      "startHour": 12
+    },
+    {
+      "title": "Study Abroad Fair 2026",
+      "source": "Princeton University",
+      "dateLabel": "Sep 11",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/study-abroad-fair-2026",
       "tags": [],
       "isoDate": "2026-09-11",
       "startHour": 12
@@ -1672,19 +1685,6 @@
       "startHour": 16
     },
     {
-      "title": "The Midas Monument: Behind the Facade | AIA ∙ The Elizabeth S. Ettinghausen Lecture",
-      "source": "Princeton University",
-      "dateLabel": "Sep 14",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/midas-monument-behind-facade-aia-elizabeth-s-ettinghausen-lecture",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-09-14",
-      "startHour": 16
-    },
-    {
       "title": "Library Research for Uranium",
       "source": "Princeton University",
       "dateLabel": "Sep 14",
@@ -1693,6 +1693,19 @@
       "url": "https://www.princeton.edu/events/2026/library-research-uranium-0",
       "tags": [
         "rain"
+      ],
+      "isoDate": "2026-09-14",
+      "startHour": 16
+    },
+    {
+      "title": "The Midas Monument: Behind the Facade | AIA ∙ The Elizabeth S. Ettinghausen Lecture",
+      "source": "Princeton University",
+      "dateLabel": "Sep 14",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/midas-monument-behind-facade-aia-elizabeth-s-ettinghausen-lecture",
+      "tags": [
+        "culture"
       ],
       "isoDate": "2026-09-14",
       "startHour": 16
@@ -1798,7 +1811,7 @@
       "iso": "2026-09-10",
       "label": "Sep 10",
       "weekday": "Thu",
-      "count": 24
+      "count": 25
     },
     {
       "iso": "2026-09-11",
@@ -1832,7 +1845,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 82F"
+      "detail": "Mostly Sunny, 82F"
     },
     {
       "name": "Princeton University Events",
