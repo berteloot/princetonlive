@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-09T20:55:48.625Z",
+  "generatedAt": "2026-09-09T23:14:07.528Z",
   "weather": {
-    "temperature": 85,
+    "temperature": 71,
     "shortForecast": "Slight Chance Rain Showers",
     "wind": "10 mph SW",
-    "detailedForecast": "A slight chance of rain showers. Partly sunny, with a high near 85. Southwest wind around 10 mph. Chance of precipitation is 20%.",
+    "detailedForecast": "A slight chance of rain showers. Partly cloudy, with a low around 71. Southwest wind around 10 mph. Chance of precipitation is 20%.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -287,19 +287,6 @@
       "startHour": 17
     },
     {
-      "title": "Food Insecurity Task Force: Princeton Cornerstone Kitchen",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 9, 2026",
-      "timeLabel": "05:00 PM - 06:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=6924",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 17
-    },
-    {
       "title": "A Panel of Lightning Presentations on Impactful Internships and Careers!",
       "source": "Princeton University",
       "dateLabel": "Sep 9",
@@ -349,34 +336,6 @@
       "url": "https://www.princeton.edu/events/2026/princeton-acting-ensemble-workshops-0",
       "tags": [
         "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 19
-    },
-    {
-      "title": "Queen Kelly",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 9",
-      "timeLabel": "7:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=queen-kelly",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 19
-    },
-    {
-      "title": "The Salt Path",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 9",
-      "timeLabel": "7:10 PM (OC)",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
-      "tags": [
         "culture",
         "rain"
       ],
@@ -2011,7 +1970,7 @@
       "iso": "2026-09-09",
       "label": "Sep 9",
       "weekday": "Wed",
-      "count": 27
+      "count": 24
     },
     {
       "iso": "2026-09-10",
@@ -2057,7 +2016,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Slight Chance Rain Showers, 85F"
+      "detail": "Slight Chance Rain Showers, 71F"
     },
     {
       "name": "Princeton University Events",
@@ -2075,13 +2034,13 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "34 calendar items"
+      "detail": "33 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "81 showtimes"
+      "detail": "79 showtimes"
     }
   ]
 }
