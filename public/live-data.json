@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-09T16:37:16.900Z",
+  "generatedAt": "2026-09-09T20:55:48.625Z",
   "weather": {
-    "temperature": 86,
-    "shortForecast": "Mostly Sunny",
-    "wind": "5 to 10 mph SW",
-    "detailedForecast": "Mostly sunny, with a high near 86. Southwest wind 5 to 10 mph.",
+    "temperature": 85,
+    "shortForecast": "Slight Chance Rain Showers",
+    "wind": "10 mph SW",
+    "detailedForecast": "A slight chance of rain showers. Partly sunny, with a high near 85. Southwest wind around 10 mph. Chance of precipitation is 20%.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -139,34 +139,6 @@
       "startHour": 13
     },
     {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 9",
-      "timeLabel": "1:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 13
-    },
-    {
-      "title": "The Salt Path",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 9",
-      "timeLabel": "1:10 PM (OC)",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 13
-    },
-    {
       "title": "Introduction to QGIS",
       "source": "Princeton University",
       "dateLabel": "Sep 9",
@@ -211,19 +183,6 @@
       "startHour": 14
     },
     {
-      "title": "Food Insecurity Task Force: Princeton Alliance Church",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 9, 2026",
-      "timeLabel": "02:30 PM - 04:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7235",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 14
-    },
-    {
       "title": "McGraw Undergraduate Learning Program - Learning Concierge",
       "source": "Princeton University",
       "dateLabel": "Sep 9",
@@ -248,20 +207,6 @@
       "startHour": 16
     },
     {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 9",
-      "timeLabel": "4:00 PM (OC)",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 16
-    },
-    {
       "title": "InterVarsity Flower Giveaway!",
       "source": "Princeton University",
       "dateLabel": "Sep 9",
@@ -270,20 +215,6 @@
       "url": "https://www.princeton.edu/events/2026/intervarsity-flower-giveaway",
       "tags": [
         "new"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 16
-    },
-    {
-      "title": "The Marching Band",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 9",
-      "timeLabel": "4:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-marching-band",
-      "tags": [
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-09-09",
       "startHour": 16
@@ -300,21 +231,6 @@
       "startHour": 16
     },
     {
-      "title": "The Paleo Ponies of Princeton: 150 Years of Princeton Paleontology",
-      "source": "Princeton University",
-      "dateLabel": "Sep 9",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/paleo-ponies-princeton-150-years-princeton-paleontology",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-09",
-      "startHour": 17
-    },
-    {
       "title": "Academic Success Today Mentor Orientation",
       "source": "Princeton University",
       "dateLabel": "Sep 9",
@@ -323,6 +239,19 @@
       "url": "https://www.princeton.edu/events/2026/academic-success-today-mentor-orientation",
       "tags": [
         "new"
+      ],
+      "isoDate": "2026-09-09",
+      "startHour": 17
+    },
+    {
+      "title": "Premed 101",
+      "source": "Princeton University",
+      "dateLabel": "Sep 9",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/premed-101",
+      "tags": [
+        "rain"
       ],
       "isoDate": "2026-09-09",
       "startHour": 17
@@ -343,13 +272,15 @@
       "startHour": 17
     },
     {
-      "title": "Premed 101",
+      "title": "The Paleo Ponies of Princeton: 150 Years of Princeton Paleontology",
       "source": "Princeton University",
       "dateLabel": "Sep 9",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/premed-101",
+      "url": "https://www.princeton.edu/events/2026/paleo-ponies-princeton-150-years-princeton-paleontology",
       "tags": [
+        "new",
+        "culture",
         "rain"
       ],
       "isoDate": "2026-09-09",
@@ -535,12 +466,12 @@
       "startHour": 12
     },
     {
-      "title": "Study Abroad Info Session: European Based Programs in the Local Langauge",
+      "title": "After Noon Concert Series",
       "source": "Princeton University",
       "dateLabel": "Sep 10",
       "timeLabel": "12:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/study-abroad-info-session-european-based-programs-local-langauge",
+      "url": "https://www.princeton.edu/events/2026/after-noon-concert-series-0",
       "tags": [
         "culture"
       ],
@@ -548,12 +479,12 @@
       "startHour": 12
     },
     {
-      "title": "After Noon Concert Series",
+      "title": "Study Abroad Info Session: European Based Programs in the Local Langauge",
       "source": "Princeton University",
       "dateLabel": "Sep 10",
       "timeLabel": "12:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/after-noon-concert-series-0",
+      "url": "https://www.princeton.edu/events/2026/study-abroad-info-session-european-based-programs-local-langauge",
       "tags": [
         "culture"
       ],
@@ -690,6 +621,19 @@
       "startHour": 17
     },
     {
+      "title": "Black Arts Company Audition",
+      "source": "Princeton University",
+      "dateLabel": "Sep 10",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/black-arts-company-audition",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-09-10",
+      "startHour": 18
+    },
+    {
       "title": "Author: Shatema Threadcraft",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 10",
@@ -809,6 +753,19 @@
       ],
       "isoDate": "2026-09-11",
       "startHour": 0
+    },
+    {
+      "title": "30 Minutes Towards Better Bibliographies and Footnotes! (online)",
+      "source": "Princeton University",
+      "dateLabel": "Sep 11",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/30-minutes-towards-better-bibliographies-and-footnotes-online-4",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-09-11",
+      "startHour": 12
     },
     {
       "title": "9/11 Service of Remembrance",
@@ -1537,15 +1494,14 @@
       "startHour": 16
     },
     {
-      "title": "Civic Leadership Council (Pace) Weekly Meeting",
+      "title": "The Midas Monument: Behind the Facade | AIA ∙ The Elizabeth S. Ettinghausen Lecture",
       "source": "Princeton University",
       "dateLabel": "Sep 14",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/civic-leadership-council-pace-weekly-meeting-0",
+      "url": "https://www.princeton.edu/events/2026/midas-monument-behind-facade-aia-elizabeth-s-ettinghausen-lecture",
       "tags": [
-        "rain",
-        "practical"
+        "culture"
       ],
       "isoDate": "2026-09-14",
       "startHour": 16
@@ -1564,17 +1520,34 @@
       "startHour": 16
     },
     {
-      "title": "The Midas Monument: Behind the Facade | AIA ∙ The Elizabeth S. Ettinghausen Lecture",
+      "title": "Civic Leadership Council (Pace) Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Sep 14",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/midas-monument-behind-facade-aia-elizabeth-s-ettinghausen-lecture",
+      "url": "https://www.princeton.edu/events/2026/civic-leadership-council-pace-weekly-meeting-0",
       "tags": [
-        "culture"
+        "rain",
+        "practical"
       ],
       "isoDate": "2026-09-14",
       "startHour": 16
+    },
+    {
+      "title": "M+M Fall Series (Film Screening): Johan Grimonprez",
+      "source": "Princeton University",
+      "dateLabel": "Sep 14",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mm-fall-series-film-screening-johan-grimonprez",
+      "tags": [
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-14",
+      "startHour": 18
     },
     {
       "title": "SINSI Fellowship Open House",
@@ -1936,6 +1909,21 @@
       "startHour": 16
     },
     {
+      "title": "M+M Fall Series: Johan Grimonprez (HOLD)",
+      "source": "Princeton University",
+      "dateLabel": "Sep 15",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mm-fall-series-johan-grimonprez-hold",
+      "tags": [
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-15",
+      "startHour": 16
+    },
+    {
       "title": "Study Abroad 101 - Beyond the Bubble for First Years - Info Session",
       "source": "Princeton University",
       "dateLabel": "Sep 15",
@@ -2023,19 +2011,19 @@
       "iso": "2026-09-09",
       "label": "Sep 9",
       "weekday": "Wed",
-      "count": 32
+      "count": 27
     },
     {
       "iso": "2026-09-10",
       "label": "Sep 10",
       "weekday": "Thu",
-      "count": 25
+      "count": 26
     },
     {
       "iso": "2026-09-11",
       "label": "Sep 11",
       "weekday": "Fri",
-      "count": 13
+      "count": 14
     },
     {
       "iso": "2026-09-12",
@@ -2053,13 +2041,13 @@
       "iso": "2026-09-14",
       "label": "Sep 14",
       "weekday": "Mon",
-      "count": 21
+      "count": 22
     },
     {
       "iso": "2026-09-15",
       "label": "Sep 15",
       "weekday": "Tue",
-      "count": 24
+      "count": 25
     }
   ],
   "windowDays": 7,
@@ -2069,7 +2057,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Sunny, 86F"
+      "detail": "Slight Chance Rain Showers, 85F"
     },
     {
       "name": "Princeton University Events",
@@ -2087,13 +2075,13 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "35 calendar items"
+      "detail": "34 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "85 showtimes"
+      "detail": "81 showtimes"
     }
   ]
 }
