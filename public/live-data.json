@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-10T16:23:06.778Z",
+  "generatedAt": "2026-09-10T20:51:24.926Z",
   "weather": {
     "temperature": 87,
-    "shortForecast": "Mostly Sunny",
-    "wind": "5 to 10 mph W",
-    "detailedForecast": "Mostly sunny, with a high near 87. West wind 5 to 10 mph.",
+    "shortForecast": "Partly Sunny",
+    "wind": "10 mph W",
+    "detailedForecast": "Partly sunny, with a high near 87. West wind around 10 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -177,48 +177,6 @@
       ],
       "isoDate": "2026-09-10",
       "startHour": 15
-    },
-    {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Griggs Farm",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 10, 2026",
-      "timeLabel": "03:30 PM - 04:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7441",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-09-10",
-      "startHour": 15
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 10",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-10",
-      "startHour": 16
-    },
-    {
-      "title": "The Salt Path",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 10",
-      "timeLabel": "4:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-10",
-      "startHour": 16
     },
     {
       "title": "PBC General Meeting",
@@ -2054,7 +2012,7 @@
       "iso": "2026-09-10",
       "label": "Sep 10",
       "weekday": "Thu",
-      "count": 26
+      "count": 23
     },
     {
       "iso": "2026-09-11",
@@ -2100,7 +2058,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Sunny, 87F"
+      "detail": "Partly Sunny, 87F"
     },
     {
       "name": "Princeton University Events",
@@ -2118,13 +2076,13 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "34 calendar items"
+      "detail": "33 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "79 showtimes"
+      "detail": "77 showtimes"
     }
   ]
 }
