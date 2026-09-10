@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-10T20:51:24.926Z",
+  "generatedAt": "2026-09-10T23:09:43.976Z",
   "weather": {
-    "temperature": 87,
-    "shortForecast": "Partly Sunny",
-    "wind": "10 mph W",
-    "detailedForecast": "Partly sunny, with a high near 87. West wind around 10 mph.",
+    "temperature": 67,
+    "shortForecast": "Mostly Cloudy",
+    "wind": "5 mph NW",
+    "detailedForecast": "Mostly cloudy, with a low around 67. Northwest wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -264,20 +264,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-colgate",
       "tags": [],
-      "isoDate": "2026-09-10",
-      "startHour": 19
-    },
-    {
-      "title": "The Great Escape",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 10",
-      "timeLabel": "7:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-great-escape",
-      "tags": [
-        "culture",
-        "rain"
-      ],
       "isoDate": "2026-09-10",
       "startHour": 19
     },
@@ -1402,6 +1388,19 @@
       "startHour": 13
     },
     {
+      "title": "Food Insecurity Task Force: Arm in Arm",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 15, 2026",
+      "timeLabel": "01:00 PM - 07:00 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7751",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-09-15",
+      "startHour": 13
+    },
+    {
       "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Spruce Circle",
       "source": "Municipality of Princeton",
       "dateLabel": "September 15, 2026",
@@ -1410,19 +1409,6 @@
       "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7340",
       "tags": [
         "family",
-        "practical"
-      ],
-      "isoDate": "2026-09-15",
-      "startHour": 13
-    },
-    {
-      "title": "Food Insecurity Task Force: Arm in Arm",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 15, 2026",
-      "timeLabel": "01:00 PM - 07:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7751",
-      "tags": [
         "practical"
       ],
       "isoDate": "2026-09-15",
@@ -2012,7 +1998,7 @@
       "iso": "2026-09-10",
       "label": "Sep 10",
       "weekday": "Thu",
-      "count": 23
+      "count": 22
     },
     {
       "iso": "2026-09-11",
@@ -2058,7 +2044,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Partly Sunny, 87F"
+      "detail": "Mostly Cloudy, 67F"
     },
     {
       "name": "Princeton University Events",
@@ -2082,7 +2068,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "77 showtimes"
+      "detail": "76 showtimes"
     }
   ]
 }
