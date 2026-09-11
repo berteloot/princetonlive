@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-11T11:19:27.045Z",
+  "generatedAt": "2026-09-11T16:27:19.446Z",
   "weather": {
     "temperature": 81,
-    "shortForecast": "Partly Sunny",
+    "shortForecast": "Mostly Sunny",
     "wind": "5 mph NW",
-    "detailedForecast": "Partly sunny, with a high near 81. Northwest wind around 5 mph.",
+    "detailedForecast": "Mostly sunny, with a high near 81. Northwest wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -970,17 +970,6 @@
       "tags": [
         "new"
       ],
-      "isoDate": "2026-09-15",
-      "startHour": 9
-    },
-    {
-      "title": "InterVarsity Coldbrew Giveaway!",
-      "source": "Princeton University",
-      "dateLabel": "Sep 15",
-      "timeLabel": "9:30 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-coldbrew-giveaway",
-      "tags": [],
       "isoDate": "2026-09-15",
       "startHour": 9
     },
@@ -2110,7 +2099,7 @@
       "iso": "2026-09-15",
       "label": "Sep 15",
       "weekday": "Tue",
-      "count": 25
+      "count": 24
     },
     {
       "iso": "2026-09-16",
@@ -2132,7 +2121,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Partly Sunny, 81F"
+      "detail": "Mostly Sunny, 81F"
     },
     {
       "name": "Princeton University Events",
