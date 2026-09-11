@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-11T16:27:19.446Z",
+  "generatedAt": "2026-09-11T20:57:34.310Z",
   "weather": {
     "temperature": 81,
-    "shortForecast": "Mostly Sunny",
+    "shortForecast": "Sunny",
     "wind": "5 mph NW",
-    "detailedForecast": "Mostly sunny, with a high near 81. Northwest wind around 5 mph.",
+    "detailedForecast": "Sunny, with a high near 81. Northwest wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -115,20 +115,6 @@
       "startHour": 15
     },
     {
-      "title": "Hope",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 11",
-      "timeLabel": "3:45 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=hope",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-11",
-      "startHour": 15
-    },
-    {
       "title": "Puzzles Intro Meeting",
       "source": "Princeton University",
       "dateLabel": "Sep 11",
@@ -137,20 +123,6 @@
       "url": "https://www.princeton.edu/events/2026/puzzles-intro-meeting",
       "tags": [
         "new",
-        "rain"
-      ],
-      "isoDate": "2026-09-11",
-      "startHour": 16
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 11",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
         "rain"
       ],
       "isoDate": "2026-09-11",
@@ -793,19 +765,6 @@
       "startHour": 16
     },
     {
-      "title": "The Midas Monument: Behind the Facade | AIA ∙ The Elizabeth S. Ettinghausen Lecture",
-      "source": "Princeton University",
-      "dateLabel": "Sep 14",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/midas-monument-behind-facade-aia-elizabeth-s-ettinghausen-lecture",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-09-14",
-      "startHour": 16
-    },
-    {
       "title": "Library Research for Uranium",
       "source": "Princeton University",
       "dateLabel": "Sep 14",
@@ -814,6 +773,19 @@
       "url": "https://www.princeton.edu/events/2026/library-research-uranium-0",
       "tags": [
         "rain"
+      ],
+      "isoDate": "2026-09-14",
+      "startHour": 16
+    },
+    {
+      "title": "The Midas Monument: Behind the Facade | AIA ∙ The Elizabeth S. Ettinghausen Lecture",
+      "source": "Princeton University",
+      "dateLabel": "Sep 14",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/midas-monument-behind-facade-aia-elizabeth-s-ettinghausen-lecture",
+      "tags": [
+        "culture"
       ],
       "isoDate": "2026-09-14",
       "startHour": 16
@@ -1377,6 +1349,17 @@
       "startHour": 11
     },
     {
+      "title": "InterVarsity Coldbrew Giveaway!",
+      "source": "Princeton University",
+      "dateLabel": "Sep 16",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-coldbrew-giveaway",
+      "tags": [],
+      "isoDate": "2026-09-16",
+      "startHour": 12
+    },
+    {
       "title": "Kids: Baby Play Group",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 16",
@@ -1918,6 +1901,19 @@
       "startHour": 16
     },
     {
+      "title": "Petey Greene Opening Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Sep 17",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/petey-greene-opening-meeting",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-09-17",
+      "startHour": 16
+    },
+    {
       "title": "The Visual Culture of Roman Slavery: Bills of Sale",
       "source": "Princeton University",
       "dateLabel": "Sep 17",
@@ -2075,7 +2071,7 @@
       "iso": "2026-09-11",
       "label": "Sep 11",
       "weekday": "Fri",
-      "count": 15
+      "count": 13
     },
     {
       "iso": "2026-09-12",
@@ -2105,13 +2101,13 @@
       "iso": "2026-09-16",
       "label": "Sep 16",
       "weekday": "Wed",
-      "count": 29
+      "count": 30
     },
     {
       "iso": "2026-09-17",
       "label": "Sep 17",
       "weekday": "Thu",
-      "count": 28
+      "count": 29
     }
   ],
   "windowDays": 7,
@@ -2121,7 +2117,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Sunny, 81F"
+      "detail": "Sunny, 81F"
     },
     {
       "name": "Princeton University Events",
@@ -2145,7 +2141,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "75 showtimes"
+      "detail": "73 showtimes"
     }
   ]
 }
