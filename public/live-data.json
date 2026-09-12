@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-12T20:32:28.695Z",
+  "generatedAt": "2026-09-12T23:02:54.781Z",
   "weather": {
-    "temperature": 81,
-    "shortForecast": "Partly Sunny",
-    "wind": "10 mph SE",
-    "detailedForecast": "Partly sunny, with a high near 81. Southeast wind around 10 mph.",
+    "temperature": 66,
+    "shortForecast": "Mostly Cloudy then Slight Chance Showers And Thunderstorms",
+    "wind": "5 mph SE",
+    "detailedForecast": "A slight chance of showers and thunderstorms between midnight and 1am, then a chance of showers and thunderstorms between 1am and 2am, then a chance of showers and thunderstorms between 2am and 3am, then showers and thunderstorms likely between 3am and 5am, then patchy fog and showers and thunderstorms likely. Some of the storms could produce heavy rain. Mostly cloudy, with a low around 66. Southeast wind around 5 mph. Chance of precipitation is 70%. New rainfall amounts between three quarters and one inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
@@ -531,6 +531,20 @@
       "startHour": 16
     },
     {
+      "title": "Civic Leadership Council (Pace) Weekly Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Sep 14",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/civic-leadership-council-pace-weekly-meeting-0",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-14",
+      "startHour": 16
+    },
+    {
       "title": "The Midas Monument: Behind the Facade | AIA ∙ The Elizabeth S. Ettinghausen Lecture",
       "source": "Princeton University",
       "dateLabel": "Sep 14",
@@ -552,20 +566,6 @@
       "url": "https://www.princeton.edu/events/2026/library-research-uranium-0",
       "tags": [
         "rain"
-      ],
-      "isoDate": "2026-09-14",
-      "startHour": 16
-    },
-    {
-      "title": "Civic Leadership Council (Pace) Weekly Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Sep 14",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/civic-leadership-council-pace-weekly-meeting-0",
-      "tags": [
-        "rain",
-        "practical"
       ],
       "isoDate": "2026-09-14",
       "startHour": 16
@@ -930,6 +930,20 @@
       "tags": [
         "culture",
         "rain"
+      ],
+      "isoDate": "2026-09-15",
+      "startHour": 16
+    },
+    {
+      "title": "Princeton University Public Lecture: Edmund de Waal",
+      "source": "Princeton University",
+      "dateLabel": "Sep 15",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-university-public-lecture-edmund-de-waal",
+      "tags": [
+        "new",
+        "culture"
       ],
       "isoDate": "2026-09-15",
       "startHour": 16
@@ -1301,6 +1315,20 @@
       "tags": [
         "culture",
         "rain"
+      ],
+      "isoDate": "2026-09-16",
+      "startHour": 16
+    },
+    {
+      "title": "Constitution Day Lecture: Akhil Reed Amar",
+      "source": "Princeton University",
+      "dateLabel": "Sep 16",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/constitution-day-lecture-akhil-reed-amar",
+      "tags": [
+        "new",
+        "culture"
       ],
       "isoDate": "2026-09-16",
       "startHour": 16
@@ -2083,13 +2111,13 @@
       "iso": "2026-09-15",
       "label": "Sep 15",
       "weekday": "Tue",
-      "count": 24
+      "count": 25
     },
     {
       "iso": "2026-09-16",
       "label": "Sep 16",
       "weekday": "Wed",
-      "count": 30
+      "count": 31
     },
     {
       "iso": "2026-09-17",
@@ -2111,7 +2139,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Partly Sunny, 81F"
+      "detail": "Mostly Cloudy then Slight Chance Showers And Thunderstorms, 66F"
     },
     {
       "name": "Princeton University Events",
