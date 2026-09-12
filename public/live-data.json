@@ -1,13 +1,21 @@
 {
-  "generatedAt": "2026-09-12T04:32:54.461Z",
+  "generatedAt": "2026-09-12T10:44:22.869Z",
   "weather": {
-    "temperature": 58,
-    "shortForecast": "Mostly Clear",
-    "wind": "0 to 5 mph NE",
-    "detailedForecast": "Mostly clear, with a low around 58. Northeast wind 0 to 5 mph.",
+    "temperature": 81,
+    "shortForecast": "Mostly Sunny",
+    "wind": "5 to 10 mph E",
+    "detailedForecast": "Mostly sunny, with a high near 81. East wind 5 to 10 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
-  "alerts": [],
+  "alerts": [
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7ec1845b68ea010e5b90426deb8a65fb28b17f2b.001.1",
+      "event": "Flood Watch",
+      "headline": "Flood Watch issued September 12 at 2:21AM EDT until September 13 at 12:00PM EDT by NWS Mount Holly NJ",
+      "severity": "Severe",
+      "url": null
+    }
+  ],
   "alertsAvailable": true,
   "events": [
     {
@@ -2159,7 +2167,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Clear, 58F"
+      "detail": "Mostly Sunny, 81F"
     },
     {
       "name": "Princeton University Events",
