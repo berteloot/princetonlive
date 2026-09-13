@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-13T16:16:04.292Z",
+  "generatedAt": "2026-09-13T20:48:45.452Z",
   "weather": {
-    "temperature": 83,
-    "shortForecast": "Partly Sunny",
+    "temperature": 81,
+    "shortForecast": "Mostly Sunny",
     "wind": "5 mph W",
-    "detailedForecast": "Partly sunny, with a high near 83. West wind around 5 mph. New rainfall amounts between a quarter and half of an inch possible.",
+    "detailedForecast": "Mostly sunny, with a high near 81. West wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -63,34 +63,6 @@
       "startHour": 12
     },
     {
-      "title": "Hope",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 13",
-      "timeLabel": "12:45 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=hope",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-13",
-      "startHour": 12
-    },
-    {
-      "title": "Robert Irwin: A Desert Of Pure Feeling",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 13",
-      "timeLabel": "1:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=robert-irwin-a-desert-of-pure-feeling",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-13",
-      "startHour": 13
-    },
-    {
       "title": "Kids: Special Storytime with Yoojin Grace Wuertz",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 13",
@@ -131,34 +103,6 @@
       "tags": [],
       "isoDate": "2026-09-13",
       "startHour": 15
-    },
-    {
-      "title": "Hope",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 13",
-      "timeLabel": "3:45 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=hope",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-13",
-      "startHour": 15
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 13",
-      "timeLabel": "4:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-13",
-      "startHour": 16
     },
     {
       "title": "The Salt Path",
@@ -2130,7 +2074,7 @@
       "iso": "2026-09-13",
       "label": "Sep 13",
       "weekday": "Sun",
-      "count": 14
+      "count": 10
     },
     {
       "iso": "2026-09-14",
@@ -2176,7 +2120,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Partly Sunny, 83F"
+      "detail": "Mostly Sunny, 81F"
     },
     {
       "name": "Princeton University Events",
@@ -2200,7 +2144,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "65 showtimes"
+      "detail": "61 showtimes"
     }
   ]
 }
