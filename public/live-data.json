@@ -1,21 +1,13 @@
 {
-  "generatedAt": "2026-09-13T11:49:59.746Z",
+  "generatedAt": "2026-09-13T16:16:04.292Z",
   "weather": {
-    "temperature": 82,
-    "shortForecast": "Showers And Thunderstorms then Partly Sunny",
-    "wind": "0 to 5 mph NW",
-    "detailedForecast": "Showers and thunderstorms before 11am, then a slight chance of showers and thunderstorms between 11am and noon. Some of the storms could produce heavy rain. Partly sunny, with a high near 82. Northwest wind 0 to 5 mph. Chance of precipitation is 80%. New rainfall amounts between 1 and 2 inches possible.",
+    "temperature": 83,
+    "shortForecast": "Partly Sunny",
+    "wind": "5 mph W",
+    "detailedForecast": "Partly sunny, with a high near 83. West wind around 5 mph. New rainfall amounts between a quarter and half of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
-  "alerts": [
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4c433a24e19bcc9211bdf1d8554ea92c4d3e8da2.001.1",
-      "event": "Flood Watch",
-      "headline": "Flood Watch issued September 13 at 2:46AM EDT until September 13 at 12:00PM EDT by NWS Mount Holly NJ",
-      "severity": "Severe",
-      "url": null
-    }
-  ],
+  "alerts": [],
   "alertsAvailable": true,
   "events": [
     {
@@ -2184,7 +2176,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Showers And Thunderstorms then Partly Sunny, 82F"
+      "detail": "Partly Sunny, 83F"
     },
     {
       "name": "Princeton University Events",
