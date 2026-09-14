@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-14T04:54:38.554Z",
+  "generatedAt": "2026-09-14T12:44:26.260Z",
   "weather": {
-    "temperature": 64,
-    "shortForecast": "Slight Chance Rain Showers",
-    "wind": "5 mph W",
-    "detailedForecast": "Patchy fog before 5am, then a slight chance of rain showers. Partly cloudy, with a low around 64. West wind around 5 mph. Chance of precipitation is 20%.",
+    "temperature": 74,
+    "shortForecast": "Sunny",
+    "wind": "10 mph N",
+    "detailedForecast": "Sunny, with a high near 74. North wind around 10 mph, with gusts as high as 25 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -541,6 +541,17 @@
       ],
       "isoDate": "2026-09-15",
       "startHour": 15
+    },
+    {
+      "title": "Study Abroad for Transfer and Veteran Students",
+      "source": "Princeton University",
+      "dateLabel": "Sep 15",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/study-abroad-transfer-and-veteran-students",
+      "tags": [],
+      "isoDate": "2026-09-15",
+      "startHour": 16
     },
     {
       "title": "Hope",
@@ -2042,7 +2053,7 @@
       "iso": "2026-09-15",
       "label": "Sep 15",
       "weekday": "Tue",
-      "count": 25
+      "count": 26
     },
     {
       "iso": "2026-09-16",
@@ -2082,7 +2093,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Slight Chance Rain Showers, 64F"
+      "detail": "Sunny, 74F"
     },
     {
       "name": "Princeton University Events",
