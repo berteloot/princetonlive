@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-14T19:50:31.842Z",
+  "generatedAt": "2026-09-14T23:51:58.223Z",
   "weather": {
-    "temperature": 74,
-    "shortForecast": "Sunny",
-    "wind": "10 mph N",
-    "detailedForecast": "Sunny, with a high near 74. North wind around 10 mph, with gusts as high as 25 mph.",
+    "temperature": 51,
+    "shortForecast": "Clear",
+    "wind": "0 to 10 mph N",
+    "detailedForecast": "Clear, with a low around 51. North wind 0 to 10 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -120,20 +120,6 @@
       "tags": [
         "family",
         "practical"
-      ],
-      "isoDate": "2026-09-14",
-      "startHour": 16
-    },
-    {
-      "title": "The Salt Path",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 14",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
-      "tags": [
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-09-14",
       "startHour": 16
@@ -273,34 +259,6 @@
       "tags": [
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-09-14",
-      "startHour": 19
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 14",
-      "timeLabel": "7:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-14",
-      "startHour": 19
-    },
-    {
-      "title": "Hope",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 14",
-      "timeLabel": "7:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=hope",
-      "tags": [
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-09-14",
       "startHour": 19
@@ -1486,6 +1444,20 @@
       "startHour": 17
     },
     {
+      "title": "SoA Lecture: Isidoro Michan-Guindi | \"Building Species\"",
+      "source": "Princeton University",
+      "dateLabel": "Sep 17",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/soa-lecture-isidoro-michan-guindi-building-species",
+      "tags": [
+        "new",
+        "culture"
+      ],
+      "isoDate": "2026-09-17",
+      "startHour": 18
+    },
+    {
       "title": "Ed Park in Conversation with Yiyun Li",
       "source": "Princeton University",
       "dateLabel": "Sep 17",
@@ -2135,7 +2107,7 @@
       "iso": "2026-09-14",
       "label": "Sep 14",
       "weekday": "Mon",
-      "count": 22
+      "count": 19
     },
     {
       "iso": "2026-09-15",
@@ -2153,7 +2125,7 @@
       "iso": "2026-09-17",
       "label": "Sep 17",
       "weekday": "Thu",
-      "count": 31
+      "count": 32
     },
     {
       "iso": "2026-09-18",
@@ -2181,7 +2153,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 74F"
+      "detail": "Clear, 51F"
     },
     {
       "name": "Princeton University Events",
@@ -2205,7 +2177,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "58 showtimes"
+      "detail": "55 showtimes"
     }
   ]
 }
