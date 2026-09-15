@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-15T16:58:08.294Z",
+  "generatedAt": "2026-09-15T21:19:38.207Z",
   "weather": {
     "temperature": 74,
     "shortForecast": "Sunny",
-    "wind": "0 to 5 mph SE",
-    "detailedForecast": "Sunny, with a high near 74. Southeast wind 0 to 5 mph.",
+    "wind": "5 mph SE",
+    "detailedForecast": "Sunny, with a high near 74. Southeast wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -142,20 +142,6 @@
       "startHour": 13
     },
     {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Spruce Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 15, 2026",
-      "timeLabel": "01:00 PM - 01:45 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7340",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-09-15",
-      "startHour": 13
-    },
-    {
       "title": "Food Insecurity Task Force: Arm in Arm",
       "source": "Municipality of Princeton",
       "dateLabel": "September 15, 2026",
@@ -183,20 +169,6 @@
       "startHour": 13
     },
     {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Redding Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 15, 2026",
-      "timeLabel": "02:00 PM - 02:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7392",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-09-15",
-      "startHour": 14
-    },
-    {
       "title": "McGraw Undergraduate Learning Program - Learning Concierge",
       "source": "Princeton University",
       "dateLabel": "Sep 15",
@@ -206,59 +178,6 @@
       "tags": [],
       "isoDate": "2026-09-15",
       "startHour": 15
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At YMCA",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 15, 2026",
-      "timeLabel": "03:15 PM - 04:15 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7132",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-15",
-      "startHour": 15
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At Redding Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 15, 2026",
-      "timeLabel": "03:30 PM - 04:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7546",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-15",
-      "startHour": 15
-    },
-    {
-      "title": "Hope",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 15",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=hope",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-15",
-      "startHour": 16
-    },
-    {
-      "title": "Study Abroad 101 - Beyond the Bubble for First Years - Info Session",
-      "source": "Princeton University",
-      "dateLabel": "Sep 15",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/study-abroad-101-beyond-bubble-first-years-info-session",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-09-15",
-      "startHour": 16
     },
     {
       "title": "Princeton Students in Quantum Weekly Workshop",
@@ -298,6 +217,19 @@
         "culture",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-09-15",
+      "startHour": 16
+    },
+    {
+      "title": "Study Abroad 101 - Beyond the Bubble for First Years - Info Session",
+      "source": "Princeton University",
+      "dateLabel": "Sep 15",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/study-abroad-101-beyond-bubble-first-years-info-session",
+      "tags": [
+        "new"
       ],
       "isoDate": "2026-09-15",
       "startHour": 16
@@ -1093,6 +1025,19 @@
       "startHour": 16
     },
     {
+      "title": "The Visual Culture of Roman Slavery: Bills of Sale",
+      "source": "Princeton University",
+      "dateLabel": "Sep 17",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/visual-culture-roman-slavery-bills-sale",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-09-17",
+      "startHour": 16
+    },
+    {
       "title": "Ever Open: A History of Anthropology at Princeton",
       "source": "Princeton University",
       "dateLabel": "Sep 17",
@@ -1116,19 +1061,6 @@
       "url": "https://www.princeton.edu/events/2026/petey-greene-opening-meeting",
       "tags": [
         "rain"
-      ],
-      "isoDate": "2026-09-17",
-      "startHour": 16
-    },
-    {
-      "title": "The Visual Culture of Roman Slavery: Bills of Sale",
-      "source": "Princeton University",
-      "dateLabel": "Sep 17",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/visual-culture-roman-slavery-bills-sale",
-      "tags": [
-        "culture"
       ],
       "isoDate": "2026-09-17",
       "startHour": 16
@@ -1327,20 +1259,6 @@
       "startHour": 10
     },
     {
-      "title": "Flood and Storm Water Commission -Virtual Meeting",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 18, 2026",
-      "timeLabel": "10:00 AM - 11:30 AM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8114",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 10
-    },
-    {
       "title": "Kids: Little Songbirds",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 18",
@@ -1492,6 +1410,17 @@
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/womens-volleyball-vs-temple",
+      "tags": [],
+      "isoDate": "2026-09-18",
+      "startHour": 17
+    },
+    {
+      "title": "Al and the Energy Transition",
+      "source": "Princeton University",
+      "dateLabel": "Sep 18",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/al-and-energy-transition",
       "tags": [],
       "isoDate": "2026-09-18",
       "startHour": 17
@@ -1762,6 +1691,19 @@
       ],
       "isoDate": "2026-09-19",
       "startHour": 15
+    },
+    {
+      "title": "Brazil Society Kickoff Mixer",
+      "source": "Princeton University",
+      "dateLabel": "Sep 19",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/brazil-society-kickoff-mixer",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-09-19",
+      "startHour": 16
     },
     {
       "title": "Tango Practica",
@@ -2203,6 +2145,19 @@
       "startHour": 16
     },
     {
+      "title": "Library Research for Uranium",
+      "source": "Princeton University",
+      "dateLabel": "Sep 21",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/library-research-uranium-1",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-09-21",
+      "startHour": 16
+    },
+    {
       "title": "Civic Leadership Council (Pace) Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Sep 21",
@@ -2212,19 +2167,6 @@
       "tags": [
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-09-21",
-      "startHour": 16
-    },
-    {
-      "title": "Library Research for Uranium",
-      "source": "Princeton University",
-      "dateLabel": "Sep 21",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/library-research-uranium-1",
-      "tags": [
-        "rain"
       ],
       "isoDate": "2026-09-21",
       "startHour": 16
@@ -2330,7 +2272,7 @@
       "iso": "2026-09-15",
       "label": "Sep 15",
       "weekday": "Tue",
-      "count": 29
+      "count": 24
     },
     {
       "iso": "2026-09-16",
@@ -2354,7 +2296,7 @@
       "iso": "2026-09-19",
       "label": "Sep 19",
       "weekday": "Sat",
-      "count": 21
+      "count": 22
     },
     {
       "iso": "2026-09-20",
@@ -2394,13 +2336,13 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "37 calendar items"
+      "detail": "32 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "74 showtimes"
+      "detail": "73 showtimes"
     }
   ]
 }
