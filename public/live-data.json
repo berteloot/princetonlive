@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-15T11:43:03.768Z",
+  "generatedAt": "2026-09-15T16:58:08.294Z",
   "weather": {
     "temperature": 74,
     "shortForecast": "Sunny",
-    "wind": "0 to 5 mph E",
-    "detailedForecast": "Sunny, with a high near 74. East wind 0 to 5 mph.",
+    "wind": "0 to 5 mph SE",
+    "detailedForecast": "Sunny, with a high near 74. Southeast wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -234,17 +234,6 @@
       "startHour": 15
     },
     {
-      "title": "Study Abroad for Transfer and Veteran Students",
-      "source": "Princeton University",
-      "dateLabel": "Sep 15",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/study-abroad-transfer-and-veteran-students",
-      "tags": [],
-      "isoDate": "2026-09-15",
-      "startHour": 16
-    },
-    {
       "title": "Hope",
       "source": "Garden Theatre",
       "dateLabel": "Sep 15",
@@ -254,6 +243,19 @@
       "tags": [
         "culture",
         "rain"
+      ],
+      "isoDate": "2026-09-15",
+      "startHour": 16
+    },
+    {
+      "title": "Study Abroad 101 - Beyond the Bubble for First Years - Info Session",
+      "source": "Princeton University",
+      "dateLabel": "Sep 15",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/study-abroad-101-beyond-bubble-first-years-info-session",
+      "tags": [
+        "new"
       ],
       "isoDate": "2026-09-15",
       "startHour": 16
@@ -296,19 +298,6 @@
         "culture",
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-09-15",
-      "startHour": 16
-    },
-    {
-      "title": "Study Abroad 101 - Beyond the Bubble for First Years - Info Session",
-      "source": "Princeton University",
-      "dateLabel": "Sep 15",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/study-abroad-101-beyond-bubble-first-years-info-session",
-      "tags": [
-        "new"
       ],
       "isoDate": "2026-09-15",
       "startHour": 16
@@ -516,6 +505,17 @@
       ],
       "isoDate": "2026-09-16",
       "startHour": 11
+    },
+    {
+      "title": "Wednesday Seminar Series, Mossavar-Rahmani Center for Iran & Persian Gulf Studies",
+      "source": "Princeton University",
+      "dateLabel": "Sep 16",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/wednesday-seminar-series-mossavar-rahmani-center-iran-persian-gulf-studies-3",
+      "tags": [],
+      "isoDate": "2026-09-16",
+      "startHour": 12
     },
     {
       "title": "InterVarsity Coldbrew Giveaway!",
@@ -900,17 +900,6 @@
       "startHour": 11
     },
     {
-      "title": "Global Existential Challenges Seminar Series: In Pursuit of Human Rights",
-      "source": "Princeton University",
-      "dateLabel": "Sep 17",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/global-existential-challenges-seminar-series-pursuit-human-rights",
-      "tags": [],
-      "isoDate": "2026-09-17",
-      "startHour": 12
-    },
-    {
       "title": "Pre-Read Book Discussion for Staff: Reader, Come Home",
       "source": "Princeton University",
       "dateLabel": "Sep 17",
@@ -922,6 +911,17 @@
         "culture",
         "rain"
       ],
+      "isoDate": "2026-09-17",
+      "startHour": 12
+    },
+    {
+      "title": "Global Existential Challenges Seminar Series: In Pursuit of Human Rights",
+      "source": "Princeton University",
+      "dateLabel": "Sep 17",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/global-existential-challenges-seminar-series-pursuit-human-rights",
+      "tags": [],
       "isoDate": "2026-09-17",
       "startHour": 12
     },
@@ -1443,6 +1443,34 @@
       "startHour": 16
     },
     {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 18",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-18",
+      "startHour": 16
+    },
+    {
+      "title": "Bad Apples",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 18",
+      "timeLabel": "4:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=bad-apples",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-18",
+      "startHour": 16
+    },
+    {
       "title": "Fund for Irish Studies: Irish Biochemist and Immunologist Luke O’Neill",
       "source": "Princeton University",
       "dateLabel": "Sep 18",
@@ -1479,6 +1507,34 @@
         "family",
         "culture",
         "practical"
+      ],
+      "isoDate": "2026-09-18",
+      "startHour": 19
+    },
+    {
+      "title": "Hope",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 18",
+      "timeLabel": "7:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=hope",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-18",
+      "startHour": 19
+    },
+    {
+      "title": "Bad Apples",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 18",
+      "timeLabel": "7:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=bad-apples",
+      "tags": [
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-09-18",
       "startHour": 19
@@ -1618,6 +1674,34 @@
       "startHour": 13
     },
     {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 19",
+      "timeLabel": "1:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-19",
+      "startHour": 13
+    },
+    {
+      "title": "Bad Apples",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 19",
+      "timeLabel": "1:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=bad-apples",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-19",
+      "startHour": 13
+    },
+    {
       "title": "Artist Workshop: Adebunmi Gbadebo",
       "source": "Princeton University",
       "dateLabel": "Sep 19",
@@ -1666,6 +1750,20 @@
       "startHour": 15
     },
     {
+      "title": "Hope",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 19",
+      "timeLabel": "3:45 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=hope",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-19",
+      "startHour": 15
+    },
+    {
       "title": "Tango Practica",
       "source": "Princeton University",
       "dateLabel": "Sep 19",
@@ -1673,6 +1771,20 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/tango-practica-13",
       "tags": [],
+      "isoDate": "2026-09-19",
+      "startHour": 16
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 19",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
       "isoDate": "2026-09-19",
       "startHour": 16
     },
@@ -1701,6 +1813,34 @@
       "url": "https://www.princeton.edu/events/2026/magic-gathering-club-meeting-1",
       "tags": [
         "new",
+        "rain"
+      ],
+      "isoDate": "2026-09-19",
+      "startHour": 19
+    },
+    {
+      "title": "Hope",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 19",
+      "timeLabel": "7:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=hope",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-19",
+      "startHour": 19
+    },
+    {
+      "title": "Bad Apples",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 19",
+      "timeLabel": "7:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=bad-apples",
+      "tags": [
+        "culture",
         "rain"
       ],
       "isoDate": "2026-09-19",
@@ -1806,6 +1946,20 @@
       "startHour": 13
     },
     {
+      "title": "Bad Apples",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 20",
+      "timeLabel": "1:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=bad-apples",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-20",
+      "startHour": 13
+    },
+    {
       "title": "Kids: Persian Storytime",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 20",
@@ -1818,6 +1972,34 @@
       ],
       "isoDate": "2026-09-20",
       "startHour": 15
+    },
+    {
+      "title": "Hope",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 20",
+      "timeLabel": "3:45 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=hope",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-20",
+      "startHour": 15
+    },
+    {
+      "title": "Bad Apples",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 20",
+      "timeLabel": "4:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=bad-apples",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-20",
+      "startHour": 16
     },
     {
       "title": "Seuls en Scène 2026 presents Nom by Constance Debré",
@@ -1834,6 +2016,34 @@
       ],
       "isoDate": "2026-09-20",
       "startHour": 17
+    },
+    {
+      "title": "Hope",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 20",
+      "timeLabel": "7:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=hope",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-20",
+      "startHour": 19
+    },
+    {
+      "title": "Tony",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 20",
+      "timeLabel": "7:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-20",
+      "startHour": 19
     },
     {
       "title": "Out After Dark: Exhibition by Tamara Santibañez",
@@ -1965,13 +2175,28 @@
       "startHour": 16
     },
     {
-      "title": "Library Research for Uranium",
-      "source": "Princeton University",
+      "title": "Tony",
+      "source": "Garden Theatre",
       "dateLabel": "Sep 21",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/library-research-uranium-1",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=tony",
       "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-21",
+      "startHour": 16
+    },
+    {
+      "title": "Bad Apples",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 21",
+      "timeLabel": "4:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=bad-apples",
+      "tags": [
+        "culture",
         "rain"
       ],
       "isoDate": "2026-09-21",
@@ -1987,6 +2212,19 @@
       "tags": [
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-09-21",
+      "startHour": 16
+    },
+    {
+      "title": "Library Research for Uranium",
+      "source": "Princeton University",
+      "dateLabel": "Sep 21",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/library-research-uranium-1",
+      "tags": [
+        "rain"
       ],
       "isoDate": "2026-09-21",
       "startHour": 16
@@ -2046,6 +2284,34 @@
       "startHour": 19
     },
     {
+      "title": "Hope",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 21",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=hope",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-21",
+      "startHour": 19
+    },
+    {
+      "title": "Bad Apples",
+      "source": "Garden Theatre",
+      "dateLabel": "Sep 21",
+      "timeLabel": "7:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=bad-apples",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-21",
+      "startHour": 19
+    },
+    {
       "title": "PCF Frosh Bible study",
       "source": "Princeton University",
       "dateLabel": "Sep 21",
@@ -2064,13 +2330,13 @@
       "iso": "2026-09-15",
       "label": "Sep 15",
       "weekday": "Tue",
-      "count": 30
+      "count": 29
     },
     {
       "iso": "2026-09-16",
       "label": "Sep 16",
       "weekday": "Wed",
-      "count": 31
+      "count": 32
     },
     {
       "iso": "2026-09-17",
@@ -2082,25 +2348,25 @@
       "iso": "2026-09-18",
       "label": "Sep 18",
       "weekday": "Fri",
-      "count": 16
+      "count": 20
     },
     {
       "iso": "2026-09-19",
       "label": "Sep 19",
       "weekday": "Sat",
-      "count": 15
+      "count": 21
     },
     {
       "iso": "2026-09-20",
       "label": "Sep 20",
       "weekday": "Sun",
-      "count": 7
+      "count": 12
     },
     {
       "iso": "2026-09-21",
       "label": "Sep 21",
       "weekday": "Mon",
-      "count": 16
+      "count": 20
     }
   ],
   "windowDays": 7,
@@ -2134,7 +2400,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "55 showtimes"
+      "detail": "74 showtimes"
     }
   ]
 }
