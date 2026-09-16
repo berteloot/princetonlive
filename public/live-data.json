@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-16T11:31:10.214Z",
+  "generatedAt": "2026-09-16T16:53:52.385Z",
   "weather": {
     "temperature": 81,
-    "shortForecast": "Sunny",
-    "wind": "0 to 5 mph SW",
-    "detailedForecast": "Sunny, with a high near 81. Southwest wind 0 to 5 mph.",
+    "shortForecast": "Mostly Sunny",
+    "wind": "5 mph SW",
+    "detailedForecast": "Mostly sunny, with a high near 81. Southwest wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -37,19 +37,6 @@
       ],
       "isoDate": "2026-09-16",
       "startHour": 8
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Mobile Food Pantry",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 16, 2026",
-      "timeLabel": "09:00 AM - 11:30 AM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7598",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-16",
-      "startHour": 9
     },
     {
       "title": "Drop in and Knit",
@@ -152,20 +139,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/library-research-uranium",
       "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-09-16",
-      "startHour": 12
-    },
-    {
-      "title": "Hope",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 16",
-      "timeLabel": "12:45 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=hope",
-      "tags": [
-        "culture",
         "rain"
       ],
       "isoDate": "2026-09-16",
@@ -434,6 +407,17 @@
       "startHour": 19
     },
     {
+      "title": "So You Think You Can Sing?",
+      "source": "Princeton University",
+      "dateLabel": "Sep 16",
+      "timeLabel": "7:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/so-you-think-you-can-sing",
+      "tags": [],
+      "isoDate": "2026-09-16",
+      "startHour": 19
+    },
+    {
       "title": "Princeton Christian Fellowship Bible studies",
       "source": "Princeton University",
       "dateLabel": "Sep 16",
@@ -637,6 +621,17 @@
       "startHour": 14
     },
     {
+      "title": "So You Think You Can Sing?",
+      "source": "Princeton University",
+      "dateLabel": "Sep 17",
+      "timeLabel": "2:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/so-you-think-you-can-sing-1",
+      "tags": [],
+      "isoDate": "2026-09-17",
+      "startHour": 14
+    },
+    {
       "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Griggs Farm",
       "source": "Municipality of Princeton",
       "dateLabel": "September 17, 2026",
@@ -694,12 +689,25 @@
       "startHour": 16
     },
     {
-      "title": "Ever Open: A History of Anthropology at Princeton",
+      "title": "The Visual Culture of Roman Slavery: Bills of Sale",
       "source": "Princeton University",
       "dateLabel": "Sep 17",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/ever-open-history-anthropology-princeton",
+      "url": "https://www.princeton.edu/events/2026/visual-culture-roman-slavery-bills-sale",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-09-17",
+      "startHour": 16
+    },
+    {
+      "title": "Ever Open: A History of Anthropology at Princeton - Film Screening and Discussion",
+      "source": "Princeton University",
+      "dateLabel": "Sep 17",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/ever-open-history-anthropology-princeton-film-screening-and-discussion",
       "tags": [
         "new",
         "culture",
@@ -717,19 +725,6 @@
       "url": "https://www.princeton.edu/events/2026/petey-greene-opening-meeting",
       "tags": [
         "rain"
-      ],
-      "isoDate": "2026-09-17",
-      "startHour": 16
-    },
-    {
-      "title": "The Visual Culture of Roman Slavery: Bills of Sale",
-      "source": "Princeton University",
-      "dateLabel": "Sep 17",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/visual-culture-roman-slavery-bills-sale",
-      "tags": [
-        "culture"
       ],
       "isoDate": "2026-09-17",
       "startHour": 16
@@ -779,20 +774,6 @@
       "startHour": 17
     },
     {
-      "title": "SoA Lecture: Isidoro Michan-Guindi | \"Building Species\"",
-      "source": "Princeton University",
-      "dateLabel": "Sep 17",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/soa-lecture-isidoro-michan-guindi-building-species",
-      "tags": [
-        "new",
-        "culture"
-      ],
-      "isoDate": "2026-09-17",
-      "startHour": 18
-    },
-    {
       "title": "Ed Park in Conversation with Yiyun Li",
       "source": "Princeton University",
       "dateLabel": "Sep 17",
@@ -803,6 +784,20 @@
         "new",
         "culture",
         "practical"
+      ],
+      "isoDate": "2026-09-17",
+      "startHour": 18
+    },
+    {
+      "title": "SoA Lecture: Isidoro Michan-Guindi | \"Building Species\"",
+      "source": "Princeton University",
+      "dateLabel": "Sep 17",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/soa-lecture-isidoro-michan-guindi-building-species",
+      "tags": [
+        "new",
+        "culture"
       ],
       "isoDate": "2026-09-17",
       "startHour": 18
@@ -884,6 +879,17 @@
         "culture",
         "rain"
       ],
+      "isoDate": "2026-09-17",
+      "startHour": 19
+    },
+    {
+      "title": "So You Think You Can Sing?",
+      "source": "Princeton University",
+      "dateLabel": "Sep 17",
+      "timeLabel": "7:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/so-you-think-you-can-sing-0",
+      "tags": [],
       "isoDate": "2026-09-17",
       "startHour": 19
     },
@@ -1084,6 +1090,19 @@
       "startHour": 17
     },
     {
+      "title": "Archery Orientation",
+      "source": "Princeton University",
+      "dateLabel": "Sep 18",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/archery-orientation",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-18",
+      "startHour": 17
+    },
+    {
       "title": "Al and the Energy Transition",
       "source": "Princeton University",
       "dateLabel": "Sep 18",
@@ -1138,20 +1157,6 @@
       "startHour": 19
     },
     {
-      "title": "Welcome Back PSA Event",
-      "source": "Princeton University",
-      "dateLabel": "Sep 18",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/welcome-back-psa-event",
-      "tags": [
-        "new",
-        "culture"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 20
-    },
-    {
       "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
       "source": "Princeton University",
       "dateLabel": "Sep 18",
@@ -1164,6 +1169,20 @@
         "culture",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-09-18",
+      "startHour": 20
+    },
+    {
+      "title": "Welcome Back PSA Event",
+      "source": "Princeton University",
+      "dateLabel": "Sep 18",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/welcome-back-psa-event",
+      "tags": [
+        "new",
+        "culture"
       ],
       "isoDate": "2026-09-18",
       "startHour": 20
@@ -1182,6 +1201,19 @@
       ],
       "isoDate": "2026-09-19",
       "startHour": 0
+    },
+    {
+      "title": "So You Think You Can Sing: Karaoke Competition",
+      "source": "Princeton University",
+      "dateLabel": "Sep 19",
+      "timeLabel": "1:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/so-you-think-you-can-sing-karaoke-competition-0",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-19",
+      "startHour": 1
     },
     {
       "title": "Kids: Take & Make",
@@ -1241,6 +1273,20 @@
       ],
       "isoDate": "2026-09-19",
       "startHour": 11
+    },
+    {
+      "title": "TigerMag Open Writing Hour",
+      "source": "Princeton University",
+      "dateLabel": "Sep 19",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/tigermag-open-writing-hour-0",
+      "tags": [
+        "new",
+        "culture"
+      ],
+      "isoDate": "2026-09-19",
+      "startHour": 12
     },
     {
       "title": "Open Studio",
@@ -1504,6 +1550,19 @@
       "startHour": 0
     },
     {
+      "title": "So You Think You Can Sing: Karaoke Competition",
+      "source": "Princeton University",
+      "dateLabel": "Sep 20",
+      "timeLabel": "1:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/so-you-think-you-can-sing-karaoke-competition-1",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-20",
+      "startHour": 1
+    },
+    {
       "title": "Food Insecurity Task Force: Princeton Mutual Aid Network Senior Food Deliveries",
       "source": "Municipality of Princeton",
       "dateLabel": "September 20, 2026",
@@ -1670,6 +1729,19 @@
       ],
       "isoDate": "2026-09-21",
       "startHour": 0
+    },
+    {
+      "title": "So You Think You Can Sing: Karaoke Competition",
+      "source": "Princeton University",
+      "dateLabel": "Sep 21",
+      "timeLabel": "1:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/so-you-think-you-can-sing-karaoke-competition-2",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-21",
+      "startHour": 1
     },
     {
       "title": "Tech Help for Seniors",
@@ -1951,6 +2023,19 @@
       "startHour": 0
     },
     {
+      "title": "So You Think You Can Sing: Karaoke Competition",
+      "source": "Princeton University",
+      "dateLabel": "Sep 22",
+      "timeLabel": "1:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/so-you-think-you-can-sing-karaoke-competition-3",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-22",
+      "startHour": 1
+    },
+    {
       "title": "English Conversation (in person)",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 22",
@@ -2167,19 +2252,6 @@
       "startHour": 16
     },
     {
-      "title": "Princeton Students in Quantum Weekly Workshop",
-      "source": "Princeton University",
-      "dateLabel": "Sep 22",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-students-quantum-weekly-workshop-1",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-09-22",
-      "startHour": 16
-    },
-    {
       "title": "What is Missing? What if? - Exhibition Opening and Artist Talk with Maya Lin",
       "source": "Princeton University",
       "dateLabel": "Sep 22",
@@ -2191,6 +2263,19 @@
         "culture",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-09-22",
+      "startHour": 16
+    },
+    {
+      "title": "Princeton Students in Quantum Weekly Workshop",
+      "source": "Princeton University",
+      "dateLabel": "Sep 22",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-students-quantum-weekly-workshop-1",
+      "tags": [
+        "rain"
       ],
       "isoDate": "2026-09-22",
       "startHour": 16
@@ -2312,43 +2397,43 @@
       "iso": "2026-09-16",
       "label": "Sep 16",
       "weekday": "Wed",
-      "count": 32
+      "count": 31
     },
     {
       "iso": "2026-09-17",
       "label": "Sep 17",
       "weekday": "Thu",
-      "count": 32
+      "count": 34
     },
     {
       "iso": "2026-09-18",
       "label": "Sep 18",
       "weekday": "Fri",
-      "count": 20
+      "count": 21
     },
     {
       "iso": "2026-09-19",
       "label": "Sep 19",
       "weekday": "Sat",
-      "count": 22
+      "count": 24
     },
     {
       "iso": "2026-09-20",
       "label": "Sep 20",
       "weekday": "Sun",
-      "count": 12
+      "count": 13
     },
     {
       "iso": "2026-09-21",
       "label": "Sep 21",
       "weekday": "Mon",
-      "count": 20
+      "count": 21
     },
     {
       "iso": "2026-09-22",
       "label": "Sep 22",
       "weekday": "Tue",
-      "count": 27
+      "count": 28
     }
   ],
   "windowDays": 7,
@@ -2358,7 +2443,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 81F"
+      "detail": "Mostly Sunny, 81F"
     },
     {
       "name": "Princeton University Events",
@@ -2376,13 +2461,13 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "36 calendar items"
+      "detail": "35 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "72 showtimes"
+      "detail": "71 showtimes"
     }
   ]
 }
