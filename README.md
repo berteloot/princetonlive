@@ -29,4 +29,3 @@ The site is served by Cloudflare Workers Static Assets (Worker `princetonlive`, 
 - Unknown paths return a real 404.
 - Origin URL: https://princetonlive.berteloot.workers.dev
 
-`render.yaml` stays as the rollback path until Render is retired. A header change has to land in both files until then.

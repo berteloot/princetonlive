@@ -10,7 +10,7 @@ Production:
 - Primary URL: https://princetonlive.berteloot.org
 - Hosting: Cloudflare Workers Static Assets, Worker `princetonlive`
 - Origin URL: https://princetonlive.berteloot.workers.dev
-- Rollback: the Render service (https://princetonlive.onrender.com) still builds from `render.yaml`; DNS was cut over on 2026-09-17
+- Render: the service and its `render.yaml` were deleted on 2026-09-17, after the move to Cloudflare. There is no second host to fall back to
 - GitHub repo: `berteloot/princetonlive`
 - Canonical local folder: kept in local notes outside this repo
 
@@ -25,7 +25,6 @@ Production:
 - SEO pillar page generator: `scripts/build-seo-pages.mjs`
 - Cloudflare config: `wrangler.jsonc`, `public/_headers`, `public/_redirects`
 - Deploy workflow: `.github/workflows/deploy-cloudflare.yml`
-- Render config (rollback only): `render.yaml`
 - Scheduled data refresh: `.github/workflows/refresh-data.yml`
 - Pierre site monitor: `.github/workflows/pierre-site-monitor.yml`
 - Pierre monitor config: `monitoring/pierre-site-monitor.json`
