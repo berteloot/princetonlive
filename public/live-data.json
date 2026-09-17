@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-17T16:59:04.207Z",
+  "generatedAt": "2026-09-17T21:21:26.537Z",
   "weather": {
     "temperature": 84,
-    "shortForecast": "Partly Sunny",
-    "wind": "5 mph SW",
-    "detailedForecast": "Partly sunny, with a high near 84. Southwest wind around 5 mph.",
+    "shortForecast": "Slight Chance Rain Showers",
+    "wind": "5 mph S",
+    "detailedForecast": "A slight chance of rain showers. Mostly cloudy, with a high near 84. South wind around 5 mph. Chance of precipitation is 20%.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -214,34 +214,6 @@
       "startHour": 14
     },
     {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Griggs Farm",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 17, 2026",
-      "timeLabel": "03:30 PM - 04:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7442",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-09-17",
-      "startHour": 15
-    },
-    {
-      "title": "Hope",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 17",
-      "timeLabel": "3:45 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=hope",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-17",
-      "startHour": 15
-    },
-    {
       "title": "Friends of Princeton University Library Small Talk: \"Princeton in the American Revolution through the Paintings of John Trumbull\" with Ron Brown",
       "source": "Princeton University",
       "dateLabel": "Sep 17",
@@ -252,20 +224,6 @@
         "culture",
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-09-17",
-      "startHour": 16
-    },
-    {
-      "title": "The Salt Path",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 17",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=the-salt-path",
-      "tags": [
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-09-17",
       "startHour": 16
@@ -385,6 +343,19 @@
       "startHour": 18
     },
     {
+      "title": "Food Insecurity Task Force: Princeton Alliance Church",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 17, 2026",
+      "timeLabel": "06:00 PM - 07:30 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7288",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-09-17",
+      "startHour": 18
+    },
+    {
       "title": "CARES Meeting (Virtual)",
       "source": "Municipality of Princeton",
       "dateLabel": "September 17, 2026",
@@ -393,19 +364,6 @@
       "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8016",
       "tags": [
         "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-17",
-      "startHour": 18
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Alliance Church",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 17, 2026",
-      "timeLabel": "06:00 PM - 07:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7288",
-      "tags": [
         "practical"
       ],
       "isoDate": "2026-09-17",
@@ -1647,6 +1605,22 @@
       "startHour": 10
     },
     {
+      "title": "Theater Lunch Conversation with Sydney Beers",
+      "source": "Princeton University",
+      "dateLabel": "Sep 22",
+      "timeLabel": "12:15 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/theater-lunch-conversation-sydney-beers",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-22",
+      "startHour": 12
+    },
+    {
       "title": "Open Studio",
       "source": "Princeton University",
       "dateLabel": "Sep 22",
@@ -1676,19 +1650,6 @@
       "startHour": 13
     },
     {
-      "title": "Food Insecurity Task Force: Arm in Arm",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 22, 2026",
-      "timeLabel": "01:00 PM - 07:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7752",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-22",
-      "startHour": 13
-    },
-    {
       "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Spruce Circle",
       "source": "Municipality of Princeton",
       "dateLabel": "September 22, 2026",
@@ -1697,6 +1658,19 @@
       "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7341",
       "tags": [
         "family",
+        "practical"
+      ],
+      "isoDate": "2026-09-22",
+      "startHour": 13
+    },
+    {
+      "title": "Food Insecurity Task Force: Arm in Arm",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 22, 2026",
+      "timeLabel": "01:00 PM - 07:00 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7752",
+      "tags": [
         "practical"
       ],
       "isoDate": "2026-09-22",
@@ -2167,17 +2141,6 @@
       "startHour": 14
     },
     {
-      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
-      "source": "Princeton University",
-      "dateLabel": "Sep 23",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-4",
-      "tags": [],
-      "isoDate": "2026-09-23",
-      "startHour": 15
-    },
-    {
       "title": "Pace Center Summer Internships Drop-in",
       "source": "Princeton University",
       "dateLabel": "Sep 23",
@@ -2187,6 +2150,17 @@
       "tags": [
         "new"
       ],
+      "isoDate": "2026-09-23",
+      "startHour": 15
+    },
+    {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Sep 23",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-4",
+      "tags": [],
       "isoDate": "2026-09-23",
       "startHour": 15
     },
@@ -2219,12 +2193,12 @@
       "startHour": 16
     },
     {
-      "title": "InterVarsity Small Group",
+      "title": "Study Abroad Programs in Asia Info Session",
       "source": "Princeton University",
       "dateLabel": "Sep 23",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group",
+      "url": "https://www.princeton.edu/events/2026/study-abroad-programs-asia-info-session",
       "tags": [],
       "isoDate": "2026-09-23",
       "startHour": 16
@@ -2243,12 +2217,12 @@
       "startHour": 16
     },
     {
-      "title": "Study Abroad Programs in Asia Info Session",
+      "title": "InterVarsity Small Group",
       "source": "Princeton University",
       "dateLabel": "Sep 23",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/study-abroad-programs-asia-info-session",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group",
       "tags": [],
       "isoDate": "2026-09-23",
       "startHour": 16
@@ -2324,6 +2298,34 @@
       "startHour": 18
     },
     {
+      "title": "Preconstruction Meeting for Terhune Road (Mount Lucas Rd to North Harrison St)",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 23, 2026",
+      "timeLabel": "06:00 PM - 07:00 PM",
+      "location": "400 Witherspoon St.Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8132",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-23",
+      "startHour": 18
+    },
+    {
+      "title": "Green House Tour: Expert Panel and Video Screening",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 23, 2026",
+      "timeLabel": "06:00 PM - 07:30 PM",
+      "location": "65 Witherspoon StPrinceton, NJ 08542",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8130",
+      "tags": [
+        "new",
+        "practical"
+      ],
+      "isoDate": "2026-09-23",
+      "startHour": 18
+    },
+    {
       "title": "The Stage Manager’s Guide to Adulting",
       "source": "Princeton University",
       "dateLabel": "Sep 23",
@@ -2381,17 +2383,6 @@
       "startHour": 19
     },
     {
-      "title": "Princeton Christian Fellowship Bible studies",
-      "source": "Princeton University",
-      "dateLabel": "Sep 23",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-1",
-      "tags": [],
-      "isoDate": "2026-09-23",
-      "startHour": 20
-    },
-    {
       "title": "Jazz Vespers",
       "source": "Princeton University",
       "dateLabel": "Sep 23",
@@ -2401,6 +2392,17 @@
       "tags": [
         "culture"
       ],
+      "isoDate": "2026-09-23",
+      "startHour": 20
+    },
+    {
+      "title": "Princeton Christian Fellowship Bible studies",
+      "source": "Princeton University",
+      "dateLabel": "Sep 23",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-1",
+      "tags": [],
       "isoDate": "2026-09-23",
       "startHour": 20
     },
@@ -2426,7 +2428,7 @@
       "iso": "2026-09-17",
       "label": "Sep 17",
       "weekday": "Thu",
-      "count": 34
+      "count": 31
     },
     {
       "iso": "2026-09-18",
@@ -2456,13 +2458,13 @@
       "iso": "2026-09-22",
       "label": "Sep 22",
       "weekday": "Tue",
-      "count": 28
+      "count": 29
     },
     {
       "iso": "2026-09-23",
       "label": "Sep 23",
       "weekday": "Wed",
-      "count": 33
+      "count": 35
     }
   ],
   "windowDays": 7,
@@ -2472,7 +2474,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Partly Sunny, 84F"
+      "detail": "Slight Chance Rain Showers, 84F"
     },
     {
       "name": "Princeton University Events",
@@ -2490,13 +2492,13 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "35 calendar items"
+      "detail": "38 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "66 showtimes"
+      "detail": "64 showtimes"
     }
   ]
 }
