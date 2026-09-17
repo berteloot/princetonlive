@@ -39,14 +39,21 @@
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="dns-prefetch" href="https://cdn.recyclecoach.com" />
     <link rel="canonical" href="https://princetonlive.berteloot.org/" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RL5N5X5EZE"></script>
+    <!-- Google tag (gtag.js). Skipped on localhost and on the workers.dev origin
+         URL so local work and monitor traffic never land in the property. -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-RL5N5X5EZE');
+      (function () {
+        var host = location.hostname;
+        if (/^(localhost|127\.0\.0\.1|\[?::1\]?)$/.test(host) || /\.workers\.dev$/.test(host)) return;
+        var tag = document.createElement("script");
+        tag.async = true;
+        tag.src = "https://www.googletagmanager.com/gtag/js?id=G-RL5N5X5EZE";
+        document.head.appendChild(tag);
+        gtag('js', new Date());
+        gtag('config', 'G-RL5N5X5EZE');
+      })();
     </script>
     <script type="application/ld+json">
       {

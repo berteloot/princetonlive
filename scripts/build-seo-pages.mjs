@@ -8,14 +8,21 @@ const buildDate = process.env.SOURCE_DATE_EPOCH
   ? new Date(Number(process.env.SOURCE_DATE_EPOCH) * 1000)
   : new Date();
 const today = buildDate.toISOString().slice(0, 10);
-const googleTag = `    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RL5N5X5EZE"></script>
+const googleTag = `    <!-- Google tag (gtag.js). Skipped on localhost and on the workers.dev origin
+         URL so local work and monitor traffic never land in the property. -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-RL5N5X5EZE');
+      (function () {
+        var host = location.hostname;
+        if (/^(localhost|127\\.0\\.0\\.1|\\[?::1\\]?)$/.test(host) || /\\.workers\\.dev$/.test(host)) return;
+        var tag = document.createElement("script");
+        tag.async = true;
+        tag.src = "https://www.googletagmanager.com/gtag/js?id=G-RL5N5X5EZE";
+        document.head.appendChild(tag);
+        gtag('js', new Date());
+        gtag('config', 'G-RL5N5X5EZE');
+      })();
     </script>`;
 
 const guideSources = {

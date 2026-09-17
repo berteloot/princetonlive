@@ -21,14 +21,21 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Getting around Princeton: Dinky, parking, buses, bikes, NYC and Philly" />
     <meta name="twitter:description" content="A practical Princeton transportation guide covering the Dinky, Princeton Junction, NJ Transit, Philadelphia routes, parking, local buses, walking, and biking." />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RL5N5X5EZE"></script>
+    <!-- Google tag (gtag.js). Skipped on localhost and on the workers.dev origin
+         URL so local work and monitor traffic never land in the property. -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-RL5N5X5EZE');
+      (function () {
+        var host = location.hostname;
+        if (/^(localhost|127\.0\.0\.1|\[?::1\]?)$/.test(host) || /\.workers\.dev$/.test(host)) return;
+        var tag = document.createElement("script");
+        tag.async = true;
+        tag.src = "https://www.googletagmanager.com/gtag/js?id=G-RL5N5X5EZE";
+        document.head.appendChild(tag);
+        gtag('js', new Date());
+        gtag('config', 'G-RL5N5X5EZE');
+      })();
     </script>
     <script type="application/ld+json">
 {
@@ -63,8 +70,8 @@
       "@id": "https://princetonlive.berteloot.org/guides/getting-around-princeton.html#article",
       "headline": "Getting around Princeton: Dinky, parking, buses, bikes, NYC and Philly",
       "description": "A practical Princeton transportation guide covering the Dinky, Princeton Junction, NJ Transit, Philadelphia routes, parking, local buses, walking, and biking.",
-      "datePublished": "2026-08-20",
-      "dateModified": "2026-08-20",
+      "datePublished": "2026-09-17",
+      "dateModified": "2026-09-17",
       "author": {
         "@type": "Person",
         "name": "Stan Berteloot",
@@ -248,7 +255,7 @@
     </main>
     <footer>
       <p>PrincetonLive is an independent resident guide. Use official linked sources for authoritative rules, schedules, eligibility, and emergency details.</p>
-      <p>This page was last updated on <time datetime="2026-08-20">2026-08-20</time>.</p>
+      <p>This page was last updated on <time datetime="2026-09-17">2026-09-17</time>.</p>
       <p><a href="/">Return to PrincetonLive</a></p>
     </footer>
   </body>
