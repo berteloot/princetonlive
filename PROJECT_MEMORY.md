@@ -8,8 +8,9 @@ PrincetonLive is a static React/Vite website for residents and new arrivals in P
 
 Production:
 - Primary URL: https://princetonlive.berteloot.org
-- Render URL: https://princetonlive.onrender.com
-- Render service ID: kept in local notes outside this repo
+- Hosting: Cloudflare Workers Static Assets, Worker `princetonlive`
+- Origin URL: https://princetonlive.berteloot.workers.dev
+- Rollback: the Render service (https://princetonlive.onrender.com) still builds from `render.yaml`; DNS was cut over on 2026-09-17
 - GitHub repo: `berteloot/princetonlive`
 - Canonical local folder: kept in local notes outside this repo
 
@@ -22,7 +23,9 @@ Production:
 - Daily data refresh script: `scripts/fetch-live-data.mjs`
 - Civic map refresh script: `scripts/fetch-civic-map.mjs`
 - SEO pillar page generator: `scripts/build-seo-pages.mjs`
-- Render config: `render.yaml`
+- Cloudflare config: `wrangler.jsonc`, `public/_headers`, `public/_redirects`
+- Deploy workflow: `.github/workflows/deploy-cloudflare.yml`
+- Render config (rollback only): `render.yaml`
 - Scheduled data refresh: `.github/workflows/refresh-data.yml`
 - Pierre site monitor: `.github/workflows/pierre-site-monitor.yml`
 - Pierre monitor config: `monitoring/pierre-site-monitor.json`
@@ -32,7 +35,7 @@ Production:
 - Agent guidance: `public/llms.txt`
 - Analytics: Google tag `G-RL5N5X5EZE` in `index.html` and generated guide pages
 
-The website is a static Render site. Runtime data is served from generated JSON files in `public/`, and the frontend fetches those files with cache-busting query strings.
+The website is a static site on Cloudflare Workers. Runtime data is served from generated JSON files in `public/`, and the frontend fetches those files with cache-busting query strings.
 SEO pillar pages are generated into `public/guides/` before each build, along with synced sitemap and llms.txt entries.
 Pierre monitors the website every 15 minutes from GitHub Actions, persists `.monitor-state.json` through the Actions cache, and sends Telegram alerts only on new failures or recoveries. The required GitHub repository secrets are `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`.
 
@@ -78,7 +81,7 @@ Run Pierre's health monitor locally:
 python3 tools/site_monitor.py --config monitoring/pierre-site-monitor.json --state /tmp/princetonlive-monitor-state.json
 ```
 
-Render deploy status uses a local API key held outside this repo. Do not commit or display secrets.
+Cloudflare deploy status is the "Deploy to Cloudflare Workers" run in GitHub Actions. Do not commit or display secrets.
 
 ## Public Data Sources
 
@@ -167,7 +170,7 @@ Explore walks:
 - `robots.txt`, `sitemap.xml`, and `llms.txt` should be deployed at the domain root and updated when site positioning, URLs, language routes, or machine-readable endpoints change.
 - Machine-readable JSON endpoints (`/live-data.json`, `/civic-map.json`, `/waste-data.json`) belong in the sitemap and llms.txt so AI/search crawlers can discover the public data layer directly.
 - SEO pillar pages live under `/guides/` and are generated from `scripts/build-seo-pages.mjs`. Add new stable guide topics there first so the HTML page, guide hub, sitemap, and llms.txt stay synchronized.
-- Pierre monitoring should cover the canonical domain, Render origin, crawlability endpoints, generated JSON freshness, and important upstream public sources.
+- Pierre monitoring should cover the canonical domain, Workers origin, crawlability endpoints, generated JSON freshness, and important upstream public sources.
 - Google Analytics must be added at source level: update `index.html` for the app shell and `scripts/build-seo-pages.mjs` for all generated `/guides/` pages.
 
 ## Feature Log
@@ -214,7 +217,7 @@ When changing the site:
 2. Run `npm run build`.
 3. Verify the relevant interaction locally, especially search, filter buttons, map controls, and language controls.
 4. Commit and push.
-5. Confirm Render deployed the intended commit.
+5. Confirm the "Deploy to Cloudflare Workers" run for the commit succeeded.
 6. Verify the public URL with a cache-busting `?v=COMMIT`.
 
 ## Crime data (pending an API key)

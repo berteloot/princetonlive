@@ -1,0 +1,29 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "princetonlive",
+  "compatibility_date": "2026-09-17",
+  // Setting "routes" makes wrangler disable the workers.dev subdomain unless
+  // this is explicitly true. The site monitor checks the origin URL as a second
+  // path, so losing it turns one dead check into a permanent red alert.
+  "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "princetonlive.berteloot.org",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": "./dist",
+    // Every published URL ends in .html or a slash (sitemap.xml, llms.txt, the
+    // monitor). The default "auto-trailing-slash" would redirect /about.html to
+    // /about and move every canonical URL. With "none", the
+    // directory URLs / and /guides/ are served by public/_redirects.
+    "html_handling": "none",
+    // Render rewrote every unknown path to index.html with a 200. The app routes
+    // by hash only, so that was a soft 404 on every typo. Serve a real 404.
+    "not_found_handling": "none"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

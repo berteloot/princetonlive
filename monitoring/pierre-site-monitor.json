@@ -14,8 +14,8 @@
     },
     {
       "kind": "http",
-      "name": "Render origin homepage",
-      "url": "https://princetonlive.onrender.com/",
+      "name": "Workers origin homepage",
+      "url": "https://princetonlive.berteloot.workers.dev/",
       "expect_status": [
         200
       ],

@@ -1,0 +1,24 @@
+# Ported from render.yaml. Keep the two files in step until Render is retired.
+
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Strict-Transport-Security: max-age=15552000
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdn.recyclecoach.com https://*.recyclecoach.com; style-src 'self' 'unsafe-inline' https://www.gstatic.com https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://nominatim.openstreetmap.org https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.recyclecoach.com; frame-src https://*.recyclecoach.com https://www.google.com; base-uri 'self'; form-action 'self'; object-src 'none'; frame-ancestors 'self'
+
+# The JSON feeds are advertised in llms.txt as machine-readable endpoints.
+/live-data.json
+  Access-Control-Allow-Origin: *
+
+/civic-map.json
+  Access-Control-Allow-Origin: *
+
+/waste-data.json
+  Access-Control-Allow-Origin: *
+
+# Vite fingerprints everything under /assets, so the filename changes whenever
+# the bytes do. Safe to cache for a year.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable

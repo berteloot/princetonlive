@@ -1,0 +1,6 @@
+# Rewrites for directory URLs. wrangler.jsonc sets html_handling to "none" so the
+# .html URLs in sitemap.xml are served as-is, which also turns off index.html
+# lookup for / and /guides/.
+/ /index.html 200
+/guides/ /guides/index.html 200
+/guides /guides/ 301

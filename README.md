@@ -19,13 +19,14 @@ npm run build
 
 The static output is written to `dist`.
 
-## Render static site
+## Hosting: Cloudflare Workers
 
-This repo includes `render.yaml` for Render Blueprint deployment.
+The site is served by Cloudflare Workers Static Assets (Worker `princetonlive`, config in `wrangler.jsonc`).
 
-- Service type: `static_site`
-- Build command: `npm ci && npm run build`
-- Publish directory: `dist`
-- SPA rewrite: `/*` to `/index.html`
+- Deploys run from `.github/workflows/deploy-cloudflare.yml` on every push to main and after every successful "Refresh public data" run. The build is `npm ci && npm run build`, the same command Render ran.
+- Repository secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `CENSUS_API_KEY`.
+- Security headers live in `public/_headers`. Rewrites for `/` and `/guides/` live in `public/_redirects`, because `html_handling` is `none` so the `.html` URLs in the sitemap are never redirected.
+- Unknown paths return a real 404.
+- Origin URL: https://princetonlive.berteloot.workers.dev
 
-Render static sites are free to deploy, subject to Render's included outbound bandwidth and build pipeline limits.
+`render.yaml` stays as the rollback path until Render is retired. A header change has to land in both files until then.
