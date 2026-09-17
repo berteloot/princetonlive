@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T11:39:54.150Z",
+  "generatedAt": "2026-09-17T16:39:00.099Z",
   "release": "ACS 2024 5-year",
   "privacy": "Block-group public data only. PrincetonLive does not publish individual voter, household, or address-level records.",
   "geography": "census block groups",
@@ -458,24 +458,24 @@
       "value": 80734,
       "unit": "currency",
       "release": "ACS 2024 5-year",
-      "sourceName": "Census Reporter API / ACS 2024 5-year",
-      "sourceUrl": "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B19013,B01001&geo_ids=01000US"
+      "sourceName": "U.S. Census API / ACS 2024 5-year",
+      "sourceUrl": "https://api.census.gov/data/2024/acs/acs5?get=NAME%2CB19013_001E%2CB01001_001E%2CB01001_003E%2CB01001_004E%2CB01001_005E%2CB01001_006E%2CB01001_027E%2CB01001_028E%2CB01001_029E%2CB01001_030E&for=us%3A1"
     },
     "children": {
       "label": "U.S. average residents under 18 per census block group",
       "value": 302.8566002603523,
       "unit": "number",
       "release": "ACS 2024 5-year",
-      "sourceName": "Census Reporter API / ACS 2024 5-year + TIGERweb block-group count",
-      "sourceUrl": "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B19013,B01001&geo_ids=01000US"
+      "sourceName": "U.S. Census API / ACS 2024 5-year + TIGERweb block-group count",
+      "sourceUrl": "https://api.census.gov/data/2024/acs/acs5?get=NAME%2CB19013_001E%2CB01001_001E%2CB01001_003E%2CB01001_004E%2CB01001_005E%2CB01001_006E%2CB01001_027E%2CB01001_028E%2CB01001_029E%2CB01001_030E&for=us%3A1"
     },
     "childShare": {
       "label": "U.S. share of population under 18",
-      "value": 0.21950700236621906,
+      "value": 0.21950700302161547,
       "unit": "percent",
       "release": "ACS 2024 5-year",
-      "sourceName": "Census Reporter API / ACS 2024 5-year",
-      "sourceUrl": "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B19013,B01001&geo_ids=01000US"
+      "sourceName": "U.S. Census API / ACS 2024 5-year",
+      "sourceUrl": "https://api.census.gov/data/2024/acs/acs5?get=NAME%2CB19013_001E%2CB01001_001E%2CB01001_003E%2CB01001_004E%2CB01001_005E%2CB01001_006E%2CB01001_027E%2CB01001_028E%2CB01001_029E%2CB01001_030E&for=us%3A1"
     },
     "voting": {
       "label": "U.S. 2024 presidential popular-vote margin",
@@ -691,8 +691,8 @@
       "url": "https://www.nj.gov/education/spr/"
     }
   ],
-  "censusSource": "Census Reporter API / ACS 2024 5-year",
-  "censusSourceUrl": "https://api.censusreporter.org/1.0/data/show/latest?table_ids=B19013,B01001&geo_ids=150%7C05000US34021",
+  "censusSource": "U.S. Census API / ACS 2024 5-year",
+  "censusSourceUrl": "https://api.census.gov/data/2024/acs/acs5?get=NAME%2CB19013_001E%2CB01001_001E%2CB01001_003E%2CB01001_004E%2CB01001_005E%2CB01001_006E%2CB01001_027E%2CB01001_028E%2CB01001_029E%2CB01001_030E&for=us%3A1",
   "mapProjection": {
     "minLon": -74.72217699995635,
     "maxLon": -74.61748400040211,

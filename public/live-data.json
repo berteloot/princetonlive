@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-17T11:39:51.278Z",
+  "generatedAt": "2026-09-17T16:38:56.041Z",
   "weather": {
     "temperature": 84,
     "shortForecast": "Partly Sunny",
-    "wind": "0 to 5 mph SW",
-    "detailedForecast": "Partly sunny, with a high near 84. Southwest wind 0 to 5 mph.",
+    "wind": "5 mph SW",
+    "detailedForecast": "Partly sunny, with a high near 84. Southwest wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -121,6 +121,17 @@
       "startHour": 12
     },
     {
+      "title": "Sustainable Energy and Electronics need… Sustainable Materials - David Cahen, Professor Emeritus, Weizmann Institute of Science",
+      "source": "Princeton University",
+      "dateLabel": "Sep 17",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/sustainable-energy-and-electronics-need-sustainable-materials-david-cahen-professor",
+      "tags": [],
+      "isoDate": "2026-09-17",
+      "startHour": 12
+    },
+    {
       "title": "After Noon Concert Series",
       "source": "Princeton University",
       "dateLabel": "Sep 17",
@@ -130,17 +141,6 @@
       "tags": [
         "culture"
       ],
-      "isoDate": "2026-09-17",
-      "startHour": 12
-    },
-    {
-      "title": "Sustainable Energy and Electronics need… Sustainable Materials - David Cahen, Professor Emeritus, Weizmann Institute of Science",
-      "source": "Princeton University",
-      "dateLabel": "Sep 17",
-      "timeLabel": "12:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/sustainable-energy-and-electronics-need-sustainable-materials-david-cahen-professor",
-      "tags": [],
       "isoDate": "2026-09-17",
       "startHour": 12
     },
@@ -271,14 +271,16 @@
       "startHour": 16
     },
     {
-      "title": "The Visual Culture of Roman Slavery: Bills of Sale",
+      "title": "Ever Open: A History of Anthropology at Princeton - Film Screening and Discussion",
       "source": "Princeton University",
       "dateLabel": "Sep 17",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/visual-culture-roman-slavery-bills-sale",
+      "url": "https://www.princeton.edu/events/2026/ever-open-history-anthropology-princeton-film-screening-and-discussion",
       "tags": [
-        "culture"
+        "new",
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-09-17",
       "startHour": 16
@@ -297,16 +299,14 @@
       "startHour": 16
     },
     {
-      "title": "Ever Open: A History of Anthropology at Princeton - Film Screening and Discussion",
+      "title": "The Visual Culture of Roman Slavery: Bills of Sale",
       "source": "Princeton University",
       "dateLabel": "Sep 17",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/ever-open-history-anthropology-princeton-film-screening-and-discussion",
+      "url": "https://www.princeton.edu/events/2026/visual-culture-roman-slavery-bills-sale",
       "tags": [
-        "new",
-        "culture",
-        "rain"
+        "culture"
       ],
       "isoDate": "2026-09-17",
       "startHour": 16
@@ -739,6 +739,20 @@
       "startHour": 19
     },
     {
+      "title": "Welcome Back PSA Event",
+      "source": "Princeton University",
+      "dateLabel": "Sep 18",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/welcome-back-psa-event",
+      "tags": [
+        "new",
+        "culture"
+      ],
+      "isoDate": "2026-09-18",
+      "startHour": 20
+    },
+    {
       "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
       "source": "Princeton University",
       "dateLabel": "Sep 18",
@@ -751,20 +765,6 @@
         "culture",
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 20
-    },
-    {
-      "title": "Welcome Back PSA Event",
-      "source": "Princeton University",
-      "dateLabel": "Sep 18",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/welcome-back-psa-event",
-      "tags": [
-        "new",
-        "culture"
       ],
       "isoDate": "2026-09-18",
       "startHour": 20
@@ -928,14 +928,13 @@
       "startHour": 13
     },
     {
-      "title": "Embossed Stories: Mexican Repujado & Visual Language",
+      "title": "Artist Workshop: Adebunmi Gbadebo",
       "source": "Princeton University",
       "dateLabel": "Sep 19",
       "timeLabel": "2:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/embossed-stories-mexican-repujado-visual-language",
+      "url": "https://www.princeton.edu/events/2026/artist-workshop-adebunmi-gbadebo",
       "tags": [
-        "new",
         "family",
         "culture",
         "rain",
@@ -945,13 +944,14 @@
       "startHour": 14
     },
     {
-      "title": "Artist Workshop: Adebunmi Gbadebo",
+      "title": "Embossed Stories: Mexican Repujado & Visual Language",
       "source": "Princeton University",
       "dateLabel": "Sep 19",
       "timeLabel": "2:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/artist-workshop-adebunmi-gbadebo",
+      "url": "https://www.princeton.edu/events/2026/embossed-stories-mexican-repujado-visual-language",
       "tags": [
+        "new",
         "family",
         "culture",
         "rain",
@@ -990,17 +990,6 @@
       "startHour": 15
     },
     {
-      "title": "Tango Practica",
-      "source": "Princeton University",
-      "dateLabel": "Sep 19",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/tango-practica-13",
-      "tags": [],
-      "isoDate": "2026-09-19",
-      "startHour": 16
-    },
-    {
       "title": "Brazil Society Kickoff Mixer",
       "source": "Princeton University",
       "dateLabel": "Sep 19",
@@ -1010,6 +999,17 @@
       "tags": [
         "culture"
       ],
+      "isoDate": "2026-09-19",
+      "startHour": 16
+    },
+    {
+      "title": "Tango Practica",
+      "source": "Princeton University",
+      "dateLabel": "Sep 19",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/tango-practica-13",
+      "tags": [],
       "isoDate": "2026-09-19",
       "startHour": 16
     },
@@ -1468,19 +1468,6 @@
       "startHour": 16
     },
     {
-      "title": "Library Research for Uranium",
-      "source": "Princeton University",
-      "dateLabel": "Sep 21",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/library-research-uranium-1",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-09-21",
-      "startHour": 16
-    },
-    {
       "title": "Civic Leadership Council (Pace) Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Sep 21",
@@ -1490,6 +1477,19 @@
       "tags": [
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-09-21",
+      "startHour": 16
+    },
+    {
+      "title": "Library Research for Uranium",
+      "source": "Princeton University",
+      "dateLabel": "Sep 21",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/library-research-uranium-1",
+      "tags": [
+        "rain"
       ],
       "isoDate": "2026-09-21",
       "startHour": 16
@@ -1826,14 +1826,14 @@
       "startHour": 16
     },
     {
-      "title": "Glyn Morgan Lecture",
+      "title": "Princeton Students in Quantum Weekly Workshop",
       "source": "Princeton University",
       "dateLabel": "Sep 22",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/glyn-morgan-lecture",
+      "url": "https://www.princeton.edu/events/2026/princeton-students-quantum-weekly-workshop-1",
       "tags": [
-        "culture"
+        "rain"
       ],
       "isoDate": "2026-09-22",
       "startHour": 16
@@ -1850,14 +1850,14 @@
       "startHour": 16
     },
     {
-      "title": "Princeton Students in Quantum Weekly Workshop",
+      "title": "Glyn Morgan Lecture",
       "source": "Princeton University",
       "dateLabel": "Sep 22",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-students-quantum-weekly-workshop-1",
+      "url": "https://www.princeton.edu/events/2026/glyn-morgan-lecture",
       "tags": [
-        "rain"
+        "culture"
       ],
       "isoDate": "2026-09-22",
       "startHour": 16
