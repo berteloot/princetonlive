@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T16:23:13.204Z",
+  "generatedAt": "2026-09-18T20:53:43.141Z",
   "weather": {
     "temperature": 83,
     "shortForecast": "Mostly Sunny",
@@ -153,34 +153,6 @@
       "startHour": 16
     },
     {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 18",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 16
-    },
-    {
-      "title": "Bad Apples",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 18",
-      "timeLabel": "4:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=bad-apples",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 16
-    },
-    {
       "title": "Fund for Irish Studies: Irish Biochemist and Immunologist Luke O’Neill",
       "source": "Princeton University",
       "dateLabel": "Sep 18",
@@ -207,15 +179,13 @@
       "startHour": 17
     },
     {
-      "title": "Archery Orientation",
+      "title": "Women's Volleyball vs Temple",
       "source": "Princeton University",
       "dateLabel": "Sep 18",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/archery-orientation",
-      "tags": [
-        "new"
-      ],
+      "url": "https://www.princeton.edu/events/2026/womens-volleyball-vs-temple",
+      "tags": [],
       "isoDate": "2026-09-18",
       "startHour": 17
     },
@@ -231,13 +201,15 @@
       "startHour": 17
     },
     {
-      "title": "Women's Volleyball vs Temple",
+      "title": "Archery Orientation",
       "source": "Princeton University",
       "dateLabel": "Sep 18",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-volleyball-vs-temple",
-      "tags": [],
+      "url": "https://www.princeton.edu/events/2026/archery-orientation",
+      "tags": [
+        "new"
+      ],
       "isoDate": "2026-09-18",
       "startHour": 17
     },
@@ -474,13 +446,14 @@
       "startHour": 13
     },
     {
-      "title": "Artist Workshop: Adebunmi Gbadebo",
+      "title": "Embossed Stories: Mexican Repujado & Visual Language",
       "source": "Princeton University",
       "dateLabel": "Sep 19",
       "timeLabel": "2:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/artist-workshop-adebunmi-gbadebo",
+      "url": "https://www.princeton.edu/events/2026/embossed-stories-mexican-repujado-visual-language",
       "tags": [
+        "new",
         "family",
         "culture",
         "rain",
@@ -490,14 +463,13 @@
       "startHour": 14
     },
     {
-      "title": "Embossed Stories: Mexican Repujado & Visual Language",
+      "title": "Artist Workshop: Adebunmi Gbadebo",
       "source": "Princeton University",
       "dateLabel": "Sep 19",
       "timeLabel": "2:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/embossed-stories-mexican-repujado-visual-language",
+      "url": "https://www.princeton.edu/events/2026/artist-workshop-adebunmi-gbadebo",
       "tags": [
-        "new",
         "family",
         "culture",
         "rain",
@@ -536,6 +508,17 @@
       "startHour": 15
     },
     {
+      "title": "Tango Practica",
+      "source": "Princeton University",
+      "dateLabel": "Sep 19",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/tango-practica-13",
+      "tags": [],
+      "isoDate": "2026-09-19",
+      "startHour": 16
+    },
+    {
       "title": "Brazil Society Kickoff Mixer",
       "source": "Princeton University",
       "dateLabel": "Sep 19",
@@ -545,17 +528,6 @@
       "tags": [
         "culture"
       ],
-      "isoDate": "2026-09-19",
-      "startHour": 16
-    },
-    {
-      "title": "Tango Practica",
-      "source": "Princeton University",
-      "dateLabel": "Sep 19",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/tango-practica-13",
-      "tags": [],
       "isoDate": "2026-09-19",
       "startHour": 16
     },
@@ -1386,6 +1358,22 @@
       "startHour": 16
     },
     {
+      "title": "What is Missing? What if? - Exhibition Opening and Artist Talk with Maya Lin",
+      "source": "Princeton University",
+      "dateLabel": "Sep 22",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/what-missing-what-if-exhibition-opening-and-artist-talk-maya-lin",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-22",
+      "startHour": 16
+    },
+    {
       "title": "Princeton Students in Quantum Weekly Workshop",
       "source": "Princeton University",
       "dateLabel": "Sep 22",
@@ -1418,22 +1406,6 @@
       "url": "https://www.princeton.edu/events/2026/glyn-morgan-lecture",
       "tags": [
         "culture"
-      ],
-      "isoDate": "2026-09-22",
-      "startHour": 16
-    },
-    {
-      "title": "What is Missing? What if? - Exhibition Opening and Artist Talk with Maya Lin",
-      "source": "Princeton University",
-      "dateLabel": "Sep 22",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/what-missing-what-if-exhibition-opening-and-artist-talk-maya-lin",
-      "tags": [
-        "new",
-        "culture",
-        "rain",
-        "practical"
       ],
       "isoDate": "2026-09-22",
       "startHour": 16
@@ -1856,14 +1828,14 @@
       "startHour": 18
     },
     {
-      "title": "Panel Discussion: Sustainable Homes",
+      "title": "Words in Common Book Group",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 23",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/17074455",
+      "timeLabel": "6:00pm - 7:00pm",
+      "location": "Princeton Public Library - Conference Room",
+      "url": "https://princetonlibrary.libnet.info/event/16996301",
       "tags": [
-        "family",
+        "culture",
         "practical"
       ],
       "isoDate": "2026-09-23",
@@ -1886,14 +1858,14 @@
       "startHour": 18
     },
     {
-      "title": "Words in Common Book Group",
+      "title": "Panel Discussion: Sustainable Homes",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 23",
-      "timeLabel": "6:00pm - 7:00pm",
-      "location": "Princeton Public Library - Conference Room",
-      "url": "https://princetonlibrary.libnet.info/event/16996301",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17074455",
       "tags": [
-        "culture",
+        "family",
         "practical"
       ],
       "isoDate": "2026-09-23",
@@ -1971,18 +1943,20 @@
       "startHour": 19
     },
     {
-      "title": "Zoning Board of Adjustment Meeting - Virtual",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 23, 2026",
-      "timeLabel": "07:30 PM - 11:59 PM",
-      "location": "Princeton, NJ",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7814",
+      "title": "Seuls en Scène 2026 presents L’Événement by Annie Ernaux",
+      "source": "Princeton University",
+      "dateLabel": "Sep 23",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-levenement-annie-ernaux",
       "tags": [
-        "rain",
-        "practical"
+        "new",
+        "family",
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-09-23",
-      "startHour": 19
+      "startHour": 20
     },
     {
       "title": "Jazz Vespers",
@@ -2005,22 +1979,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-1",
       "tags": [],
-      "isoDate": "2026-09-23",
-      "startHour": 20
-    },
-    {
-      "title": "Seuls en Scène 2026 presents L’Événement by Annie Ernaux",
-      "source": "Princeton University",
-      "dateLabel": "Sep 23",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-levenement-annie-ernaux",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
       "isoDate": "2026-09-23",
       "startHour": 20
     },
@@ -2078,6 +2036,21 @@
       ],
       "isoDate": "2026-09-24",
       "startHour": 10
+    },
+    {
+      "title": "Meet Princeton University Concerts",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 24",
+      "timeLabel": "11:00am - 1:00pm",
+      "location": "Princeton Public Library - Lobby",
+      "url": "https://princetonlibrary.libnet.info/event/17470738",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-09-24",
+      "startHour": 11
     },
     {
       "title": "Kids: Baby Storytime",
@@ -2192,6 +2165,32 @@
       "startHour": 15
     },
     {
+      "title": "Study Abroad 101 - Beyond the Bubble - Info Session",
+      "source": "Princeton University",
+      "dateLabel": "Sep 24",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/study-abroad-101-beyond-bubble-info-session",
+      "tags": [],
+      "isoDate": "2026-09-24",
+      "startHour": 16
+    },
+    {
+      "title": "Seuls en Scène 2026 presents L’Aube des questions - Festival d’Avignon 2026 with Aurélie Charon, Emma Prat & Oksana Leuta",
+      "source": "Princeton University",
+      "dateLabel": "Sep 24",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-laube-des-questions-festival-davignon-2026-aurelie-charon",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-24",
+      "startHour": 16
+    },
+    {
       "title": "Curator Talk | Intimate Grief: Death in Ancient Greece",
       "source": "Princeton University",
       "dateLabel": "Sep 24",
@@ -2213,32 +2212,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/solar-stripes-introductory-meeting",
       "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-09-24",
-      "startHour": 16
-    },
-    {
-      "title": "Study Abroad 101 - Beyond the Bubble - Info Session",
-      "source": "Princeton University",
-      "dateLabel": "Sep 24",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/study-abroad-101-beyond-bubble-info-session",
-      "tags": [],
-      "isoDate": "2026-09-24",
-      "startHour": 16
-    },
-    {
-      "title": "Seuls en Scène 2026 presents L’Aube des questions - Festival d’Avignon 2026 with Aurélie Charon, Emma Prat & Oksana Leuta",
-      "source": "Princeton University",
-      "dateLabel": "Sep 24",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-laube-des-questions-festival-davignon-2026-aurelie-charon",
-      "tags": [
-        "new",
-        "culture",
         "rain"
       ],
       "isoDate": "2026-09-24",
@@ -2373,7 +2346,7 @@
       "iso": "2026-09-18",
       "label": "Sep 18",
       "weekday": "Fri",
-      "count": 22
+      "count": 20
     },
     {
       "iso": "2026-09-19",
@@ -2403,13 +2376,13 @@
       "iso": "2026-09-23",
       "label": "Sep 23",
       "weekday": "Wed",
-      "count": 35
+      "count": 34
     },
     {
       "iso": "2026-09-24",
       "label": "Sep 24",
       "weekday": "Thu",
-      "count": 25
+      "count": 26
     }
   ],
   "windowDays": 7,
@@ -2431,19 +2404,19 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "41 events"
+      "detail": "42 events"
     },
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "35 calendar items"
+      "detail": "34 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "62 showtimes"
+      "detail": "60 showtimes"
     }
   ]
 }
