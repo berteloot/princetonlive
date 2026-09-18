@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T11:12:39.238Z",
+  "generatedAt": "2026-09-18T16:23:13.204Z",
   "weather": {
     "temperature": 83,
     "shortForecast": "Mostly Sunny",
@@ -1067,6 +1067,20 @@
       "startHour": 17
     },
     {
+      "title": "Kenya’s Future: Democracy, Leadership, and the Next Generation: A Conversation with David Maraga",
+      "source": "Princeton University",
+      "dateLabel": "Sep 21",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/kenyas-future-democracy-leadership-and-next-generation-conversation-david-maraga",
+      "tags": [
+        "family",
+        "culture"
+      ],
+      "isoDate": "2026-09-21",
+      "startHour": 18
+    },
+    {
       "title": "Princeton Tango Club Weekly Classes",
       "source": "Princeton University",
       "dateLabel": "Sep 21",
@@ -1372,14 +1386,14 @@
       "startHour": 16
     },
     {
-      "title": "Glyn Morgan Lecture",
+      "title": "Princeton Students in Quantum Weekly Workshop",
       "source": "Princeton University",
       "dateLabel": "Sep 22",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/glyn-morgan-lecture",
+      "url": "https://www.princeton.edu/events/2026/princeton-students-quantum-weekly-workshop-1",
       "tags": [
-        "culture"
+        "rain"
       ],
       "isoDate": "2026-09-22",
       "startHour": 16
@@ -1396,14 +1410,14 @@
       "startHour": 16
     },
     {
-      "title": "Princeton Students in Quantum Weekly Workshop",
+      "title": "Glyn Morgan Lecture",
       "source": "Princeton University",
       "dateLabel": "Sep 22",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-students-quantum-weekly-workshop-1",
+      "url": "https://www.princeton.edu/events/2026/glyn-morgan-lecture",
       "tags": [
-        "rain"
+        "culture"
       ],
       "isoDate": "2026-09-22",
       "startHour": 16
@@ -2377,7 +2391,7 @@
       "iso": "2026-09-21",
       "label": "Sep 21",
       "weekday": "Mon",
-      "count": 21
+      "count": 22
     },
     {
       "iso": "2026-09-22",
