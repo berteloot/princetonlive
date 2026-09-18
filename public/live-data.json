@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-18T04:42:11.299Z",
+  "generatedAt": "2026-09-18T11:12:39.238Z",
   "weather": {
-    "temperature": 68,
-    "shortForecast": "Chance Rain Showers",
-    "wind": "0 to 5 mph W",
-    "detailedForecast": "A chance of rain showers before 2am. Mostly cloudy, with a low around 68. West wind 0 to 5 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
+    "temperature": 83,
+    "shortForecast": "Mostly Sunny",
+    "wind": "5 mph N",
+    "detailedForecast": "Mostly sunny, with a high near 83. North wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -2405,7 +2405,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Chance Rain Showers, 68F"
+      "detail": "Mostly Sunny, 83F"
     },
     {
       "name": "Princeton University Events",
