@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-18T20:53:43.141Z",
+  "generatedAt": "2026-09-18T23:17:31.930Z",
   "weather": {
-    "temperature": 83,
-    "shortForecast": "Mostly Sunny",
+    "temperature": 57,
+    "shortForecast": "Partly Cloudy",
     "wind": "5 mph N",
-    "detailedForecast": "Mostly sunny, with a high near 83. North wind around 5 mph.",
+    "detailedForecast": "Partly cloudy, with a low around 57. North wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -224,34 +224,6 @@
         "family",
         "culture",
         "practical"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 19
-    },
-    {
-      "title": "Hope",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 18",
-      "timeLabel": "7:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=hope",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 19
-    },
-    {
-      "title": "Bad Apples",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 18",
-      "timeLabel": "7:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=bad-apples",
-      "tags": [
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-09-18",
       "startHour": 19
@@ -2346,7 +2318,7 @@
       "iso": "2026-09-18",
       "label": "Sep 18",
       "weekday": "Fri",
-      "count": 20
+      "count": 18
     },
     {
       "iso": "2026-09-19",
@@ -2392,7 +2364,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Sunny, 83F"
+      "detail": "Partly Cloudy, 57F"
     },
     {
       "name": "Princeton University Events",
@@ -2416,7 +2388,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "60 showtimes"
+      "detail": "58 showtimes"
     }
   ]
 }
