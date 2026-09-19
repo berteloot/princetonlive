@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-19T15:52:24.675Z",
+  "generatedAt": "2026-09-19T20:38:42.821Z",
   "weather": {
     "temperature": 74,
-    "shortForecast": "Mostly Sunny",
+    "shortForecast": "Mostly Cloudy",
     "wind": "5 mph E",
-    "detailedForecast": "Mostly sunny, with a high near 74. East wind around 5 mph.",
+    "detailedForecast": "Mostly cloudy, with a high near 74. East wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -141,34 +141,6 @@
       "startHour": 13
     },
     {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 19",
-      "timeLabel": "1:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-19",
-      "startHour": 13
-    },
-    {
-      "title": "Bad Apples",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 19",
-      "timeLabel": "1:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=bad-apples",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-19",
-      "startHour": 13
-    },
-    {
       "title": "Artist Workshop: Adebunmi Gbadebo",
       "source": "Princeton University",
       "dateLabel": "Sep 19",
@@ -217,20 +189,6 @@
       "startHour": 15
     },
     {
-      "title": "Hope",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 19",
-      "timeLabel": "3:45 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=hope",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-19",
-      "startHour": 15
-    },
-    {
       "title": "Brazil Society Kickoff Mixer",
       "source": "Princeton University",
       "dateLabel": "Sep 19",
@@ -251,20 +209,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/tango-practica-13",
       "tags": [],
-      "isoDate": "2026-09-19",
-      "startHour": 16
-    },
-    {
-      "title": "Tony",
-      "source": "Garden Theatre",
-      "dateLabel": "Sep 19",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=tony",
-      "tags": [
-        "culture",
-        "rain"
-      ],
       "isoDate": "2026-09-19",
       "startHour": 16
     },
@@ -2300,7 +2244,7 @@
       "iso": "2026-09-19",
       "label": "Sep 19",
       "weekday": "Sat",
-      "count": 24
+      "count": 20
     },
     {
       "iso": "2026-09-20",
@@ -2346,7 +2290,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Sunny, 74F"
+      "detail": "Mostly Cloudy, 74F"
     },
     {
       "name": "Princeton University Events",
@@ -2370,7 +2314,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "58 showtimes"
+      "detail": "54 showtimes"
     }
   ]
 }
