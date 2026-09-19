@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T23:17:31.930Z",
+  "generatedAt": "2026-09-19T04:36:04.670Z",
   "weather": {
     "temperature": 57,
     "shortForecast": "Partly Cloudy",
@@ -10,255 +10,6 @@
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Out After Dark: Exhibition by Tamara Santibañez",
-      "source": "Princeton University",
-      "dateLabel": "Sep 18",
-      "timeLabel": "12:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/out-after-dark-exhibition-tamara-santibanez-9",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 0
-    },
-    {
-      "title": "Building Better Food Systems: Where Can the Next Generation Have the Most Impact?",
-      "source": "Princeton University",
-      "dateLabel": "Sep 18",
-      "timeLabel": "10:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/building-better-food-systems-where-can-next-generation-have-most-impact",
-      "tags": [],
-      "isoDate": "2026-09-18",
-      "startHour": 10
-    },
-    {
-      "title": "Job Seekers: Money Saving Strategies for Career Transition",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 18",
-      "timeLabel": "10:00am - 12:00pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/16881188",
-      "tags": [
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Little Songbirds",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 18",
-      "timeLabel": "10:30am - 11:00am",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/16964423",
-      "tags": [
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 10
-    },
-    {
-      "title": "SFPUL Milberg Gallery Tour of \"The Art of Japanese Publishing\"",
-      "source": "Princeton University",
-      "dateLabel": "Sep 18",
-      "timeLabel": "11:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/sfpul-milberg-gallery-tour-art-japanese-publishing",
-      "tags": [
-        "new",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 11
-    },
-    {
-      "title": "Muslim Life Program Friday Jummah Congregational Prayer",
-      "source": "Princeton University",
-      "dateLabel": "Sep 18",
-      "timeLabel": "12:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/muslim-life-program-friday-jummah-congregational-prayer-23",
-      "tags": [],
-      "isoDate": "2026-09-18",
-      "startHour": 12
-    },
-    {
-      "title": "Open Studio",
-      "source": "Princeton University",
-      "dateLabel": "Sep 18",
-      "timeLabel": "1:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/open-studio-103",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 13
-    },
-    {
-      "title": "Tour of Marquand Library",
-      "source": "Princeton University",
-      "dateLabel": "Sep 18",
-      "timeLabel": "2:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/tour-marquand-library-1",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 14
-    },
-    {
-      "title": "FFS Cheese Party",
-      "source": "Princeton University",
-      "dateLabel": "Sep 18",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/ffs-cheese-party",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 16
-    },
-    {
-      "title": "Community Cultural Exchange",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 18",
-      "timeLabel": "4:00pm - 6:00pm",
-      "location": "Princeton Public Library - Hinds Plaza",
-      "url": "https://princetonlibrary.libnet.info/event/16987116",
-      "tags": [
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 16
-    },
-    {
-      "title": "Fund for Irish Studies: Irish Biochemist and Immunologist Luke O’Neill",
-      "source": "Princeton University",
-      "dateLabel": "Sep 18",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/fund-irish-studies-irish-biochemist-and-immunologist-luke-oneill",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 16
-    },
-    {
-      "title": "Competitive Programming Club",
-      "source": "Princeton University",
-      "dateLabel": "Sep 18",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/competitive-programming-club-0",
-      "tags": [],
-      "isoDate": "2026-09-18",
-      "startHour": 17
-    },
-    {
-      "title": "Women's Volleyball vs Temple",
-      "source": "Princeton University",
-      "dateLabel": "Sep 18",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-volleyball-vs-temple",
-      "tags": [],
-      "isoDate": "2026-09-18",
-      "startHour": 17
-    },
-    {
-      "title": "Al and the Energy Transition",
-      "source": "Princeton University",
-      "dateLabel": "Sep 18",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/al-and-energy-transition",
-      "tags": [],
-      "isoDate": "2026-09-18",
-      "startHour": 17
-    },
-    {
-      "title": "Archery Orientation",
-      "source": "Princeton University",
-      "dateLabel": "Sep 18",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/archery-orientation",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 17
-    },
-    {
-      "title": "Dancing Under the Stars",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 18",
-      "timeLabel": "7:00pm - 10:00pm",
-      "location": "Princeton Public Library - Community Room,Hinds Plaza",
-      "url": "https://princetonlibrary.libnet.info/event/16266282",
-      "tags": [
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 19
-    },
-    {
-      "title": "Welcome Back PSA Event",
-      "source": "Princeton University",
-      "dateLabel": "Sep 18",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/welcome-back-psa-event",
-      "tags": [
-        "new",
-        "culture"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 20
-    },
-    {
-      "title": "Seuls en Scène 2026 presents Barbara (par Barbara) by Marie-Sophie Ferdane & Emmanuel Noblet",
-      "source": "Princeton University",
-      "dateLabel": "Sep 18",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-barbara-par-barbara-marie-sophie-ferdane-emmanuel-noblet",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-18",
-      "startHour": 20
-    },
     {
       "title": "Out After Dark: Exhibition by Tamara Santibañez",
       "source": "Princeton University",
@@ -418,14 +169,13 @@
       "startHour": 13
     },
     {
-      "title": "Embossed Stories: Mexican Repujado & Visual Language",
+      "title": "Artist Workshop: Adebunmi Gbadebo",
       "source": "Princeton University",
       "dateLabel": "Sep 19",
       "timeLabel": "2:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/embossed-stories-mexican-repujado-visual-language",
+      "url": "https://www.princeton.edu/events/2026/artist-workshop-adebunmi-gbadebo",
       "tags": [
-        "new",
         "family",
         "culture",
         "rain",
@@ -435,13 +185,14 @@
       "startHour": 14
     },
     {
-      "title": "Artist Workshop: Adebunmi Gbadebo",
+      "title": "Embossed Stories: Mexican Repujado & Visual Language",
       "source": "Princeton University",
       "dateLabel": "Sep 19",
       "timeLabel": "2:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/artist-workshop-adebunmi-gbadebo",
+      "url": "https://www.princeton.edu/events/2026/embossed-stories-mexican-repujado-visual-language",
       "tags": [
+        "new",
         "family",
         "culture",
         "rain",
@@ -480,17 +231,6 @@
       "startHour": 15
     },
     {
-      "title": "Tango Practica",
-      "source": "Princeton University",
-      "dateLabel": "Sep 19",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/tango-practica-13",
-      "tags": [],
-      "isoDate": "2026-09-19",
-      "startHour": 16
-    },
-    {
       "title": "Brazil Society Kickoff Mixer",
       "source": "Princeton University",
       "dateLabel": "Sep 19",
@@ -500,6 +240,17 @@
       "tags": [
         "culture"
       ],
+      "isoDate": "2026-09-19",
+      "startHour": 16
+    },
+    {
+      "title": "Tango Practica",
+      "source": "Princeton University",
+      "dateLabel": "Sep 19",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/tango-practica-13",
+      "tags": [],
       "isoDate": "2026-09-19",
       "startHour": 16
     },
@@ -1330,18 +1081,26 @@
       "startHour": 16
     },
     {
-      "title": "What is Missing? What if? - Exhibition Opening and Artist Talk with Maya Lin",
+      "title": "Glyn Morgan Lecture",
       "source": "Princeton University",
       "dateLabel": "Sep 22",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/what-missing-what-if-exhibition-opening-and-artist-talk-maya-lin",
+      "url": "https://www.princeton.edu/events/2026/glyn-morgan-lecture",
       "tags": [
-        "new",
-        "culture",
-        "rain",
-        "practical"
+        "culture"
       ],
+      "isoDate": "2026-09-22",
+      "startHour": 16
+    },
+    {
+      "title": "In Conversation with Aaron Bennett",
+      "source": "Princeton University",
+      "dateLabel": "Sep 22",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/conversation-aaron-bennett",
+      "tags": [],
       "isoDate": "2026-09-22",
       "startHour": 16
     },
@@ -1359,25 +1118,17 @@
       "startHour": 16
     },
     {
-      "title": "In Conversation with Aaron Bennett",
+      "title": "What is Missing? What if? - Exhibition Opening and Artist Talk with Maya Lin",
       "source": "Princeton University",
       "dateLabel": "Sep 22",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/conversation-aaron-bennett",
-      "tags": [],
-      "isoDate": "2026-09-22",
-      "startHour": 16
-    },
-    {
-      "title": "Glyn Morgan Lecture",
-      "source": "Princeton University",
-      "dateLabel": "Sep 22",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/glyn-morgan-lecture",
+      "url": "https://www.princeton.edu/events/2026/what-missing-what-if-exhibition-opening-and-artist-talk-maya-lin",
       "tags": [
-        "culture"
+        "new",
+        "culture",
+        "rain",
+        "practical"
       ],
       "isoDate": "2026-09-22",
       "startHour": 16
@@ -1687,6 +1438,17 @@
       "startHour": 14
     },
     {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Sep 23",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-4",
+      "tags": [],
+      "isoDate": "2026-09-23",
+      "startHour": 15
+    },
+    {
       "title": "Pace Center Summer Internships Drop-in",
       "source": "Princeton University",
       "dateLabel": "Sep 23",
@@ -1696,17 +1458,6 @@
       "tags": [
         "new"
       ],
-      "isoDate": "2026-09-23",
-      "startHour": 15
-    },
-    {
-      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
-      "source": "Princeton University",
-      "dateLabel": "Sep 23",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-4",
-      "tags": [],
       "isoDate": "2026-09-23",
       "startHour": 15
     },
@@ -1739,12 +1490,12 @@
       "startHour": 16
     },
     {
-      "title": "Study Abroad Programs in Asia Info Session",
+      "title": "InterVarsity Small Group",
       "source": "Princeton University",
       "dateLabel": "Sep 23",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/study-abroad-programs-asia-info-session",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group",
       "tags": [],
       "isoDate": "2026-09-23",
       "startHour": 16
@@ -1763,12 +1514,12 @@
       "startHour": 16
     },
     {
-      "title": "InterVarsity Small Group",
+      "title": "Study Abroad Programs in Asia Info Session",
       "source": "Princeton University",
       "dateLabel": "Sep 23",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group",
+      "url": "https://www.princeton.edu/events/2026/study-abroad-programs-asia-info-session",
       "tags": [],
       "isoDate": "2026-09-23",
       "startHour": 16
@@ -1915,18 +1666,13 @@
       "startHour": 19
     },
     {
-      "title": "Seuls en Scène 2026 presents L’Événement by Annie Ernaux",
+      "title": "Princeton Christian Fellowship Bible studies",
       "source": "Princeton University",
       "dateLabel": "Sep 23",
       "timeLabel": "8:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-levenement-annie-ernaux",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
+      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-1",
+      "tags": [],
       "isoDate": "2026-09-23",
       "startHour": 20
     },
@@ -1944,13 +1690,18 @@
       "startHour": 20
     },
     {
-      "title": "Princeton Christian Fellowship Bible studies",
+      "title": "Seuls en Scène 2026 presents L’Événement by Annie Ernaux",
       "source": "Princeton University",
       "dateLabel": "Sep 23",
       "timeLabel": "8:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-1",
-      "tags": [],
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-levenement-annie-ernaux",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
+      ],
       "isoDate": "2026-09-23",
       "startHour": 20
     },
@@ -2148,15 +1899,13 @@
       "startHour": 16
     },
     {
-      "title": "Seuls en Scène 2026 presents L’Aube des questions - Festival d’Avignon 2026 with Aurélie Charon, Emma Prat & Oksana Leuta",
+      "title": "Solar Stripes Introductory Meeting",
       "source": "Princeton University",
       "dateLabel": "Sep 24",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-laube-des-questions-festival-davignon-2026-aurelie-charon",
+      "url": "https://www.princeton.edu/events/2026/solar-stripes-introductory-meeting",
       "tags": [
-        "new",
-        "culture",
         "rain"
       ],
       "isoDate": "2026-09-24",
@@ -2177,13 +1926,15 @@
       "startHour": 16
     },
     {
-      "title": "Solar Stripes Introductory Meeting",
+      "title": "Seuls en Scène 2026 presents L’Aube des questions - Festival d’Avignon 2026 with Aurélie Charon, Emma Prat & Oksana Leuta",
       "source": "Princeton University",
       "dateLabel": "Sep 24",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/solar-stripes-introductory-meeting",
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-laube-des-questions-festival-davignon-2026-aurelie-charon",
       "tags": [
+        "new",
+        "culture",
         "rain"
       ],
       "isoDate": "2026-09-24",
@@ -2205,17 +1956,6 @@
       "startHour": 16
     },
     {
-      "title": "MLP: Justice and the Ethics of Inter-Religious Engagement",
-      "source": "Princeton University",
-      "dateLabel": "Sep 24",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mlp-justice-and-ethics-inter-religious-engagement",
-      "tags": [],
-      "isoDate": "2026-09-24",
-      "startHour": 17
-    },
-    {
       "title": "Kickoff Meeting",
       "source": "Princeton University",
       "dateLabel": "Sep 24",
@@ -2226,6 +1966,17 @@
         "new",
         "rain"
       ],
+      "isoDate": "2026-09-24",
+      "startHour": 17
+    },
+    {
+      "title": "MLP: Justice and the Ethics of Inter-Religious Engagement",
+      "source": "Princeton University",
+      "dateLabel": "Sep 24",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mlp-justice-and-ethics-inter-religious-engagement",
+      "tags": [],
       "isoDate": "2026-09-24",
       "startHour": 17
     },
@@ -2311,15 +2062,240 @@
       ],
       "isoDate": "2026-09-24",
       "startHour": 19
+    },
+    {
+      "title": "Out After Dark: Exhibition by Tamara Santibañez",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "12:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/out-after-dark-exhibition-tamara-santibanez-16",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-25",
+      "startHour": 0
+    },
+    {
+      "title": "I'm Alive Event",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "8:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/im-alive-event",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-09-25",
+      "startHour": 8
+    },
+    {
+      "title": "Men's Tennis - Farnsworth Invitational",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "8:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-tennis-farnsworth-invitational",
+      "tags": [],
+      "isoDate": "2026-09-25",
+      "startHour": 8
+    },
+    {
+      "title": "Hands-On Data Analysis with Stata: From Cleaning to Regression",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "10:30 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/hands-data-analysis-stata-cleaning-regression",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-25",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Little Songbirds",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 25",
+      "timeLabel": "10:30am - 11:00am",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/16964425",
+      "tags": [
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-25",
+      "startHour": 10
+    },
+    {
+      "title": "Especially for International Students: Zotero and More!",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/especially-international-students-zotero-and-more",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-09-25",
+      "startHour": 12
+    },
+    {
+      "title": "Muslim Life Program Friday Jummah Congregational Prayer",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/muslim-life-program-friday-jummah-congregational-prayer-24",
+      "tags": [],
+      "isoDate": "2026-09-25",
+      "startHour": 12
+    },
+    {
+      "title": "Open Studio",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/open-studio-110",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-25",
+      "startHour": 13
+    },
+    {
+      "title": "Virtual Artist Talk: Ozioma Onuzulike",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/virtual-artist-talk-ozioma-onuzulike",
+      "tags": [
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-09-25",
+      "startHour": 14
+    },
+    {
+      "title": "English Conversation (in person)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 25",
+      "timeLabel": "2:00pm - 3:30pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/17236677",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-09-25",
+      "startHour": 14
+    },
+    {
+      "title": "Teens: Take & Make",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 25",
+      "timeLabel": "3:00pm - 4:00pm",
+      "location": "Princeton Public Library - Teen Center",
+      "url": "https://princetonlibrary.libnet.info/event/17257560",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-09-25",
+      "startHour": 15
+    },
+    {
+      "title": "Whig-Clio Alumni in Law Panel",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/whig-clio-alumni-law-panel",
+      "tags": [],
+      "isoDate": "2026-09-25",
+      "startHour": 16
+    },
+    {
+      "title": "PUMBS First Meeting!",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "4:45 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/pumbs-first-meeting",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-09-25",
+      "startHour": 16
+    },
+    {
+      "title": "Women's Volleyball vs Penn",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-volleyball-vs-penn",
+      "tags": [],
+      "isoDate": "2026-09-25",
+      "startHour": 18
+    },
+    {
+      "title": "Seuls en Scène 2026 presents Génération Mitterand – Huit rois (nos présidents), Episode 2 by Léo Cohen-Paperman & Émilien Diard-Detoeuf",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-generation-mitterand-huit-rois-nos-presidents-episode-2",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-25",
+      "startHour": 18
+    },
+    {
+      "title": "So You Think You Can Sing?: A Karaoke Competition",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/so-you-think-you-can-sing-karaoke-competition-4",
+      "tags": [],
+      "isoDate": "2026-09-25",
+      "startHour": 20
+    },
+    {
+      "title": "Seuls en Scène 2026 presents Vivantes by Aurélie Charon",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-vivantes-aurelie-charon",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-25",
+      "startHour": 20
     }
   ],
   "days": [
-    {
-      "iso": "2026-09-18",
-      "label": "Sep 18",
-      "weekday": "Fri",
-      "count": 18
-    },
     {
       "iso": "2026-09-19",
       "label": "Sep 19",
@@ -2355,6 +2331,12 @@
       "label": "Sep 24",
       "weekday": "Thu",
       "count": 26
+    },
+    {
+      "iso": "2026-09-25",
+      "label": "Sep 25",
+      "weekday": "Fri",
+      "count": 17
     }
   ],
   "windowDays": 7,
@@ -2376,13 +2358,13 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "42 events"
+      "detail": "43 events"
     },
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "34 calendar items"
+      "detail": "35 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
