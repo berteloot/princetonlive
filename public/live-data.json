@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-20T11:21:37.130Z",
+  "generatedAt": "2026-09-20T16:04:47.773Z",
   "weather": {
     "temperature": 72,
-    "shortForecast": "Light Rain",
-    "wind": "5 mph SE",
-    "detailedForecast": "Rain before 5pm, then rain likely and a slight chance of thunderstorms. Cloudy, with a high near 72. Southeast wind around 5 mph. Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch possible.",
+    "shortForecast": "Light Rain Likely",
+    "wind": "5 mph S",
+    "detailedForecast": "A chance of rain before 5pm, then rain likely and a slight chance of thunderstorms. Cloudy, with a high near 72. South wind around 5 mph. Chance of precipitation is 60%. New rainfall amounts between a tenth and quarter of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -37,19 +37,6 @@
       ],
       "isoDate": "2026-09-20",
       "startHour": 1
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Mutual Aid Network Senior Food Deliveries",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 20, 2026",
-      "timeLabel": "10:00 AM - 11:30 AM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=3951",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-20",
-      "startHour": 10
     },
     {
       "title": "Worship Service in the University Chapel",
@@ -2218,7 +2205,7 @@
       "iso": "2026-09-20",
       "label": "Sep 20",
       "weekday": "Sun",
-      "count": 13
+      "count": 12
     },
     {
       "iso": "2026-09-21",
@@ -2264,7 +2251,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Light Rain, 72F"
+      "detail": "Light Rain Likely, 72F"
     },
     {
       "name": "Princeton University Events",
@@ -2282,7 +2269,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "35 calendar items"
+      "detail": "34 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
