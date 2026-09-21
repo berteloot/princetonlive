@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-21T12:46:31.183Z",
+  "generatedAt": "2026-09-21T19:58:57.648Z",
   "weather": {
     "temperature": 70,
-    "shortForecast": "Partly Sunny",
-    "wind": "5 to 10 mph NE",
-    "detailedForecast": "Partly sunny, with a high near 70. Northeast wind 5 to 10 mph.",
+    "shortForecast": "Mostly Cloudy",
+    "wind": "5 mph NE",
+    "detailedForecast": "Mostly cloudy, with a high near 70. Northeast wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -409,7 +409,7 @@
       "source": "Princeton Public Library",
       "dateLabel": "Sep 22",
       "timeLabel": "1:00pm - 2:00pm",
-      "location": "Princeton Public Library - Tech Center",
+      "location": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/event/17226217",
       "tags": [
         "rain",
@@ -636,6 +636,19 @@
       "startHour": 17
     },
     {
+      "title": "SJP Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Sep 22",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/sjp-meeting",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-09-22",
+      "startHour": 18
+    },
+    {
       "title": "Althea Ward Clark W'21 Reading by Katie Farris and Jamil Jan Kochai",
       "source": "Princeton University",
       "dateLabel": "Sep 22",
@@ -687,6 +700,20 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-seton-hall",
       "tags": [],
+      "isoDate": "2026-09-22",
+      "startHour": 19
+    },
+    {
+      "title": "LDSSA Institute Class",
+      "source": "Princeton University",
+      "dateLabel": "Sep 22",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/ldssa-institute-class-2",
+      "tags": [
+        "new",
+        "rain"
+      ],
       "isoDate": "2026-09-22",
       "startHour": 19
     },
@@ -997,6 +1024,17 @@
       "startHour": 16
     },
     {
+      "title": "WEP Wednesday",
+      "source": "Princeton University",
+      "dateLabel": "Sep 23",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/wep-wednesday",
+      "tags": [],
+      "isoDate": "2026-09-23",
+      "startHour": 16
+    },
+    {
       "title": "Food Insecurity Task Force: Princeton Cornerstone Kitchen",
       "source": "Municipality of Princeton",
       "dateLabel": "September 23, 2026",
@@ -1138,15 +1176,18 @@
       "startHour": 19
     },
     {
-      "title": "Princeton Christian Fellowship Bible studies",
-      "source": "Princeton University",
-      "dateLabel": "Sep 23",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-1",
-      "tags": [],
+      "title": "Zoning Board of Adjustment Meeting - Virtual",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 23, 2026",
+      "timeLabel": "07:30 PM - 11:59 PM",
+      "location": "Princeton, NJ",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7814",
+      "tags": [
+        "rain",
+        "practical"
+      ],
       "isoDate": "2026-09-23",
-      "startHour": 20
+      "startHour": 19
     },
     {
       "title": "Jazz Vespers",
@@ -1158,6 +1199,17 @@
       "tags": [
         "culture"
       ],
+      "isoDate": "2026-09-23",
+      "startHour": 20
+    },
+    {
+      "title": "Princeton Christian Fellowship Bible studies",
+      "source": "Princeton University",
+      "dateLabel": "Sep 23",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-1",
+      "tags": [],
       "isoDate": "2026-09-23",
       "startHour": 20
     },
@@ -1360,13 +1412,16 @@
       "startHour": 15
     },
     {
-      "title": "Study Abroad 101 - Beyond the Bubble - Info Session",
+      "title": "Curator Talk | Intimate Grief: Death in Ancient Greece",
       "source": "Princeton University",
       "dateLabel": "Sep 24",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/study-abroad-101-beyond-bubble-info-session",
-      "tags": [],
+      "url": "https://www.princeton.edu/events/2026/curator-talk-intimate-grief-death-ancient-greece",
+      "tags": [
+        "culture",
+        "rain"
+      ],
       "isoDate": "2026-09-24",
       "startHour": 16
     },
@@ -1384,16 +1439,13 @@
       "startHour": 16
     },
     {
-      "title": "Curator Talk | Intimate Grief: Death in Ancient Greece",
+      "title": "Study Abroad 101 - Beyond the Bubble - Info Session",
       "source": "Princeton University",
       "dateLabel": "Sep 24",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/curator-talk-intimate-grief-death-ancient-greece",
-      "tags": [
-        "culture",
-        "rain"
-      ],
+      "url": "https://www.princeton.edu/events/2026/study-abroad-101-beyond-bubble-info-session",
+      "tags": [],
       "isoDate": "2026-09-24",
       "startHour": 16
     },
@@ -1428,16 +1480,13 @@
       "startHour": 16
     },
     {
-      "title": "Kickoff Meeting",
+      "title": "MLP: Justice and the Ethics of Inter-Religious Engagement",
       "source": "Princeton University",
       "dateLabel": "Sep 24",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/kickoff-meeting",
-      "tags": [
-        "new",
-        "rain"
-      ],
+      "url": "https://www.princeton.edu/events/2026/mlp-justice-and-ethics-inter-religious-engagement-0",
+      "tags": [],
       "isoDate": "2026-09-24",
       "startHour": 17
     },
@@ -1449,6 +1498,20 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/mlp-justice-and-ethics-inter-religious-engagement",
       "tags": [],
+      "isoDate": "2026-09-24",
+      "startHour": 17
+    },
+    {
+      "title": "Kickoff Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Sep 24",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/kickoff-meeting",
+      "tags": [
+        "new",
+        "rain"
+      ],
       "isoDate": "2026-09-24",
       "startHour": 17
     },
@@ -1522,6 +1585,19 @@
       "startHour": 19
     },
     {
+      "title": "OneCode Diagnostic Presentation",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 24, 2026",
+      "timeLabel": "07:00 PM - 11:59 PM",
+      "location": "400 Witherspoon St.Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8128",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-09-24",
+      "startHour": 19
+    },
+    {
       "title": "Dune (1984)",
       "source": "Garden Theatre",
       "dateLabel": "Sep 24",
@@ -1551,6 +1627,17 @@
       "startHour": 0
     },
     {
+      "title": "Men's Tennis - Farnsworth Invitational",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "8:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-tennis-farnsworth-invitational",
+      "tags": [],
+      "isoDate": "2026-09-25",
+      "startHour": 8
+    },
+    {
       "title": "I'm Alive Event",
       "source": "Princeton University",
       "dateLabel": "Sep 25",
@@ -1560,17 +1647,6 @@
       "tags": [
         "practical"
       ],
-      "isoDate": "2026-09-25",
-      "startHour": 8
-    },
-    {
-      "title": "Men's Tennis - Farnsworth Invitational",
-      "source": "Princeton University",
-      "dateLabel": "Sep 25",
-      "timeLabel": "8:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-tennis-farnsworth-invitational",
-      "tags": [],
       "isoDate": "2026-09-25",
       "startHour": 8
     },
@@ -1687,13 +1763,16 @@
       "startHour": 15
     },
     {
-      "title": "Whig-Clio Alumni in Law Panel",
+      "title": "Moon Festival 2026",
       "source": "Princeton University",
       "dateLabel": "Sep 25",
-      "timeLabel": "4:30 PM",
+      "timeLabel": "4:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/whig-clio-alumni-law-panel",
-      "tags": [],
+      "url": "https://www.princeton.edu/events/2026/moon-festival-2026",
+      "tags": [
+        "new",
+        "culture"
+      ],
       "isoDate": "2026-09-25",
       "startHour": 16
     },
@@ -1710,6 +1789,28 @@
       ],
       "isoDate": "2026-09-25",
       "startHour": 16
+    },
+    {
+      "title": "Competitive Programming Club",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/competitive-programming-club-1",
+      "tags": [],
+      "isoDate": "2026-09-25",
+      "startHour": 17
+    },
+    {
+      "title": "So You Think You Can Sing?: Karaoke Competition",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/so-you-think-you-can-sing-karaoke-competition-5",
+      "tags": [],
+      "isoDate": "2026-09-25",
+      "startHour": 18
     },
     {
       "title": "Women's Volleyball vs Penn",
@@ -1765,6 +1866,19 @@
       ],
       "isoDate": "2026-09-25",
       "startHour": 20
+    },
+    {
+      "title": "Tiger Tumbao Dance Rehearsal",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "9:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/tiger-tumbao-dance-rehearsal",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-09-25",
+      "startHour": 21
     },
     {
       "title": "Out After Dark: Exhibition by Tamara Santibañez",
@@ -1936,23 +2050,23 @@
       "startHour": 15
     },
     {
-      "title": "Women's Soccer vs Harvard",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-harvard",
-      "tags": [],
-      "isoDate": "2026-09-26",
-      "startHour": 16
-    },
-    {
       "title": "Tango Practica",
       "source": "Princeton University",
       "dateLabel": "Sep 26",
       "timeLabel": "4:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/tango-practica-14",
+      "tags": [],
+      "isoDate": "2026-09-26",
+      "startHour": 16
+    },
+    {
+      "title": "Women's Soccer vs Harvard",
+      "source": "Princeton University",
+      "dateLabel": "Sep 26",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-harvard",
       "tags": [],
       "isoDate": "2026-09-26",
       "startHour": 16
@@ -2166,25 +2280,25 @@
       "iso": "2026-09-22",
       "label": "Sep 22",
       "weekday": "Tue",
-      "count": 29
+      "count": 31
     },
     {
       "iso": "2026-09-23",
       "label": "Sep 23",
       "weekday": "Wed",
-      "count": 34
+      "count": 36
     },
     {
       "iso": "2026-09-24",
       "label": "Sep 24",
       "weekday": "Thu",
-      "count": 26
+      "count": 28
     },
     {
       "iso": "2026-09-25",
       "label": "Sep 25",
       "weekday": "Fri",
-      "count": 17
+      "count": 20
     },
     {
       "iso": "2026-09-26",
@@ -2206,7 +2320,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Partly Sunny, 70F"
+      "detail": "Mostly Cloudy, 70F"
     },
     {
       "name": "Princeton University Events",
@@ -2224,7 +2338,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "34 calendar items"
+      "detail": "36 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
