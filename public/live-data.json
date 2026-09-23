@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-23T16:56:46.093Z",
+  "generatedAt": "2026-09-23T21:29:18.933Z",
   "weather": {
     "temperature": 67,
-    "shortForecast": "Mostly Cloudy",
-    "wind": "15 to 20 mph NE",
-    "detailedForecast": "Mostly cloudy, with a high near 67. Northeast wind 15 to 20 mph.",
+    "shortForecast": "Partly Sunny",
+    "wind": "15 mph NE",
+    "detailedForecast": "Partly sunny, with a high near 67. Northeast wind around 15 mph, with gusts as high as 30 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -152,19 +152,6 @@
       "startHour": 14
     },
     {
-      "title": "Food Insecurity Task Force: Princeton Alliance Church",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 23, 2026",
-      "timeLabel": "02:30 PM - 04:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7237",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-23",
-      "startHour": 14
-    },
-    {
       "title": "2026 Junior Independent Work Research Forum",
       "source": "Princeton University",
       "dateLabel": "Sep 23",
@@ -178,6 +165,17 @@
       "startHour": 14
     },
     {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Sep 23",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-4",
+      "tags": [],
+      "isoDate": "2026-09-23",
+      "startHour": 15
+    },
+    {
       "title": "Pace Center Summer Internships Drop-in",
       "source": "Princeton University",
       "dateLabel": "Sep 23",
@@ -187,17 +185,6 @@
       "tags": [
         "new"
       ],
-      "isoDate": "2026-09-23",
-      "startHour": 15
-    },
-    {
-      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
-      "source": "Princeton University",
-      "dateLabel": "Sep 23",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-4",
-      "tags": [],
       "isoDate": "2026-09-23",
       "startHour": 15
     },
@@ -230,12 +217,23 @@
       "startHour": 16
     },
     {
-      "title": "Study Abroad Programs in Asia Info Session",
+      "title": "WEP Wednesday",
       "source": "Princeton University",
       "dateLabel": "Sep 23",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/study-abroad-programs-asia-info-session",
+      "url": "https://www.princeton.edu/events/2026/wep-wednesday",
+      "tags": [],
+      "isoDate": "2026-09-23",
+      "startHour": 16
+    },
+    {
+      "title": "InterVarsity Small Group",
+      "source": "Princeton University",
+      "dateLabel": "Sep 23",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group",
       "tags": [],
       "isoDate": "2026-09-23",
       "startHour": 16
@@ -254,23 +252,12 @@
       "startHour": 16
     },
     {
-      "title": "InterVarsity Small Group",
+      "title": "Study Abroad Programs in Asia Info Session",
       "source": "Princeton University",
       "dateLabel": "Sep 23",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group",
-      "tags": [],
-      "isoDate": "2026-09-23",
-      "startHour": 16
-    },
-    {
-      "title": "WEP Wednesday",
-      "source": "Princeton University",
-      "dateLabel": "Sep 23",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/wep-wednesday",
+      "url": "https://www.princeton.edu/events/2026/study-abroad-programs-asia-info-session",
       "tags": [],
       "isoDate": "2026-09-23",
       "startHour": 16
@@ -306,7 +293,7 @@
       "source": "Princeton Public Library",
       "dateLabel": "Sep 23",
       "timeLabel": "6:00pm - 7:00pm",
-      "location": "Princeton Public Library - Conference Room",
+      "location": "Princeton Public Library - Newsroom",
       "url": "https://princetonlibrary.libnet.info/event/16996301",
       "tags": [
         "culture",
@@ -346,20 +333,6 @@
       "startHour": 18
     },
     {
-      "title": "Green House Tour: Expert Panel and Video Screening",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 23, 2026",
-      "timeLabel": "06:00 PM - 07:30 PM",
-      "location": "65 Witherspoon StPrinceton, NJ 08542",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8130",
-      "tags": [
-        "new",
-        "practical"
-      ],
-      "isoDate": "2026-09-23",
-      "startHour": 18
-    },
-    {
       "title": "Preconstruction Meeting for Terhune Road (Mount Lucas Rd to North Harrison St)",
       "source": "Municipality of Princeton",
       "dateLabel": "September 23, 2026",
@@ -368,6 +341,20 @@
       "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8132",
       "tags": [
         "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-23",
+      "startHour": 18
+    },
+    {
+      "title": "Green House Tour: Expert Panel and Video Screening",
+      "source": "Municipality of Princeton",
+      "dateLabel": "September 23, 2026",
+      "timeLabel": "06:00 PM - 07:30 PM",
+      "location": "65 Witherspoon StPrinceton, NJ 08542",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8130",
+      "tags": [
+        "new",
         "practical"
       ],
       "isoDate": "2026-09-23",
@@ -403,6 +390,17 @@
       "startHour": 19
     },
     {
+      "title": "Princeton Christian Fellowship Bible studies",
+      "source": "Princeton University",
+      "dateLabel": "Sep 23",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-1",
+      "tags": [],
+      "isoDate": "2026-09-23",
+      "startHour": 20
+    },
+    {
       "title": "Jazz Vespers",
       "source": "Princeton University",
       "dateLabel": "Sep 23",
@@ -412,17 +410,6 @@
       "tags": [
         "culture"
       ],
-      "isoDate": "2026-09-23",
-      "startHour": 20
-    },
-    {
-      "title": "Princeton Christian Fellowship Bible studies",
-      "source": "Princeton University",
-      "dateLabel": "Sep 23",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-1",
-      "tags": [],
       "isoDate": "2026-09-23",
       "startHour": 20
     },
@@ -625,33 +612,6 @@
       "startHour": 15
     },
     {
-      "title": "Curator Talk | Intimate Grief: Death in Ancient Greece",
-      "source": "Princeton University",
-      "dateLabel": "Sep 24",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/curator-talk-intimate-grief-death-ancient-greece",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-24",
-      "startHour": 16
-    },
-    {
-      "title": "Solar Stripes Introductory Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Sep 24",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/solar-stripes-introductory-meeting",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-09-24",
-      "startHour": 16
-    },
-    {
       "title": "Theatre Intime Open House",
       "source": "Princeton University",
       "dateLabel": "Sep 24",
@@ -675,6 +635,33 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/study-abroad-101-beyond-bubble-info-session",
       "tags": [],
+      "isoDate": "2026-09-24",
+      "startHour": 16
+    },
+    {
+      "title": "Solar Stripes Introductory Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Sep 24",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/solar-stripes-introductory-meeting",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-09-24",
+      "startHour": 16
+    },
+    {
+      "title": "Curator Talk | Intimate Grief: Death in Ancient Greece",
+      "source": "Princeton University",
+      "dateLabel": "Sep 24",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/curator-talk-intimate-grief-death-ancient-greece",
+      "tags": [
+        "culture",
+        "rain"
+      ],
       "isoDate": "2026-09-24",
       "startHour": 16
     },
@@ -714,7 +701,7 @@
       "dateLabel": "Sep 24",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mlp-justice-and-ethics-inter-religious-engagement",
+      "url": "https://www.princeton.edu/events/2026/mlp-justice-and-ethics-inter-religious-engagement-0",
       "tags": [],
       "isoDate": "2026-09-24",
       "startHour": 17
@@ -739,7 +726,7 @@
       "dateLabel": "Sep 24",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mlp-justice-and-ethics-inter-religious-engagement-0",
+      "url": "https://www.princeton.edu/events/2026/mlp-justice-and-ethics-inter-religious-engagement",
       "tags": [],
       "isoDate": "2026-09-24",
       "startHour": 17
@@ -829,17 +816,6 @@
       "startHour": 0
     },
     {
-      "title": "Men's Tennis - Farnsworth Invitational",
-      "source": "Princeton University",
-      "dateLabel": "Sep 25",
-      "timeLabel": "8:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-tennis-farnsworth-invitational",
-      "tags": [],
-      "isoDate": "2026-09-25",
-      "startHour": 8
-    },
-    {
       "title": "I'm Alive Event",
       "source": "Princeton University",
       "dateLabel": "Sep 25",
@@ -849,6 +825,17 @@
       "tags": [
         "practical"
       ],
+      "isoDate": "2026-09-25",
+      "startHour": 8
+    },
+    {
+      "title": "Men's Tennis - Farnsworth Invitational",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "8:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-tennis-farnsworth-invitational",
+      "tags": [],
       "isoDate": "2026-09-25",
       "startHour": 8
     },
@@ -1020,23 +1007,23 @@
       "startHour": 17
     },
     {
-      "title": "Women's Volleyball vs Penn",
-      "source": "Princeton University",
-      "dateLabel": "Sep 25",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-volleyball-vs-penn",
-      "tags": [],
-      "isoDate": "2026-09-25",
-      "startHour": 18
-    },
-    {
       "title": "So You Think You Can Sing?: Karaoke Competition",
       "source": "Princeton University",
       "dateLabel": "Sep 25",
       "timeLabel": "6:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/so-you-think-you-can-sing-karaoke-competition-5",
+      "tags": [],
+      "isoDate": "2026-09-25",
+      "startHour": 18
+    },
+    {
+      "title": "Women's Volleyball vs Penn",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-volleyball-vs-penn",
       "tags": [],
       "isoDate": "2026-09-25",
       "startHour": 18
@@ -1254,23 +1241,23 @@
       "startHour": 15
     },
     {
-      "title": "Tango Practica",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/tango-practica-14",
-      "tags": [],
-      "isoDate": "2026-09-26",
-      "startHour": 16
-    },
-    {
       "title": "Women's Soccer vs Harvard",
       "source": "Princeton University",
       "dateLabel": "Sep 26",
       "timeLabel": "4:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-harvard",
+      "tags": [],
+      "isoDate": "2026-09-26",
+      "startHour": 16
+    },
+    {
+      "title": "Tango Practica",
+      "source": "Princeton University",
+      "dateLabel": "Sep 26",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/tango-practica-14",
       "tags": [],
       "isoDate": "2026-09-26",
       "startHour": 16
@@ -1603,19 +1590,6 @@
       "startHour": 16
     },
     {
-      "title": "Book Talk: The Everywhere Millionaire - Who Is Really Rich in America and How They Got There",
-      "source": "Princeton University",
-      "dateLabel": "Sep 28",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/book-talk-everywhere-millionaire-who-really-rich-america-and-how-they-got-there",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-09-28",
-      "startHour": 16
-    },
-    {
       "title": "\"Vengeance Like This\": Expressing and Instigating Rage in Hebrew Poetry",
       "source": "Princeton University",
       "dateLabel": "Sep 28",
@@ -1638,6 +1612,19 @@
       "tags": [
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-09-28",
+      "startHour": 16
+    },
+    {
+      "title": "Book Talk: The Everywhere Millionaire - Who Is Really Rich in America and How They Got There",
+      "source": "Princeton University",
+      "dateLabel": "Sep 28",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/book-talk-everywhere-millionaire-who-really-rich-america-and-how-they-got-there",
+      "tags": [
+        "culture"
       ],
       "isoDate": "2026-09-28",
       "startHour": 16
@@ -2022,6 +2009,19 @@
       "startHour": 16
     },
     {
+      "title": "Syrian Students Association Open House",
+      "source": "Princeton University",
+      "dateLabel": "Sep 29",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/syrian-students-association-open-house",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-09-29",
+      "startHour": 18
+    },
+    {
       "title": "Author: Sarah Fritz",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 29",
@@ -2094,7 +2094,7 @@
       "iso": "2026-09-23",
       "label": "Sep 23",
       "weekday": "Wed",
-      "count": 32
+      "count": 31
     },
     {
       "iso": "2026-09-24",
@@ -2130,7 +2130,7 @@
       "iso": "2026-09-29",
       "label": "Sep 29",
       "weekday": "Tue",
-      "count": 25
+      "count": 26
     }
   ],
   "windowDays": 7,
@@ -2140,7 +2140,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Cloudy, 67F"
+      "detail": "Partly Sunny, 67F"
     },
     {
       "name": "Princeton University Events",
@@ -2158,7 +2158,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "33 calendar items"
+      "detail": "32 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
