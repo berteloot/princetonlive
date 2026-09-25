@@ -1,13 +1,21 @@
 {
-  "generatedAt": "2026-09-25T04:56:22.170Z",
+  "generatedAt": "2026-09-25T11:49:38.436Z",
   "weather": {
-    "temperature": 52,
+    "temperature": 72,
     "shortForecast": "Mostly Cloudy",
-    "wind": "5 to 10 mph NE",
-    "detailedForecast": "Mostly cloudy, with a low around 52. Northeast wind 5 to 10 mph.",
+    "wind": "10 to 20 mph NE",
+    "detailedForecast": "Mostly cloudy, with a high near 72. Northeast wind 10 to 20 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
-  "alerts": [],
+  "alerts": [
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8e6791d8ed2827446f32ce7316226316c570a2a8.003.1",
+      "event": "Wind Advisory",
+      "headline": "Wind Advisory issued September 25 at 4:43AM EDT until September 27 at 6:00AM EDT by NWS Mount Holly NJ",
+      "severity": "Moderate",
+      "url": null
+    }
+  ],
   "alertsAvailable": true,
   "events": [
     {
@@ -2138,7 +2146,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Cloudy, 52F"
+      "detail": "Mostly Cloudy, 72F"
     },
     {
       "name": "Princeton University Events",
