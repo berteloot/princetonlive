@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-25T11:49:38.436Z",
+  "generatedAt": "2026-09-25T17:09:39.036Z",
   "weather": {
     "temperature": 72,
     "shortForecast": "Mostly Cloudy",
-    "wind": "10 to 20 mph NE",
-    "detailedForecast": "Mostly cloudy, with a high near 72. Northeast wind 10 to 20 mph.",
+    "wind": "15 to 20 mph NE",
+    "detailedForecast": "Mostly cloudy, with a high near 72. Northeast wind 15 to 20 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
@@ -225,6 +225,30 @@
       "startHour": 17
     },
     {
+      "title": "XC Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "5:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/xc-meeting",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-09-25",
+      "startHour": 17
+    },
+    {
+      "title": "Women's Volleyball vs Penn",
+      "source": "Princeton University",
+      "dateLabel": "Sep 25",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-volleyball-vs-penn",
+      "tags": [],
+      "isoDate": "2026-09-25",
+      "startHour": 18
+    },
+    {
       "title": "So You Think You Can Sing?: Karaoke Competition",
       "source": "Princeton University",
       "dateLabel": "Sep 25",
@@ -253,15 +277,15 @@
       "startHour": 18
     },
     {
-      "title": "Women's Volleyball vs Penn",
+      "title": "So You Think You Can Sing?: A Karaoke Competition",
       "source": "Princeton University",
       "dateLabel": "Sep 25",
-      "timeLabel": "6:00 PM",
+      "timeLabel": "8:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-volleyball-vs-penn",
+      "url": "https://www.princeton.edu/events/2026/so-you-think-you-can-sing-karaoke-competition-4",
       "tags": [],
       "isoDate": "2026-09-25",
-      "startHour": 18
+      "startHour": 20
     },
     {
       "title": "Seuls en Scène 2026 presents Vivantes by Aurélie Charon",
@@ -276,17 +300,6 @@
         "culture",
         "rain"
       ],
-      "isoDate": "2026-09-25",
-      "startHour": 20
-    },
-    {
-      "title": "So You Think You Can Sing?: A Karaoke Competition",
-      "source": "Princeton University",
-      "dateLabel": "Sep 25",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/so-you-think-you-can-sing-karaoke-competition-4",
-      "tags": [],
       "isoDate": "2026-09-25",
       "startHour": 20
     },
@@ -526,6 +539,19 @@
       "startHour": 19
     },
     {
+      "title": "TAY STORY 5: WATCH PARTY!",
+      "source": "Princeton University",
+      "dateLabel": "Sep 26",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/tay-story-5-watch-party",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-09-26",
+      "startHour": 20
+    },
+    {
       "title": "Seuls en Scène 2026 presents Vivantes by Aurélie Charon",
       "source": "Princeton University",
       "dateLabel": "Sep 26",
@@ -537,19 +563,6 @@
         "family",
         "culture",
         "rain"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 20
-    },
-    {
-      "title": "TAY STORY 5: WATCH PARTY!",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/tay-story-5-watch-party",
-      "tags": [
-        "culture"
       ],
       "isoDate": "2026-09-26",
       "startHour": 20
@@ -822,19 +835,6 @@
       "startHour": 16
     },
     {
-      "title": "\"Vengeance Like This\": Expressing and Instigating Rage in Hebrew Poetry",
-      "source": "Princeton University",
-      "dateLabel": "Sep 28",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/vengeance-expressing-and-instigating-rage-hebrew-poetry",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-09-28",
-      "startHour": 16
-    },
-    {
       "title": "Civic Leadership Council (Pace) Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Sep 28",
@@ -844,6 +844,19 @@
       "tags": [
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-09-28",
+      "startHour": 16
+    },
+    {
+      "title": "\"Vengeance Like This\": Expressing and Instigating Rage in Hebrew Poetry",
+      "source": "Princeton University",
+      "dateLabel": "Sep 28",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/vengeance-expressing-and-instigating-rage-hebrew-poetry",
+      "tags": [
+        "culture"
       ],
       "isoDate": "2026-09-28",
       "startHour": 16
@@ -1019,6 +1032,22 @@
       "startHour": 10
     },
     {
+      "title": "Theater Lunch Conversation with Heather Christian",
+      "source": "Princeton University",
+      "dateLabel": "Sep 29",
+      "timeLabel": "12:15 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/theater-lunch-conversation-heather-christian",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-29",
+      "startHour": 12
+    },
+    {
       "title": "Guided tour: The Art of Japanese Publishing",
       "source": "Princeton University",
       "dateLabel": "Sep 29",
@@ -1170,6 +1199,17 @@
       "startHour": 15
     },
     {
+      "title": "Field Hockey vs Maryland",
+      "source": "Princeton University",
+      "dateLabel": "Sep 29",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-maryland",
+      "tags": [],
+      "isoDate": "2026-09-29",
+      "startHour": 16
+    },
+    {
       "title": "Getting Published with IEEE",
       "source": "Princeton University",
       "dateLabel": "Sep 29",
@@ -1181,17 +1221,6 @@
         "culture",
         "rain"
       ],
-      "isoDate": "2026-09-29",
-      "startHour": 16
-    },
-    {
-      "title": "Field Hockey vs Maryland",
-      "source": "Princeton University",
-      "dateLabel": "Sep 29",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-maryland",
-      "tags": [],
       "isoDate": "2026-09-29",
       "startHour": 16
     },
@@ -1210,20 +1239,6 @@
       "startHour": 16
     },
     {
-      "title": "Iftikhar Dadi | Romanticism and Politics in Mid-Century Lahore Cinema",
-      "source": "Princeton University",
-      "dateLabel": "Sep 29",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/iftikhar-dadi-romanticism-and-politics-mid-century-lahore-cinema",
-      "tags": [
-        "family",
-        "culture"
-      ],
-      "isoDate": "2026-09-29",
-      "startHour": 16
-    },
-    {
       "title": "Jenny’s Worlds: Asian Lives and the Archives of American Empire, Nadine Attewell",
       "source": "Princeton University",
       "dateLabel": "Sep 29",
@@ -1236,6 +1251,20 @@
         "culture",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-09-29",
+      "startHour": 16
+    },
+    {
+      "title": "Iftikhar Dadi | Romanticism and Politics in Mid-Century Lahore Cinema",
+      "source": "Princeton University",
+      "dateLabel": "Sep 29",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/iftikhar-dadi-romanticism-and-politics-mid-century-lahore-cinema",
+      "tags": [
+        "family",
+        "culture"
       ],
       "isoDate": "2026-09-29",
       "startHour": 16
@@ -1578,19 +1607,6 @@
       "startHour": 16
     },
     {
-      "title": "Mote Memorial Lecture",
-      "source": "Princeton University",
-      "dateLabel": "Sep 30",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mote-memorial-lecture",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-09-30",
-      "startHour": 16
-    },
-    {
       "title": "InterVarsity Small Group",
       "source": "Princeton University",
       "dateLabel": "Sep 30",
@@ -1609,6 +1625,19 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/semester-study-abroad-english-speaking-locations-info-session",
       "tags": [],
+      "isoDate": "2026-09-30",
+      "startHour": 16
+    },
+    {
+      "title": "Mote Memorial Lecture",
+      "source": "Princeton University",
+      "dateLabel": "Sep 30",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mote-memorial-lecture",
+      "tags": [
+        "culture"
+      ],
       "isoDate": "2026-09-30",
       "startHour": 16
     },
@@ -1794,17 +1823,6 @@
       "startHour": 12
     },
     {
-      "title": "Perspectives on Energy System Transition Modeling",
-      "source": "Princeton University",
-      "dateLabel": "Oct 1",
-      "timeLabel": "12:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/perspectives-energy-system-transition-modeling",
-      "tags": [],
-      "isoDate": "2026-10-01",
-      "startHour": 12
-    },
-    {
       "title": "After Noon Concert Series",
       "source": "Princeton University",
       "dateLabel": "Oct 1",
@@ -1814,6 +1832,17 @@
       "tags": [
         "culture"
       ],
+      "isoDate": "2026-10-01",
+      "startHour": 12
+    },
+    {
+      "title": "Perspectives on Energy System Transition Modeling",
+      "source": "Princeton University",
+      "dateLabel": "Oct 1",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/perspectives-energy-system-transition-modeling",
+      "tags": [],
       "isoDate": "2026-10-01",
       "startHour": 12
     },
@@ -1904,20 +1933,6 @@
       "startHour": 16
     },
     {
-      "title": "2026 Bruce Blair Memorial Lecture",
-      "source": "Princeton University",
-      "dateLabel": "Oct 1",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/2026-bruce-blair-memorial-lecture",
-      "tags": [
-        "family",
-        "culture"
-      ],
-      "isoDate": "2026-10-01",
-      "startHour": 16
-    },
-    {
       "title": "Upstream, Downstream, Offshore: Constancy Amidst the Flux of Supply Chains",
       "source": "Princeton University",
       "dateLabel": "Oct 1",
@@ -1975,6 +1990,20 @@
       "startHour": 16
     },
     {
+      "title": "2026 Bruce Blair Memorial Lecture",
+      "source": "Princeton University",
+      "dateLabel": "Oct 1",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/2026-bruce-blair-memorial-lecture",
+      "tags": [
+        "family",
+        "culture"
+      ],
+      "isoDate": "2026-10-01",
+      "startHour": 16
+    },
+    {
       "title": "Composition Colloquium with Nico Muhly",
       "source": "Princeton University",
       "dateLabel": "Oct 1",
@@ -2008,6 +2037,22 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/mlp-x-iqbal-poetics-awakening",
       "tags": [],
+      "isoDate": "2026-10-01",
+      "startHour": 17
+    },
+    {
+      "title": "Talk: Elizabeth Oyler",
+      "source": "Princeton University",
+      "dateLabel": "Oct 1",
+      "timeLabel": "5:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/talk-elizabeth-oyler",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
+      ],
       "isoDate": "2026-10-01",
       "startHour": 17
     },
@@ -2065,21 +2110,6 @@
       "startHour": 18
     },
     {
-      "title": "Brentano String Quartet (Princeton University Concerts)",
-      "source": "Princeton University",
-      "dateLabel": "Oct 1",
-      "timeLabel": "7:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/brentano-string-quartet-princeton-university-concerts",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-01",
-      "startHour": 19
-    },
-    {
       "title": "Glee Club Presents: Christ Church (Oxford) Cathedral Choir",
       "source": "Princeton University",
       "dateLabel": "Oct 1",
@@ -2093,6 +2123,21 @@
       ],
       "isoDate": "2026-10-01",
       "startHour": 19
+    },
+    {
+      "title": "Brentano String Quartet (Princeton University Concerts)",
+      "source": "Princeton University",
+      "dateLabel": "Oct 1",
+      "timeLabel": "7:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/brentano-string-quartet-princeton-university-concerts",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-01",
+      "startHour": 19
     }
   ],
   "days": [
@@ -2100,7 +2145,7 @@
       "iso": "2026-09-25",
       "label": "Sep 25",
       "weekday": "Fri",
-      "count": 21
+      "count": 22
     },
     {
       "iso": "2026-09-26",
@@ -2124,7 +2169,7 @@
       "iso": "2026-09-29",
       "label": "Sep 29",
       "weekday": "Tue",
-      "count": 26
+      "count": 27
     },
     {
       "iso": "2026-09-30",
@@ -2136,7 +2181,7 @@
       "iso": "2026-10-01",
       "label": "Oct 1",
       "weekday": "Thu",
-      "count": 29
+      "count": 30
     }
   ],
   "windowDays": 7,
