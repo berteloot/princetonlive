@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-09-26T04:56:30.387Z",
+  "generatedAt": "2026-09-26T11:23:28.713Z",
   "weather": {
-    "temperature": 55,
-    "shortForecast": "Chance Light Rain",
-    "wind": "15 mph N",
-    "detailedForecast": "A chance of rain. Cloudy, with a low around 55. North wind around 15 mph, with gusts as high as 45 mph. Chance of precipitation is 50%. New rainfall amounts less than a tenth of an inch possible.",
+    "temperature": 62,
+    "shortForecast": "Rain Showers",
+    "wind": "15 to 20 mph N",
+    "detailedForecast": "Rain showers. Mostly cloudy, with a high near 62. North wind 15 to 20 mph, with gusts as high as 40 mph. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e9c816b86ee398a7b039a2e304f32055ea3fc4dd.002.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e627dc8d0c746e25d7851729953103a2a30f6f9.002.1",
       "event": "Wind Advisory",
-      "headline": "Wind Advisory issued September 25 at 2:22PM EDT until September 27 at 6:00AM EDT by NWS Mount Holly NJ",
+      "headline": "Wind Advisory issued September 26 at 4:08AM EDT until September 27 at 6:00AM EDT by NWS Mount Holly NJ",
       "severity": "Moderate",
       "url": null
     }
@@ -2083,7 +2083,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Chance Light Rain, 55F"
+      "detail": "Rain Showers, 62F"
     },
     {
       "name": "Princeton University Events",
