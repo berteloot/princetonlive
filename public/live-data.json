@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-26T11:23:28.713Z",
+  "generatedAt": "2026-09-26T16:22:35.345Z",
   "weather": {
     "temperature": 62,
     "shortForecast": "Rain Showers",
     "wind": "15 to 20 mph N",
-    "detailedForecast": "Rain showers. Mostly cloudy, with a high near 62. North wind 15 to 20 mph, with gusts as high as 40 mph. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible.",
+    "detailedForecast": "Rain showers. Mostly cloudy, with a high near 62. North wind 15 to 20 mph, with gusts as high as 40 mph. Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
@@ -100,15 +100,32 @@
       "startHour": 11
     },
     {
-      "title": "Princeton Porchfest",
+      "title": "Princeton Porchfest 2026",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 26",
+      "timeLabel": "12:00pm - 4:45pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17526345",
+      "tags": [
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-09-26",
+      "startHour": 12
+    },
+    {
+      "title": "Princeton Porchfest 2026",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 26",
       "timeLabel": "12:00pm - 6:00pm",
-      "location": "Princeton Public Library - Hinds Plaza",
+      "location": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/event/17296329",
       "tags": [
         "family",
         "culture",
+        "rain",
         "practical"
       ],
       "isoDate": "2026-09-26",
@@ -381,7 +398,7 @@
       "source": "Princeton Public Library",
       "dateLabel": "Sep 27",
       "timeLabel": "3:00pm - 4:00pm",
-      "location": "Princeton Public Library - Community Room",
+      "location": "Virtual",
       "url": "https://princetonlibrary.libnet.info/event/17346774",
       "tags": [
         "new",
@@ -2037,7 +2054,7 @@
       "iso": "2026-09-26",
       "label": "Sep 26",
       "weekday": "Sat",
-      "count": 19
+      "count": 20
     },
     {
       "iso": "2026-09-27",
@@ -2095,7 +2112,7 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "47 events"
+      "detail": "48 events"
     },
     {
       "name": "Municipality of Princeton",
