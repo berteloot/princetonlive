@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-26T23:37:37.984Z",
+  "generatedAt": "2026-09-27T05:17:27.351Z",
   "weather": {
     "temperature": 56,
-    "shortForecast": "Rain Showers",
+    "shortForecast": "Showers And Thunderstorms",
     "wind": "15 mph N",
     "detailedForecast": "Rain showers before 5am, then showers and thunderstorms. Cloudy, with a low around 56. North wind around 15 mph, with gusts as high as 40 mph. Chance of precipitation is 90%. New rainfall amounts between three quarters and one inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
@@ -18,288 +18,6 @@
   ],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Out After Dark: Exhibition by Tamara Santibañez",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "12:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/out-after-dark-exhibition-tamara-santibanez-17",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 0
-    },
-    {
-      "title": "Men's Tennis - Farnsworth Invitational",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "8:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-tennis-farnsworth-invitational-0",
-      "tags": [],
-      "isoDate": "2026-09-26",
-      "startHour": 8
-    },
-    {
-      "title": "Cross Country - Meadows Challenge",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "9:30 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/cross-country-meadows-challenge",
-      "tags": [],
-      "isoDate": "2026-09-26",
-      "startHour": 9
-    },
-    {
-      "title": "Kids: Family Matinee Series: \"How to Train Your Dragon\"",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 26",
-      "timeLabel": "10:00am - 11:30am",
-      "location": "Off-Site - Princeton Garden Theatre",
-      "url": "https://princetonlibrary.libnet.info/event/16255886",
-      "tags": [
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Saturday Storytime!",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 26",
-      "timeLabel": "10:30am - 11:00am",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14662007",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 10
-    },
-    {
-      "title": "Princeton Club Golf President's Cup Watch Party",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "11:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-club-golf-presidents-cup-watch-party",
-      "tags": [
-        "new",
-        "culture"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 11
-    },
-    {
-      "title": "Princeton Porchfest 2026",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 26",
-      "timeLabel": "12:00pm - 4:45pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/17526345",
-      "tags": [
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 12
-    },
-    {
-      "title": "Princeton Porchfest 2026",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 26",
-      "timeLabel": "12:00pm - 6:00pm",
-      "location": "Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/17296329",
-      "tags": [
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 12
-    },
-    {
-      "title": "Open Studio",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "1:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/open-studio-111",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 13
-    },
-    {
-      "title": "Seuls en Scène 2026 presents Losing Your Bag by Pascal Rambert",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "2:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-losing-your-bag-pascal-rambert",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 14
-    },
-    {
-      "title": "Football vs Albany",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/football-vs-albany",
-      "tags": [],
-      "isoDate": "2026-09-26",
-      "startHour": 15
-    },
-    {
-      "title": "Kids & Teens: Drop-In Chess Sessions",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 26",
-      "timeLabel": "3:00pm - 4:00pm",
-      "location": "Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/17372877",
-      "tags": [
-        "new",
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 15
-    },
-    {
-      "title": "Kids: Folk Instruments and Music of Bengal",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 26",
-      "timeLabel": "3:00pm - 4:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/17006172",
-      "tags": [
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 15
-    },
-    {
-      "title": "Women's Soccer vs Harvard",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-harvard",
-      "tags": [],
-      "isoDate": "2026-09-26",
-      "startHour": 16
-    },
-    {
-      "title": "Tango Practica",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/tango-practica-14",
-      "tags": [],
-      "isoDate": "2026-09-26",
-      "startHour": 16
-    },
-    {
-      "title": "Seuls en Scène 2026 presents Génération Mitterand – Huit rois (nos présidents), Episode 2 by Léo Cohen-Paperman & Émilien Diard-Detoeuf",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-generation-mitterand-huit-rois-nos-presidents-episode-2-0",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 17
-    },
-    {
-      "title": "Magic: The Gathering Club Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/magic-gathering-club-meeting-2",
-      "tags": [
-        "new",
-        "rain"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 19
-    },
-    {
-      "title": "Seuls en Scène 2026 presents Vivantes by Aurélie Charon",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seuls-en-scene-2026-presents-vivantes-aurelie-charon-0",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 20
-    },
-    {
-      "title": "TAY STORY 5: WATCH PARTY!",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/tay-story-5-watch-party",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 20
-    },
-    {
-      "title": "Liars' Club meeting",
-      "source": "Princeton University",
-      "dateLabel": "Sep 26",
-      "timeLabel": "9:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/liars-club-meeting-2",
-      "tags": [
-        "new",
-        "rain"
-      ],
-      "isoDate": "2026-09-26",
-      "startHour": 21
-    },
     {
       "title": "Out After Dark: Exhibition by Tamara Santibañez",
       "source": "Princeton University",
@@ -1374,6 +1092,19 @@
       "startHour": 17
     },
     {
+      "title": "Author: Shelley Frisch in Conversation with Michael Wood",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 30",
+      "timeLabel": "6:00pm - 7:00pm",
+      "location": "Off-Site - Labyrinth Books",
+      "url": "https://princetonlibrary.libnet.info/event/17164617",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-09-30",
+      "startHour": 18
+    },
+    {
       "title": "Learn English at the Library (High Beginner)",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 30",
@@ -1385,19 +1116,6 @@
         "culture",
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-09-30",
-      "startHour": 18
-    },
-    {
-      "title": "Author: Shelley Frisch in Conversation with Michael Wood",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 30",
-      "timeLabel": "6:00pm - 7:00pm",
-      "location": "Off-Site - Labyrinth Books",
-      "url": "https://princetonlibrary.libnet.info/event/17164617",
-      "tags": [
-        "culture"
       ],
       "isoDate": "2026-09-30",
       "startHour": 18
@@ -2047,15 +1765,346 @@
       "tags": [],
       "isoDate": "2026-10-02",
       "startHour": 18
+    },
+    {
+      "title": "Out After Dark: Exhibition by Tamara Santibañez",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "12:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/out-after-dark-exhibition-tamara-santibanez-24",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 0
+    },
+    {
+      "title": "NERC 2026",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "7:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/nerc-2026-0",
+      "tags": [],
+      "isoDate": "2026-10-03",
+      "startHour": 7
+    },
+    {
+      "title": "HRI Inagural Event",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "8:30 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/hri-inagural-event",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 8
+    },
+    {
+      "title": "iASpace — Interaural Space",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/iaspace-interaural-space-4",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 10
+    },
+    {
+      "title": "Members Preview - Basquiat, the Blue Ribbon Paintings, and the Art of Reproduction",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/members-preview-basquiat-blue-ribbon-paintings-and-art-reproduction",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Take & Make",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 03",
+      "timeLabel": "10:00am - 2:00pm",
+      "location": "Princeton Public Library - 3rd Floor Pop-up Programming Area",
+      "url": "https://princetonlibrary.libnet.info/event/17470612",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 10
+    },
+    {
+      "title": "QUARRY PARK MICROFOREST First Birthday Celebration",
+      "source": "Municipality of Princeton",
+      "dateLabel": "October 3, 2026",
+      "timeLabel": "10:00 AM - 01:00 PM",
+      "location": "155 Spruce StPrinceton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8129",
+      "tags": [
+        "new",
+        "practical"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Saturday Storytime!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 03",
+      "timeLabel": "10:30am - 11:00am",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14662008",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 10
+    },
+    {
+      "title": "Tiger Tech Help",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 03",
+      "timeLabel": "11:00am - 1:00pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/17469699",
+      "tags": [
+        "new",
+        "practical"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 11
+    },
+    {
+      "title": "Unruly Sounds Music Festival",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 03",
+      "timeLabel": "11:00am - 5:00pm",
+      "location": "Princeton Public Library - Community Room,Hinds Plaza",
+      "url": "https://princetonlibrary.libnet.info/event/17224899",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 11
+    },
+    {
+      "title": "Kids: Mandarin Chinese Storytime",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 03",
+      "timeLabel": "11:30am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/17322865",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 11
+    },
+    {
+      "title": "Men's Water Polo vs Harvard",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-harvard",
+      "tags": [],
+      "isoDate": "2026-10-03",
+      "startHour": 12
+    },
+    {
+      "title": "Guided tour: The Art of Japanese Publishing",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/guided-tour-art-japanese-publishing-1",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 13
+    },
+    {
+      "title": "Baha'i Devotional Gathering",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/bahai-devotional-gathering",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 14
+    },
+    {
+      "title": "Kids & Teens: Science Saturdays",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 03",
+      "timeLabel": "2:00pm - 3:00pm",
+      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "url": "https://princetonlibrary.libnet.info/event/17382016",
+      "tags": [
+        "family",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 14
+    },
+    {
+      "title": "Hip-Hop Techniques and Foundations with ESkilllz",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/hip-hop-techniques-and-foundations-eskilllz",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 15
+    },
+    {
+      "title": "NewVie Arch!",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "3:45 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/newvie-arch",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 15
+    },
+    {
+      "title": "Men's Soccer vs Yale",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-yale",
+      "tags": [],
+      "isoDate": "2026-10-03",
+      "startHour": 16
+    },
+    {
+      "title": "Tango Practica",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/tango-practica-15",
+      "tags": [],
+      "isoDate": "2026-10-03",
+      "startHour": 16
+    },
+    {
+      "title": "Workbuddy x ACSSPU",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/workbuddy-x-acsspu",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 17
+    },
+    {
+      "title": "Men's Water Polo vs MIT",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-mit",
+      "tags": [],
+      "isoDate": "2026-10-03",
+      "startHour": 17
+    },
+    {
+      "title": "Women's Volleyball vs Cornell",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-volleyball-vs-cornell",
+      "tags": [],
+      "isoDate": "2026-10-03",
+      "startHour": 17
+    },
+    {
+      "title": "MEMBERS | Insider Reception: Basquiat, the Blue Ribbon Paintings, and the Art of Reproduction",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "5:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/members-insider-reception-basquiat-blue-ribbon-paintings-and-art-reproduction",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 17
+    },
+    {
+      "title": "Magic: The Gathering Club Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/magic-gathering-club-meeting-3",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 19
+    },
+    {
+      "title": "Liars' Club meeting",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "9:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/liars-club-meeting-3",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 21
     }
   ],
   "days": [
-    {
-      "iso": "2026-09-26",
-      "label": "Sep 26",
-      "weekday": "Sat",
-      "count": 20
-    },
     {
       "iso": "2026-09-27",
       "label": "Sep 27",
@@ -2091,6 +2140,12 @@
       "label": "Oct 2",
       "weekday": "Fri",
       "count": 13
+    },
+    {
+      "iso": "2026-10-03",
+      "label": "Oct 3",
+      "weekday": "Sat",
+      "count": 25
     }
   ],
   "windowDays": 7,
@@ -2100,7 +2155,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Rain Showers, 56F"
+      "detail": "Showers And Thunderstorms, 56F"
     },
     {
       "name": "Princeton University Events",
@@ -2112,7 +2167,7 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "48 events"
+      "detail": "46 events"
     },
     {
       "name": "Municipality of Princeton",
