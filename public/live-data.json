@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-27T16:57:08.504Z",
+  "generatedAt": "2026-09-27T21:19:47.816Z",
   "weather": {
     "temperature": 66,
     "shortForecast": "Rain Showers",
     "wind": "15 mph NE",
-    "detailedForecast": "Rain showers. Cloudy, with a high near 66. Northeast wind around 15 mph, with gusts as high as 40 mph. Chance of precipitation is 80%. New rainfall amounts between a half and three quarters of an inch possible.",
+    "detailedForecast": "Rain showers. Cloudy, with a high near 66. Northeast wind around 15 mph, with gusts as high as 25 mph. Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -44,20 +44,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/worship-service-university-chapel-3",
       "tags": [],
-      "isoDate": "2026-09-27",
-      "startHour": 11
-    },
-    {
-      "title": "Green House Tour: Sustainable Home & Garden Tours",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 27, 2026",
-      "timeLabel": "11:00 AM - 04:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8131",
-      "tags": [
-        "new",
-        "practical"
-      ],
       "isoDate": "2026-09-27",
       "startHour": 11
     },
@@ -2101,7 +2087,7 @@
       "iso": "2026-09-27",
       "label": "Sep 27",
       "weekday": "Sun",
-      "count": 8
+      "count": 7
     },
     {
       "iso": "2026-09-28",
@@ -2165,7 +2151,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "27 calendar items"
+      "detail": "26 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
