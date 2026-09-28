@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-28T05:22:14.135Z",
+  "generatedAt": "2026-09-28T13:52:27.636Z",
   "weather": {
-    "temperature": 59,
-    "shortForecast": "Rain Showers",
-    "wind": "10 mph NE",
-    "detailedForecast": "Rain showers. Cloudy, with a low around 59. Northeast wind around 10 mph. Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible.",
+    "temperature": 65,
+    "shortForecast": "Chance Rain Showers",
+    "wind": "5 to 10 mph N",
+    "detailedForecast": "A chance of rain showers before 2pm. Mostly cloudy, with a high near 65. North wind 5 to 10 mph. Chance of precipitation is 40%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -1266,6 +1266,20 @@
       "startHour": 16
     },
     {
+      "title": "Princeton Birding Society Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Oct 1",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-birding-society-meeting",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-10-01",
+      "startHour": 16
+    },
+    {
       "title": "2026 Bruce Blair Memorial Lecture",
       "source": "Princeton University",
       "dateLabel": "Oct 1",
@@ -1973,6 +1987,19 @@
       "startHour": 19
     },
     {
+      "title": "NewVie Arch!",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "8:45 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/newvie-arch-0",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 20
+    },
+    {
       "title": "Liars' Club meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 3",
@@ -2147,7 +2174,7 @@
       "iso": "2026-10-01",
       "label": "Oct 1",
       "weekday": "Thu",
-      "count": 30
+      "count": 31
     },
     {
       "iso": "2026-10-02",
@@ -2159,7 +2186,7 @@
       "iso": "2026-10-03",
       "label": "Oct 3",
       "weekday": "Sat",
-      "count": 25
+      "count": 26
     },
     {
       "iso": "2026-10-04",
@@ -2175,7 +2202,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Rain Showers, 59F"
+      "detail": "Chance Rain Showers, 65F"
     },
     {
       "name": "Princeton University Events",
