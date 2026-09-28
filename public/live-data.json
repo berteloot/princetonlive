@@ -1,110 +1,15 @@
 {
-  "generatedAt": "2026-09-27T21:19:47.816Z",
+  "generatedAt": "2026-09-28T05:22:14.135Z",
   "weather": {
-    "temperature": 66,
+    "temperature": 59,
     "shortForecast": "Rain Showers",
-    "wind": "15 mph NE",
-    "detailedForecast": "Rain showers. Cloudy, with a high near 66. Northeast wind around 15 mph, with gusts as high as 25 mph. Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible.",
+    "wind": "10 mph NE",
+    "detailedForecast": "Rain showers. Cloudy, with a low around 59. Northeast wind around 10 mph. Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Out After Dark: Exhibition by Tamara Santibañez",
-      "source": "Princeton University",
-      "dateLabel": "Sep 27",
-      "timeLabel": "12:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/out-after-dark-exhibition-tamara-santibanez-18",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-27",
-      "startHour": 0
-    },
-    {
-      "title": "Men's Tennis - Farnsworth Invitational",
-      "source": "Princeton University",
-      "dateLabel": "Sep 27",
-      "timeLabel": "8:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-tennis-farnsworth-invitational-1",
-      "tags": [],
-      "isoDate": "2026-09-27",
-      "startHour": 8
-    },
-    {
-      "title": "Worship Service in the University Chapel",
-      "source": "Princeton University",
-      "dateLabel": "Sep 27",
-      "timeLabel": "11:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/worship-service-university-chapel-3",
-      "tags": [],
-      "isoDate": "2026-09-27",
-      "startHour": 11
-    },
-    {
-      "title": "Open Studio",
-      "source": "Princeton University",
-      "dateLabel": "Sep 27",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/open-studio-112",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-09-27",
-      "startHour": 12
-    },
-    {
-      "title": "Silent Book Club",
-      "source": "Princeton University",
-      "dateLabel": "Sep 27",
-      "timeLabel": "2:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/silent-book-club",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-09-27",
-      "startHour": 14
-    },
-    {
-      "title": "Kids: Spanish Storytime",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 27",
-      "timeLabel": "2:00pm - 2:30pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/17190378",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-09-27",
-      "startHour": 14
-    },
-    {
-      "title": "What Happened to Lucy's Son?",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 27",
-      "timeLabel": "3:00pm - 4:00pm",
-      "location": "Virtual",
-      "url": "https://princetonlibrary.libnet.info/event/17346774",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-09-27",
-      "startHour": 15
-    },
     {
       "title": "Out After Dark: Exhibition by Tamara Santibañez",
       "source": "Princeton University",
@@ -889,21 +794,6 @@
       "startHour": 12
     },
     {
-      "title": "Author: Joycelyn Longdon",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 30",
-      "timeLabel": "12:00pm - 1:00pm",
-      "location": "Virtual - Zoom Meeting",
-      "url": "https://princetonlibrary.libnet.info/event/17192855",
-      "tags": [
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-09-30",
-      "startHour": 12
-    },
-    {
       "title": "Kids: Baby Play Group",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 30",
@@ -913,6 +803,21 @@
       "tags": [
         "new",
         "family",
+        "practical"
+      ],
+      "isoDate": "2026-09-30",
+      "startHour": 12
+    },
+    {
+      "title": "Author: Joycelyn Longdon",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 30",
+      "timeLabel": "12:00pm - 1:00pm",
+      "location": "Virtual - Zoom Meeting",
+      "url": "https://princetonlibrary.libnet.info/event/17192855",
+      "tags": [
+        "family",
+        "culture",
         "practical"
       ],
       "isoDate": "2026-09-30",
@@ -1070,19 +975,6 @@
       "startHour": 17
     },
     {
-      "title": "Author: Shelley Frisch in Conversation with Michael Wood",
-      "source": "Princeton Public Library",
-      "dateLabel": "Sep 30",
-      "timeLabel": "6:00pm - 7:00pm",
-      "location": "Off-Site - Labyrinth Books",
-      "url": "https://princetonlibrary.libnet.info/event/17164617",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-09-30",
-      "startHour": 18
-    },
-    {
       "title": "Learn English at the Library (High Beginner)",
       "source": "Princeton Public Library",
       "dateLabel": "Sep 30",
@@ -1094,6 +986,19 @@
         "culture",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-09-30",
+      "startHour": 18
+    },
+    {
+      "title": "Author: Shelley Frisch in Conversation with Michael Wood",
+      "source": "Princeton Public Library",
+      "dateLabel": "Sep 30",
+      "timeLabel": "6:00pm - 7:00pm",
+      "location": "Off-Site - Labyrinth Books",
+      "url": "https://princetonlibrary.libnet.info/event/17164617",
+      "tags": [
+        "culture"
       ],
       "isoDate": "2026-09-30",
       "startHour": 18
@@ -2080,15 +1985,146 @@
       ],
       "isoDate": "2026-10-03",
       "startHour": 21
+    },
+    {
+      "title": "Out After Dark: Exhibition by Tamara Santibañez",
+      "source": "Princeton University",
+      "dateLabel": "Oct 4",
+      "timeLabel": "12:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/out-after-dark-exhibition-tamara-santibanez-25",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-04",
+      "startHour": 0
+    },
+    {
+      "title": "iASpace — Interaural Space",
+      "source": "Princeton University",
+      "dateLabel": "Oct 4",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/iaspace-interaural-space-5",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-04",
+      "startHour": 10
+    },
+    {
+      "title": "Worship Service in the University Chapel",
+      "source": "Princeton University",
+      "dateLabel": "Oct 4",
+      "timeLabel": "11:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/worship-service-university-chapel-4",
+      "tags": [],
+      "isoDate": "2026-10-04",
+      "startHour": 11
+    },
+    {
+      "title": "Men's Water Polo vs Brown",
+      "source": "Princeton University",
+      "dateLabel": "Oct 4",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-brown",
+      "tags": [],
+      "isoDate": "2026-10-04",
+      "startHour": 12
+    },
+    {
+      "title": "Field Hockey vs Temple",
+      "source": "Princeton University",
+      "dateLabel": "Oct 4",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-temple",
+      "tags": [],
+      "isoDate": "2026-10-04",
+      "startHour": 12
+    },
+    {
+      "title": "Writers Project Workshop",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 04",
+      "timeLabel": "12:30pm - 2:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/16308353",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-10-04",
+      "startHour": 12
+    },
+    {
+      "title": "Guided tour: The Art of Japanese Publishing",
+      "source": "Princeton University",
+      "dateLabel": "Oct 4",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/guided-tour-art-japanese-publishing-2",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-04",
+      "startHour": 13
+    },
+    {
+      "title": "Special Event: Festival Cultural Latino",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 04",
+      "timeLabel": "1:00pm - 5:00pm",
+      "location": "Princeton Public Library - Community Room,Hinds Plaza",
+      "url": "https://princetonlibrary.libnet.info/event/17242096",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-04",
+      "startHour": 13
+    },
+    {
+      "title": "Kids: Russian Storytime",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 04",
+      "timeLabel": "2:30pm - 3:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/17381903",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-04",
+      "startHour": 14
+    },
+    {
+      "title": "Kids: Russian Book Club",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 04",
+      "timeLabel": "3:00pm - 3:45pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/17381859",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-04",
+      "startHour": 15
     }
   ],
   "days": [
-    {
-      "iso": "2026-09-27",
-      "label": "Sep 27",
-      "weekday": "Sun",
-      "count": 7
-    },
     {
       "iso": "2026-09-28",
       "label": "Sep 28",
@@ -2124,6 +2160,12 @@
       "label": "Oct 3",
       "weekday": "Sat",
       "count": 25
+    },
+    {
+      "iso": "2026-10-04",
+      "label": "Oct 4",
+      "weekday": "Sun",
+      "count": 10
     }
   ],
   "windowDays": 7,
@@ -2133,7 +2175,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Rain Showers, 66F"
+      "detail": "Rain Showers, 59F"
     },
     {
       "name": "Princeton University Events",
@@ -2145,13 +2187,13 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "46 events"
+      "detail": "52 events"
     },
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "26 calendar items"
+      "detail": "27 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
