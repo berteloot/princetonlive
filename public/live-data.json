@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-29T09:48:13.102Z",
+  "generatedAt": "2026-09-29T18:04:33.259Z",
   "weather": {
-    "temperature": 56,
-    "shortForecast": "Mostly Cloudy",
-    "wind": "0 mph ",
-    "detailedForecast": "Mostly cloudy, with a low around 56. West wind around 0 mph.",
+    "temperature": 73,
+    "shortForecast": "Partly Sunny",
+    "wind": "0 to 5 mph NW",
+    "detailedForecast": "Partly sunny, with a high near 73. Northwest wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -132,20 +132,6 @@
       "startHour": 13
     },
     {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Spruce Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 29, 2026",
-      "timeLabel": "01:00 PM - 01:45 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7342",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-09-29",
-      "startHour": 13
-    },
-    {
       "title": "Food Insecurity Task Force: Arm in Arm",
       "source": "Municipality of Princeton",
       "dateLabel": "September 29, 2026",
@@ -238,17 +224,6 @@
       "startHour": 15
     },
     {
-      "title": "Field Hockey vs Maryland",
-      "source": "Princeton University",
-      "dateLabel": "Sep 29",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-maryland",
-      "tags": [],
-      "isoDate": "2026-09-29",
-      "startHour": 16
-    },
-    {
       "title": "Getting Published with IEEE",
       "source": "Princeton University",
       "dateLabel": "Sep 29",
@@ -260,6 +235,17 @@
         "culture",
         "rain"
       ],
+      "isoDate": "2026-09-29",
+      "startHour": 16
+    },
+    {
+      "title": "Field Hockey vs Maryland",
+      "source": "Princeton University",
+      "dateLabel": "Sep 29",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-maryland",
+      "tags": [],
       "isoDate": "2026-09-29",
       "startHour": 16
     },
@@ -609,6 +595,17 @@
       "startHour": 14
     },
     {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Sep 30",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-6",
+      "tags": [],
+      "isoDate": "2026-09-30",
+      "startHour": 15
+    },
+    {
       "title": "Pace Center Summer Internships Drop-in",
       "source": "Princeton University",
       "dateLabel": "Sep 30",
@@ -618,17 +615,6 @@
       "tags": [
         "new"
       ],
-      "isoDate": "2026-09-30",
-      "startHour": 15
-    },
-    {
-      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
-      "source": "Princeton University",
-      "dateLabel": "Sep 30",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-6",
-      "tags": [],
       "isoDate": "2026-09-30",
       "startHour": 15
     },
@@ -660,15 +646,13 @@
       "startHour": 16
     },
     {
-      "title": "Mote Memorial Lecture",
+      "title": "InterVarsity Small Group",
       "source": "Princeton University",
       "dateLabel": "Sep 30",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mote-memorial-lecture",
-      "tags": [
-        "culture"
-      ],
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-0",
+      "tags": [],
       "isoDate": "2026-09-30",
       "startHour": 16
     },
@@ -684,13 +668,15 @@
       "startHour": 16
     },
     {
-      "title": "InterVarsity Small Group",
+      "title": "Mote Memorial Lecture",
       "source": "Princeton University",
       "dateLabel": "Sep 30",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-0",
-      "tags": [],
+      "url": "https://www.princeton.edu/events/2026/mote-memorial-lecture",
+      "tags": [
+        "culture"
+      ],
       "isoDate": "2026-09-30",
       "startHour": 16
     },
@@ -889,17 +875,6 @@
       "startHour": 12
     },
     {
-      "title": "Perspectives on Energy System Transition Modeling",
-      "source": "Princeton University",
-      "dateLabel": "Oct 1",
-      "timeLabel": "12:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/perspectives-energy-system-transition-modeling",
-      "tags": [],
-      "isoDate": "2026-10-01",
-      "startHour": 12
-    },
-    {
       "title": "After Noon Concert Series",
       "source": "Princeton University",
       "dateLabel": "Oct 1",
@@ -909,6 +884,17 @@
       "tags": [
         "culture"
       ],
+      "isoDate": "2026-10-01",
+      "startHour": 12
+    },
+    {
+      "title": "Perspectives on Energy System Transition Modeling",
+      "source": "Princeton University",
+      "dateLabel": "Oct 1",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/perspectives-energy-system-transition-modeling",
+      "tags": [],
       "isoDate": "2026-10-01",
       "startHour": 12
     },
@@ -1013,21 +999,6 @@
       "startHour": 16
     },
     {
-      "title": "Composition Colloquium with Nico Muhly",
-      "source": "Princeton University",
-      "dateLabel": "Oct 1",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/composition-colloquium-nico-muhly",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-01",
-      "startHour": 16
-    },
-    {
       "title": "2026 Bruce Blair Memorial Lecture",
       "source": "Princeton University",
       "dateLabel": "Oct 1",
@@ -1036,6 +1007,46 @@
       "url": "https://www.princeton.edu/events/2026/2026-bruce-blair-memorial-lecture",
       "tags": [
         "family",
+        "culture"
+      ],
+      "isoDate": "2026-10-01",
+      "startHour": 16
+    },
+    {
+      "title": "Upstream, Downstream, Offshore: Constancy Amidst the Flux of Supply Chains",
+      "source": "Princeton University",
+      "dateLabel": "Oct 1",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/upstream-downstream-offshore-constancy-amidst-flux-supply-chains",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-10-01",
+      "startHour": 16
+    },
+    {
+      "title": "PPS Lab Mixer",
+      "source": "Princeton University",
+      "dateLabel": "Oct 1",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/pps-lab-mixer",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-10-01",
+      "startHour": 16
+    },
+    {
+      "title": "Performance and Contradiction: Acting Natural",
+      "source": "Princeton University",
+      "dateLabel": "Oct 1",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/performance-and-contradiction-acting-natural",
+      "tags": [
+        "new",
         "culture"
       ],
       "isoDate": "2026-10-01",
@@ -1059,41 +1070,16 @@
       "startHour": 16
     },
     {
-      "title": "Performance and Contradiction: Acting Natural",
+      "title": "Composition Colloquium with Nico Muhly",
       "source": "Princeton University",
       "dateLabel": "Oct 1",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/performance-and-contradiction-acting-natural",
+      "url": "https://www.princeton.edu/events/2026/composition-colloquium-nico-muhly",
       "tags": [
         "new",
-        "culture"
-      ],
-      "isoDate": "2026-10-01",
-      "startHour": 16
-    },
-    {
-      "title": "PPS Lab Mixer",
-      "source": "Princeton University",
-      "dateLabel": "Oct 1",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/pps-lab-mixer",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-01",
-      "startHour": 16
-    },
-    {
-      "title": "Upstream, Downstream, Offshore: Constancy Amidst the Flux of Supply Chains",
-      "source": "Princeton University",
-      "dateLabel": "Oct 1",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/upstream-downstream-offshore-constancy-amidst-flux-supply-chains",
-      "tags": [
-        "culture"
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-10-01",
       "startHour": 16
@@ -1190,21 +1176,6 @@
       "startHour": 18
     },
     {
-      "title": "Glee Club Presents: Christ Church (Oxford) Cathedral Choir",
-      "source": "Princeton University",
-      "dateLabel": "Oct 1",
-      "timeLabel": "7:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/glee-club-presents-christ-church-oxford-cathedral-choir",
-      "tags": [
-        "new",
-        "family",
-        "culture"
-      ],
-      "isoDate": "2026-10-01",
-      "startHour": 19
-    },
-    {
       "title": "Brentano String Quartet (Princeton University Concerts)",
       "source": "Princeton University",
       "dateLabel": "Oct 1",
@@ -1215,6 +1186,21 @@
         "new",
         "culture",
         "rain"
+      ],
+      "isoDate": "2026-10-01",
+      "startHour": 19
+    },
+    {
+      "title": "Glee Club Presents: Christ Church (Oxford) Cathedral Choir",
+      "source": "Princeton University",
+      "dateLabel": "Oct 1",
+      "timeLabel": "7:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/glee-club-presents-christ-church-oxford-cathedral-choir",
+      "tags": [
+        "new",
+        "family",
+        "culture"
       ],
       "isoDate": "2026-10-01",
       "startHour": 19
@@ -1364,23 +1350,23 @@
       "startHour": 14
     },
     {
-      "title": "Competitive Programming Club",
-      "source": "Princeton University",
-      "dateLabel": "Oct 2",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/competitive-programming-club-2",
-      "tags": [],
-      "isoDate": "2026-10-02",
-      "startHour": 17
-    },
-    {
       "title": "Field Hockey vs Yale",
       "source": "Princeton University",
       "dateLabel": "Oct 2",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/field-hockey-vs-yale",
+      "tags": [],
+      "isoDate": "2026-10-02",
+      "startHour": 17
+    },
+    {
+      "title": "Competitive Programming Club",
+      "source": "Princeton University",
+      "dateLabel": "Oct 2",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/competitive-programming-club-2",
       "tags": [],
       "isoDate": "2026-10-02",
       "startHour": 17
@@ -1436,6 +1422,21 @@
       "startHour": 8
     },
     {
+      "title": "Members Preview - Basquiat, the Blue Ribbon Paintings, and the Art of Reproduction",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/members-preview-basquiat-blue-ribbon-paintings-and-art-reproduction",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 10
+    },
+    {
       "title": "iASpace — Interaural Space",
       "source": "Princeton University",
       "dateLabel": "Oct 3",
@@ -1447,21 +1448,6 @@
         "family",
         "culture",
         "rain"
-      ],
-      "isoDate": "2026-10-03",
-      "startHour": 10
-    },
-    {
-      "title": "Members Preview - Basquiat, the Blue Ribbon Paintings, and the Art of Reproduction",
-      "source": "Princeton University",
-      "dateLabel": "Oct 3",
-      "timeLabel": "10:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/members-preview-basquiat-blue-ribbon-paintings-and-art-reproduction",
-      "tags": [
-        "new",
-        "culture",
-        "practical"
       ],
       "isoDate": "2026-10-03",
       "startHour": 10
@@ -1510,6 +1496,20 @@
       "startHour": 10
     },
     {
+      "title": "Tiger Tech Help",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 03",
+      "timeLabel": "11:00am - 1:00pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/17469699",
+      "tags": [
+        "new",
+        "practical"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 11
+    },
+    {
       "title": "Unruly Sounds Music Festival",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 03",
@@ -1519,20 +1519,6 @@
       "tags": [
         "family",
         "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-03",
-      "startHour": 11
-    },
-    {
-      "title": "Tiger Tech Help",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 03",
-      "timeLabel": "11:00am - 1:00pm",
-      "location": "Princeton Public Library - Tech Center",
-      "url": "https://princetonlibrary.libnet.info/event/17469699",
-      "tags": [
-        "new",
         "practical"
       ],
       "isoDate": "2026-10-03",
@@ -1635,17 +1621,6 @@
       "startHour": 15
     },
     {
-      "title": "Tango Practica",
-      "source": "Princeton University",
-      "dateLabel": "Oct 3",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/tango-practica-15",
-      "tags": [],
-      "isoDate": "2026-10-03",
-      "startHour": 16
-    },
-    {
       "title": "Men's Soccer vs Yale",
       "source": "Princeton University",
       "dateLabel": "Oct 3",
@@ -1657,15 +1632,24 @@
       "startHour": 16
     },
     {
-      "title": "Workbuddy x ACSSPU",
+      "title": "Tango Practica",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/tango-practica-15",
+      "tags": [],
+      "isoDate": "2026-10-03",
+      "startHour": 16
+    },
+    {
+      "title": "Men's Water Polo vs MIT",
       "source": "Princeton University",
       "dateLabel": "Oct 3",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/workbuddy-x-acsspu",
-      "tags": [
-        "culture"
-      ],
+      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-mit",
+      "tags": [],
       "isoDate": "2026-10-03",
       "startHour": 17
     },
@@ -1681,13 +1665,15 @@
       "startHour": 17
     },
     {
-      "title": "Men's Water Polo vs MIT",
+      "title": "Workbuddy x ACSSPU",
       "source": "Princeton University",
       "dateLabel": "Oct 3",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-mit",
-      "tags": [],
+      "url": "https://www.princeton.edu/events/2026/workbuddy-x-acsspu",
+      "tags": [
+        "culture"
+      ],
       "isoDate": "2026-10-03",
       "startHour": 17
     },
@@ -1789,23 +1775,23 @@
       "startHour": 11
     },
     {
-      "title": "Field Hockey vs Temple",
-      "source": "Princeton University",
-      "dateLabel": "Oct 4",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-temple",
-      "tags": [],
-      "isoDate": "2026-10-04",
-      "startHour": 12
-    },
-    {
       "title": "Men's Water Polo vs Brown",
       "source": "Princeton University",
       "dateLabel": "Oct 4",
       "timeLabel": "12:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-brown",
+      "tags": [],
+      "isoDate": "2026-10-04",
+      "startHour": 12
+    },
+    {
+      "title": "Field Hockey vs Temple",
+      "source": "Princeton University",
+      "dateLabel": "Oct 4",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-temple",
       "tags": [],
       "isoDate": "2026-10-04",
       "startHour": 12
@@ -1970,6 +1956,20 @@
       "startHour": 13
     },
     {
+      "title": "Kids & Teens: Homework Help",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 05",
+      "timeLabel": "3:30pm - 6:00pm",
+      "location": "Princeton Public Library - CoLab Space",
+      "url": "https://princetonlibrary.libnet.info/event/17530959",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-05",
+      "startHour": 15
+    },
+    {
       "title": "Catherine Project Weekly Book Discussion Series",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 05",
@@ -1984,7 +1984,7 @@
       "startHour": 16
     },
     {
-      "title": "Kids: eSTEAM Club",
+      "title": "Kids: eSTEAM Club: Archaeology & Paleontology",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 05",
       "timeLabel": "4:00pm - 5:00pm",
@@ -2000,19 +2000,6 @@
       "startHour": 16
     },
     {
-      "title": "Library Research for Water Chemistry",
-      "source": "Princeton University",
-      "dateLabel": "Oct 5",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/library-research-water-chemistry",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-10-05",
-      "startHour": 16
-    },
-    {
       "title": "Civic Leadership Council (Pace) Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 5",
@@ -2022,6 +2009,19 @@
       "tags": [
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-10-05",
+      "startHour": 16
+    },
+    {
+      "title": "Library Research for Water Chemistry",
+      "source": "Princeton University",
+      "dateLabel": "Oct 5",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/library-research-water-chemistry",
+      "tags": [
+        "rain"
       ],
       "isoDate": "2026-10-05",
       "startHour": 16
@@ -2102,7 +2102,7 @@
       "iso": "2026-09-29",
       "label": "Sep 29",
       "weekday": "Tue",
-      "count": 28
+      "count": 27
     },
     {
       "iso": "2026-09-30",
@@ -2138,7 +2138,7 @@
       "iso": "2026-10-05",
       "label": "Oct 5",
       "weekday": "Mon",
-      "count": 15
+      "count": 16
     }
   ],
   "windowDays": 7,
@@ -2148,7 +2148,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Cloudy, 56F"
+      "detail": "Partly Sunny, 73F"
     },
     {
       "name": "Princeton University Events",
@@ -2160,13 +2160,13 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "54 events"
+      "detail": "55 events"
     },
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "30 calendar items"
+      "detail": "29 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
