@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-29T18:04:33.259Z",
+  "generatedAt": "2026-09-29T22:13:57.068Z",
   "weather": {
-    "temperature": 73,
-    "shortForecast": "Partly Sunny",
-    "wind": "0 to 5 mph NW",
-    "detailedForecast": "Partly sunny, with a high near 73. Northwest wind 0 to 5 mph.",
+    "temperature": 57,
+    "shortForecast": "Patchy Fog",
+    "wind": "0 mph ",
+    "detailedForecast": "Patchy fog after 8pm. Mostly cloudy, with a low around 57. Northwest wind around 0 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -159,20 +159,6 @@
       "startHour": 13
     },
     {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Redding Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 29, 2026",
-      "timeLabel": "02:00 PM - 02:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7394",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-09-29",
-      "startHour": 14
-    },
-    {
       "title": "McGraw Undergraduate Learning Program - Learning Concierge",
       "source": "Princeton University",
       "dateLabel": "Sep 29",
@@ -180,19 +166,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-5",
       "tags": [],
-      "isoDate": "2026-09-29",
-      "startHour": 15
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At YMCA",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 29, 2026",
-      "timeLabel": "03:15 PM - 04:15 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7134",
-      "tags": [
-        "practical"
-      ],
       "isoDate": "2026-09-29",
       "startHour": 15
     },
@@ -205,19 +178,6 @@
       "url": "https://princetonlibrary.libnet.info/event/17479999",
       "tags": [
         "family",
-        "practical"
-      ],
-      "isoDate": "2026-09-29",
-      "startHour": 15
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At Redding Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 29, 2026",
-      "timeLabel": "03:30 PM - 04:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7548",
-      "tags": [
         "practical"
       ],
       "isoDate": "2026-09-29",
@@ -2102,7 +2062,7 @@
       "iso": "2026-09-29",
       "label": "Sep 29",
       "weekday": "Tue",
-      "count": 27
+      "count": 24
     },
     {
       "iso": "2026-09-30",
@@ -2148,7 +2108,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Partly Sunny, 73F"
+      "detail": "Patchy Fog, 57F"
     },
     {
       "name": "Princeton University Events",
@@ -2166,7 +2126,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "29 calendar items"
+      "detail": "26 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
