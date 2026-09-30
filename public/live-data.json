@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-30T05:30:58.585Z",
+  "generatedAt": "2026-09-30T12:32:59.377Z",
   "weather": {
-    "temperature": 57,
-    "shortForecast": "Patchy Fog",
-    "wind": "0 mph ",
-    "detailedForecast": "Patchy fog. Partly cloudy, with a low around 57. Northwest wind around 0 mph.",
+    "temperature": 76,
+    "shortForecast": "Partly Sunny",
+    "wind": "0 to 5 mph W",
+    "detailedForecast": "Partly sunny, with a high near 76. West wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -268,6 +268,19 @@
       "startHour": 16
     },
     {
+      "title": "Mote Memorial Lecture",
+      "source": "Princeton University",
+      "dateLabel": "Sep 30",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mote-memorial-lecture",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-09-30",
+      "startHour": 16
+    },
+    {
       "title": "InterVarsity Small Group",
       "source": "Princeton University",
       "dateLabel": "Sep 30",
@@ -286,19 +299,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/semester-study-abroad-english-speaking-locations-info-session",
       "tags": [],
-      "isoDate": "2026-09-30",
-      "startHour": 16
-    },
-    {
-      "title": "Mote Memorial Lecture",
-      "source": "Princeton University",
-      "dateLabel": "Sep 30",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mote-memorial-lecture",
-      "tags": [
-        "culture"
-      ],
       "isoDate": "2026-09-30",
       "startHour": 16
     },
@@ -497,6 +497,17 @@
       "startHour": 12
     },
     {
+      "title": "Perspectives on Energy System Transition Modeling",
+      "source": "Princeton University",
+      "dateLabel": "Oct 1",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/perspectives-energy-system-transition-modeling",
+      "tags": [],
+      "isoDate": "2026-10-01",
+      "startHour": 12
+    },
+    {
       "title": "After Noon Concert Series",
       "source": "Princeton University",
       "dateLabel": "Oct 1",
@@ -506,17 +517,6 @@
       "tags": [
         "culture"
       ],
-      "isoDate": "2026-10-01",
-      "startHour": 12
-    },
-    {
-      "title": "Perspectives on Energy System Transition Modeling",
-      "source": "Princeton University",
-      "dateLabel": "Oct 1",
-      "timeLabel": "12:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/perspectives-energy-system-transition-modeling",
-      "tags": [],
       "isoDate": "2026-10-01",
       "startHour": 12
     },
@@ -712,7 +712,7 @@
       "dateLabel": "Oct 1",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mlp-x-iqbal-poetics-awakening",
+      "url": "https://www.princeton.edu/events/2026/mlp-x-iqbal-poetics-awakening-0",
       "tags": [],
       "isoDate": "2026-10-01",
       "startHour": 17
@@ -723,7 +723,7 @@
       "dateLabel": "Oct 1",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mlp-x-iqbal-poetics-awakening-0",
+      "url": "https://www.princeton.edu/events/2026/mlp-x-iqbal-poetics-awakening",
       "tags": [],
       "isoDate": "2026-10-01",
       "startHour": 17
@@ -1265,23 +1265,23 @@
       "startHour": 16
     },
     {
-      "title": "Women's Volleyball vs Cornell",
-      "source": "Princeton University",
-      "dateLabel": "Oct 3",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-volleyball-vs-cornell",
-      "tags": [],
-      "isoDate": "2026-10-03",
-      "startHour": 17
-    },
-    {
       "title": "Men's Water Polo vs MIT",
       "source": "Princeton University",
       "dateLabel": "Oct 3",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-mit",
+      "tags": [],
+      "isoDate": "2026-10-03",
+      "startHour": 17
+    },
+    {
+      "title": "Women's Volleyball vs Cornell",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-volleyball-vs-cornell",
       "tags": [],
       "isoDate": "2026-10-03",
       "startHour": 17
@@ -1397,23 +1397,23 @@
       "startHour": 11
     },
     {
-      "title": "Field Hockey vs Temple",
-      "source": "Princeton University",
-      "dateLabel": "Oct 4",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-temple",
-      "tags": [],
-      "isoDate": "2026-10-04",
-      "startHour": 12
-    },
-    {
       "title": "Men's Water Polo vs Brown",
       "source": "Princeton University",
       "dateLabel": "Oct 4",
       "timeLabel": "12:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-brown",
+      "tags": [],
+      "isoDate": "2026-10-04",
+      "startHour": 12
+    },
+    {
+      "title": "Field Hockey vs Temple",
+      "source": "Princeton University",
+      "dateLabel": "Oct 4",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-temple",
       "tags": [],
       "isoDate": "2026-10-04",
       "startHour": 12
@@ -1622,19 +1622,6 @@
       "startHour": 16
     },
     {
-      "title": "Library Research for Water Chemistry",
-      "source": "Princeton University",
-      "dateLabel": "Oct 5",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/library-research-water-chemistry",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-10-05",
-      "startHour": 16
-    },
-    {
       "title": "Civic Leadership Council (Pace) Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 5",
@@ -1644,6 +1631,19 @@
       "tags": [
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-10-05",
+      "startHour": 16
+    },
+    {
+      "title": "Library Research for Water Chemistry",
+      "source": "Princeton University",
+      "dateLabel": "Oct 5",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/library-research-water-chemistry",
+      "tags": [
+        "rain"
       ],
       "isoDate": "2026-10-05",
       "startHour": 16
@@ -2119,7 +2119,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Patchy Fog, 57F"
+      "detail": "Partly Sunny, 76F"
     },
     {
       "name": "Princeton University Events",
