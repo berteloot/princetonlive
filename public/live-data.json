@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-30T12:32:59.377Z",
+  "generatedAt": "2026-09-30T20:00:30.097Z",
   "weather": {
     "temperature": 76,
     "shortForecast": "Partly Sunny",
-    "wind": "0 to 5 mph W",
-    "detailedForecast": "Partly sunny, with a high near 76. West wind 0 to 5 mph.",
+    "wind": "5 mph SW",
+    "detailedForecast": "Partly sunny, with a high near 76. Southwest wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -24,19 +24,6 @@
       ],
       "isoDate": "2026-09-30",
       "startHour": 0
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Mobile Food Pantry",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 30, 2026",
-      "timeLabel": "09:00 AM - 11:30 AM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7600",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-30",
-      "startHour": 9
     },
     {
       "title": "iASpace — Interaural Space",
@@ -82,19 +69,6 @@
       ],
       "isoDate": "2026-09-30",
       "startHour": 10
-    },
-    {
-      "title": "Leighton Listens",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 30, 2026",
-      "timeLabel": "11:00 AM - 12:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8120",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-30",
-      "startHour": 11
     },
     {
       "title": "Kids: Baby Storytime",
@@ -204,19 +178,6 @@
       "startHour": 13
     },
     {
-      "title": "Food Insecurity Task Force: Princeton Alliance Church",
-      "source": "Municipality of Princeton",
-      "dateLabel": "September 30, 2026",
-      "timeLabel": "02:30 PM - 04:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7238",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-09-30",
-      "startHour": 14
-    },
-    {
       "title": "McGraw Undergraduate Learning Program - Learning Concierge",
       "source": "Princeton University",
       "dateLabel": "Sep 30",
@@ -301,6 +262,20 @@
       "tags": [],
       "isoDate": "2026-09-30",
       "startHour": 16
+    },
+    {
+      "title": "YDSA Weekly Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Sep 30",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/ydsa-weekly-meeting-10",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-09-30",
+      "startHour": 17
     },
     {
       "title": "Food Insecurity Task Force: Princeton Cornerstone Kitchen",
@@ -607,6 +582,20 @@
       "startHour": 16
     },
     {
+      "title": "2026 Bruce Blair Memorial Lecture",
+      "source": "Princeton University",
+      "dateLabel": "Oct 1",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/2026-bruce-blair-memorial-lecture",
+      "tags": [
+        "family",
+        "culture"
+      ],
+      "isoDate": "2026-10-01",
+      "startHour": 16
+    },
+    {
       "title": "Upstream, Downstream, Offshore: Constancy Amidst the Flux of Supply Chains",
       "source": "Princeton University",
       "dateLabel": "Oct 1",
@@ -664,20 +653,6 @@
       "startHour": 16
     },
     {
-      "title": "Princeton Birding Society Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Oct 1",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-birding-society-meeting",
-      "tags": [
-        "new",
-        "rain"
-      ],
-      "isoDate": "2026-10-01",
-      "startHour": 16
-    },
-    {
       "title": "Composition Colloquium with Nico Muhly",
       "source": "Princeton University",
       "dateLabel": "Oct 1",
@@ -693,15 +668,15 @@
       "startHour": 16
     },
     {
-      "title": "2026 Bruce Blair Memorial Lecture",
+      "title": "Princeton Birding Society Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 1",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/2026-bruce-blair-memorial-lecture",
+      "url": "https://www.princeton.edu/events/2026/princeton-birding-society-meeting",
       "tags": [
-        "family",
-        "culture"
+        "new",
+        "rain"
       ],
       "isoDate": "2026-10-01",
       "startHour": 16
@@ -2073,7 +2048,7 @@
       "iso": "2026-09-30",
       "label": "Sep 30",
       "weekday": "Wed",
-      "count": 29
+      "count": 27
     },
     {
       "iso": "2026-10-01",
@@ -2137,7 +2112,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "27 calendar items"
+      "detail": "24 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
