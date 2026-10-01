@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-01T10:07:12.304Z",
+  "generatedAt": "2026-10-01T18:25:41.547Z",
   "weather": {
     "temperature": 78,
-    "shortForecast": "Partly Sunny",
-    "wind": "0 to 5 mph SW",
-    "detailedForecast": "Partly sunny, with a high near 78. Southwest wind 0 to 5 mph.",
+    "shortForecast": "Mostly Sunny",
+    "wind": "5 mph SW",
+    "detailedForecast": "Mostly sunny, with a high near 78. Southwest wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -236,6 +236,20 @@
       "startHour": 16
     },
     {
+      "title": "Princeton Birding Society Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Oct 1",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-birding-society-meeting",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-10-01",
+      "startHour": 16
+    },
+    {
       "title": "The Keeper of My Kin, Ada Ferrer",
       "source": "Princeton University",
       "dateLabel": "Oct 1",
@@ -280,33 +294,6 @@
       "startHour": 16
     },
     {
-      "title": "Upstream, Downstream, Offshore: Constancy Amidst the Flux of Supply Chains",
-      "source": "Princeton University",
-      "dateLabel": "Oct 1",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/upstream-downstream-offshore-constancy-amidst-flux-supply-chains",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-01",
-      "startHour": 16
-    },
-    {
-      "title": "Princeton Birding Society Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Oct 1",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-birding-society-meeting",
-      "tags": [
-        "new",
-        "rain"
-      ],
-      "isoDate": "2026-10-01",
-      "startHour": 16
-    },
-    {
       "title": "2026 Bruce Blair Memorial Lecture",
       "source": "Princeton University",
       "dateLabel": "Oct 1",
@@ -321,12 +308,25 @@
       "startHour": 16
     },
     {
+      "title": "Upstream, Downstream, Offshore: Constancy Amidst the Flux of Supply Chains",
+      "source": "Princeton University",
+      "dateLabel": "Oct 1",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/upstream-downstream-offshore-constancy-amidst-flux-supply-chains",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-10-01",
+      "startHour": 16
+    },
+    {
       "title": "MLP x Iqbal: The Poetics of Awakening",
       "source": "Princeton University",
       "dateLabel": "Oct 1",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mlp-x-iqbal-poetics-awakening",
+      "url": "https://www.princeton.edu/events/2026/mlp-x-iqbal-poetics-awakening-0",
       "tags": [],
       "isoDate": "2026-10-01",
       "startHour": 17
@@ -337,7 +337,7 @@
       "dateLabel": "Oct 1",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mlp-x-iqbal-poetics-awakening-0",
+      "url": "https://www.princeton.edu/events/2026/mlp-x-iqbal-poetics-awakening",
       "tags": [],
       "isoDate": "2026-10-01",
       "startHour": 17
@@ -608,6 +608,17 @@
       "startHour": 17
     },
     {
+      "title": "MSA Brothers Banter",
+      "source": "Princeton University",
+      "dateLabel": "Oct 2",
+      "timeLabel": "5:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/msa-brothers-banter-0",
+      "tags": [],
+      "isoDate": "2026-10-02",
+      "startHour": 17
+    },
+    {
       "title": "Women's Volleyball vs Columbia",
       "source": "Princeton University",
       "dateLabel": "Oct 2",
@@ -671,6 +682,21 @@
       "startHour": 8
     },
     {
+      "title": "Members Preview - Basquiat, the Blue Ribbon Paintings, and the Art of Reproduction",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/members-preview-basquiat-blue-ribbon-paintings-and-art-reproduction",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 10
+    },
+    {
       "title": "iASpace — Interaural Space",
       "source": "Princeton University",
       "dateLabel": "Oct 3",
@@ -682,21 +708,6 @@
         "family",
         "culture",
         "rain"
-      ],
-      "isoDate": "2026-10-03",
-      "startHour": 10
-    },
-    {
-      "title": "Members Preview - Basquiat, the Blue Ribbon Paintings, and the Art of Reproduction",
-      "source": "Princeton University",
-      "dateLabel": "Oct 3",
-      "timeLabel": "10:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/members-preview-basquiat-blue-ribbon-paintings-and-art-reproduction",
-      "tags": [
-        "new",
-        "culture",
-        "practical"
       ],
       "isoDate": "2026-10-03",
       "startHour": 10
@@ -905,23 +916,23 @@
       "startHour": 17
     },
     {
-      "title": "Men's Water Polo vs MIT",
-      "source": "Princeton University",
-      "dateLabel": "Oct 3",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-mit",
-      "tags": [],
-      "isoDate": "2026-10-03",
-      "startHour": 17
-    },
-    {
       "title": "Women's Volleyball vs Cornell",
       "source": "Princeton University",
       "dateLabel": "Oct 3",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/womens-volleyball-vs-cornell",
+      "tags": [],
+      "isoDate": "2026-10-03",
+      "startHour": 17
+    },
+    {
+      "title": "Men's Water Polo vs MIT",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-mit",
       "tags": [],
       "isoDate": "2026-10-03",
       "startHour": 17
@@ -1024,23 +1035,23 @@
       "startHour": 11
     },
     {
-      "title": "Men's Water Polo vs Brown",
-      "source": "Princeton University",
-      "dateLabel": "Oct 4",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-brown",
-      "tags": [],
-      "isoDate": "2026-10-04",
-      "startHour": 12
-    },
-    {
       "title": "Field Hockey vs Temple",
       "source": "Princeton University",
       "dateLabel": "Oct 4",
       "timeLabel": "12:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/field-hockey-vs-temple",
+      "tags": [],
+      "isoDate": "2026-10-04",
+      "startHour": 12
+    },
+    {
+      "title": "Men's Water Polo vs Brown",
+      "source": "Princeton University",
+      "dateLabel": "Oct 4",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-brown",
       "tags": [],
       "isoDate": "2026-10-04",
       "startHour": 12
@@ -1249,19 +1260,6 @@
       "startHour": 16
     },
     {
-      "title": "Library Research for Water Chemistry",
-      "source": "Princeton University",
-      "dateLabel": "Oct 5",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/library-research-water-chemistry",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-10-05",
-      "startHour": 16
-    },
-    {
       "title": "Civic Leadership Council (Pace) Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 5",
@@ -1271,6 +1269,19 @@
       "tags": [
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-10-05",
+      "startHour": 16
+    },
+    {
+      "title": "Library Research for Water Chemistry",
+      "source": "Princeton University",
+      "dateLabel": "Oct 5",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/library-research-water-chemistry",
+      "tags": [
+        "rain"
       ],
       "isoDate": "2026-10-05",
       "startHour": 16
@@ -1425,6 +1436,19 @@
       "timeLabel": "12:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/plas-lecture-series-0",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-10-06",
+      "startHour": 12
+    },
+    {
+      "title": "The Women’s Rights Era: Global and Indian Experiments",
+      "source": "Princeton University",
+      "dateLabel": "Oct 6",
+      "timeLabel": "12:15 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-rights-era-global-and-indian-experiments",
       "tags": [
         "culture"
       ],
@@ -1862,14 +1886,14 @@
       "startHour": 14
     },
     {
-      "title": "Responsible AI: Gathering Research Materials from the Internet",
+      "title": "Pace Center Summer Internships Drop-in",
       "source": "Princeton University",
       "dateLabel": "Oct 7",
       "timeLabel": "3:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/responsible-ai-gathering-research-materials-internet",
+      "url": "https://www.princeton.edu/events/2026/pace-center-summer-internships-drop-1",
       "tags": [
-        "culture"
+        "new"
       ],
       "isoDate": "2026-10-07",
       "startHour": 15
@@ -1886,14 +1910,14 @@
       "startHour": 15
     },
     {
-      "title": "Pace Center Summer Internships Drop-in",
+      "title": "Responsible AI: Gathering Research Materials from the Internet",
       "source": "Princeton University",
       "dateLabel": "Oct 7",
       "timeLabel": "3:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/pace-center-summer-internships-drop-1",
+      "url": "https://www.princeton.edu/events/2026/responsible-ai-gathering-research-materials-internet",
       "tags": [
-        "new"
+        "culture"
       ],
       "isoDate": "2026-10-07",
       "startHour": 15
@@ -1965,23 +1989,23 @@
       "startHour": 16
     },
     {
-      "title": "InterVarsity Small Group",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-1",
-      "tags": [],
-      "isoDate": "2026-10-07",
-      "startHour": 16
-    },
-    {
       "title": "The Price of Democracy: The Revolutionary Power of Taxation in American History Book Talk with Vanessa Williamson",
       "source": "Princeton University",
       "dateLabel": "Oct 7",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/price-democracy-revolutionary-power-taxation-american-history-book-talk-vanessa",
+      "tags": [],
+      "isoDate": "2026-10-07",
+      "startHour": 16
+    },
+    {
+      "title": "InterVarsity Small Group",
+      "source": "Princeton University",
+      "dateLabel": "Oct 7",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-1",
       "tags": [],
       "isoDate": "2026-10-07",
       "startHour": 16
@@ -2056,17 +2080,6 @@
       "startHour": 17
     },
     {
-      "title": "Post-Graduations Paths in EEB",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "5:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/post-graduations-paths-eeb",
-      "tags": [],
-      "isoDate": "2026-10-07",
-      "startHour": 17
-    },
-    {
       "title": "Sound Journey",
       "source": "Princeton University",
       "dateLabel": "Oct 7",
@@ -2076,6 +2089,17 @@
       "tags": [
         "culture"
       ],
+      "isoDate": "2026-10-07",
+      "startHour": 17
+    },
+    {
+      "title": "Post-Graduations Paths in EEB",
+      "source": "Princeton University",
+      "dateLabel": "Oct 7",
+      "timeLabel": "5:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/post-graduations-paths-eeb",
+      "tags": [],
       "isoDate": "2026-10-07",
       "startHour": 17
     },
@@ -2132,7 +2156,7 @@
       "iso": "2026-10-02",
       "label": "Oct 2",
       "weekday": "Fri",
-      "count": 14
+      "count": 15
     },
     {
       "iso": "2026-10-03",
@@ -2156,7 +2180,7 @@
       "iso": "2026-10-06",
       "label": "Oct 6",
       "weekday": "Tue",
-      "count": 25
+      "count": 26
     },
     {
       "iso": "2026-10-07",
@@ -2172,7 +2196,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Partly Sunny, 78F"
+      "detail": "Mostly Sunny, 78F"
     },
     {
       "name": "Princeton University Events",
