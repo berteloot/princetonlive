@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-02T17:52:02.542Z",
+  "generatedAt": "2026-10-02T22:13:02.031Z",
   "weather": {
-    "temperature": 85,
-    "shortForecast": "Slight Chance Rain Showers",
-    "wind": "10 mph SW",
-    "detailedForecast": "A slight chance of rain showers after 5pm. Mostly sunny, with a high near 85. Southwest wind around 10 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
+    "temperature": 57,
+    "shortForecast": "Showers And Thunderstorms Likely",
+    "wind": "5 to 10 mph NW",
+    "detailedForecast": "Showers and thunderstorms likely before 2am. Mostly cloudy, with a low around 57. Northwest wind 5 to 10 mph. Chance of precipitation is 60%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -155,23 +155,23 @@
       "startHour": 14
     },
     {
-      "title": "Field Hockey vs Yale",
-      "source": "Princeton University",
-      "dateLabel": "Oct 2",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-yale",
-      "tags": [],
-      "isoDate": "2026-10-02",
-      "startHour": 17
-    },
-    {
       "title": "Competitive Programming Club",
       "source": "Princeton University",
       "dateLabel": "Oct 2",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/competitive-programming-club-2",
+      "tags": [],
+      "isoDate": "2026-10-02",
+      "startHour": 17
+    },
+    {
+      "title": "Field Hockey vs Yale",
+      "source": "Princeton University",
+      "dateLabel": "Oct 2",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-yale",
       "tags": [],
       "isoDate": "2026-10-02",
       "startHour": 17
@@ -251,21 +251,6 @@
       "startHour": 8
     },
     {
-      "title": "Members Preview - Basquiat, the Blue Ribbon Paintings, and the Art of Reproduction",
-      "source": "Princeton University",
-      "dateLabel": "Oct 3",
-      "timeLabel": "10:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/members-preview-basquiat-blue-ribbon-paintings-and-art-reproduction",
-      "tags": [
-        "new",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-03",
-      "startHour": 10
-    },
-    {
       "title": "iASpace — Interaural Space",
       "source": "Princeton University",
       "dateLabel": "Oct 3",
@@ -277,6 +262,21 @@
         "family",
         "culture",
         "rain"
+      ],
+      "isoDate": "2026-10-03",
+      "startHour": 10
+    },
+    {
+      "title": "Members Preview - Basquiat, the Blue Ribbon Paintings, and the Art of Reproduction",
+      "source": "Princeton University",
+      "dateLabel": "Oct 3",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/members-preview-basquiat-blue-ribbon-paintings-and-art-reproduction",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
       ],
       "isoDate": "2026-10-03",
       "startHour": 10
@@ -472,13 +472,15 @@
       "startHour": 16
     },
     {
-      "title": "Women's Volleyball vs Cornell",
+      "title": "Workbuddy x ACSSPU",
       "source": "Princeton University",
       "dateLabel": "Oct 3",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-volleyball-vs-cornell",
-      "tags": [],
+      "url": "https://www.princeton.edu/events/2026/workbuddy-x-acsspu",
+      "tags": [
+        "culture"
+      ],
       "isoDate": "2026-10-03",
       "startHour": 17
     },
@@ -494,15 +496,13 @@
       "startHour": 17
     },
     {
-      "title": "Workbuddy x ACSSPU",
+      "title": "Women's Volleyball vs Cornell",
       "source": "Princeton University",
       "dateLabel": "Oct 3",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/workbuddy-x-acsspu",
-      "tags": [
-        "culture"
-      ],
+      "url": "https://www.princeton.edu/events/2026/womens-volleyball-vs-cornell",
+      "tags": [],
       "isoDate": "2026-10-03",
       "startHour": 17
     },
@@ -604,23 +604,23 @@
       "startHour": 11
     },
     {
-      "title": "Field Hockey vs Temple",
-      "source": "Princeton University",
-      "dateLabel": "Oct 4",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-temple",
-      "tags": [],
-      "isoDate": "2026-10-04",
-      "startHour": 12
-    },
-    {
       "title": "Men's Water Polo vs Brown",
       "source": "Princeton University",
       "dateLabel": "Oct 4",
       "timeLabel": "12:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-brown",
+      "tags": [],
+      "isoDate": "2026-10-04",
+      "startHour": 12
+    },
+    {
+      "title": "Field Hockey vs Temple",
+      "source": "Princeton University",
+      "dateLabel": "Oct 4",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-temple",
       "tags": [],
       "isoDate": "2026-10-04",
       "startHour": 12
@@ -829,6 +829,19 @@
       "startHour": 16
     },
     {
+      "title": "Library Research for Water Chemistry",
+      "source": "Princeton University",
+      "dateLabel": "Oct 5",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/library-research-water-chemistry",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-10-05",
+      "startHour": 16
+    },
+    {
       "title": "Civic Leadership Council (Pace) Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 5",
@@ -838,19 +851,6 @@
       "tags": [
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-10-05",
-      "startHour": 16
-    },
-    {
-      "title": "Library Research for Water Chemistry",
-      "source": "Princeton University",
-      "dateLabel": "Oct 5",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/library-research-water-chemistry",
-      "tags": [
-        "rain"
       ],
       "isoDate": "2026-10-05",
       "startHour": 16
@@ -1250,6 +1250,22 @@
       "startHour": 18
     },
     {
+      "title": "Princeton Choral Exchange: Guangdong Experimental High School Choir",
+      "source": "Princeton University",
+      "dateLabel": "Oct 6",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-choral-exchange-guangdong-experimental-high-school-choir",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-06",
+      "startHour": 19
+    },
+    {
       "title": "LDSSA Institute Class",
       "source": "Princeton University",
       "dateLabel": "Oct 6",
@@ -1442,14 +1458,14 @@
       "startHour": 14
     },
     {
-      "title": "Pace Center Summer Internships Drop-in",
+      "title": "Responsible AI: Gathering Research Materials from the Internet",
       "source": "Princeton University",
       "dateLabel": "Oct 7",
       "timeLabel": "3:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/pace-center-summer-internships-drop-1",
+      "url": "https://www.princeton.edu/events/2026/responsible-ai-gathering-research-materials-internet",
       "tags": [
-        "new"
+        "culture"
       ],
       "isoDate": "2026-10-07",
       "startHour": 15
@@ -1466,14 +1482,14 @@
       "startHour": 15
     },
     {
-      "title": "Responsible AI: Gathering Research Materials from the Internet",
+      "title": "Pace Center Summer Internships Drop-in",
       "source": "Princeton University",
       "dateLabel": "Oct 7",
       "timeLabel": "3:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/responsible-ai-gathering-research-materials-internet",
+      "url": "https://www.princeton.edu/events/2026/pace-center-summer-internships-drop-1",
       "tags": [
-        "culture"
+        "new"
       ],
       "isoDate": "2026-10-07",
       "startHour": 15
@@ -1532,13 +1548,15 @@
       "startHour": 16
     },
     {
-      "title": "The Price of Democracy: The Revolutionary Power of Taxation in American History Book Talk with Vanessa Williamson",
+      "title": "Princeton University Public Lecture: Jill Pruetz",
       "source": "Princeton University",
       "dateLabel": "Oct 7",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/price-democracy-revolutionary-power-taxation-american-history-book-talk-vanessa",
-      "tags": [],
+      "url": "https://www.princeton.edu/events/2026/princeton-university-public-lecture-jill-pruetz",
+      "tags": [
+        "culture"
+      ],
       "isoDate": "2026-10-07",
       "startHour": 16
     },
@@ -1554,15 +1572,13 @@
       "startHour": 16
     },
     {
-      "title": "Princeton University Public Lecture: Jill Pruetz",
+      "title": "The Price of Democracy: The Revolutionary Power of Taxation in American History Book Talk with Vanessa Williamson",
       "source": "Princeton University",
       "dateLabel": "Oct 7",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-university-public-lecture-jill-pruetz",
-      "tags": [
-        "culture"
-      ],
+      "url": "https://www.princeton.edu/events/2026/price-democracy-revolutionary-power-taxation-american-history-book-talk-vanessa",
+      "tags": [],
       "isoDate": "2026-10-07",
       "startHour": 16
     },
@@ -1636,6 +1652,17 @@
       "startHour": 17
     },
     {
+      "title": "Post-Graduations Paths in EEB",
+      "source": "Princeton University",
+      "dateLabel": "Oct 7",
+      "timeLabel": "5:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/post-graduations-paths-eeb",
+      "tags": [],
+      "isoDate": "2026-10-07",
+      "startHour": 17
+    },
+    {
       "title": "Sound Journey",
       "source": "Princeton University",
       "dateLabel": "Oct 7",
@@ -1645,17 +1672,6 @@
       "tags": [
         "culture"
       ],
-      "isoDate": "2026-10-07",
-      "startHour": 17
-    },
-    {
-      "title": "Post-Graduations Paths in EEB",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "5:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/post-graduations-paths-eeb",
-      "tags": [],
       "isoDate": "2026-10-07",
       "startHour": 17
     },
@@ -1935,21 +1951,6 @@
       "startHour": 16
     },
     {
-      "title": "Arts at Work: Script Writing & Pitching Workshop with Jennie Snyder Urman ‘99",
-      "source": "Princeton University",
-      "dateLabel": "Oct 8",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/arts-work-script-writing-pitching-workshop-jennie-snyder-urman-99",
-      "tags": [
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-08",
-      "startHour": 16
-    },
-    {
       "title": "Doing Comparative History: a report from the trenches",
       "source": "Princeton University",
       "dateLabel": "Oct 8",
@@ -1976,6 +1977,19 @@
       "startHour": 16
     },
     {
+      "title": "Reenactment of the Vietnamese Fisherman V. Ku Klux Klan",
+      "source": "Princeton University",
+      "dateLabel": "Oct 8",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/reenactment-vietnamese-fisherman-v-ku-klux-klan",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-10-08",
+      "startHour": 16
+    },
+    {
       "title": "Food Justice Undone: Lessons for Building a Better Movement",
       "source": "Princeton University",
       "dateLabel": "Oct 8",
@@ -1990,14 +2004,16 @@
       "startHour": 16
     },
     {
-      "title": "Reenactment of the Vietnamese Fisherman V. Ku Klux Klan",
+      "title": "Arts at Work: Script Writing & Pitching Workshop with Jennie Snyder Urman ‘99",
       "source": "Princeton University",
       "dateLabel": "Oct 8",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/reenactment-vietnamese-fisherman-v-ku-klux-klan",
+      "url": "https://www.princeton.edu/events/2026/arts-work-script-writing-pitching-workshop-jennie-snyder-urman-99",
       "tags": [
-        "culture"
+        "culture",
+        "rain",
+        "practical"
       ],
       "isoDate": "2026-10-08",
       "startHour": 16
@@ -2146,7 +2162,7 @@
       "iso": "2026-10-06",
       "label": "Oct 6",
       "weekday": "Tue",
-      "count": 25
+      "count": 26
     },
     {
       "iso": "2026-10-07",
@@ -2168,7 +2184,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Slight Chance Rain Showers, 85F"
+      "detail": "Showers And Thunderstorms Likely, 57F"
     },
     {
       "name": "Princeton University Events",
