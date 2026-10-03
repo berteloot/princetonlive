@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-03T16:16:39.229Z",
+  "generatedAt": "2026-10-03T21:13:17.415Z",
   "weather": {
     "temperature": 71,
     "shortForecast": "Mostly Sunny",
-    "wind": "5 mph NE",
-    "detailedForecast": "Mostly sunny, with a high near 71. Northeast wind around 5 mph.",
+    "wind": "5 mph E",
+    "detailedForecast": "Mostly sunny, with a high near 71. East wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -90,20 +90,6 @@
       "tags": [
         "family",
         "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-03",
-      "startHour": 10
-    },
-    {
-      "title": "QUARRY PARK MICROFOREST First Birthday Celebration",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 3, 2026",
-      "timeLabel": "10:00 AM - 01:00 PM",
-      "location": "155 Spruce StPrinceton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8129",
-      "tags": [
-        "new",
         "practical"
       ],
       "isoDate": "2026-10-03",
@@ -827,19 +813,6 @@
       "startHour": 12
     },
     {
-      "title": "Food Insecurity Task Force: Arm in Arm",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 6, 2026",
-      "timeLabel": "01:00 PM - 07:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7754",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-10-06",
-      "startHour": 13
-    },
-    {
       "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Spruce Circle",
       "source": "Municipality of Princeton",
       "dateLabel": "October 6, 2026",
@@ -848,6 +821,19 @@
       "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7343",
       "tags": [
         "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-06",
+      "startHour": 13
+    },
+    {
+      "title": "Food Insecurity Task Force: Arm in Arm",
+      "source": "Municipality of Princeton",
+      "dateLabel": "October 6, 2026",
+      "timeLabel": "01:00 PM - 07:00 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7754",
+      "tags": [
         "practical"
       ],
       "isoDate": "2026-10-06",
@@ -2171,7 +2157,7 @@
       "iso": "2026-10-03",
       "label": "Oct 3",
       "weekday": "Sat",
-      "count": 26
+      "count": 25
     },
     {
       "iso": "2026-10-04",
@@ -2235,7 +2221,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "23 calendar items"
+      "detail": "22 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
