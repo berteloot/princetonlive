@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-05T05:37:50.434Z",
+  "generatedAt": "2026-10-05T14:35:10.125Z",
   "weather": {
-    "temperature": 53,
-    "shortForecast": "Patchy Drizzle",
-    "wind": "0 to 5 mph W",
-    "detailedForecast": "Patchy drizzle and patchy fog. Mostly cloudy, with a low around 53. West wind 0 to 5 mph.",
+    "temperature": 72,
+    "shortForecast": "Sunny",
+    "wind": "10 to 15 mph NW",
+    "detailedForecast": "Sunny, with a high near 72. Northwest wind 10 to 15 mph, with gusts as high as 30 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -1016,6 +1016,20 @@
       ],
       "isoDate": "2026-10-07",
       "startHour": 18
+    },
+    {
+      "title": "Zoning Board of Adjustment - Special Meeting - via Zoom",
+      "source": "Municipality of Princeton",
+      "dateLabel": "October 7, 2026",
+      "timeLabel": "07:30 PM - 11:59 PM",
+      "location": "Princeton, NJ",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8112",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-10-07",
+      "startHour": 19
     },
     {
       "title": "Princeton Christian Fellowship Bible studies",
@@ -2072,7 +2086,7 @@
       "iso": "2026-10-07",
       "label": "Oct 7",
       "weekday": "Wed",
-      "count": 32
+      "count": 33
     },
     {
       "iso": "2026-10-08",
@@ -2106,7 +2120,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Patchy Drizzle, 53F"
+      "detail": "Sunny, 72F"
     },
     {
       "name": "Princeton University Events",
@@ -2124,7 +2138,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "23 calendar items"
+      "detail": "24 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
