@@ -1,152 +1,15 @@
 {
-  "generatedAt": "2026-10-04T23:57:02.024Z",
+  "generatedAt": "2026-10-05T05:37:50.434Z",
   "weather": {
     "temperature": 53,
-    "shortForecast": "Slight Chance Rain Showers then Mostly Cloudy",
-    "wind": "0 to 5 mph N",
-    "detailedForecast": "A slight chance of rain showers before 8pm. Mostly cloudy, with a low around 53. North wind 0 to 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
+    "shortForecast": "Patchy Drizzle",
+    "wind": "0 to 5 mph W",
+    "detailedForecast": "Patchy drizzle and patchy fog. Mostly cloudy, with a low around 53. West wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Out After Dark: Exhibition by Tamara Santibañez",
-      "source": "Princeton University",
-      "dateLabel": "Oct 4",
-      "timeLabel": "12:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/out-after-dark-exhibition-tamara-santibanez-25",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-04",
-      "startHour": 0
-    },
-    {
-      "title": "iASpace — Interaural Space",
-      "source": "Princeton University",
-      "dateLabel": "Oct 4",
-      "timeLabel": "10:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/iaspace-interaural-space-5",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-04",
-      "startHour": 10
-    },
-    {
-      "title": "Worship Service in the University Chapel",
-      "source": "Princeton University",
-      "dateLabel": "Oct 4",
-      "timeLabel": "11:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/worship-service-university-chapel-4",
-      "tags": [],
-      "isoDate": "2026-10-04",
-      "startHour": 11
-    },
-    {
-      "title": "Men's Water Polo vs Brown",
-      "source": "Princeton University",
-      "dateLabel": "Oct 4",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-brown",
-      "tags": [],
-      "isoDate": "2026-10-04",
-      "startHour": 12
-    },
-    {
-      "title": "Field Hockey vs Temple",
-      "source": "Princeton University",
-      "dateLabel": "Oct 4",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-temple",
-      "tags": [],
-      "isoDate": "2026-10-04",
-      "startHour": 12
-    },
-    {
-      "title": "Writers Project Workshop",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 04",
-      "timeLabel": "12:30pm - 2:30pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/16308353",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-04",
-      "startHour": 12
-    },
-    {
-      "title": "Guided tour: The Art of Japanese Publishing",
-      "source": "Princeton University",
-      "dateLabel": "Oct 4",
-      "timeLabel": "1:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/guided-tour-art-japanese-publishing-2",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-04",
-      "startHour": 13
-    },
-    {
-      "title": "Special Event: Festival Cultural Latino",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 04",
-      "timeLabel": "1:00pm - 5:00pm",
-      "location": "Princeton Public Library - Community Room,Hinds Plaza",
-      "url": "https://princetonlibrary.libnet.info/event/17242096",
-      "tags": [
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-04",
-      "startHour": 13
-    },
-    {
-      "title": "Kids: Russian Storytime",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 04",
-      "timeLabel": "2:30pm - 3:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/17381903",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-04",
-      "startHour": 14
-    },
-    {
-      "title": "Kids: Russian Book Club",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 04",
-      "timeLabel": "3:00pm - 3:45pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/17381859",
-      "tags": [
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-04",
-      "startHour": 15
-    },
     {
       "title": "Out After Dark: Exhibition by Tamara Santibañez",
       "source": "Princeton University",
@@ -248,6 +111,20 @@
       "startHour": 15
     },
     {
+      "title": "Catherine Project Weekly Book Discussion Series",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 05",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/17155816",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-05",
+      "startHour": 16
+    },
+    {
       "title": "Kids: eSTEAM Club: Archaeology & Paleontology",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 05",
@@ -258,20 +135,6 @@
         "new",
         "family",
         "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-05",
-      "startHour": 16
-    },
-    {
-      "title": "Catherine Project Weekly Book Discussion Series",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 05",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/17155816",
-      "tags": [
-        "family",
         "practical"
       ],
       "isoDate": "2026-10-05",
@@ -958,6 +821,19 @@
       "startHour": 15
     },
     {
+      "title": "English Conversation (virtual)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 07",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Virtual - Google Meet",
+      "url": "https://princetonlibrary.libnet.info/event/16837157",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-10-07",
+      "startHour": 16
+    },
+    {
       "title": "Kids: Upcycled Craft Club: Chopstick Spider Webs",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 07",
@@ -967,19 +843,6 @@
       "tags": [
         "family",
         "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 16
-    },
-    {
-      "title": "English Conversation (virtual)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 07",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Virtual - Google Meet",
-      "url": "https://princetonlibrary.libnet.info/event/16837157",
-      "tags": [
         "practical"
       ],
       "isoDate": "2026-10-07",
@@ -1125,6 +988,20 @@
       "startHour": 17
     },
     {
+      "title": "Special Event: Letters, Life and Legacy of Carson McCullers",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 07",
+      "timeLabel": "6:00pm - 7:00pm",
+      "location": "Off-Site - Arts Council of Princeton",
+      "url": "https://princetonlibrary.libnet.info/event/17296404",
+      "tags": [
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-07",
+      "startHour": 18
+    },
+    {
       "title": "Learn English at the Library (High Beginner)",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 07",
@@ -1135,20 +1012,6 @@
         "new",
         "culture",
         "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 18
-    },
-    {
-      "title": "Special Event: Letters, Life and Legacy of Carson McCullers",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 07",
-      "timeLabel": "6:00pm - 7:00pm",
-      "location": "Off-Site - Arts Council of Princeton",
-      "url": "https://princetonlibrary.libnet.info/event/17296404",
-      "tags": [
-        "culture",
         "practical"
       ],
       "isoDate": "2026-10-07",
@@ -1194,6 +1057,17 @@
       "startHour": 10
     },
     {
+      "title": "Fiction Book Group",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 08",
+      "timeLabel": "10:30am - 11:30am",
+      "location": "Princeton Public Library - Conference Room",
+      "url": "https://princetonlibrary.libnet.info/event/17155829",
+      "tags": [],
+      "isoDate": "2026-10-08",
+      "startHour": 10
+    },
+    {
       "title": "Kids: Storytime!",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 08",
@@ -1204,17 +1078,6 @@
         "family",
         "practical"
       ],
-      "isoDate": "2026-10-08",
-      "startHour": 10
-    },
-    {
-      "title": "Fiction Book Group",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 08",
-      "timeLabel": "10:30am - 11:30am",
-      "location": "Princeton Public Library - Conference Room",
-      "url": "https://princetonlibrary.libnet.info/event/17155829",
-      "tags": [],
       "isoDate": "2026-10-08",
       "startHour": 10
     },
@@ -2094,15 +1957,105 @@
       ],
       "isoDate": "2026-10-10",
       "startHour": 21
+    },
+    {
+      "title": "Out After Dark: Exhibition by Tamara Santibañez",
+      "source": "Princeton University",
+      "dateLabel": "Oct 11",
+      "timeLabel": "12:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/out-after-dark-exhibition-tamara-santibanez-32",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-11",
+      "startHour": 0
+    },
+    {
+      "title": "Worship Service in the University Chapel",
+      "source": "Princeton University",
+      "dateLabel": "Oct 11",
+      "timeLabel": "11:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/worship-service-university-chapel-5",
+      "tags": [],
+      "isoDate": "2026-10-11",
+      "startHour": 11
+    },
+    {
+      "title": "Field Hockey vs Northwestern",
+      "source": "Princeton University",
+      "dateLabel": "Oct 11",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-northwestern",
+      "tags": [],
+      "isoDate": "2026-10-11",
+      "startHour": 12
+    },
+    {
+      "title": "Friends & Foundation Annual Book Sale",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 11",
+      "timeLabel": "12:00pm - 4:30pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17121952",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-11",
+      "startHour": 12
+    },
+    {
+      "title": "Writing Workshop: Telling Our Stories",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 11",
+      "timeLabel": "1:00pm - 2:00pm",
+      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "url": "https://princetonlibrary.libnet.info/event/17212768",
+      "tags": [
+        "family",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-10-11",
+      "startHour": 13
+    },
+    {
+      "title": "Quite Contrary by Marlie Kass ‘27",
+      "source": "Princeton University",
+      "dateLabel": "Oct 11",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/quite-contrary-marlie-kass-27-1",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-11",
+      "startHour": 14
+    },
+    {
+      "title": "Special Event: Feelin' Stronger Every Day",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 11",
+      "timeLabel": "2:00pm - 4:00pm",
+      "location": "Off-Site - Princeton Shopping Center",
+      "url": "https://princetonlibrary.libnet.info/event/17341665",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-11",
+      "startHour": 14
     }
   ],
   "days": [
-    {
-      "iso": "2026-10-04",
-      "label": "Oct 4",
-      "weekday": "Sun",
-      "count": 10
-    },
     {
       "iso": "2026-10-05",
       "label": "Oct 5",
@@ -2138,6 +2091,12 @@
       "label": "Oct 10",
       "weekday": "Sat",
       "count": 20
+    },
+    {
+      "iso": "2026-10-11",
+      "label": "Oct 11",
+      "weekday": "Sun",
+      "count": 7
     }
   ],
   "windowDays": 7,
@@ -2147,7 +2106,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Slight Chance Rain Showers then Mostly Cloudy, 53F"
+      "detail": "Patchy Drizzle, 53F"
     },
     {
       "name": "Princeton University Events",
@@ -2159,7 +2118,7 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "58 events"
+      "detail": "64 events"
     },
     {
       "name": "Municipality of Princeton",
