@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-05T14:35:10.125Z",
+  "generatedAt": "2026-10-05T22:00:46.210Z",
   "weather": {
-    "temperature": 72,
-    "shortForecast": "Sunny",
-    "wind": "10 to 15 mph NW",
-    "detailedForecast": "Sunny, with a high near 72. Northwest wind 10 to 15 mph, with gusts as high as 30 mph.",
+    "temperature": 44,
+    "shortForecast": "Clear",
+    "wind": "5 to 10 mph NW",
+    "detailedForecast": "Clear, with a low around 44. Northwest wind 5 to 10 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -141,19 +141,6 @@
       "startHour": 16
     },
     {
-      "title": "Library Research for Water Chemistry",
-      "source": "Princeton University",
-      "dateLabel": "Oct 5",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/library-research-water-chemistry",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-10-05",
-      "startHour": 16
-    },
-    {
       "title": "Civic Leadership Council (Pace) Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 5",
@@ -163,6 +150,19 @@
       "tags": [
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-10-05",
+      "startHour": 16
+    },
+    {
+      "title": "Library Research for Water Chemistry",
+      "source": "Princeton University",
+      "dateLabel": "Oct 5",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/library-research-water-chemistry",
+      "tags": [
+        "rain"
       ],
       "isoDate": "2026-10-05",
       "startHour": 16
@@ -465,11 +465,10 @@
       "source": "Princeton Public Library",
       "dateLabel": "Oct 06",
       "timeLabel": "4:00pm - 6:30pm",
-      "location": "Princeton Public Library - Conference Room",
-      "url": "https://princetonlibrary.libnet.info/event/15432412",
+      "location": "Princeton Public Library",
+      "url": "https://princetonlibrary.libnet.info/event/17587210",
       "tags": [
-        "family",
-        "practical"
+        "family"
       ],
       "isoDate": "2026-10-06",
       "startHour": 16
@@ -518,6 +517,20 @@
       "startHour": 18
     },
     {
+      "title": "Celebrate Hispanic Heritage/Celebre la Herencia Hispana",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 06",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/17292360",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-06",
+      "startHour": 18
+    },
+    {
       "title": "Workshop: Writers Room",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 06",
@@ -527,20 +540,6 @@
       "tags": [
         "culture",
         "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-06",
-      "startHour": 18
-    },
-    {
-      "title": "Celebrate Hispanic Heritage/Celebre la Herencia Hispana",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 06",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/17292360",
-      "tags": [
-        "family",
         "practical"
       ],
       "isoDate": "2026-10-06",
@@ -770,14 +769,14 @@
       "startHour": 14
     },
     {
-      "title": "Responsible AI: Gathering Research Materials from the Internet",
+      "title": "Pace Center Summer Internships Drop-in",
       "source": "Princeton University",
       "dateLabel": "Oct 7",
       "timeLabel": "3:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/responsible-ai-gathering-research-materials-internet",
+      "url": "https://www.princeton.edu/events/2026/pace-center-summer-internships-drop-1",
       "tags": [
-        "culture"
+        "new"
       ],
       "isoDate": "2026-10-07",
       "startHour": 15
@@ -794,14 +793,14 @@
       "startHour": 15
     },
     {
-      "title": "Pace Center Summer Internships Drop-in",
+      "title": "Responsible AI: Gathering Research Materials from the Internet",
       "source": "Princeton University",
       "dateLabel": "Oct 7",
       "timeLabel": "3:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/pace-center-summer-internships-drop-1",
+      "url": "https://www.princeton.edu/events/2026/responsible-ai-gathering-research-materials-internet",
       "tags": [
-        "new"
+        "culture"
       ],
       "isoDate": "2026-10-07",
       "startHour": 15
@@ -821,19 +820,6 @@
       "startHour": 15
     },
     {
-      "title": "English Conversation (virtual)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 07",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Virtual - Google Meet",
-      "url": "https://princetonlibrary.libnet.info/event/16837157",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 16
-    },
-    {
       "title": "Kids: Upcycled Craft Club: Chopstick Spider Webs",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 07",
@@ -849,12 +835,47 @@
       "startHour": 16
     },
     {
+      "title": "English Conversation (virtual)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 07",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Virtual - Google Meet",
+      "url": "https://princetonlibrary.libnet.info/event/16837157",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-10-07",
+      "startHour": 16
+    },
+    {
       "title": "Semester Study Abroad for the Social Sciences Info Session",
       "source": "Princeton University",
       "dateLabel": "Oct 7",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/semester-study-abroad-social-sciences-info-session",
+      "tags": [],
+      "isoDate": "2026-10-07",
+      "startHour": 16
+    },
+    {
+      "title": "The Price of Democracy: The Revolutionary Power of Taxation in American History Book Talk with Vanessa Williamson",
+      "source": "Princeton University",
+      "dateLabel": "Oct 7",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/price-democracy-revolutionary-power-taxation-american-history-book-talk-vanessa",
+      "tags": [],
+      "isoDate": "2026-10-07",
+      "startHour": 16
+    },
+    {
+      "title": "InterVarsity Small Group",
+      "source": "Princeton University",
+      "dateLabel": "Oct 7",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-1",
       "tags": [],
       "isoDate": "2026-10-07",
       "startHour": 16
@@ -873,26 +894,18 @@
       "startHour": 16
     },
     {
-      "title": "InterVarsity Small Group",
+      "title": "Princeton Autonomous Vehicle Engineering Finance Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 7",
-      "timeLabel": "4:30 PM",
+      "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-1",
-      "tags": [],
+      "url": "https://www.princeton.edu/events/2026/princeton-autonomous-vehicle-engineering-finance-meeting",
+      "tags": [
+        "new",
+        "rain"
+      ],
       "isoDate": "2026-10-07",
-      "startHour": 16
-    },
-    {
-      "title": "The Price of Democracy: The Revolutionary Power of Taxation in American History Book Talk with Vanessa Williamson",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/price-democracy-revolutionary-power-taxation-american-history-book-talk-vanessa",
-      "tags": [],
-      "isoDate": "2026-10-07",
-      "startHour": 16
+      "startHour": 17
     },
     {
       "title": "YDSA Weekly Meeting",
@@ -964,17 +977,6 @@
       "startHour": 17
     },
     {
-      "title": "Post-Graduations Paths in EEB",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "5:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/post-graduations-paths-eeb",
-      "tags": [],
-      "isoDate": "2026-10-07",
-      "startHour": 17
-    },
-    {
       "title": "Sound Journey",
       "source": "Princeton University",
       "dateLabel": "Oct 7",
@@ -984,6 +986,17 @@
       "tags": [
         "culture"
       ],
+      "isoDate": "2026-10-07",
+      "startHour": 17
+    },
+    {
+      "title": "Post-Graduations Paths in EEB",
+      "source": "Princeton University",
+      "dateLabel": "Oct 7",
+      "timeLabel": "5:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/post-graduations-paths-eeb",
+      "tags": [],
       "isoDate": "2026-10-07",
       "startHour": 17
     },
@@ -1071,17 +1084,6 @@
       "startHour": 10
     },
     {
-      "title": "Fiction Book Group",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 08",
-      "timeLabel": "10:30am - 11:30am",
-      "location": "Princeton Public Library - Conference Room",
-      "url": "https://princetonlibrary.libnet.info/event/17155829",
-      "tags": [],
-      "isoDate": "2026-10-08",
-      "startHour": 10
-    },
-    {
       "title": "Kids: Storytime!",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 08",
@@ -1092,6 +1094,17 @@
         "family",
         "practical"
       ],
+      "isoDate": "2026-10-08",
+      "startHour": 10
+    },
+    {
+      "title": "Fiction Book Group",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 08",
+      "timeLabel": "10:30am - 11:30am",
+      "location": "Princeton Public Library - Conference Room",
+      "url": "https://princetonlibrary.libnet.info/event/17155829",
+      "tags": [],
       "isoDate": "2026-10-08",
       "startHour": 10
     },
@@ -1277,6 +1290,21 @@
       "startHour": 16
     },
     {
+      "title": "Arts at Work: Script Writing & Pitching Workshop with Jennie Snyder Urman ‘99",
+      "source": "Princeton University",
+      "dateLabel": "Oct 8",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/arts-work-script-writing-pitching-workshop-jennie-snyder-urman-99",
+      "tags": [
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-10-08",
+      "startHour": 16
+    },
+    {
       "title": "Doing Comparative History: a report from the trenches",
       "source": "Princeton University",
       "dateLabel": "Oct 8",
@@ -1324,21 +1352,6 @@
       "url": "https://www.princeton.edu/events/2026/food-justice-undone-lessons-building-better-movement",
       "tags": [
         "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-08",
-      "startHour": 16
-    },
-    {
-      "title": "Arts at Work: Script Writing & Pitching Workshop with Jennie Snyder Urman ‘99",
-      "source": "Princeton University",
-      "dateLabel": "Oct 8",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/arts-work-script-writing-pitching-workshop-jennie-snyder-urman-99",
-      "tags": [
-        "culture",
-        "rain",
         "practical"
       ],
       "isoDate": "2026-10-08",
@@ -1549,6 +1562,19 @@
       "startHour": 10
     },
     {
+      "title": "30 Minutes Towards Better Bibliographies and Footnotes! (online)",
+      "source": "Princeton University",
+      "dateLabel": "Oct 9",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/30-minutes-towards-better-bibliographies-and-footnotes-online-5",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-10-09",
+      "startHour": 12
+    },
+    {
       "title": "Earth Shed Workshop: How to Build from the Ground Up",
       "source": "Princeton University",
       "dateLabel": "Oct 9",
@@ -1557,19 +1583,6 @@
       "url": "https://www.princeton.edu/events/2026/earth-shed-workshop-how-build-ground",
       "tags": [
         "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-09",
-      "startHour": 12
-    },
-    {
-      "title": "30 Minutes Towards Better Bibliographies and Footnotes! (online)",
-      "source": "Princeton University",
-      "dateLabel": "Oct 9",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/30-minutes-towards-better-bibliographies-and-footnotes-online-5",
-      "tags": [
         "rain"
       ],
       "isoDate": "2026-10-09",
@@ -1778,6 +1791,20 @@
       "startHour": 11
     },
     {
+      "title": "Kids: Portuguese Storytime",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 10",
+      "timeLabel": "11:30am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/17377018",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-10",
+      "startHour": 11
+    },
+    {
       "title": "The Creatures of Princeton University History Walk",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 10",
@@ -1795,35 +1822,6 @@
       "startHour": 11
     },
     {
-      "title": "Kids: Portuguese Storytime",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 10",
-      "timeLabel": "11:30am - 12:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/17377018",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-10",
-      "startHour": 11
-    },
-    {
-      "title": "Teens: Go Between Club",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 10",
-      "timeLabel": "2:00pm - 3:00pm",
-      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
-      "url": "https://princetonlibrary.libnet.info/event/17364027",
-      "tags": [
-        "new",
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-10",
-      "startHour": 14
-    },
-    {
       "title": "The Creatures of Princeton University History Walk",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 10",
@@ -1835,6 +1833,21 @@
         "family",
         "culture",
         "rain",
+        "practical"
+      ],
+      "isoDate": "2026-10-10",
+      "startHour": 14
+    },
+    {
+      "title": "Teens: Go Between Club",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 10",
+      "timeLabel": "2:00pm - 3:00pm",
+      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "url": "https://princetonlibrary.libnet.info/event/17364027",
+      "tags": [
+        "new",
+        "family",
         "practical"
       ],
       "isoDate": "2026-10-10",
@@ -1893,6 +1906,17 @@
       "startHour": 17
     },
     {
+      "title": "Women's Soccer vs Penn",
+      "source": "Princeton University",
+      "dateLabel": "Oct 10",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-penn",
+      "tags": [],
+      "isoDate": "2026-10-10",
+      "startHour": 19
+    },
+    {
       "title": "Magic: The Gathering Club Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 10",
@@ -1903,17 +1927,6 @@
         "new",
         "rain"
       ],
-      "isoDate": "2026-10-10",
-      "startHour": 19
-    },
-    {
-      "title": "Women's Soccer vs Penn",
-      "source": "Princeton University",
-      "dateLabel": "Oct 10",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-penn",
-      "tags": [],
       "isoDate": "2026-10-10",
       "startHour": 19
     },
@@ -2086,7 +2099,7 @@
       "iso": "2026-10-07",
       "label": "Oct 7",
       "weekday": "Wed",
-      "count": 33
+      "count": 34
     },
     {
       "iso": "2026-10-08",
@@ -2120,7 +2133,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 72F"
+      "detail": "Clear, 44F"
     },
     {
       "name": "Princeton University Events",
@@ -2138,7 +2151,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "24 calendar items"
+      "detail": "25 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
