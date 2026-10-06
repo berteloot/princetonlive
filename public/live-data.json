@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-06T06:18:50.880Z",
+  "generatedAt": "2026-10-06T15:56:18.160Z",
   "weather": {
-    "temperature": 44,
-    "shortForecast": "Clear",
-    "wind": "5 to 10 mph NW",
-    "detailedForecast": "Clear, with a low around 44. Northwest wind 5 to 10 mph.",
+    "temperature": 63,
+    "shortForecast": "Sunny",
+    "wind": "10 to 15 mph NW",
+    "detailedForecast": "Sunny, with a high near 63. Northwest wind 10 to 15 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -515,6 +515,19 @@
       "startHour": 12
     },
     {
+      "title": "InterVarsity Faith and Freebies- Boba Bar",
+      "source": "Princeton University",
+      "dateLabel": "Oct 7",
+      "timeLabel": "1:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-faith-and-freebies-boba-bar",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-10-07",
+      "startHour": 13
+    },
+    {
       "title": "Using Tools to Create Models in QGIS",
       "source": "Princeton University",
       "dateLabel": "Oct 7",
@@ -616,6 +629,19 @@
       "url": "https://princetonlibrary.libnet.info/event/16837157",
       "tags": [
         "practical"
+      ],
+      "isoDate": "2026-10-07",
+      "startHour": 16
+    },
+    {
+      "title": "PBC General Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Oct 7",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/pbc-general-meeting-0",
+      "tags": [
+        "rain"
       ],
       "isoDate": "2026-10-07",
       "startHour": 16
@@ -1657,17 +1683,6 @@
       "startHour": 15
     },
     {
-      "title": "Tango Practica",
-      "source": "Princeton University",
-      "dateLabel": "Oct 10",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/tango-practica-16",
-      "tags": [],
-      "isoDate": "2026-10-10",
-      "startHour": 16
-    },
-    {
       "title": "Women's Volleyball vs Brown",
       "source": "Princeton University",
       "dateLabel": "Oct 10",
@@ -1849,6 +1864,19 @@
       "tags": [
         "family",
         "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-11",
+      "startHour": 14
+    },
+    {
+      "title": "Feelin' Stronger Every Day",
+      "source": "Municipality of Princeton",
+      "dateLabel": "October 11, 2026",
+      "timeLabel": "02:00 PM - 04:00 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8137",
+      "tags": [
         "practical"
       ],
       "isoDate": "2026-10-11",
@@ -2114,7 +2142,7 @@
       "iso": "2026-10-07",
       "label": "Oct 7",
       "weekday": "Wed",
-      "count": 34
+      "count": 36
     },
     {
       "iso": "2026-10-08",
@@ -2132,13 +2160,13 @@
       "iso": "2026-10-10",
       "label": "Oct 10",
       "weekday": "Sat",
-      "count": 20
+      "count": 19
     },
     {
       "iso": "2026-10-11",
       "label": "Oct 11",
       "weekday": "Sun",
-      "count": 7
+      "count": 8
     },
     {
       "iso": "2026-10-12",
@@ -2154,7 +2182,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Clear, 44F"
+      "detail": "Sunny, 63F"
     },
     {
       "name": "Princeton University Events",
@@ -2172,7 +2200,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "30 calendar items"
+      "detail": "31 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
