@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-06T15:56:18.160Z",
+  "generatedAt": "2026-10-06T22:39:12.388Z",
   "weather": {
-    "temperature": 63,
-    "shortForecast": "Sunny",
-    "wind": "10 to 15 mph NW",
-    "detailedForecast": "Sunny, with a high near 63. Northwest wind 10 to 15 mph.",
+    "temperature": 40,
+    "shortForecast": "Clear",
+    "wind": "0 to 5 mph W",
+    "detailedForecast": "Clear, with a low around 40. West wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -113,20 +113,6 @@
       "startHour": 12
     },
     {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Spruce Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 6, 2026",
-      "timeLabel": "01:00 PM - 01:45 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7343",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-06",
-      "startHour": 13
-    },
-    {
       "title": "Food Insecurity Task Force: Arm in Arm",
       "source": "Municipality of Princeton",
       "dateLabel": "October 6, 2026",
@@ -154,20 +140,6 @@
       "startHour": 13
     },
     {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Redding Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 6, 2026",
-      "timeLabel": "02:00 PM - 02:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7395",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-06",
-      "startHour": 14
-    },
-    {
       "title": "McGraw Undergraduate Learning Program - Learning Concierge",
       "source": "Princeton University",
       "dateLabel": "Oct 6",
@@ -175,19 +147,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-7",
       "tags": [],
-      "isoDate": "2026-10-06",
-      "startHour": 15
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At YMCA",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 6, 2026",
-      "timeLabel": "03:15 PM - 04:15 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7135",
-      "tags": [
-        "practical"
-      ],
       "isoDate": "2026-10-06",
       "startHour": 15
     },
@@ -215,19 +174,6 @@
       "url": "https://princetonlibrary.libnet.info/event/17480000",
       "tags": [
         "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-06",
-      "startHour": 15
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At Redding Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 6, 2026",
-      "timeLabel": "03:30 PM - 04:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7549",
-      "tags": [
         "practical"
       ],
       "isoDate": "2026-10-06",
@@ -667,17 +613,6 @@
       "tags": [
         "culture"
       ],
-      "isoDate": "2026-10-07",
-      "startHour": 16
-    },
-    {
-      "title": "InterVarsity Small Group",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-1",
-      "tags": [],
       "isoDate": "2026-10-07",
       "startHour": 16
     },
@@ -2136,13 +2071,13 @@
       "iso": "2026-10-06",
       "label": "Oct 6",
       "weekday": "Tue",
-      "count": 26
+      "count": 22
     },
     {
       "iso": "2026-10-07",
       "label": "Oct 7",
       "weekday": "Wed",
-      "count": 36
+      "count": 35
     },
     {
       "iso": "2026-10-08",
@@ -2182,7 +2117,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 63F"
+      "detail": "Clear, 40F"
     },
     {
       "name": "Princeton University Events",
@@ -2200,7 +2135,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "31 calendar items"
+      "detail": "27 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
