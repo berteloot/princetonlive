@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-07T13:20:58.007Z",
+  "generatedAt": "2026-10-07T20:37:00.437Z",
   "weather": {
     "temperature": 69,
     "shortForecast": "Sunny",
-    "wind": "5 to 10 mph SW",
-    "detailedForecast": "Sunny, with a high near 69. Southwest wind 5 to 10 mph, with gusts as high as 25 mph.",
+    "wind": "5 to 10 mph S",
+    "detailedForecast": "Sunny, with a high near 69. South wind 5 to 10 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -24,19 +24,6 @@
       ],
       "isoDate": "2026-10-07",
       "startHour": 0
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Mobile Food Pantry",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 7, 2026",
-      "timeLabel": "09:00 AM - 11:30 AM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7601",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 9
     },
     {
       "title": "Drop in and Knit",
@@ -176,19 +163,6 @@
       ],
       "isoDate": "2026-10-07",
       "startHour": 13
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Alliance Church",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 7, 2026",
-      "timeLabel": "02:30 PM - 04:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7239",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 14
     },
     {
       "title": "Responsible AI: Gathering Research Materials from the Internet",
@@ -412,19 +386,6 @@
       "startHour": 17
     },
     {
-      "title": "Sound Journey",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "5:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/sound-journey",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 17
-    },
-    {
       "title": "Learn English at the Library (High Beginner)",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 07",
@@ -475,6 +436,17 @@
       "timeLabel": "8:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-5",
+      "tags": [],
+      "isoDate": "2026-10-07",
+      "startHour": 20
+    },
+    {
+      "title": "InterVarsity Small Group",
+      "source": "Princeton University",
+      "dateLabel": "Oct 7",
+      "timeLabel": "8:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-1",
       "tags": [],
       "isoDate": "2026-10-07",
       "startHour": 20
@@ -830,7 +802,7 @@
       "source": "Princeton Public Library",
       "dateLabel": "Oct 08",
       "timeLabel": "5:30pm - 7:30pm",
-      "location": "Princeton Public Library - Tech Center",
+      "location": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/event/17445675",
       "tags": [
         "rain",
@@ -2089,17 +2061,6 @@
       "startHour": 19
     },
     {
-      "title": "Princeton Christian Fellowship Bible studies",
-      "source": "Princeton University",
-      "dateLabel": "Oct 13",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-6",
-      "tags": [],
-      "isoDate": "2026-10-13",
-      "startHour": 20
-    },
-    {
       "title": "Akropolis Reed Quintet",
       "source": "Princeton University",
       "dateLabel": "Oct 13",
@@ -2111,6 +2072,17 @@
       ],
       "isoDate": "2026-10-13",
       "startHour": 20
+    },
+    {
+      "title": "Princeton Christian Fellowship Bible studies",
+      "source": "Princeton University",
+      "dateLabel": "Oct 13",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-6",
+      "tags": [],
+      "isoDate": "2026-10-13",
+      "startHour": 20
     }
   ],
   "days": [
@@ -2118,7 +2090,7 @@
       "iso": "2026-10-07",
       "label": "Oct 7",
       "weekday": "Wed",
-      "count": 35
+      "count": 33
     },
     {
       "iso": "2026-10-08",
@@ -2182,7 +2154,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "29 calendar items"
+      "detail": "27 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
