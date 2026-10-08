@@ -1,30 +1,15 @@
 {
-  "generatedAt": "2026-10-07T20:37:00.437Z",
+  "generatedAt": "2026-10-08T00:59:32.422Z",
   "weather": {
-    "temperature": 69,
-    "shortForecast": "Sunny",
-    "wind": "5 to 10 mph S",
-    "detailedForecast": "Sunny, with a high near 69. South wind 5 to 10 mph.",
+    "temperature": 54,
+    "shortForecast": "Clear",
+    "wind": "5 mph S",
+    "detailedForecast": "Clear, with a low around 54. South wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Out After Dark: Exhibition by Tamara Santibañez",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "12:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/out-after-dark-exhibition-tamara-santibanez-28",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 0
-    },
     {
       "title": "Drop in and Knit",
       "source": "Princeton Public Library",
@@ -35,21 +20,6 @@
       "tags": [
         "new",
         "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 10
-    },
-    {
-      "title": "Arts at Work: Comic Book Illustration Workshop with Jim Lee ‘86",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "10:30 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/arts-work-comic-book-illustration-workshop-jim-lee-86",
-      "tags": [
-        "culture",
-        "rain",
         "practical"
       ],
       "isoDate": "2026-10-07",
@@ -70,21 +40,6 @@
       "startHour": 10
     },
     {
-      "title": "Tour of Marquand Library",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "11:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/tour-marquand-library-4",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 11
-    },
-    {
       "title": "Kids: Baby Storytime",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 07",
@@ -96,31 +51,6 @@
       ],
       "isoDate": "2026-10-07",
       "startHour": 11
-    },
-    {
-      "title": "Crafternoon at the Commons: Paper Silhouette",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "11:45 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/crafternoon-commons-paper-silhouette",
-      "tags": [
-        "new",
-        "rain"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 11
-    },
-    {
-      "title": "The Trafalgar Squeeze of Global Liquidity",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/trafalgar-squeeze-global-liquidity",
-      "tags": [],
-      "isoDate": "2026-10-07",
-      "startHour": 12
     },
     {
       "title": "Kids: Baby Play Group",
@@ -136,70 +66,6 @@
       ],
       "isoDate": "2026-10-07",
       "startHour": 12
-    },
-    {
-      "title": "InterVarsity Faith and Freebies- Boba Bar",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "1:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-faith-and-freebies-boba-bar",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 13
-    },
-    {
-      "title": "Using Tools to Create Models in QGIS",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "1:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/using-tools-create-models-qgis-0",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 13
-    },
-    {
-      "title": "Responsible AI: Gathering Research Materials from the Internet",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/responsible-ai-gathering-research-materials-internet",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 15
-    },
-    {
-      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-8",
-      "tags": [],
-      "isoDate": "2026-10-07",
-      "startHour": 15
-    },
-    {
-      "title": "Pace Center Summer Internships Drop-in",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/pace-center-summer-internships-drop-1",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 15
     },
     {
       "title": "Kids & Teens: Homework Help",
@@ -244,110 +110,6 @@
       "startHour": 16
     },
     {
-      "title": "PBC General Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/pbc-general-meeting-0",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 16
-    },
-    {
-      "title": "Semester Study Abroad for the Social Sciences Info Session",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/semester-study-abroad-social-sciences-info-session",
-      "tags": [],
-      "isoDate": "2026-10-07",
-      "startHour": 16
-    },
-    {
-      "title": "Princeton University Public Lecture: Jill Pruetz",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-university-public-lecture-jill-pruetz",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 16
-    },
-    {
-      "title": "The Price of Democracy: The Revolutionary Power of Taxation in American History Book Talk with Vanessa Williamson",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/price-democracy-revolutionary-power-taxation-american-history-book-talk-vanessa",
-      "tags": [],
-      "isoDate": "2026-10-07",
-      "startHour": 16
-    },
-    {
-      "title": "Princeton Autonomous Vehicle Engineering Finance Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-autonomous-vehicle-engineering-finance-meeting",
-      "tags": [
-        "new",
-        "rain"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 17
-    },
-    {
-      "title": "YDSA Weekly Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/ydsa-weekly-meeting-11",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 17
-    },
-    {
-      "title": "Roderick Ferguson: “The Bookshop of Black Queer Diaspora: On Terror and the Difficult Miracle of Critical Intellection”",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/roderick-ferguson-bookshop-black-queer-diaspora-terror-and-difficult-miracle-critical",
-      "tags": [
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 17
-    },
-    {
-      "title": "Expeditions to Patagonia: 150 Years of Princeton Paleontology",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/expeditions-patagonia-150-years-princeton-paleontology",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 17
-    },
-    {
       "title": "Journaling Club",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 07",
@@ -358,30 +120,6 @@
         "family",
         "practical"
       ],
-      "isoDate": "2026-10-07",
-      "startHour": 17
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Cornerstone Kitchen",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 7, 2026",
-      "timeLabel": "05:00 PM - 06:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=6928",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-10-07",
-      "startHour": 17
-    },
-    {
-      "title": "Post-Graduations Paths in EEB",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "5:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/post-graduations-paths-eeb",
-      "tags": [],
       "isoDate": "2026-10-07",
       "startHour": 17
     },
@@ -428,28 +166,6 @@
       ],
       "isoDate": "2026-10-07",
       "startHour": 19
-    },
-    {
-      "title": "Princeton Christian Fellowship Bible studies",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-5",
-      "tags": [],
-      "isoDate": "2026-10-07",
-      "startHour": 20
-    },
-    {
-      "title": "InterVarsity Small Group",
-      "source": "Princeton University",
-      "dateLabel": "Oct 7",
-      "timeLabel": "8:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-1",
-      "tags": [],
-      "isoDate": "2026-10-07",
-      "startHour": 20
     },
     {
       "title": "Out After Dark: Exhibition by Tamara Santibañez",
@@ -2061,6 +1777,17 @@
       "startHour": 19
     },
     {
+      "title": "Princeton Christian Fellowship Bible studies",
+      "source": "Princeton University",
+      "dateLabel": "Oct 13",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-6",
+      "tags": [],
+      "isoDate": "2026-10-13",
+      "startHour": 20
+    },
+    {
       "title": "Akropolis Reed Quintet",
       "source": "Princeton University",
       "dateLabel": "Oct 13",
@@ -2072,17 +1799,6 @@
       ],
       "isoDate": "2026-10-13",
       "startHour": 20
-    },
-    {
-      "title": "Princeton Christian Fellowship Bible studies",
-      "source": "Princeton University",
-      "dateLabel": "Oct 13",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-6",
-      "tags": [],
-      "isoDate": "2026-10-13",
-      "startHour": 20
     }
   ],
   "days": [
@@ -2090,7 +1806,7 @@
       "iso": "2026-10-07",
       "label": "Oct 7",
       "weekday": "Wed",
-      "count": 33
+      "count": 11
     },
     {
       "iso": "2026-10-08",
@@ -2136,7 +1852,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 69F"
+      "detail": "Clear, 54F"
     },
     {
       "name": "Princeton University Events",
@@ -2154,7 +1870,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "27 calendar items"
+      "detail": "26 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
