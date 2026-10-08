@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-08T10:33:05.311Z",
+  "generatedAt": "2026-10-08T18:50:31.458Z",
   "weather": {
     "temperature": 74,
     "shortForecast": "Sunny",
-    "wind": "5 to 15 mph W",
-    "detailedForecast": "Sunny, with a high near 74. West wind 5 to 15 mph, with gusts as high as 30 mph.",
+    "wind": "15 mph W",
+    "detailedForecast": "Sunny, with a high near 74. West wind around 15 mph, with gusts as high as 30 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -258,32 +258,6 @@
       "startHour": 16
     },
     {
-      "title": "Fireside Chat with the CEO of Fizz",
-      "source": "Princeton University",
-      "dateLabel": "Oct 8",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/fireside-chat-ceo-fizz",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-08",
-      "startHour": 16
-    },
-    {
-      "title": "Reenactment of the Vietnamese Fisherman V. Ku Klux Klan",
-      "source": "Princeton University",
-      "dateLabel": "Oct 8",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/reenactment-vietnamese-fisherman-v-ku-klux-klan",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-08",
-      "startHour": 16
-    },
-    {
       "title": "Food Justice Undone: Lessons for Building a Better Movement",
       "source": "Princeton University",
       "dateLabel": "Oct 8",
@@ -293,6 +267,19 @@
       "tags": [
         "culture",
         "practical"
+      ],
+      "isoDate": "2026-10-08",
+      "startHour": 16
+    },
+    {
+      "title": "Fireside Chat with the CEO of Fizz",
+      "source": "Princeton University",
+      "dateLabel": "Oct 8",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/fireside-chat-ceo-fizz",
+      "tags": [
+        "culture"
       ],
       "isoDate": "2026-10-08",
       "startHour": 16
@@ -308,6 +295,19 @@
         "culture",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-10-08",
+      "startHour": 16
+    },
+    {
+      "title": "Reenactment of the Vietnamese Fisherman V. Ku Klux Klan",
+      "source": "Princeton University",
+      "dateLabel": "Oct 8",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/reenactment-vietnamese-fisherman-v-ku-klux-klan",
+      "tags": [
+        "culture"
       ],
       "isoDate": "2026-10-08",
       "startHour": 16
@@ -596,17 +596,6 @@
       "startHour": 17
     },
     {
-      "title": "Competitive Programming Club",
-      "source": "Princeton University",
-      "dateLabel": "Oct 9",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/competitive-programming-club-3",
-      "tags": [],
-      "isoDate": "2026-10-09",
-      "startHour": 17
-    },
-    {
       "title": "Field Hockey vs Dartmouth",
       "source": "Princeton University",
       "dateLabel": "Oct 9",
@@ -616,6 +605,17 @@
       "tags": [
         "culture"
       ],
+      "isoDate": "2026-10-09",
+      "startHour": 17
+    },
+    {
+      "title": "Competitive Programming Club",
+      "source": "Princeton University",
+      "dateLabel": "Oct 9",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/competitive-programming-club-3",
+      "tags": [],
       "isoDate": "2026-10-09",
       "startHour": 17
     },
@@ -1107,6 +1107,20 @@
       "startHour": 12
     },
     {
+      "title": "Tech: Google Slides",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 12",
+      "timeLabel": "1:00pm - 2:30pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/17436563",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-10-12",
+      "startHour": 13
+    },
+    {
       "title": "Kids: How to Solve a Rubik's Cube",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 12",
@@ -1115,20 +1129,6 @@
       "url": "https://princetonlibrary.libnet.info/event/17513128",
       "tags": [
         "family",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-12",
-      "startHour": 13
-    },
-    {
-      "title": "Tech: Google Slides",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 12",
-      "timeLabel": "1:00pm - 2:30pm",
-      "location": "Princeton Public Library - Tech Center",
-      "url": "https://princetonlibrary.libnet.info/event/17436563",
-      "tags": [
         "rain",
         "practical"
       ],
@@ -1192,19 +1192,6 @@
       "startHour": 16
     },
     {
-      "title": "Sex, Science, and Storytelling",
-      "source": "Princeton University",
-      "dateLabel": "Oct 12",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/sex-science-and-storytelling",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-12",
-      "startHour": 16
-    },
-    {
       "title": "Civic Leadership Council (Pace) Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 12",
@@ -1214,6 +1201,19 @@
       "tags": [
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-10-12",
+      "startHour": 16
+    },
+    {
+      "title": "Sex, Science, and Storytelling",
+      "source": "Princeton University",
+      "dateLabel": "Oct 12",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/sex-science-and-storytelling",
+      "tags": [
+        "culture"
       ],
       "isoDate": "2026-10-12",
       "startHour": 16
@@ -1807,6 +1807,19 @@
       "startHour": 15
     },
     {
+      "title": "English Conversation (virtual)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 14",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Virtual - Google Meet",
+      "url": "https://princetonlibrary.libnet.info/event/16837158",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-10-14",
+      "startHour": 16
+    },
+    {
       "title": "Kids & Teens: Code the Wild",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 14",
@@ -1815,19 +1828,6 @@
       "url": "https://princetonlibrary.libnet.info/event/17470024",
       "tags": [
         "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-14",
-      "startHour": 16
-    },
-    {
-      "title": "English Conversation (virtual)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 14",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Virtual - Google Meet",
-      "url": "https://princetonlibrary.libnet.info/event/16837158",
-      "tags": [
         "practical"
       ],
       "isoDate": "2026-10-14",
@@ -1912,6 +1912,20 @@
       "startHour": 17
     },
     {
+      "title": "Panel: Princeton's Community Forests",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 14",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17491647",
+      "tags": [
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-14",
+      "startHour": 18
+    },
+    {
       "title": "Learn English at the Library (High Beginner)",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 14",
@@ -1922,20 +1936,6 @@
         "new",
         "culture",
         "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-14",
-      "startHour": 18
-    },
-    {
-      "title": "Panel: Princeton's Community Forests",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 14",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/17491647",
-      "tags": [
-        "culture",
         "practical"
       ],
       "isoDate": "2026-10-14",
@@ -2059,7 +2059,7 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "64 events"
+      "detail": "65 events"
     },
     {
       "name": "Municipality of Princeton",
