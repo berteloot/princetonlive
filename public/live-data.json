@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-09T10:31:32.575Z",
+  "generatedAt": "2026-10-09T18:20:57.897Z",
   "weather": {
     "temperature": 72,
-    "shortForecast": "Sunny",
-    "wind": "5 to 15 mph W",
-    "detailedForecast": "Sunny, with a high near 72. West wind 5 to 15 mph, with gusts as high as 25 mph.",
+    "shortForecast": "Mostly Sunny",
+    "wind": "10 to 15 mph W",
+    "detailedForecast": "Mostly sunny, with a high near 72. West wind 10 to 15 mph, with gusts as high as 25 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -86,6 +86,19 @@
       "startHour": 10
     },
     {
+      "title": "30 Minutes Towards Better Bibliographies and Footnotes! (online)",
+      "source": "Princeton University",
+      "dateLabel": "Oct 9",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/30-minutes-towards-better-bibliographies-and-footnotes-online-5",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-10-09",
+      "startHour": 12
+    },
+    {
       "title": "Earth Shed Workshop: How to Build from the Ground Up",
       "source": "Princeton University",
       "dateLabel": "Oct 9",
@@ -94,19 +107,6 @@
       "url": "https://www.princeton.edu/events/2026/earth-shed-workshop-how-build-ground",
       "tags": [
         "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-09",
-      "startHour": 12
-    },
-    {
-      "title": "30 Minutes Towards Better Bibliographies and Footnotes! (online)",
-      "source": "Princeton University",
-      "dateLabel": "Oct 9",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/30-minutes-towards-better-bibliographies-and-footnotes-online-5",
-      "tags": [
         "rain"
       ],
       "isoDate": "2026-10-09",
@@ -137,6 +137,19 @@
       "startHour": 14
     },
     {
+      "title": "Field Hockey vs Dartmouth",
+      "source": "Princeton University",
+      "dateLabel": "Oct 9",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-dartmouth",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-10-09",
+      "startHour": 17
+    },
+    {
       "title": "Beyond Ivory Tower | Conversation with Dr. Ding Ding",
       "source": "Princeton University",
       "dateLabel": "Oct 9",
@@ -146,6 +159,17 @@
       "tags": [
         "practical"
       ],
+      "isoDate": "2026-10-09",
+      "startHour": 17
+    },
+    {
+      "title": "Competitive Programming Club",
+      "source": "Princeton University",
+      "dateLabel": "Oct 9",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/competitive-programming-club-3",
+      "tags": [],
       "isoDate": "2026-10-09",
       "startHour": 17
     },
@@ -161,30 +185,6 @@
         "rain",
         "practical"
       ],
-      "isoDate": "2026-10-09",
-      "startHour": 17
-    },
-    {
-      "title": "Field Hockey vs Dartmouth",
-      "source": "Princeton University",
-      "dateLabel": "Oct 9",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-dartmouth",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-09",
-      "startHour": 17
-    },
-    {
-      "title": "Competitive Programming Club",
-      "source": "Princeton University",
-      "dateLabel": "Oct 9",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/competitive-programming-club-3",
-      "tags": [],
       "isoDate": "2026-10-09",
       "startHour": 17
     },
@@ -419,6 +419,17 @@
       "startHour": 17
     },
     {
+      "title": "Women's Soccer vs Penn",
+      "source": "Princeton University",
+      "dateLabel": "Oct 10",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-penn",
+      "tags": [],
+      "isoDate": "2026-10-10",
+      "startHour": 19
+    },
+    {
       "title": "Magic: The Gathering Club Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 10",
@@ -429,17 +440,6 @@
         "new",
         "rain"
       ],
-      "isoDate": "2026-10-10",
-      "startHour": 19
-    },
-    {
-      "title": "Women's Soccer vs Penn",
-      "source": "Princeton University",
-      "dateLabel": "Oct 10",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-penn",
-      "tags": [],
       "isoDate": "2026-10-10",
       "startHour": 19
     },
@@ -1058,6 +1058,20 @@
       "startHour": 16
     },
     {
+      "title": "Musicology Colloquium with Benjamin Barson",
+      "source": "Princeton University",
+      "dateLabel": "Oct 13",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/musicology-colloquium-benjamin-barson",
+      "tags": [
+        "new",
+        "culture"
+      ],
+      "isoDate": "2026-10-13",
+      "startHour": 16
+    },
+    {
       "title": "Chekhov from Inside: What Embodying the Text Can Teach Us",
       "source": "Princeton University",
       "dateLabel": "Oct 13",
@@ -1069,20 +1083,6 @@
         "culture",
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-10-13",
-      "startHour": 16
-    },
-    {
-      "title": "Musicology Colloquium with Benjamin Barson",
-      "source": "Princeton University",
-      "dateLabel": "Oct 13",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/musicology-colloquium-benjamin-barson",
-      "tags": [
-        "new",
-        "culture"
       ],
       "isoDate": "2026-10-13",
       "startHour": 16
@@ -1322,17 +1322,6 @@
       "startHour": 14
     },
     {
-      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
-      "source": "Princeton University",
-      "dateLabel": "Oct 14",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-10",
-      "tags": [],
-      "isoDate": "2026-10-14",
-      "startHour": 15
-    },
-    {
       "title": "Pace Center Summer Internships Drop-in",
       "source": "Princeton University",
       "dateLabel": "Oct 14",
@@ -1342,6 +1331,17 @@
       "tags": [
         "new"
       ],
+      "isoDate": "2026-10-14",
+      "startHour": 15
+    },
+    {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Oct 14",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-10",
+      "tags": [],
       "isoDate": "2026-10-14",
       "startHour": 15
     },
@@ -1387,6 +1387,19 @@
       "startHour": 16
     },
     {
+      "title": "Faculty Panel: “What is an American?”: Artists Reflect",
+      "source": "Princeton University",
+      "dateLabel": "Oct 14",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/faculty-panel-what-american-artists-reflect",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-10-14",
+      "startHour": 16
+    },
+    {
       "title": "Is Putin Really Winning? Peter Pomeranzev, Johns Hopkins University",
       "source": "Princeton University",
       "dateLabel": "Oct 14",
@@ -1395,19 +1408,6 @@
       "url": "https://www.princeton.edu/events/2026/putin-really-winning-peter-pomeranzev-johns-hopkins-university",
       "tags": [
         "new",
-        "culture"
-      ],
-      "isoDate": "2026-10-14",
-      "startHour": 16
-    },
-    {
-      "title": "Faculty Panel: “What is an American?”: Artists Reflect",
-      "source": "Princeton University",
-      "dateLabel": "Oct 14",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/faculty-panel-what-american-artists-reflect",
-      "tags": [
         "culture"
       ],
       "isoDate": "2026-10-14",
@@ -1800,19 +1800,6 @@
       "startHour": 16
     },
     {
-      "title": "Birding Society Migration Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Oct 15",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/birding-society-migration-meeting",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 16
-    },
-    {
       "title": "Composition Colloquium with Michael R. Jackson",
       "source": "Princeton University",
       "dateLabel": "Oct 15",
@@ -1823,6 +1810,19 @@
         "new",
         "family",
         "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-15",
+      "startHour": 16
+    },
+    {
+      "title": "Birding Society Migration Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Oct 15",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/birding-society-migration-meeting",
+      "tags": [
         "rain"
       ],
       "isoDate": "2026-10-15",
@@ -1995,7 +1995,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 72F"
+      "detail": "Mostly Sunny, 72F"
     },
     {
       "name": "Princeton University Events",
