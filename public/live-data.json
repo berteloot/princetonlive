@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-10T17:20:14.993Z",
+  "generatedAt": "2026-10-10T21:42:45.909Z",
   "weather": {
-    "temperature": 70,
+    "temperature": 71,
     "shortForecast": "Partly Sunny",
     "wind": "5 mph E",
-    "detailedForecast": "Partly sunny, with a high near 70. East wind around 5 mph.",
+    "detailedForecast": "Partly sunny, with a high near 71. East wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -49,19 +49,6 @@
       "tags": [
         "family",
         "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-10",
-      "startHour": 10
-    },
-    {
-      "title": "Shred Fest",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 10, 2026",
-      "timeLabel": "10:00 AM - 02:00 PM",
-      "location": "Westminster Choir College Parking Lot 101 Walnut Lane (Entrance on Franklin)Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8104",
-      "tags": [
         "practical"
       ],
       "isoDate": "2026-10-10",
@@ -1669,6 +1656,19 @@
       "startHour": 18
     },
     {
+      "title": "Food Insecurity Task Force: Princeton Alliance Church",
+      "source": "Municipality of Princeton",
+      "dateLabel": "October 15, 2026",
+      "timeLabel": "06:00 PM - 07:30 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7292",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-10-15",
+      "startHour": 18
+    },
+    {
       "title": "CARES Meeting",
       "source": "Municipality of Princeton",
       "dateLabel": "October 15, 2026",
@@ -1677,19 +1677,6 @@
       "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8017",
       "tags": [
         "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 18
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Alliance Church",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 15, 2026",
-      "timeLabel": "06:00 PM - 07:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7292",
-      "tags": [
         "practical"
       ],
       "isoDate": "2026-10-15",
@@ -1872,7 +1859,7 @@
       "iso": "2026-10-10",
       "label": "Oct 10",
       "weekday": "Sat",
-      "count": 19
+      "count": 18
     },
     {
       "iso": "2026-10-11",
@@ -1918,7 +1905,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Partly Sunny, 70F"
+      "detail": "Partly Sunny, 71F"
     },
     {
       "name": "Princeton University Events",
@@ -1936,7 +1923,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "24 calendar items"
+      "detail": "23 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
