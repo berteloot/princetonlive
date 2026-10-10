@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-10T09:48:53.928Z",
+  "generatedAt": "2026-10-10T17:20:14.993Z",
   "weather": {
-    "temperature": 46,
-    "shortForecast": "Mostly Cloudy",
-    "wind": "0 mph ",
-    "detailedForecast": "Mostly cloudy, with a low around 46. North wind around 0 mph.",
+    "temperature": 70,
+    "shortForecast": "Partly Sunny",
+    "wind": "5 mph E",
+    "detailedForecast": "Partly sunny, with a high near 70. East wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -131,7 +131,7 @@
       "source": "Princeton Public Library",
       "dateLabel": "Oct 10",
       "timeLabel": "2:00pm - 3:00pm",
-      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "location": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/event/17364027",
       "tags": [
         "new",
@@ -1918,7 +1918,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Cloudy, 46F"
+      "detail": "Partly Sunny, 70F"
     },
     {
       "name": "Princeton University Events",
