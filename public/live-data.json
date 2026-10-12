@@ -1,52 +1,15 @@
 {
-  "generatedAt": "2026-10-11T19:33:13.614Z",
+  "generatedAt": "2026-10-12T00:31:33.039Z",
   "weather": {
-    "temperature": 64,
-    "shortForecast": "Rain",
-    "wind": "5 to 10 mph E",
-    "detailedForecast": "Rain before 5pm, then rain and a slight chance of thunderstorms. Cloudy, with a high near 64. East wind 5 to 10 mph, with gusts as high as 25 mph. Chance of precipitation is 100%. New rainfall amounts between 1 and 2 inches possible.",
+    "temperature": 56,
+    "shortForecast": "Showers And Thunderstorms Likely",
+    "wind": "5 to 10 mph NE",
+    "detailedForecast": "Showers and thunderstorms likely. Cloudy, with a low around 56. Northeast wind 5 to 10 mph. Chance of precipitation is 70%. New rainfall amounts between a quarter and half of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Out After Dark: Exhibition by Tamara Santibañez",
-      "source": "Princeton University",
-      "dateLabel": "Oct 11",
-      "timeLabel": "12:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/out-after-dark-exhibition-tamara-santibanez-32",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-11",
-      "startHour": 0
-    },
-    {
-      "title": "Worship Service in the University Chapel",
-      "source": "Princeton University",
-      "dateLabel": "Oct 11",
-      "timeLabel": "11:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/worship-service-university-chapel-5",
-      "tags": [],
-      "isoDate": "2026-10-11",
-      "startHour": 11
-    },
-    {
-      "title": "Field Hockey vs Northwestern",
-      "source": "Princeton University",
-      "dateLabel": "Oct 11",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-northwestern",
-      "tags": [],
-      "isoDate": "2026-10-11",
-      "startHour": 12
-    },
     {
       "title": "Friends & Foundation Annual Book Sale",
       "source": "Princeton Public Library",
@@ -77,21 +40,6 @@
       "startHour": 13
     },
     {
-      "title": "Quite Contrary by Marlie Kass ‘27",
-      "source": "Princeton University",
-      "dateLabel": "Oct 11",
-      "timeLabel": "2:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/quite-contrary-marlie-kass-27-1",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-11",
-      "startHour": 14
-    },
-    {
       "title": "Special Event: Feelin' Stronger Every Day",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 11",
@@ -101,19 +49,6 @@
       "tags": [
         "family",
         "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-11",
-      "startHour": 14
-    },
-    {
-      "title": "Feelin' Stronger Every Day",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 11, 2026",
-      "timeLabel": "02:00 PM - 04:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8137",
-      "tags": [
         "practical"
       ],
       "isoDate": "2026-10-11",
@@ -1818,7 +1753,7 @@
       "iso": "2026-10-11",
       "label": "Oct 11",
       "weekday": "Sun",
-      "count": 8
+      "count": 3
     },
     {
       "iso": "2026-10-12",
@@ -1864,7 +1799,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Rain, 64F"
+      "detail": "Showers And Thunderstorms Likely, 56F"
     },
     {
       "name": "Princeton University Events",
@@ -1882,7 +1817,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "23 calendar items"
+      "detail": "22 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
