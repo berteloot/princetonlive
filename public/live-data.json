@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-12T10:46:52.505Z",
+  "generatedAt": "2026-10-12T21:15:57.081Z",
   "weather": {
     "temperature": 74,
-    "shortForecast": "Chance Showers And Thunderstorms then Mostly Sunny",
-    "wind": "5 to 10 mph N",
-    "detailedForecast": "A chance of showers and thunderstorms before 7am, then a slight chance of showers and thunderstorms between 7am and 8am. Mostly sunny, with a high near 74. North wind 5 to 10 mph. Chance of precipitation is 40%. New rainfall amounts less than a tenth of an inch possible.",
+    "shortForecast": "Sunny",
+    "wind": "5 mph NW",
+    "detailedForecast": "Sunny, with a high near 74. Northwest wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -477,12 +477,12 @@
       "startHour": 16
     },
     {
-      "title": "Architects of Liberation: Modernism in Western Africa",
+      "title": "Public Speaking Practice Sessions",
       "source": "Princeton University",
       "dateLabel": "Oct 13",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/architects-liberation-modernism-western-africa",
+      "url": "https://www.princeton.edu/events/2026/public-speaking-practice-sessions-0",
       "tags": [
         "culture",
         "rain"
@@ -491,12 +491,12 @@
       "startHour": 17
     },
     {
-      "title": "Public Speaking Practice Sessions",
+      "title": "Architects of Liberation: Modernism in Western Africa",
       "source": "Princeton University",
       "dateLabel": "Oct 13",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/public-speaking-practice-sessions-0",
+      "url": "https://www.princeton.edu/events/2026/architects-liberation-modernism-western-africa",
       "tags": [
         "culture",
         "rain"
@@ -562,6 +562,17 @@
       "startHour": 19
     },
     {
+      "title": "Princeton Christian Fellowship Bible studies",
+      "source": "Princeton University",
+      "dateLabel": "Oct 13",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-6",
+      "tags": [],
+      "isoDate": "2026-10-13",
+      "startHour": 20
+    },
+    {
       "title": "Akropolis Reed Quintet",
       "source": "Princeton University",
       "dateLabel": "Oct 13",
@@ -571,17 +582,6 @@
       "tags": [
         "new"
       ],
-      "isoDate": "2026-10-13",
-      "startHour": 20
-    },
-    {
-      "title": "Princeton Christian Fellowship Bible studies",
-      "source": "Princeton University",
-      "dateLabel": "Oct 13",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-6",
-      "tags": [],
       "isoDate": "2026-10-13",
       "startHour": 20
     },
@@ -776,20 +776,6 @@
       "startHour": 16
     },
     {
-      "title": "Is Putin Really Winning? Peter Pomeranzev, Johns Hopkins University",
-      "source": "Princeton University",
-      "dateLabel": "Oct 14",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/putin-really-winning-peter-pomeranzev-johns-hopkins-university",
-      "tags": [
-        "new",
-        "culture"
-      ],
-      "isoDate": "2026-10-14",
-      "startHour": 16
-    },
-    {
       "title": "Faculty Panel: “What is an American?”: Artists Reflect",
       "source": "Princeton University",
       "dateLabel": "Oct 14",
@@ -810,6 +796,20 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-2",
       "tags": [],
+      "isoDate": "2026-10-14",
+      "startHour": 16
+    },
+    {
+      "title": "Is Putin Really Winning? Peter Pomeranzev, Johns Hopkins University",
+      "source": "Princeton University",
+      "dateLabel": "Oct 14",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/putin-really-winning-peter-pomeranzev-johns-hopkins-university",
+      "tags": [
+        "new",
+        "culture"
+      ],
       "isoDate": "2026-10-14",
       "startHour": 16
     },
@@ -1189,19 +1189,6 @@
       "startHour": 16
     },
     {
-      "title": "Birding Society Migration Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Oct 15",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/birding-society-migration-meeting",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 16
-    },
-    {
       "title": "Composition Colloquium with Michael R. Jackson",
       "source": "Princeton University",
       "dateLabel": "Oct 15",
@@ -1212,6 +1199,19 @@
         "new",
         "family",
         "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-15",
+      "startHour": 16
+    },
+    {
+      "title": "Birding Society Migration Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Oct 15",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/birding-society-migration-meeting",
+      "tags": [
         "rain"
       ],
       "isoDate": "2026-10-15",
@@ -1819,7 +1819,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Chance Showers And Thunderstorms then Mostly Sunny, 74F"
+      "detail": "Sunny, 74F"
     },
     {
       "name": "Princeton University Events",
