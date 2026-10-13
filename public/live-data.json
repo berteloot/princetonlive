@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-12T21:15:57.081Z",
+  "generatedAt": "2026-10-13T02:35:52.499Z",
   "weather": {
-    "temperature": 74,
-    "shortForecast": "Sunny",
-    "wind": "5 mph NW",
-    "detailedForecast": "Sunny, with a high near 74. Northwest wind around 5 mph.",
+    "temperature": 54,
+    "shortForecast": "Patchy Fog",
+    "wind": "0 mph ",
+    "detailedForecast": "Patchy fog. Partly cloudy, with a low around 54. West wind around 0 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -18,21 +18,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/midterm-examination-week",
       "tags": [],
-      "isoDate": "2026-10-12",
-      "startHour": 0
-    },
-    {
-      "title": "Out After Dark: Exhibition by Tamara Santibañez",
-      "source": "Princeton University",
-      "dateLabel": "Oct 12",
-      "timeLabel": "12:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/out-after-dark-exhibition-tamara-santibanez-33",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
       "isoDate": "2026-10-12",
       "startHour": 0
     },
@@ -151,46 +136,6 @@
       "startHour": 16
     },
     {
-      "title": "Liar’s Kingdom: How to Stop Trump’s Deceit and Save America: Author Andrew Weissmann '80 in Conversation with Kim Lane Scheppele",
-      "source": "Princeton University",
-      "dateLabel": "Oct 12",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/liars-kingdom-how-stop-trumps-deceit-and-save-america-author-andrew-weissmann-80",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-12",
-      "startHour": 16
-    },
-    {
-      "title": "Sex, Science, and Storytelling",
-      "source": "Princeton University",
-      "dateLabel": "Oct 12",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/sex-science-and-storytelling",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-12",
-      "startHour": 16
-    },
-    {
-      "title": "Civic Leadership Council (Pace) Weekly Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Oct 12",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/civic-leadership-council-pace-weekly-meeting-4",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-12",
-      "startHour": 16
-    },
-    {
       "title": "Workshop: Writers Room Poets",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 12",
@@ -227,19 +172,6 @@
       "tags": [
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-10-12",
-      "startHour": 19
-    },
-    {
-      "title": "PCF Frosh Bible study",
-      "source": "Princeton University",
-      "dateLabel": "Oct 12",
-      "timeLabel": "7:45 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/pcf-frosh-bible-study-3",
-      "tags": [
-        "new"
       ],
       "isoDate": "2026-10-12",
       "startHour": 19
@@ -1773,7 +1705,7 @@
       "iso": "2026-10-12",
       "label": "Oct 12",
       "weekday": "Mon",
-      "count": 17
+      "count": 12
     },
     {
       "iso": "2026-10-13",
@@ -1819,7 +1751,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 74F"
+      "detail": "Patchy Fog, 54F"
     },
     {
       "name": "Princeton University Events",
