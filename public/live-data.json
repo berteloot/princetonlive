@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-14T11:49:53.682Z",
+  "generatedAt": "2026-10-14T17:08:50.571Z",
   "weather": {
     "temperature": 82,
-    "shortForecast": "Chance Rain Showers",
+    "shortForecast": "Slight Chance Rain Showers",
     "wind": "5 to 10 mph W",
-    "detailedForecast": "A chance of rain showers between 11am and 3pm. Mostly sunny, with a high near 82. West wind 5 to 10 mph. Chance of precipitation is 30%.",
+    "detailedForecast": "A slight chance of rain showers between 2pm and 3pm. Partly sunny, with a high near 82. West wind 5 to 10 mph. Chance of precipitation is 20%.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -201,6 +201,20 @@
       "startHour": 16
     },
     {
+      "title": "Youth Movements and Democracy in India",
+      "source": "Princeton University",
+      "dateLabel": "Oct 14",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/youth-movements-and-democracy-india",
+      "tags": [
+        "new",
+        "family"
+      ],
+      "isoDate": "2026-10-14",
+      "startHour": 16
+    },
+    {
       "title": "Is Putin Really Winning? Peter Pomeranzev, Johns Hopkins University",
       "source": "Princeton University",
       "dateLabel": "Oct 14",
@@ -223,20 +237,6 @@
       "url": "https://www.princeton.edu/events/2026/faculty-panel-what-american-artists-reflect",
       "tags": [
         "culture"
-      ],
-      "isoDate": "2026-10-14",
-      "startHour": 16
-    },
-    {
-      "title": "Youth Movements and Democracy in India",
-      "source": "Princeton University",
-      "dateLabel": "Oct 14",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/youth-movements-and-democracy-india",
-      "tags": [
-        "new",
-        "family"
       ],
       "isoDate": "2026-10-14",
       "startHour": 16
@@ -1658,7 +1658,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Chance Rain Showers, 82F"
+      "detail": "Slight Chance Rain Showers, 82F"
     },
     {
       "name": "Princeton University Events",
