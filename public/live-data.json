@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-14T17:08:50.571Z",
+  "generatedAt": "2026-10-14T21:40:00.574Z",
   "weather": {
-    "temperature": 82,
-    "shortForecast": "Slight Chance Rain Showers",
-    "wind": "5 to 10 mph W",
-    "detailedForecast": "A slight chance of rain showers between 2pm and 3pm. Partly sunny, with a high near 82. West wind 5 to 10 mph. Chance of precipitation is 20%.",
+    "temperature": 80,
+    "shortForecast": "Partly Sunny",
+    "wind": "5 mph W",
+    "detailedForecast": "Partly sunny, with a high near 80. West wind around 5 mph. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -123,19 +123,6 @@
       "startHour": 13
     },
     {
-      "title": "Food Insecurity Task Force: Princeton Alliance Church",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 14, 2026",
-      "timeLabel": "02:30 PM - 04:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7240",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-10-14",
-      "startHour": 14
-    },
-    {
       "title": "McGraw Undergraduate Learning Program - Learning Concierge",
       "source": "Princeton University",
       "dateLabel": "Oct 14",
@@ -229,6 +216,17 @@
       "startHour": 16
     },
     {
+      "title": "InterVarsity Small Group",
+      "source": "Princeton University",
+      "dateLabel": "Oct 14",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-2",
+      "tags": [],
+      "isoDate": "2026-10-14",
+      "startHour": 16
+    },
+    {
       "title": "Faculty Panel: “What is an American?”: Artists Reflect",
       "source": "Princeton University",
       "dateLabel": "Oct 14",
@@ -238,17 +236,6 @@
       "tags": [
         "culture"
       ],
-      "isoDate": "2026-10-14",
-      "startHour": 16
-    },
-    {
-      "title": "InterVarsity Small Group",
-      "source": "Princeton University",
-      "dateLabel": "Oct 14",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-2",
-      "tags": [],
       "isoDate": "2026-10-14",
       "startHour": 16
     },
@@ -716,6 +703,19 @@
       "startHour": 18
     },
     {
+      "title": "Food Insecurity Task Force: Princeton Alliance Church",
+      "source": "Municipality of Princeton",
+      "dateLabel": "October 15, 2026",
+      "timeLabel": "06:00 PM - 07:30 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7292",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-10-15",
+      "startHour": 18
+    },
+    {
       "title": "CARES Meeting",
       "source": "Municipality of Princeton",
       "dateLabel": "October 15, 2026",
@@ -724,19 +724,6 @@
       "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8017",
       "tags": [
         "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 18
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Alliance Church",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 15, 2026",
-      "timeLabel": "06:00 PM - 07:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7292",
-      "tags": [
         "practical"
       ],
       "isoDate": "2026-10-15",
@@ -879,17 +866,6 @@
       "startHour": 14
     },
     {
-      "title": "Competitive Programming Club",
-      "source": "Princeton University",
-      "dateLabel": "Oct 16",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/competitive-programming-club-4",
-      "tags": [],
-      "isoDate": "2026-10-16",
-      "startHour": 17
-    },
-    {
       "title": "Cross Country - Joe Handelman '52 Princeton Fall Classic",
       "source": "Princeton University",
       "dateLabel": "Oct 16",
@@ -899,6 +875,17 @@
       "tags": [
         "rain"
       ],
+      "isoDate": "2026-10-16",
+      "startHour": 17
+    },
+    {
+      "title": "Competitive Programming Club",
+      "source": "Princeton University",
+      "dateLabel": "Oct 16",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/competitive-programming-club-4",
+      "tags": [],
       "isoDate": "2026-10-16",
       "startHour": 17
     },
@@ -1444,19 +1431,6 @@
       "startHour": 13
     },
     {
-      "title": "Food Insecurity Task Force: Arm in Arm",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 20, 2026",
-      "timeLabel": "01:00 PM - 07:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7756",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-10-20",
-      "startHour": 13
-    },
-    {
       "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Spruce Circle",
       "source": "Municipality of Princeton",
       "dateLabel": "October 20, 2026",
@@ -1465,6 +1439,19 @@
       "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7345",
       "tags": [
         "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-20",
+      "startHour": 13
+    },
+    {
+      "title": "Food Insecurity Task Force: Arm in Arm",
+      "source": "Municipality of Princeton",
+      "dateLabel": "October 20, 2026",
+      "timeLabel": "01:00 PM - 07:00 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7756",
+      "tags": [
         "practical"
       ],
       "isoDate": "2026-10-20",
@@ -1612,7 +1599,7 @@
       "iso": "2026-10-14",
       "label": "Oct 14",
       "weekday": "Wed",
-      "count": 27
+      "count": 26
     },
     {
       "iso": "2026-10-15",
@@ -1658,7 +1645,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Slight Chance Rain Showers, 82F"
+      "detail": "Partly Sunny, 80F"
     },
     {
       "name": "Princeton University Events",
