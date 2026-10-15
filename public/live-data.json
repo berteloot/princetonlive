@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-15T04:36:33.195Z",
+  "generatedAt": "2026-10-15T11:26:43.277Z",
   "weather": {
-    "temperature": 53,
-    "shortForecast": "Partly Cloudy",
-    "wind": "5 to 10 mph N",
-    "detailedForecast": "Partly cloudy, with a low around 53. North wind 5 to 10 mph.",
+    "temperature": 64,
+    "shortForecast": "Mostly Sunny",
+    "wind": "5 mph NE",
+    "detailedForecast": "Mostly sunny, with a high near 64. Northeast wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -1570,7 +1570,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Partly Cloudy, 53F"
+      "detail": "Mostly Sunny, 64F"
     },
     {
       "name": "Princeton University Events",
