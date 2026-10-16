@@ -1,13 +1,21 @@
 {
-  "generatedAt": "2026-10-16T16:37:48.959Z",
+  "generatedAt": "2026-10-16T21:06:54.008Z",
   "weather": {
     "temperature": 80,
     "shortForecast": "Chance Showers And Thunderstorms",
-    "wind": "10 to 15 mph SW",
-    "detailedForecast": "A chance of rain showers before 1pm, then a chance of showers and thunderstorms. Mostly cloudy, with a high near 80. Southwest wind 10 to 15 mph. Chance of precipitation is 40%. New rainfall amounts between a tenth and quarter of an inch possible.",
+    "wind": "15 mph SW",
+    "detailedForecast": "A chance of showers and thunderstorms. Partly sunny, with a high near 80. Southwest wind around 15 mph. Chance of precipitation is 30%. New rainfall amounts between a tenth and quarter of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
-  "alerts": [],
+  "alerts": [
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.24d8f1bf359c11b269c0d96f2d1201c561dda55a.001.1",
+      "event": "Severe Thunderstorm Watch",
+      "headline": "Severe Thunderstorm Watch issued October 16 at 3:52PM EDT until October 16 at 10:00PM EDT by NWS Mount Holly NJ",
+      "severity": "Severe",
+      "url": null
+    }
+  ],
   "alertsAvailable": true,
   "events": [
     {
@@ -764,12 +772,12 @@
       "startHour": 15
     },
     {
-      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At Redding Circle",
+      "title": "Council Virtual Closed Session",
       "source": "Municipality of Princeton",
       "dateLabel": "October 20, 2026",
-      "timeLabel": "03:30 PM - 04:30 PM",
+      "timeLabel": "03:30 PM - 11:59 PM",
       "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7551",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7907",
       "tags": [
         "practical"
       ],
@@ -777,12 +785,12 @@
       "startHour": 15
     },
     {
-      "title": "Council Virtual Closed Session",
+      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At Redding Circle",
       "source": "Municipality of Princeton",
       "dateLabel": "October 20, 2026",
-      "timeLabel": "03:30 PM - 11:59 PM",
+      "timeLabel": "03:30 PM - 04:30 PM",
       "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7907",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7551",
       "tags": [
         "practical"
       ],
@@ -1379,7 +1387,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "18 calendar items"
+      "detail": "17 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
