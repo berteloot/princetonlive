@@ -1,397 +1,15 @@
 {
-  "generatedAt": "2026-10-15T16:59:24.741Z",
+  "generatedAt": "2026-10-16T04:30:28.593Z",
   "weather": {
-    "temperature": 64,
-    "shortForecast": "Mostly Sunny",
-    "wind": "5 mph E",
-    "detailedForecast": "Mostly sunny, with a high near 64. East wind around 5 mph.",
+    "temperature": 54,
+    "shortForecast": "Showers And Thunderstorms Likely",
+    "wind": "5 mph SE",
+    "detailedForecast": "A chance of rain showers between 2am and 5am, then showers and thunderstorms likely. Cloudy, with a low around 54. Southeast wind around 5 mph. Chance of precipitation is 60%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Out After Dark: Exhibition by Tamara Santibañez",
-      "source": "Princeton University",
-      "dateLabel": "Oct 15",
-      "timeLabel": "12:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/out-after-dark-exhibition-tamara-santibanez-36",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 0
-    },
-    {
-      "title": "Women's Tennis - ITA Regionals",
-      "source": "Princeton University",
-      "dateLabel": "Oct 15",
-      "timeLabel": "8:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-tennis-ita-regionals",
-      "tags": [],
-      "isoDate": "2026-10-15",
-      "startHour": 8
-    },
-    {
-      "title": "English Conversation",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 15",
-      "timeLabel": "10:00am - 11:30am",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/17260672",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 10
-    },
-    {
-      "title": "Friends of Princeton University Library: Tour of ReCAP",
-      "source": "Princeton University",
-      "dateLabel": "Oct 15",
-      "timeLabel": "10:30 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/friends-princeton-university-library-tour-recap",
-      "tags": [
-        "new",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Storytime!",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 15",
-      "timeLabel": "10:30am - 11:00am",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14661278",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 10
-    },
-    {
-      "title": "Research Data Stewardship Series: Data Organization",
-      "source": "Princeton University",
-      "dateLabel": "Oct 15",
-      "timeLabel": "11:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/research-data-stewardship-series-data-organization-0",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 11
-    },
-    {
-      "title": "Kids: Baby Storytime",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 15",
-      "timeLabel": "11:30am - 12:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14661592",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 11
-    },
-    {
-      "title": "Global Existential Challenges Seminar Series: Middle East: Global Wars and Contemporary Challenges",
-      "source": "Princeton University",
-      "dateLabel": "Oct 15",
-      "timeLabel": "11:45 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/global-existential-challenges-seminar-series-middle-east-global-wars-and-contemporary",
-      "tags": [],
-      "isoDate": "2026-10-15",
-      "startHour": 11
-    },
-    {
-      "title": "William Pierson Field Lecture hosted by CITP",
-      "source": "Princeton University",
-      "dateLabel": "Oct 15",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/william-pierson-field-lecture-hosted-citp",
-      "tags": [
-        "new",
-        "family",
-        "culture"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 12
-    },
-    {
-      "title": "Live Music Meditation: Sandeep Das, Tabla (Princeton University Concerts)",
-      "source": "Princeton University",
-      "dateLabel": "Oct 15",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/live-music-meditation-sandeep-das-tabla-princeton-university-concerts",
-      "tags": [
-        "new",
-        "culture"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 12
-    },
-    {
-      "title": "Mobile Office Hours: Sen. Andrew Zwicker's Office",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 15",
-      "timeLabel": "12:00pm - 2:00pm",
-      "location": "Princeton Public Library - Lobby",
-      "url": "https://princetonlibrary.libnet.info/event/17617554",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 12
-    },
-    {
-      "title": "Kids: Baby Play Group",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 15",
-      "timeLabel": "12:00pm - 1:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14662545",
-      "tags": [
-        "new",
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 12
-    },
-    {
-      "title": "After Noon Concert Series",
-      "source": "Princeton University",
-      "dateLabel": "Oct 15",
-      "timeLabel": "12:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/after-noon-concert-series-5",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 12
-    },
-    {
-      "title": "Learn English at the Library (Intermediate)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 15",
-      "timeLabel": "12:30pm - 2:30pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/17154721",
-      "tags": [
-        "new",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 12
-    },
-    {
-      "title": "Special Collections Showcase",
-      "source": "Princeton University",
-      "dateLabel": "Oct 15",
-      "timeLabel": "2:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/special-collections-showcase-3",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 14
-    },
-    {
-      "title": "Kids & Teens: Homework Help",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 15",
-      "timeLabel": "3:30pm - 6:00pm",
-      "location": "Princeton Public Library - CoLab Space",
-      "url": "https://princetonlibrary.libnet.info/event/17507789",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 15
-    },
-    {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Griggs Farm",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 15, 2026",
-      "timeLabel": "03:30 PM - 04:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7446",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 15
-    },
-    {
-      "title": "Kids: 3D Doodling Workshop",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 15",
-      "timeLabel": "4:00pm - 5:00pm",
-      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
-      "url": "https://princetonlibrary.libnet.info/event/17236898",
-      "tags": [
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 16
-    },
-    {
-      "title": "Composition Colloquium with Michael R. Jackson",
-      "source": "Princeton University",
-      "dateLabel": "Oct 15",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/composition-colloquium-michael-r-jackson",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 16
-    },
-    {
-      "title": "Tech: Advanced Adobe Photoshop",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 15",
-      "timeLabel": "5:30pm - 7:30pm",
-      "location": "Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/17445681",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 17
-    },
-    {
-      "title": "Crafts: Stitch Club Princeton",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 15",
-      "timeLabel": "5:30pm - 7:30pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/17245048",
-      "tags": [
-        "new",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 17
-    },
-    {
-      "title": "Sandeep Das, Tabla & Friends (Princeton University Concerts)",
-      "source": "Princeton University",
-      "dateLabel": "Oct 15",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/sandeep-das-tabla-friends-princeton-university-concerts",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 18
-    },
-    {
-      "title": "U.S. Citizenship Test Prep Course",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 15",
-      "timeLabel": "6:00pm - 8:00pm",
-      "location": "Zoom - Zoom",
-      "url": "https://princetonlibrary.libnet.info/event/17235593",
-      "tags": [
-        "new",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 18
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Alliance Church",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 15, 2026",
-      "timeLabel": "06:00 PM - 07:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7292",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 18
-    },
-    {
-      "title": "CARES Meeting",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 15, 2026",
-      "timeLabel": "06:00 PM - 08:00 PM",
-      "location": "1 Monument DrivePrinceton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8017",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 18
-    },
-    {
-      "title": "PSO Soundtracks: Meet the Bassoon",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 15",
-      "timeLabel": "6:30pm - 7:30pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/17485472",
-      "tags": [
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 18
-    },
-    {
-      "title": "Sandeep Das, Tabla & Friends (Princeton University Concerts)",
-      "source": "Princeton University",
-      "dateLabel": "Oct 15",
-      "timeLabel": "8:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/sandeep-das-tabla-friends-princeton-university-concerts-0",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-15",
-      "startHour": 20
-    },
     {
       "title": "Out After Dark: Exhibition by Tamara Santibañez",
       "source": "Princeton University",
@@ -500,6 +118,17 @@
       "startHour": 14
     },
     {
+      "title": "Competitive Programming Club",
+      "source": "Princeton University",
+      "dateLabel": "Oct 16",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/competitive-programming-club-4",
+      "tags": [],
+      "isoDate": "2026-10-16",
+      "startHour": 17
+    },
+    {
       "title": "Cross Country - Joe Handelman '52 Princeton Fall Classic",
       "source": "Princeton University",
       "dateLabel": "Oct 16",
@@ -509,17 +138,6 @@
       "tags": [
         "rain"
       ],
-      "isoDate": "2026-10-16",
-      "startHour": 17
-    },
-    {
-      "title": "Competitive Programming Club",
-      "source": "Princeton University",
-      "dateLabel": "Oct 16",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/competitive-programming-club-4",
-      "tags": [],
       "isoDate": "2026-10-16",
       "startHour": 17
     },
@@ -1146,12 +764,12 @@
       "startHour": 15
     },
     {
-      "title": "Council Virtual Closed Session",
+      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At Redding Circle",
       "source": "Municipality of Princeton",
       "dateLabel": "October 20, 2026",
-      "timeLabel": "03:30 PM - 11:59 PM",
+      "timeLabel": "03:30 PM - 04:30 PM",
       "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7907",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7551",
       "tags": [
         "practical"
       ],
@@ -1159,12 +777,12 @@
       "startHour": 15
     },
     {
-      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At Redding Circle",
+      "title": "Council Virtual Closed Session",
       "source": "Municipality of Princeton",
       "dateLabel": "October 20, 2026",
-      "timeLabel": "03:30 PM - 04:30 PM",
+      "timeLabel": "03:30 PM - 11:59 PM",
       "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7551",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7907",
       "tags": [
         "practical"
       ],
@@ -1243,6 +861,20 @@
       "startHour": 19
     },
     {
+      "title": "Meet the Human Services Department",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 21",
+      "timeLabel": "10:00am - 1:00pm",
+      "location": "Princeton Public Library - Lobby",
+      "url": "https://princetonlibrary.libnet.info/event/15468891",
+      "tags": [
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-21",
+      "startHour": 10
+    },
+    {
       "title": "Drop in and Knit",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 21",
@@ -1251,20 +883,6 @@
       "url": "https://princetonlibrary.libnet.info/event/17144888",
       "tags": [
         "new",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 10
-    },
-    {
-      "title": "Meet the Human Services Department",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "10:00am - 1:00pm",
-      "location": "Princeton Public Library - Lobby",
-      "url": "https://princetonlibrary.libnet.info/event/15468891",
-      "tags": [
         "culture",
         "practical"
       ],
@@ -1417,12 +1035,12 @@
       "startHour": 17
     },
     {
-      "title": "Journaling Club",
+      "title": "Influenza Clinic",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 21",
-      "timeLabel": "5:00pm - 6:00pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/16862225",
+      "timeLabel": "5:00pm - 7:00pm",
+      "location": "The Community Room, Princeton Public Library",
+      "url": "https://princetonlibrary.libnet.info/event/16205426",
       "tags": [
         "family",
         "practical"
@@ -1431,12 +1049,12 @@
       "startHour": 17
     },
     {
-      "title": "Influenza Clinic",
+      "title": "Journaling Club",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 21",
-      "timeLabel": "5:00pm - 7:00pm",
-      "location": "The Community Room, Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/16205426",
+      "timeLabel": "5:00pm - 6:00pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/16862225",
       "tags": [
         "family",
         "practical"
@@ -1460,6 +1078,22 @@
       "startHour": 17
     },
     {
+      "title": "Learn English at the Library (High Beginner)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 21",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/17154695",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-10-21",
+      "startHour": 18
+    },
+    {
       "title": "Board of Trustees Meeting",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 21",
@@ -1481,22 +1115,6 @@
       "location": "Virtual - Zoom Webinar",
       "url": "https://princetonlibrary.libnet.info/event/17171312",
       "tags": [
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 18
-    },
-    {
-      "title": "Learn English at the Library (High Beginner)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/17154695",
-      "tags": [
-        "new",
         "culture",
         "rain",
         "practical"
@@ -1532,15 +1150,167 @@
       ],
       "isoDate": "2026-10-21",
       "startHour": 18
+    },
+    {
+      "title": "English Conversation",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 22",
+      "timeLabel": "10:00am - 11:30am",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/17260673",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-10-22",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Storytime!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 22",
+      "timeLabel": "10:30am - 11:00am",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14661279",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-22",
+      "startHour": 10
+    },
+    {
+      "title": "Research Data Stewardship Series: Documentation and Metadata",
+      "source": "Princeton University",
+      "dateLabel": "Oct 22",
+      "timeLabel": "11:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/research-data-stewardship-series-documentation-and-metadata-0",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-22",
+      "startHour": 11
+    },
+    {
+      "title": "Kids: Baby Storytime",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 22",
+      "timeLabel": "11:30am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14661593",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-22",
+      "startHour": 11
+    },
+    {
+      "title": "Kids: Baby Play Group",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 22",
+      "timeLabel": "12:00pm - 1:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14662546",
+      "tags": [
+        "new",
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-22",
+      "startHour": 12
+    },
+    {
+      "title": "Learn English at the Library (Intermediate)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 22",
+      "timeLabel": "12:30pm - 2:30pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/17154722",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-10-22",
+      "startHour": 12
+    },
+    {
+      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Griggs Farm",
+      "source": "Municipality of Princeton",
+      "dateLabel": "October 22, 2026",
+      "timeLabel": "03:30 PM - 04:00 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7447",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-22",
+      "startHour": 15
+    },
+    {
+      "title": "Teens: Craft, Chat and Chill",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 22",
+      "timeLabel": "4:30pm - 5:30pm",
+      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "url": "https://princetonlibrary.libnet.info/event/17413317",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-22",
+      "startHour": 16
+    },
+    {
+      "title": "U.S. Citizenship Test Prep Course",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 22",
+      "timeLabel": "6:00pm - 8:00pm",
+      "location": "Zoom - Zoom",
+      "url": "https://princetonlibrary.libnet.info/event/17235594",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-22",
+      "startHour": 18
+    },
+    {
+      "title": "Author: Kyle Harper",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 22",
+      "timeLabel": "6:00pm - 7:00pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17193141",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-22",
+      "startHour": 18
+    },
+    {
+      "title": "Food Insecurity Task Force: Princeton Alliance Church",
+      "source": "Municipality of Princeton",
+      "dateLabel": "October 22, 2026",
+      "timeLabel": "06:00 PM - 07:30 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7293",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-10-22",
+      "startHour": 18
     }
   ],
   "days": [
-    {
-      "iso": "2026-10-15",
-      "label": "Oct 15",
-      "weekday": "Thu",
-      "count": 27
-    },
     {
       "iso": "2026-10-16",
       "label": "Oct 16",
@@ -1576,6 +1346,12 @@
       "label": "Oct 21",
       "weekday": "Wed",
       "count": 21
+    },
+    {
+      "iso": "2026-10-22",
+      "label": "Oct 22",
+      "weekday": "Thu",
+      "count": 11
     }
   ],
   "windowDays": 7,
@@ -1585,7 +1361,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Sunny, 64F"
+      "detail": "Showers And Thunderstorms Likely, 54F"
     },
     {
       "name": "Princeton University Events",
@@ -1597,13 +1373,13 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "68 events"
+      "detail": "58 events"
     },
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "21 calendar items"
+      "detail": "18 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
