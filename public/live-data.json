@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T11:02:21.529Z",
+  "generatedAt": "2026-10-18T15:51:02.879Z",
   "weather": {
     "temperature": 58,
     "shortForecast": "Sunny",
@@ -20,19 +20,6 @@
       "tags": [],
       "isoDate": "2026-10-18",
       "startHour": 8
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Mutual Aid Network Senior Food Deliveries",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 18, 2026",
-      "timeLabel": "10:00 AM - 11:30 AM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=3952",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-10-18",
-      "startHour": 10
     },
     {
       "title": "Worship Service in the University Chapel",
@@ -216,20 +203,6 @@
       "startHour": 16
     },
     {
-      "title": "Catherine Project Book Discussion Series",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 19",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/17294110",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-19",
-      "startHour": 18
-    },
-    {
       "title": "Film: \"Mary Oliver: Saved By the Beauty of the World\"",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 19",
@@ -393,12 +366,12 @@
       "startHour": 15
     },
     {
-      "title": "Council Virtual Closed Session",
+      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At Redding Circle",
       "source": "Municipality of Princeton",
       "dateLabel": "October 20, 2026",
-      "timeLabel": "03:30 PM - 11:59 PM",
+      "timeLabel": "03:30 PM - 04:30 PM",
       "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7907",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7551",
       "tags": [
         "practical"
       ],
@@ -406,12 +379,12 @@
       "startHour": 15
     },
     {
-      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At Redding Circle",
+      "title": "Council Virtual Closed Session",
       "source": "Municipality of Princeton",
       "dateLabel": "October 20, 2026",
-      "timeLabel": "03:30 PM - 04:30 PM",
+      "timeLabel": "03:30 PM - 11:59 PM",
       "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7551",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7907",
       "tags": [
         "practical"
       ],
@@ -678,20 +651,6 @@
       "startHour": 17
     },
     {
-      "title": "Journaling Club",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "5:00pm - 6:00pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/16862225",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 17
-    },
-    {
       "title": "Influenza Vaccine Clinic",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 21",
@@ -700,6 +659,20 @@
       "url": "https://princetonlibrary.libnet.info/event/16218399",
       "tags": [
         "new",
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-21",
+      "startHour": 17
+    },
+    {
+      "title": "Journaling Club",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 21",
+      "timeLabel": "5:00pm - 6:00pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/16862225",
+      "tags": [
         "family",
         "practical"
       ],
@@ -1193,13 +1166,13 @@
       "iso": "2026-10-18",
       "label": "Oct 18",
       "weekday": "Sun",
-      "count": 6
+      "count": 5
     },
     {
       "iso": "2026-10-19",
       "label": "Oct 19",
       "weekday": "Mon",
-      "count": 12
+      "count": 11
     },
     {
       "iso": "2026-10-20",
@@ -1251,13 +1224,13 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "51 events"
+      "detail": "50 events"
     },
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "17 calendar items"
+      "detail": "16 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
