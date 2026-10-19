@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-18T23:10:55.915Z",
+  "generatedAt": "2026-10-19T04:38:36.843Z",
   "weather": {
     "temperature": 35,
-    "shortForecast": "Clear then Areas Of Frost",
-    "wind": "0 to 5 mph NE",
-    "detailedForecast": "Areas of frost after 5am. Clear, with a low around 35. Northeast wind 0 to 5 mph.",
+    "shortForecast": "Areas Of Frost",
+    "wind": "0 to 5 mph N",
+    "detailedForecast": "Areas of frost after 5am. Clear, with a low around 35. North wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
@@ -18,72 +18,6 @@
   ],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Women's Tennis - ITA Regionals",
-      "source": "Princeton University",
-      "dateLabel": "Oct 18",
-      "timeLabel": "8:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-tennis-ita-regionals-2",
-      "tags": [],
-      "isoDate": "2026-10-18",
-      "startHour": 8
-    },
-    {
-      "title": "Worship Service in the University Chapel",
-      "source": "Princeton University",
-      "dateLabel": "Oct 18",
-      "timeLabel": "11:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/worship-service-university-chapel-6",
-      "tags": [],
-      "isoDate": "2026-10-18",
-      "startHour": 11
-    },
-    {
-      "title": "Music: Guild for Early Music Annual Showcase",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 18",
-      "timeLabel": "12:30pm - 4:30pm",
-      "location": "Princeton Public Library - Community Room,Lobby",
-      "url": "https://princetonlibrary.libnet.info/event/17296391",
-      "tags": [
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-18",
-      "startHour": 12
-    },
-    {
-      "title": "Library in the Community: Palmer Square Fall Fest",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 18",
-      "timeLabel": "1:00pm - 4:00pm",
-      "location": "Off-Site - Palmer Square",
-      "url": "https://princetonlibrary.libnet.info/event/17658338",
-      "tags": [
-        "family",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-18",
-      "startHour": 13
-    },
-    {
-      "title": "Kids: Persian Storytime",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 18",
-      "timeLabel": "3:00pm - 3:30pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/17334533",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-18",
-      "startHour": 15
-    },
     {
       "title": "Women's Tennis - ITA Regionals",
       "source": "Princeton University",
@@ -280,20 +214,6 @@
       "startHour": 10
     },
     {
-      "title": "Tech: iCloud",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 20",
-      "timeLabel": "1:00pm - 2:00pm",
-      "location": "Princeton Public Library - Tech Center",
-      "url": "https://princetonlibrary.libnet.info/event/17436635",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-20",
-      "startHour": 13
-    },
-    {
       "title": "Tech: Ask the Mac Pros",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 20",
@@ -302,6 +222,20 @@
       "url": "https://princetonlibrary.libnet.info/event/16661445",
       "tags": [
         "new",
+        "practical"
+      ],
+      "isoDate": "2026-10-20",
+      "startHour": 13
+    },
+    {
+      "title": "Tech: iCloud",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 20",
+      "timeLabel": "1:00pm - 2:00pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/17436635",
+      "tags": [
+        "rain",
         "practical"
       ],
       "isoDate": "2026-10-20",
@@ -471,20 +405,6 @@
       "startHour": 19
     },
     {
-      "title": "Meet the Human Services Department",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "10:00am - 1:00pm",
-      "location": "Princeton Public Library - Lobby",
-      "url": "https://princetonlibrary.libnet.info/event/15468891",
-      "tags": [
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 10
-    },
-    {
       "title": "Drop in and Knit",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 21",
@@ -493,6 +413,20 @@
       "url": "https://princetonlibrary.libnet.info/event/17144888",
       "tags": [
         "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-21",
+      "startHour": 10
+    },
+    {
+      "title": "Meet the Human Services Department",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 21",
+      "timeLabel": "10:00am - 1:00pm",
+      "location": "Princeton Public Library - Lobby",
+      "url": "https://princetonlibrary.libnet.info/event/15468891",
+      "tags": [
         "culture",
         "practical"
       ],
@@ -645,20 +579,6 @@
       "startHour": 17
     },
     {
-      "title": "Influenza Clinic",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "5:00pm - 7:00pm",
-      "location": "The Community Room, Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/16205426",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 17
-    },
-    {
       "title": "Influenza Vaccine Clinic",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 21",
@@ -667,6 +587,20 @@
       "url": "https://princetonlibrary.libnet.info/event/16218399",
       "tags": [
         "new",
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-21",
+      "startHour": 17
+    },
+    {
+      "title": "Influenza Clinic",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 21",
+      "timeLabel": "5:00pm - 7:00pm",
+      "location": "The Community Room, Princeton Public Library",
+      "url": "https://princetonlibrary.libnet.info/event/16205426",
+      "tags": [
         "family",
         "practical"
       ],
@@ -688,14 +622,13 @@
       "startHour": 17
     },
     {
-      "title": "Learn English at the Library (High Beginner)",
+      "title": "Author Workshop: \"Write Your Own Thriller\"",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 21",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/17154695",
+      "timeLabel": "6:00pm - 7:00pm",
+      "location": "Virtual - Zoom Webinar",
+      "url": "https://princetonlibrary.libnet.info/event/17171312",
       "tags": [
-        "new",
         "culture",
         "rain",
         "practical"
@@ -704,13 +637,14 @@
       "startHour": 18
     },
     {
-      "title": "Author Workshop: \"Write Your Own Thriller\"",
+      "title": "Learn English at the Library (High Beginner)",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 21",
-      "timeLabel": "6:00pm - 7:00pm",
-      "location": "Virtual - Zoom Webinar",
-      "url": "https://princetonlibrary.libnet.info/event/17171312",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/17154695",
       "tags": [
+        "new",
         "culture",
         "rain",
         "practical"
@@ -877,21 +811,6 @@
       "startHour": 16
     },
     {
-      "title": "Author: Kyle Harper",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 22",
-      "timeLabel": "6:00pm - 7:00pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/17193141",
-      "tags": [
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-22",
-      "startHour": 18
-    },
-    {
       "title": "U.S. Citizenship Test Prep Course",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 22",
@@ -900,6 +819,21 @@
       "url": "https://princetonlibrary.libnet.info/event/17235594",
       "tags": [
         "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-22",
+      "startHour": 18
+    },
+    {
+      "title": "Author: Kyle Harper",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 22",
+      "timeLabel": "6:00pm - 7:00pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17193141",
+      "tags": [
+        "family",
         "culture",
         "practical"
       ],
@@ -1167,15 +1101,99 @@
       ],
       "isoDate": "2026-10-24",
       "startHour": 21
+    },
+    {
+      "title": "Ivy League Men's Tennis Championships",
+      "source": "Princeton University",
+      "dateLabel": "Oct 25",
+      "timeLabel": "8:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/ivy-league-mens-tennis-championships-1",
+      "tags": [],
+      "isoDate": "2026-10-25",
+      "startHour": 8
+    },
+    {
+      "title": "Worship Service in the University Chapel",
+      "source": "Princeton University",
+      "dateLabel": "Oct 25",
+      "timeLabel": "11:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/worship-service-university-chapel-7",
+      "tags": [],
+      "isoDate": "2026-10-25",
+      "startHour": 11
+    },
+    {
+      "title": "Book Brunch: Chad Harbach",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 25",
+      "timeLabel": "11:00am - 12:15pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17567359",
+      "tags": [
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-25",
+      "startHour": 11
+    },
+    {
+      "title": "Field Hockey vs St. Joe's",
+      "source": "Princeton University",
+      "dateLabel": "Oct 25",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-st-joes",
+      "tags": [],
+      "isoDate": "2026-10-25",
+      "startHour": 12
+    },
+    {
+      "title": "Women's Soccer vs Dartmouth",
+      "source": "Princeton University",
+      "dateLabel": "Oct 25",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-dartmouth",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-10-25",
+      "startHour": 12
+    },
+    {
+      "title": "Silent Book Club",
+      "source": "Princeton University",
+      "dateLabel": "Oct 25",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/silent-book-club-0",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-25",
+      "startHour": 14
+    },
+    {
+      "title": "Open Acoustic Jam",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 25",
+      "timeLabel": "3:00pm - 4:30pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17563233",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-25",
+      "startHour": 15
     }
   ],
   "days": [
-    {
-      "iso": "2026-10-18",
-      "label": "Oct 18",
-      "weekday": "Sun",
-      "count": 5
-    },
     {
       "iso": "2026-10-19",
       "label": "Oct 19",
@@ -1211,6 +1229,12 @@
       "label": "Oct 24",
       "weekday": "Sat",
       "count": 12
+    },
+    {
+      "iso": "2026-10-25",
+      "label": "Oct 25",
+      "weekday": "Sun",
+      "count": 7
     }
   ],
   "windowDays": 7,
@@ -1220,7 +1244,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Clear then Areas Of Frost, 35F"
+      "detail": "Areas Of Frost, 35F"
     },
     {
       "name": "Princeton University Events",
@@ -1232,7 +1256,7 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "50 events"
+      "detail": "55 events"
     },
     {
       "name": "Municipality of Princeton",
