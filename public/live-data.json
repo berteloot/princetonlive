@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-19T13:11:35.767Z",
+  "generatedAt": "2026-10-19T20:34:48.430Z",
   "weather": {
-    "temperature": 64,
-    "shortForecast": "Widespread Frost then Sunny",
+    "temperature": 65,
+    "shortForecast": "Sunny",
     "wind": "5 mph NE",
-    "detailedForecast": "Widespread frost before 10am. Sunny, with a high near 64. Northeast wind around 5 mph.",
+    "detailedForecast": "Sunny, with a high near 65. Northeast wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -300,12 +300,12 @@
       "startHour": 15
     },
     {
-      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At Redding Circle",
+      "title": "Council Virtual Closed Session",
       "source": "Municipality of Princeton",
       "dateLabel": "October 20, 2026",
-      "timeLabel": "03:30 PM - 04:30 PM",
+      "timeLabel": "03:30 PM - 11:59 PM",
       "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7551",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7907",
       "tags": [
         "practical"
       ],
@@ -313,12 +313,12 @@
       "startHour": 15
     },
     {
-      "title": "Council Virtual Closed Session",
+      "title": "Food Insecurity Task Force: Princeton Kindness Food Project At Redding Circle",
       "source": "Municipality of Princeton",
       "dateLabel": "October 20, 2026",
-      "timeLabel": "03:30 PM - 11:59 PM",
+      "timeLabel": "03:30 PM - 04:30 PM",
       "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7907",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7551",
       "tags": [
         "practical"
       ],
@@ -453,17 +453,6 @@
       "startHour": 11
     },
     {
-      "title": "Celebrate Princeton Innovation 2026",
-      "source": "Princeton University",
-      "dateLabel": "Oct 21",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/celebrate-princeton-innovation-2026",
-      "tags": [],
-      "isoDate": "2026-10-21",
-      "startHour": 12
-    },
-    {
       "title": "Kids: Baby Play Group",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 21",
@@ -567,6 +556,17 @@
         "culture",
         "rain"
       ],
+      "isoDate": "2026-10-21",
+      "startHour": 17
+    },
+    {
+      "title": "Celebrate Princeton Innovation 2026",
+      "source": "Princeton University",
+      "dateLabel": "Oct 21",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/celebrate-princeton-innovation-2026",
+      "tags": [],
       "isoDate": "2026-10-21",
       "startHour": 17
     },
@@ -1039,6 +1039,20 @@
       "startHour": 18
     },
     {
+      "title": "Museum for All Ball",
+      "source": "Princeton University",
+      "dateLabel": "Oct 24",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/museum-all-ball-1",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-24",
+      "startHour": 19
+    },
+    {
       "title": "Magic: The Gathering Club Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 24",
@@ -1059,20 +1073,6 @@
       "timeLabel": "7:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/museum-all-ball",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-24",
-      "startHour": 19
-    },
-    {
-      "title": "Museum for All Ball",
-      "source": "Princeton University",
-      "dateLabel": "Oct 24",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/museum-all-ball-1",
       "tags": [
         "culture",
         "rain"
@@ -1236,7 +1236,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Widespread Frost then Sunny, 64F"
+      "detail": "Sunny, 65F"
     },
     {
       "name": "Princeton University Events",
@@ -1254,7 +1254,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "16 calendar items"
+      "detail": "14 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
