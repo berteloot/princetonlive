@@ -1,21 +1,13 @@
 {
-  "generatedAt": "2026-10-19T04:38:36.843Z",
+  "generatedAt": "2026-10-19T13:11:35.767Z",
   "weather": {
-    "temperature": 35,
-    "shortForecast": "Areas Of Frost",
-    "wind": "0 to 5 mph N",
-    "detailedForecast": "Areas of frost after 5am. Clear, with a low around 35. North wind 0 to 5 mph.",
+    "temperature": 64,
+    "shortForecast": "Widespread Frost then Sunny",
+    "wind": "5 mph NE",
+    "detailedForecast": "Widespread frost before 10am. Sunny, with a high near 64. Northeast wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
-  "alerts": [
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f298cda7743db3759ecf25c1794d440fb38fbfb0.001.1",
-      "event": "Frost Advisory",
-      "headline": "Frost Advisory issued October 18 at 1:58PM EDT until October 19 at 9:00AM EDT by NWS Mount Holly NJ",
-      "severity": "Minor",
-      "url": null
-    }
-  ],
+  "alerts": [],
   "alertsAvailable": true,
   "events": [
     {
@@ -1244,7 +1236,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Areas Of Frost, 35F"
+      "detail": "Widespread Frost then Sunny, 64F"
     },
     {
       "name": "Princeton University Events",
