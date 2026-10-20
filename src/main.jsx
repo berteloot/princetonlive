@@ -3353,6 +3353,10 @@ function App() {
             <a href="/about.html">About this site</a>
             {"  ·  "}
             <a href="/legal.html">Disclaimer, terms, and privacy</a>
+            {"  ·  "}
+            <a href={STATION_PAGE} {...externalLinkProps(STATION_PAGE)}>
+              Live weather from a Princeton backyard
+            </a>
           </p>
         </div>
         <a href="#top">
