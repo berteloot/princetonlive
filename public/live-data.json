@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-20T14:17:43.849Z",
+  "generatedAt": "2026-10-20T19:15:16.972Z",
   "weather": {
     "temperature": 69,
     "shortForecast": "Sunny",
-    "wind": "10 to 15 mph NE",
-    "detailedForecast": "Sunny, with a high near 69. Northeast wind 10 to 15 mph, with gusts as high as 25 mph.",
+    "wind": "10 mph N",
+    "detailedForecast": "Sunny, with a high near 69. North wind around 10 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -51,20 +51,6 @@
       "startHour": 10
     },
     {
-      "title": "Tech: Ask the Mac Pros",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 20",
-      "timeLabel": "1:00pm - 3:00pm",
-      "location": "Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/16661445",
-      "tags": [
-        "new",
-        "practical"
-      ],
-      "isoDate": "2026-10-20",
-      "startHour": 13
-    },
-    {
       "title": "Tech: iCloud",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 20",
@@ -73,20 +59,6 @@
       "url": "https://princetonlibrary.libnet.info/event/17436635",
       "tags": [
         "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-20",
-      "startHour": 13
-    },
-    {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Spruce Circle",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 20, 2026",
-      "timeLabel": "01:00 PM - 01:45 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7345",
-      "tags": [
-        "family",
         "practical"
       ],
       "isoDate": "2026-10-20",
@@ -391,6 +363,17 @@
       "startHour": 16
     },
     {
+      "title": "Celebrate Princeton Innovation 2026",
+      "source": "Princeton University",
+      "dateLabel": "Oct 21",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/celebrate-princeton-innovation-2026",
+      "tags": [],
+      "isoDate": "2026-10-21",
+      "startHour": 17
+    },
+    {
       "title": "YDSA Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 21",
@@ -401,17 +384,6 @@
         "culture",
         "rain"
       ],
-      "isoDate": "2026-10-21",
-      "startHour": 17
-    },
-    {
-      "title": "Celebrate Princeton Innovation 2026",
-      "source": "Princeton University",
-      "dateLabel": "Oct 21",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/celebrate-princeton-innovation-2026",
-      "tags": [],
       "isoDate": "2026-10-21",
       "startHour": 17
     },
@@ -884,20 +856,6 @@
       "startHour": 18
     },
     {
-      "title": "Museum for All Ball",
-      "source": "Princeton University",
-      "dateLabel": "Oct 24",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/museum-all-ball-1",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-24",
-      "startHour": 19
-    },
-    {
       "title": "Magic: The Gathering Club Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 24",
@@ -918,6 +876,20 @@
       "timeLabel": "7:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/museum-all-ball",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-24",
+      "startHour": 19
+    },
+    {
+      "title": "Museum for All Ball",
+      "source": "Princeton University",
+      "dateLabel": "Oct 24",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/museum-all-ball-1",
       "tags": [
         "culture",
         "rain"
@@ -1099,6 +1071,20 @@
       "startHour": 15
     },
     {
+      "title": "Catherine Project Weekly Book Discussion Series",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 26",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/17155819",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-26",
+      "startHour": 16
+    },
+    {
       "title": "Kids: eSTEAM Club: Spooky Science",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 26",
@@ -1109,20 +1095,6 @@
         "new",
         "family",
         "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-26",
-      "startHour": 16
-    },
-    {
-      "title": "Catherine Project Weekly Book Discussion Series",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 26",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/17155819",
-      "tags": [
-        "family",
         "practical"
       ],
       "isoDate": "2026-10-26",
@@ -1213,7 +1185,7 @@
       "iso": "2026-10-20",
       "label": "Oct 20",
       "weekday": "Tue",
-      "count": 17
+      "count": 15
     },
     {
       "iso": "2026-10-21",
@@ -1271,13 +1243,13 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "55 events"
+      "detail": "54 events"
     },
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "14 calendar items"
+      "detail": "13 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
