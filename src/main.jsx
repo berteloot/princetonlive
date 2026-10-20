@@ -955,6 +955,98 @@ function tractFill(feature, key, domain) {
 // events. A street result fills the garbage lookup; an event result opens its day.
 const SEARCH_RESULT_LIMIT = 8;
 
+
+// Live readings from Stan's own Ecowitt station, served by the altilead.com
+// Worker (it allows this origin by CORS and caches Ecowitt for a minute). The
+// build-time NWS forecast shows while it loads, and stays when the station
+// does not answer or its reading is more than two hours old.
+const STATION_API = "https://altilead.com/api/weather";
+const STATION_PAGE = "https://altilead.com/princeton-weather";
+const STATION_REFRESH_MS = 5 * 60 * 1000;
+const STATION_STALE_S = 2 * 3600;
+const STATION_OUTLOOK = {
+  sunny: "Sunny", partly: "Partly sunny", cloudy: "Cloudy", rainy: "Rainy",
+  stormy: "Stormy", snowy: "Snowy", stormsnow: "Stormy and snowy",
+};
+const COMPASS_POINTS = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
+const toF = (c) => Math.round((c * 9) / 5 + 32);
+
+function useStationWeather() {
+  // undefined while the first request is in flight, null when the station failed.
+  const [station, setStation] = useState(undefined);
+  useEffect(() => {
+    let cancelled = false;
+    const load = async () => {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 10000);
+      try {
+        const response = await fetch(STATION_API, { signal: controller.signal, headers: { accept: "application/json" } });
+        if (!response.ok) throw new Error(`station ${response.status}`);
+        const data = await response.json();
+        const fresh = data?.now?.temp != null && Date.now() / 1000 - Number(data.observed) < STATION_STALE_S;
+        if (!cancelled) setStation(fresh ? data : null);
+      } catch {
+        if (!cancelled) setStation(null);
+      } finally {
+        clearTimeout(timer);
+      }
+    };
+    load();
+    const interval = setInterval(load, STATION_REFRESH_MS);
+    return () => {
+      cancelled = true;
+      clearInterval(interval);
+    };
+  }, []);
+  return station;
+}
+
+function StationWeatherCard({ nws }) {
+  const station = useStationWeather();
+  if (!station) {
+    return (
+      <a className="weather-summary-card" href={nws.sourceUrl} {...externalLinkProps(nws.sourceUrl)}>
+        <span>Weather</span>
+        <strong>
+          {nws.temperature ? `${nws.temperature}°F, ` : ""}
+          {nws.shortForecast}
+        </strong>
+        <small>
+          {station === null ? "Station not responding. Showing the National Weather Service forecast. " : ""}
+          {nws.wind ? `${nws.wind}. ` : ""}
+          {nws.detailedForecast}
+        </small>
+      </a>
+    );
+  }
+  const now = station.now;
+  const minutes = Math.max(0, Math.round((Date.now() / 1000 - station.observed) / 60));
+  const wind =
+    now.wind_speed == null
+      ? null
+      : `Wind ${Math.round(now.wind_speed / 1.609344)} mph${now.wind_dir == null ? "" : ` ${COMPASS_POINTS[Math.round(now.wind_dir / 22.5) % 16]}`}`;
+  const details = [
+    wind,
+    now.humidity == null ? null : `Humidity ${Math.round(now.humidity)}%`,
+    now.rain_day == null ? null : `Rain today ${(now.rain_day / 25.4).toFixed(2)} in`,
+  ].filter(Boolean);
+  const outlook = STATION_OUTLOOK[station.forecast?.state];
+  return (
+    <a className="weather-summary-card" href={STATION_PAGE} {...externalLinkProps(STATION_PAGE)}>
+      <span>Backyard station, Princeton</span>
+      <strong>
+        {toF(now.temp)}°F{now.feels_like == null ? "" : `, feels like ${toF(now.feels_like)}°F`}
+      </strong>
+      <small>
+        {details.join(" · ")}
+        {details.length ? ". " : ""}
+        {outlook ? `Barometer outlook for tomorrow: ${outlook}. ` : ""}
+        Updated {minutes} min ago. Full station page →
+      </small>
+    </a>
+  );
+}
+
 function SiteSearch({ entries, onPick, onClose, autoFocus = false }) {
   const [term, setTerm] = useState("");
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -1795,21 +1887,7 @@ function App() {
 
         </div>
         <aside className="daily-brief" aria-label="Today snapshot">
-          <a
-            className="weather-summary-card"
-            href={liveData.weather.sourceUrl}
-            {...externalLinkProps(liveData.weather.sourceUrl)}
-          >
-            <span>Weather</span>
-            <strong>
-              {liveData.weather.temperature ? `${liveData.weather.temperature}°F, ` : ""}
-              {liveData.weather.shortForecast}
-            </strong>
-            <small>
-              {liveData.weather.wind ? `${liveData.weather.wind}. ` : ""}
-              {liveData.weather.detailedForecast}
-            </small>
-          </a>
+          <StationWeatherCard nws={liveData.weather} />
           <a href="https://www.weather.gov/phi/" {...externalLinkProps("https://www.weather.gov/phi/")}>
             <span>Alerts</span>
             <strong>{alertStatusLabel}</strong>

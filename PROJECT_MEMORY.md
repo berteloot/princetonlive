@@ -85,7 +85,8 @@ Cloudflare deploy status is the "Deploy to Cloudflare Workers" run in GitHub Act
 ## Public Data Sources
 
 Daily operating data:
-- National Weather Service forecast and alerts
+- Stan's backyard Ecowitt station (Wittboy Pro: WS90 + HP2560_C), read live in the browser from `https://altilead.com/api/weather` by the top weather card (`StationWeatherCard` in `src/main.jsx`), refreshed every 5 minutes. The altilead.com Worker allows this origin by CORS (allowlist in `clients/altilead/site/worker.js`) and `public/_headers` allows `https://altilead.com` in `connect-src`; drop either and the card silently falls back. A reading older than 2 hours counts as down.
+- National Weather Service forecast (build time, the weather card's fallback while the station loads or when it does not answer) and alerts (unchanged)
 - Princeton University public events RSS
 - Princeton Garden Theatre showtimes, read from `public/garden-theatre.json` rather than fetched twice. `refresh:garden` therefore runs BEFORE `refresh:data` in `refresh:public`, and it is guarded so a cinema outage cannot stop the daily data refresh
 - Tracked series, currently none. The Seuls en Scene French Theater Festival was carried here until Stan removed it on 2026-08-26. If a series returns: the Lewis Center host (arts.princeton.edu) sits behind a Cloudflare challenge and returns 403 to any scheduled fetch, so read performance dates out of the university events feed by title match and use the arts page as the resident-facing link
@@ -174,6 +175,7 @@ Explore walks:
 
 ## Feature Log
 
+- Latest - The top weather card shows live readings from Stan's backyard station (temperature, feels like, wind, humidity, rain today, barometer outlook) and links to altilead.com/princeton-weather; the NWS forecast is the fallback and the NWS alert line is unchanged (Oct 20, 2026).
 - Latest - Removed the Seuls en Scène French Theater Festival tracked series at Stan's request (Aug 26, 2026). The tracked-series machinery stays in `fetch-live-data.mjs` with an empty list.
 - Latest - Reader feedback round (Karin, Aug 2026): nav relabelled and cut to eight entries, "New to town?" groups newcomer steps, the garbage hero tile shows the saved day, a live NJ Transit DepartureVision card replaces the duplicate "Check transit" button, site-wide search in the hero, data re-read on return to the tab, and two FAQ entries (no submissions; how current the page is) mirrored in the JSON-LD.
 - Latest - Moved the local working copy into its intended local workspace folder. Local absolute paths stay out of this repo.
