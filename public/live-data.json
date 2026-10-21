@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-21T11:46:46.805Z",
+  "generatedAt": "2026-10-21T17:10:48.524Z",
   "weather": {
-    "temperature": 62,
-    "shortForecast": "Sunny",
-    "wind": "10 to 15 mph NE",
-    "detailedForecast": "Sunny, with a high near 62. Northeast wind 10 to 15 mph, with gusts as high as 30 mph.",
+    "temperature": 63,
+    "shortForecast": "Mostly Sunny",
+    "wind": "5 to 15 mph N",
+    "detailedForecast": "Mostly sunny, with a high near 63. North wind 5 to 15 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -160,6 +160,17 @@
       "startHour": 16
     },
     {
+      "title": "Celebrate Princeton Innovation 2026",
+      "source": "Princeton University",
+      "dateLabel": "Oct 21",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/celebrate-princeton-innovation-2026",
+      "tags": [],
+      "isoDate": "2026-10-21",
+      "startHour": 17
+    },
+    {
       "title": "YDSA Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 21",
@@ -170,17 +181,6 @@
         "culture",
         "rain"
       ],
-      "isoDate": "2026-10-21",
-      "startHour": 17
-    },
-    {
-      "title": "Celebrate Princeton Innovation 2026",
-      "source": "Princeton University",
-      "dateLabel": "Oct 21",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/celebrate-princeton-innovation-2026",
-      "tags": [],
       "isoDate": "2026-10-21",
       "startHour": 17
     },
@@ -653,20 +653,6 @@
       "startHour": 18
     },
     {
-      "title": "Museum for All Ball",
-      "source": "Princeton University",
-      "dateLabel": "Oct 24",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/museum-all-ball-1",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-24",
-      "startHour": 19
-    },
-    {
       "title": "Magic: The Gathering Club Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 24",
@@ -687,6 +673,20 @@
       "timeLabel": "7:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/museum-all-ball",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-24",
+      "startHour": 19
+    },
+    {
+      "title": "Museum for All Ball",
+      "source": "Princeton University",
+      "dateLabel": "Oct 24",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/museum-all-ball-1",
       "tags": [
         "culture",
         "rain"
@@ -1258,6 +1258,17 @@
       "startHour": 19
     },
     {
+      "title": "Princeton Christian Fellowship Bible studies",
+      "source": "Princeton University",
+      "dateLabel": "Oct 27",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-8",
+      "tags": [],
+      "isoDate": "2026-10-27",
+      "startHour": 20
+    },
+    {
       "title": "Pathos Trio",
       "source": "Princeton University",
       "dateLabel": "Oct 27",
@@ -1267,17 +1278,6 @@
       "tags": [
         "new"
       ],
-      "isoDate": "2026-10-27",
-      "startHour": 20
-    },
-    {
-      "title": "Princeton Christian Fellowship Bible studies",
-      "source": "Princeton University",
-      "dateLabel": "Oct 27",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-8",
-      "tags": [],
       "isoDate": "2026-10-27",
       "startHour": 20
     },
@@ -1347,7 +1347,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 62F"
+      "detail": "Mostly Sunny, 63F"
     },
     {
       "name": "Princeton University Events",
