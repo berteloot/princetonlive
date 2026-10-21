@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-21T17:10:48.524Z",
+  "generatedAt": "2026-10-21T21:41:36.840Z",
   "weather": {
-    "temperature": 63,
+    "temperature": 64,
     "shortForecast": "Mostly Sunny",
-    "wind": "5 to 15 mph N",
-    "detailedForecast": "Mostly sunny, with a high near 63. North wind 5 to 15 mph.",
+    "wind": "5 mph N",
+    "detailedForecast": "Mostly sunny, with a high near 64. North wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -94,19 +94,6 @@
       ],
       "isoDate": "2026-10-21",
       "startHour": 13
-    },
-    {
-      "title": "Food Insecurity Task Force: Princeton Alliance Church",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 21, 2026",
-      "timeLabel": "02:30 PM - 04:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7241",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 14
     },
     {
       "title": "McGraw Undergraduate Learning Program - Learning Concierge",
@@ -923,6 +910,20 @@
       "startHour": 16
     },
     {
+      "title": "Informational Meetings for Theater & Music Theater Juniors",
+      "source": "Princeton University",
+      "dateLabel": "Oct 26",
+      "timeLabel": "4:45 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/informational-meetings-theater-music-theater-juniors",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-26",
+      "startHour": 16
+    },
+    {
       "title": "Author: Juda Bennett",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 26",
@@ -932,6 +933,21 @@
       "tags": [
         "culture",
         "practical"
+      ],
+      "isoDate": "2026-10-26",
+      "startHour": 18
+    },
+    {
+      "title": "Women+ on the Edge of Democracy: New Play Readings",
+      "source": "Princeton University",
+      "dateLabel": "Oct 26",
+      "timeLabel": "6:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/women-edge-democracy-new-play-readings",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-10-26",
       "startHour": 18
@@ -1144,6 +1160,22 @@
       "startHour": 16
     },
     {
+      "title": "Repair the Future: Point of You and Perfect City",
+      "source": "Princeton University",
+      "dateLabel": "Oct 27",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/repair-future-point-you-and-perfect-city",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-10-27",
+      "startHour": 16
+    },
+    {
       "title": "Celebrating Tiger Journalism: 150 Years of The Daily Princetonian",
       "source": "Princeton University",
       "dateLabel": "Oct 27",
@@ -1230,6 +1262,22 @@
       "startHour": 18
     },
     {
+      "title": "“Chip Chat” with Amira Adarkwah on Black Bodies and Performance",
+      "source": "Princeton University",
+      "dateLabel": "Oct 27",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/chip-chat-amira-adarkwah-black-bodies-and-performance",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-10-27",
+      "startHour": 19
+    },
+    {
       "title": "Amphibious Realities Film Screening",
       "source": "Princeton University",
       "dateLabel": "Oct 27",
@@ -1301,7 +1349,7 @@
       "iso": "2026-10-21",
       "label": "Oct 21",
       "weekday": "Wed",
-      "count": 21
+      "count": 20
     },
     {
       "iso": "2026-10-22",
@@ -1331,13 +1379,13 @@
       "iso": "2026-10-26",
       "label": "Oct 26",
       "weekday": "Mon",
-      "count": 13
+      "count": 15
     },
     {
       "iso": "2026-10-27",
       "label": "Oct 27",
       "weekday": "Tue",
-      "count": 23
+      "count": 25
     }
   ],
   "windowDays": 7,
@@ -1347,7 +1395,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Sunny, 63F"
+      "detail": "Mostly Sunny, 64F"
     },
     {
       "name": "Princeton University Events",
@@ -1365,7 +1413,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "10 calendar items"
+      "detail": "9 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
