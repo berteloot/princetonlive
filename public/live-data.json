@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-22T17:09:18.209Z",
+  "generatedAt": "2026-10-22T21:34:16.128Z",
   "weather": {
     "temperature": 66,
     "shortForecast": "Sunny",
-    "wind": "10 mph N",
-    "detailedForecast": "Sunny, with a high near 66. North wind around 10 mph, with gusts as high as 25 mph.",
+    "wind": "5 mph N",
+    "detailedForecast": "Sunny, with a high near 66. North wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -95,20 +95,6 @@
       ],
       "isoDate": "2026-10-22",
       "startHour": 12
-    },
-    {
-      "title": "Food Insecurity Task Force: Jewish Family & Children's Services Mobile Food Pantry at Griggs Farm",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 22, 2026",
-      "timeLabel": "03:30 PM - 04:00 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7447",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-22",
-      "startHour": 15
     },
     {
       "title": "Teens: Craft, Chat and Chill",
@@ -927,6 +913,20 @@
       "startHour": 17
     },
     {
+      "title": "Ema Nikolovska, Mezzo-Soprano (Princeton University Concerts)",
+      "source": "Princeton University",
+      "dateLabel": "Oct 27",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/ema-nikolovska-mezzo-soprano-princeton-university-concerts",
+      "tags": [
+        "new",
+        "culture"
+      ],
+      "isoDate": "2026-10-27",
+      "startHour": 18
+    },
+    {
       "title": "C.K. Williams Reading by Jamel Brinkley and Creative Writing Seniors",
       "source": "Princeton University",
       "dateLabel": "Oct 27",
@@ -937,20 +937,6 @@
         "new",
         "culture",
         "rain"
-      ],
-      "isoDate": "2026-10-27",
-      "startHour": 18
-    },
-    {
-      "title": "Ema Nikolovska, Mezzo-Soprano (Princeton University Concerts)",
-      "source": "Princeton University",
-      "dateLabel": "Oct 27",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/ema-nikolovska-mezzo-soprano-princeton-university-concerts",
-      "tags": [
-        "new",
-        "culture"
       ],
       "isoDate": "2026-10-27",
       "startHour": 18
@@ -1081,20 +1067,6 @@
       "startHour": 10
     },
     {
-      "title": "Introduction to ArcGIS",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "10:30 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/introduction-arcgis-0",
-      "tags": [
-        "new",
-        "rain"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 10
-    },
-    {
       "title": "Digital Scholarship Foundations: Static Websites (2 of 4)",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
@@ -1103,6 +1075,20 @@
       "url": "https://www.princeton.edu/events/2026/digital-scholarship-foundations-static-websites-2-4",
       "tags": [
         "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 10
+    },
+    {
+      "title": "Introduction to ArcGIS",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "10:30 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/introduction-arcgis-0",
+      "tags": [
+        "new",
         "rain"
       ],
       "isoDate": "2026-10-28",
@@ -1251,6 +1237,17 @@
       "startHour": 16
     },
     {
+      "title": "Finding English Career Opportunities in Japan",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/finding-english-career-opportunities-japan",
+      "tags": [],
+      "isoDate": "2026-10-28",
+      "startHour": 16
+    },
+    {
       "title": "Roundtable on German Elections",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
@@ -1264,27 +1261,27 @@
       "startHour": 16
     },
     {
-      "title": "Finding English Career Opportunities in Japan",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/finding-english-career-opportunities-japan",
-      "tags": [],
-      "isoDate": "2026-10-28",
-      "startHour": 16
-    },
-    {
-      "title": "YDSA Weekly Meeting",
+      "title": "Costume Support (Drop in!)",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/ydsa-weekly-meeting-14",
+      "url": "https://www.princeton.edu/events/2026/costume-support-drop",
       "tags": [
-        "culture",
-        "rain"
+        "new",
+        "practical"
       ],
+      "isoDate": "2026-10-28",
+      "startHour": 17
+    },
+    {
+      "title": "Cognitive Science Office Hours",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/cognitive-science-office-hours",
+      "tags": [],
       "isoDate": "2026-10-28",
       "startHour": 17
     },
@@ -1304,26 +1301,15 @@
       "startHour": 17
     },
     {
-      "title": "Cognitive Science Office Hours",
+      "title": "YDSA Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/cognitive-science-office-hours",
-      "tags": [],
-      "isoDate": "2026-10-28",
-      "startHour": 17
-    },
-    {
-      "title": "Costume Support (Drop in!)",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/costume-support-drop",
+      "url": "https://www.princeton.edu/events/2026/ydsa-weekly-meeting-14",
       "tags": [
-        "new",
-        "practical"
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-10-28",
       "startHour": 17
@@ -1358,6 +1344,19 @@
       "startHour": 18
     },
     {
+      "title": "MLP WD Muhammad Lecture and Documentary Viewing",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "6:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mlp-wd-muhammad-lecture-and-documentary-viewing",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 18
+    },
+    {
       "title": "Dance Minor Social Hour and Information Session",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
@@ -1366,19 +1365,6 @@
       "url": "https://www.princeton.edu/events/2026/dance-minor-social-hour-and-information-session",
       "tags": [
         "new",
-        "culture"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 18
-    },
-    {
-      "title": "MLP WD Muhammad Lecture and Documentary Viewing",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "6:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mlp-wd-muhammad-lecture-and-documentary-viewing",
-      "tags": [
         "culture"
       ],
       "isoDate": "2026-10-28",
@@ -1443,7 +1429,7 @@
       "iso": "2026-10-22",
       "label": "Oct 22",
       "weekday": "Thu",
-      "count": 11
+      "count": 10
     },
     {
       "iso": "2026-10-23",
@@ -1507,7 +1493,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "8 calendar items"
+      "detail": "7 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
