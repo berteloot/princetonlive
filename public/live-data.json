@@ -1,293 +1,15 @@
 {
-  "generatedAt": "2026-10-21T21:41:36.840Z",
+  "generatedAt": "2026-10-22T04:42:03.636Z",
   "weather": {
-    "temperature": 64,
-    "shortForecast": "Mostly Sunny",
+    "temperature": 40,
+    "shortForecast": "Mostly Clear",
     "wind": "5 mph N",
-    "detailedForecast": "Mostly sunny, with a high near 64. North wind around 5 mph.",
+    "detailedForecast": "Mostly clear, with a low around 40. North wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Drop in and Knit",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "10:00am - 12:00pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/17144888",
-      "tags": [
-        "new",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 10
-    },
-    {
-      "title": "Meet the Human Services Department",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "10:00am - 1:00pm",
-      "location": "Princeton Public Library - Lobby",
-      "url": "https://princetonlibrary.libnet.info/event/15468891",
-      "tags": [
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Storytime!",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "10:30am - 11:00am",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14660963",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Baby Storytime",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "11:30am - 12:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14662398",
-      "tags": [
-        "family"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 11
-    },
-    {
-      "title": "Kids: Baby Play Group",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "12:00pm - 1:00pm",
-      "location": "Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/14662331",
-      "tags": [
-        "new",
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 12
-    },
-    {
-      "title": "Tech: Protect Yourself Online",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "1:00pm - 2:30pm",
-      "location": "Princeton Public Library - Tech Center",
-      "url": "https://princetonlibrary.libnet.info/event/17486854",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 13
-    },
-    {
-      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
-      "source": "Princeton University",
-      "dateLabel": "Oct 21",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-12",
-      "tags": [],
-      "isoDate": "2026-10-21",
-      "startHour": 15
-    },
-    {
-      "title": "Kids: Little Artists: Pipe Cleaner Spiders",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "3:30pm - 4:30pm",
-      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
-      "url": "https://princetonlibrary.libnet.info/event/17236964",
-      "tags": [
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 15
-    },
-    {
-      "title": "English Conversation (virtual)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Virtual - Google Meet",
-      "url": "https://princetonlibrary.libnet.info/event/16837159",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 16
-    },
-    {
-      "title": "InterVarsity Small Group",
-      "source": "Princeton University",
-      "dateLabel": "Oct 21",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-3",
-      "tags": [],
-      "isoDate": "2026-10-21",
-      "startHour": 16
-    },
-    {
-      "title": "Celebrate Princeton Innovation 2026",
-      "source": "Princeton University",
-      "dateLabel": "Oct 21",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/celebrate-princeton-innovation-2026",
-      "tags": [],
-      "isoDate": "2026-10-21",
-      "startHour": 17
-    },
-    {
-      "title": "YDSA Weekly Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Oct 21",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/ydsa-weekly-meeting-13",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 17
-    },
-    {
-      "title": "Journaling Club",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "5:00pm - 6:00pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/16862225",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 17
-    },
-    {
-      "title": "Influenza Vaccine Clinic",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "5:00pm - 7:00pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/16218399",
-      "tags": [
-        "new",
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 17
-    },
-    {
-      "title": "Influenza Clinic",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "5:00pm - 7:00pm",
-      "location": "The Community Room, Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/16205426",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 17
-    },
-    {
-      "title": "Author Workshop: \"Write Your Own Thriller\"",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "6:00pm - 7:00pm",
-      "location": "Virtual - Zoom Webinar",
-      "url": "https://princetonlibrary.libnet.info/event/17171312",
-      "tags": [
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 18
-    },
-    {
-      "title": "Board of Trustees Meeting",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Newsroom",
-      "url": "https://princetonlibrary.libnet.info/event/15121284",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 18
-    },
-    {
-      "title": "Learn English at the Library (High Beginner)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 21",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/17154695",
-      "tags": [
-        "new",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 18
-    },
-    {
-      "title": "Library Board of Trustees Meeting",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 21, 2026",
-      "timeLabel": "06:00 PM - 11:59 PM",
-      "location": "65 Witherspoon StreetPrinceton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7831",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 18
-    },
-    {
-      "title": "Princeton Housing Authority Meeting - CANCELLED",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 21, 2026",
-      "timeLabel": "06:15 PM - 11:59 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8030",
-      "tags": [
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-21",
-      "startHour": 18
-    },
     {
       "title": "English Conversation",
       "source": "Princeton Public Library",
@@ -855,20 +577,6 @@
       "startHour": 15
     },
     {
-      "title": "Catherine Project Weekly Book Discussion Series",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 26",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/17155819",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-26",
-      "startHour": 16
-    },
-    {
       "title": "Kids: eSTEAM Club: Spooky Science",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 26",
@@ -879,6 +587,20 @@
         "new",
         "family",
         "rain",
+        "practical"
+      ],
+      "isoDate": "2026-10-26",
+      "startHour": 16
+    },
+    {
+      "title": "Catherine Project Weekly Book Discussion Series",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 26",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/17155819",
+      "tags": [
+        "family",
         "practical"
       ],
       "isoDate": "2026-10-26",
@@ -1342,15 +1064,381 @@
       ],
       "isoDate": "2026-10-27",
       "startHour": 20
+    },
+    {
+      "title": "Drop in and Knit",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 28",
+      "timeLabel": "10:00am - 12:00pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/17144889",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 10
+    },
+    {
+      "title": "Introduction to ArcGIS",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "10:30 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/introduction-arcgis-0",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 10
+    },
+    {
+      "title": "Digital Scholarship Foundations: Static Websites (2 of 4)",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "10:30 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/digital-scholarship-foundations-static-websites-2-4",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Storytime!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 28",
+      "timeLabel": "10:30am - 11:00am",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14660964",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Baby Storytime",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 28",
+      "timeLabel": "11:30am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14662399",
+      "tags": [
+        "family"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 11
+    },
+    {
+      "title": "Crafternoon at the Commons: Book Page Ghost Garland",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "11:45 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/crafternoon-commons-book-page-ghost-garland",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 11
+    },
+    {
+      "title": "Wednesday Seminar Series, Mossavar-Rahmani Center for Iran & Persian Gulf Studies",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/wednesday-seminar-series-mossavar-rahmani-center-iran-persian-gulf-studies-8",
+      "tags": [],
+      "isoDate": "2026-10-28",
+      "startHour": 12
+    },
+    {
+      "title": "Kids: Baby Play Group",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 28",
+      "timeLabel": "12:00pm - 1:00pm",
+      "location": "Princeton Public Library",
+      "url": "https://princetonlibrary.libnet.info/event/14662332",
+      "tags": [
+        "new",
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 12
+    },
+    {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-14",
+      "tags": [],
+      "isoDate": "2026-10-28",
+      "startHour": 15
+    },
+    {
+      "title": "Pace Center Summer Internships Drop-in",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/pace-center-summer-internships-drop-3",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 15
+    },
+    {
+      "title": "Kids & Teens: Homework Help",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 28",
+      "timeLabel": "3:30pm - 6:00pm",
+      "location": "Princeton Public Library - CoLab Space",
+      "url": "https://princetonlibrary.libnet.info/event/17507790",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 15
+    },
+    {
+      "title": "English Conversation (virtual)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 28",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Virtual - Google Meet",
+      "url": "https://princetonlibrary.libnet.info/event/16837160",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 16
+    },
+    {
+      "title": "Trunk or Treat",
+      "source": "Municipality of Princeton",
+      "dateLabel": "October 28, 2026",
+      "timeLabel": "04:00 PM - 06:00 PM",
+      "location": "400 Witherspoon St.Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8138",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 16
+    },
+    {
+      "title": "InterVarsity Small Group",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-4",
+      "tags": [],
+      "isoDate": "2026-10-28",
+      "startHour": 16
+    },
+    {
+      "title": "Roundtable on German Elections",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/roundtable-german-elections",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 16
+    },
+    {
+      "title": "Finding English Career Opportunities in Japan",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/finding-english-career-opportunities-japan",
+      "tags": [],
+      "isoDate": "2026-10-28",
+      "startHour": 16
+    },
+    {
+      "title": "YDSA Weekly Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/ydsa-weekly-meeting-14",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 17
+    },
+    {
+      "title": "Amphibious Realities / Allan Sekula event",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/amphibious-realities-allan-sekula-event",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 17
+    },
+    {
+      "title": "Cognitive Science Office Hours",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/cognitive-science-office-hours",
+      "tags": [],
+      "isoDate": "2026-10-28",
+      "startHour": 17
+    },
+    {
+      "title": "Costume Support (Drop in!)",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/costume-support-drop",
+      "tags": [
+        "new",
+        "practical"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 17
+    },
+    {
+      "title": "Words in Common Book Group",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 28",
+      "timeLabel": "6:00pm - 7:00pm",
+      "location": "Princeton Public Library - Conference Room",
+      "url": "https://princetonlibrary.libnet.info/event/17028756",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 18
+    },
+    {
+      "title": "Learn English at the Library (High Beginner)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 28",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/17154696",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 18
+    },
+    {
+      "title": "Dance Minor Social Hour and Information Session",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "6:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/dance-minor-social-hour-and-information-session",
+      "tags": [
+        "new",
+        "culture"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 18
+    },
+    {
+      "title": "MLP WD Muhammad Lecture and Documentary Viewing",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "6:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mlp-wd-muhammad-lecture-and-documentary-viewing",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 18
+    },
+    {
+      "title": "Preparing Students with Disabilities",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 28",
+      "timeLabel": "6:30pm - 7:30pm",
+      "location": "Princeton Public Library - Newsroom",
+      "url": "https://princetonlibrary.libnet.info/event/17265950",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 18
+    },
+    {
+      "title": "Author: Alyson Mosquera Dutemple",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 28",
+      "timeLabel": "7:00pm - 8:00pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17334429",
+      "tags": [
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 19
+    },
+    {
+      "title": "Princeton Christian Fellowship Bible studies",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-9",
+      "tags": [],
+      "isoDate": "2026-10-28",
+      "startHour": 20
+    },
+    {
+      "title": "Jazz Vespers",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/jazz-vespers-0",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 20
     }
   ],
   "days": [
-    {
-      "iso": "2026-10-21",
-      "label": "Oct 21",
-      "weekday": "Wed",
-      "count": 20
-    },
     {
       "iso": "2026-10-22",
       "label": "Oct 22",
@@ -1386,6 +1474,12 @@
       "label": "Oct 27",
       "weekday": "Tue",
       "count": 25
+    },
+    {
+      "iso": "2026-10-28",
+      "label": "Oct 28",
+      "weekday": "Wed",
+      "count": 28
     }
   ],
   "windowDays": 7,
@@ -1395,7 +1489,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Sunny, 64F"
+      "detail": "Mostly Clear, 40F"
     },
     {
       "name": "Princeton University Events",
@@ -1407,13 +1501,13 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "56 events"
+      "detail": "51 events"
     },
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "9 calendar items"
+      "detail": "8 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
