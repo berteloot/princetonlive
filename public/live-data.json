@@ -1,13 +1,21 @@
 {
-  "generatedAt": "2026-10-23T17:05:23.542Z",
+  "generatedAt": "2026-10-23T21:23:19.327Z",
   "weather": {
     "temperature": 60,
     "shortForecast": "Sunny",
-    "wind": "5 to 10 mph NE",
-    "detailedForecast": "Sunny, with a high near 60. Northeast wind 5 to 10 mph.",
+    "wind": "0 mph ",
+    "detailedForecast": "Sunny, with a high near 60. East wind around 0 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
-  "alerts": [],
+  "alerts": [
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6ce9eb2ee7b32fabe3225396510ad167f2b1c983.003.1",
+      "event": "Frost Advisory",
+      "headline": "Frost Advisory issued October 23 at 2:04PM EDT until October 24 at 9:00AM EDT by NWS Mount Holly NJ",
+      "severity": "Minor",
+      "url": null
+    }
+  ],
   "alertsAvailable": true,
   "events": [
     {
@@ -148,6 +156,20 @@
       ],
       "isoDate": "2026-10-24",
       "startHour": 11
+    },
+    {
+      "title": "Sushi Imposter",
+      "source": "Princeton University",
+      "dateLabel": "Oct 24",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/sushi-imposter",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-24",
+      "startHour": 14
     },
     {
       "title": "Kids: 3D Printing and Design Basics",
@@ -769,20 +791,6 @@
       "startHour": 17
     },
     {
-      "title": "Ema Nikolovska, Mezzo-Soprano (Princeton University Concerts)",
-      "source": "Princeton University",
-      "dateLabel": "Oct 27",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/ema-nikolovska-mezzo-soprano-princeton-university-concerts",
-      "tags": [
-        "new",
-        "culture"
-      ],
-      "isoDate": "2026-10-27",
-      "startHour": 18
-    },
-    {
       "title": "C.K. Williams Reading by Jamel Brinkley and Creative Writing Seniors",
       "source": "Princeton University",
       "dateLabel": "Oct 27",
@@ -793,6 +801,20 @@
         "new",
         "culture",
         "rain"
+      ],
+      "isoDate": "2026-10-27",
+      "startHour": 18
+    },
+    {
+      "title": "Ema Nikolovska, Mezzo-Soprano (Princeton University Concerts)",
+      "source": "Princeton University",
+      "dateLabel": "Oct 27",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/ema-nikolovska-mezzo-soprano-princeton-university-concerts",
+      "tags": [
+        "new",
+        "culture"
       ],
       "isoDate": "2026-10-27",
       "startHour": 18
@@ -1131,13 +1153,16 @@
       "startHour": 17
     },
     {
-      "title": "Cognitive Science Office Hours",
+      "title": "YDSA Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/cognitive-science-office-hours",
-      "tags": [],
+      "url": "https://www.princeton.edu/events/2026/ydsa-weekly-meeting-14",
+      "tags": [
+        "culture",
+        "rain"
+      ],
       "isoDate": "2026-10-28",
       "startHour": 17
     },
@@ -1157,16 +1182,13 @@
       "startHour": 17
     },
     {
-      "title": "YDSA Weekly Meeting",
+      "title": "Cognitive Science Office Hours",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/ydsa-weekly-meeting-14",
-      "tags": [
-        "culture",
-        "rain"
-      ],
+      "url": "https://www.princeton.edu/events/2026/cognitive-science-office-hours",
+      "tags": [],
       "isoDate": "2026-10-28",
       "startHour": 17
     },
@@ -1200,19 +1222,6 @@
       "startHour": 18
     },
     {
-      "title": "MLP WD Muhammad Lecture and Documentary Viewing",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "6:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mlp-wd-muhammad-lecture-and-documentary-viewing",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 18
-    },
-    {
       "title": "Dance Minor Social Hour and Information Session",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
@@ -1221,6 +1230,19 @@
       "url": "https://www.princeton.edu/events/2026/dance-minor-social-hour-and-information-session",
       "tags": [
         "new",
+        "culture"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 18
+    },
+    {
+      "title": "MLP WD Muhammad Lecture and Documentary Viewing",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "6:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mlp-wd-muhammad-lecture-and-documentary-viewing",
+      "tags": [
         "culture"
       ],
       "isoDate": "2026-10-28",
@@ -1348,6 +1370,17 @@
       "startHour": 11
     },
     {
+      "title": "Faculty and staff Bible study",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-2",
+      "tags": [],
+      "isoDate": "2026-10-29",
+      "startHour": 12
+    },
+    {
       "title": "Reference Management with Zotero",
       "source": "Princeton University",
       "dateLabel": "Oct 29",
@@ -1357,17 +1390,6 @@
       "tags": [
         "rain"
       ],
-      "isoDate": "2026-10-29",
-      "startHour": 12
-    },
-    {
-      "title": "Faculty and staff Bible study",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-2",
-      "tags": [],
       "isoDate": "2026-10-29",
       "startHour": 12
     },
@@ -1475,35 +1497,6 @@
       "startHour": 16
     },
     {
-      "title": "Seminar: \"A Field Guide to Watersheds: Division and Unity\" by Eliza Griswold",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seminar-field-guide-watersheds-division-and-unity-eliza-griswold",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 16
-    },
-    {
-      "title": "Staying Alive in Hitler’s Berlin",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/staying-alive-hitlers-berlin",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 16
-    },
-    {
       "title": "Musicology Colloquium with Lydia Goehr",
       "source": "Princeton University",
       "dateLabel": "Oct 29",
@@ -1529,6 +1522,35 @@
         "new",
         "family",
         "culture"
+      ],
+      "isoDate": "2026-10-29",
+      "startHour": 16
+    },
+    {
+      "title": "Staying Alive in Hitler’s Berlin",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/staying-alive-hitlers-berlin",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-10-29",
+      "startHour": 16
+    },
+    {
+      "title": "Seminar: \"A Field Guide to Watersheds: Division and Unity\" by Eliza Griswold",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seminar-field-guide-watersheds-division-and-unity-eliza-griswold",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-10-29",
       "startHour": 16
@@ -1671,7 +1693,7 @@
       "iso": "2026-10-24",
       "label": "Oct 24",
       "weekday": "Sat",
-      "count": 12
+      "count": 13
     },
     {
       "iso": "2026-10-25",
