@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-23T11:36:37.931Z",
+  "generatedAt": "2026-10-23T17:05:23.542Z",
   "weather": {
     "temperature": 60,
     "shortForecast": "Sunny",
     "wind": "5 to 10 mph NE",
-    "detailedForecast": "Sunny, with a high near 60. Northeast wind 5 to 10 mph, with gusts as high as 25 mph.",
+    "detailedForecast": "Sunny, with a high near 60. Northeast wind 5 to 10 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -48,7 +48,7 @@
       "source": "Princeton Public Library",
       "dateLabel": "Oct 23",
       "timeLabel": "2:00pm - 3:30pm",
-      "location": "Princeton Public Library - Quiet Room",
+      "location": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/event/17236681",
       "tags": [
         "practical"
