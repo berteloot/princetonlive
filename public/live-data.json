@@ -1,13 +1,21 @@
 {
-  "generatedAt": "2026-10-24T15:55:50.744Z",
+  "generatedAt": "2026-10-24T20:47:31.071Z",
   "weather": {
     "temperature": 64,
     "shortForecast": "Sunny",
     "wind": "0 mph ",
-    "detailedForecast": "Sunny, with a high near 64. North wind around 0 mph.",
+    "detailedForecast": "Sunny, with a high near 64. Southwest wind around 0 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
-  "alerts": [],
+  "alerts": [
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.03f364a9e24adf5a5df97dd37dce02ff266e4a54.001.2",
+      "event": "Freeze Warning",
+      "headline": "Freeze Warning issued October 24 at 4:43PM EDT until October 25 at 9:00AM EDT by NWS Mount Holly NJ",
+      "severity": "Severe",
+      "url": null
+    }
+  ],
   "alertsAvailable": true,
   "events": [
     {
