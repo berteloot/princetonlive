@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-24T23:12:29.293Z",
+  "generatedAt": "2026-10-25T04:39:05.983Z",
   "weather": {
     "temperature": 31,
     "shortForecast": "Widespread Frost",
     "wind": "0 mph ",
-    "detailedForecast": "Widespread frost after 10pm. Clear, with a low around 31. West wind around 0 mph.",
+    "detailedForecast": "Widespread frost. Clear, with a low around 31. West wind around 0 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
@@ -18,185 +18,6 @@
   ],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Ivy League Men's Tennis Championships",
-      "source": "Princeton University",
-      "dateLabel": "Oct 24",
-      "timeLabel": "8:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/ivy-league-mens-tennis-championships-0",
-      "tags": [],
-      "isoDate": "2026-10-24",
-      "startHour": 8
-    },
-    {
-      "title": "Museum for All Ball",
-      "source": "Princeton University",
-      "dateLabel": "Oct 24",
-      "timeLabel": "9:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/museum-all-ball-0",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-24",
-      "startHour": 9
-    },
-    {
-      "title": "Kids: Special Storytime with Tess Thomas",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 24",
-      "timeLabel": "10:30am - 11:30am",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/17111303",
-      "tags": [
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-24",
-      "startHour": 10
-    },
-    {
-      "title": "Preschool and Kindergarten Fair",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 24",
-      "timeLabel": "11:00am - 1:00pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/17070729",
-      "tags": [
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-24",
-      "startHour": 11
-    },
-    {
-      "title": "Sushi Imposter",
-      "source": "Princeton University",
-      "dateLabel": "Oct 24",
-      "timeLabel": "2:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/sushi-imposter",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-24",
-      "startHour": 14
-    },
-    {
-      "title": "Kids: 3D Printing and Design Basics",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 24",
-      "timeLabel": "2:00pm - 3:00pm",
-      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
-      "url": "https://princetonlibrary.libnet.info/event/17420350",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-24",
-      "startHour": 14
-    },
-    {
-      "title": "Kids & Teens: Drop-In Chess Sessions",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 24",
-      "timeLabel": "3:00pm - 4:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/17040523",
-      "tags": [
-        "new",
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-24",
-      "startHour": 15
-    },
-    {
-      "title": "Tango Practica",
-      "source": "Princeton University",
-      "dateLabel": "Oct 24",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/tango-practica-18",
-      "tags": [],
-      "isoDate": "2026-10-24",
-      "startHour": 16
-    },
-    {
-      "title": "Opening Night World Premiere of L’Hôtel Ritz de Paris",
-      "source": "Princeton University",
-      "dateLabel": "Oct 24",
-      "timeLabel": "6:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/opening-night-world-premiere-lhotel-ritz-de-paris",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-24",
-      "startHour": 18
-    },
-    {
-      "title": "Museum for All Ball",
-      "source": "Princeton University",
-      "dateLabel": "Oct 24",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/museum-all-ball-1",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-24",
-      "startHour": 19
-    },
-    {
-      "title": "Magic: The Gathering Club Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Oct 24",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/magic-gathering-club-meeting-6",
-      "tags": [
-        "new",
-        "rain"
-      ],
-      "isoDate": "2026-10-24",
-      "startHour": 19
-    },
-    {
-      "title": "Museum for All Ball",
-      "source": "Princeton University",
-      "dateLabel": "Oct 24",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/museum-all-ball",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-24",
-      "startHour": 19
-    },
-    {
-      "title": "Liars' Club meeting",
-      "source": "Princeton University",
-      "dateLabel": "Oct 24",
-      "timeLabel": "9:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/liars-club-meeting-6",
-      "tags": [
-        "new",
-        "rain"
-      ],
-      "isoDate": "2026-10-24",
-      "startHour": 21
-    },
     {
       "title": "Ivy League Men's Tennis Championships",
       "source": "Princeton University",
@@ -234,17 +55,6 @@
       "startHour": 11
     },
     {
-      "title": "Field Hockey vs St. Joe's",
-      "source": "Princeton University",
-      "dateLabel": "Oct 25",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-st-joes",
-      "tags": [],
-      "isoDate": "2026-10-25",
-      "startHour": 12
-    },
-    {
       "title": "Women's Soccer vs Dartmouth",
       "source": "Princeton University",
       "dateLabel": "Oct 25",
@@ -254,6 +64,17 @@
       "tags": [
         "culture"
       ],
+      "isoDate": "2026-10-25",
+      "startHour": 12
+    },
+    {
+      "title": "Field Hockey vs St. Joe's",
+      "source": "Princeton University",
+      "dateLabel": "Oct 25",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/field-hockey-vs-st-joes",
+      "tags": [],
       "isoDate": "2026-10-25",
       "startHour": 12
     },
@@ -387,6 +208,17 @@
       "startHour": 16
     },
     {
+      "title": "How to Win a Trade War - Talk with Chad Bown and Soumaya Keynes",
+      "source": "Princeton University",
+      "dateLabel": "Oct 26",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/how-win-trade-war-talk-chad-bown-and-soumaya-keynes",
+      "tags": [],
+      "isoDate": "2026-10-26",
+      "startHour": 16
+    },
+    {
       "title": "Civic Leadership Council (Pace) Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 26",
@@ -397,17 +229,6 @@
         "rain",
         "practical"
       ],
-      "isoDate": "2026-10-26",
-      "startHour": 16
-    },
-    {
-      "title": "How to Win a Trade War - Talk with Chad Bown and Soumaya Keynes",
-      "source": "Princeton University",
-      "dateLabel": "Oct 26",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/how-win-trade-war-talk-chad-bown-and-soumaya-keynes",
-      "tags": [],
       "isoDate": "2026-10-26",
       "startHour": 16
     },
@@ -619,6 +440,20 @@
       "startHour": 15
     },
     {
+      "title": "Kids & Teens: Homework Help",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 27",
+      "timeLabel": "3:30pm - 6:00pm",
+      "location": "Princeton Public Library - CoLab Space",
+      "url": "https://princetonlibrary.libnet.info/event/17480002",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-27",
+      "startHour": 15
+    },
+    {
       "title": "Kids: Tinker Tuesday: Rigamajig",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 27",
@@ -629,20 +464,6 @@
         "new",
         "family",
         "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-27",
-      "startHour": 15
-    },
-    {
-      "title": "Kids & Teens: Homework Help",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 27",
-      "timeLabel": "3:30pm - 6:00pm",
-      "location": "Princeton Public Library - CoLab Space",
-      "url": "https://princetonlibrary.libnet.info/event/17480002",
-      "tags": [
-        "family",
         "practical"
       ],
       "isoDate": "2026-10-27",
@@ -1286,6 +1107,17 @@
       "startHour": 11
     },
     {
+      "title": "Faculty and staff Bible study",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-2",
+      "tags": [],
+      "isoDate": "2026-10-29",
+      "startHour": 12
+    },
+    {
       "title": "Reference Management with Zotero",
       "source": "Princeton University",
       "dateLabel": "Oct 29",
@@ -1295,17 +1127,6 @@
       "tags": [
         "rain"
       ],
-      "isoDate": "2026-10-29",
-      "startHour": 12
-    },
-    {
-      "title": "Faculty and staff Bible study",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-2",
-      "tags": [],
       "isoDate": "2026-10-29",
       "startHour": 12
     },
@@ -1743,15 +1564,203 @@
       ],
       "isoDate": "2026-10-30",
       "startHour": 20
+    },
+    {
+      "title": "Varsity M Volleyball Glenn Nelson Classic",
+      "source": "Princeton University",
+      "dateLabel": "Oct 31",
+      "timeLabel": "8:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/varsity-m-volleyball-glenn-nelson-classic-0",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-10-31",
+      "startHour": 8
+    },
+    {
+      "title": "Kids: Take & Make",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 31",
+      "timeLabel": "10:00am - 2:00pm",
+      "location": "Princeton Public Library - 3rd Floor Pop-up Programming Area",
+      "url": "https://princetonlibrary.libnet.info/event/16847048",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-31",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Saturday Storytime!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 31",
+      "timeLabel": "10:30am - 11:00am",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14662012",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-10-31",
+      "startHour": 10
+    },
+    {
+      "title": "Men's Water Polo vs Iona",
+      "source": "Princeton University",
+      "dateLabel": "Oct 31",
+      "timeLabel": "11:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-iona",
+      "tags": [],
+      "isoDate": "2026-10-31",
+      "startHour": 11
+    },
+    {
+      "title": "Tiger Tech Help",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 31",
+      "timeLabel": "11:00am - 1:00pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/17469702",
+      "tags": [
+        "new",
+        "practical"
+      ],
+      "isoDate": "2026-10-31",
+      "startHour": 11
+    },
+    {
+      "title": "Football vs Cornell",
+      "source": "Princeton University",
+      "dateLabel": "Oct 31",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/football-vs-cornell",
+      "tags": [],
+      "isoDate": "2026-10-31",
+      "startHour": 12
+    },
+    {
+      "title": "Meeting: New Jersey Tolkien Society",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 31",
+      "timeLabel": "1:00pm - 3:00pm",
+      "location": "Princeton Public Library",
+      "url": "https://princetonlibrary.libnet.info/event/17657085",
+      "tags": [
+        "family",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-10-31",
+      "startHour": 13
+    },
+    {
+      "title": "Women's Ice Hockey vs Yale",
+      "source": "Princeton University",
+      "dateLabel": "Oct 31",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-ice-hockey-vs-yale",
+      "tags": [],
+      "isoDate": "2026-10-31",
+      "startHour": 15
+    },
+    {
+      "title": "Hip-Hop Techniques and Foundations with ESkilllz",
+      "source": "Princeton University",
+      "dateLabel": "Oct 31",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/hip-hop-techniques-and-foundations-eskilllz-1",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-31",
+      "startHour": 15
+    },
+    {
+      "title": "Men's Water Polo vs LIU Brooklyn",
+      "source": "Princeton University",
+      "dateLabel": "Oct 31",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-liu-brooklyn",
+      "tags": [],
+      "isoDate": "2026-10-31",
+      "startHour": 16
+    },
+    {
+      "title": "Tango Practica",
+      "source": "Princeton University",
+      "dateLabel": "Oct 31",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/tango-practica-19",
+      "tags": [],
+      "isoDate": "2026-10-31",
+      "startHour": 16
+    },
+    {
+      "title": "Men's Soccer vs Harvard",
+      "source": "Princeton University",
+      "dateLabel": "Oct 31",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-harvard",
+      "tags": [],
+      "isoDate": "2026-10-31",
+      "startHour": 17
+    },
+    {
+      "title": "Harvard and Princeton Glee Clubs: The Football Concert",
+      "source": "Princeton University",
+      "dateLabel": "Oct 31",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/harvard-and-princeton-glee-clubs-football-concert",
+      "tags": [
+        "new",
+        "culture"
+      ],
+      "isoDate": "2026-10-31",
+      "startHour": 18
+    },
+    {
+      "title": "Magic: The Gathering Club Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Oct 31",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/magic-gathering-club-meeting-7",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-10-31",
+      "startHour": 19
+    },
+    {
+      "title": "Liars' Club meeting",
+      "source": "Princeton University",
+      "dateLabel": "Oct 31",
+      "timeLabel": "9:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/liars-club-meeting-7",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-10-31",
+      "startHour": 21
     }
   ],
   "days": [
-    {
-      "iso": "2026-10-24",
-      "label": "Oct 24",
-      "weekday": "Sat",
-      "count": 13
-    },
     {
       "iso": "2026-10-25",
       "label": "Oct 25",
@@ -1787,6 +1796,12 @@
       "label": "Oct 30",
       "weekday": "Fri",
       "count": 11
+    },
+    {
+      "iso": "2026-10-31",
+      "label": "Oct 31",
+      "weekday": "Sat",
+      "count": 15
     }
   ],
   "windowDays": 7,
@@ -1808,7 +1823,7 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "47 events"
+      "detail": "48 events"
     },
     {
       "name": "Municipality of Princeton",
