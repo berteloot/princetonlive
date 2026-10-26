@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T12:59:41.395Z",
+  "generatedAt": "2026-10-26T20:28:31.367Z",
   "weather": {
     "temperature": 69,
     "shortForecast": "Sunny",
@@ -356,7 +356,7 @@
       "startHour": 15
     },
     {
-      "title": "Kids: Tinker Tuesday: Rigamajig",
+      "title": "Kids: Tinker Tuesday, Rigamajig",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 27",
       "timeLabel": "3:30pm - 4:30pm",
@@ -385,6 +385,21 @@
       "startHour": 16
     },
     {
+      "title": "Celebrating Tiger Journalism: 150 Years of The Daily Princetonian",
+      "source": "Princeton University",
+      "dateLabel": "Oct 27",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/celebrating-tiger-journalism-150-years-daily-princetonian",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-27",
+      "startHour": 16
+    },
+    {
       "title": "Repair the Future: Point of You and Perfect City",
       "source": "Princeton University",
       "dateLabel": "Oct 27",
@@ -395,21 +410,6 @@
         "new",
         "culture",
         "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-27",
-      "startHour": 16
-    },
-    {
-      "title": "Celebrating Tiger Journalism: 150 Years of The Daily Princetonian",
-      "source": "Princeton University",
-      "dateLabel": "Oct 27",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/celebrating-tiger-journalism-150-years-daily-princetonian",
-      "tags": [
-        "new",
-        "culture",
         "practical"
       ],
       "isoDate": "2026-10-27",
@@ -487,6 +487,20 @@
       "startHour": 18
     },
     {
+      "title": "Amphibious Realities Film Screening",
+      "source": "Princeton University",
+      "dateLabel": "Oct 27",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/amphibious-realities-film-screening",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-27",
+      "startHour": 19
+    },
+    {
       "title": "“Chip Chat” with Amira Adarkwah on Black Bodies and Performance",
       "source": "Princeton University",
       "dateLabel": "Oct 27",
@@ -498,20 +512,6 @@
         "culture",
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-10-27",
-      "startHour": 19
-    },
-    {
-      "title": "Amphibious Realities Film Screening",
-      "source": "Princeton University",
-      "dateLabel": "Oct 27",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/amphibious-realities-film-screening",
-      "tags": [
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-10-27",
       "startHour": 19
@@ -743,13 +743,15 @@
       "startHour": 16
     },
     {
-      "title": "InterVarsity Small Group",
+      "title": "Roundtable on German Elections",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-4",
-      "tags": [],
+      "url": "https://www.princeton.edu/events/2026/roundtable-german-elections",
+      "tags": [
+        "culture"
+      ],
       "isoDate": "2026-10-28",
       "startHour": 16
     },
@@ -765,42 +767,15 @@
       "startHour": 16
     },
     {
-      "title": "Roundtable on German Elections",
+      "title": "InterVarsity Small Group",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/roundtable-german-elections",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 16
-    },
-    {
-      "title": "Costume Support (Drop in!)",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/costume-support-drop",
-      "tags": [
-        "new",
-        "practical"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 17
-    },
-    {
-      "title": "Cognitive Science Office Hours",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/cognitive-science-office-hours",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-4",
       "tags": [],
       "isoDate": "2026-10-28",
-      "startHour": 17
+      "startHour": 16
     },
     {
       "title": "Amphibious Realities / Allan Sekula event",
@@ -827,6 +802,31 @@
       "tags": [
         "culture",
         "rain"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 17
+    },
+    {
+      "title": "Cognitive Science Office Hours",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/cognitive-science-office-hours",
+      "tags": [],
+      "isoDate": "2026-10-28",
+      "startHour": 17
+    },
+    {
+      "title": "Costume Support (Drop in!)",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/costume-support-drop",
+      "tags": [
+        "new",
+        "practical"
       ],
       "isoDate": "2026-10-28",
       "startHour": 17
@@ -861,6 +861,19 @@
       "startHour": 18
     },
     {
+      "title": "MLP WD Muhammad Lecture and Documentary Viewing",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "6:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mlp-wd-muhammad-lecture-and-documentary-viewing",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 18
+    },
+    {
       "title": "Dance Minor Social Hour and Information Session",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
@@ -869,19 +882,6 @@
       "url": "https://www.princeton.edu/events/2026/dance-minor-social-hour-and-information-session",
       "tags": [
         "new",
-        "culture"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 18
-    },
-    {
-      "title": "MLP WD Muhammad Lecture and Documentary Viewing",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "6:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mlp-wd-muhammad-lecture-and-documentary-viewing",
-      "tags": [
         "culture"
       ],
       "isoDate": "2026-10-28",
@@ -911,6 +911,20 @@
       "url": "https://princetonlibrary.libnet.info/event/17334429",
       "tags": [
         "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 19
+    },
+    {
+      "title": "Zoning Board of Adjustment -virtual meeting",
+      "source": "Municipality of Princeton",
+      "dateLabel": "October 28, 2026",
+      "timeLabel": "07:30 PM - 11:59 PM",
+      "location": "Princeton, NJ",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8145",
+      "tags": [
+        "rain",
         "practical"
       ],
       "isoDate": "2026-10-28",
@@ -1009,17 +1023,6 @@
       "startHour": 11
     },
     {
-      "title": "Faculty and staff Bible study",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-2",
-      "tags": [],
-      "isoDate": "2026-10-29",
-      "startHour": 12
-    },
-    {
       "title": "Reference Management with Zotero",
       "source": "Princeton University",
       "dateLabel": "Oct 29",
@@ -1029,6 +1032,17 @@
       "tags": [
         "rain"
       ],
+      "isoDate": "2026-10-29",
+      "startHour": 12
+    },
+    {
+      "title": "Faculty and staff Bible study",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-2",
+      "tags": [],
       "isoDate": "2026-10-29",
       "startHour": 12
     },
@@ -1123,27 +1137,15 @@
       "startHour": 16
     },
     {
-      "title": "Birding Society Migration Meeting",
+      "title": "The Passover Story Turned Upside Down: Jewish Slave-Owning in Medieval Egypt",
       "source": "Princeton University",
       "dateLabel": "Oct 29",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/birding-society-migration-meeting",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 16
-    },
-    {
-      "title": "Musicology Colloquium with Lydia Goehr",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/musicology-colloquium-lydia-goehr",
+      "url": "https://www.princeton.edu/events/2026/passover-story-turned-upside-down-jewish-slave-owning-medieval-egypt",
       "tags": [
         "new",
+        "family",
         "culture",
         "rain"
       ],
@@ -1167,6 +1169,19 @@
       "startHour": 16
     },
     {
+      "title": "Staying Alive in Hitler’s Berlin",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/staying-alive-hitlers-berlin",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-10-29",
+      "startHour": 16
+    },
+    {
       "title": "James A. Moffett '29 Lectures in Ethics",
       "source": "Princeton University",
       "dateLabel": "Oct 29",
@@ -1182,14 +1197,29 @@
       "startHour": 16
     },
     {
-      "title": "Staying Alive in Hitler’s Berlin",
+      "title": "Birding Society Migration Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 29",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/staying-alive-hitlers-berlin",
+      "url": "https://www.princeton.edu/events/2026/birding-society-migration-meeting",
       "tags": [
-        "new"
+        "rain"
+      ],
+      "isoDate": "2026-10-29",
+      "startHour": 16
+    },
+    {
+      "title": "Musicology Colloquium with Lydia Goehr",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/musicology-colloquium-lydia-goehr",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-10-29",
       "startHour": 16
@@ -1222,12 +1252,12 @@
       "startHour": 17
     },
     {
-      "title": "Re-Entry Dinner",
+      "title": "After Concrete: Book Launch & Roundtable",
       "source": "Princeton University",
       "dateLabel": "Oct 29",
       "timeLabel": "6:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/re-entry-dinner",
+      "url": "https://www.princeton.edu/events/2026/after-concrete-book-launch-roundtable",
       "tags": [
         "culture"
       ],
@@ -1235,12 +1265,12 @@
       "startHour": 18
     },
     {
-      "title": "After Concrete: Book Launch & Roundtable",
+      "title": "Re-Entry Dinner",
       "source": "Princeton University",
       "dateLabel": "Oct 29",
       "timeLabel": "6:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/after-concrete-book-launch-roundtable",
+      "url": "https://www.princeton.edu/events/2026/re-entry-dinner",
       "tags": [
         "culture"
       ],
@@ -1362,6 +1392,20 @@
       ],
       "isoDate": "2026-10-30",
       "startHour": 11
+    },
+    {
+      "title": "SFPUL Spooky Special Collections Tour",
+      "source": "Princeton University",
+      "dateLabel": "Oct 30",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/sfpul-spooky-special-collections-tour",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-10-30",
+      "startHour": 14
     },
     {
       "title": "English Conversation (in person)",
@@ -1836,19 +1880,19 @@
       "iso": "2026-10-28",
       "label": "Oct 28",
       "weekday": "Wed",
-      "count": 28
+      "count": 29
     },
     {
       "iso": "2026-10-29",
       "label": "Oct 29",
       "weekday": "Thu",
-      "count": 27
+      "count": 28
     },
     {
       "iso": "2026-10-30",
       "label": "Oct 30",
       "weekday": "Fri",
-      "count": 11
+      "count": 12
     },
     {
       "iso": "2026-10-31",
@@ -1888,7 +1932,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "7 calendar items"
+      "detail": "8 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
