@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T00:25:02.133Z",
-  "release": "ACS 2024 5-year",
+  "generatedAt": "2026-10-27T09:12:55.676Z",
+  "release": "ACS 2021 5-year",
   "privacy": "Block-group public data only. PrincetonLive does not publish individual voter, household, or address-level records.",
   "geography": "census block groups",
   "viewBox": "0 0 100 72",
@@ -20,10 +20,10 @@
       "democratShare": 0.8107767449188593,
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
-      "income": 158681,
-      "population": 2284,
-      "children": 620,
-      "childShare": 0.2714535901926445
+      "income": 132130,
+      "population": 2846,
+      "children": 738,
+      "childShare": 0.25931131412508784
     },
     {
       "geoid": "340210042031",
@@ -41,9 +41,9 @@
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
       "income": 250001,
-      "population": 1136,
-      "children": 255,
-      "childShare": 0.2244718309859155
+      "population": 1385,
+      "children": 473,
+      "childShare": 0.34151624548736464
     },
     {
       "geoid": "340210042041",
@@ -60,10 +60,10 @@
       "democratShare": 0.8107767449188593,
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
-      "income": null,
-      "population": 3173,
-      "children": 238,
-      "childShare": 0.07500787897888433
+      "income": 76458,
+      "population": 2750,
+      "children": 336,
+      "childShare": 0.12218181818181818
     },
     {
       "geoid": "340210042051",
@@ -80,10 +80,10 @@
       "democratShare": 0.8107767449188593,
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
-      "income": 117750,
-      "population": 1629,
-      "children": 329,
-      "childShare": 0.2019643953345611
+      "income": 98672,
+      "population": 1074,
+      "children": 93,
+      "childShare": 0.08659217877094973
     },
     {
       "geoid": "340210042061",
@@ -100,10 +100,10 @@
       "democratShare": 0.8107767449188593,
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
-      "income": 130625,
-      "population": 1289,
-      "children": 492,
-      "childShare": 0.3816912335143522
+      "income": null,
+      "population": 1360,
+      "children": 568,
+      "childShare": 0.4176470588235294
     },
     {
       "geoid": "340210045011",
@@ -121,9 +121,9 @@
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
       "income": null,
-      "population": 2352,
+      "population": 2237,
       "children": 4,
-      "childShare": 0.0017006802721088435
+      "childShare": 0.001788109074653554
     },
     {
       "geoid": "340210045021",
@@ -141,9 +141,9 @@
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
       "income": null,
-      "population": 478,
-      "children": 62,
-      "childShare": 0.1297071129707113
+      "population": 644,
+      "children": 121,
+      "childShare": 0.18788819875776397
     },
     {
       "geoid": "340210040002",
@@ -160,10 +160,10 @@
       "democratShare": 0.8107767449188593,
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
-      "income": 87379,
-      "population": 1773,
-      "children": 286,
-      "childShare": 0.16130851663846588
+      "income": 137868,
+      "population": 1701,
+      "children": 327,
+      "childShare": 0.19223985890652556
     },
     {
       "geoid": "340210042032",
@@ -180,10 +180,10 @@
       "democratShare": 0.8107767449188593,
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
-      "income": 207208,
-      "population": 1617,
-      "children": 426,
-      "childShare": 0.2634508348794063
+      "income": 178136,
+      "population": 1576,
+      "children": 366,
+      "childShare": 0.23223350253807107
     },
     {
       "geoid": "340210042042",
@@ -201,9 +201,9 @@
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
       "income": 250001,
-      "population": 625,
-      "children": 155,
-      "childShare": 0.248
+      "population": 943,
+      "children": 267,
+      "childShare": 0.2831389183457052
     },
     {
       "geoid": "340210042052",
@@ -221,9 +221,9 @@
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
       "income": 250001,
-      "population": 3728,
-      "children": 1286,
-      "childShare": 0.3449570815450644
+      "population": 4140,
+      "children": 1346,
+      "childShare": 0.3251207729468599
     },
     {
       "geoid": "340210042062",
@@ -240,10 +240,10 @@
       "democratShare": 0.8107767449188593,
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
-      "income": 212500,
-      "population": 1112,
-      "children": 201,
-      "childShare": 0.18075539568345322
+      "income": 205450,
+      "population": 1177,
+      "children": 218,
+      "childShare": 0.18521665250637212
     },
     {
       "geoid": "340210045012",
@@ -260,10 +260,10 @@
       "democratShare": 0.8107767449188593,
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
-      "income": 199792,
-      "population": 983,
-      "children": 35,
-      "childShare": 0.03560528992878942
+      "income": null,
+      "population": 950,
+      "children": 97,
+      "childShare": 0.10210526315789474
     },
     {
       "geoid": "340210045022",
@@ -280,10 +280,10 @@
       "democratShare": 0.8107767449188593,
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
-      "income": 250001,
-      "population": 543,
-      "children": 103,
-      "childShare": 0.18968692449355432
+      "income": 215250,
+      "population": 472,
+      "children": 34,
+      "childShare": 0.07203389830508475
     },
     {
       "geoid": "340210040003",
@@ -300,10 +300,10 @@
       "democratShare": 0.8107767449188593,
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
-      "income": 150348,
-      "population": 558,
-      "children": 13,
-      "childShare": 0.023297491039426525
+      "income": 220150,
+      "population": 315,
+      "children": 29,
+      "childShare": 0.09206349206349207
     },
     {
       "geoid": "340210042033",
@@ -320,10 +320,10 @@
       "democratShare": 0.8107767449188593,
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
-      "income": 250001,
-      "population": 779,
-      "children": 220,
-      "childShare": 0.28241335044929394
+      "income": 237917,
+      "population": 727,
+      "children": 83,
+      "childShare": 0.11416781292984869
     },
     {
       "geoid": "340210042043",
@@ -340,10 +340,10 @@
       "democratShare": 0.8107767449188593,
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
-      "income": 190900,
-      "population": 912,
-      "children": 246,
-      "childShare": 0.26973684210526316
+      "income": 163870,
+      "population": 527,
+      "children": 91,
+      "childShare": 0.17267552182163187
     },
     {
       "geoid": "340210045013",
@@ -360,10 +360,10 @@
       "democratShare": 0.8107767449188593,
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
-      "income": 201250,
-      "population": 1303,
-      "children": 199,
-      "childShare": 0.15272448196469685
+      "income": 193125,
+      "population": 1400,
+      "children": 163,
+      "childShare": 0.11642857142857142
     },
     {
       "geoid": "340210040004",
@@ -380,10 +380,10 @@
       "democratShare": 0.8107767449188593,
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
-      "income": 112639,
-      "population": 1090,
-      "children": 202,
-      "childShare": 0.1853211009174312
+      "income": 77000,
+      "population": 1085,
+      "children": 349,
+      "childShare": 0.3216589861751152
     },
     {
       "geoid": "340210042044",
@@ -400,10 +400,10 @@
       "democratShare": 0.8107767449188593,
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
-      "income": 250001,
-      "population": 1352,
-      "children": 417,
-      "childShare": 0.3084319526627219
+      "income": 229712,
+      "population": 1394,
+      "children": 410,
+      "childShare": 0.29411764705882354
     },
     {
       "geoid": "340210045014",
@@ -421,9 +421,9 @@
       "republicanShare": 0.15983929415471876,
       "otherShare": 0.029383960926421933,
       "income": null,
-      "population": 2040,
-      "children": 0,
-      "childShare": 0
+      "population": 2014,
+      "children": 7,
+      "childShare": 0.003475670307845084
     }
   ],
   "highlights": [
@@ -440,42 +440,42 @@
       "title": "Most children under 18",
       "label": "northeast Princeton",
       "tract": "Block group 2, tract 42.05",
-      "value": "1,286",
-      "rawValue": 1286
+      "value": "1,346",
+      "rawValue": 1346
     },
     {
       "key": "childShare",
       "title": "Largest child share of population",
       "label": "northeast Princeton",
       "tract": "Block group 1, tract 42.06",
-      "value": "38.2%",
-      "rawValue": 0.3816912335143522
+      "value": "41.8%",
+      "rawValue": 0.4176470588235294
     }
   ],
   "benchmarks": {
     "income": {
       "label": "U.S. median household income",
-      "value": 80734,
+      "value": 69021,
       "unit": "currency",
-      "release": "ACS 2024 5-year",
-      "sourceName": "U.S. Census API / ACS 2024 5-year",
-      "sourceUrl": "https://api.census.gov/data/2024/acs/acs5?get=NAME%2CB19013_001E%2CB01001_001E%2CB01001_003E%2CB01001_004E%2CB01001_005E%2CB01001_006E%2CB01001_027E%2CB01001_028E%2CB01001_029E%2CB01001_030E&for=us%3A1"
+      "release": "ACS 2021 5-year",
+      "sourceName": "U.S. Census API / ACS 2021 5-year",
+      "sourceUrl": "https://api.census.gov/data/2021/acs/acs5?get=NAME%2CB19013_001E%2CB01001_001E%2CB01001_003E%2CB01001_004E%2CB01001_005E%2CB01001_006E%2CB01001_027E%2CB01001_028E%2CB01001_029E%2CB01001_030E&for=us%3A1"
     },
     "children": {
       "label": "U.S. average residents under 18 per census block group",
-      "value": 302.8566002603523,
+      "value": 305.80715392093856,
       "unit": "number",
-      "release": "ACS 2024 5-year",
-      "sourceName": "U.S. Census API / ACS 2024 5-year + TIGERweb block-group count",
-      "sourceUrl": "https://api.census.gov/data/2024/acs/acs5?get=NAME%2CB19013_001E%2CB01001_001E%2CB01001_003E%2CB01001_004E%2CB01001_005E%2CB01001_006E%2CB01001_027E%2CB01001_028E%2CB01001_029E%2CB01001_030E&for=us%3A1"
+      "release": "ACS 2021 5-year",
+      "sourceName": "U.S. Census API / ACS 2021 5-year + TIGERweb block-group count",
+      "sourceUrl": "https://api.census.gov/data/2021/acs/acs5?get=NAME%2CB19013_001E%2CB01001_001E%2CB01001_003E%2CB01001_004E%2CB01001_005E%2CB01001_006E%2CB01001_027E%2CB01001_028E%2CB01001_029E%2CB01001_030E&for=us%3A1"
     },
     "childShare": {
       "label": "U.S. share of population under 18",
-      "value": 0.21950700302161547,
+      "value": 0.22513903012548794,
       "unit": "percent",
-      "release": "ACS 2024 5-year",
-      "sourceName": "U.S. Census API / ACS 2024 5-year",
-      "sourceUrl": "https://api.census.gov/data/2024/acs/acs5?get=NAME%2CB19013_001E%2CB01001_001E%2CB01001_003E%2CB01001_004E%2CB01001_005E%2CB01001_006E%2CB01001_027E%2CB01001_028E%2CB01001_029E%2CB01001_030E&for=us%3A1"
+      "release": "ACS 2021 5-year",
+      "sourceName": "U.S. Census API / ACS 2021 5-year",
+      "sourceUrl": "https://api.census.gov/data/2021/acs/acs5?get=NAME%2CB19013_001E%2CB01001_001E%2CB01001_003E%2CB01001_004E%2CB01001_005E%2CB01001_006E%2CB01001_027E%2CB01001_028E%2CB01001_029E%2CB01001_030E&for=us%3A1"
     },
     "voting": {
       "label": "U.S. 2024 presidential popular-vote margin",
@@ -691,8 +691,8 @@
       "url": "https://www.nj.gov/education/spr/"
     }
   ],
-  "censusSource": "U.S. Census API / ACS 2024 5-year",
-  "censusSourceUrl": "https://api.census.gov/data/2024/acs/acs5?get=NAME%2CB19013_001E%2CB01001_001E%2CB01001_003E%2CB01001_004E%2CB01001_005E%2CB01001_006E%2CB01001_027E%2CB01001_028E%2CB01001_029E%2CB01001_030E&for=us%3A1",
+  "censusSource": "U.S. Census API / ACS 2021 5-year",
+  "censusSourceUrl": "https://api.census.gov/data/2021/acs/acs5?get=NAME%2CB19013_001E%2CB01001_001E%2CB01001_003E%2CB01001_004E%2CB01001_005E%2CB01001_006E%2CB01001_027E%2CB01001_028E%2CB01001_029E%2CB01001_030E&for=us%3A1",
   "mapProjection": {
     "minLon": -74.72217699995635,
     "maxLon": -74.61748400040211,
