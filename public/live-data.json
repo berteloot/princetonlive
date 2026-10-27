@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-27T15:20:38.752Z",
+  "generatedAt": "2026-10-27T22:12:12.629Z",
   "weather": {
-    "temperature": 63,
-    "shortForecast": "Sunny",
-    "wind": "0 to 5 mph NE",
-    "detailedForecast": "Sunny, with a high near 63. Northeast wind 0 to 5 mph.",
+    "temperature": 40,
+    "shortForecast": "Mostly Clear then Patchy Fog",
+    "wind": "0 mph ",
+    "detailedForecast": "Patchy fog after 1am. Mostly clear, with a low around 40. Northeast wind around 0 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -223,20 +223,6 @@
       "startHour": 17
     },
     {
-      "title": "Ema Nikolovska, Mezzo-Soprano (Princeton University Concerts)",
-      "source": "Princeton University",
-      "dateLabel": "Oct 27",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/ema-nikolovska-mezzo-soprano-princeton-university-concerts",
-      "tags": [
-        "new",
-        "culture"
-      ],
-      "isoDate": "2026-10-27",
-      "startHour": 18
-    },
-    {
       "title": "C.K. Williams Reading by Jamel Brinkley and Creative Writing Seniors",
       "source": "Princeton University",
       "dateLabel": "Oct 27",
@@ -247,6 +233,20 @@
         "new",
         "culture",
         "rain"
+      ],
+      "isoDate": "2026-10-27",
+      "startHour": 18
+    },
+    {
+      "title": "Ema Nikolovska, Mezzo-Soprano (Princeton University Concerts)",
+      "source": "Princeton University",
+      "dateLabel": "Oct 27",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/ema-nikolovska-mezzo-soprano-princeton-university-concerts",
+      "tags": [
+        "new",
+        "culture"
       ],
       "isoDate": "2026-10-27",
       "startHour": 18
@@ -324,6 +324,17 @@
       "startHour": 19
     },
     {
+      "title": "Princeton Christian Fellowship Bible studies",
+      "source": "Princeton University",
+      "dateLabel": "Oct 27",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-8",
+      "tags": [],
+      "isoDate": "2026-10-27",
+      "startHour": 20
+    },
+    {
       "title": "Pathos Trio",
       "source": "Princeton University",
       "dateLabel": "Oct 27",
@@ -333,17 +344,6 @@
       "tags": [
         "new"
       ],
-      "isoDate": "2026-10-27",
-      "startHour": 20
-    },
-    {
-      "title": "Princeton Christian Fellowship Bible studies",
-      "source": "Princeton University",
-      "dateLabel": "Oct 27",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-8",
-      "tags": [],
       "isoDate": "2026-10-27",
       "startHour": 20
     },
@@ -536,12 +536,12 @@
       "startHour": 16
     },
     {
-      "title": "Finding English Career Opportunities in Japan",
+      "title": "InterVarsity Small Group",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/finding-english-career-opportunities-japan",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-4",
       "tags": [],
       "isoDate": "2026-10-28",
       "startHour": 16
@@ -560,12 +560,12 @@
       "startHour": 16
     },
     {
-      "title": "InterVarsity Small Group",
+      "title": "Finding English Career Opportunities in Japan",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-4",
+      "url": "https://www.princeton.edu/events/2026/finding-english-career-opportunities-japan",
       "tags": [],
       "isoDate": "2026-10-28",
       "startHour": 16
@@ -585,13 +585,16 @@
       "startHour": 17
     },
     {
-      "title": "Cognitive Science Office Hours",
+      "title": "YDSA Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/cognitive-science-office-hours",
-      "tags": [],
+      "url": "https://www.princeton.edu/events/2026/ydsa-weekly-meeting-14",
+      "tags": [
+        "culture",
+        "rain"
+      ],
       "isoDate": "2026-10-28",
       "startHour": 17
     },
@@ -611,16 +614,13 @@
       "startHour": 17
     },
     {
-      "title": "YDSA Weekly Meeting",
+      "title": "Cognitive Science Office Hours",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/ydsa-weekly-meeting-14",
-      "tags": [
-        "culture",
-        "rain"
-      ],
+      "url": "https://www.princeton.edu/events/2026/cognitive-science-office-hours",
+      "tags": [],
       "isoDate": "2026-10-28",
       "startHour": 17
     },
@@ -654,6 +654,19 @@
       "startHour": 18
     },
     {
+      "title": "MLP WD Muhammad Lecture and Documentary Viewing",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "6:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mlp-wd-muhammad-lecture-and-documentary-viewing",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-10-28",
+      "startHour": 18
+    },
+    {
       "title": "Dance Minor Social Hour and Information Session",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
@@ -662,19 +675,6 @@
       "url": "https://www.princeton.edu/events/2026/dance-minor-social-hour-and-information-session",
       "tags": [
         "new",
-        "culture"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 18
-    },
-    {
-      "title": "MLP WD Muhammad Lecture and Documentary Viewing",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "6:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mlp-wd-muhammad-lecture-and-documentary-viewing",
-      "tags": [
         "culture"
       ],
       "isoDate": "2026-10-28",
@@ -816,6 +816,17 @@
       "startHour": 11
     },
     {
+      "title": "Faculty and staff Bible study",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-2",
+      "tags": [],
+      "isoDate": "2026-10-29",
+      "startHour": 12
+    },
+    {
       "title": "Reference Management with Zotero",
       "source": "Princeton University",
       "dateLabel": "Oct 29",
@@ -825,17 +836,6 @@
       "tags": [
         "rain"
       ],
-      "isoDate": "2026-10-29",
-      "startHour": 12
-    },
-    {
-      "title": "Faculty and staff Bible study",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-2",
-      "tags": [],
       "isoDate": "2026-10-29",
       "startHour": 12
     },
@@ -946,6 +946,49 @@
       "startHour": 16
     },
     {
+      "title": "James A. Moffett '29 Lectures in Ethics",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/james-moffett-29-lectures-ethics-0",
+      "tags": [
+        "new",
+        "family",
+        "culture"
+      ],
+      "isoDate": "2026-10-29",
+      "startHour": 16
+    },
+    {
+      "title": "Staying Alive in Hitler’s Berlin",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/staying-alive-hitlers-berlin",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-10-29",
+      "startHour": 16
+    },
+    {
+      "title": "Musicology Colloquium with Lydia Goehr",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/musicology-colloquium-lydia-goehr",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-29",
+      "startHour": 16
+    },
+    {
       "title": "Birding Society Migration Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 29",
@@ -968,49 +1011,6 @@
       "tags": [
         "new",
         "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 16
-    },
-    {
-      "title": "Staying Alive in Hitler’s Berlin",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/staying-alive-hitlers-berlin",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 16
-    },
-    {
-      "title": "James A. Moffett '29 Lectures in Ethics",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/james-moffett-29-lectures-ethics-0",
-      "tags": [
-        "new",
-        "family",
-        "culture"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 16
-    },
-    {
-      "title": "Musicology Colloquium with Lydia Goehr",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/musicology-colloquium-lydia-goehr",
-      "tags": [
-        "new",
         "culture",
         "rain"
       ],
@@ -1920,7 +1920,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 63F"
+      "detail": "Mostly Clear then Patchy Fog, 40F"
     },
     {
       "name": "Princeton University Events",
