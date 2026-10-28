@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-28T12:52:38.000Z",
+  "generatedAt": "2026-10-28T20:15:05.972Z",
   "weather": {
     "temperature": 66,
     "shortForecast": "Partly Sunny",
-    "wind": "0 mph ",
-    "detailedForecast": "Partly sunny, with a high near 66. East wind around 0 mph.",
+    "wind": "5 mph SE",
+    "detailedForecast": "Partly sunny, with a high near 66. Southeast wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -196,6 +196,17 @@
       "startHour": 16
     },
     {
+      "title": "Finding English Career Opportunities in Japan",
+      "source": "Princeton University",
+      "dateLabel": "Oct 28",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/finding-english-career-opportunities-japan",
+      "tags": [],
+      "isoDate": "2026-10-28",
+      "startHour": 16
+    },
+    {
       "title": "Roundtable on German Elections",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
@@ -205,17 +216,6 @@
       "tags": [
         "culture"
       ],
-      "isoDate": "2026-10-28",
-      "startHour": 16
-    },
-    {
-      "title": "Finding English Career Opportunities in Japan",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/finding-english-career-opportunities-japan",
-      "tags": [],
       "isoDate": "2026-10-28",
       "startHour": 16
     },
@@ -234,16 +234,13 @@
       "startHour": 17
     },
     {
-      "title": "YDSA Weekly Meeting",
+      "title": "Cognitive Science Office Hours",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/ydsa-weekly-meeting-14",
-      "tags": [
-        "culture",
-        "rain"
-      ],
+      "url": "https://www.princeton.edu/events/2026/cognitive-science-office-hours",
+      "tags": [],
       "isoDate": "2026-10-28",
       "startHour": 17
     },
@@ -263,13 +260,16 @@
       "startHour": 17
     },
     {
-      "title": "Cognitive Science Office Hours",
+      "title": "YDSA Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 28",
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/cognitive-science-office-hours",
-      "tags": [],
+      "url": "https://www.princeton.edu/events/2026/ydsa-weekly-meeting-14",
+      "tags": [
+        "culture",
+        "rain"
+      ],
       "isoDate": "2026-10-28",
       "startHour": 17
     },
@@ -465,17 +465,6 @@
       "startHour": 11
     },
     {
-      "title": "Faculty and staff Bible study",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-2",
-      "tags": [],
-      "isoDate": "2026-10-29",
-      "startHour": 12
-    },
-    {
       "title": "Reference Management with Zotero",
       "source": "Princeton University",
       "dateLabel": "Oct 29",
@@ -485,6 +474,17 @@
       "tags": [
         "rain"
       ],
+      "isoDate": "2026-10-29",
+      "startHour": 12
+    },
+    {
+      "title": "Faculty and staff Bible study",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-2",
+      "tags": [],
       "isoDate": "2026-10-29",
       "startHour": 12
     },
@@ -885,6 +885,17 @@
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/competitive-programming-club-6",
+      "tags": [],
+      "isoDate": "2026-10-30",
+      "startHour": 17
+    },
+    {
+      "title": "SWIFTIEWEEN",
+      "source": "Princeton University",
+      "dateLabel": "Oct 30",
+      "timeLabel": "5:45 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/swiftieween",
       "tags": [],
       "isoDate": "2026-10-30",
       "startHour": 17
@@ -1431,20 +1442,6 @@
       "startHour": 16
     },
     {
-      "title": "Civic Leadership Council (Pace) Weekly Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Nov 2",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/civic-leadership-council-pace-weekly-meeting-7",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-02",
-      "startHour": 16
-    },
-    {
       "title": "Labor in the Archive",
       "source": "Princeton University",
       "dateLabel": "Nov 2",
@@ -1455,6 +1452,20 @@
         "new",
         "culture",
         "rain"
+      ],
+      "isoDate": "2026-11-02",
+      "startHour": 16
+    },
+    {
+      "title": "Civic Leadership Council (Pace) Weekly Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Nov 2",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/civic-leadership-council-pace-weekly-meeting-7",
+      "tags": [
+        "rain",
+        "practical"
       ],
       "isoDate": "2026-11-02",
       "startHour": 16
@@ -1749,7 +1760,7 @@
       "iso": "2026-10-30",
       "label": "Oct 30",
       "weekday": "Fri",
-      "count": 12
+      "count": 13
     },
     {
       "iso": "2026-10-31",
