@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-29T09:56:23.452Z",
+  "generatedAt": "2026-10-29T18:27:20.318Z",
   "weather": {
-    "temperature": 45,
-    "shortForecast": "Areas Of Fog",
-    "wind": "0 mph ",
-    "detailedForecast": "Areas of fog. Partly cloudy, with a low around 45. Northwest wind around 0 mph.",
+    "temperature": 71,
+    "shortForecast": "Sunny",
+    "wind": "5 mph SW",
+    "detailedForecast": "Sunny, with a high near 71. Southwest wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -79,17 +79,6 @@
       "startHour": 11
     },
     {
-      "title": "Faculty and staff Bible study",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-2",
-      "tags": [],
-      "isoDate": "2026-10-29",
-      "startHour": 12
-    },
-    {
       "title": "Reference Management with Zotero",
       "source": "Princeton University",
       "dateLabel": "Oct 29",
@@ -99,6 +88,17 @@
       "tags": [
         "rain"
       ],
+      "isoDate": "2026-10-29",
+      "startHour": 12
+    },
+    {
+      "title": "Faculty and staff Bible study",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-2",
+      "tags": [],
       "isoDate": "2026-10-29",
       "startHour": 12
     },
@@ -135,7 +135,7 @@
       "source": "Princeton Public Library",
       "dateLabel": "Oct 29",
       "timeLabel": "12:30pm - 2:30pm",
-      "location": "Princeton Public Library - Quiet Room",
+      "location": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/event/17154723",
       "tags": [
         "new",
@@ -193,6 +193,63 @@
       "startHour": 16
     },
     {
+      "title": "Seminar: \"A Field Guide to Watersheds: Division and Unity\" by Eliza Griswold",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/seminar-field-guide-watersheds-division-and-unity-eliza-griswold",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-29",
+      "startHour": 16
+    },
+    {
+      "title": "Birding Society Migration Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/birding-society-migration-meeting",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-10-29",
+      "startHour": 16
+    },
+    {
+      "title": "Staying Alive in Hitler’s Berlin",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/staying-alive-hitlers-berlin",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-10-29",
+      "startHour": 16
+    },
+    {
+      "title": "James A. Moffett '29 Lectures in Ethics",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/james-moffett-29-lectures-ethics-0",
+      "tags": [
+        "new",
+        "family",
+        "culture"
+      ],
+      "isoDate": "2026-10-29",
+      "startHour": 16
+    },
+    {
       "title": "The Passover Story Turned Upside Down: Jewish Slave-Owning in Medieval Egypt",
       "source": "Princeton University",
       "dateLabel": "Oct 29",
@@ -218,63 +275,6 @@
       "tags": [
         "new",
         "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 16
-    },
-    {
-      "title": "James A. Moffett '29 Lectures in Ethics",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/james-moffett-29-lectures-ethics-0",
-      "tags": [
-        "new",
-        "family",
-        "culture"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 16
-    },
-    {
-      "title": "Staying Alive in Hitler’s Berlin",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/staying-alive-hitlers-berlin",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 16
-    },
-    {
-      "title": "Seminar: \"A Field Guide to Watersheds: Division and Unity\" by Eliza Griswold",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seminar-field-guide-watersheds-division-and-unity-eliza-griswold",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 16
-    },
-    {
-      "title": "Birding Society Migration Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/birding-society-migration-meeting",
-      "tags": [
         "rain"
       ],
       "isoDate": "2026-10-29",
@@ -502,6 +502,17 @@
       "startHour": 17
     },
     {
+      "title": "Men's Water Polo vs Fordham",
+      "source": "Princeton University",
+      "dateLabel": "Oct 30",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-fordham",
+      "tags": [],
+      "isoDate": "2026-10-30",
+      "startHour": 18
+    },
+    {
       "title": "Women's Ice Hockey vs Brown",
       "source": "Princeton University",
       "dateLabel": "Oct 30",
@@ -513,15 +524,17 @@
       "startHour": 18
     },
     {
-      "title": "Men's Water Polo vs Fordham",
+      "title": "Gail Archer, Organist",
       "source": "Princeton University",
       "dateLabel": "Oct 30",
-      "timeLabel": "6:00 PM",
+      "timeLabel": "7:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-fordham",
-      "tags": [],
+      "url": "https://www.princeton.edu/events/2026/gail-archer-organist",
+      "tags": [
+        "culture"
+      ],
       "isoDate": "2026-10-30",
-      "startHour": 18
+      "startHour": 19
     },
     {
       "title": "Halloween with Sinfonia",
@@ -535,19 +548,6 @@
         "family",
         "culture",
         "rain"
-      ],
-      "isoDate": "2026-10-30",
-      "startHour": 19
-    },
-    {
-      "title": "Gail Archer, Organist",
-      "source": "Princeton University",
-      "dateLabel": "Oct 30",
-      "timeLabel": "7:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/gail-archer-organist",
-      "tags": [
-        "culture"
       ],
       "isoDate": "2026-10-30",
       "startHour": 19
@@ -659,17 +659,6 @@
       "startHour": 13
     },
     {
-      "title": "Women's Ice Hockey vs Yale",
-      "source": "Princeton University",
-      "dateLabel": "Oct 31",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-ice-hockey-vs-yale",
-      "tags": [],
-      "isoDate": "2026-10-31",
-      "startHour": 15
-    },
-    {
       "title": "Hip-Hop Techniques and Foundations with ESkilllz",
       "source": "Princeton University",
       "dateLabel": "Oct 31",
@@ -685,15 +674,15 @@
       "startHour": 15
     },
     {
-      "title": "Men's Water Polo vs LIU Brooklyn",
+      "title": "Women's Ice Hockey vs Yale",
       "source": "Princeton University",
       "dateLabel": "Oct 31",
-      "timeLabel": "4:00 PM",
+      "timeLabel": "3:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-liu-brooklyn",
+      "url": "https://www.princeton.edu/events/2026/womens-ice-hockey-vs-yale",
       "tags": [],
       "isoDate": "2026-10-31",
-      "startHour": 16
+      "startHour": 15
     },
     {
       "title": "Tango Practica",
@@ -702,6 +691,17 @@
       "timeLabel": "4:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/tango-practica-19",
+      "tags": [],
+      "isoDate": "2026-10-31",
+      "startHour": 16
+    },
+    {
+      "title": "Men's Water Polo vs LIU Brooklyn",
+      "source": "Princeton University",
+      "dateLabel": "Oct 31",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-liu-brooklyn",
       "tags": [],
       "isoDate": "2026-10-31",
       "startHour": 16
@@ -863,6 +863,17 @@
       "startHour": 14
     },
     {
+      "title": "Princeton Trading Club Matcha Study Break",
+      "source": "Princeton University",
+      "dateLabel": "Nov 1",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-trading-club-matcha-study-break",
+      "tags": [],
+      "isoDate": "2026-11-01",
+      "startHour": 15
+    },
+    {
       "title": "Pianist Mishka Rushdie Momen: In Conversation & Performance (Princeton University Concerts)",
       "source": "Princeton University",
       "dateLabel": "Nov 1",
@@ -874,17 +885,6 @@
         "family",
         "culture"
       ],
-      "isoDate": "2026-11-01",
-      "startHour": 15
-    },
-    {
-      "title": "Princeton Trading Club Matcha Study Break",
-      "source": "Princeton University",
-      "dateLabel": "Nov 1",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-trading-club-matcha-study-break",
-      "tags": [],
       "isoDate": "2026-11-01",
       "startHour": 15
     },
@@ -1251,17 +1251,6 @@
       "startHour": 16
     },
     {
-      "title": "Summer Study Abroad Info Session",
-      "source": "Princeton University",
-      "dateLabel": "Nov 3",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/summer-study-abroad-info-session",
-      "tags": [],
-      "isoDate": "2026-11-03",
-      "startHour": 16
-    },
-    {
       "title": "Ancient Persian and Linguistic History: A Discussion",
       "source": "Princeton University",
       "dateLabel": "Nov 3",
@@ -1272,6 +1261,17 @@
         "new",
         "culture"
       ],
+      "isoDate": "2026-11-03",
+      "startHour": 16
+    },
+    {
+      "title": "Summer Study Abroad Info Session",
+      "source": "Princeton University",
+      "dateLabel": "Nov 3",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/summer-study-abroad-info-session",
+      "tags": [],
       "isoDate": "2026-11-03",
       "startHour": 16
     },
@@ -1588,17 +1588,6 @@
       "startHour": 16
     },
     {
-      "title": "The Other 2/3 of the Tree of Life: Invertebrate and Plant Fossils: 150 Years of Princeton Paleontology",
-      "source": "Princeton University",
-      "dateLabel": "Nov 4",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/other-23-tree-life-invertebrate-and-plant-fossils-150-years-princeton-paleontology",
-      "tags": [],
-      "isoDate": "2026-11-04",
-      "startHour": 17
-    },
-    {
       "title": "YDSA Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Nov 4",
@@ -1609,6 +1598,17 @@
         "culture",
         "rain"
       ],
+      "isoDate": "2026-11-04",
+      "startHour": 17
+    },
+    {
+      "title": "The Other 2/3 of the Tree of Life: Invertebrate and Plant Fossils: 150 Years of Princeton Paleontology",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/other-23-tree-life-invertebrate-and-plant-fossils-150-years-princeton-paleontology",
+      "tags": [],
       "isoDate": "2026-11-04",
       "startHour": 17
     },
@@ -1746,7 +1746,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Areas Of Fog, 45F"
+      "detail": "Sunny, 71F"
     },
     {
       "name": "Princeton University Events",
