@@ -1,171 +1,15 @@
 {
-  "generatedAt": "2026-10-29T00:54:23.807Z",
+  "generatedAt": "2026-10-29T09:56:23.452Z",
   "weather": {
     "temperature": 45,
-    "shortForecast": "Patchy Fog",
-    "wind": "0 to 5 mph S",
-    "detailedForecast": "Patchy fog after 11pm. Mostly clear, with a low around 45. South wind 0 to 5 mph.",
+    "shortForecast": "Areas Of Fog",
+    "wind": "0 mph ",
+    "detailedForecast": "Areas of fog. Partly cloudy, with a low around 45. Northwest wind around 0 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Drop in and Knit",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 28",
-      "timeLabel": "10:00am - 12:00pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/17144889",
-      "tags": [
-        "new",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Storytime!",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 28",
-      "timeLabel": "10:30am - 11:00am",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14660964",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Baby Storytime",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 28",
-      "timeLabel": "11:30am - 12:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14662399",
-      "tags": [
-        "family"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 11
-    },
-    {
-      "title": "Kids: Baby Play Group",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 28",
-      "timeLabel": "12:00pm - 1:00pm",
-      "location": "Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/14662332",
-      "tags": [
-        "new",
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 12
-    },
-    {
-      "title": "Kids & Teens: Homework Help",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 28",
-      "timeLabel": "3:30pm - 6:00pm",
-      "location": "Princeton Public Library - CoLab Space",
-      "url": "https://princetonlibrary.libnet.info/event/17507790",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 15
-    },
-    {
-      "title": "English Conversation (virtual)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 28",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Virtual - Google Meet",
-      "url": "https://princetonlibrary.libnet.info/event/16837160",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 16
-    },
-    {
-      "title": "Words in Common Book Group",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 28",
-      "timeLabel": "6:00pm - 7:00pm",
-      "location": "Princeton Public Library - Conference Room",
-      "url": "https://princetonlibrary.libnet.info/event/17028756",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 18
-    },
-    {
-      "title": "Learn English at the Library (High Beginner)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 28",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/17154696",
-      "tags": [
-        "new",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 18
-    },
-    {
-      "title": "Preparing Students with Disabilities",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 28",
-      "timeLabel": "6:30pm - 7:30pm",
-      "location": "Princeton Public Library - Newsroom",
-      "url": "https://princetonlibrary.libnet.info/event/17265950",
-      "tags": [
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 18
-    },
-    {
-      "title": "Author: Alyson Mosquera Dutemple",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 28",
-      "timeLabel": "7:00pm - 8:00pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/17334429",
-      "tags": [
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 19
-    },
-    {
-      "title": "Zoning Board of Adjustment -virtual meeting",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 28, 2026",
-      "timeLabel": "07:30 PM - 11:59 PM",
-      "location": "Princeton, NJ",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8145",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 19
-    },
     {
       "title": "Andlinger Center for Energy and the Environment Annual Meeting",
       "source": "Princeton University",
@@ -477,21 +321,6 @@
       "startHour": 18
     },
     {
-      "title": "Film: \"Madame LeGume\"",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 29",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/17618158",
-      "tags": [
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 18
-    },
-    {
       "title": "U.S. Citizenship Test Prep Course",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 29",
@@ -501,6 +330,21 @@
       "tags": [
         "new",
         "culture",
+        "practical"
+      ],
+      "isoDate": "2026-10-29",
+      "startHour": 18
+    },
+    {
+      "title": "Film: \"Madame LeGume\"",
+      "source": "Princeton Public Library",
+      "dateLabel": "Oct 29",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17618158",
+      "tags": [
+        "culture",
+        "rain",
         "practical"
       ],
       "isoDate": "2026-10-29",
@@ -1169,20 +1013,6 @@
       "startHour": 16
     },
     {
-      "title": "Catherine Project Weekly Book Discussion Series",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 02",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/17155820",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-11-02",
-      "startHour": 16
-    },
-    {
       "title": "Kids: eSTEAM Club",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 02",
@@ -1193,6 +1023,20 @@
         "new",
         "family",
         "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-02",
+      "startHour": 16
+    },
+    {
+      "title": "Catherine Project Weekly Book Discussion Series",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 02",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/17155820",
+      "tags": [
+        "family",
         "practical"
       ],
       "isoDate": "2026-11-02",
@@ -1245,20 +1089,6 @@
       "startHour": 16
     },
     {
-      "title": "Catherine Project Book Discussion Series",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 02",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/17294110",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-11-02",
-      "startHour": 18
-    },
-    {
       "title": "Performance: Room to Swing an Ax",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 02",
@@ -1267,6 +1097,20 @@
       "url": "https://princetonlibrary.libnet.info/event/17615931",
       "tags": [
         "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-02",
+      "startHour": 18
+    },
+    {
+      "title": "Catherine Project Book Discussion Series",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 02",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/17294110",
+      "tags": [
+        "family",
         "practical"
       ],
       "isoDate": "2026-11-02",
@@ -1365,6 +1209,20 @@
       "startHour": 15
     },
     {
+      "title": "Kids & Teens: Homework Help",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 03",
+      "timeLabel": "3:30pm - 6:00pm",
+      "location": "Princeton Public Library - CoLab Space",
+      "url": "https://princetonlibrary.libnet.info/event/17480003",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-03",
+      "startHour": 15
+    },
+    {
       "title": "Kids: Tinker Tuesday, Lego",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 03",
@@ -1374,20 +1232,6 @@
       "tags": [
         "family",
         "culture",
-        "practical"
-      ],
-      "isoDate": "2026-11-03",
-      "startHour": 15
-    },
-    {
-      "title": "Kids & Teens: Homework Help",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 03",
-      "timeLabel": "3:30pm - 6:00pm",
-      "location": "Princeton Public Library - CoLab Space",
-      "url": "https://princetonlibrary.libnet.info/event/17480003",
-      "tags": [
-        "family",
         "practical"
       ],
       "isoDate": "2026-11-03",
@@ -1498,15 +1342,360 @@
       "tags": [],
       "isoDate": "2026-11-03",
       "startHour": 20
+    },
+    {
+      "title": "Coffee Chat",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "9:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/coffee-chat",
+      "tags": [],
+      "isoDate": "2026-11-04",
+      "startHour": 9
+    },
+    {
+      "title": "Family & Pet Emergency Preparedness",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 04",
+      "timeLabel": "10:00am - 12:00pm",
+      "location": "Princeton Public Library - Newsroom",
+      "url": "https://princetonlibrary.libnet.info/event/17658450",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 10
+    },
+    {
+      "title": "Drop in and Knit",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 04",
+      "timeLabel": "10:00am - 12:00pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/17144890",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 10
+    },
+    {
+      "title": "Planning Board - Landscape Committee",
+      "source": "Municipality of Princeton",
+      "dateLabel": "November 4, 2026",
+      "timeLabel": "10:00 AM - 11:00 AM",
+      "location": "Princeton, NJ",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8146",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Storytime!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 04",
+      "timeLabel": "10:30am - 11:00am",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14660965",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Baby Storytime",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 04",
+      "timeLabel": "11:30am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14662400",
+      "tags": [
+        "family"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 11
+    },
+    {
+      "title": "Crafternoon at the Commons: Paint a Mini Succulent Pot",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "11:45 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/crafternoon-commons-paint-mini-succulent-pot",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 11
+    },
+    {
+      "title": "Evonne Levy - Bernini's Bronzes Project",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/evonne-levy-berninis-bronzes-project",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 12
+    },
+    {
+      "title": "Kids: Baby Play Group",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 04",
+      "timeLabel": "12:00pm - 1:00pm",
+      "location": "Princeton Public Library",
+      "url": "https://princetonlibrary.libnet.info/event/14662333",
+      "tags": [
+        "new",
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 12
+    },
+    {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-16",
+      "tags": [],
+      "isoDate": "2026-11-04",
+      "startHour": 15
+    },
+    {
+      "title": "Pace Center Summer Internships Drop-in",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/pace-center-summer-internships-drop-4",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 15
+    },
+    {
+      "title": "Film: \"Bell, Book, and Candle\"",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 04",
+      "timeLabel": "3:00pm - 5:00pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17635835",
+      "tags": [
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 15
+    },
+    {
+      "title": "Kids & Teens: Homework Help",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 04",
+      "timeLabel": "3:30pm - 6:00pm",
+      "location": "Princeton Public Library - CoLab Space",
+      "url": "https://princetonlibrary.libnet.info/event/17507792",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 15
+    },
+    {
+      "title": "Council Virtual Closed Session",
+      "source": "Municipality of Princeton",
+      "dateLabel": "November 4, 2026",
+      "timeLabel": "03:30 PM - 11:59 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7915",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 15
+    },
+    {
+      "title": "English Conversation (virtual)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 04",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Virtual - Google Meet",
+      "url": "https://princetonlibrary.libnet.info/event/16837161",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 16
+    },
+    {
+      "title": "Kids: Upcycled Craft Club: Origami Butterflies",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 04",
+      "timeLabel": "4:00pm - 5:00pm",
+      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "url": "https://princetonlibrary.libnet.info/event/17381986",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 16
+    },
+    {
+      "title": "Ahilan Kadirgamar | Crises, Struggles and Alternatives: The Long Twentieth Century of Youth Movements in Sri Lanka",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/ahilan-kadirgamar-crises-struggles-and-alternatives-long-twentieth-century-youth",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 16
+    },
+    {
+      "title": "InterVarsity Small Group",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-5",
+      "tags": [],
+      "isoDate": "2026-11-04",
+      "startHour": 16
+    },
+    {
+      "title": "The Other 2/3 of the Tree of Life: Invertebrate and Plant Fossils: 150 Years of Princeton Paleontology",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/other-23-tree-life-invertebrate-and-plant-fossils-150-years-princeton-paleontology",
+      "tags": [],
+      "isoDate": "2026-11-04",
+      "startHour": 17
+    },
+    {
+      "title": "YDSA Weekly Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/ydsa-weekly-meeting-15",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 17
+    },
+    {
+      "title": "Journaling Club",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 04",
+      "timeLabel": "5:00pm - 6:00pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/16862226",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 17
+    },
+    {
+      "title": "Sound Journey",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "5:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/sound-journey-0",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 17
+    },
+    {
+      "title": "Author: Laura McPhee",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 04",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17618213",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 18
+    },
+    {
+      "title": "Learn English at the Library (High Beginner)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 04",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/17154697",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 18
+    },
+    {
+      "title": "Film Screening: Throne of Blood",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/film-screening-throne-blood",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 19
+    },
+    {
+      "title": "Princeton Christian Fellowship Bible studies",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-11",
+      "tags": [],
+      "isoDate": "2026-11-04",
+      "startHour": 20
     }
   ],
   "days": [
-    {
-      "iso": "2026-10-28",
-      "label": "Oct 28",
-      "weekday": "Wed",
-      "count": 11
-    },
     {
       "iso": "2026-10-29",
       "label": "Oct 29",
@@ -1542,6 +1731,12 @@
       "label": "Nov 3",
       "weekday": "Tue",
       "count": 16
+    },
+    {
+      "iso": "2026-11-04",
+      "label": "Nov 4",
+      "weekday": "Wed",
+      "count": 26
     }
   ],
   "windowDays": 7,
@@ -1551,7 +1746,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Patchy Fog, 45F"
+      "detail": "Areas Of Fog, 45F"
     },
     {
       "name": "Princeton University Events",
@@ -1569,7 +1764,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "7 calendar items"
+      "detail": "8 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
