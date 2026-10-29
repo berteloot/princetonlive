@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-28T20:15:05.972Z",
+  "generatedAt": "2026-10-29T00:54:23.807Z",
   "weather": {
-    "temperature": 66,
-    "shortForecast": "Partly Sunny",
-    "wind": "5 mph SE",
-    "detailedForecast": "Partly sunny, with a high near 66. Southeast wind around 5 mph.",
+    "temperature": 45,
+    "shortForecast": "Patchy Fog",
+    "wind": "0 to 5 mph S",
+    "detailedForecast": "Patchy fog after 11pm. Mostly clear, with a low around 45. South wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -21,34 +21,6 @@
         "new",
         "culture",
         "practical"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 10
-    },
-    {
-      "title": "Digital Scholarship Foundations: Static Websites (2 of 4)",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "10:30 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/digital-scholarship-foundations-static-websites-2-4",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 10
-    },
-    {
-      "title": "Introduction to ArcGIS",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "10:30 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/introduction-arcgis-0",
-      "tags": [
-        "new",
-        "rain"
       ],
       "isoDate": "2026-10-28",
       "startHour": 10
@@ -81,31 +53,6 @@
       "startHour": 11
     },
     {
-      "title": "Crafternoon at the Commons: Book Page Ghost Garland",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "11:45 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/crafternoon-commons-book-page-ghost-garland",
-      "tags": [
-        "new",
-        "rain"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 11
-    },
-    {
-      "title": "Wednesday Seminar Series, Mossavar-Rahmani Center for Iran & Persian Gulf Studies",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/wednesday-seminar-series-mossavar-rahmani-center-iran-persian-gulf-studies-8",
-      "tags": [],
-      "isoDate": "2026-10-28",
-      "startHour": 12
-    },
-    {
       "title": "Kids: Baby Play Group",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 28",
@@ -119,30 +66,6 @@
       ],
       "isoDate": "2026-10-28",
       "startHour": 12
-    },
-    {
-      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-14",
-      "tags": [],
-      "isoDate": "2026-10-28",
-      "startHour": 15
-    },
-    {
-      "title": "Pace Center Summer Internships Drop-in",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/pace-center-summer-internships-drop-3",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 15
     },
     {
       "title": "Kids & Teens: Homework Help",
@@ -172,108 +95,6 @@
       "startHour": 16
     },
     {
-      "title": "Trunk or Treat",
-      "source": "Municipality of Princeton",
-      "dateLabel": "October 28, 2026",
-      "timeLabel": "04:00 PM - 06:00 PM",
-      "location": "400 Witherspoon St.Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8138",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 16
-    },
-    {
-      "title": "InterVarsity Small Group",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-4",
-      "tags": [],
-      "isoDate": "2026-10-28",
-      "startHour": 16
-    },
-    {
-      "title": "Finding English Career Opportunities in Japan",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/finding-english-career-opportunities-japan",
-      "tags": [],
-      "isoDate": "2026-10-28",
-      "startHour": 16
-    },
-    {
-      "title": "Roundtable on German Elections",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/roundtable-german-elections",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 16
-    },
-    {
-      "title": "Costume Support (Drop in!)",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/costume-support-drop",
-      "tags": [
-        "new",
-        "practical"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 17
-    },
-    {
-      "title": "Cognitive Science Office Hours",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/cognitive-science-office-hours",
-      "tags": [],
-      "isoDate": "2026-10-28",
-      "startHour": 17
-    },
-    {
-      "title": "Amphibious Realities / Allan Sekula event",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/amphibious-realities-allan-sekula-event",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 17
-    },
-    {
-      "title": "YDSA Weekly Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/ydsa-weekly-meeting-14",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 17
-    },
-    {
       "title": "Words in Common Book Group",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 28",
@@ -298,33 +119,6 @@
         "culture",
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 18
-    },
-    {
-      "title": "MLP WD Muhammad Lecture and Documentary Viewing",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "6:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mlp-wd-muhammad-lecture-and-documentary-viewing",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 18
-    },
-    {
-      "title": "Dance Minor Social Hour and Information Session",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "6:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/dance-minor-social-hour-and-information-session",
-      "tags": [
-        "new",
-        "culture"
       ],
       "isoDate": "2026-10-28",
       "startHour": 18
@@ -371,30 +165,6 @@
       ],
       "isoDate": "2026-10-28",
       "startHour": 19
-    },
-    {
-      "title": "Princeton Christian Fellowship Bible studies",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-9",
-      "tags": [],
-      "isoDate": "2026-10-28",
-      "startHour": 20
-    },
-    {
-      "title": "Jazz Vespers",
-      "source": "Princeton University",
-      "dateLabel": "Oct 28",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/jazz-vespers-0",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-28",
-      "startHour": 20
     },
     {
       "title": "Andlinger Center for Energy and the Environment Annual Meeting",
@@ -465,6 +235,17 @@
       "startHour": 11
     },
     {
+      "title": "Faculty and staff Bible study",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-2",
+      "tags": [],
+      "isoDate": "2026-10-29",
+      "startHour": 12
+    },
+    {
       "title": "Reference Management with Zotero",
       "source": "Princeton University",
       "dateLabel": "Oct 29",
@@ -474,17 +255,6 @@
       "tags": [
         "rain"
       ],
-      "isoDate": "2026-10-29",
-      "startHour": 12
-    },
-    {
-      "title": "Faculty and staff Bible study",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-2",
-      "tags": [],
       "isoDate": "2026-10-29",
       "startHour": 12
     },
@@ -595,19 +365,6 @@
       "startHour": 16
     },
     {
-      "title": "Birding Society Migration Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/birding-society-migration-meeting",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 16
-    },
-    {
       "title": "Musicology Colloquium with Lydia Goehr",
       "source": "Princeton University",
       "dateLabel": "Oct 29",
@@ -667,6 +424,19 @@
       "startHour": 16
     },
     {
+      "title": "Birding Society Migration Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Oct 29",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/birding-society-migration-meeting",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-10-29",
+      "startHour": 16
+    },
+    {
       "title": "Costume Support (Drop in!)",
       "source": "Princeton University",
       "dateLabel": "Oct 29",
@@ -676,19 +446,6 @@
       "tags": [
         "new",
         "practical"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 17
-    },
-    {
-      "title": "PSV Grad Student Mixer",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "5:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/psv-grad-student-mixer",
-      "tags": [
-        "culture"
       ],
       "isoDate": "2026-10-29",
       "startHour": 17
@@ -923,19 +680,6 @@
       "startHour": 18
     },
     {
-      "title": "Gail Archer, Organist",
-      "source": "Princeton University",
-      "dateLabel": "Oct 30",
-      "timeLabel": "7:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/gail-archer-organist",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-30",
-      "startHour": 19
-    },
-    {
       "title": "Halloween with Sinfonia",
       "source": "Princeton University",
       "dateLabel": "Oct 30",
@@ -947,6 +691,19 @@
         "family",
         "culture",
         "rain"
+      ],
+      "isoDate": "2026-10-30",
+      "startHour": 19
+    },
+    {
+      "title": "Gail Archer, Organist",
+      "source": "Princeton University",
+      "dateLabel": "Oct 30",
+      "timeLabel": "7:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/gail-archer-organist",
+      "tags": [
+        "culture"
       ],
       "isoDate": "2026-10-30",
       "startHour": 19
@@ -1262,17 +1019,6 @@
       "startHour": 14
     },
     {
-      "title": "Princeton Trading Club Matcha Study Break",
-      "source": "Princeton University",
-      "dateLabel": "Nov 1",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-trading-club-matcha-study-break",
-      "tags": [],
-      "isoDate": "2026-11-01",
-      "startHour": 15
-    },
-    {
       "title": "Pianist Mishka Rushdie Momen: In Conversation & Performance (Princeton University Concerts)",
       "source": "Princeton University",
       "dateLabel": "Nov 1",
@@ -1284,6 +1030,17 @@
         "family",
         "culture"
       ],
+      "isoDate": "2026-11-01",
+      "startHour": 15
+    },
+    {
+      "title": "Princeton Trading Club Matcha Study Break",
+      "source": "Princeton University",
+      "dateLabel": "Nov 1",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-trading-club-matcha-study-break",
+      "tags": [],
       "isoDate": "2026-11-01",
       "startHour": 15
     },
@@ -1748,13 +1505,13 @@
       "iso": "2026-10-28",
       "label": "Oct 28",
       "weekday": "Wed",
-      "count": 29
+      "count": 11
     },
     {
       "iso": "2026-10-29",
       "label": "Oct 29",
       "weekday": "Thu",
-      "count": 28
+      "count": 27
     },
     {
       "iso": "2026-10-30",
@@ -1794,7 +1551,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Partly Sunny, 66F"
+      "detail": "Patchy Fog, 45F"
     },
     {
       "name": "Princeton University Events",
@@ -1812,7 +1569,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "8 calendar items"
+      "detail": "7 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
