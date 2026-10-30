@@ -219,8 +219,12 @@ function parseClock(value) {
   return { hour, minute: Number(match[2] ?? 0) };
 }
 
+// Full names ("August") and the short forms the Garden Theatre homepage prints ("Oct").
 function monthIndex(name) {
-  return MONTHS.get(String(name ?? "").trim().toLowerCase().slice(0, 12)) ?? null;
+  const key = String(name ?? "").trim().toLowerCase().replace(/\.$/, "");
+  if (key.length < 3) return null;
+  for (const [month, index] of MONTHS) if (month.startsWith(key)) return index;
+  return null;
 }
 
 // Every event carries the Eastern day it belongs to and the hour it starts, because the
@@ -451,10 +455,10 @@ async function gardenEvents() {
 
     for (const day of asArray(schedule.days)) {
       const dayNumber = Number(/\b(\d{1,2})\b/.exec(day.day ?? "")?.[1]);
-      const month = monthIndex(new RegExp([...MONTHS.keys()].join("|"), "i").exec(day.day ?? "")?.[0]);
+      const month = monthIndex(/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*/i.exec(day.day ?? "")?.[0]);
       if (!dayNumber || month === null) continue;
 
-      // The storefront prints "Thursday 20, August" with no year, and it lists weeks
+      // Neither source prints a year ("Thursday 20, August", "Sat Oct 31"), and both list weeks
       // ahead, so the year is the one that puts the date just ahead of today.
       const year = [0, 1, -1]
         .map((offset) => Number(easternDateParts(now).slice(0, 4)) + offset)
@@ -488,7 +492,14 @@ async function gardenEvents() {
       }
     }
 
-    mark("Princeton Garden Theatre", "ok", `${events.length} showtimes`);
+    // A schedule that lists screenings but yields no showtimes means its date or time
+    // format changed under this reader, which must not read as a quiet week.
+    const listed = asArray(schedule.days).some((day) => asArray(day.screenings).length);
+    if (listed && !events.length) {
+      mark("Princeton Garden Theatre", "error", "schedule lists screenings but none could be dated");
+    } else {
+      mark("Princeton Garden Theatre", "ok", `${events.length} showtimes`);
+    }
     return events;
   } catch (error) {
     mark("Princeton Garden Theatre", "error", error.message);

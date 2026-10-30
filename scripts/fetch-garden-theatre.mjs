@@ -11,6 +11,10 @@
 // attributes, ratings, and posters, in stable semantic markup. The theatre's homepage
 // is kept as a fallback for the case where the storefront changes or goes down.
 //
+// That case arrived: on 2026-10-30 the storefront said "No shows currently scheduled"
+// and the theatre sells through tickets.princetongardentheatre.org, a script-rendered
+// app with no feed, so the homepage is the source in practice.
+//
 // Both parsers fail closed. If neither yields a screening the script writes nothing,
 // exits non-zero, and leaves the previous file in place, so the monitor catches the
 // staleness instead of the site publishing an empty schedule.
@@ -130,6 +134,30 @@ function parseStorefront(htmlText) {
 
 // -------------------------------------------------- fallback: theatre homepage
 
+// The homepage heads the first day "Today" (and may say "Tomorrow"), and the reader in
+// fetch-live-data.mjs needs a date it can parse. Rewrite those as "Fri Oct 30" in
+// Princeton time, the same shape the homepage uses for every other day.
+function datedDay(label) {
+  const offset = { today: 0, tomorrow: 1 }[label.toLowerCase()];
+  if (offset === undefined) return label;
+  const date = new Date(Date.now() + offset * 86400000);
+  return new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York",
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+  })
+    .format(date)
+    .replace(",", "");
+}
+
+// The homepage prints "3:35" for an afternoon or evening show and only spells out
+// "10:00 AM" or "9:30 PM" for the unusual ones, so a bare time is noon or later.
+function withMeridiem(time) {
+  if (!time || /[ap]\.?m\.?/i.test(time)) return time;
+  return /^\d{1,2}(:\d{2})?$/.test(time) ? `${time} PM` : time;
+}
+
 function parseHomepage(htmlText) {
   const days = [];
   const filmIndex = new Map();
@@ -138,7 +166,7 @@ function parseHomepage(htmlText) {
   for (const block of dayBlocks) {
     const dayMatch = block.match(/<div class="week-day">([\s\S]*?)<\/div>/i);
     if (!dayMatch) continue;
-    const day = decode(dayMatch[1]);
+    const day = datedDay(decode(dayMatch[1]));
 
     const screenings = [];
     for (const item of block.matchAll(/<li>([\s\S]*?)<\/li>/gi)) {
@@ -153,7 +181,7 @@ function parseHomepage(htmlText) {
         const badges = [...raw.matchAll(/<span[^>]*>([\s\S]*?)<\/span>/gi)]
           .map((b) => decode(b[1]))
           .filter(Boolean);
-        const time = decode(raw.replace(/<span[^>]*>[\s\S]*?<\/span>/gi, ""));
+        const time = withMeridiem(decode(raw.replace(/<span[^>]*>[\s\S]*?<\/span>/gi, "")));
         if (time) times.push({ time, badges });
       }
       const url = `${PUBLIC_URL}film?id=${slug}`;

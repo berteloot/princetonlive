@@ -84,7 +84,9 @@ def read_state(path: Path) -> dict[str, Any]:
 def request(url: str, timeout: int) -> tuple[HttpResponse | None, int, str | None]:
     start = time.monotonic()
     try:
-        req = Request(url, headers={"User-Agent": "Pierre site monitor/1.0"})
+        # princeton.edu answers 403 to "Pierre site monitor/1.0" from GitHub's runners but
+        # serves the refresh job's agent, so the monitor sends the same one.
+        req = Request(url, headers={"User-Agent": "PrincetonLive/0.1 (https://princetonlive.berteloot.org)"})
         with urlopen(req, timeout=timeout) as resp:
             content = resp.read()
             status = getattr(resp, "status", resp.getcode())

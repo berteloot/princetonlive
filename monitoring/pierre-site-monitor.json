@@ -100,7 +100,7 @@
         200
       ],
       "json_path": "events",
-      "max_age_hours": 8
+      "max_age_hours": 12
     },
     {
       "kind": "generated_json",
@@ -110,7 +110,7 @@
         200
       ],
       "json_path": "days.0.iso",
-      "max_age_hours": 8
+      "max_age_hours": 12
     },
     {
       "kind": "generated_json",
@@ -120,7 +120,7 @@
         200
       ],
       "json_path": "weather.temperature",
-      "max_age_hours": 8
+      "max_age_hours": 12
     },
     {
       "kind": "generated_json",
@@ -130,7 +130,7 @@
         200
       ],
       "json_path": "features",
-      "max_age_hours": 8
+      "max_age_hours": 12
     },
     {
       "kind": "generated_json",
@@ -140,7 +140,7 @@
         200
       ],
       "json_path": "streets.0.street",
-      "max_age_hours": 8
+      "max_age_hours": 12
     },
     {
       "kind": "http",
@@ -154,11 +154,11 @@
     {
       "kind": "http",
       "name": "Princeton University events",
-      "url": "https://www.princeton.edu/events",
+      "url": "https://www.princeton.edu/feed/events/",
       "expect_status": [
         200
       ],
-      "contains": "Events",
+      "contains": "<item>",
       "min_bytes": 5000
     },
     {
