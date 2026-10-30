@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-30T17:59:45.560Z",
+  "generatedAt": "2026-10-30T22:17:02.833Z",
   "weather": {
-    "temperature": 72,
-    "shortForecast": "Sunny",
-    "wind": "15 mph NW",
-    "detailedForecast": "Sunny. High near 72, with temperatures falling to around 66 in the afternoon. Northwest wind around 15 mph.",
+    "temperature": 39,
+    "shortForecast": "Partly Cloudy",
+    "wind": "5 to 15 mph NW",
+    "detailedForecast": "Partly cloudy, with a low around 39. Northwest wind 5 to 15 mph, with gusts as high as 30 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -79,34 +79,6 @@
       ],
       "isoDate": "2026-10-30",
       "startHour": 14
-    },
-    {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Oct 30",
-      "timeLabel": "3:35 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-30",
-      "startHour": 15
-    },
-    {
-      "title": "Sense and Sensibility",
-      "source": "Garden Theatre",
-      "dateLabel": "Oct 30",
-      "timeLabel": "3:50 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-30",
-      "startHour": 15
     },
     {
       "title": "Fund for Irish Studies: Conversation with Yiyun Li — Music Against the Night",
@@ -2096,7 +2068,7 @@
       "iso": "2026-10-30",
       "label": "Oct 30",
       "weekday": "Fri",
-      "count": 17
+      "count": 15
     },
     {
       "iso": "2026-10-31",
@@ -2142,7 +2114,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 72F"
+      "detail": "Partly Cloudy, 39F"
     },
     {
       "name": "Princeton University Events",
@@ -2166,7 +2138,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "35 showtimes"
+      "detail": "33 showtimes"
     }
   ]
 }
