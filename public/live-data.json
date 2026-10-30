@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-30T09:58:59.449Z",
+  "generatedAt": "2026-10-30T17:59:45.560Z",
   "weather": {
-    "temperature": 52,
-    "shortForecast": "Patchy Fog",
-    "wind": "5 mph SW",
-    "detailedForecast": "Patchy fog. Partly cloudy, with a low around 52. Southwest wind around 5 mph.",
+    "temperature": 72,
+    "shortForecast": "Sunny",
+    "wind": "15 mph NW",
+    "detailedForecast": "Sunny. High near 72, with temperatures falling to around 66 in the afternoon. Northwest wind around 15 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -81,6 +81,34 @@
       "startHour": 14
     },
     {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Oct 30",
+      "timeLabel": "3:35 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-30",
+      "startHour": 15
+    },
+    {
+      "title": "Sense and Sensibility",
+      "source": "Garden Theatre",
+      "dateLabel": "Oct 30",
+      "timeLabel": "3:50 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-30",
+      "startHour": 15
+    },
+    {
       "title": "Fund for Irish Studies: Conversation with Yiyun Li — Music Against the Night",
       "source": "Princeton University",
       "dateLabel": "Oct 30",
@@ -139,6 +167,34 @@
       "tags": [],
       "isoDate": "2026-10-30",
       "startHour": 18
+    },
+    {
+      "title": "Sense and Sensibility",
+      "source": "Garden Theatre",
+      "dateLabel": "Oct 30",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-30",
+      "startHour": 19
+    },
+    {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Oct 30",
+      "timeLabel": "7:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-30",
+      "startHour": 19
     },
     {
       "title": "Gail Archer, Organist",
@@ -276,6 +332,20 @@
       "startHour": 13
     },
     {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Oct 31",
+      "timeLabel": "2:30 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-31",
+      "startHour": 14
+    },
+    {
       "title": "Women's Ice Hockey vs Yale",
       "source": "Princeton University",
       "dateLabel": "Oct 31",
@@ -295,6 +365,20 @@
       "url": "https://www.princeton.edu/events/2026/hip-hop-techniques-and-foundations-eskilllz-1",
       "tags": [
         "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-31",
+      "startHour": 15
+    },
+    {
+      "title": "Sense and Sensibility",
+      "source": "Garden Theatre",
+      "dateLabel": "Oct 31",
+      "timeLabel": "3:30 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
+      "tags": [
         "culture",
         "rain"
       ],
@@ -349,6 +433,34 @@
       "startHour": 18
     },
     {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Oct 31",
+      "timeLabel": "6:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-31",
+      "startHour": 18
+    },
+    {
+      "title": "Sense and Sensibility",
+      "source": "Garden Theatre",
+      "dateLabel": "Oct 31",
+      "timeLabel": "6:30 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-10-31",
+      "startHour": 18
+    },
+    {
       "title": "Magic: The Gathering Club Meeting",
       "source": "Princeton University",
       "dateLabel": "Oct 31",
@@ -371,6 +483,20 @@
       "url": "https://www.princeton.edu/events/2026/liars-club-meeting-7",
       "tags": [
         "new",
+        "rain"
+      ],
+      "isoDate": "2026-10-31",
+      "startHour": 21
+    },
+    {
+      "title": "A Nightmare on Elm Street",
+      "source": "Garden Theatre",
+      "dateLabel": "Oct 31",
+      "timeLabel": "9:30 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=a-nightmare-on-elm-street",
+      "tags": [
+        "culture",
         "rain"
       ],
       "isoDate": "2026-10-31",
@@ -438,6 +564,20 @@
       "startHour": 11
     },
     {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 1",
+      "timeLabel": "12:25 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-01",
+      "startHour": 12
+    },
+    {
       "title": "Writers Project Workshop",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 01",
@@ -450,6 +590,37 @@
       ],
       "isoDate": "2026-11-01",
       "startHour": 12
+    },
+    {
+      "title": "Key Largo",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 1",
+      "timeLabel": "1:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=key-largo",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-01",
+      "startHour": 13
+    },
+    {
+      "title": "Memory Jug Workshop",
+      "source": "Princeton University",
+      "dateLabel": "Nov 1",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/memory-jug-workshop",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-01",
+      "startHour": 14
     },
     {
       "title": "\"US1 Worksheets\" Launch",
@@ -521,6 +692,20 @@
       "startHour": 15
     },
     {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 1",
+      "timeLabel": "3:45 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-01",
+      "startHour": 15
+    },
+    {
       "title": "Friends of PUL Fall Meeting and Dinner",
       "source": "Princeton University",
       "dateLabel": "Nov 1",
@@ -528,6 +713,20 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/friends-pul-fall-meeting-and-dinner",
       "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-11-01",
+      "startHour": 16
+    },
+    {
+      "title": "Sense and Sensibility",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 1",
+      "timeLabel": "4:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
+      "tags": [
+        "culture",
         "rain"
       ],
       "isoDate": "2026-11-01",
@@ -546,6 +745,34 @@
       ],
       "isoDate": "2026-11-01",
       "startHour": 17
+    },
+    {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 1",
+      "timeLabel": "7:30 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-01",
+      "startHour": 19
+    },
+    {
+      "title": "Sense and Sensibility",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 1",
+      "timeLabel": "7:35 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-01",
+      "startHour": 19
     },
     {
       "title": "Kids: Playtime Fun: Visit To the Vet",
@@ -619,6 +846,34 @@
       "startHour": 15
     },
     {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 2",
+      "timeLabel": "3:30 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-02",
+      "startHour": 15
+    },
+    {
+      "title": "Sense and Sensibility",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 2",
+      "timeLabel": "3:45 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-02",
+      "startHour": 15
+    },
+    {
       "title": "Men's Basketball vs Carnegie Mellon",
       "source": "Princeton University",
       "dateLabel": "Nov 2",
@@ -660,20 +915,6 @@
       "startHour": 16
     },
     {
-      "title": "Civic Leadership Council (Pace) Weekly Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Nov 2",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/civic-leadership-council-pace-weekly-meeting-7",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-02",
-      "startHour": 16
-    },
-    {
       "title": "Labor in the Archive",
       "source": "Princeton University",
       "dateLabel": "Nov 2",
@@ -684,6 +925,20 @@
         "new",
         "culture",
         "rain"
+      ],
+      "isoDate": "2026-11-02",
+      "startHour": 16
+    },
+    {
+      "title": "Civic Leadership Council (Pace) Weekly Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Nov 2",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/civic-leadership-council-pace-weekly-meeting-7",
+      "tags": [
+        "rain",
+        "practical"
       ],
       "isoDate": "2026-11-02",
       "startHour": 16
@@ -732,6 +987,34 @@
       ],
       "isoDate": "2026-11-02",
       "startHour": 18
+    },
+    {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 2",
+      "timeLabel": "7:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-02",
+      "startHour": 19
+    },
+    {
+      "title": "Sense and Sensibility",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 2",
+      "timeLabel": "7:25 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-02",
+      "startHour": 19
     },
     {
       "title": "PCF Frosh Bible study",
@@ -855,6 +1138,34 @@
       "startHour": 15
     },
     {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 3",
+      "timeLabel": "3:30 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-03",
+      "startHour": 15
+    },
+    {
+      "title": "Sense and Sensibility",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 3",
+      "timeLabel": "3:45 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-03",
+      "startHour": 15
+    },
+    {
       "title": "Mercer County Community ID",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 03",
@@ -944,6 +1255,34 @@
       "url": "https://www.princeton.edu/events/2026/ldssa-institute-class-6",
       "tags": [
         "new",
+        "rain"
+      ],
+      "isoDate": "2026-11-03",
+      "startHour": 19
+    },
+    {
+      "title": "Fallen Angels",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 3",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=fallen-angels-by-noel-coward",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-03",
+      "startHour": 19
+    },
+    {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 3",
+      "timeLabel": "7:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
         "rain"
       ],
       "isoDate": "2026-11-03",
@@ -1084,6 +1423,34 @@
       "startHour": 12
     },
     {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 4",
+      "timeLabel": "12:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 12
+    },
+    {
+      "title": "Sense and Sensibility",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 4",
+      "timeLabel": "12:25 PM (OC)",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 12
+    },
+    {
       "title": "McGraw Undergraduate Learning Program - Learning Concierge",
       "source": "Princeton University",
       "dateLabel": "Nov 4",
@@ -1150,6 +1517,34 @@
       "startHour": 15
     },
     {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 4",
+      "timeLabel": "3:30 PM (OC)",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 15
+    },
+    {
+      "title": "Sense and Sensibility",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 4",
+      "timeLabel": "3:55 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 15
+    },
+    {
       "title": "English Conversation (virtual)",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 04",
@@ -1178,17 +1573,6 @@
       "startHour": 16
     },
     {
-      "title": "InterVarsity Small Group",
-      "source": "Princeton University",
-      "dateLabel": "Nov 4",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-5",
-      "tags": [],
-      "isoDate": "2026-11-04",
-      "startHour": 16
-    },
-    {
       "title": "Ahilan Kadirgamar | Crises, Struggles and Alternatives: The Long Twentieth Century of Youth Movements in Sri Lanka",
       "source": "Princeton University",
       "dateLabel": "Nov 4",
@@ -1201,6 +1585,17 @@
         "culture",
         "practical"
       ],
+      "isoDate": "2026-11-04",
+      "startHour": 16
+    },
+    {
+      "title": "InterVarsity Small Group",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-5",
+      "tags": [],
       "isoDate": "2026-11-04",
       "startHour": 16
     },
@@ -1294,6 +1689,34 @@
       "url": "https://www.princeton.edu/events/2026/film-screening-throne-blood",
       "tags": [
         "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 19
+    },
+    {
+      "title": "Throne of Blood",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 4",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=throne-of-blood",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 19
+    },
+    {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 4",
+      "timeLabel": "7:15 PM (OC)",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
         "culture",
         "rain"
       ],
@@ -1485,6 +1908,20 @@
       "startHour": 15
     },
     {
+      "title": "Sense and Sensibility",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 5",
+      "timeLabel": "3:25 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 15
+    },
+    {
       "title": "Kids & Teens: Homework Help",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 05",
@@ -1494,6 +1931,20 @@
       "tags": [
         "family",
         "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 15
+    },
+    {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 5",
+      "timeLabel": "3:30 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-11-05",
       "startHour": 15
@@ -1588,11 +2039,39 @@
       "source": "Municipality of Princeton",
       "dateLabel": "November 5, 2026",
       "timeLabel": "07:00 PM - 11:00 PM",
-      "location": "Princeton, NJ 08540",
+      "location": "Princeton, NJ",
       "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7889",
       "tags": [
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 19
+    },
+    {
+      "title": "Network",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 5",
+      "timeLabel": "7:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=network",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 19
+    },
+    {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 5",
+      "timeLabel": "7:20 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-11-05",
       "startHour": 19
@@ -1617,43 +2096,43 @@
       "iso": "2026-10-30",
       "label": "Oct 30",
       "weekday": "Fri",
-      "count": 13
+      "count": 17
     },
     {
       "iso": "2026-10-31",
       "label": "Oct 31",
       "weekday": "Sat",
-      "count": 15
+      "count": 20
     },
     {
       "iso": "2026-11-01",
       "label": "Nov 1",
       "weekday": "Sun",
-      "count": 13
+      "count": 20
     },
     {
       "iso": "2026-11-02",
       "label": "Nov 2",
       "weekday": "Mon",
-      "count": 14
+      "count": 18
     },
     {
       "iso": "2026-11-03",
       "label": "Nov 3",
       "weekday": "Tue",
-      "count": 16
+      "count": 20
     },
     {
       "iso": "2026-11-04",
       "label": "Nov 4",
       "weekday": "Wed",
-      "count": 26
+      "count": 32
     },
     {
       "iso": "2026-11-05",
       "label": "Nov 5",
       "weekday": "Thu",
-      "count": 21
+      "count": 25
     }
   ],
   "windowDays": 7,
@@ -1663,7 +2142,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Patchy Fog, 52F"
+      "detail": "Sunny, 72F"
     },
     {
       "name": "Princeton University Events",
@@ -1687,7 +2166,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "0 showtimes"
+      "detail": "35 showtimes"
     }
   ]
 }
