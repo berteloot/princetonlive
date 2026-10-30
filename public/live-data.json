@@ -1,148 +1,15 @@
 {
-  "generatedAt": "2026-10-30T00:58:13.263Z",
+  "generatedAt": "2026-10-30T09:58:59.449Z",
   "weather": {
     "temperature": 52,
-    "shortForecast": "Mostly Clear",
+    "shortForecast": "Patchy Fog",
     "wind": "5 mph SW",
-    "detailedForecast": "Mostly clear, with a low around 52. Southwest wind around 5 mph.",
+    "detailedForecast": "Patchy fog. Partly cloudy, with a low around 52. Southwest wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "English Conversation",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 29",
-      "timeLabel": "10:00am - 11:30am",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/17260674",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Storytime!",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 29",
-      "timeLabel": "10:30am - 11:00am",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14661280",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Baby Storytime",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 29",
-      "timeLabel": "11:30am - 12:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14661594",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 11
-    },
-    {
-      "title": "Kids: Baby Play Group",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 29",
-      "timeLabel": "12:00pm - 1:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14662547",
-      "tags": [
-        "new",
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 12
-    },
-    {
-      "title": "Learn English at the Library (Intermediate)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 29",
-      "timeLabel": "12:30pm - 2:30pm",
-      "location": "Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/17154723",
-      "tags": [
-        "new",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 12
-    },
-    {
-      "title": "Lead Testing",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 29",
-      "timeLabel": "3:00pm - 5:00pm",
-      "location": "Princeton Public Library - Lobby",
-      "url": "https://princetonlibrary.libnet.info/event/17658382",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 15
-    },
-    {
-      "title": "Kids & Teens: Homework Help",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 29",
-      "timeLabel": "3:30pm - 6:00pm",
-      "location": "Princeton Public Library - CoLab Space",
-      "url": "https://princetonlibrary.libnet.info/event/17507791",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 15
-    },
-    {
-      "title": "U.S. Citizenship Test Prep Course",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 29",
-      "timeLabel": "6:00pm - 8:00pm",
-      "location": "Zoom - Zoom",
-      "url": "https://princetonlibrary.libnet.info/event/17235595",
-      "tags": [
-        "new",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 18
-    },
-    {
-      "title": "Film: \"Madame LeGume\"",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 29",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/17618158",
-      "tags": [
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 18
-    },
     {
       "title": "Job Seekers: Create a Resume That Gets Results",
       "source": "Princeton Public Library",
@@ -880,12 +747,12 @@
       "startHour": 19
     },
     {
-      "title": "English Conversation (in person)",
+      "title": "Learn to Play American Mah Johngg",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 03",
-      "timeLabel": "10:00am - 11:30am",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/17297220",
+      "timeLabel": "10:00am - 12:00pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17225054",
       "tags": [
         "practical"
       ],
@@ -893,12 +760,12 @@
       "startHour": 10
     },
     {
-      "title": "Learn to Play American Mah Johngg",
+      "title": "English Conversation (in person)",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 03",
-      "timeLabel": "10:00am - 12:00pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/17225054",
+      "timeLabel": "10:00am - 11:30am",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/17297220",
       "tags": [
         "practical"
       ],
@@ -959,20 +826,6 @@
       "startHour": 15
     },
     {
-      "title": "Kids & Teens: Homework Help",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 03",
-      "timeLabel": "3:30pm - 6:00pm",
-      "location": "Princeton Public Library - CoLab Space",
-      "url": "https://princetonlibrary.libnet.info/event/17480003",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-11-03",
-      "startHour": 15
-    },
-    {
       "title": "Kids: Tinker Tuesday, Lego",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 03",
@@ -982,6 +835,20 @@
       "tags": [
         "family",
         "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-03",
+      "startHour": 15
+    },
+    {
+      "title": "Kids & Teens: Homework Help",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 03",
+      "timeLabel": "3:30pm - 6:00pm",
+      "location": "Princeton Public Library - CoLab Space",
+      "url": "https://princetonlibrary.libnet.info/event/17480003",
+      "tags": [
+        "family",
         "practical"
       ],
       "isoDate": "2026-11-03",
@@ -1040,6 +907,20 @@
       "startHour": 17
     },
     {
+      "title": "Celebrate Hispanic Heritage/Celebre la Herencia Hispana",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 03",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/17292364",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-03",
+      "startHour": 18
+    },
+    {
       "title": "Workshop: Writers Room",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 03",
@@ -1049,20 +930,6 @@
       "tags": [
         "culture",
         "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-03",
-      "startHour": 18
-    },
-    {
-      "title": "Celebrate Hispanic Heritage/Celebre la Herencia Hispana",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 03",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/17292364",
-      "tags": [
-        "family",
         "practical"
       ],
       "isoDate": "2026-11-03",
@@ -1390,19 +1257,6 @@
       "startHour": 17
     },
     {
-      "title": "Author: Laura McPhee",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 04",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/17618213",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-11-04",
-      "startHour": 18
-    },
-    {
       "title": "Learn English at the Library (High Beginner)",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 04",
@@ -1414,6 +1268,19 @@
         "culture",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 18
+    },
+    {
+      "title": "Author: Laura McPhee",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 04",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17618213",
+      "tags": [
+        "culture"
       ],
       "isoDate": "2026-11-04",
       "startHour": 18
@@ -1443,15 +1310,309 @@
       "tags": [],
       "isoDate": "2026-11-04",
       "startHour": 20
+    },
+    {
+      "title": "English Conversation",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 05",
+      "timeLabel": "10:00am - 11:30am",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/17260675",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Storytime!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 05",
+      "timeLabel": "10:30am - 11:00am",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14661281",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Baby Storytime",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 05",
+      "timeLabel": "11:30am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14661595",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 11
+    },
+    {
+      "title": "Global Existential Challenges Seminar Series: Global Health - Advances and Setbacks",
+      "source": "Princeton University",
+      "dateLabel": "Nov 5",
+      "timeLabel": "11:45 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/global-existential-challenges-seminar-series-global-health-advances-and-setbacks",
+      "tags": [
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 11
+    },
+    {
+      "title": "HMEI Graduate Research Funding Open House",
+      "source": "Princeton University",
+      "dateLabel": "Nov 5",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/hmei-graduate-research-funding-open-house",
+      "tags": [
+        "new",
+        "culture"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 12
+    },
+    {
+      "title": "Kids: Baby Play Group",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 05",
+      "timeLabel": "12:00pm - 1:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14662548",
+      "tags": [
+        "new",
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 12
+    },
+    {
+      "title": "After Noon Concert Series",
+      "source": "Princeton University",
+      "dateLabel": "Nov 5",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/after-noon-concert-series-7",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 12
+    },
+    {
+      "title": "Learn English at the Library (Intermediate)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 05",
+      "timeLabel": "12:30pm - 2:30pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/17154724",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 12
+    },
+    {
+      "title": "Sondheim's Afterlives Symposium",
+      "source": "Princeton University",
+      "dateLabel": "Nov 5",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/sondheims-afterlives-symposium",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 13
+    },
+    {
+      "title": "Function Fundamentals: Unlocking the Power of Excel",
+      "source": "Princeton University",
+      "dateLabel": "Nov 5",
+      "timeLabel": "2:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/function-fundamentals-unlocking-power-excel-0",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 14
+    },
+    {
+      "title": "Tech Help from Bloomberg",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 05",
+      "timeLabel": "3:00pm - 5:00pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/16612544",
+      "tags": [
+        "new",
+        "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 15
+    },
+    {
+      "title": "Teens: Bookmark Engraving Workshop",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 05",
+      "timeLabel": "3:00pm - 4:00pm",
+      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "url": "https://princetonlibrary.libnet.info/event/17671545",
+      "tags": [
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 15
+    },
+    {
+      "title": "Kids & Teens: Homework Help",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 05",
+      "timeLabel": "3:30pm - 6:00pm",
+      "location": "Princeton Public Library - CoLab Space",
+      "url": "https://princetonlibrary.libnet.info/event/17507793",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 15
+    },
+    {
+      "title": "Princeton University Public Lecture: Ruth Wilson Gilmore",
+      "source": "Princeton University",
+      "dateLabel": "Nov 5",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-university-public-lecture-ruth-wilson-gilmore",
+      "tags": [
+        "new",
+        "culture"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 16
+    },
+    {
+      "title": "Hands-On Policy Analysis with Stata: Difference-in-Differences and Event Study Methods",
+      "source": "Princeton University",
+      "dateLabel": "Nov 5",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/hands-policy-analysis-stata-difference-differences-and-event-study-methods-0",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 17
+    },
+    {
+      "title": "2026 Special Collections Fall Open House",
+      "source": "Princeton University",
+      "dateLabel": "Nov 5",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/2026-special-collections-fall-open-house",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 18
+    },
+    {
+      "title": "U.S. Citizenship Test Prep Course",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 05",
+      "timeLabel": "6:00pm - 8:00pm",
+      "location": "Zoom - Zoom",
+      "url": "https://princetonlibrary.libnet.info/event/17235596",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 18
+    },
+    {
+      "title": "SCORE Seminar: Starting a Home-Based Business",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 05",
+      "timeLabel": "6:30pm - 7:30pm",
+      "location": "Princeton Public Library - Newsroom",
+      "url": "https://princetonlibrary.libnet.info/event/17690716",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 18
+    },
+    {
+      "title": "Men's Basketball vs Hofstra",
+      "source": "Princeton University",
+      "dateLabel": "Nov 5",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-basketball-vs-hofstra",
+      "tags": [],
+      "isoDate": "2026-11-05",
+      "startHour": 19
+    },
+    {
+      "title": "Planning Board Virtual Meeting",
+      "source": "Municipality of Princeton",
+      "dateLabel": "November 5, 2026",
+      "timeLabel": "07:00 PM - 11:00 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7889",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 19
+    },
+    {
+      "title": "Jean-Guihen Queyras, Cello; Alexandre Tharaud, Piano (Princeton University Concerts)",
+      "source": "Princeton University",
+      "dateLabel": "Nov 5",
+      "timeLabel": "7:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/jean-guihen-queyras-cello-alexandre-tharaud-piano-princeton-university-concerts",
+      "tags": [
+        "new",
+        "culture"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 19
     }
   ],
   "days": [
-    {
-      "iso": "2026-10-29",
-      "label": "Oct 29",
-      "weekday": "Thu",
-      "count": 9
-    },
     {
       "iso": "2026-10-30",
       "label": "Oct 30",
@@ -1487,6 +1648,12 @@
       "label": "Nov 4",
       "weekday": "Wed",
       "count": 26
+    },
+    {
+      "iso": "2026-11-05",
+      "label": "Nov 5",
+      "weekday": "Thu",
+      "count": 21
     }
   ],
   "windowDays": 7,
@@ -1496,7 +1663,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Clear, 52F"
+      "detail": "Patchy Fog, 52F"
     },
     {
       "name": "Princeton University Events",
@@ -1508,13 +1675,13 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "58 events"
+      "detail": "53 events"
     },
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "8 calendar items"
+      "detail": "9 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
