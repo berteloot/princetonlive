@@ -1,28 +1,15 @@
 {
-  "generatedAt": "2026-10-29T18:27:20.318Z",
+  "generatedAt": "2026-10-30T00:58:13.263Z",
   "weather": {
-    "temperature": 71,
-    "shortForecast": "Sunny",
+    "temperature": 52,
+    "shortForecast": "Mostly Clear",
     "wind": "5 mph SW",
-    "detailedForecast": "Sunny, with a high near 71. Southwest wind around 5 mph.",
+    "detailedForecast": "Mostly clear, with a low around 52. Southwest wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Andlinger Center for Energy and the Environment Annual Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "8:30 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/andlinger-center-energy-and-environment-annual-meeting",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 8
-    },
     {
       "title": "English Conversation",
       "source": "Princeton Public Library",
@@ -51,20 +38,6 @@
       "startHour": 10
     },
     {
-      "title": "Research Data Stewardship Series: Publishing Research Data",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "11:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/research-data-stewardship-series-publishing-research-data",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 11
-    },
-    {
       "title": "Kids: Baby Storytime",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 29",
@@ -79,30 +52,6 @@
       "startHour": 11
     },
     {
-      "title": "Reference Management with Zotero",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/reference-management-zotero-0",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 12
-    },
-    {
-      "title": "Faculty and staff Bible study",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-2",
-      "tags": [],
-      "isoDate": "2026-10-29",
-      "startHour": 12
-    },
-    {
       "title": "Kids: Baby Play Group",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 29",
@@ -113,19 +62,6 @@
         "new",
         "family",
         "practical"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 12
-    },
-    {
-      "title": "After Noon Concert Series",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "12:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/after-noon-concert-series-6",
-      "tags": [
-        "culture"
       ],
       "isoDate": "2026-10-29",
       "startHour": 12
@@ -178,149 +114,6 @@
       "startHour": 15
     },
     {
-      "title": "Documentary: An Eye for an Eye",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "4:15 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/documentary-eye-eye",
-      "tags": [
-        "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 16
-    },
-    {
-      "title": "Seminar: \"A Field Guide to Watersheds: Division and Unity\" by Eliza Griswold",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/seminar-field-guide-watersheds-division-and-unity-eliza-griswold",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 16
-    },
-    {
-      "title": "Birding Society Migration Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/birding-society-migration-meeting",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 16
-    },
-    {
-      "title": "Staying Alive in Hitler’s Berlin",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/staying-alive-hitlers-berlin",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 16
-    },
-    {
-      "title": "James A. Moffett '29 Lectures in Ethics",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/james-moffett-29-lectures-ethics-0",
-      "tags": [
-        "new",
-        "family",
-        "culture"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 16
-    },
-    {
-      "title": "The Passover Story Turned Upside Down: Jewish Slave-Owning in Medieval Egypt",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/passover-story-turned-upside-down-jewish-slave-owning-medieval-egypt",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 16
-    },
-    {
-      "title": "Musicology Colloquium with Lydia Goehr",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/musicology-colloquium-lydia-goehr",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 16
-    },
-    {
-      "title": "Costume Support (Drop in!)",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/costume-support-drop-0",
-      "tags": [
-        "new",
-        "practical"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 17
-    },
-    {
-      "title": "Re-Entry Dinner",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/re-entry-dinner",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 18
-    },
-    {
-      "title": "After Concrete: Book Launch & Roundtable",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/after-concrete-book-launch-roundtable",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 18
-    },
-    {
       "title": "U.S. Citizenship Test Prep Course",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 29",
@@ -349,49 +142,6 @@
       ],
       "isoDate": "2026-10-29",
       "startHour": 18
-    },
-    {
-      "title": "Museum After Dark",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "6:15 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/museum-after-dark",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 18
-    },
-    {
-      "title": "Lutheran Campus Ministry Table Talk",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "6:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/lutheran-campus-ministry-table-talk-1",
-      "tags": [],
-      "isoDate": "2026-10-29",
-      "startHour": 18
-    },
-    {
-      "title": "Museum After Dark",
-      "source": "Princeton University",
-      "dateLabel": "Oct 29",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/museum-after-dark-0",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-29",
-      "startHour": 19
     },
     {
       "title": "Job Seekers: Create a Resume That Gets Results",
@@ -502,23 +252,23 @@
       "startHour": 17
     },
     {
-      "title": "Men's Water Polo vs Fordham",
-      "source": "Princeton University",
-      "dateLabel": "Oct 30",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-fordham",
-      "tags": [],
-      "isoDate": "2026-10-30",
-      "startHour": 18
-    },
-    {
       "title": "Women's Ice Hockey vs Brown",
       "source": "Princeton University",
       "dateLabel": "Oct 30",
       "timeLabel": "6:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/womens-ice-hockey-vs-brown",
+      "tags": [],
+      "isoDate": "2026-10-30",
+      "startHour": 18
+    },
+    {
+      "title": "Men's Water Polo vs Fordham",
+      "source": "Princeton University",
+      "dateLabel": "Oct 30",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-fordham",
       "tags": [],
       "isoDate": "2026-10-30",
       "startHour": 18
@@ -659,6 +409,17 @@
       "startHour": 13
     },
     {
+      "title": "Women's Ice Hockey vs Yale",
+      "source": "Princeton University",
+      "dateLabel": "Oct 31",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-ice-hockey-vs-yale",
+      "tags": [],
+      "isoDate": "2026-10-31",
+      "startHour": 15
+    },
+    {
       "title": "Hip-Hop Techniques and Foundations with ESkilllz",
       "source": "Princeton University",
       "dateLabel": "Oct 31",
@@ -674,15 +435,15 @@
       "startHour": 15
     },
     {
-      "title": "Women's Ice Hockey vs Yale",
+      "title": "Men's Water Polo vs LIU Brooklyn",
       "source": "Princeton University",
       "dateLabel": "Oct 31",
-      "timeLabel": "3:00 PM",
+      "timeLabel": "4:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-ice-hockey-vs-yale",
+      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-liu-brooklyn",
       "tags": [],
       "isoDate": "2026-10-31",
-      "startHour": 15
+      "startHour": 16
     },
     {
       "title": "Tango Practica",
@@ -691,17 +452,6 @@
       "timeLabel": "4:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/tango-practica-19",
-      "tags": [],
-      "isoDate": "2026-10-31",
-      "startHour": 16
-    },
-    {
-      "title": "Men's Water Polo vs LIU Brooklyn",
-      "source": "Princeton University",
-      "dateLabel": "Oct 31",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-liu-brooklyn",
       "tags": [],
       "isoDate": "2026-10-31",
       "startHour": 16
@@ -1043,6 +793,20 @@
       "startHour": 16
     },
     {
+      "title": "Civic Leadership Council (Pace) Weekly Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Nov 2",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/civic-leadership-council-pace-weekly-meeting-7",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-02",
+      "startHour": 16
+    },
+    {
       "title": "Labor in the Archive",
       "source": "Princeton University",
       "dateLabel": "Nov 2",
@@ -1053,20 +817,6 @@
         "new",
         "culture",
         "rain"
-      ],
-      "isoDate": "2026-11-02",
-      "startHour": 16
-    },
-    {
-      "title": "Civic Leadership Council (Pace) Weekly Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Nov 2",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/civic-leadership-council-pace-weekly-meeting-7",
-      "tags": [
-        "rain",
-        "practical"
       ],
       "isoDate": "2026-11-02",
       "startHour": 16
@@ -1251,6 +1001,17 @@
       "startHour": 16
     },
     {
+      "title": "Summer Study Abroad Info Session",
+      "source": "Princeton University",
+      "dateLabel": "Nov 3",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/summer-study-abroad-info-session",
+      "tags": [],
+      "isoDate": "2026-11-03",
+      "startHour": 16
+    },
+    {
       "title": "Ancient Persian and Linguistic History: A Discussion",
       "source": "Princeton University",
       "dateLabel": "Nov 3",
@@ -1261,17 +1022,6 @@
         "new",
         "culture"
       ],
-      "isoDate": "2026-11-03",
-      "startHour": 16
-    },
-    {
-      "title": "Summer Study Abroad Info Session",
-      "source": "Princeton University",
-      "dateLabel": "Nov 3",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/summer-study-abroad-info-session",
-      "tags": [],
       "isoDate": "2026-11-03",
       "startHour": 16
     },
@@ -1561,6 +1311,17 @@
       "startHour": 16
     },
     {
+      "title": "InterVarsity Small Group",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-5",
+      "tags": [],
+      "isoDate": "2026-11-04",
+      "startHour": 16
+    },
+    {
       "title": "Ahilan Kadirgamar | Crises, Struggles and Alternatives: The Long Twentieth Century of Youth Movements in Sri Lanka",
       "source": "Princeton University",
       "dateLabel": "Nov 4",
@@ -1577,15 +1338,15 @@
       "startHour": 16
     },
     {
-      "title": "InterVarsity Small Group",
+      "title": "The Other 2/3 of the Tree of Life: Invertebrate and Plant Fossils: 150 Years of Princeton Paleontology",
       "source": "Princeton University",
       "dateLabel": "Nov 4",
-      "timeLabel": "4:30 PM",
+      "timeLabel": "5:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-5",
+      "url": "https://www.princeton.edu/events/2026/other-23-tree-life-invertebrate-and-plant-fossils-150-years-princeton-paleontology",
       "tags": [],
       "isoDate": "2026-11-04",
-      "startHour": 16
+      "startHour": 17
     },
     {
       "title": "YDSA Weekly Meeting",
@@ -1598,17 +1359,6 @@
         "culture",
         "rain"
       ],
-      "isoDate": "2026-11-04",
-      "startHour": 17
-    },
-    {
-      "title": "The Other 2/3 of the Tree of Life: Invertebrate and Plant Fossils: 150 Years of Princeton Paleontology",
-      "source": "Princeton University",
-      "dateLabel": "Nov 4",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/other-23-tree-life-invertebrate-and-plant-fossils-150-years-princeton-paleontology",
-      "tags": [],
       "isoDate": "2026-11-04",
       "startHour": 17
     },
@@ -1700,7 +1450,7 @@
       "iso": "2026-10-29",
       "label": "Oct 29",
       "weekday": "Thu",
-      "count": 27
+      "count": 9
     },
     {
       "iso": "2026-10-30",
@@ -1746,7 +1496,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 71F"
+      "detail": "Mostly Clear, 52F"
     },
     {
       "name": "Princeton University Events",
