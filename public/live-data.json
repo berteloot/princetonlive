@@ -1,215 +1,15 @@
 {
-  "generatedAt": "2026-10-30T22:17:02.833Z",
+  "generatedAt": "2026-10-31T05:38:30.652Z",
   "weather": {
     "temperature": 39,
     "shortForecast": "Partly Cloudy",
-    "wind": "5 to 15 mph NW",
-    "detailedForecast": "Partly cloudy, with a low around 39. Northwest wind 5 to 15 mph, with gusts as high as 30 mph.",
+    "wind": "5 mph NW",
+    "detailedForecast": "Partly cloudy, with a low around 39. Northwest wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Job Seekers: Create a Resume That Gets Results",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 30",
-      "timeLabel": "10:00am - 12:00pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/17491108",
-      "tags": [
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-30",
-      "startHour": 10
-    },
-    {
-      "title": "Introduction to Data Analysis with R",
-      "source": "Princeton University",
-      "dateLabel": "Oct 30",
-      "timeLabel": "10:30 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/introduction-data-analysis-r-0",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-30",
-      "startHour": 10
-    },
-    {
-      "title": "Global Health Colloquium: From Global Health to Planetary Health: Lessons from Nicaragua's Sugarcane Zone",
-      "source": "Princeton University",
-      "dateLabel": "Oct 30",
-      "timeLabel": "11:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/global-health-colloquium-global-health-planetary-health-lessons-nicaraguas-sugarcane",
-      "tags": [
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-30",
-      "startHour": 11
-    },
-    {
-      "title": "SFPUL Spooky Special Collections Tour",
-      "source": "Princeton University",
-      "dateLabel": "Oct 30",
-      "timeLabel": "2:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/sfpul-spooky-special-collections-tour",
-      "tags": [
-        "new",
-        "rain"
-      ],
-      "isoDate": "2026-10-30",
-      "startHour": 14
-    },
-    {
-      "title": "English Conversation (in person)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 30",
-      "timeLabel": "2:00pm - 3:30pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/17236682",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-10-30",
-      "startHour": 14
-    },
-    {
-      "title": "Fund for Irish Studies: Conversation with Yiyun Li — Music Against the Night",
-      "source": "Princeton University",
-      "dateLabel": "Oct 30",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/fund-irish-studies-conversation-yiyun-li-music-against-night",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-30",
-      "startHour": 16
-    },
-    {
-      "title": "Competitive Programming Club",
-      "source": "Princeton University",
-      "dateLabel": "Oct 30",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/competitive-programming-club-6",
-      "tags": [],
-      "isoDate": "2026-10-30",
-      "startHour": 17
-    },
-    {
-      "title": "SWIFTIEWEEN",
-      "source": "Princeton University",
-      "dateLabel": "Oct 30",
-      "timeLabel": "5:45 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/swiftieween",
-      "tags": [],
-      "isoDate": "2026-10-30",
-      "startHour": 17
-    },
-    {
-      "title": "Women's Ice Hockey vs Brown",
-      "source": "Princeton University",
-      "dateLabel": "Oct 30",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-ice-hockey-vs-brown",
-      "tags": [],
-      "isoDate": "2026-10-30",
-      "startHour": 18
-    },
-    {
-      "title": "Men's Water Polo vs Fordham",
-      "source": "Princeton University",
-      "dateLabel": "Oct 30",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-fordham",
-      "tags": [],
-      "isoDate": "2026-10-30",
-      "startHour": 18
-    },
-    {
-      "title": "Sense and Sensibility",
-      "source": "Garden Theatre",
-      "dateLabel": "Oct 30",
-      "timeLabel": "7:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-30",
-      "startHour": 19
-    },
-    {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Oct 30",
-      "timeLabel": "7:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-30",
-      "startHour": 19
-    },
-    {
-      "title": "Gail Archer, Organist",
-      "source": "Princeton University",
-      "dateLabel": "Oct 30",
-      "timeLabel": "7:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/gail-archer-organist",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-10-30",
-      "startHour": 19
-    },
-    {
-      "title": "Halloween with Sinfonia",
-      "source": "Princeton University",
-      "dateLabel": "Oct 30",
-      "timeLabel": "7:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/halloween-sinfonia",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-30",
-      "startHour": 19
-    },
-    {
-      "title": "Varsity M Volleyball Glenn Nelson Classic",
-      "source": "Princeton University",
-      "dateLabel": "Oct 30",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/varsity-m-volleyball-glenn-nelson-classic",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-10-30",
-      "startHour": 20
-    },
     {
       "title": "Varsity M Volleyball Glenn Nelson Classic",
       "source": "Princeton University",
@@ -623,17 +423,6 @@
       "startHour": 14
     },
     {
-      "title": "Princeton Trading Club Matcha Study Break",
-      "source": "Princeton University",
-      "dateLabel": "Nov 1",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-trading-club-matcha-study-break",
-      "tags": [],
-      "isoDate": "2026-11-01",
-      "startHour": 15
-    },
-    {
       "title": "Pianist Mishka Rushdie Momen: In Conversation & Performance (Princeton University Concerts)",
       "source": "Princeton University",
       "dateLabel": "Nov 1",
@@ -645,6 +434,17 @@
         "family",
         "culture"
       ],
+      "isoDate": "2026-11-01",
+      "startHour": 15
+    },
+    {
+      "title": "Princeton Trading Club Matcha Study Break",
+      "source": "Princeton University",
+      "dateLabel": "Nov 1",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-trading-club-matcha-study-break",
+      "tags": [],
       "isoDate": "2026-11-01",
       "startHour": 15
     },
@@ -933,20 +733,6 @@
       "startHour": 16
     },
     {
-      "title": "Performance: Room to Swing an Ax",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 02",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/17615931",
-      "tags": [
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-11-02",
-      "startHour": 18
-    },
-    {
       "title": "Catherine Project Book Discussion Series",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 02",
@@ -955,6 +741,20 @@
       "url": "https://princetonlibrary.libnet.info/event/17294110",
       "tags": [
         "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-02",
+      "startHour": 18
+    },
+    {
+      "title": "Performance: Room to Swing an Ax",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 02",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17615931",
+      "tags": [
+        "culture",
         "practical"
       ],
       "isoDate": "2026-11-02",
@@ -1572,17 +1372,6 @@
       "startHour": 16
     },
     {
-      "title": "The Other 2/3 of the Tree of Life: Invertebrate and Plant Fossils: 150 Years of Princeton Paleontology",
-      "source": "Princeton University",
-      "dateLabel": "Nov 4",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/other-23-tree-life-invertebrate-and-plant-fossils-150-years-princeton-paleontology",
-      "tags": [],
-      "isoDate": "2026-11-04",
-      "startHour": 17
-    },
-    {
       "title": "YDSA Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Nov 4",
@@ -1593,6 +1382,17 @@
         "culture",
         "rain"
       ],
+      "isoDate": "2026-11-04",
+      "startHour": 17
+    },
+    {
+      "title": "The Other 2/3 of the Tree of Life: Invertebrate and Plant Fossils: 150 Years of Princeton Paleontology",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/other-23-tree-life-invertebrate-and-plant-fossils-150-years-princeton-paleontology",
+      "tags": [],
       "isoDate": "2026-11-04",
       "startHour": 17
     },
@@ -1850,20 +1650,6 @@
       "startHour": 14
     },
     {
-      "title": "Tech Help from Bloomberg",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 05",
-      "timeLabel": "3:00pm - 5:00pm",
-      "location": "Princeton Public Library - Tech Center",
-      "url": "https://princetonlibrary.libnet.info/event/16612544",
-      "tags": [
-        "new",
-        "practical"
-      ],
-      "isoDate": "2026-11-05",
-      "startHour": 15
-    },
-    {
       "title": "Teens: Bookmark Engraving Workshop",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 05",
@@ -1874,6 +1660,20 @@
         "family",
         "culture",
         "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 15
+    },
+    {
+      "title": "Tech Help from Bloomberg",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 05",
+      "timeLabel": "3:00pm - 5:00pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/16612544",
+      "tags": [
+        "new",
         "practical"
       ],
       "isoDate": "2026-11-05",
@@ -2061,15 +1861,171 @@
       ],
       "isoDate": "2026-11-05",
       "startHour": 19
+    },
+    {
+      "title": "Job Seekers: The Smart Job Seeker's Guide to AI",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 06",
+      "timeLabel": "10:00am - 12:00pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17723113",
+      "tags": [
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-06",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Stuffed Animal Village",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 06",
+      "timeLabel": "10:30am - 11:30am",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/17333671",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-06",
+      "startHour": 10
+    },
+    {
+      "title": "Regression Beyond the Basics: Panel Data & Logit in R",
+      "source": "Princeton University",
+      "dateLabel": "Nov 6",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/regression-beyond-basics-panel-data-logit-r",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-06",
+      "startHour": 13
+    },
+    {
+      "title": "Special Collections Showcase",
+      "source": "Princeton University",
+      "dateLabel": "Nov 6",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/special-collections-showcase-4",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-11-06",
+      "startHour": 14
+    },
+    {
+      "title": "English Conversation (in person)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 06",
+      "timeLabel": "2:00pm - 3:30pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/17236683",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-11-06",
+      "startHour": 14
+    },
+    {
+      "title": "Kids: Bookmark Engraving Workshop",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 06",
+      "timeLabel": "3:00pm - 4:00pm",
+      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "url": "https://princetonlibrary.libnet.info/event/17212720",
+      "tags": [
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-06",
+      "startHour": 15
+    },
+    {
+      "title": "Competitive Programming Club",
+      "source": "Princeton University",
+      "dateLabel": "Nov 6",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/competitive-programming-club-7",
+      "tags": [],
+      "isoDate": "2026-11-06",
+      "startHour": 17
+    },
+    {
+      "title": "Ask Me Anything!: Growth Year Pre-Med Alum and LMSA Northeast Board member Michelle Diaz",
+      "source": "Princeton University",
+      "dateLabel": "Nov 6",
+      "timeLabel": "5:45 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/ask-me-anything-growth-year-pre-med-alum-and-lmsa-northeast-board-member-michelle-diaz",
+      "tags": [
+        "new",
+        "practical"
+      ],
+      "isoDate": "2026-11-06",
+      "startHour": 17
+    },
+    {
+      "title": "Women's Ice Hockey vs Colgate",
+      "source": "Princeton University",
+      "dateLabel": "Nov 6",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-ice-hockey-vs-colgate",
+      "tags": [],
+      "isoDate": "2026-11-06",
+      "startHour": 18
+    },
+    {
+      "title": "Women's Volleyball vs Dartmouth",
+      "source": "Princeton University",
+      "dateLabel": "Nov 6",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-volleyball-vs-dartmouth",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-11-06",
+      "startHour": 18
+    },
+    {
+      "title": "Oratorio for Living Things by Heather Christian",
+      "source": "Princeton University",
+      "dateLabel": "Nov 6",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/oratorio-living-things-heather-christian",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-06",
+      "startHour": 20
+    },
+    {
+      "title": "Mariachi Los Tigres de Princeton Arch Performance",
+      "source": "Princeton University",
+      "dateLabel": "Nov 6",
+      "timeLabel": "9:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mariachi-los-tigres-de-princeton-arch-performance",
+      "tags": [],
+      "isoDate": "2026-11-06",
+      "startHour": 21
     }
   ],
   "days": [
-    {
-      "iso": "2026-10-30",
-      "label": "Oct 30",
-      "weekday": "Fri",
-      "count": 15
-    },
     {
       "iso": "2026-10-31",
       "label": "Oct 31",
@@ -2105,6 +2061,12 @@
       "label": "Nov 5",
       "weekday": "Thu",
       "count": 25
+    },
+    {
+      "iso": "2026-11-06",
+      "label": "Nov 6",
+      "weekday": "Fri",
+      "count": 12
     }
   ],
   "windowDays": 7,
@@ -2126,7 +2088,7 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "53 events"
+      "detail": "58 events"
     },
     {
       "name": "Municipality of Princeton",
@@ -2138,7 +2100,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "33 showtimes"
+      "detail": "31 showtimes"
     }
   ]
 }
