@@ -1,87 +1,15 @@
 {
-  "generatedAt": "2026-11-01T00:06:32.039Z",
+  "generatedAt": "2026-11-01T06:00:26.156Z",
   "weather": {
     "temperature": 35,
-    "shortForecast": "Mostly Clear",
-    "wind": "5 mph NW",
-    "detailedForecast": "Mostly clear, with a low around 35. Northwest wind around 5 mph.",
+    "shortForecast": "Partly Cloudy",
+    "wind": "5 mph N",
+    "detailedForecast": "Partly cloudy, with a low around 35. North wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Kids: Take & Make",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 31",
-      "timeLabel": "10:00am - 2:00pm",
-      "location": "Princeton Public Library - 3rd Floor Pop-up Programming Area",
-      "url": "https://princetonlibrary.libnet.info/event/16847048",
-      "tags": [
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-10-31",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Saturday Storytime!",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 31",
-      "timeLabel": "10:30am - 11:00am",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14662012",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-10-31",
-      "startHour": 10
-    },
-    {
-      "title": "Tiger Tech Help",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 31",
-      "timeLabel": "11:00am - 1:00pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/17469702",
-      "tags": [
-        "new",
-        "practical"
-      ],
-      "isoDate": "2026-10-31",
-      "startHour": 11
-    },
-    {
-      "title": "Meeting: New Jersey Tolkien Society",
-      "source": "Princeton Public Library",
-      "dateLabel": "Oct 31",
-      "timeLabel": "1:00pm - 3:00pm",
-      "location": "Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/17657085",
-      "tags": [
-        "family",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-10-31",
-      "startHour": 13
-    },
-    {
-      "title": "A Nightmare on Elm Street",
-      "source": "Garden Theatre",
-      "dateLabel": "Oct 31",
-      "timeLabel": "9:30 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=a-nightmare-on-elm-street",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-31",
-      "startHour": 21
-    },
     {
       "title": "Princeton Chase Regatta",
       "source": "Princeton University",
@@ -891,20 +819,6 @@
       "startHour": 9
     },
     {
-      "title": "Family & Pet Emergency Preparedness",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 04",
-      "timeLabel": "10:00am - 12:00pm",
-      "location": "Princeton Public Library - Newsroom",
-      "url": "https://princetonlibrary.libnet.info/event/17658450",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-11-04",
-      "startHour": 10
-    },
-    {
       "title": "Drop in and Knit",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 04",
@@ -914,6 +828,20 @@
       "tags": [
         "new",
         "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 10
+    },
+    {
+      "title": "Family & Pet Emergency Preparedness",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 04",
+      "timeLabel": "10:00am - 12:00pm",
+      "location": "Princeton Public Library - Newsroom",
+      "url": "https://princetonlibrary.libnet.info/event/17658450",
+      "tags": [
+        "family",
         "practical"
       ],
       "isoDate": "2026-11-04",
@@ -1125,19 +1053,6 @@
       "startHour": 15
     },
     {
-      "title": "English Conversation (virtual)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 04",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Virtual - Google Meet",
-      "url": "https://princetonlibrary.libnet.info/event/16837161",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-11-04",
-      "startHour": 16
-    },
-    {
       "title": "Kids: Upcycled Craft Club: Origami Butterflies",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 04",
@@ -1147,6 +1062,19 @@
       "tags": [
         "family",
         "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 16
+    },
+    {
+      "title": "English Conversation (virtual)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 04",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Virtual - Google Meet",
+      "url": "https://princetonlibrary.libnet.info/event/16837161",
+      "tags": [
         "practical"
       ],
       "isoDate": "2026-11-04",
@@ -1458,6 +1386,20 @@
       "startHour": 14
     },
     {
+      "title": "Tech Help from Bloomberg",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 05",
+      "timeLabel": "3:00pm - 5:00pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/16612544",
+      "tags": [
+        "new",
+        "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 15
+    },
+    {
       "title": "Teens: Bookmark Engraving Workshop",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 05",
@@ -1468,20 +1410,6 @@
         "family",
         "culture",
         "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-05",
-      "startHour": 15
-    },
-    {
-      "title": "Tech Help from Bloomberg",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 05",
-      "timeLabel": "3:00pm - 5:00pm",
-      "location": "Princeton Public Library - Tech Center",
-      "url": "https://princetonlibrary.libnet.info/event/16612544",
-      "tags": [
-        "new",
         "practical"
       ],
       "isoDate": "2026-11-05",
@@ -1831,15 +1759,339 @@
       "tags": [],
       "isoDate": "2026-11-06",
       "startHour": 21
+    },
+    {
+      "title": "MLP Intensive x Shayh Mendes: The First Migration",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "9:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mlp-intensive-x-shayh-mendes-first-migration",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 9
+    },
+    {
+      "title": "Kids: Take & Make",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 07",
+      "timeLabel": "10:00am - 2:00pm",
+      "location": "Princeton Public Library - 3rd Floor Pop-up Programming Area",
+      "url": "https://princetonlibrary.libnet.info/event/17264162",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Family Matinee Series",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 07",
+      "timeLabel": "10:00am - 11:30am",
+      "location": "Off-Site - Princeton Garden Theatre",
+      "url": "https://princetonlibrary.libnet.info/event/16293075",
+      "tags": [
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 10
+    },
+    {
+      "title": "Willy Wonka and the Chocolate Factory",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 7",
+      "timeLabel": "10:00 AM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=willy-wonka-and-the-chocolate-factory",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Saturday Storytime!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 07",
+      "timeLabel": "10:30am - 11:00am",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14662014",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 10
+    },
+    {
+      "title": "Tiger Tech Help",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 07",
+      "timeLabel": "11:00am - 1:00pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/17469703",
+      "tags": [
+        "new",
+        "practical"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 11
+    },
+    {
+      "title": "Kids: Mandarin Chinese Storytime",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 07",
+      "timeLabel": "11:30am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/17322866",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 11
+    },
+    {
+      "title": "Football vs Dartmouth",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/football-vs-dartmouth",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 12
+    },
+    {
+      "title": "Guided tour: The Art of Japanese Publishing",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/guided-tour-art-japanese-publishing-5",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 13
+    },
+    {
+      "title": "World of Materials Science Day",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/world-materials-science-day",
+      "tags": [
+        "new",
+        "family",
+        "culture"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 13
+    },
+    {
+      "title": "World of Materials Science Day",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 07",
+      "timeLabel": "1:00pm - 3:00pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17027911",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 13
+    },
+    {
+      "title": "Baha'i Devotional Gathering",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/bahai-devotional-gathering-2",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 14
+    },
+    {
+      "title": "Oratorio for Living Things by Heather Christian",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/oratorio-living-things-heather-christian-0",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 14
+    },
+    {
+      "title": "Kids & Teens: Science Saturdays",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 07",
+      "timeLabel": "2:00pm - 3:00pm",
+      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "url": "https://princetonlibrary.libnet.info/event/17382023",
+      "tags": [
+        "family",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 14
+    },
+    {
+      "title": "Men's Soccer vs Penn",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-penn",
+      "tags": [],
+      "isoDate": "2026-11-07",
+      "startHour": 15
+    },
+    {
+      "title": "Tango Practica",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/tango-practica-20",
+      "tags": [],
+      "isoDate": "2026-11-07",
+      "startHour": 16
+    },
+    {
+      "title": "Women's Volleyball vs Harvard",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-volleyball-vs-harvard",
+      "tags": [],
+      "isoDate": "2026-11-07",
+      "startHour": 17
+    },
+    {
+      "title": "Women's Ice Hockey vs Cornell",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-ice-hockey-vs-cornell",
+      "tags": [],
+      "isoDate": "2026-11-07",
+      "startHour": 18
+    },
+    {
+      "title": "Women's Soccer vs Brown",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-brown",
+      "tags": [],
+      "isoDate": "2026-11-07",
+      "startHour": 18
+    },
+    {
+      "title": "Diwali at the Chapel",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/diwali-chapel",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 19
+    },
+    {
+      "title": "Magic: The Gathering Club Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/magic-gathering-club-meeting-8",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 19
+    },
+    {
+      "title": "Oratorio for Living Things by Heather Christian",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/oratorio-living-things-heather-christian-1",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 20
+    },
+    {
+      "title": "Jazz at Princeton presents: Jazz Small Groups I and Faculty Group",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/jazz-princeton-presents-jazz-small-groups-i-and-faculty-group",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 20
+    },
+    {
+      "title": "Liars' Club meeting",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "9:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/liars-club-meeting-8",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 21
     }
   ],
   "days": [
-    {
-      "iso": "2026-10-31",
-      "label": "Oct 31",
-      "weekday": "Sat",
-      "count": 5
-    },
     {
       "iso": "2026-11-01",
       "label": "Nov 1",
@@ -1875,6 +2127,12 @@
       "label": "Nov 6",
       "weekday": "Fri",
       "count": 12
+    },
+    {
+      "iso": "2026-11-07",
+      "label": "Nov 7",
+      "weekday": "Sat",
+      "count": 24
     }
   ],
   "windowDays": 7,
@@ -1884,7 +2142,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Clear, 35F"
+      "detail": "Partly Cloudy, 35F"
     },
     {
       "name": "Princeton University Events",
@@ -1896,13 +2154,13 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "58 events"
+      "detail": "57 events"
     },
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "9 calendar items"
+      "detail": "10 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
