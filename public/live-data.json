@@ -1,28 +1,15 @@
 {
-  "generatedAt": "2026-10-31T19:16:21.612Z",
+  "generatedAt": "2026-11-01T00:06:32.039Z",
   "weather": {
-    "temperature": 60,
-    "shortForecast": "Sunny",
+    "temperature": 35,
+    "shortForecast": "Mostly Clear",
     "wind": "5 mph NW",
-    "detailedForecast": "Sunny, with a high near 60. Northwest wind around 5 mph.",
+    "detailedForecast": "Mostly clear, with a low around 35. Northwest wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Varsity M Volleyball Glenn Nelson Classic",
-      "source": "Princeton University",
-      "dateLabel": "Oct 31",
-      "timeLabel": "8:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/varsity-m-volleyball-glenn-nelson-classic-0",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-10-31",
-      "startHour": 8
-    },
     {
       "title": "Kids: Take & Make",
       "source": "Princeton Public Library",
@@ -53,17 +40,6 @@
       "startHour": 10
     },
     {
-      "title": "Men's Water Polo vs Iona",
-      "source": "Princeton University",
-      "dateLabel": "Oct 31",
-      "timeLabel": "11:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-iona",
-      "tags": [],
-      "isoDate": "2026-10-31",
-      "startHour": 11
-    },
-    {
       "title": "Tiger Tech Help",
       "source": "Princeton Public Library",
       "dateLabel": "Oct 31",
@@ -76,17 +52,6 @@
       ],
       "isoDate": "2026-10-31",
       "startHour": 11
-    },
-    {
-      "title": "Football vs Cornell",
-      "source": "Princeton University",
-      "dateLabel": "Oct 31",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/football-vs-cornell",
-      "tags": [],
-      "isoDate": "2026-10-31",
-      "startHour": 12
     },
     {
       "title": "Meeting: New Jersey Tolkien Society",
@@ -102,149 +67,6 @@
       ],
       "isoDate": "2026-10-31",
       "startHour": 13
-    },
-    {
-      "title": "Women's Ice Hockey vs Yale",
-      "source": "Princeton University",
-      "dateLabel": "Oct 31",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-ice-hockey-vs-yale",
-      "tags": [],
-      "isoDate": "2026-10-31",
-      "startHour": 15
-    },
-    {
-      "title": "Hip-Hop Techniques and Foundations with ESkilllz",
-      "source": "Princeton University",
-      "dateLabel": "Oct 31",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/hip-hop-techniques-and-foundations-eskilllz-1",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-31",
-      "startHour": 15
-    },
-    {
-      "title": "Sense and Sensibility",
-      "source": "Garden Theatre",
-      "dateLabel": "Oct 31",
-      "timeLabel": "3:30 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-31",
-      "startHour": 15
-    },
-    {
-      "title": "Men's Water Polo vs LIU Brooklyn",
-      "source": "Princeton University",
-      "dateLabel": "Oct 31",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-water-polo-vs-liu-brooklyn",
-      "tags": [],
-      "isoDate": "2026-10-31",
-      "startHour": 16
-    },
-    {
-      "title": "Tango Practica",
-      "source": "Princeton University",
-      "dateLabel": "Oct 31",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/tango-practica-19",
-      "tags": [],
-      "isoDate": "2026-10-31",
-      "startHour": 16
-    },
-    {
-      "title": "Men's Soccer vs Harvard",
-      "source": "Princeton University",
-      "dateLabel": "Oct 31",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-soccer-vs-harvard",
-      "tags": [],
-      "isoDate": "2026-10-31",
-      "startHour": 17
-    },
-    {
-      "title": "Harvard and Princeton Glee Clubs: The Football Concert",
-      "source": "Princeton University",
-      "dateLabel": "Oct 31",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/harvard-and-princeton-glee-clubs-football-concert",
-      "tags": [
-        "new",
-        "culture"
-      ],
-      "isoDate": "2026-10-31",
-      "startHour": 18
-    },
-    {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Oct 31",
-      "timeLabel": "6:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-31",
-      "startHour": 18
-    },
-    {
-      "title": "Sense and Sensibility",
-      "source": "Garden Theatre",
-      "dateLabel": "Oct 31",
-      "timeLabel": "6:30 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-10-31",
-      "startHour": 18
-    },
-    {
-      "title": "Magic: The Gathering Club Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Oct 31",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/magic-gathering-club-meeting-7",
-      "tags": [
-        "new",
-        "rain"
-      ],
-      "isoDate": "2026-10-31",
-      "startHour": 19
-    },
-    {
-      "title": "Liars' Club meeting",
-      "source": "Princeton University",
-      "dateLabel": "Oct 31",
-      "timeLabel": "9:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/liars-club-meeting-7",
-      "tags": [
-        "new",
-        "rain"
-      ],
-      "isoDate": "2026-10-31",
-      "startHour": 21
     },
     {
       "title": "A Nightmare on Elm Street",
@@ -409,6 +231,17 @@
       "startHour": 14
     },
     {
+      "title": "Princeton Trading Club Matcha Study Break",
+      "source": "Princeton University",
+      "dateLabel": "Nov 1",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-trading-club-matcha-study-break",
+      "tags": [],
+      "isoDate": "2026-11-01",
+      "startHour": 15
+    },
+    {
       "title": "Pianist Mishka Rushdie Momen: In Conversation & Performance (Princeton University Concerts)",
       "source": "Princeton University",
       "dateLabel": "Nov 1",
@@ -420,17 +253,6 @@
         "family",
         "culture"
       ],
-      "isoDate": "2026-11-01",
-      "startHour": 15
-    },
-    {
-      "title": "Princeton Trading Club Matcha Study Break",
-      "source": "Princeton University",
-      "dateLabel": "Nov 1",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-trading-club-matcha-study-break",
-      "tags": [],
       "isoDate": "2026-11-01",
       "startHour": 15
     },
@@ -1358,6 +1180,17 @@
       "startHour": 16
     },
     {
+      "title": "The Other 2/3 of the Tree of Life: Invertebrate and Plant Fossils: 150 Years of Princeton Paleontology",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/other-23-tree-life-invertebrate-and-plant-fossils-150-years-princeton-paleontology",
+      "tags": [],
+      "isoDate": "2026-11-04",
+      "startHour": 17
+    },
+    {
       "title": "YDSA Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Nov 4",
@@ -1368,17 +1201,6 @@
         "culture",
         "rain"
       ],
-      "isoDate": "2026-11-04",
-      "startHour": 17
-    },
-    {
-      "title": "The Other 2/3 of the Tree of Life: Invertebrate and Plant Fossils: 150 Years of Princeton Paleontology",
-      "source": "Princeton University",
-      "dateLabel": "Nov 4",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/other-23-tree-life-invertebrate-and-plant-fossils-150-years-princeton-paleontology",
-      "tags": [],
       "isoDate": "2026-11-04",
       "startHour": 17
     },
@@ -2016,7 +1838,7 @@
       "iso": "2026-10-31",
       "label": "Oct 31",
       "weekday": "Sat",
-      "count": 19
+      "count": 5
     },
     {
       "iso": "2026-11-01",
@@ -2062,7 +1884,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 60F"
+      "detail": "Mostly Clear, 35F"
     },
     {
       "name": "Princeton University Events",
@@ -2086,7 +1908,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "30 showtimes"
+      "detail": "27 showtimes"
     }
   ]
 }
