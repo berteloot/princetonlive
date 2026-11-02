@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-02T11:01:32.032Z",
+  "generatedAt": "2026-11-02T21:42:03.313Z",
   "weather": {
     "temperature": 66,
-    "shortForecast": "Mostly Sunny",
-    "wind": "0 to 5 mph SW",
-    "detailedForecast": "Mostly sunny, with a high near 66. Southwest wind 0 to 5 mph.",
+    "shortForecast": "Sunny",
+    "wind": "0 mph ",
+    "detailedForecast": "Sunny. High near 66, with temperatures falling to around 60 in the afternoon. Southwest wind around 0 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -82,34 +82,6 @@
       "startHour": 15
     },
     {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 2",
-      "timeLabel": "3:30 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-02",
-      "startHour": 15
-    },
-    {
-      "title": "Sense and Sensibility",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 2",
-      "timeLabel": "3:45 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-02",
-      "startHour": 15
-    },
-    {
       "title": "Men's Basketball vs Carnegie Mellon",
       "source": "Princeton University",
       "dateLabel": "Nov 2",
@@ -151,6 +123,20 @@
       "startHour": 16
     },
     {
+      "title": "Civic Leadership Council (Pace) Weekly Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Nov 2",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/civic-leadership-council-pace-weekly-meeting-7",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-02",
+      "startHour": 16
+    },
+    {
       "title": "Labor in the Archive",
       "source": "Princeton University",
       "dateLabel": "Nov 2",
@@ -161,20 +147,6 @@
         "new",
         "culture",
         "rain"
-      ],
-      "isoDate": "2026-11-02",
-      "startHour": 16
-    },
-    {
-      "title": "Civic Leadership Council (Pace) Weekly Meeting",
-      "source": "Princeton University",
-      "dateLabel": "Nov 2",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/civic-leadership-council-pace-weekly-meeting-7",
-      "tags": [
-        "rain",
-        "practical"
       ],
       "isoDate": "2026-11-02",
       "startHour": 16
@@ -345,6 +317,17 @@
       "startHour": 15
     },
     {
+      "title": "Jose Ando/Japan Foundation Event (Frist)",
+      "source": "Princeton University",
+      "dateLabel": "Nov 3",
+      "timeLabel": "3:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/jose-andojapan-foundation-event-frist",
+      "tags": [],
+      "isoDate": "2026-11-03",
+      "startHour": 15
+    },
+    {
       "title": "Kids: Tinker Tuesday, Lego",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 03",
@@ -415,17 +398,6 @@
       "startHour": 16
     },
     {
-      "title": "Summer Study Abroad Info Session",
-      "source": "Princeton University",
-      "dateLabel": "Nov 3",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/summer-study-abroad-info-session",
-      "tags": [],
-      "isoDate": "2026-11-03",
-      "startHour": 16
-    },
-    {
       "title": "Ancient Persian and Linguistic History: A Discussion",
       "source": "Princeton University",
       "dateLabel": "Nov 3",
@@ -436,6 +408,17 @@
         "new",
         "culture"
       ],
+      "isoDate": "2026-11-03",
+      "startHour": 16
+    },
+    {
+      "title": "Summer Study Abroad Info Session",
+      "source": "Princeton University",
+      "dateLabel": "Nov 3",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/summer-study-abroad-info-session",
+      "tags": [],
       "isoDate": "2026-11-03",
       "startHour": 16
     },
@@ -836,6 +819,19 @@
       "startHour": 16
     },
     {
+      "title": "Princeton Pool Club Workshop",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-pool-club-workshop",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 16
+    },
+    {
       "title": "YDSA Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Nov 4",
@@ -856,7 +852,11 @@
       "timeLabel": "5:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/other-23-tree-life-invertebrate-and-plant-fossils-150-years-princeton-paleontology",
-      "tags": [],
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
       "isoDate": "2026-11-04",
       "startHour": 17
     },
@@ -1184,6 +1184,20 @@
       ],
       "isoDate": "2026-11-05",
       "startHour": 15
+    },
+    {
+      "title": "Haiku Open Forum",
+      "source": "Princeton University",
+      "dateLabel": "Nov 5",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/haiku-open-forum",
+      "tags": [
+        "new",
+        "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 16
     },
     {
       "title": "Princeton University Public Lecture: Ruth Wilson Gilmore",
@@ -1646,6 +1660,17 @@
       "startHour": 13
     },
     {
+      "title": "Hoagie Club Alumni Q&A",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/hoagie-club-alumni-qa",
+      "tags": [],
+      "isoDate": "2026-11-07",
+      "startHour": 14
+    },
+    {
       "title": "Baha'i Devotional Gathering",
       "source": "Princeton University",
       "dateLabel": "Nov 7",
@@ -1724,6 +1749,17 @@
       "startHour": 17
     },
     {
+      "title": "Women's Soccer vs Brown",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-brown",
+      "tags": [],
+      "isoDate": "2026-11-07",
+      "startHour": 18
+    },
+    {
       "title": "Women's Ice Hockey vs Cornell",
       "source": "Princeton University",
       "dateLabel": "Nov 7",
@@ -1735,15 +1771,17 @@
       "startHour": 18
     },
     {
-      "title": "Women's Soccer vs Brown",
+      "title": "Diwali at the Chapel",
       "source": "Princeton University",
       "dateLabel": "Nov 7",
-      "timeLabel": "6:00 PM",
+      "timeLabel": "7:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-brown",
-      "tags": [],
+      "url": "https://www.princeton.edu/events/2026/diwali-chapel",
+      "tags": [
+        "culture"
+      ],
       "isoDate": "2026-11-07",
-      "startHour": 18
+      "startHour": 19
     },
     {
       "title": "Magic: The Gathering Club Meeting",
@@ -1760,34 +1798,6 @@
       "startHour": 19
     },
     {
-      "title": "Diwali at the Chapel",
-      "source": "Princeton University",
-      "dateLabel": "Nov 7",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/diwali-chapel",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-11-07",
-      "startHour": 19
-    },
-    {
-      "title": "Jazz at Princeton presents: Jazz Small Groups I and Faculty Group",
-      "source": "Princeton University",
-      "dateLabel": "Nov 7",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/jazz-princeton-presents-jazz-small-groups-i-and-faculty-group",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-07",
-      "startHour": 20
-    },
-    {
       "title": "Oratorio for Living Things by Heather Christian",
       "source": "Princeton University",
       "dateLabel": "Nov 7",
@@ -1800,6 +1810,21 @@
         "culture",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 20
+    },
+    {
+      "title": "Jazz at Princeton presents: Jazz Small Groups I and Faculty Group",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/jazz-princeton-presents-jazz-small-groups-i-and-faculty-group",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-11-07",
       "startHour": 20
@@ -1872,12 +1897,12 @@
       "startHour": 13
     },
     {
-      "title": "A Masterclass with Jonathan Biss, Piano",
+      "title": "Oratorio for Living Things by Heather Christian",
       "source": "Princeton University",
       "dateLabel": "Nov 8",
       "timeLabel": "2:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/masterclass-jonathan-biss-piano",
+      "url": "https://www.princeton.edu/events/2026/oratorio-living-things-heather-christian-2",
       "tags": [
         "new",
         "family",
@@ -1889,12 +1914,12 @@
       "startHour": 14
     },
     {
-      "title": "Oratorio for Living Things by Heather Christian",
+      "title": "A Masterclass with Jonathan Biss, Piano",
       "source": "Princeton University",
       "dateLabel": "Nov 8",
       "timeLabel": "2:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/oratorio-living-things-heather-christian-2",
+      "url": "https://www.princeton.edu/events/2026/masterclass-jonathan-biss-piano",
       "tags": [
         "new",
         "family",
@@ -1955,25 +1980,25 @@
       "iso": "2026-11-02",
       "label": "Nov 2",
       "weekday": "Mon",
-      "count": 18
+      "count": 16
     },
     {
       "iso": "2026-11-03",
       "label": "Nov 3",
       "weekday": "Tue",
-      "count": 20
+      "count": 21
     },
     {
       "iso": "2026-11-04",
       "label": "Nov 4",
       "weekday": "Wed",
-      "count": 32
+      "count": 33
     },
     {
       "iso": "2026-11-05",
       "label": "Nov 5",
       "weekday": "Thu",
-      "count": 25
+      "count": 26
     },
     {
       "iso": "2026-11-06",
@@ -1985,7 +2010,7 @@
       "iso": "2026-11-07",
       "label": "Nov 7",
       "weekday": "Sat",
-      "count": 24
+      "count": 25
     },
     {
       "iso": "2026-11-08",
@@ -2001,7 +2026,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Sunny, 66F"
+      "detail": "Sunny, 66F"
     },
     {
       "name": "Princeton University Events",
@@ -2025,7 +2050,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "22 showtimes"
+      "detail": "20 showtimes"
     }
   ]
 }
