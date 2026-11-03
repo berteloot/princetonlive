@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-03T17:01:42.957Z",
+  "generatedAt": "2026-11-03T23:21:28.261Z",
   "weather": {
-    "temperature": 70,
-    "shortForecast": "Mostly Sunny",
-    "wind": "0 to 5 mph SW",
-    "detailedForecast": "Mostly sunny, with a high near 70. Southwest wind 0 to 5 mph.",
+    "temperature": 48,
+    "shortForecast": "Partly Cloudy",
+    "wind": "5 mph SW",
+    "detailedForecast": "Partly cloudy, with a low around 48. Southwest wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -130,34 +130,6 @@
       "startHour": 15
     },
     {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 3",
-      "timeLabel": "3:30 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-03",
-      "startHour": 15
-    },
-    {
-      "title": "Sense and Sensibility",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 3",
-      "timeLabel": "3:45 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-03",
-      "startHour": 15
-    },
-    {
       "title": "Mercer County Community ID",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 03",
@@ -194,6 +166,19 @@
       "tags": [],
       "isoDate": "2026-11-03",
       "startHour": 16
+    },
+    {
+      "title": "Edward W. Said 57 Memorial Lecture: No Prisoners Here: On Language as Violence",
+      "source": "Princeton University",
+      "dateLabel": "Nov 3",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/edward-w-said-57-memorial-lecture-no-prisoners-here-language-violence",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-11-03",
+      "startHour": 17
     },
     {
       "title": "Hands-On Policy Analysis with Stata: Difference-in-Differences and Event Study Methods",
@@ -959,20 +944,6 @@
       "startHour": 15
     },
     {
-      "title": "Princeton University Public Lecture: Ruth Wilson Gilmore",
-      "source": "Princeton University",
-      "dateLabel": "Nov 5",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-university-public-lecture-ruth-wilson-gilmore",
-      "tags": [
-        "new",
-        "culture"
-      ],
-      "isoDate": "2026-11-05",
-      "startHour": 16
-    },
-    {
       "title": "Haiku Open Forum",
       "source": "Princeton University",
       "dateLabel": "Nov 5",
@@ -982,6 +953,20 @@
       "tags": [
         "new",
         "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 16
+    },
+    {
+      "title": "Princeton University Public Lecture: Ruth Wilson Gilmore",
+      "source": "Princeton University",
+      "dateLabel": "Nov 5",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-university-public-lecture-ruth-wilson-gilmore",
+      "tags": [
+        "new",
+        "culture"
       ],
       "isoDate": "2026-11-05",
       "startHour": 16
@@ -1214,6 +1199,34 @@
       "startHour": 15
     },
     {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 6",
+      "timeLabel": "3:25 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-06",
+      "startHour": 15
+    },
+    {
+      "title": "Wild Horse Nine",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 6",
+      "timeLabel": "4:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-06",
+      "startHour": 16
+    },
+    {
       "title": "Competitive Programming Club",
       "source": "Princeton University",
       "dateLabel": "Nov 6",
@@ -1261,6 +1274,34 @@
       ],
       "isoDate": "2026-11-06",
       "startHour": 18
+    },
+    {
+      "title": "Wild Horse Nine",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 6",
+      "timeLabel": "7:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-06",
+      "startHour": 19
+    },
+    {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 6",
+      "timeLabel": "7:20 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-06",
+      "startHour": 19
     },
     {
       "title": "Oratorio for Living Things by Heather Christian",
@@ -1404,19 +1445,32 @@
       "startHour": 12
     },
     {
-      "title": "World of Materials Science Day",
-      "source": "Princeton University",
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
       "dateLabel": "Nov 7",
-      "timeLabel": "1:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/world-materials-science-day",
+      "timeLabel": "12:35 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
       "tags": [
-        "new",
-        "family",
-        "culture"
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-11-07",
-      "startHour": 13
+      "startHour": 12
+    },
+    {
+      "title": "Wild Horse Nine",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 7",
+      "timeLabel": "12:40 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 12
     },
     {
       "title": "Guided tour: The Art of Japanese Publishing",
@@ -1429,6 +1483,21 @@
         "new",
         "culture",
         "rain"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 13
+    },
+    {
+      "title": "World of Materials Science Day",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/world-materials-science-day",
+      "tags": [
+        "new",
+        "family",
+        "culture"
       ],
       "isoDate": "2026-11-07",
       "startHour": 13
@@ -1459,19 +1528,6 @@
       "startHour": 14
     },
     {
-      "title": "Baha'i Devotional Gathering",
-      "source": "Princeton University",
-      "dateLabel": "Nov 7",
-      "timeLabel": "2:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/bahai-devotional-gathering-2",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-11-07",
-      "startHour": 14
-    },
-    {
       "title": "Oratorio for Living Things by Heather Christian",
       "source": "Princeton University",
       "dateLabel": "Nov 7",
@@ -1484,6 +1540,19 @@
         "culture",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 14
+    },
+    {
+      "title": "Baha'i Devotional Gathering",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/bahai-devotional-gathering-2",
+      "tags": [
+        "culture"
       ],
       "isoDate": "2026-11-07",
       "startHour": 14
@@ -1515,6 +1584,20 @@
       "startHour": 15
     },
     {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 7",
+      "timeLabel": "3:25 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 15
+    },
+    {
       "title": "Tango Practica",
       "source": "Princeton University",
       "dateLabel": "Nov 7",
@@ -1522,6 +1605,20 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/tango-practica-20",
       "tags": [],
+      "isoDate": "2026-11-07",
+      "startHour": 16
+    },
+    {
+      "title": "Wild Horse Nine",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 7",
+      "timeLabel": "4:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
+      "tags": [
+        "culture",
+        "rain"
+      ],
       "isoDate": "2026-11-07",
       "startHour": 16
     },
@@ -1559,6 +1656,19 @@
       "startHour": 18
     },
     {
+      "title": "Diwali at the Chapel",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/diwali-chapel",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 19
+    },
+    {
       "title": "Magic: The Gathering Club Meeting",
       "source": "Princeton University",
       "dateLabel": "Nov 7",
@@ -1573,32 +1683,32 @@
       "startHour": 19
     },
     {
-      "title": "Diwali at the Chapel",
-      "source": "Princeton University",
+      "title": "Wild Horse Nine",
+      "source": "Garden Theatre",
       "dateLabel": "Nov 7",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/diwali-chapel",
+      "timeLabel": "7:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
       "tags": [
-        "culture"
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-11-07",
       "startHour": 19
     },
     {
-      "title": "Jazz at Princeton presents: Jazz Small Groups I and Faculty Group",
-      "source": "Princeton University",
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
       "dateLabel": "Nov 7",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/jazz-princeton-presents-jazz-small-groups-i-and-faculty-group",
+      "timeLabel": "7:20 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
       "tags": [
-        "new",
         "culture",
         "rain"
       ],
       "isoDate": "2026-11-07",
-      "startHour": 20
+      "startHour": 19
     },
     {
       "title": "Oratorio for Living Things by Heather Christian",
@@ -1613,6 +1723,21 @@
         "culture",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 20
+    },
+    {
+      "title": "Jazz at Princeton presents: Jazz Small Groups I and Faculty Group",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/jazz-princeton-presents-jazz-small-groups-i-and-faculty-group",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-11-07",
       "startHour": 20
@@ -1656,6 +1781,20 @@
       "startHour": 11
     },
     {
+      "title": "Wild Horse Nine",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 8",
+      "timeLabel": "12:40 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-08",
+      "startHour": 12
+    },
+    {
       "title": "Guided tour: The Art of Japanese Publishing",
       "source": "Princeton University",
       "dateLabel": "Nov 8",
@@ -1685,12 +1824,12 @@
       "startHour": 13
     },
     {
-      "title": "A Masterclass with Jonathan Biss, Piano",
+      "title": "Oratorio for Living Things by Heather Christian",
       "source": "Princeton University",
       "dateLabel": "Nov 8",
       "timeLabel": "2:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/masterclass-jonathan-biss-piano",
+      "url": "https://www.princeton.edu/events/2026/oratorio-living-things-heather-christian-2",
       "tags": [
         "new",
         "family",
@@ -1702,12 +1841,12 @@
       "startHour": 14
     },
     {
-      "title": "Oratorio for Living Things by Heather Christian",
+      "title": "A Masterclass with Jonathan Biss, Piano",
       "source": "Princeton University",
       "dateLabel": "Nov 8",
       "timeLabel": "2:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/oratorio-living-things-heather-christian-2",
+      "url": "https://www.princeton.edu/events/2026/masterclass-jonathan-biss-piano",
       "tags": [
         "new",
         "family",
@@ -1761,6 +1900,62 @@
       ],
       "isoDate": "2026-11-08",
       "startHour": 15
+    },
+    {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 8",
+      "timeLabel": "3:25 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-08",
+      "startHour": 15
+    },
+    {
+      "title": "Wild Horse Nine",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 8",
+      "timeLabel": "4:15 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-08",
+      "startHour": 16
+    },
+    {
+      "title": "Wild Horse Nine",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 8",
+      "timeLabel": "7:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-08",
+      "startHour": 19
+    },
+    {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 8",
+      "timeLabel": "7:20 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-08",
+      "startHour": 19
     },
     {
       "title": "Tech Help for Seniors",
@@ -1845,6 +2040,20 @@
       "startHour": 15
     },
     {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 9",
+      "timeLabel": "3:35 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-09",
+      "startHour": 15
+    },
+    {
       "title": "Catherine Project Weekly Book Discussion Series",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 09",
@@ -1870,6 +2079,20 @@
         "family",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-11-09",
+      "startHour": 16
+    },
+    {
+      "title": "Wild Horse Nine",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 9",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
+      "tags": [
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-11-09",
       "startHour": 16
@@ -1931,6 +2154,20 @@
       "startHour": 16
     },
     {
+      "title": "The Magical Number 142,857: A Full-Circle Story - Manjul Bjargava",
+      "source": "Princeton University",
+      "dateLabel": "Nov 9",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/magical-number-142857-full-circle-story-manjul-bjargava",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-09",
+      "startHour": 18
+    },
+    {
       "title": "Author: Becky Libourel Diamond",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 09",
@@ -1973,6 +2210,34 @@
       "startHour": 19
     },
     {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 9",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-09",
+      "startHour": 19
+    },
+    {
+      "title": "Wild Horse Nine",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 9",
+      "timeLabel": "7:20 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-09",
+      "startHour": 19
+    },
+    {
       "title": "Tesseract in 3D",
       "source": "Princeton University",
       "dateLabel": "Nov 9",
@@ -2007,7 +2272,7 @@
       "iso": "2026-11-03",
       "label": "Nov 3",
       "weekday": "Tue",
-      "count": 21
+      "count": 20
     },
     {
       "iso": "2026-11-04",
@@ -2025,25 +2290,25 @@
       "iso": "2026-11-06",
       "label": "Nov 6",
       "weekday": "Fri",
-      "count": 12
+      "count": 16
     },
     {
       "iso": "2026-11-07",
       "label": "Nov 7",
       "weekday": "Sat",
-      "count": 25
+      "count": 31
     },
     {
       "iso": "2026-11-08",
       "label": "Nov 8",
       "weekday": "Sun",
-      "count": 9
+      "count": 14
     },
     {
       "iso": "2026-11-09",
       "label": "Nov 9",
       "weekday": "Mon",
-      "count": 17
+      "count": 22
     }
   ],
   "windowDays": 7,
@@ -2053,7 +2318,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Sunny, 70F"
+      "detail": "Partly Cloudy, 48F"
     },
     {
       "name": "Princeton University Events",
@@ -2077,7 +2342,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "18 showtimes"
+      "detail": "47 showtimes"
     }
   ]
 }
