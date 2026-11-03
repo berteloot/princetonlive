@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-03T06:45:17.523Z",
+  "generatedAt": "2026-11-03T17:01:42.957Z",
   "weather": {
-    "temperature": 41,
-    "shortForecast": "Areas Of Fog",
-    "wind": "0 mph ",
-    "detailedForecast": "Areas of fog. Mostly clear, with a low around 41. Southwest wind around 0 mph.",
+    "temperature": 70,
+    "shortForecast": "Mostly Sunny",
+    "wind": "0 to 5 mph SW",
+    "detailedForecast": "Mostly sunny, with a high near 70. Southwest wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -171,17 +171,6 @@
       "startHour": 16
     },
     {
-      "title": "Summer Study Abroad Info Session",
-      "source": "Princeton University",
-      "dateLabel": "Nov 3",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/summer-study-abroad-info-session",
-      "tags": [],
-      "isoDate": "2026-11-03",
-      "startHour": 16
-    },
-    {
       "title": "Ancient Persian and Linguistic History: A Discussion",
       "source": "Princeton University",
       "dateLabel": "Nov 3",
@@ -192,6 +181,17 @@
         "new",
         "culture"
       ],
+      "isoDate": "2026-11-03",
+      "startHour": 16
+    },
+    {
+      "title": "Summer Study Abroad Info Session",
+      "source": "Princeton University",
+      "dateLabel": "Nov 3",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/summer-study-abroad-info-session",
+      "tags": [],
       "isoDate": "2026-11-03",
       "startHour": 16
     },
@@ -578,17 +578,6 @@
       "startHour": 16
     },
     {
-      "title": "InterVarsity Small Group",
-      "source": "Princeton University",
-      "dateLabel": "Nov 4",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-5",
-      "tags": [],
-      "isoDate": "2026-11-04",
-      "startHour": 16
-    },
-    {
       "title": "Ahilan Kadirgamar | Crises, Struggles and Alternatives: The Long Twentieth Century of Youth Movements in Sri Lanka",
       "source": "Princeton University",
       "dateLabel": "Nov 4",
@@ -601,6 +590,17 @@
         "culture",
         "practical"
       ],
+      "isoDate": "2026-11-04",
+      "startHour": 16
+    },
+    {
+      "title": "InterVarsity Small Group",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-5",
+      "tags": [],
       "isoDate": "2026-11-04",
       "startHour": 16
     },
@@ -959,20 +959,6 @@
       "startHour": 15
     },
     {
-      "title": "Haiku Open Forum",
-      "source": "Princeton University",
-      "dateLabel": "Nov 5",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/haiku-open-forum",
-      "tags": [
-        "new",
-        "practical"
-      ],
-      "isoDate": "2026-11-05",
-      "startHour": 16
-    },
-    {
       "title": "Princeton University Public Lecture: Ruth Wilson Gilmore",
       "source": "Princeton University",
       "dateLabel": "Nov 5",
@@ -987,6 +973,20 @@
       "startHour": 16
     },
     {
+      "title": "Haiku Open Forum",
+      "source": "Princeton University",
+      "dateLabel": "Nov 5",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/haiku-open-forum",
+      "tags": [
+        "new",
+        "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 16
+    },
+    {
       "title": "Hands-On Policy Analysis with Stata: Difference-in-Differences and Event Study Methods",
       "source": "Princeton University",
       "dateLabel": "Nov 5",
@@ -996,6 +996,21 @@
       "tags": [
         "culture",
         "rain"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 17
+    },
+    {
+      "title": "The Constitution is Not Enough: Crucial Ingredients for Democracy",
+      "source": "Princeton University",
+      "dateLabel": "Nov 5",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/constitution-not-enough-crucial-ingredients-democracy",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
       ],
       "isoDate": "2026-11-05",
       "startHour": 17
@@ -1792,6 +1807,17 @@
       "startHour": 10
     },
     {
+      "title": "TeacherPrep: Thank an Education",
+      "source": "Princeton University",
+      "dateLabel": "Nov 9",
+      "timeLabel": "11:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/teacherprep-thank-education",
+      "tags": [],
+      "isoDate": "2026-11-09",
+      "startHour": 11
+    },
+    {
       "title": "English Conversation (in person)",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 09",
@@ -1849,6 +1875,21 @@
       "startHour": 16
     },
     {
+      "title": "Megan O'Rourke Book Talk",
+      "source": "Princeton University",
+      "dateLabel": "Nov 9",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/megan-orourke-book-talk",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-09",
+      "startHour": 16
+    },
+    {
       "title": "LSE Summer Study Abroad Info Session",
       "source": "Princeton University",
       "dateLabel": "Nov 9",
@@ -1868,21 +1909,6 @@
       "url": "https://www.princeton.edu/events/2026/civic-leadership-council-pace-weekly-meeting-8",
       "tags": [
         "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-09",
-      "startHour": 16
-    },
-    {
-      "title": "Megan O'Rourke Book Talk",
-      "source": "Princeton University",
-      "dateLabel": "Nov 9",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/megan-orourke-book-talk",
-      "tags": [
-        "new",
-        "culture",
         "practical"
       ],
       "isoDate": "2026-11-09",
@@ -1993,7 +2019,7 @@
       "iso": "2026-11-05",
       "label": "Nov 5",
       "weekday": "Thu",
-      "count": 26
+      "count": 27
     },
     {
       "iso": "2026-11-06",
@@ -2017,7 +2043,7 @@
       "iso": "2026-11-09",
       "label": "Nov 9",
       "weekday": "Mon",
-      "count": 16
+      "count": 17
     }
   ],
   "windowDays": 7,
@@ -2027,7 +2053,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Areas Of Fog, 41F"
+      "detail": "Mostly Sunny, 70F"
     },
     {
       "name": "Princeton University Events",
