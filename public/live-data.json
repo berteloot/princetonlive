@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-04T17:13:51.310Z",
+  "generatedAt": "2026-11-04T23:39:19.692Z",
   "weather": {
-    "temperature": 74,
-    "shortForecast": "Sunny",
+    "temperature": 58,
+    "shortForecast": "Mostly Cloudy",
     "wind": "5 mph S",
-    "detailedForecast": "Sunny, with a high near 74. South wind around 5 mph.",
+    "detailedForecast": "Mostly cloudy, with a low around 58. South wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -121,34 +121,6 @@
       "startHour": 12
     },
     {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 4",
-      "timeLabel": "12:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-04",
-      "startHour": 12
-    },
-    {
-      "title": "Sense and Sensibility",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 4",
-      "timeLabel": "12:25 PM (OC)",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-04",
-      "startHour": 12
-    },
-    {
       "title": "McGraw Undergraduate Learning Program - Learning Concierge",
       "source": "Princeton University",
       "dateLabel": "Nov 4",
@@ -191,7 +163,7 @@
       "title": "Kids & Teens: Homework Help",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 04",
-      "timeLabel": "3:30pm - 6:00pm",
+      "timeLabel": "3:30pm - 4:45pm",
       "location": "Princeton Public Library - CoLab Space",
       "url": "https://princetonlibrary.libnet.info/event/17507792",
       "tags": [
@@ -215,34 +187,6 @@
       "startHour": 15
     },
     {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 4",
-      "timeLabel": "3:30 PM (OC)",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-04",
-      "startHour": 15
-    },
-    {
-      "title": "Sense and Sensibility",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 4",
-      "timeLabel": "3:55 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=sense-and-sensibility",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-04",
-      "startHour": 15
-    },
-    {
       "title": "English Conversation (virtual)",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 04",
@@ -259,26 +203,13 @@
       "title": "Kids: Upcycled Craft Club: Origami Butterflies",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 04",
-      "timeLabel": "4:00pm - 5:00pm",
+      "timeLabel": "4:00pm - 4:45pm",
       "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
       "url": "https://princetonlibrary.libnet.info/event/17381986",
       "tags": [
         "family",
         "culture",
         "practical"
-      ],
-      "isoDate": "2026-11-04",
-      "startHour": 16
-    },
-    {
-      "title": "Princeton Pool Club Workshop",
-      "source": "Princeton University",
-      "dateLabel": "Nov 4",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-pool-club-workshop",
-      "tags": [
-        "rain"
       ],
       "isoDate": "2026-11-04",
       "startHour": 16
@@ -295,6 +226,19 @@
         "family",
         "culture",
         "practical"
+      ],
+      "isoDate": "2026-11-04",
+      "startHour": 16
+    },
+    {
+      "title": "Princeton Pool Club Workshop",
+      "source": "Princeton University",
+      "dateLabel": "Nov 4",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-pool-club-workshop",
+      "tags": [
+        "rain"
       ],
       "isoDate": "2026-11-04",
       "startHour": 16
@@ -344,7 +288,7 @@
       "source": "Princeton Public Library",
       "dateLabel": "Nov 04",
       "timeLabel": "5:00pm - 6:00pm",
-      "location": "Princeton Public Library - Quiet Room",
+      "location": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/event/16862226",
       "tags": [
         "family",
@@ -384,7 +328,7 @@
       "source": "Princeton Public Library",
       "dateLabel": "Nov 04",
       "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Tower Room",
+      "location": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/event/17154697",
       "tags": [
         "new",
@@ -665,6 +609,20 @@
       "startHour": 15
     },
     {
+      "title": "Princeton University Public Lecture: Ruth Wilson Gilmore",
+      "source": "Princeton University",
+      "dateLabel": "Nov 5",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-university-public-lecture-ruth-wilson-gilmore",
+      "tags": [
+        "new",
+        "culture"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 16
+    },
+    {
       "title": "Right Here, Right Now: Figuring Interpretation at the Sassetti Chapel, Florence",
       "source": "Princeton University",
       "dateLabel": "Nov 5",
@@ -676,20 +634,6 @@
         "family",
         "culture",
         "rain"
-      ],
-      "isoDate": "2026-11-05",
-      "startHour": 16
-    },
-    {
-      "title": "Princeton University Public Lecture: Ruth Wilson Gilmore",
-      "source": "Princeton University",
-      "dateLabel": "Nov 5",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-university-public-lecture-ruth-wilson-gilmore",
-      "tags": [
-        "new",
-        "culture"
       ],
       "isoDate": "2026-11-05",
       "startHour": 16
@@ -1210,21 +1154,6 @@
       "startHour": 12
     },
     {
-      "title": "Guided tour: The Art of Japanese Publishing",
-      "source": "Princeton University",
-      "dateLabel": "Nov 7",
-      "timeLabel": "1:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/guided-tour-art-japanese-publishing-5",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-07",
-      "startHour": 13
-    },
-    {
       "title": "World of Materials Science Day",
       "source": "Princeton University",
       "dateLabel": "Nov 7",
@@ -1235,6 +1164,21 @@
         "new",
         "family",
         "culture"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 13
+    },
+    {
+      "title": "Guided tour: The Art of Japanese Publishing",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/guided-tour-art-japanese-publishing-5",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-11-07",
       "startHour": 13
@@ -1254,17 +1198,6 @@
       "startHour": 13
     },
     {
-      "title": "Hoagie Club Alumni Q&A",
-      "source": "Princeton University",
-      "dateLabel": "Nov 7",
-      "timeLabel": "2:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/hoagie-club-alumni-qa",
-      "tags": [],
-      "isoDate": "2026-11-07",
-      "startHour": 14
-    },
-    {
       "title": "Baha'i Devotional Gathering",
       "source": "Princeton University",
       "dateLabel": "Nov 7",
@@ -1274,6 +1207,17 @@
       "tags": [
         "culture"
       ],
+      "isoDate": "2026-11-07",
+      "startHour": 14
+    },
+    {
+      "title": "Hoagie Club Alumni Q&A",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/hoagie-club-alumni-qa",
+      "tags": [],
       "isoDate": "2026-11-07",
       "startHour": 14
     },
@@ -1448,6 +1392,21 @@
       "startHour": 19
     },
     {
+      "title": "Jazz at Princeton presents: Jazz Small Groups I and Faculty Group",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/jazz-princeton-presents-jazz-small-groups-i-and-faculty-group",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 20
+    },
+    {
       "title": "Oratorio for Living Things by Heather Christian",
       "source": "Princeton University",
       "dateLabel": "Nov 7",
@@ -1460,21 +1419,6 @@
         "culture",
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-11-07",
-      "startHour": 20
-    },
-    {
-      "title": "Jazz at Princeton presents: Jazz Small Groups I and Faculty Group",
-      "source": "Princeton University",
-      "dateLabel": "Nov 7",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/jazz-princeton-presents-jazz-small-groups-i-and-faculty-group",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-11-07",
       "startHour": 20
@@ -1561,12 +1505,12 @@
       "startHour": 13
     },
     {
-      "title": "Oratorio for Living Things by Heather Christian",
+      "title": "A Masterclass with Jonathan Biss, Piano",
       "source": "Princeton University",
       "dateLabel": "Nov 8",
       "timeLabel": "2:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/oratorio-living-things-heather-christian-2",
+      "url": "https://www.princeton.edu/events/2026/masterclass-jonathan-biss-piano",
       "tags": [
         "new",
         "family",
@@ -1578,12 +1522,12 @@
       "startHour": 14
     },
     {
-      "title": "A Masterclass with Jonathan Biss, Piano",
+      "title": "Oratorio for Living Things by Heather Christian",
       "source": "Princeton University",
       "dateLabel": "Nov 8",
       "timeLabel": "2:00 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/masterclass-jonathan-biss-piano",
+      "url": "https://www.princeton.edu/events/2026/oratorio-living-things-heather-christian-2",
       "tags": [
         "new",
         "family",
@@ -1891,20 +1835,6 @@
       "startHour": 16
     },
     {
-      "title": "The Magical Number 142,857: A Full-Circle Story - Manjul Bjargava",
-      "source": "Princeton University",
-      "dateLabel": "Nov 9",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/magical-number-142857-full-circle-story-manjul-bjargava",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-09",
-      "startHour": 18
-    },
-    {
       "title": "Author: Becky Libourel Diamond",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 09",
@@ -1917,6 +1847,34 @@
       ],
       "isoDate": "2026-11-09",
       "startHour": 18
+    },
+    {
+      "title": "The Magical Number 142,857: A Full-Circle Story - Manjul Bhargava",
+      "source": "Princeton University",
+      "dateLabel": "Nov 9",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/magical-number-142857-full-circle-story-manjul-bhargava-0",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-09",
+      "startHour": 19
+    },
+    {
+      "title": "The Magical Number 142,857: A Full-Circle Story - Manjul Bhargava",
+      "source": "Princeton University",
+      "dateLabel": "Nov 9",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/magical-number-142857-full-circle-story-manjul-bhargava",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-09",
+      "startHour": 19
     },
     {
       "title": "Workshop: Writers Room Poets",
@@ -2217,14 +2175,14 @@
       "startHour": 16
     },
     {
-      "title": "CST Student Town Hall",
+      "title": "Princeton University Public Lectures: Valeria Luiselli",
       "source": "Princeton University",
       "dateLabel": "Nov 10",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/cst-student-town-hall",
+      "url": "https://www.princeton.edu/events/2026/princeton-university-public-lectures-valeria-luiselli",
       "tags": [
-        "new",
+        "family",
         "culture"
       ],
       "isoDate": "2026-11-10",
@@ -2244,14 +2202,14 @@
       "startHour": 16
     },
     {
-      "title": "Princeton University Public Lectures: Valeria Luiselli",
+      "title": "CST Student Town Hall",
       "source": "Princeton University",
       "dateLabel": "Nov 10",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-university-public-lectures-valeria-luiselli",
+      "url": "https://www.princeton.edu/events/2026/cst-student-town-hall",
       "tags": [
-        "family",
+        "new",
         "culture"
       ],
       "isoDate": "2026-11-10",
@@ -2400,7 +2358,7 @@
       "iso": "2026-11-04",
       "label": "Nov 4",
       "weekday": "Wed",
-      "count": 32
+      "count": 28
     },
     {
       "iso": "2026-11-05",
@@ -2430,7 +2388,7 @@
       "iso": "2026-11-09",
       "label": "Nov 9",
       "weekday": "Mon",
-      "count": 22
+      "count": 23
     },
     {
       "iso": "2026-11-10",
@@ -2446,7 +2404,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 74F"
+      "detail": "Mostly Cloudy, 58F"
     },
     {
       "name": "Princeton University Events",
@@ -2470,7 +2428,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "45 showtimes"
+      "detail": "41 showtimes"
     }
   ]
 }
