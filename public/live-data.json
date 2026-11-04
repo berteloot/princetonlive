@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-04T06:17:55.018Z",
+  "generatedAt": "2026-11-04T17:13:51.310Z",
   "weather": {
-    "temperature": 48,
-    "shortForecast": "Mostly Clear",
-    "wind": "5 mph SW",
-    "detailedForecast": "Mostly clear, with a low around 48. Southwest wind around 5 mph.",
+    "temperature": 74,
+    "shortForecast": "Sunny",
+    "wind": "5 mph S",
+    "detailedForecast": "Sunny, with a high near 74. South wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -45,19 +45,6 @@
       "tags": [
         "new",
         "culture",
-        "practical"
-      ],
-      "isoDate": "2026-11-04",
-      "startHour": 10
-    },
-    {
-      "title": "Planning Board - Landscape Committee",
-      "source": "Municipality of Princeton",
-      "dateLabel": "November 4, 2026",
-      "timeLabel": "10:00 AM - 11:00 AM",
-      "location": "Princeton, NJ",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8146",
-      "tags": [
         "practical"
       ],
       "isoDate": "2026-11-04",
@@ -678,15 +665,17 @@
       "startHour": 15
     },
     {
-      "title": "Haiku Open Forum",
+      "title": "Right Here, Right Now: Figuring Interpretation at the Sassetti Chapel, Florence",
       "source": "Princeton University",
       "dateLabel": "Nov 5",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/haiku-open-forum",
+      "url": "https://www.princeton.edu/events/2026/right-here-right-now-figuring-interpretation-sassetti-chapel-florence",
       "tags": [
         "new",
-        "practical"
+        "family",
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-11-05",
       "startHour": 16
@@ -701,6 +690,20 @@
       "tags": [
         "new",
         "culture"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 16
+    },
+    {
+      "title": "Haiku Open Forum",
+      "source": "Princeton University",
+      "dateLabel": "Nov 5",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/haiku-open-forum",
+      "tags": [
+        "new",
+        "practical"
       ],
       "isoDate": "2026-11-05",
       "startHour": 16
@@ -1262,6 +1265,19 @@
       "startHour": 14
     },
     {
+      "title": "Baha'i Devotional Gathering",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/bahai-devotional-gathering-2",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 14
+    },
+    {
       "title": "Oratorio for Living Things by Heather Christian",
       "source": "Princeton University",
       "dateLabel": "Nov 7",
@@ -1274,19 +1290,6 @@
         "culture",
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-11-07",
-      "startHour": 14
-    },
-    {
-      "title": "Baha'i Devotional Gathering",
-      "source": "Princeton University",
-      "dateLabel": "Nov 7",
-      "timeLabel": "2:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/bahai-devotional-gathering-2",
-      "tags": [
-        "culture"
       ],
       "isoDate": "2026-11-07",
       "startHour": 14
@@ -1390,19 +1393,6 @@
       "startHour": 18
     },
     {
-      "title": "Diwali at the Chapel",
-      "source": "Princeton University",
-      "dateLabel": "Nov 7",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/diwali-chapel",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-11-07",
-      "startHour": 19
-    },
-    {
       "title": "Magic: The Gathering Club Meeting",
       "source": "Princeton University",
       "dateLabel": "Nov 7",
@@ -1412,6 +1402,19 @@
       "tags": [
         "new",
         "rain"
+      ],
+      "isoDate": "2026-11-07",
+      "startHour": 19
+    },
+    {
+      "title": "Diwali at the Chapel",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/diwali-chapel",
+      "tags": [
+        "culture"
       ],
       "isoDate": "2026-11-07",
       "startHour": 19
@@ -1832,21 +1835,6 @@
       "startHour": 16
     },
     {
-      "title": "Megan O'Rourke Book Talk",
-      "source": "Princeton University",
-      "dateLabel": "Nov 9",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/megan-orourke-book-talk",
-      "tags": [
-        "new",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-11-09",
-      "startHour": 16
-    },
-    {
       "title": "LSE Summer Study Abroad Info Session",
       "source": "Princeton University",
       "dateLabel": "Nov 9",
@@ -1866,6 +1854,21 @@
       "url": "https://www.princeton.edu/events/2026/civic-leadership-council-pace-weekly-meeting-8",
       "tags": [
         "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-09",
+      "startHour": 16
+    },
+    {
+      "title": "Megan O'Rourke Book Talk",
+      "source": "Princeton University",
+      "dateLabel": "Nov 9",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/megan-orourke-book-talk",
+      "tags": [
+        "new",
+        "culture",
         "practical"
       ],
       "isoDate": "2026-11-09",
@@ -2228,6 +2231,19 @@
       "startHour": 16
     },
     {
+      "title": "Hadji Bakara Lecture",
+      "source": "Princeton University",
+      "dateLabel": "Nov 10",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/hadji-bakara-lecture",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-11-10",
+      "startHour": 16
+    },
+    {
       "title": "Princeton University Public Lectures: Valeria Luiselli",
       "source": "Princeton University",
       "dateLabel": "Nov 10",
@@ -2236,19 +2252,6 @@
       "url": "https://www.princeton.edu/events/2026/princeton-university-public-lectures-valeria-luiselli",
       "tags": [
         "family",
-        "culture"
-      ],
-      "isoDate": "2026-11-10",
-      "startHour": 16
-    },
-    {
-      "title": "Hadji Bakara Lecture",
-      "source": "Princeton University",
-      "dateLabel": "Nov 10",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/hadji-bakara-lecture",
-      "tags": [
         "culture"
       ],
       "isoDate": "2026-11-10",
@@ -2397,13 +2400,13 @@
       "iso": "2026-11-04",
       "label": "Nov 4",
       "weekday": "Wed",
-      "count": 33
+      "count": 32
     },
     {
       "iso": "2026-11-05",
       "label": "Nov 5",
       "weekday": "Thu",
-      "count": 27
+      "count": 28
     },
     {
       "iso": "2026-11-06",
@@ -2443,7 +2446,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Clear, 48F"
+      "detail": "Sunny, 74F"
     },
     {
       "name": "Princeton University Events",
@@ -2461,7 +2464,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "17 calendar items"
+      "detail": "16 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
