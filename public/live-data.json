@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-05T06:43:40.476Z",
+  "generatedAt": "2026-11-05T17:23:07.078Z",
   "weather": {
-    "temperature": 58,
-    "shortForecast": "Mostly Cloudy",
-    "wind": "5 mph S",
-    "detailedForecast": "Mostly cloudy, with a low around 58. South wind around 5 mph.",
+    "temperature": 73,
+    "shortForecast": "Chance Light Rain",
+    "wind": "5 to 10 mph S",
+    "detailedForecast": "A chance of rain after 1pm. Partly sunny, with a high near 73. South wind 5 to 10 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -242,20 +242,6 @@
       "startHour": 16
     },
     {
-      "title": "Princeton University Public Lecture: Ruth Wilson Gilmore",
-      "source": "Princeton University",
-      "dateLabel": "Nov 5",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-university-public-lecture-ruth-wilson-gilmore",
-      "tags": [
-        "new",
-        "culture"
-      ],
-      "isoDate": "2026-11-05",
-      "startHour": 16
-    },
-    {
       "title": "Haiku Open Forum",
       "source": "Princeton University",
       "dateLabel": "Nov 5",
@@ -270,18 +256,18 @@
       "startHour": 16
     },
     {
-      "title": "Hands-On Policy Analysis with Stata: Difference-in-Differences and Event Study Methods",
+      "title": "Princeton University Public Lecture: Ruth Wilson Gilmore",
       "source": "Princeton University",
       "dateLabel": "Nov 5",
-      "timeLabel": "5:00 PM",
+      "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/hands-policy-analysis-stata-difference-differences-and-event-study-methods-0",
+      "url": "https://www.princeton.edu/events/2026/princeton-university-public-lecture-ruth-wilson-gilmore",
       "tags": [
-        "culture",
-        "rain"
+        "new",
+        "culture"
       ],
       "isoDate": "2026-11-05",
-      "startHour": 17
+      "startHour": 16
     },
     {
       "title": "The Constitution is Not Enough: Crucial Ingredients for Democracy",
@@ -294,6 +280,20 @@
         "new",
         "culture",
         "practical"
+      ],
+      "isoDate": "2026-11-05",
+      "startHour": 17
+    },
+    {
+      "title": "Hands-On Policy Analysis with Stata: Difference-in-Differences and Event Study Methods",
+      "source": "Princeton University",
+      "dateLabel": "Nov 5",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/hands-policy-analysis-stata-difference-differences-and-event-study-methods-0",
+      "tags": [
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-11-05",
       "startHour": 17
@@ -815,6 +815,17 @@
       "startHour": 13
     },
     {
+      "title": "Hoagie Club Alumni Q&A",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/hoagie-club-alumni-qa",
+      "tags": [],
+      "isoDate": "2026-11-07",
+      "startHour": 14
+    },
+    {
       "title": "Oratorio for Living Things by Heather Christian",
       "source": "Princeton University",
       "dateLabel": "Nov 7",
@@ -841,17 +852,6 @@
       "tags": [
         "culture"
       ],
-      "isoDate": "2026-11-07",
-      "startHour": 14
-    },
-    {
-      "title": "Hoagie Club Alumni Q&A",
-      "source": "Princeton University",
-      "dateLabel": "Nov 7",
-      "timeLabel": "2:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/hoagie-club-alumni-qa",
-      "tags": [],
       "isoDate": "2026-11-07",
       "startHour": 14
     },
@@ -1792,6 +1792,20 @@
       "startHour": 16
     },
     {
+      "title": "CST Student Town Hall",
+      "source": "Princeton University",
+      "dateLabel": "Nov 10",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/cst-student-town-hall",
+      "tags": [
+        "new",
+        "culture"
+      ],
+      "isoDate": "2026-11-10",
+      "startHour": 16
+    },
+    {
       "title": "Princeton University Public Lectures: Valeria Luiselli",
       "source": "Princeton University",
       "dateLabel": "Nov 10",
@@ -1813,20 +1827,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/hadji-bakara-lecture",
       "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-11-10",
-      "startHour": 16
-    },
-    {
-      "title": "CST Student Town Hall",
-      "source": "Princeton University",
-      "dateLabel": "Nov 10",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/cst-student-town-hall",
-      "tags": [
-        "new",
         "culture"
       ],
       "isoDate": "2026-11-10",
@@ -2084,17 +2084,6 @@
       "startHour": 11
     },
     {
-      "title": "Wednesday Seminar Series, Mossavar-Rahmani Center for Iran & Persian Gulf Studies",
-      "source": "Princeton University",
-      "dateLabel": "Nov 11",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/wednesday-seminar-series-mossavar-rahmani-center-iran-persian-gulf-studies-9",
-      "tags": [],
-      "isoDate": "2026-11-11",
-      "startHour": 12
-    },
-    {
       "title": "Fung-UCHV Public Lecture | Thana Campos-Rudinsky",
       "source": "Princeton University",
       "dateLabel": "Nov 11",
@@ -2105,6 +2094,17 @@
         "culture",
         "practical"
       ],
+      "isoDate": "2026-11-11",
+      "startHour": 12
+    },
+    {
+      "title": "Wednesday Seminar Series, Mossavar-Rahmani Center for Iran & Persian Gulf Studies",
+      "source": "Princeton University",
+      "dateLabel": "Nov 11",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/wednesday-seminar-series-mossavar-rahmani-center-iran-persian-gulf-studies-9",
+      "tags": [],
       "isoDate": "2026-11-11",
       "startHour": 12
     },
@@ -2458,7 +2458,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Cloudy, 58F"
+      "detail": "Chance Light Rain, 73F"
     },
     {
       "name": "Princeton University Events",
