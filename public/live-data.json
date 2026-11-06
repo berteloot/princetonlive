@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-06T16:45:06.238Z",
+  "generatedAt": "2026-11-06T23:06:20.266Z",
   "weather": {
-    "temperature": 68,
-    "shortForecast": "Rain Likely",
-    "wind": "0 to 5 mph NW",
-    "detailedForecast": "Rain likely. Mostly cloudy, with a high near 68. Northwest wind 0 to 5 mph. Chance of precipitation is 70%. New rainfall amounts between three quarters and one inch possible.",
+    "temperature": 48,
+    "shortForecast": "Slight Chance Light Rain then Mostly Cloudy",
+    "wind": "0 to 5 mph W",
+    "detailedForecast": "A slight chance of rain before 8pm. Mostly cloudy, with a low around 48. West wind 0 to 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -80,34 +80,6 @@
       ],
       "isoDate": "2026-11-06",
       "startHour": 15
-    },
-    {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 6",
-      "timeLabel": "3:25 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-06",
-      "startHour": 15
-    },
-    {
-      "title": "Wild Horse Nine",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 6",
-      "timeLabel": "4:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-06",
-      "startHour": 16
     },
     {
       "title": "Competitive Programming Club",
@@ -870,6 +842,23 @@
       "startHour": 9
     },
     {
+      "title": "The Black Arts Collective: My Kids Will Call You Auntie",
+      "source": "Princeton University",
+      "dateLabel": "Nov 9",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/black-arts-collective-my-kids-will-call-you-auntie",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-09",
+      "startHour": 10
+    },
+    {
       "title": "Kids: Storytime with Jeff",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 09",
@@ -996,6 +985,17 @@
       "startHour": 16
     },
     {
+      "title": "LSE Summer Study Abroad Info Session",
+      "source": "Princeton University",
+      "dateLabel": "Nov 9",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/lse-summer-study-abroad-info-session",
+      "tags": [],
+      "isoDate": "2026-11-09",
+      "startHour": 16
+    },
+    {
       "title": "Civic Leadership Council (Pace) Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Nov 9",
@@ -1006,17 +1006,6 @@
         "rain",
         "practical"
       ],
-      "isoDate": "2026-11-09",
-      "startHour": 16
-    },
-    {
-      "title": "LSE Summer Study Abroad Info Session",
-      "source": "Princeton University",
-      "dateLabel": "Nov 9",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/lse-summer-study-abroad-info-session",
-      "tags": [],
       "isoDate": "2026-11-09",
       "startHour": 16
     },
@@ -1177,6 +1166,23 @@
       ],
       "isoDate": "2026-11-10",
       "startHour": 9
+    },
+    {
+      "title": "The Black Arts Collective: My Kids Will Call You Auntie",
+      "source": "Princeton University",
+      "dateLabel": "Nov 10",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/black-arts-collective-my-kids-will-call-you-auntie-0",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-10",
+      "startHour": 10
     },
     {
       "title": "Site: Exhibition by Carlos Agredano",
@@ -1608,6 +1614,23 @@
       "startHour": 9
     },
     {
+      "title": "The Black Arts Collective: My Kids Will Call You Auntie",
+      "source": "Princeton University",
+      "dateLabel": "Nov 11",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/black-arts-collective-my-kids-will-call-you-auntie-1",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-11",
+      "startHour": 10
+    },
+    {
       "title": "Site: Exhibition by Carlos Agredano",
       "source": "Princeton University",
       "dateLabel": "Nov 11",
@@ -1761,6 +1784,17 @@
       "startHour": 15
     },
     {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Nov 11",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-18",
+      "tags": [],
+      "isoDate": "2026-11-11",
+      "startHour": 15
+    },
+    {
       "title": "Pace Center Summer Internships Drop-in",
       "source": "Princeton University",
       "dateLabel": "Nov 11",
@@ -1770,17 +1804,6 @@
       "tags": [
         "new"
       ],
-      "isoDate": "2026-11-11",
-      "startHour": 15
-    },
-    {
-      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
-      "source": "Princeton University",
-      "dateLabel": "Nov 11",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-18",
-      "tags": [],
       "isoDate": "2026-11-11",
       "startHour": 15
     },
@@ -2018,6 +2041,23 @@
       "startHour": 9
     },
     {
+      "title": "The Black Arts Collective: My Kids Will Call You Auntie",
+      "source": "Princeton University",
+      "dateLabel": "Nov 12",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/black-arts-collective-my-kids-will-call-you-auntie-2",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-12",
+      "startHour": 10
+    },
+    {
       "title": "Site: Exhibition by Carlos Agredano",
       "source": "Princeton University",
       "dateLabel": "Nov 12",
@@ -2246,21 +2286,6 @@
       "startHour": 16
     },
     {
-      "title": "Friends of PUL Small Talk: Tsundoku: What isn't in \"The Art of Japanese Publishing\" Exhibition",
-      "source": "Princeton University",
-      "dateLabel": "Nov 12",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/friends-pul-small-talk-tsundoku-what-isnt-art-japanese-publishing-exhibition",
-      "tags": [
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-12",
-      "startHour": 17
-    },
-    {
       "title": "The Free Exercise of Religion in History, Tradition, and the Constitution",
       "source": "Princeton University",
       "dateLabel": "Nov 12",
@@ -2270,6 +2295,21 @@
       "tags": [
         "new",
         "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-12",
+      "startHour": 17
+    },
+    {
+      "title": "Friends of PUL Small Talk: Tsundoku: What isn't in \"The Art of Japanese Publishing\" Exhibition",
+      "source": "Princeton University",
+      "dateLabel": "Nov 12",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/friends-pul-small-talk-tsundoku-what-isnt-art-japanese-publishing-exhibition",
+      "tags": [
+        "culture",
+        "rain",
         "practical"
       ],
       "isoDate": "2026-11-12",
@@ -2360,7 +2400,7 @@
       "startHour": 19
     },
     {
-      "title": "Planning Board Virtual Meeting",
+      "title": "Planning Board Virtual Meeting- CANCELLED",
       "source": "Municipality of Princeton",
       "dateLabel": "November 12, 2026",
       "timeLabel": "07:00 PM - 11:00 PM",
@@ -2436,7 +2476,7 @@
       "iso": "2026-11-06",
       "label": "Nov 6",
       "weekday": "Fri",
-      "count": 15
+      "count": 13
     },
     {
       "iso": "2026-11-07",
@@ -2454,25 +2494,25 @@
       "iso": "2026-11-09",
       "label": "Nov 9",
       "weekday": "Mon",
-      "count": 23
+      "count": 24
     },
     {
       "iso": "2026-11-10",
       "label": "Nov 10",
       "weekday": "Tue",
-      "count": 29
+      "count": 30
     },
     {
       "iso": "2026-11-11",
       "label": "Nov 11",
       "weekday": "Wed",
-      "count": 32
+      "count": 33
     },
     {
       "iso": "2026-11-12",
       "label": "Nov 12",
       "weekday": "Thu",
-      "count": 31
+      "count": 32
     }
   ],
   "windowDays": 7,
@@ -2482,7 +2522,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Rain Likely, 68F"
+      "detail": "Slight Chance Light Rain then Mostly Cloudy, 48F"
     },
     {
       "name": "Princeton University Events",
@@ -2506,7 +2546,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "35 showtimes"
+      "detail": "33 showtimes"
     }
   ]
 }
