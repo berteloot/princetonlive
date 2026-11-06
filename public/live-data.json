@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-06T06:40:33.926Z",
+  "generatedAt": "2026-11-06T16:45:06.238Z",
   "weather": {
-    "temperature": 62,
-    "shortForecast": "Rain Showers",
-    "wind": "0 to 5 mph SW",
-    "detailedForecast": "Rain showers. Cloudy, with a low around 62. Southwest wind 0 to 5 mph. Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch possible.",
+    "temperature": 68,
+    "shortForecast": "Rain Likely",
+    "wind": "0 to 5 mph NW",
+    "detailedForecast": "Rain likely. Mostly cloudy, with a high near 68. Northwest wind 0 to 5 mph. Chance of precipitation is 70%. New rainfall amounts between three quarters and one inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -135,17 +135,6 @@
       "startHour": 17
     },
     {
-      "title": "Women's Ice Hockey vs Colgate",
-      "source": "Princeton University",
-      "dateLabel": "Nov 6",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-ice-hockey-vs-colgate",
-      "tags": [],
-      "isoDate": "2026-11-06",
-      "startHour": 18
-    },
-    {
       "title": "Women's Volleyball vs Dartmouth",
       "source": "Princeton University",
       "dateLabel": "Nov 6",
@@ -155,6 +144,17 @@
       "tags": [
         "culture"
       ],
+      "isoDate": "2026-11-06",
+      "startHour": 18
+    },
+    {
+      "title": "Women's Ice Hockey vs Colgate",
+      "source": "Princeton University",
+      "dateLabel": "Nov 6",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-ice-hockey-vs-colgate",
+      "tags": [],
       "isoDate": "2026-11-06",
       "startHour": 18
     },
@@ -517,23 +517,23 @@
       "startHour": 17
     },
     {
-      "title": "Women's Ice Hockey vs Cornell",
-      "source": "Princeton University",
-      "dateLabel": "Nov 7",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/womens-ice-hockey-vs-cornell",
-      "tags": [],
-      "isoDate": "2026-11-07",
-      "startHour": 18
-    },
-    {
       "title": "Women's Soccer vs Brown",
       "source": "Princeton University",
       "dateLabel": "Nov 7",
       "timeLabel": "6:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/womens-soccer-vs-brown",
+      "tags": [],
+      "isoDate": "2026-11-07",
+      "startHour": 18
+    },
+    {
+      "title": "Women's Ice Hockey vs Cornell",
+      "source": "Princeton University",
+      "dateLabel": "Nov 7",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/womens-ice-hockey-vs-cornell",
       "tags": [],
       "isoDate": "2026-11-07",
       "startHour": 18
@@ -996,17 +996,6 @@
       "startHour": 16
     },
     {
-      "title": "LSE Summer Study Abroad Info Session",
-      "source": "Princeton University",
-      "dateLabel": "Nov 9",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/lse-summer-study-abroad-info-session",
-      "tags": [],
-      "isoDate": "2026-11-09",
-      "startHour": 16
-    },
-    {
       "title": "Civic Leadership Council (Pace) Weekly Meeting",
       "source": "Princeton University",
       "dateLabel": "Nov 9",
@@ -1017,6 +1006,17 @@
         "rain",
         "practical"
       ],
+      "isoDate": "2026-11-09",
+      "startHour": 16
+    },
+    {
+      "title": "LSE Summer Study Abroad Info Session",
+      "source": "Princeton University",
+      "dateLabel": "Nov 9",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/lse-summer-study-abroad-info-session",
+      "tags": [],
       "isoDate": "2026-11-09",
       "startHour": 16
     },
@@ -1280,15 +1280,32 @@
       "startHour": 12
     },
     {
-      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
-      "source": "Princeton University",
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
       "dateLabel": "Nov 10",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-17",
-      "tags": [],
+      "timeLabel": "2:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
       "isoDate": "2026-11-10",
-      "startHour": 15
+      "startHour": 14
+    },
+    {
+      "title": "Wild Horse Nine",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 10",
+      "timeLabel": "2:45 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-10",
+      "startHour": 14
     },
     {
       "title": "Read & Write: Typewrite a Poem",
@@ -1302,6 +1319,17 @@
         "rain",
         "practical"
       ],
+      "isoDate": "2026-11-10",
+      "startHour": 15
+    },
+    {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Nov 10",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-17",
+      "tags": [],
       "isoDate": "2026-11-10",
       "startHour": 15
     },
@@ -1336,20 +1364,6 @@
       "startHour": 15
     },
     {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 10",
-      "timeLabel": "3:35 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-10",
-      "startHour": 15
-    },
-    {
       "title": "Mercer County Community ID",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 10",
@@ -1358,20 +1372,6 @@
       "url": "https://princetonlibrary.libnet.info/event/17587192",
       "tags": [
         "family"
-      ],
-      "isoDate": "2026-11-10",
-      "startHour": 16
-    },
-    {
-      "title": "Wild Horse Nine",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 10",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
-      "tags": [
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-11-10",
       "startHour": 16
@@ -1402,19 +1402,6 @@
       "startHour": 16
     },
     {
-      "title": "Hadji Bakara Lecture",
-      "source": "Princeton University",
-      "dateLabel": "Nov 10",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/hadji-bakara-lecture",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-11-10",
-      "startHour": 16
-    },
-    {
       "title": "Princeton University Public Lectures: Valeria Luiselli",
       "source": "Princeton University",
       "dateLabel": "Nov 10",
@@ -1423,6 +1410,19 @@
       "url": "https://www.princeton.edu/events/2026/princeton-university-public-lectures-valeria-luiselli",
       "tags": [
         "family",
+        "culture"
+      ],
+      "isoDate": "2026-11-10",
+      "startHour": 16
+    },
+    {
+      "title": "Hadji Bakara Lecture",
+      "source": "Princeton University",
+      "dateLabel": "Nov 10",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/hadji-bakara-lecture",
+      "tags": [
         "culture"
       ],
       "isoDate": "2026-11-10",
@@ -1761,17 +1761,6 @@
       "startHour": 15
     },
     {
-      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
-      "source": "Princeton University",
-      "dateLabel": "Nov 11",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-18",
-      "tags": [],
-      "isoDate": "2026-11-11",
-      "startHour": 15
-    },
-    {
       "title": "Pace Center Summer Internships Drop-in",
       "source": "Princeton University",
       "dateLabel": "Nov 11",
@@ -1781,6 +1770,17 @@
       "tags": [
         "new"
       ],
+      "isoDate": "2026-11-11",
+      "startHour": 15
+    },
+    {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Nov 11",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-18",
+      "tags": [],
       "isoDate": "2026-11-11",
       "startHour": 15
     },
@@ -1873,7 +1873,7 @@
       "title": "Wild Horse Nine",
       "source": "Garden Theatre",
       "dateLabel": "Nov 11",
-      "timeLabel": "4:15 PM (OC)",
+      "timeLabel": "4:00 PM (OC)",
       "location": "160 Nassau Street",
       "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
       "tags": [
@@ -2482,7 +2482,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Rain Showers, 62F"
+      "detail": "Rain Likely, 68F"
     },
     {
       "name": "Princeton University Events",
