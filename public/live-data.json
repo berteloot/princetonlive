@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-07T19:25:12.956Z",
+  "generatedAt": "2026-11-08T00:34:10.614Z",
   "weather": {
-    "temperature": 59,
-    "shortForecast": "Sunny",
-    "wind": "10 to 15 mph W",
-    "detailedForecast": "Sunny. High near 59, with temperatures falling to around 53 in the afternoon. West wind 10 to 15 mph.",
+    "temperature": 43,
+    "shortForecast": "Partly Cloudy",
+    "wind": "5 to 10 mph W",
+    "detailedForecast": "Partly cloudy, with a low around 43. West wind 5 to 10 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -221,20 +221,6 @@
       "startHour": 15
     },
     {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 7",
-      "timeLabel": "3:25 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-07",
-      "startHour": 15
-    },
-    {
       "title": "Tango Practica",
       "source": "Princeton University",
       "dateLabel": "Nov 7",
@@ -242,20 +228,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/tango-practica-20",
       "tags": [],
-      "isoDate": "2026-11-07",
-      "startHour": 16
-    },
-    {
-      "title": "Wild Horse Nine",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 7",
-      "timeLabel": "4:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
-      "tags": [
-        "culture",
-        "rain"
-      ],
       "isoDate": "2026-11-07",
       "startHour": 16
     },
@@ -314,34 +286,6 @@
       "url": "https://www.princeton.edu/events/2026/magic-gathering-club-meeting-8",
       "tags": [
         "new",
-        "rain"
-      ],
-      "isoDate": "2026-11-07",
-      "startHour": 19
-    },
-    {
-      "title": "Wild Horse Nine",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 7",
-      "timeLabel": "7:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-07",
-      "startHour": 19
-    },
-    {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 7",
-      "timeLabel": "7:20 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
         "rain"
       ],
       "isoDate": "2026-11-07",
@@ -2452,7 +2396,7 @@
       "iso": "2026-11-07",
       "label": "Nov 7",
       "weekday": "Sat",
-      "count": 28
+      "count": 24
     },
     {
       "iso": "2026-11-08",
@@ -2498,7 +2442,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 59F"
+      "detail": "Partly Cloudy, 43F"
     },
     {
       "name": "Princeton University Events",
@@ -2522,7 +2466,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "28 showtimes"
+      "detail": "24 showtimes"
     }
   ]
 }
