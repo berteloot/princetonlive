@@ -1,202 +1,15 @@
 {
-  "generatedAt": "2026-11-08T17:55:22.551Z",
+  "generatedAt": "2026-11-09T06:23:23.596Z",
   "weather": {
-    "temperature": 61,
-    "shortForecast": "Sunny",
-    "wind": "5 to 10 mph W",
-    "detailedForecast": "Sunny, with a high near 61. West wind 5 to 10 mph.",
+    "temperature": 41,
+    "shortForecast": "Clear",
+    "wind": "5 mph W",
+    "detailedForecast": "Clear, with a low around 41. West wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "MLP Intensive x Shayh Mendes: The First Migration",
-      "source": "Princeton University",
-      "dateLabel": "Nov 8",
-      "timeLabel": "9:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mlp-intensive-x-shayh-mendes-first-migration-0",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-11-08",
-      "startHour": 9
-    },
-    {
-      "title": "Worship Service in the University Chapel",
-      "source": "Princeton University",
-      "dateLabel": "Nov 8",
-      "timeLabel": "11:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/worship-service-university-chapel-9",
-      "tags": [],
-      "isoDate": "2026-11-08",
-      "startHour": 11
-    },
-    {
-      "title": "Guided tour: The Art of Japanese Publishing",
-      "source": "Princeton University",
-      "dateLabel": "Nov 8",
-      "timeLabel": "1:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/guided-tour-art-japanese-publishing-6",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-08",
-      "startHour": 13
-    },
-    {
-      "title": "Love Me or Leave Me",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 8",
-      "timeLabel": "1:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=love-me-or-leave-me",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-08",
-      "startHour": 13
-    },
-    {
-      "title": "Oratorio for Living Things by Heather Christian",
-      "source": "Princeton University",
-      "dateLabel": "Nov 8",
-      "timeLabel": "2:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/oratorio-living-things-heather-christian-2",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-08",
-      "startHour": 14
-    },
-    {
-      "title": "A Masterclass with Jonathan Biss, Piano",
-      "source": "Princeton University",
-      "dateLabel": "Nov 8",
-      "timeLabel": "2:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/masterclass-jonathan-biss-piano",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-08",
-      "startHour": 14
-    },
-    {
-      "title": "Film: \"The Last Waltz\"",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 08",
-      "timeLabel": "2:00pm - 4:00pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/17671583",
-      "tags": [
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-08",
-      "startHour": 14
-    },
-    {
-      "title": "Kids: Spanish Storytime",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 08",
-      "timeLabel": "2:00pm - 2:30pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/17190380",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-11-08",
-      "startHour": 14
-    },
-    {
-      "title": "Kids: Paws to Read",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 08",
-      "timeLabel": "3:00pm - 4:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/17648530",
-      "tags": [
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-11-08",
-      "startHour": 15
-    },
-    {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 8",
-      "timeLabel": "3:25 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-08",
-      "startHour": 15
-    },
-    {
-      "title": "Wild Horse Nine",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 8",
-      "timeLabel": "4:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-08",
-      "startHour": 16
-    },
-    {
-      "title": "Wild Horse Nine",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 8",
-      "timeLabel": "7:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-08",
-      "startHour": 19
-    },
-    {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 8",
-      "timeLabel": "7:20 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-08",
-      "startHour": 19
-    },
     {
       "title": "Tech Help for Seniors",
       "source": "Princeton Public Library",
@@ -585,6 +398,19 @@
       "startHour": 10
     },
     {
+      "title": "English Conversation (in person)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 10",
+      "timeLabel": "10:00am - 11:30am",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/17297221",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-11-10",
+      "startHour": 10
+    },
+    {
       "title": "Learn to Play American Mah Johngg",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 10",
@@ -598,13 +424,14 @@
       "startHour": 10
     },
     {
-      "title": "English Conversation (in person)",
+      "title": "Art: Princeton Sketchers",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 10",
-      "timeLabel": "10:00am - 11:30am",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/17297221",
+      "timeLabel": "10:30am - 12:30pm",
+      "location": "Princeton Public Library - Conference Room",
+      "url": "https://princetonlibrary.libnet.info/event/17590210",
       "tags": [
+        "culture",
         "practical"
       ],
       "isoDate": "2026-11-10",
@@ -621,20 +448,6 @@
         "new",
         "family",
         "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-10",
-      "startHour": 10
-    },
-    {
-      "title": "Art: Princeton Sketchers",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 10",
-      "timeLabel": "10:30am - 12:30pm",
-      "location": "Princeton Public Library - Conference Room",
-      "url": "https://princetonlibrary.libnet.info/event/17590210",
-      "tags": [
-        "culture",
         "practical"
       ],
       "isoDate": "2026-11-10",
@@ -1169,17 +982,6 @@
       "startHour": 15
     },
     {
-      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
-      "source": "Princeton University",
-      "dateLabel": "Nov 11",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-18",
-      "tags": [],
-      "isoDate": "2026-11-11",
-      "startHour": 15
-    },
-    {
       "title": "Pace Center Summer Internships Drop-in",
       "source": "Princeton University",
       "dateLabel": "Nov 11",
@@ -1189,6 +991,17 @@
       "tags": [
         "new"
       ],
+      "isoDate": "2026-11-11",
+      "startHour": 15
+    },
+    {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Nov 11",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-18",
+      "tags": [],
       "isoDate": "2026-11-11",
       "startHour": 15
     },
@@ -1387,17 +1200,6 @@
       "startHour": 19
     },
     {
-      "title": "Princeton Christian Fellowship Bible studies",
-      "source": "Princeton University",
-      "dateLabel": "Nov 11",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-13",
-      "tags": [],
-      "isoDate": "2026-11-11",
-      "startHour": 20
-    },
-    {
       "title": "Jazz Vespers",
       "source": "Princeton University",
       "dateLabel": "Nov 11",
@@ -1407,6 +1209,17 @@
       "tags": [
         "culture"
       ],
+      "isoDate": "2026-11-11",
+      "startHour": 20
+    },
+    {
+      "title": "Princeton Christian Fellowship Bible studies",
+      "source": "Princeton University",
+      "dateLabel": "Nov 11",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-christian-fellowship-bible-studies-13",
+      "tags": [],
       "isoDate": "2026-11-11",
       "startHour": 20
     },
@@ -1471,6 +1284,17 @@
       "startHour": 10
     },
     {
+      "title": "Fiction Book Group",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 12",
+      "timeLabel": "10:30am - 11:30am",
+      "location": "Princeton Public Library - Conference Room",
+      "url": "https://princetonlibrary.libnet.info/event/17164631",
+      "tags": [],
+      "isoDate": "2026-11-12",
+      "startHour": 10
+    },
+    {
       "title": "Kids: Storytime!",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 12",
@@ -1481,17 +1305,6 @@
         "family",
         "practical"
       ],
-      "isoDate": "2026-11-12",
-      "startHour": 10
-    },
-    {
-      "title": "Fiction Book Group",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 12",
-      "timeLabel": "10:30am - 11:30am",
-      "location": "Princeton Public Library - Conference Room",
-      "url": "https://princetonlibrary.libnet.info/event/17164631",
-      "tags": [],
       "isoDate": "2026-11-12",
       "startHour": 10
     },
@@ -1510,23 +1323,23 @@
       "startHour": 11
     },
     {
-      "title": "Global Existential Challenges Seminar Series: In Pursuit of Human Rights",
-      "source": "Princeton University",
-      "dateLabel": "Nov 12",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/global-existential-challenges-seminar-series-pursuit-human-rights-0",
-      "tags": [],
-      "isoDate": "2026-11-12",
-      "startHour": 12
-    },
-    {
       "title": "Faculty and staff Bible study",
       "source": "Princeton University",
       "dateLabel": "Nov 12",
       "timeLabel": "12:00 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-3",
+      "tags": [],
+      "isoDate": "2026-11-12",
+      "startHour": 12
+    },
+    {
+      "title": "Global Existential Challenges Seminar Series: In Pursuit of Human Rights",
+      "source": "Princeton University",
+      "dateLabel": "Nov 12",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/global-existential-challenges-seminar-series-pursuit-human-rights-0",
       "tags": [],
       "isoDate": "2026-11-12",
       "startHour": 12
@@ -2276,15 +2089,108 @@
       ],
       "isoDate": "2026-11-14",
       "startHour": 20
+    },
+    {
+      "title": "The Black Arts Collective: My Kids Will Call You Auntie",
+      "source": "Princeton University",
+      "dateLabel": "Nov 15",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/black-arts-collective-my-kids-will-call-you-auntie-5",
+      "tags": [
+        "new",
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-15",
+      "startHour": 10
+    },
+    {
+      "title": "Site: Exhibition by Carlos Agredano",
+      "source": "Princeton University",
+      "dateLabel": "Nov 15",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/site-exhibition-carlos-agredano-4",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-15",
+      "startHour": 10
+    },
+    {
+      "title": "Food Insecurity Task Force: Princeton Mutual Aid Network Senior Food Deliveries",
+      "source": "Municipality of Princeton",
+      "dateLabel": "November 15, 2026",
+      "timeLabel": "10:00 AM - 11:30 AM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=3953",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-11-15",
+      "startHour": 10
+    },
+    {
+      "title": "Worship Service in the University Chapel",
+      "source": "Princeton University",
+      "dateLabel": "Nov 15",
+      "timeLabel": "11:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/worship-service-university-chapel-10",
+      "tags": [],
+      "isoDate": "2026-11-15",
+      "startHour": 11
+    },
+    {
+      "title": "NASA Space Apps Challenge Hackathon",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 15",
+      "timeLabel": "1:00pm - 4:00pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/17491528",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-15",
+      "startHour": 13
+    },
+    {
+      "title": "Kids: Persian Storytime",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 15",
+      "timeLabel": "3:00pm - 3:30pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/17334534",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-15",
+      "startHour": 15
+    },
+    {
+      "title": "Author Tea with Kate Fox",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 15",
+      "timeLabel": "3:00pm - 4:15pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17680201",
+      "tags": [
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-15",
+      "startHour": 15
     }
   ],
   "days": [
-    {
-      "iso": "2026-11-08",
-      "label": "Nov 8",
-      "weekday": "Sun",
-      "count": 13
-    },
     {
       "iso": "2026-11-09",
       "label": "Nov 9",
@@ -2320,6 +2226,12 @@
       "label": "Nov 14",
       "weekday": "Sat",
       "count": 16
+    },
+    {
+      "iso": "2026-11-15",
+      "label": "Nov 15",
+      "weekday": "Sun",
+      "count": 7
     }
   ],
   "windowDays": 7,
@@ -2329,7 +2241,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Sunny, 61F"
+      "detail": "Clear, 41F"
     },
     {
       "name": "Princeton University Events",
@@ -2341,19 +2253,19 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "55 events"
+      "detail": "61 events"
     },
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "14 calendar items"
+      "detail": "15 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "24 showtimes"
+      "detail": "22 showtimes"
     }
   ]
 }
