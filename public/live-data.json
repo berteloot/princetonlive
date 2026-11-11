@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-11T14:26:10.666Z",
+  "generatedAt": "2026-11-11T21:56:06.874Z",
   "weather": {
     "temperature": 64,
     "shortForecast": "Mostly Sunny",
-    "wind": "0 to 5 mph SW",
-    "detailedForecast": "Mostly sunny. High near 64, with temperatures falling to around 57 in the afternoon. Southwest wind 0 to 5 mph.",
+    "wind": "0 mph ",
+    "detailedForecast": "Mostly sunny, with a high near 64. Southwest wind around 0 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -142,17 +142,6 @@
       "startHour": 11
     },
     {
-      "title": "Wednesday Seminar Series, Mossavar-Rahmani Center for Iran & Persian Gulf Studies",
-      "source": "Princeton University",
-      "dateLabel": "Nov 11",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/wednesday-seminar-series-mossavar-rahmani-center-iran-persian-gulf-studies-9",
-      "tags": [],
-      "isoDate": "2026-11-11",
-      "startHour": 12
-    },
-    {
       "title": "Fung-UCHV Public Lecture | Thana Campos-Rudinsky",
       "source": "Princeton University",
       "dateLabel": "Nov 11",
@@ -167,6 +156,17 @@
       "startHour": 12
     },
     {
+      "title": "Wednesday Seminar Series, Mossavar-Rahmani Center for Iran & Persian Gulf Studies",
+      "source": "Princeton University",
+      "dateLabel": "Nov 11",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/wednesday-seminar-series-mossavar-rahmani-center-iran-persian-gulf-studies-9",
+      "tags": [],
+      "isoDate": "2026-11-11",
+      "startHour": 12
+    },
+    {
       "title": "Kids: Baby Play Group",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 11",
@@ -177,34 +177,6 @@
         "new",
         "family",
         "practical"
-      ],
-      "isoDate": "2026-11-11",
-      "startHour": 12
-    },
-    {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 11",
-      "timeLabel": "12:30 PM (OC)",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-11",
-      "startHour": 12
-    },
-    {
-      "title": "Wild Horse Nine",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 11",
-      "timeLabel": "12:45 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
-      "tags": [
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-11-11",
       "startHour": 12
@@ -276,20 +248,6 @@
       "startHour": 15
     },
     {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 11",
-      "timeLabel": "3:35 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-11",
-      "startHour": 15
-    },
-    {
       "title": "English Conversation (virtual)",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 11",
@@ -312,20 +270,6 @@
       "tags": [
         "family",
         "practical"
-      ],
-      "isoDate": "2026-11-11",
-      "startHour": 16
-    },
-    {
-      "title": "Wild Horse Nine",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 11",
-      "timeLabel": "4:00 PM (OC)",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
-      "tags": [
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-11-11",
       "startHour": 16
@@ -956,6 +900,21 @@
       "startHour": 9
     },
     {
+      "title": "SFPUL Tour of ReCAP Facilities",
+      "source": "Princeton University",
+      "dateLabel": "Nov 13",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/sfpul-tour-recap-facilities",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-13",
+      "startHour": 10
+    },
+    {
       "title": "The Black Arts Collective: My Kids Will Call You Auntie",
       "source": "Princeton University",
       "dateLabel": "Nov 13",
@@ -968,21 +927,6 @@
         "culture",
         "rain",
         "practical"
-      ],
-      "isoDate": "2026-11-13",
-      "startHour": 10
-    },
-    {
-      "title": "SFPUL Tour of ReCAP Facilities",
-      "source": "Princeton University",
-      "dateLabel": "Nov 13",
-      "timeLabel": "10:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/sfpul-tour-recap-facilities",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-11-13",
       "startHour": 10
@@ -1026,6 +970,20 @@
       "startHour": 12
     },
     {
+      "title": "Pop-Up Talk: Curator Kit Brooks",
+      "source": "Princeton University",
+      "dateLabel": "Nov 13",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/pop-talk-curator-kit-brooks",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-13",
+      "startHour": 14
+    },
+    {
       "title": "Japanese Woodblock Printing",
       "source": "Princeton University",
       "dateLabel": "Nov 13",
@@ -1034,20 +992,6 @@
       "url": "https://www.princeton.edu/events/2026/japanese-woodblock-printing",
       "tags": [
         "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-13",
-      "startHour": 14
-    },
-    {
-      "title": "Pop-Up Talk: Curator Kit Brooks",
-      "source": "Princeton University",
-      "dateLabel": "Nov 13",
-      "timeLabel": "2:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/pop-talk-curator-kit-brooks",
-      "tags": [
         "culture",
         "rain"
       ],
@@ -1215,6 +1159,17 @@
       "startHour": 8
     },
     {
+      "title": "Wrestling vs UTC, Duke, & Ohio",
+      "source": "Princeton University",
+      "dateLabel": "Nov 14",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/wrestling-vs-utc-duke-ohio",
+      "tags": [],
+      "isoDate": "2026-11-14",
+      "startHour": 10
+    },
+    {
       "title": "The Black Arts Collective: My Kids Will Call You Auntie",
       "source": "Princeton University",
       "dateLabel": "Nov 14",
@@ -1228,17 +1183,6 @@
         "rain",
         "practical"
       ],
-      "isoDate": "2026-11-14",
-      "startHour": 10
-    },
-    {
-      "title": "Wrestling vs UTC, Duke, & Ohio",
-      "source": "Princeton University",
-      "dateLabel": "Nov 14",
-      "timeLabel": "10:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/wrestling-vs-utc-duke-ohio",
-      "tags": [],
       "isoDate": "2026-11-14",
       "startHour": 10
     },
@@ -1327,6 +1271,20 @@
       ],
       "isoDate": "2026-11-14",
       "startHour": 12
+    },
+    {
+      "title": "Earth City Building Workshop",
+      "source": "Princeton University",
+      "dateLabel": "Nov 14",
+      "timeLabel": "1:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/earth-city-building-workshop",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-14",
+      "startHour": 13
     },
     {
       "title": "Workshop: Creative Art Journaling",
@@ -1997,6 +1955,19 @@
       "startHour": 16
     },
     {
+      "title": "Re-Entry Dinner",
+      "source": "Princeton University",
+      "dateLabel": "Nov 16",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/re-entry-dinner-1",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-11-16",
+      "startHour": 18
+    },
+    {
       "title": "Try on Theater Day Casting Sessions",
       "source": "Princeton University",
       "dateLabel": "Nov 16",
@@ -2312,6 +2283,7 @@
       "tags": [
         "new",
         "culture",
+        "rain",
         "practical"
       ],
       "isoDate": "2026-11-17",
@@ -2444,20 +2416,6 @@
       "startHour": 18
     },
     {
-      "title": "LDSSA Institute Class",
-      "source": "Princeton University",
-      "dateLabel": "Nov 17",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/ldssa-institute-class-8",
-      "tags": [
-        "new",
-        "rain"
-      ],
-      "isoDate": "2026-11-17",
-      "startHour": 19
-    },
-    {
       "title": "Princeton Livestock Exchange Concert: Neti-Neti",
       "source": "Princeton University",
       "dateLabel": "Nov 17",
@@ -2480,6 +2438,20 @@
       "url": "https://www.princeton.edu/events/2026/princeton-salsa-club-classes",
       "tags": [
         "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-17",
+      "startHour": 19
+    },
+    {
+      "title": "LDSSA Institute Class",
+      "source": "Princeton University",
+      "dateLabel": "Nov 17",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/ldssa-institute-class-8",
+      "tags": [
+        "new",
         "rain"
       ],
       "isoDate": "2026-11-17",
@@ -2545,7 +2517,7 @@
       "iso": "2026-11-11",
       "label": "Nov 11",
       "weekday": "Wed",
-      "count": 33
+      "count": 29
     },
     {
       "iso": "2026-11-12",
@@ -2563,7 +2535,7 @@
       "iso": "2026-11-14",
       "label": "Nov 14",
       "weekday": "Sat",
-      "count": 22
+      "count": 23
     },
     {
       "iso": "2026-11-15",
@@ -2575,7 +2547,7 @@
       "iso": "2026-11-16",
       "label": "Nov 16",
       "weekday": "Mon",
-      "count": 26
+      "count": 27
     },
     {
       "iso": "2026-11-17",
@@ -2615,7 +2587,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "49 showtimes"
+      "detail": "45 showtimes"
     }
   ]
 }
