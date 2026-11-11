@@ -1,3 +1,4 @@
+import { existsSync } from "node:fs";
 import { mkdir, writeFile } from "node:fs/promises";
 import { inflateRawSync } from "node:zlib";
 
@@ -128,10 +129,42 @@ function extractRowsFromDocx(buffer) {
     .filter((cells) => cells.length >= 2);
 }
 
+// www.princetonnj.gov sometimes refuses a connection from a GitHub runner for a few
+// seconds (connect timeout after 10 s). One such blip used to fail the whole refresh
+// and the deploy behind it, and every other feed then went stale. So: try four times,
+// and if the town site is still down keep the street list already published.
+const RETRY_WAITS_MS = process.env.WASTE_RETRY_WAITS_MS
+  ? process.env.WASTE_RETRY_WAITS_MS.split(",").map(Number)
+  : [5000, 15000, 30000];
+
 async function fetchDocxRows(url) {
-  const response = await fetch(url);
-  if (!response.ok) throw new Error(`Could not fetch ${url}: ${response.status}`);
-  return extractRowsFromDocx(Buffer.from(await response.arrayBuffer()));
+  let lastError;
+  for (let attempt = 0; attempt <= RETRY_WAITS_MS.length; attempt += 1) {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`Could not fetch ${url}: ${response.status}`);
+      return extractRowsFromDocx(Buffer.from(await response.arrayBuffer()));
+    } catch (error) {
+      lastError = error;
+      if (attempt < RETRY_WAITS_MS.length) {
+        console.warn(`Waste document fetch failed (${error.cause?.code ?? error.message}), retrying: ${url}`);
+        await new Promise((resolve) => setTimeout(resolve, RETRY_WAITS_MS[attempt]));
+      }
+    }
+  }
+  throw lastError;
+}
+
+async function fetchBothOrKeepPrevious() {
+  try {
+    return await Promise.all([fetchDocxRows(trashStreetUrl), fetchDocxRows(yardSectionUrl)]);
+  } catch (error) {
+    if (!existsSync(OUT_FILE)) throw error;
+    console.warn(
+      `Waste refresh failed, keeping the previous street list: ${error.cause?.code ?? error.message}`,
+    );
+    process.exit(0);
+  }
 }
 
 // The two municipal documents cut the same street into different blocks. The trash
@@ -172,10 +205,7 @@ function resolve(record) {
   return { value: "Varies by block", varies: true };
 }
 
-const [trashRows, yardRows] = await Promise.all([
-  fetchDocxRows(trashStreetUrl),
-  fetchDocxRows(yardSectionUrl),
-]);
+const [trashRows, yardRows] = await fetchBothOrKeepPrevious();
 
 const trashByStreet = parseEntries(trashRows, /^(MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|NOT INCLUDED)$/i);
 const yardByStreet = parseEntries(yardRows, /^(1|2|3|4|5|NOT INCLUDED)$/i);
