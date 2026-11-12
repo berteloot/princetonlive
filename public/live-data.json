@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-12T17:34:41.303Z",
+  "generatedAt": "2026-11-12T23:37:19.486Z",
   "weather": {
-    "temperature": 61,
-    "shortForecast": "Showers And Thunderstorms",
-    "wind": "5 mph NE",
-    "detailedForecast": "Showers and thunderstorms. Cloudy. High near 61, with temperatures falling to around 54 in the afternoon. Northeast wind around 5 mph. Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible.",
+    "temperature": 37,
+    "shortForecast": "Rain Showers Likely then Light Rain",
+    "wind": "5 to 10 mph NE",
+    "detailedForecast": "Rain showers likely before 1am, then rain. Mostly cloudy, with a low around 37. Northeast wind 5 to 10 mph. Chance of precipitation is 80%. New rainfall amounts between a half and three quarters of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -110,6 +110,17 @@
       "startHour": 11
     },
     {
+      "title": "Faculty and staff Bible study",
+      "source": "Princeton University",
+      "dateLabel": "Nov 12",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-3",
+      "tags": [],
+      "isoDate": "2026-11-12",
+      "startHour": 12
+    },
+    {
       "title": "JDS Works-In-Progress Group Lunch Meeting: Eugene Matanky",
       "source": "Princeton University",
       "dateLabel": "Nov 12",
@@ -121,17 +132,6 @@
         "culture",
         "rain"
       ],
-      "isoDate": "2026-11-12",
-      "startHour": 12
-    },
-    {
-      "title": "Faculty and staff Bible study",
-      "source": "Princeton University",
-      "dateLabel": "Nov 12",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-3",
-      "tags": [],
       "isoDate": "2026-11-12",
       "startHour": 12
     },
@@ -220,29 +220,14 @@
       "startHour": 15
     },
     {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
+      "title": "Vaults of Trade: Medieval Architectures of Exchange between Sea and City",
+      "source": "Princeton University",
       "dateLabel": "Nov 12",
-      "timeLabel": "3:35 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/vaults-trade-medieval-architectures-exchange-between-sea-and-city",
       "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-12",
-      "startHour": 15
-    },
-    {
-      "title": "Wild Horse Nine",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 12",
-      "timeLabel": "4:15 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
-      "tags": [
-        "culture",
-        "rain"
+        "culture"
       ],
       "isoDate": "2026-11-12",
       "startHour": 16
@@ -263,19 +248,6 @@
       "startHour": 16
     },
     {
-      "title": "Vaults of Trade: Medieval Architectures of Exchange between Sea and City",
-      "source": "Princeton University",
-      "dateLabel": "Nov 12",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/vaults-trade-medieval-architectures-exchange-between-sea-and-city",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-11-12",
-      "startHour": 16
-    },
-    {
       "title": "Teens: VRcade",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 12",
@@ -290,21 +262,6 @@
       "startHour": 16
     },
     {
-      "title": "Friends of PUL Small Talk: Tsundoku: What isn't in \"The Art of Japanese Publishing\" Exhibition",
-      "source": "Princeton University",
-      "dateLabel": "Nov 12",
-      "timeLabel": "5:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/friends-pul-small-talk-tsundoku-what-isnt-art-japanese-publishing-exhibition",
-      "tags": [
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-12",
-      "startHour": 17
-    },
-    {
       "title": "The Free Exercise of Religion in History, Tradition, and the Constitution",
       "source": "Princeton University",
       "dateLabel": "Nov 12",
@@ -314,6 +271,21 @@
       "tags": [
         "new",
         "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-12",
+      "startHour": 17
+    },
+    {
+      "title": "Friends of PUL Small Talk: Tsundoku: What isn't in \"The Art of Japanese Publishing\" Exhibition",
+      "source": "Princeton University",
+      "dateLabel": "Nov 12",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/friends-pul-small-talk-tsundoku-what-isnt-art-japanese-publishing-exhibition",
+      "tags": [
+        "culture",
+        "rain",
         "practical"
       ],
       "isoDate": "2026-11-12",
@@ -491,21 +463,6 @@
       "startHour": 9
     },
     {
-      "title": "SFPUL Tour of ReCAP Facilities",
-      "source": "Princeton University",
-      "dateLabel": "Nov 13",
-      "timeLabel": "10:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/sfpul-tour-recap-facilities",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-13",
-      "startHour": 10
-    },
-    {
       "title": "The Black Arts Collective: My Kids Will Call You Auntie",
       "source": "Princeton University",
       "dateLabel": "Nov 13",
@@ -518,6 +475,21 @@
         "culture",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-11-13",
+      "startHour": 10
+    },
+    {
+      "title": "SFPUL Tour of ReCAP Facilities",
+      "source": "Princeton University",
+      "dateLabel": "Nov 13",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/sfpul-tour-recap-facilities",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
       ],
       "isoDate": "2026-11-13",
       "startHour": 10
@@ -561,20 +533,6 @@
       "startHour": 12
     },
     {
-      "title": "Pop-Up Talk: Curator Kit Brooks",
-      "source": "Princeton University",
-      "dateLabel": "Nov 13",
-      "timeLabel": "2:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/pop-talk-curator-kit-brooks",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-13",
-      "startHour": 14
-    },
-    {
       "title": "Japanese Woodblock Printing",
       "source": "Princeton University",
       "dateLabel": "Nov 13",
@@ -583,6 +541,20 @@
       "url": "https://www.princeton.edu/events/2026/japanese-woodblock-printing",
       "tags": [
         "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-13",
+      "startHour": 14
+    },
+    {
+      "title": "Pop-Up Talk: Curator Kit Brooks",
+      "source": "Princeton University",
+      "dateLabel": "Nov 13",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/pop-talk-curator-kit-brooks",
+      "tags": [
         "culture",
         "rain"
       ],
@@ -638,6 +610,17 @@
         "culture",
         "rain"
       ],
+      "isoDate": "2026-11-13",
+      "startHour": 16
+    },
+    {
+      "title": "Glyph 8 Puzzlehunt",
+      "source": "Princeton University",
+      "dateLabel": "Nov 13",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/glyph-8-puzzlehunt",
+      "tags": [],
       "isoDate": "2026-11-13",
       "startHour": 16
     },
@@ -750,17 +733,6 @@
       "startHour": 9
     },
     {
-      "title": "Wrestling vs UTC, Duke, & Ohio",
-      "source": "Princeton University",
-      "dateLabel": "Nov 14",
-      "timeLabel": "10:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/wrestling-vs-utc-duke-ohio",
-      "tags": [],
-      "isoDate": "2026-11-14",
-      "startHour": 10
-    },
-    {
       "title": "The Black Arts Collective: My Kids Will Call You Auntie",
       "source": "Princeton University",
       "dateLabel": "Nov 14",
@@ -774,6 +746,17 @@
         "rain",
         "practical"
       ],
+      "isoDate": "2026-11-14",
+      "startHour": 10
+    },
+    {
+      "title": "Wrestling vs UTC, Duke, & Ohio",
+      "source": "Princeton University",
+      "dateLabel": "Nov 14",
+      "timeLabel": "10:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/wrestling-vs-utc-duke-ohio",
+      "tags": [],
       "isoDate": "2026-11-14",
       "startHour": 10
     },
@@ -978,19 +961,6 @@
       "startHour": 16
     },
     {
-      "title": "Men's Ice Hockey vs Dartmouth",
-      "source": "Princeton University",
-      "dateLabel": "Nov 14",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-ice-hockey-vs-dartmouth",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-11-14",
-      "startHour": 19
-    },
-    {
       "title": "Magic: The Gathering Club Meeting",
       "source": "Princeton University",
       "dateLabel": "Nov 14",
@@ -1000,6 +970,19 @@
       "tags": [
         "new",
         "rain"
+      ],
+      "isoDate": "2026-11-14",
+      "startHour": 19
+    },
+    {
+      "title": "Men's Ice Hockey vs Dartmouth",
+      "source": "Princeton University",
+      "dateLabel": "Nov 14",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-ice-hockey-vs-dartmouth",
+      "tags": [
+        "culture"
       ],
       "isoDate": "2026-11-14",
       "startHour": 19
@@ -1546,19 +1529,6 @@
       "startHour": 16
     },
     {
-      "title": "Re-Entry Dinner",
-      "source": "Princeton University",
-      "dateLabel": "Nov 16",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/re-entry-dinner-1",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-11-16",
-      "startHour": 18
-    },
-    {
       "title": "Try on Theater Day Casting Sessions",
       "source": "Princeton University",
       "dateLabel": "Nov 16",
@@ -1569,6 +1539,19 @@
         "culture",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-11-16",
+      "startHour": 18
+    },
+    {
+      "title": "Re-Entry Dinner",
+      "source": "Princeton University",
+      "dateLabel": "Nov 16",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/re-entry-dinner-1",
+      "tags": [
+        "culture"
       ],
       "isoDate": "2026-11-16",
       "startHour": 18
@@ -1744,19 +1727,6 @@
       "startHour": 11
     },
     {
-      "title": "John Guy | Piprahwa and Relic Practice in Early Buddhist India - An Archaeological Perspective",
-      "source": "Princeton University",
-      "dateLabel": "Nov 17",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/john-guy-piprahwa-and-relic-practice-early-buddhist-india-archaeological-perspective",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-11-17",
-      "startHour": 12
-    },
-    {
       "title": "PLAS Lecture Series",
       "source": "Princeton University",
       "dateLabel": "Nov 17",
@@ -1765,6 +1735,19 @@
       "url": "https://www.princeton.edu/events/2026/plas-lecture-series-5",
       "tags": [
         "culture"
+      ],
+      "isoDate": "2026-11-17",
+      "startHour": 12
+    },
+    {
+      "title": "John Guy | Piprahwa and Relic Practice in Early Buddhist India - An Archaeological Perspective",
+      "source": "Princeton University",
+      "dateLabel": "Nov 17",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/john-guy-piprahwa-and-relic-practice-early-buddhist-india-archaeological-perspective",
+      "tags": [
+        "new"
       ],
       "isoDate": "2026-11-17",
       "startHour": 12
@@ -1923,6 +1906,17 @@
       "startHour": 17
     },
     {
+      "title": "MLP x HLP : Hindu Bhakti Through Muslim Eyes",
+      "source": "Princeton University",
+      "dateLabel": "Nov 17",
+      "timeLabel": "5:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mlp-x-hlp-hindu-bhakti-through-muslim-eyes",
+      "tags": [],
+      "isoDate": "2026-11-17",
+      "startHour": 17
+    },
+    {
       "title": "Fall 2026 VIS Open Studios",
       "source": "Princeton University",
       "dateLabel": "Nov 17",
@@ -1935,17 +1929,6 @@
         "rain",
         "practical"
       ],
-      "isoDate": "2026-11-17",
-      "startHour": 17
-    },
-    {
-      "title": "MLP x HLP : Hindu Bhakti Through Muslim Eyes",
-      "source": "Princeton University",
-      "dateLabel": "Nov 17",
-      "timeLabel": "5:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mlp-x-hlp-hindu-bhakti-through-muslim-eyes",
-      "tags": [],
       "isoDate": "2026-11-17",
       "startHour": 17
     },
@@ -2418,23 +2401,23 @@
       "startHour": 16
     },
     {
-      "title": "InterVarsity Small Group",
-      "source": "Princeton University",
-      "dateLabel": "Nov 18",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-7",
-      "tags": [],
-      "isoDate": "2026-11-18",
-      "startHour": 16
-    },
-    {
       "title": "Stablecoins: Opportunities and Risks",
       "source": "Princeton University",
       "dateLabel": "Nov 18",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/stablecoins-opportunities-and-risks",
+      "tags": [],
+      "isoDate": "2026-11-18",
+      "startHour": 16
+    },
+    {
+      "title": "InterVarsity Small Group",
+      "source": "Princeton University",
+      "dateLabel": "Nov 18",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-7",
       "tags": [],
       "isoDate": "2026-11-18",
       "startHour": 16
@@ -2585,13 +2568,13 @@
       "iso": "2026-11-12",
       "label": "Nov 12",
       "weekday": "Thu",
-      "count": 32
+      "count": 30
     },
     {
       "iso": "2026-11-13",
       "label": "Nov 13",
       "weekday": "Fri",
-      "count": 19
+      "count": 20
     },
     {
       "iso": "2026-11-14",
@@ -2631,7 +2614,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Showers And Thunderstorms, 61F"
+      "detail": "Rain Showers Likely then Light Rain, 37F"
     },
     {
       "name": "Princeton University Events",
@@ -2655,7 +2638,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "47 showtimes"
+      "detail": "45 showtimes"
     }
   ]
 }
