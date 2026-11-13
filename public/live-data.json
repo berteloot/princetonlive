@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-13T06:42:21.006Z",
+  "generatedAt": "2026-11-13T17:11:39.211Z",
   "weather": {
-    "temperature": 37,
+    "temperature": 41,
     "shortForecast": "Light Rain",
-    "wind": "15 mph N",
-    "detailedForecast": "Rain. Cloudy, with a low around 37. North wind around 15 mph, with gusts as high as 30 mph. Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch possible.",
+    "wind": "10 to 15 mph N",
+    "detailedForecast": "Rain. Cloudy, with a high near 41. North wind 10 to 15 mph, with gusts as high as 30 mph. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -66,20 +66,6 @@
         "new",
         "family",
         "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-13",
-      "startHour": 10
-    },
-    {
-      "title": "Flood and Storm Water Commission -Virtual Meeting",
-      "source": "Municipality of Princeton",
-      "dateLabel": "November 13, 2026",
-      "timeLabel": "10:00 AM - 11:30 AM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8134",
-      "tags": [
         "rain",
         "practical"
       ],
@@ -1305,19 +1291,6 @@
       "startHour": 11
     },
     {
-      "title": "PLAS Lecture Series",
-      "source": "Princeton University",
-      "dateLabel": "Nov 17",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/plas-lecture-series-5",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-11-17",
-      "startHour": 12
-    },
-    {
       "title": "John Guy | Piprahwa and Relic Practice in Early Buddhist India - An Archaeological Perspective",
       "source": "Princeton University",
       "dateLabel": "Nov 17",
@@ -1326,6 +1299,19 @@
       "url": "https://www.princeton.edu/events/2026/john-guy-piprahwa-and-relic-practice-early-buddhist-india-archaeological-perspective",
       "tags": [
         "new"
+      ],
+      "isoDate": "2026-11-17",
+      "startHour": 12
+    },
+    {
+      "title": "PLAS Lecture Series",
+      "source": "Princeton University",
+      "dateLabel": "Nov 17",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/plas-lecture-series-5",
+      "tags": [
+        "culture"
       ],
       "isoDate": "2026-11-17",
       "startHour": 12
@@ -1979,23 +1965,23 @@
       "startHour": 16
     },
     {
-      "title": "InterVarsity Small Group",
-      "source": "Princeton University",
-      "dateLabel": "Nov 18",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-7",
-      "tags": [],
-      "isoDate": "2026-11-18",
-      "startHour": 16
-    },
-    {
       "title": "Stablecoins: Opportunities and Risks",
       "source": "Princeton University",
       "dateLabel": "Nov 18",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/stablecoins-opportunities-and-risks",
+      "tags": [],
+      "isoDate": "2026-11-18",
+      "startHour": 16
+    },
+    {
+      "title": "InterVarsity Small Group",
+      "source": "Princeton University",
+      "dateLabel": "Nov 18",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-7",
       "tags": [],
       "isoDate": "2026-11-18",
       "startHour": 16
@@ -2086,20 +2072,6 @@
       ],
       "isoDate": "2026-11-18",
       "startHour": 18
-    },
-    {
-      "title": "Princeton Environmental Commission Meeting - Virtual",
-      "source": "Municipality of Princeton",
-      "dateLabel": "November 18, 2026",
-      "timeLabel": "07:00 PM - 11:59 PM",
-      "location": "Princeton, NJ",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7779",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-18",
-      "startHour": 19
     },
     {
       "title": "Four Rational People",
@@ -2238,6 +2210,17 @@
         "family",
         "practical"
       ],
+      "isoDate": "2026-11-19",
+      "startHour": 12
+    },
+    {
+      "title": "Gender Inequities in India: Recent advances in measurement, current challenges",
+      "source": "Princeton University",
+      "dateLabel": "Nov 19",
+      "timeLabel": "12:10 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/gender-inequities-india-recent-advances-measurement-current-challenges",
+      "tags": [],
       "isoDate": "2026-11-19",
       "startHour": 12
     },
@@ -2411,6 +2394,19 @@
       "startHour": 17
     },
     {
+      "title": "T-Shirt Making Workshop",
+      "source": "Princeton University",
+      "dateLabel": "Nov 19",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/t-shirt-making-workshop-0",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-11-19",
+      "startHour": 18
+    },
+    {
       "title": "Thomas Trezise is joined in conversation with André Benhaïm. \"Beginning Again: A Spouse’s Story of Life after Trauma\"",
       "source": "Princeton University",
       "dateLabel": "Nov 19",
@@ -2529,7 +2525,7 @@
       "iso": "2026-11-13",
       "label": "Nov 13",
       "weekday": "Fri",
-      "count": 20
+      "count": 19
     },
     {
       "iso": "2026-11-14",
@@ -2559,13 +2555,13 @@
       "iso": "2026-11-18",
       "label": "Nov 18",
       "weekday": "Wed",
-      "count": 35
+      "count": 34
     },
     {
       "iso": "2026-11-19",
       "label": "Nov 19",
       "weekday": "Thu",
-      "count": 27
+      "count": 29
     }
   ],
   "windowDays": 7,
@@ -2575,7 +2571,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Light Rain, 37F"
+      "detail": "Light Rain, 41F"
     },
     {
       "name": "Princeton University Events",
@@ -2593,7 +2589,7 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "14 calendar items"
+      "detail": "12 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
