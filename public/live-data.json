@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-13T17:11:39.211Z",
+  "generatedAt": "2026-11-13T23:31:14.945Z",
   "weather": {
-    "temperature": 41,
-    "shortForecast": "Light Rain",
-    "wind": "10 to 15 mph N",
-    "detailedForecast": "Rain. Cloudy, with a high near 41. North wind 10 to 15 mph, with gusts as high as 30 mph. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible.",
+    "temperature": 31,
+    "shortForecast": "Light Rain Likely then Mostly Cloudy",
+    "wind": "5 mph NW",
+    "detailedForecast": "Rain likely before 9pm. Mostly cloudy, with a low around 31. Northwest wind around 5 mph. Chance of precipitation is 60%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -130,7 +130,7 @@
       "source": "Princeton Public Library",
       "dateLabel": "Nov 13",
       "timeLabel": "2:00pm - 3:30pm",
-      "location": "Princeton Public Library - Quiet Room",
+      "location": "Princeton Public Library - Conference Room",
       "url": "https://princetonlibrary.libnet.info/event/17236684",
       "tags": [
         "practical"
@@ -148,34 +148,6 @@
       "tags": [],
       "isoDate": "2026-11-13",
       "startHour": 15
-    },
-    {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 13",
-      "timeLabel": "3:30 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-13",
-      "startHour": 15
-    },
-    {
-      "title": "Wild Horse Nine",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 13",
-      "timeLabel": "4:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-13",
-      "startHour": 16
     },
     {
       "title": "Glyph 8 Puzzlehunt",
@@ -965,7 +937,7 @@
       "startHour": 15
     },
     {
-      "title": "Council Virtual Closed Session",
+      "title": "Council Virtual Closed Session - Cancelled",
       "source": "Municipality of Princeton",
       "dateLabel": "November 16, 2026",
       "timeLabel": "03:30 PM - 11:59 PM",
@@ -1174,20 +1146,6 @@
       "tags": [
         "culture",
         "rain"
-      ],
-      "isoDate": "2026-11-16",
-      "startHour": 19
-    },
-    {
-      "title": "Zoning Board of Adjustment - Special Meeting - via Zoom",
-      "source": "Municipality of Princeton",
-      "dateLabel": "November 16, 2026",
-      "timeLabel": "07:30 PM - 11:59 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8139",
-      "tags": [
-        "rain",
-        "practical"
       ],
       "isoDate": "2026-11-16",
       "startHour": 19
@@ -1456,20 +1414,6 @@
       "startHour": 17
     },
     {
-      "title": "Princeton Shade Tree Commission - Virtual Meeting",
-      "source": "Municipality of Princeton",
-      "dateLabel": "November 17, 2026",
-      "timeLabel": "05:00 PM - 06:30 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7967",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-17",
-      "startHour": 17
-    },
-    {
       "title": "Fall 2026 VIS Open Studios",
       "source": "Princeton University",
       "dateLabel": "Nov 17",
@@ -1554,6 +1498,20 @@
       "startHour": 18
     },
     {
+      "title": "LDSSA Institute Class",
+      "source": "Princeton University",
+      "dateLabel": "Nov 17",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/ldssa-institute-class-8",
+      "tags": [
+        "new",
+        "rain"
+      ],
+      "isoDate": "2026-11-17",
+      "startHour": 19
+    },
+    {
       "title": "Princeton Livestock Exchange Concert: Neti-Neti",
       "source": "Princeton University",
       "dateLabel": "Nov 17",
@@ -1576,20 +1534,6 @@
       "url": "https://www.princeton.edu/events/2026/princeton-salsa-club-classes",
       "tags": [
         "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-17",
-      "startHour": 19
-    },
-    {
-      "title": "LDSSA Institute Class",
-      "source": "Princeton University",
-      "dateLabel": "Nov 17",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/ldssa-institute-class-8",
-      "tags": [
-        "new",
         "rain"
       ],
       "isoDate": "2026-11-17",
@@ -1804,6 +1748,17 @@
       "startHour": 13
     },
     {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Nov 18",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-20",
+      "tags": [],
+      "isoDate": "2026-11-18",
+      "startHour": 15
+    },
+    {
       "title": "Pace Center Summer Internships Drop-in",
       "source": "Princeton University",
       "dateLabel": "Nov 18",
@@ -1813,17 +1768,6 @@
       "tags": [
         "new"
       ],
-      "isoDate": "2026-11-18",
-      "startHour": 15
-    },
-    {
-      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
-      "source": "Princeton University",
-      "dateLabel": "Nov 18",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-20",
-      "tags": [],
       "isoDate": "2026-11-18",
       "startHour": 15
     },
@@ -1951,6 +1895,17 @@
       "startHour": 16
     },
     {
+      "title": "InterVarsity Small Group",
+      "source": "Princeton University",
+      "dateLabel": "Nov 18",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-7",
+      "tags": [],
+      "isoDate": "2026-11-18",
+      "startHour": 16
+    },
+    {
       "title": "Crime, Punishment, and Civil Rights: The Future of Criminal Justice Reform After the Midterms",
       "source": "Princeton University",
       "dateLabel": "Nov 18",
@@ -1971,17 +1926,6 @@
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/stablecoins-opportunities-and-risks",
-      "tags": [],
-      "isoDate": "2026-11-18",
-      "startHour": 16
-    },
-    {
-      "title": "InterVarsity Small Group",
-      "source": "Princeton University",
-      "dateLabel": "Nov 18",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-7",
       "tags": [],
       "isoDate": "2026-11-18",
       "startHour": 16
@@ -2225,17 +2169,6 @@
       "startHour": 12
     },
     {
-      "title": "Investment Decision-Making in Critical Mineral Supply Chains under Geological, Economic, Regulatory and Geopolitical Uncertainty",
-      "source": "Princeton University",
-      "dateLabel": "Nov 19",
-      "timeLabel": "12:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/investment-decision-making-critical-mineral-supply-chains-under-geological-economic",
-      "tags": [],
-      "isoDate": "2026-11-19",
-      "startHour": 12
-    },
-    {
       "title": "After Noon Concert Series",
       "source": "Princeton University",
       "dateLabel": "Nov 19",
@@ -2245,6 +2178,17 @@
       "tags": [
         "culture"
       ],
+      "isoDate": "2026-11-19",
+      "startHour": 12
+    },
+    {
+      "title": "Investment Decision-Making in Critical Mineral Supply Chains under Geological, Economic, Regulatory and Geopolitical Uncertainty",
+      "source": "Princeton University",
+      "dateLabel": "Nov 19",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/investment-decision-making-critical-mineral-supply-chains-under-geological-economic",
+      "tags": [],
       "isoDate": "2026-11-19",
       "startHour": 12
     },
@@ -2525,7 +2469,7 @@
       "iso": "2026-11-13",
       "label": "Nov 13",
       "weekday": "Fri",
-      "count": 19
+      "count": 17
     },
     {
       "iso": "2026-11-14",
@@ -2543,13 +2487,13 @@
       "iso": "2026-11-16",
       "label": "Nov 16",
       "weekday": "Mon",
-      "count": 27
+      "count": 26
     },
     {
       "iso": "2026-11-17",
       "label": "Nov 17",
       "weekday": "Tue",
-      "count": 32
+      "count": 31
     },
     {
       "iso": "2026-11-18",
@@ -2571,7 +2515,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Light Rain, 41F"
+      "detail": "Light Rain Likely then Mostly Cloudy, 31F"
     },
     {
       "name": "Princeton University Events",
@@ -2589,13 +2533,13 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "12 calendar items"
+      "detail": "11 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "45 showtimes"
+      "detail": "43 showtimes"
     }
   ]
 }
