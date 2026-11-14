@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-14T15:48:00.077Z",
+  "generatedAt": "2026-11-14T22:22:24.752Z",
   "weather": {
     "temperature": 47,
     "shortForecast": "Mostly Cloudy",
-    "wind": "10 to 15 mph NW",
-    "detailedForecast": "Mostly cloudy, with a high near 47. Northwest wind 10 to 15 mph, with gusts as high as 30 mph.",
+    "wind": "10 mph W",
+    "detailedForecast": "Mostly cloudy, with a high near 47. West wind around 10 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -125,34 +125,6 @@
       "startHour": 11
     },
     {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 14",
-      "timeLabel": "12:30 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-14",
-      "startHour": 12
-    },
-    {
-      "title": "Wild Horse Nine",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 14",
-      "timeLabel": "12:45 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-14",
-      "startHour": 12
-    },
-    {
       "title": "Earth City Building Workshop",
       "source": "Princeton University",
       "dateLabel": "Nov 14",
@@ -228,20 +200,6 @@
       "startHour": 15
     },
     {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 14",
-      "timeLabel": "3:30 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-14",
-      "startHour": 15
-    },
-    {
       "title": "Tango Practica",
       "source": "Princeton University",
       "dateLabel": "Nov 14",
@@ -249,20 +207,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/tango-practica-21",
       "tags": [],
-      "isoDate": "2026-11-14",
-      "startHour": 16
-    },
-    {
-      "title": "Wild Horse Nine",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 14",
-      "timeLabel": "4:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
-      "tags": [
-        "culture",
-        "rain"
-      ],
       "isoDate": "2026-11-14",
       "startHour": 16
     },
@@ -2504,7 +2448,7 @@
       "iso": "2026-11-14",
       "label": "Nov 14",
       "weekday": "Sat",
-      "count": 23
+      "count": 19
     },
     {
       "iso": "2026-11-15",
@@ -2574,7 +2518,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "43 showtimes"
+      "detail": "39 showtimes"
     }
   ]
 }
