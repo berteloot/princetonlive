@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-15T16:20:02.171Z",
+  "generatedAt": "2026-11-15T22:47:37.918Z",
   "weather": {
-    "temperature": 53,
-    "shortForecast": "Mostly Sunny",
-    "wind": "10 to 15 mph NW",
-    "detailedForecast": "Mostly sunny. High near 53, with temperatures falling to around 47 in the afternoon. Northwest wind 10 to 15 mph.",
+    "temperature": 49,
+    "shortForecast": "Partly Sunny",
+    "wind": "5 mph NW",
+    "detailedForecast": "Partly sunny, with a high near 49. Northwest wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -43,19 +43,6 @@
       "startHour": 10
     },
     {
-      "title": "Food Insecurity Task Force: Princeton Mutual Aid Network Senior Food Deliveries",
-      "source": "Municipality of Princeton",
-      "dateLabel": "November 15, 2026",
-      "timeLabel": "10:00 AM - 11:30 AM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=3953",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-11-15",
-      "startHour": 10
-    },
-    {
       "title": "Worship Service in the University Chapel",
       "source": "Princeton University",
       "dateLabel": "Nov 15",
@@ -65,34 +52,6 @@
       "tags": [],
       "isoDate": "2026-11-15",
       "startHour": 11
-    },
-    {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 15",
-      "timeLabel": "12:30 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-15",
-      "startHour": 12
-    },
-    {
-      "title": "Wild Horse Nine",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 15",
-      "timeLabel": "12:45 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-15",
-      "startHour": 12
     },
     {
       "title": "NASA Space Apps Challenge Hackathon",
@@ -166,20 +125,6 @@
       "startHour": 15
     },
     {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 15",
-      "timeLabel": "3:30 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-15",
-      "startHour": 15
-    },
-    {
       "title": "AI Research Talk with Karina Nguyen @ Thoughtful (ex openai, ex anthropic)",
       "source": "Princeton University",
       "dateLabel": "Nov 15",
@@ -188,20 +133,6 @@
       "url": "https://www.princeton.edu/events/2026/ai-research-talk-karina-nguyen-thoughtful-ex-openai-ex-anthropic",
       "tags": [
         "culture"
-      ],
-      "isoDate": "2026-11-15",
-      "startHour": 16
-    },
-    {
-      "title": "Wild Horse Nine",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 15",
-      "timeLabel": "4:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
-      "tags": [
-        "culture",
-        "rain"
       ],
       "isoDate": "2026-11-15",
       "startHour": 16
@@ -2470,7 +2401,7 @@
       "iso": "2026-11-15",
       "label": "Nov 15",
       "weekday": "Sun",
-      "count": 16
+      "count": 11
     },
     {
       "iso": "2026-11-16",
@@ -2516,7 +2447,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Sunny, 53F"
+      "detail": "Partly Sunny, 49F"
     },
     {
       "name": "Princeton University Events",
@@ -2534,13 +2465,13 @@
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "11 calendar items"
+      "detail": "10 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "40 showtimes"
+      "detail": "36 showtimes"
     }
   ]
 }
