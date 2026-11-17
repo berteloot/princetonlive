@@ -1,172 +1,15 @@
 {
-  "generatedAt": "2026-11-17T03:51:53.609Z",
+  "generatedAt": "2026-11-17T15:58:08.632Z",
   "weather": {
-    "temperature": 30,
-    "shortForecast": "Clear",
-    "wind": "0 mph ",
-    "detailedForecast": "Clear, with a low around 30. Northwest wind around 0 mph.",
+    "temperature": 57,
+    "shortForecast": "Sunny",
+    "wind": "5 mph W",
+    "detailedForecast": "Sunny. High near 57, with temperatures falling to around 51 in the afternoon. West wind around 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Tech Help for Seniors",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 16",
-      "timeLabel": "9:00am - 12:00pm",
-      "location": "Princeton Public Library - Tech Center",
-      "url": "https://princetonlibrary.libnet.info/event/17243083",
-      "tags": [
-        "new",
-        "practical"
-      ],
-      "isoDate": "2026-11-16",
-      "startHour": 9
-    },
-    {
-      "title": "Workshop: Writers Room",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 16",
-      "timeLabel": "10:00am - 12:00pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/15466921",
-      "tags": [
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-16",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Playtime Fun: Animal Adventures",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 16",
-      "timeLabel": "10:30am - 12:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14760991",
-      "tags": [
-        "new",
-        "family",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-16",
-      "startHour": 10
-    },
-    {
-      "title": "English Conversation (in person)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 16",
-      "timeLabel": "12:00pm - 1:30pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/16932164",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-11-16",
-      "startHour": 12
-    },
-    {
-      "title": "Tech: What To Do If You Think You've Been Hacked",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 16",
-      "timeLabel": "1:00pm - 2:30pm",
-      "location": "Princeton Public Library - Tech Center",
-      "url": "https://princetonlibrary.libnet.info/event/17770024",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-16",
-      "startHour": 13
-    },
-    {
-      "title": "Kids & Teens: Homework Help",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 16",
-      "timeLabel": "3:30pm - 6:00pm",
-      "location": "Princeton Public Library - CoLab Space",
-      "url": "https://princetonlibrary.libnet.info/event/17530964",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-11-16",
-      "startHour": 15
-    },
-    {
-      "title": "Council Virtual Closed Session - Cancelled",
-      "source": "Municipality of Princeton",
-      "dateLabel": "November 16, 2026",
-      "timeLabel": "03:30 PM - 11:59 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7954",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-11-16",
-      "startHour": 15
-    },
-    {
-      "title": "Kids: eSTEAM Club: Forensics",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 16",
-      "timeLabel": "4:00pm - 5:00pm",
-      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
-      "url": "https://princetonlibrary.libnet.info/event/17635022",
-      "tags": [
-        "new",
-        "family",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-16",
-      "startHour": 16
-    },
-    {
-      "title": "Catherine Project Weekly Book Discussion Series",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 16",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/17155822",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-11-16",
-      "startHour": 16
-    },
-    {
-      "title": "Opening Reception: \"New Jersey Icons\"",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 16",
-      "timeLabel": "6:30pm - 7:30pm",
-      "location": "Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/17724572",
-      "tags": [
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-11-16",
-      "startHour": 18
-    },
-    {
-      "title": "Zoning Board of Adjustment - Special Meeting - via Zoom",
-      "source": "Municipality of Princeton",
-      "dateLabel": "November 16, 2026",
-      "timeLabel": "07:30 PM - 11:59 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=8139",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-16",
-      "startHour": 19
-    },
     {
       "title": "Site: Exhibition by Carlos Agredano",
       "source": "Princeton University",
@@ -253,19 +96,6 @@
       "startHour": 11
     },
     {
-      "title": "John Guy | Piprahwa and Relic Practice in Early Buddhist India - An Archaeological Perspective",
-      "source": "Princeton University",
-      "dateLabel": "Nov 17",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/john-guy-piprahwa-and-relic-practice-early-buddhist-india-archaeological-perspective",
-      "tags": [
-        "new"
-      ],
-      "isoDate": "2026-11-17",
-      "startHour": 12
-    },
-    {
       "title": "PLAS Lecture Series",
       "source": "Princeton University",
       "dateLabel": "Nov 17",
@@ -274,6 +104,19 @@
       "url": "https://www.princeton.edu/events/2026/plas-lecture-series-5",
       "tags": [
         "culture"
+      ],
+      "isoDate": "2026-11-17",
+      "startHour": 12
+    },
+    {
+      "title": "John Guy | Piprahwa and Relic Practice in Early Buddhist India - An Archaeological Perspective",
+      "source": "Princeton University",
+      "dateLabel": "Nov 17",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/john-guy-piprahwa-and-relic-practice-early-buddhist-india-archaeological-perspective",
+      "tags": [
+        "new"
       ],
       "isoDate": "2026-11-17",
       "startHour": 12
@@ -461,20 +304,6 @@
       "startHour": 18
     },
     {
-      "title": "Celebrate Hispanic Heritage/Celebre la Herencia Hispana",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 17",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/17292366",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-11-17",
-      "startHour": 18
-    },
-    {
       "title": "Panel: Funding Your Future: Paying for Care as you Age",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 17",
@@ -483,6 +312,20 @@
       "url": "https://princetonlibrary.libnet.info/event/17563371",
       "tags": [
         "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-17",
+      "startHour": 18
+    },
+    {
+      "title": "Celebrate Hispanic Heritage/Celebre la Herencia Hispana",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 17",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/17292366",
+      "tags": [
+        "family",
         "practical"
       ],
       "isoDate": "2026-11-17",
@@ -766,6 +609,17 @@
       "startHour": 13
     },
     {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Nov 18",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-20",
+      "tags": [],
+      "isoDate": "2026-11-18",
+      "startHour": 15
+    },
+    {
       "title": "Pace Center Summer Internships Drop-in",
       "source": "Princeton University",
       "dateLabel": "Nov 18",
@@ -775,17 +629,6 @@
       "tags": [
         "new"
       ],
-      "isoDate": "2026-11-18",
-      "startHour": 15
-    },
-    {
-      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
-      "source": "Princeton University",
-      "dateLabel": "Nov 18",
-      "timeLabel": "3:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-20",
-      "tags": [],
       "isoDate": "2026-11-18",
       "startHour": 15
     },
@@ -900,17 +743,6 @@
       "startHour": 16
     },
     {
-      "title": "Defending the Least Dangerous Branch: Judicial Security and Independence in the 21st Century",
-      "source": "Princeton University",
-      "dateLabel": "Nov 18",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/defending-least-dangerous-branch-judicial-security-and-independence-21st-century",
-      "tags": [],
-      "isoDate": "2026-11-18",
-      "startHour": 16
-    },
-    {
       "title": "Norman Finkelstein Lecture",
       "source": "Princeton University",
       "dateLabel": "Nov 18",
@@ -924,16 +756,24 @@
       "startHour": 16
     },
     {
-      "title": "Crime, Punishment, and Civil Rights: The Future of Criminal Justice Reform After the Midterms",
+      "title": "Defending the Least Dangerous Branch: Judicial Security and Independence in the 21st Century",
       "source": "Princeton University",
       "dateLabel": "Nov 18",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/crime-punishment-and-civil-rights-future-criminal-justice-reform-after-midterms",
-      "tags": [
-        "culture",
-        "rain"
-      ],
+      "url": "https://www.princeton.edu/events/2026/defending-least-dangerous-branch-judicial-security-and-independence-21st-century",
+      "tags": [],
+      "isoDate": "2026-11-18",
+      "startHour": 16
+    },
+    {
+      "title": "InterVarsity Small Group",
+      "source": "Princeton University",
+      "dateLabel": "Nov 18",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-7",
+      "tags": [],
       "isoDate": "2026-11-18",
       "startHour": 16
     },
@@ -949,13 +789,16 @@
       "startHour": 16
     },
     {
-      "title": "InterVarsity Small Group",
+      "title": "Crime, Punishment, and Civil Rights: The Future of Criminal Justice Reform After the Midterms",
       "source": "Princeton University",
       "dateLabel": "Nov 18",
       "timeLabel": "4:30 PM",
       "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-7",
-      "tags": [],
+      "url": "https://www.princeton.edu/events/2026/crime-punishment-and-civil-rights-future-criminal-justice-reform-after-midterms",
+      "tags": [
+        "culture",
+        "rain"
+      ],
       "isoDate": "2026-11-18",
       "startHour": 16
     },
@@ -988,6 +831,20 @@
       "startHour": 17
     },
     {
+      "title": "Board of Trustees Meeting",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 18",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Newsroom",
+      "url": "https://princetonlibrary.libnet.info/event/15121285",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-18",
+      "startHour": 18
+    },
+    {
       "title": "Learn English at the Library (High Beginner)",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 18",
@@ -997,20 +854,6 @@
       "tags": [
         "new",
         "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-18",
-      "startHour": 18
-    },
-    {
-      "title": "Board of Trustees Meeting",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 18",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Newsroom",
-      "url": "https://princetonlibrary.libnet.info/event/15121285",
-      "tags": [
         "rain",
         "practical"
       ],
@@ -1198,17 +1041,6 @@
       "startHour": 12
     },
     {
-      "title": "Investment Decision-Making in Critical Mineral Supply Chains under Geological, Economic, Regulatory and Geopolitical Uncertainty",
-      "source": "Princeton University",
-      "dateLabel": "Nov 19",
-      "timeLabel": "12:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/investment-decision-making-critical-mineral-supply-chains-under-geological-economic",
-      "tags": [],
-      "isoDate": "2026-11-19",
-      "startHour": 12
-    },
-    {
       "title": "After Noon Concert Series",
       "source": "Princeton University",
       "dateLabel": "Nov 19",
@@ -1218,6 +1050,17 @@
       "tags": [
         "culture"
       ],
+      "isoDate": "2026-11-19",
+      "startHour": 12
+    },
+    {
+      "title": "Investment Decision-Making in Critical Mineral Supply Chains under Geological, Economic, Regulatory and Geopolitical Uncertainty",
+      "source": "Princeton University",
+      "dateLabel": "Nov 19",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/investment-decision-making-critical-mineral-supply-chains-under-geological-economic",
+      "tags": [],
       "isoDate": "2026-11-19",
       "startHour": 12
     },
@@ -1338,6 +1181,20 @@
       "startHour": 17
     },
     {
+      "title": "Tech: Advanced Adobe Photoshop",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 19",
+      "timeLabel": "5:30pm - 7:30pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/17610820",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-19",
+      "startHour": 17
+    },
+    {
       "title": "Crafts: Stitch Club Princeton",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 19",
@@ -1347,20 +1204,6 @@
       "tags": [
         "new",
         "culture",
-        "practical"
-      ],
-      "isoDate": "2026-11-19",
-      "startHour": 17
-    },
-    {
-      "title": "Tech: Advanced Adobe Photoshop",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 19",
-      "timeLabel": "5:30pm - 7:30pm",
-      "location": "Princeton Public Library - Tech Center",
-      "url": "https://princetonlibrary.libnet.info/event/17610820",
-      "tags": [
-        "rain",
         "practical"
       ],
       "isoDate": "2026-11-19",
@@ -1508,20 +1351,6 @@
       "startHour": 7
     },
     {
-      "title": "Tour of Firestone Library",
-      "source": "Princeton University",
-      "dateLabel": "Nov 20",
-      "timeLabel": "9:30 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/tour-firestone-library-0",
-      "tags": [
-        "new",
-        "rain"
-      ],
-      "isoDate": "2026-11-20",
-      "startHour": 9
-    },
-    {
       "title": "Do Not Sit: Exhibition by Samuel Elijah Lee and Grace Kaneshiro",
       "source": "Princeton University",
       "dateLabel": "Nov 20",
@@ -1531,6 +1360,20 @@
       "tags": [
         "new",
         "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-20",
+      "startHour": 9
+    },
+    {
+      "title": "Tour of Firestone Library",
+      "source": "Princeton University",
+      "dateLabel": "Nov 20",
+      "timeLabel": "9:30 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/tour-firestone-library-0",
+      "tags": [
+        "new",
         "rain"
       ],
       "isoDate": "2026-11-20",
@@ -1726,6 +1569,20 @@
       "startHour": 19
     },
     {
+      "title": "PSA Game Night",
+      "source": "Princeton University",
+      "dateLabel": "Nov 20",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/psa-game-night",
+      "tags": [
+        "new",
+        "culture"
+      ],
+      "isoDate": "2026-11-20",
+      "startHour": 20
+    },
+    {
       "title": "At the Wedding by Bryna Turner",
       "source": "Princeton University",
       "dateLabel": "Nov 20",
@@ -1798,20 +1655,6 @@
       "startHour": 10
     },
     {
-      "title": "Tiger Tech Help",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 21",
-      "timeLabel": "11:00am - 1:00pm",
-      "location": "Princeton Public Library - Tech Center",
-      "url": "https://princetonlibrary.libnet.info/event/17469704",
-      "tags": [
-        "new",
-        "practical"
-      ],
-      "isoDate": "2026-11-21",
-      "startHour": 11
-    },
-    {
       "title": "Workshop: Zentangle with Mimi",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 21",
@@ -1822,6 +1665,20 @@
         "family",
         "culture",
         "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-21",
+      "startHour": 11
+    },
+    {
+      "title": "Tiger Tech Help",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 21",
+      "timeLabel": "11:00am - 1:00pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/17469704",
+      "tags": [
+        "new",
         "practical"
       ],
       "isoDate": "2026-11-21",
@@ -2234,15 +2091,214 @@
       "tags": [],
       "isoDate": "2026-11-22",
       "startHour": 19
+    },
+    {
+      "title": "Site: Exhibition by Carlos Agredano",
+      "source": "Princeton University",
+      "dateLabel": "Nov 23",
+      "timeLabel": "7:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/site-exhibition-carlos-agredano-12",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-23",
+      "startHour": 7
+    },
+    {
+      "title": "Tech Help for Seniors",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 23",
+      "timeLabel": "9:00am - 12:00pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/17243082",
+      "tags": [
+        "new",
+        "practical"
+      ],
+      "isoDate": "2026-11-23",
+      "startHour": 9
+    },
+    {
+      "title": "Kids: Playtime Fun: Farm Friends",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 23",
+      "timeLabel": "10:30am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14760926",
+      "tags": [
+        "new",
+        "family",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-23",
+      "startHour": 10
+    },
+    {
+      "title": "RCA Information Session",
+      "source": "Princeton University",
+      "dateLabel": "Nov 23",
+      "timeLabel": "11:45 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/rca-information-session",
+      "tags": [],
+      "isoDate": "2026-11-23",
+      "startHour": 11
+    },
+    {
+      "title": "English Conversation (in person)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 23",
+      "timeLabel": "12:00pm - 1:30pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/16932165",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-11-23",
+      "startHour": 12
+    },
+    {
+      "title": "MOL530 Butler Seminar Series",
+      "source": "Princeton University",
+      "dateLabel": "Nov 23",
+      "timeLabel": "12:15 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mol530-butler-seminar-series",
+      "tags": [],
+      "isoDate": "2026-11-23",
+      "startHour": 12
+    },
+    {
+      "title": "Kids: Eco Explorers",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 23",
+      "timeLabel": "3:30pm - 4:15pm",
+      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "url": "https://princetonlibrary.libnet.info/event/17479793",
+      "tags": [
+        "family",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-23",
+      "startHour": 15
+    },
+    {
+      "title": "Catherine Project Weekly Book Discussion Series",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 23",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/17155823",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-23",
+      "startHour": 16
+    },
+    {
+      "title": "I Play Rocky",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 23",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=i-play-rocky",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-23",
+      "startHour": 16
+    },
+    {
+      "title": "Civic Leadership Council (Pace) Weekly Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Nov 23",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/civic-leadership-council-pace-weekly-meeting-10",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-23",
+      "startHour": 16
+    },
+    {
+      "title": "Catherine Project Book Discussion Series",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 23",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/17294111",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-23",
+      "startHour": 18
+    },
+    {
+      "title": "Community Thanksgiving Worship Service",
+      "source": "Princeton University",
+      "dateLabel": "Nov 23",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/community-thanksgiving-worship-service",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-11-23",
+      "startHour": 19
+    },
+    {
+      "title": "Council Meeting",
+      "source": "Municipality of Princeton",
+      "dateLabel": "November 23, 2026",
+      "timeLabel": "07:00 PM - 11:59 PM",
+      "location": "Princeton, NJ 08540",
+      "url": "https://www.princetonnj.gov/Calendar.aspx?EID=7933",
+      "tags": [
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-23",
+      "startHour": 19
+    },
+    {
+      "title": "I Play Rocky",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 23",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=i-play-rocky",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-23",
+      "startHour": 19
+    },
+    {
+      "title": "PCF Frosh Bible study",
+      "source": "Princeton University",
+      "dateLabel": "Nov 23",
+      "timeLabel": "7:45 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/pcf-frosh-bible-study-8",
+      "tags": [
+        "new"
+      ],
+      "isoDate": "2026-11-23",
+      "startHour": 19
     }
   ],
   "days": [
-    {
-      "iso": "2026-11-16",
-      "label": "Nov 16",
-      "weekday": "Mon",
-      "count": 11
-    },
     {
       "iso": "2026-11-17",
       "label": "Nov 17",
@@ -2265,7 +2321,7 @@
       "iso": "2026-11-20",
       "label": "Nov 20",
       "weekday": "Fri",
-      "count": 19
+      "count": 20
     },
     {
       "iso": "2026-11-21",
@@ -2278,6 +2334,12 @@
       "label": "Nov 22",
       "weekday": "Sun",
       "count": 14
+    },
+    {
+      "iso": "2026-11-23",
+      "label": "Nov 23",
+      "weekday": "Mon",
+      "count": 15
     }
   ],
   "windowDays": 7,
@@ -2287,7 +2349,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Clear, 30F"
+      "detail": "Sunny, 57F"
     },
     {
       "name": "Princeton University Events",
@@ -2299,19 +2361,19 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "58 events"
+      "detail": "55 events"
     },
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "10 calendar items"
+      "detail": "8 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "31 showtimes"
+      "detail": "32 showtimes"
     }
   ]
 }
