@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-18T11:39:26.493Z",
+  "generatedAt": "2026-11-18T20:29:13.249Z",
   "weather": {
     "temperature": 61,
     "shortForecast": "Sunny",
     "wind": "0 to 5 mph W",
-    "detailedForecast": "Sunny. High near 61, with temperatures falling to around 52 in the afternoon. West wind 0 to 5 mph.",
+    "detailedForecast": "Sunny. High near 61, with temperatures falling to around 55 in the afternoon. West wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -84,6 +84,19 @@
       "startHour": 10
     },
     {
+      "title": "Grad school staff meeting",
+      "source": "Princeton University",
+      "dateLabel": "Nov 18",
+      "timeLabel": "11:30 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/grad-school-staff-meeting",
+      "tags": [
+        "rain"
+      ],
+      "isoDate": "2026-11-18",
+      "startHour": 11
+    },
+    {
       "title": "Kids: Baby Storytime",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 18",
@@ -119,34 +132,6 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/st-andrews-university-info-session",
       "tags": [],
-      "isoDate": "2026-11-18",
-      "startHour": 12
-    },
-    {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 18",
-      "timeLabel": "12:30 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-18",
-      "startHour": 12
-    },
-    {
-      "title": "Wild Horse Nine",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 18",
-      "timeLabel": "12:45 PM (OC)",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=wild-horse-nine",
-      "tags": [
-        "culture",
-        "rain"
-      ],
       "isoDate": "2026-11-18",
       "startHour": 12
     },
@@ -323,20 +308,6 @@
       "startHour": 16
     },
     {
-      "title": "Crime, Punishment, and Civil Rights: The Future of Criminal Justice Reform After the Midterms",
-      "source": "Princeton University",
-      "dateLabel": "Nov 18",
-      "timeLabel": "4:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/crime-punishment-and-civil-rights-future-criminal-justice-reform-after-midterms",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-18",
-      "startHour": 16
-    },
-    {
       "title": "InterVarsity Small Group",
       "source": "Princeton University",
       "dateLabel": "Nov 18",
@@ -355,6 +326,20 @@
       "location": "Princeton campus",
       "url": "https://www.princeton.edu/events/2026/stablecoins-opportunities-and-risks",
       "tags": [],
+      "isoDate": "2026-11-18",
+      "startHour": 16
+    },
+    {
+      "title": "Crime, Punishment, and Civil Rights: The Future of Criminal Justice Reform After the Midterms",
+      "source": "Princeton University",
+      "dateLabel": "Nov 18",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/crime-punishment-and-civil-rights-future-criminal-justice-reform-after-midterms",
+      "tags": [
+        "culture",
+        "rain"
+      ],
       "isoDate": "2026-11-18",
       "startHour": 16
     },
@@ -766,19 +751,6 @@
       "startHour": 17
     },
     {
-      "title": "Thomas Trezise is joined in conversation with André Benhaïm. \"Beginning Again: A Spouse’s Story of Life after Trauma\"",
-      "source": "Princeton University",
-      "dateLabel": "Nov 19",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/thomas-trezise-joined-conversation-andre-benhaim-beginning-again-spouses-story-life",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-11-19",
-      "startHour": 18
-    },
-    {
       "title": "T-Shirt Making Workshop",
       "source": "Princeton University",
       "dateLabel": "Nov 19",
@@ -787,6 +759,19 @@
       "url": "https://www.princeton.edu/events/2026/t-shirt-making-workshop-0",
       "tags": [
         "rain"
+      ],
+      "isoDate": "2026-11-19",
+      "startHour": 18
+    },
+    {
+      "title": "Thomas Trezise is joined in conversation with André Benhaïm. \"Beginning Again: A Spouse’s Story of Life after Trauma\"",
+      "source": "Princeton University",
+      "dateLabel": "Nov 19",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/thomas-trezise-joined-conversation-andre-benhaim-beginning-again-spouses-story-life",
+      "tags": [
+        "culture"
       ],
       "isoDate": "2026-11-19",
       "startHour": 18
@@ -1723,6 +1708,17 @@
       "startHour": 16
     },
     {
+      "title": "Kindred Spirit Fall Arch",
+      "source": "Princeton University",
+      "dateLabel": "Nov 22",
+      "timeLabel": "6:45 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/kindred-spirit-fall-arch",
+      "tags": [],
+      "isoDate": "2026-11-22",
+      "startHour": 18
+    },
+    {
       "title": "I Play Rocky",
       "source": "Garden Theatre",
       "dateLabel": "Nov 22",
@@ -2188,20 +2184,6 @@
       "startHour": 18
     },
     {
-      "title": "Princeton Salsa Club Classes",
-      "source": "Princeton University",
-      "dateLabel": "Nov 24",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-salsa-club-classes-0",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-24",
-      "startHour": 19
-    },
-    {
       "title": "LDSSA Institute Class",
       "source": "Princeton University",
       "dateLabel": "Nov 24",
@@ -2210,6 +2192,20 @@
       "url": "https://www.princeton.edu/events/2026/ldssa-institute-class-9",
       "tags": [
         "new",
+        "rain"
+      ],
+      "isoDate": "2026-11-24",
+      "startHour": 19
+    },
+    {
+      "title": "Princeton Salsa Club Classes",
+      "source": "Princeton University",
+      "dateLabel": "Nov 24",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/princeton-salsa-club-classes-0",
+      "tags": [
+        "culture",
         "rain"
       ],
       "isoDate": "2026-11-24",
@@ -2274,7 +2270,7 @@
       "iso": "2026-11-18",
       "label": "Nov 18",
       "weekday": "Wed",
-      "count": 35
+      "count": 34
     },
     {
       "iso": "2026-11-19",
@@ -2298,7 +2294,7 @@
       "iso": "2026-11-22",
       "label": "Nov 22",
       "weekday": "Sun",
-      "count": 16
+      "count": 17
     },
     {
       "iso": "2026-11-23",
@@ -2344,7 +2340,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "44 showtimes"
+      "detail": "42 showtimes"
     }
   ]
 }
