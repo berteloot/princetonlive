@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-19T11:37:04.131Z",
+  "generatedAt": "2026-11-19T20:33:52.422Z",
   "weather": {
-    "temperature": 65,
-    "shortForecast": "Patchy Freezing Fog then Sunny",
-    "wind": "0 to 5 mph W",
-    "detailedForecast": "Patchy freezing fog before 7am. Sunny. High near 65, with temperatures falling to around 56 in the afternoon. West wind 0 to 5 mph.",
+    "temperature": 66,
+    "shortForecast": "Sunny",
+    "wind": "0 mph ",
+    "detailedForecast": "Sunny. High near 66, with temperatures falling to around 58 in the afternoon. Southwest wind around 0 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -123,6 +123,17 @@
       "startHour": 12
     },
     {
+      "title": "Investment Decision-Making in Critical Mineral Supply Chains under Geological, Economic, Regulatory and Geopolitical Uncertainty",
+      "source": "Princeton University",
+      "dateLabel": "Nov 19",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/investment-decision-making-critical-mineral-supply-chains-under-geological-economic",
+      "tags": [],
+      "isoDate": "2026-11-19",
+      "startHour": 12
+    },
+    {
       "title": "After Noon Concert Series",
       "source": "Princeton University",
       "dateLabel": "Nov 19",
@@ -132,17 +143,6 @@
       "tags": [
         "culture"
       ],
-      "isoDate": "2026-11-19",
-      "startHour": 12
-    },
-    {
-      "title": "Investment Decision-Making in Critical Mineral Supply Chains under Geological, Economic, Regulatory and Geopolitical Uncertainty",
-      "source": "Princeton University",
-      "dateLabel": "Nov 19",
-      "timeLabel": "12:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/investment-decision-making-critical-mineral-supply-chains-under-geological-economic",
-      "tags": [],
       "isoDate": "2026-11-19",
       "startHour": 12
     },
@@ -292,19 +292,6 @@
       "startHour": 17
     },
     {
-      "title": "T-Shirt Making Workshop",
-      "source": "Princeton University",
-      "dateLabel": "Nov 19",
-      "timeLabel": "6:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/t-shirt-making-workshop-0",
-      "tags": [
-        "rain"
-      ],
-      "isoDate": "2026-11-19",
-      "startHour": 18
-    },
-    {
       "title": "Thomas Trezise is joined in conversation with André Benhaïm. \"Beginning Again: A Spouse’s Story of Life after Trauma\"",
       "source": "Princeton University",
       "dateLabel": "Nov 19",
@@ -313,6 +300,19 @@
       "url": "https://www.princeton.edu/events/2026/thomas-trezise-joined-conversation-andre-benhaim-beginning-again-spouses-story-life",
       "tags": [
         "culture"
+      ],
+      "isoDate": "2026-11-19",
+      "startHour": 18
+    },
+    {
+      "title": "T-Shirt Making Workshop",
+      "source": "Princeton University",
+      "dateLabel": "Nov 19",
+      "timeLabel": "6:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/t-shirt-making-workshop-0",
+      "tags": [
+        "rain"
       ],
       "isoDate": "2026-11-19",
       "startHour": 18
@@ -695,20 +695,6 @@
       "startHour": 20
     },
     {
-      "title": "PSA Game Night",
-      "source": "Princeton University",
-      "dateLabel": "Nov 20",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/psa-game-night",
-      "tags": [
-        "new",
-        "culture"
-      ],
-      "isoDate": "2026-11-20",
-      "startHour": 20
-    },
-    {
       "title": "2026 Princeton Dance Festival",
       "source": "Princeton University",
       "dateLabel": "Nov 20",
@@ -721,6 +707,20 @@
         "culture",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-11-20",
+      "startHour": 20
+    },
+    {
+      "title": "PSA Game Night",
+      "source": "Princeton University",
+      "dateLabel": "Nov 20",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/psa-game-night",
+      "tags": [
+        "new",
+        "culture"
       ],
       "isoDate": "2026-11-20",
       "startHour": 20
@@ -1700,20 +1700,6 @@
       "startHour": 18
     },
     {
-      "title": "LDSSA Institute Class",
-      "source": "Princeton University",
-      "dateLabel": "Nov 24",
-      "timeLabel": "7:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/ldssa-institute-class-9",
-      "tags": [
-        "new",
-        "rain"
-      ],
-      "isoDate": "2026-11-24",
-      "startHour": 19
-    },
-    {
       "title": "Princeton Salsa Club Classes",
       "source": "Princeton University",
       "dateLabel": "Nov 24",
@@ -1722,6 +1708,20 @@
       "url": "https://www.princeton.edu/events/2026/princeton-salsa-club-classes-0",
       "tags": [
         "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-24",
+      "startHour": 19
+    },
+    {
+      "title": "LDSSA Institute Class",
+      "source": "Princeton University",
+      "dateLabel": "Nov 24",
+      "timeLabel": "7:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/ldssa-institute-class-9",
+      "tags": [
+        "new",
         "rain"
       ],
       "isoDate": "2026-11-24",
@@ -2054,7 +2054,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Patchy Freezing Fog then Sunny, 65F"
+      "detail": "Sunny, 66F"
     },
     {
       "name": "Princeton University Events",
