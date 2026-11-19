@@ -1,217 +1,15 @@
 {
-  "generatedAt": "2026-11-19T02:32:40.301Z",
+  "generatedAt": "2026-11-19T11:37:04.131Z",
   "weather": {
-    "temperature": 31,
-    "shortForecast": "Clear then Patchy Fog",
-    "wind": "0 mph ",
-    "detailedForecast": "Patchy fog between 1am and 5am, then patchy freezing fog. Clear, with a low around 31. West wind around 0 mph.",
+    "temperature": 65,
+    "shortForecast": "Patchy Freezing Fog then Sunny",
+    "wind": "0 to 5 mph W",
+    "detailedForecast": "Patchy freezing fog before 7am. Sunny. High near 65, with temperatures falling to around 56 in the afternoon. West wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Drop in and Knit",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 18",
-      "timeLabel": "10:00am - 12:00pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/17144892",
-      "tags": [
-        "new",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-11-18",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Storytime!",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 18",
-      "timeLabel": "10:30am - 11:00am",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14660968",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-11-18",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Baby Storytime",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 18",
-      "timeLabel": "11:30am - 12:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14662402",
-      "tags": [
-        "family"
-      ],
-      "isoDate": "2026-11-18",
-      "startHour": 11
-    },
-    {
-      "title": "Kids: Baby Play Group",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 18",
-      "timeLabel": "12:00pm - 1:00pm",
-      "location": "Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/14662335",
-      "tags": [
-        "new",
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-11-18",
-      "startHour": 12
-    },
-    {
-      "title": "Tech: Finding Health Information Online",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 18",
-      "timeLabel": "1:00pm - 2:00pm",
-      "location": "Princeton Public Library - Tech Center",
-      "url": "https://princetonlibrary.libnet.info/event/17611292",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-18",
-      "startHour": 13
-    },
-    {
-      "title": "Film: \"The Verdict\"",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 18",
-      "timeLabel": "3:00pm - 5:00pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/17636006",
-      "tags": [
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-18",
-      "startHour": 15
-    },
-    {
-      "title": "Little Artists: Leaf Garland",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 18",
-      "timeLabel": "3:30pm - 4:30pm",
-      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
-      "url": "https://princetonlibrary.libnet.info/event/17236972",
-      "tags": [
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-18",
-      "startHour": 15
-    },
-    {
-      "title": "Kids & Teens: Homework Help",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 18",
-      "timeLabel": "3:30pm - 6:00pm",
-      "location": "Princeton Public Library - CoLab Space",
-      "url": "https://princetonlibrary.libnet.info/event/17507796",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-11-18",
-      "startHour": 15
-    },
-    {
-      "title": "English Conversation (virtual)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 18",
-      "timeLabel": "4:00pm - 5:30pm",
-      "location": "Virtual - Google Meet",
-      "url": "https://princetonlibrary.libnet.info/event/16837163",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-11-18",
-      "startHour": 16
-    },
-    {
-      "title": "Journaling Club",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 18",
-      "timeLabel": "5:00pm - 6:00pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/16862227",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-11-18",
-      "startHour": 17
-    },
-    {
-      "title": "Board of Trustees Meeting",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 18",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/15121285",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-18",
-      "startHour": 18
-    },
-    {
-      "title": "Learn English at the Library (High Beginner)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 18",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library - Tower Room",
-      "url": "https://princetonlibrary.libnet.info/event/17154699",
-      "tags": [
-        "new",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-18",
-      "startHour": 18
-    },
-    {
-      "title": "Library Board of Trustees Meeting",
-      "source": "Municipality of Princeton",
-      "dateLabel": "November 18, 2026",
-      "timeLabel": "06:00 PM - 11:59 PM",
-      "location": "65 Witherspoon StreetPrinceton, NJ 08540",
-      "url": "https://www.princetonnj.gov/m/calendar/event/detail/7832",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-18",
-      "startHour": 18
-    },
-    {
-      "title": "Princeton Housing Authority Meeting - Virtual",
-      "source": "Municipality of Princeton",
-      "dateLabel": "November 18, 2026",
-      "timeLabel": "06:15 PM - 11:59 PM",
-      "location": "Princeton, NJ 08540",
-      "url": "https://www.princetonnj.gov/m/calendar/event/detail/8031",
-      "tags": [
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-18",
-      "startHour": 18
-    },
     {
       "title": "Site: Exhibition by Carlos Agredano",
       "source": "Princeton University",
@@ -465,20 +263,6 @@
       "startHour": 17
     },
     {
-      "title": "Tech: Advanced Adobe Photoshop",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 19",
-      "timeLabel": "5:30pm - 7:30pm",
-      "location": "Princeton Public Library - Tech Center",
-      "url": "https://princetonlibrary.libnet.info/event/17610820",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-19",
-      "startHour": 17
-    },
-    {
       "title": "Crafts: Stitch Club Princeton",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 19",
@@ -488,6 +272,20 @@
       "tags": [
         "new",
         "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-19",
+      "startHour": 17
+    },
+    {
+      "title": "Tech: Advanced Adobe Photoshop",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 19",
+      "timeLabel": "5:30pm - 7:30pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/17610820",
+      "tags": [
+        "rain",
         "practical"
       ],
       "isoDate": "2026-11-19",
@@ -1874,20 +1672,6 @@
       "startHour": 17
     },
     {
-      "title": "Celebrate Hispanic Heritage/Celebre la Herencia Hispana",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 24",
-      "timeLabel": "6:00pm - 7:30pm",
-      "location": "Princeton Public Library",
-      "url": "https://princetonlibrary.libnet.info/event/17292367",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-11-24",
-      "startHour": 18
-    },
-    {
       "title": "Author: Mike Blumenthal",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 24",
@@ -1896,6 +1680,20 @@
       "url": "https://princetonlibrary.libnet.info/event/17717631",
       "tags": [
         "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-24",
+      "startHour": 18
+    },
+    {
+      "title": "Celebrate Hispanic Heritage/Celebre la Herencia Hispana",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 24",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library",
+      "url": "https://princetonlibrary.libnet.info/event/17292367",
+      "tags": [
+        "family",
         "practical"
       ],
       "isoDate": "2026-11-24",
@@ -1981,15 +1779,231 @@
       "tags": [],
       "isoDate": "2026-11-24",
       "startHour": 20
+    },
+    {
+      "title": "Drop in and Knit",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 25",
+      "timeLabel": "10:00am - 12:00pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/17144893",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-25",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Storytime!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 25",
+      "timeLabel": "10:30am - 11:00am",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14660969",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-25",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Baby Storytime",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 25",
+      "timeLabel": "11:30am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14662403",
+      "tags": [
+        "family"
+      ],
+      "isoDate": "2026-11-25",
+      "startHour": 11
+    },
+    {
+      "title": "Kids: Baby Play Group",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 25",
+      "timeLabel": "12:00pm - 1:00pm",
+      "location": "Princeton Public Library",
+      "url": "https://princetonlibrary.libnet.info/event/14662336",
+      "tags": [
+        "new",
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-25",
+      "startHour": 12
+    },
+    {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 25",
+      "timeLabel": "12:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-25",
+      "startHour": 12
+    },
+    {
+      "title": "I Play Rocky",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 25",
+      "timeLabel": "1:00 PM (OC)",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=i-play-rocky",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-25",
+      "startHour": 13
+    },
+    {
+      "title": "McGraw Undergraduate Learning Program - Learning Concierge",
+      "source": "Princeton University",
+      "dateLabel": "Nov 25",
+      "timeLabel": "3:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mcgraw-undergraduate-learning-program-learning-concierge-22",
+      "tags": [],
+      "isoDate": "2026-11-25",
+      "startHour": 15
+    },
+    {
+      "title": "Film: \"The Grapes of Wrath\"",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 25",
+      "timeLabel": "3:00pm - 5:00pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17635983",
+      "tags": [
+        "family",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-25",
+      "startHour": 15
+    },
+    {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 25",
+      "timeLabel": "3:50 PM (OC)",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-25",
+      "startHour": 15
+    },
+    {
+      "title": "English Conversation (virtual)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 25",
+      "timeLabel": "4:00pm - 5:30pm",
+      "location": "Virtual - Google Meet",
+      "url": "https://princetonlibrary.libnet.info/event/16837164",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-11-25",
+      "startHour": 16
+    },
+    {
+      "title": "I Play Rocky",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 25",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=i-play-rocky",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-25",
+      "startHour": 16
+    },
+    {
+      "title": "InterVarsity Small Group",
+      "source": "Princeton University",
+      "dateLabel": "Nov 25",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/intervarsity-small-group-8",
+      "tags": [],
+      "isoDate": "2026-11-25",
+      "startHour": 16
+    },
+    {
+      "title": "YDSA Weekly Meeting",
+      "source": "Princeton University",
+      "dateLabel": "Nov 25",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/ydsa-weekly-meeting-18",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-25",
+      "startHour": 17
+    },
+    {
+      "title": "Learn English at the Library (High Beginner)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 25",
+      "timeLabel": "6:00pm - 7:30pm",
+      "location": "Princeton Public Library - Tower Room",
+      "url": "https://princetonlibrary.libnet.info/event/17154700",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-25",
+      "startHour": 18
+    },
+    {
+      "title": "I Play Rocky",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 25",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=i-play-rocky",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-25",
+      "startHour": 19
+    },
+    {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 25",
+      "timeLabel": "7:30 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-25",
+      "startHour": 19
     }
   ],
   "days": [
-    {
-      "iso": "2026-11-18",
-      "label": "Nov 18",
-      "weekday": "Wed",
-      "count": 14
-    },
     {
       "iso": "2026-11-19",
       "label": "Nov 19",
@@ -2025,6 +2039,12 @@
       "label": "Nov 24",
       "weekday": "Tue",
       "count": 20
+    },
+    {
+      "iso": "2026-11-25",
+      "label": "Nov 25",
+      "weekday": "Wed",
+      "count": 16
     }
   ],
   "windowDays": 7,
@@ -2034,7 +2054,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Clear then Patchy Fog, 31F"
+      "detail": "Patchy Freezing Fog then Sunny, 65F"
     },
     {
       "name": "Princeton University Events",
@@ -2046,13 +2066,13 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "52 events"
+      "detail": "40 events"
     },
     {
       "name": "Municipality of Princeton",
       "url": "https://www.princetonnj.gov/RSSFeed.aspx?ModID=58&CID=All-0",
       "status": "ok",
-      "detail": "7 calendar items"
+      "detail": "6 calendar items"
     },
     {
       "name": "Princeton Garden Theatre",
