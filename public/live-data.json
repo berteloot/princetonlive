@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-20T11:36:12.230Z",
+  "generatedAt": "2026-11-20T20:15:08.147Z",
   "weather": {
     "temperature": 67,
     "shortForecast": "Sunny",
-    "wind": "0 to 5 mph W",
-    "detailedForecast": "Sunny. High near 67, with temperatures falling to around 58 in the afternoon. West wind 0 to 5 mph.",
+    "wind": "0 mph ",
+    "detailedForecast": "Sunny. High near 67, with temperatures falling to around 60 in the afternoon. West wind around 0 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -302,20 +302,6 @@
       "startHour": 20
     },
     {
-      "title": "PSA Game Night",
-      "source": "Princeton University",
-      "dateLabel": "Nov 20",
-      "timeLabel": "8:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/psa-game-night",
-      "tags": [
-        "new",
-        "culture"
-      ],
-      "isoDate": "2026-11-20",
-      "startHour": 20
-    },
-    {
       "title": "2026 Princeton Dance Festival",
       "source": "Princeton University",
       "dateLabel": "Nov 20",
@@ -328,6 +314,20 @@
         "culture",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-11-20",
+      "startHour": 20
+    },
+    {
+      "title": "PSA Game Night",
+      "source": "Princeton University",
+      "dateLabel": "Nov 20",
+      "timeLabel": "8:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/psa-game-night",
+      "tags": [
+        "new",
+        "culture"
       ],
       "isoDate": "2026-11-20",
       "startHour": 20
@@ -651,6 +651,19 @@
         "culture",
         "rain",
         "practical"
+      ],
+      "isoDate": "2026-11-21",
+      "startHour": 20
+    },
+    {
+      "title": "Liars' Club meeting",
+      "source": "Princeton University",
+      "dateLabel": "Nov 21",
+      "timeLabel": "8:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/liars-club-meeting-9",
+      "tags": [
+        "rain"
       ],
       "isoDate": "2026-11-21",
       "startHour": 20
@@ -1660,7 +1673,7 @@
       "iso": "2026-11-21",
       "label": "Nov 21",
       "weekday": "Sat",
-      "count": 23
+      "count": 24
     },
     {
       "iso": "2026-11-22",
