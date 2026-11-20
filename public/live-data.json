@@ -1,160 +1,15 @@
 {
-  "generatedAt": "2026-11-20T02:17:53.477Z",
+  "generatedAt": "2026-11-20T11:36:12.230Z",
   "weather": {
-    "temperature": 35,
-    "shortForecast": "Mostly Clear",
-    "wind": "0 mph ",
-    "detailedForecast": "Mostly clear, with a low around 35. West wind around 0 mph.",
+    "temperature": 67,
+    "shortForecast": "Sunny",
+    "wind": "0 to 5 mph W",
+    "detailedForecast": "Sunny. High near 67, with temperatures falling to around 58 in the afternoon. West wind 0 to 5 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "English Conversation",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 19",
-      "timeLabel": "10:00am - 11:30am",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/17260677",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-11-19",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Storytime!",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 19",
-      "timeLabel": "10:30am - 11:00am",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14661283",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-11-19",
-      "startHour": 10
-    },
-    {
-      "title": "Kids: Baby Storytime",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 19",
-      "timeLabel": "11:30am - 12:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14661597",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-11-19",
-      "startHour": 11
-    },
-    {
-      "title": "Kids: Baby Play Group",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 19",
-      "timeLabel": "12:00pm - 1:00pm",
-      "location": "Princeton Public Library - Story Room",
-      "url": "https://princetonlibrary.libnet.info/event/14662550",
-      "tags": [
-        "new",
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-11-19",
-      "startHour": 12
-    },
-    {
-      "title": "Learn English at the Library (Intermediate)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 19",
-      "timeLabel": "12:30pm - 2:30pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/17154726",
-      "tags": [
-        "new",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-19",
-      "startHour": 12
-    },
-    {
-      "title": "Kids & Teens: Homework Help",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 19",
-      "timeLabel": "3:30pm - 6:00pm",
-      "location": "Princeton Public Library - CoLab Space",
-      "url": "https://princetonlibrary.libnet.info/event/17507797",
-      "tags": [
-        "family",
-        "practical"
-      ],
-      "isoDate": "2026-11-19",
-      "startHour": 15
-    },
-    {
-      "title": "Teens: Craft, Chat and Chill",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 19",
-      "timeLabel": "4:30pm - 5:30pm",
-      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
-      "url": "https://princetonlibrary.libnet.info/event/17413367",
-      "tags": [
-        "family",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-11-19",
-      "startHour": 16
-    },
-    {
-      "title": "Crafts: Stitch Club Princeton",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 19",
-      "timeLabel": "5:30pm - 7:30pm",
-      "location": "Princeton Public Library - Newsroom",
-      "url": "https://princetonlibrary.libnet.info/event/17245049",
-      "tags": [
-        "new",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-11-19",
-      "startHour": 17
-    },
-    {
-      "title": "Tech: Advanced Adobe Photoshop",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 19",
-      "timeLabel": "5:30pm - 7:30pm",
-      "location": "Princeton Public Library - Tech Center",
-      "url": "https://princetonlibrary.libnet.info/event/17610820",
-      "tags": [
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-19",
-      "startHour": 17
-    },
-    {
-      "title": "U.S. Citizenship Test Prep Course",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 19",
-      "timeLabel": "6:00pm - 8:00pm",
-      "location": "Zoom - Zoom",
-      "url": "https://princetonlibrary.libnet.info/event/17235598",
-      "tags": [
-        "new",
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-11-19",
-      "startHour": 18
-    },
     {
       "title": "Site: Exhibition by Carlos Agredano",
       "source": "Princeton University",
@@ -518,6 +373,20 @@
       "startHour": 10
     },
     {
+      "title": "Tiger Tech Help",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 21",
+      "timeLabel": "11:00am - 1:00pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/17469704",
+      "tags": [
+        "new",
+        "practical"
+      ],
+      "isoDate": "2026-11-21",
+      "startHour": 11
+    },
+    {
       "title": "Workshop: Zentangle with Mimi",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 21",
@@ -528,20 +397,6 @@
         "family",
         "culture",
         "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-21",
-      "startHour": 11
-    },
-    {
-      "title": "Tiger Tech Help",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 21",
-      "timeLabel": "11:00am - 1:00pm",
-      "location": "Princeton Public Library - Tech Center",
-      "url": "https://princetonlibrary.libnet.info/event/17469704",
-      "tags": [
-        "new",
         "practical"
       ],
       "isoDate": "2026-11-21",
@@ -1753,15 +1608,48 @@
       ],
       "isoDate": "2026-11-25",
       "startHour": 19
+    },
+    {
+      "title": "University Holiday - Thanksgiving",
+      "source": "Princeton University",
+      "dateLabel": "Nov 26",
+      "timeLabel": "12:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/university-holiday-thanksgiving",
+      "tags": [],
+      "isoDate": "2026-11-26",
+      "startHour": 0
+    },
+    {
+      "title": "I Play Rocky",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 26",
+      "timeLabel": "5:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=i-play-rocky",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-26",
+      "startHour": 17
+    },
+    {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 26",
+      "timeLabel": "5:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-26",
+      "startHour": 17
     }
   ],
   "days": [
-    {
-      "iso": "2026-11-19",
-      "label": "Nov 19",
-      "weekday": "Thu",
-      "count": 10
-    },
     {
       "iso": "2026-11-20",
       "label": "Nov 20",
@@ -1797,6 +1685,12 @@
       "label": "Nov 25",
       "weekday": "Wed",
       "count": 16
+    },
+    {
+      "iso": "2026-11-26",
+      "label": "Nov 26",
+      "weekday": "Thu",
+      "count": 3
     }
   ],
   "windowDays": 7,
@@ -1806,7 +1700,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Mostly Clear, 35F"
+      "detail": "Sunny, 67F"
     },
     {
       "name": "Princeton University Events",
@@ -1818,7 +1712,7 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "40 events"
+      "detail": "31 events"
     },
     {
       "name": "Municipality of Princeton",
