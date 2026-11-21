@@ -1,58 +1,15 @@
 {
-  "generatedAt": "2026-11-21T02:11:50.089Z",
+  "generatedAt": "2026-11-21T10:58:50.672Z",
   "weather": {
     "temperature": 39,
-    "shortForecast": "Partly Cloudy",
+    "shortForecast": "Mostly Cloudy",
     "wind": "0 mph ",
-    "detailedForecast": "Partly cloudy, with a low around 39. North wind around 0 mph.",
+    "detailedForecast": "Mostly cloudy, with a low around 39. North wind around 0 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Job Seekers: Managing Your Inner Critic",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 20",
-      "timeLabel": "10:00am - 12:00pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/17485529",
-      "tags": [
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-11-20",
-      "startHour": 10
-    },
-    {
-      "title": "English Conversation (in person)",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 20",
-      "timeLabel": "2:00pm - 3:30pm",
-      "location": "Princeton Public Library - Quiet Room",
-      "url": "https://princetonlibrary.libnet.info/event/17236685",
-      "tags": [
-        "practical"
-      ],
-      "isoDate": "2026-11-20",
-      "startHour": 14
-    },
-    {
-      "title": "Teens: Take & Make",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 20",
-      "timeLabel": "3:00pm - 4:00pm",
-      "location": "Princeton Public Library - Teen Center",
-      "url": "https://princetonlibrary.libnet.info/event/17563080",
-      "tags": [
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-20",
-      "startHour": 15
-    },
     {
       "title": "Site: Exhibition by Carlos Agredano",
       "source": "Princeton University",
@@ -94,20 +51,6 @@
       "startHour": 10
     },
     {
-      "title": "Tiger Tech Help",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 21",
-      "timeLabel": "11:00am - 1:00pm",
-      "location": "Princeton Public Library - Tech Center",
-      "url": "https://princetonlibrary.libnet.info/event/17469704",
-      "tags": [
-        "new",
-        "practical"
-      ],
-      "isoDate": "2026-11-21",
-      "startHour": 11
-    },
-    {
       "title": "Workshop: Zentangle with Mimi",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 21",
@@ -118,6 +61,20 @@
         "family",
         "culture",
         "rain",
+        "practical"
+      ],
+      "isoDate": "2026-11-21",
+      "startHour": 11
+    },
+    {
+      "title": "Tiger Tech Help",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 21",
+      "timeLabel": "11:00am - 1:00pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/17469704",
+      "tags": [
+        "new",
         "practical"
       ],
       "isoDate": "2026-11-21",
@@ -1013,20 +970,6 @@
       "startHour": 17
     },
     {
-      "title": "Author: Mike Blumenthal",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 24",
-      "timeLabel": "6:00pm - 7:00pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/17717631",
-      "tags": [
-        "culture",
-        "practical"
-      ],
-      "isoDate": "2026-11-24",
-      "startHour": 18
-    },
-    {
       "title": "Celebrate Hispanic Heritage/Celebre la Herencia Hispana",
       "source": "Princeton Public Library",
       "dateLabel": "Nov 24",
@@ -1035,6 +978,20 @@
       "url": "https://princetonlibrary.libnet.info/event/17292367",
       "tags": [
         "family",
+        "practical"
+      ],
+      "isoDate": "2026-11-24",
+      "startHour": 18
+    },
+    {
+      "title": "Author: Mike Blumenthal",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 24",
+      "timeLabel": "6:00pm - 7:00pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17717631",
+      "tags": [
+        "culture",
         "practical"
       ],
       "isoDate": "2026-11-24",
@@ -1381,15 +1338,47 @@
       ],
       "isoDate": "2026-11-26",
       "startHour": 17
+    },
+    {
+      "title": "Elf",
+      "source": "Garden Theatre",
+      "dateLabel": "Nov 27",
+      "timeLabel": "10:00 AM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=elf",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-11-27",
+      "startHour": 10
+    },
+    {
+      "title": "English Conversation (in person)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 27",
+      "timeLabel": "2:00pm - 3:30pm",
+      "location": "Princeton Public Library",
+      "url": "https://princetonlibrary.libnet.info/event/17236686",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-11-27",
+      "startHour": 14
+    },
+    {
+      "title": "Competitive Programming Club",
+      "source": "Princeton University",
+      "dateLabel": "Nov 27",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/competitive-programming-club",
+      "tags": [],
+      "isoDate": "2026-11-27",
+      "startHour": 17
     }
   ],
   "days": [
-    {
-      "iso": "2026-11-20",
-      "label": "Nov 20",
-      "weekday": "Fri",
-      "count": 3
-    },
     {
       "iso": "2026-11-21",
       "label": "Nov 21",
@@ -1425,6 +1414,12 @@
       "label": "Nov 26",
       "weekday": "Thu",
       "count": 3
+    },
+    {
+      "iso": "2026-11-27",
+      "label": "Nov 27",
+      "weekday": "Fri",
+      "count": 3
     }
   ],
   "windowDays": 7,
@@ -1434,7 +1429,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Partly Cloudy, 39F"
+      "detail": "Mostly Cloudy, 39F"
     },
     {
       "name": "Princeton University Events",
