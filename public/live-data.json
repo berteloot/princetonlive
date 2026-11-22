@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-22T11:20:38.448Z",
+  "generatedAt": "2026-11-22T19:36:59.988Z",
   "weather": {
     "temperature": 63,
     "shortForecast": "Light Rain Likely",
-    "wind": "0 to 5 mph NE",
-    "detailedForecast": "Rain likely after 10am. Mostly cloudy, with a high near 63. Northeast wind 0 to 5 mph. Chance of precipitation is 60%. New rainfall amounts between a tenth and quarter of an inch possible.",
+    "wind": "5 mph NE",
+    "detailedForecast": "Rain likely. Mostly cloudy, with a high near 63. Northeast wind around 5 mph. Chance of precipitation is 60%. New rainfall amounts between a tenth and quarter of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
@@ -57,34 +57,6 @@
       "tags": [],
       "isoDate": "2026-11-22",
       "startHour": 12
-    },
-    {
-      "title": "GIANT - The Play",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 22",
-      "timeLabel": "1:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=giant-the-play",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-22",
-      "startHour": 13
-    },
-    {
-      "title": "I Play Rocky",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 22",
-      "timeLabel": "1:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=i-play-rocky",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-22",
-      "startHour": 13
     },
     {
       "title": "Advent Concert: Stars",
@@ -1144,7 +1116,7 @@
       "iso": "2026-11-22",
       "label": "Nov 22",
       "weekday": "Sun",
-      "count": 17
+      "count": 15
     },
     {
       "iso": "2026-11-23",
@@ -1214,7 +1186,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "25 showtimes"
+      "detail": "23 showtimes"
     }
   ]
 }
