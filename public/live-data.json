@@ -1,30 +1,15 @@
 {
-  "generatedAt": "2026-11-23T01:40:56.354Z",
+  "generatedAt": "2026-11-23T12:34:12.942Z",
   "weather": {
-    "temperature": 52,
-    "shortForecast": "Slight Chance Light Rain then Patchy Fog",
-    "wind": "0 to 5 mph N",
-    "detailedForecast": "A slight chance of rain before 10pm, then patchy fog and a slight chance of rain between 10pm and 2am. Mostly cloudy, with a low around 52. North wind 0 to 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
+    "temperature": 67,
+    "shortForecast": "Patchy Fog then Mostly Sunny",
+    "wind": "5 to 10 mph W",
+    "detailedForecast": "Patchy fog before 10am. Mostly sunny. High near 67, with temperatures falling to around 61 in the afternoon. West wind 5 to 10 mph.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Performance: OnStage Seniors",
-      "source": "Princeton Public Library",
-      "dateLabel": "Nov 22",
-      "timeLabel": "3:00pm - 4:00pm",
-      "location": "Princeton Public Library - Community Room",
-      "url": "https://princetonlibrary.libnet.info/event/17563442",
-      "tags": [
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-22",
-      "startHour": 15
-    },
     {
       "title": "Site: Exhibition by Carlos Agredano",
       "source": "Princeton University",
@@ -927,15 +912,60 @@
       ],
       "isoDate": "2026-11-28",
       "startHour": 20
+    },
+    {
+      "title": "Worship Service in the University Chapel",
+      "source": "Princeton University",
+      "dateLabel": "Nov 29",
+      "timeLabel": "11:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/worship-service-university-chapel-12",
+      "tags": [],
+      "isoDate": "2026-11-29",
+      "startHour": 11
+    },
+    {
+      "title": "Silent Book Club",
+      "source": "Princeton University",
+      "dateLabel": "Nov 29",
+      "timeLabel": "2:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/silent-book-club-1",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-29",
+      "startHour": 14
+    },
+    {
+      "title": "Concert: Steve Kramer/Liam Sutcliffe Quartet",
+      "source": "Princeton Public Library",
+      "dateLabel": "Nov 29",
+      "timeLabel": "3:00pm - 4:15pm",
+      "location": "Princeton Public Library - Community Room",
+      "url": "https://princetonlibrary.libnet.info/event/17671602",
+      "tags": [
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-11-29",
+      "startHour": 15
+    },
+    {
+      "title": "Men's Ice Hockey vs Quinnipiac",
+      "source": "Princeton University",
+      "dateLabel": "Nov 29",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mens-ice-hockey-vs-quinnipiac",
+      "tags": [],
+      "isoDate": "2026-11-29",
+      "startHour": 16
     }
   ],
   "days": [
-    {
-      "iso": "2026-11-22",
-      "label": "Nov 22",
-      "weekday": "Sun",
-      "count": 1
-    },
     {
       "iso": "2026-11-23",
       "label": "Nov 23",
@@ -971,6 +1001,12 @@
       "label": "Nov 28",
       "weekday": "Sat",
       "count": 7
+    },
+    {
+      "iso": "2026-11-29",
+      "label": "Nov 29",
+      "weekday": "Sun",
+      "count": 4
     }
   ],
   "windowDays": 7,
@@ -980,7 +1016,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Slight Chance Light Rain then Patchy Fog, 52F"
+      "detail": "Patchy Fog then Mostly Sunny, 67F"
     },
     {
       "name": "Princeton University Events",
@@ -992,7 +1028,7 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "25 events"
+      "detail": "33 events"
     },
     {
       "name": "Municipality of Princeton",
