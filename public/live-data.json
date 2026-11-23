@@ -1,93 +1,15 @@
 {
-  "generatedAt": "2026-11-22T19:36:59.988Z",
+  "generatedAt": "2026-11-23T01:40:56.354Z",
   "weather": {
-    "temperature": 63,
-    "shortForecast": "Light Rain Likely",
-    "wind": "5 mph NE",
-    "detailedForecast": "Rain likely. Mostly cloudy, with a high near 63. Northeast wind around 5 mph. Chance of precipitation is 60%. New rainfall amounts between a tenth and quarter of an inch possible.",
+    "temperature": 52,
+    "shortForecast": "Slight Chance Light Rain then Patchy Fog",
+    "wind": "0 to 5 mph N",
+    "detailedForecast": "A slight chance of rain before 10pm, then patchy fog and a slight chance of rain between 10pm and 2am. Mostly cloudy, with a low around 52. North wind 0 to 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "Site: Exhibition by Carlos Agredano",
-      "source": "Princeton University",
-      "dateLabel": "Nov 22",
-      "timeLabel": "9:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/site-exhibition-carlos-agredano-11",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-22",
-      "startHour": 9
-    },
-    {
-      "title": "M/W Swimming - Big Al Invitational",
-      "source": "Princeton University",
-      "dateLabel": "Nov 22",
-      "timeLabel": "10:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mw-swimming-big-al-invitational-1",
-      "tags": [],
-      "isoDate": "2026-11-22",
-      "startHour": 10
-    },
-    {
-      "title": "Worship Service in the University Chapel",
-      "source": "Princeton University",
-      "dateLabel": "Nov 22",
-      "timeLabel": "11:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/worship-service-university-chapel-11",
-      "tags": [],
-      "isoDate": "2026-11-22",
-      "startHour": 11
-    },
-    {
-      "title": "M/W Squash vs Tufts",
-      "source": "Princeton University",
-      "dateLabel": "Nov 22",
-      "timeLabel": "12:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mw-squash-vs-tufts",
-      "tags": [],
-      "isoDate": "2026-11-22",
-      "startHour": 12
-    },
-    {
-      "title": "Advent Concert: Stars",
-      "source": "Princeton University",
-      "dateLabel": "Nov 22",
-      "timeLabel": "2:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/advent-concert-stars",
-      "tags": [
-        "culture"
-      ],
-      "isoDate": "2026-11-22",
-      "startHour": 14
-    },
-    {
-      "title": "2026 Princeton Dance Festival",
-      "source": "Princeton University",
-      "dateLabel": "Nov 22",
-      "timeLabel": "2:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/2026-princeton-dance-festival-2",
-      "tags": [
-        "new",
-        "family",
-        "culture",
-        "rain",
-        "practical"
-      ],
-      "isoDate": "2026-11-22",
-      "startHour": 14
-    },
     {
       "title": "Performance: OnStage Seniors",
       "source": "Princeton Public Library",
@@ -102,110 +24,6 @@
       ],
       "isoDate": "2026-11-22",
       "startHour": 15
-    },
-    {
-      "title": "Men's Ice Hockey vs Air Force",
-      "source": "Princeton University",
-      "dateLabel": "Nov 22",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/mens-ice-hockey-vs-air-force-0",
-      "tags": [],
-      "isoDate": "2026-11-22",
-      "startHour": 16
-    },
-    {
-      "title": "Early Music Princeton Concert",
-      "source": "Princeton University",
-      "dateLabel": "Nov 22",
-      "timeLabel": "4:00 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/early-music-princeton-concert-0",
-      "tags": [
-        "new",
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-22",
-      "startHour": 16
-    },
-    {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 22",
-      "timeLabel": "4:05 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-22",
-      "startHour": 16
-    },
-    {
-      "title": "I Play Rocky",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 22",
-      "timeLabel": "4:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=i-play-rocky",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-22",
-      "startHour": 16
-    },
-    {
-      "title": "Kindred Spirit Fall Arch",
-      "source": "Princeton University",
-      "dateLabel": "Nov 22",
-      "timeLabel": "6:45 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/kindred-spirit-fall-arch",
-      "tags": [],
-      "isoDate": "2026-11-22",
-      "startHour": 18
-    },
-    {
-      "title": "I Play Rocky",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 22",
-      "timeLabel": "7:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=i-play-rocky",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-22",
-      "startHour": 19
-    },
-    {
-      "title": "Princeton Psychology Society Career Panel",
-      "source": "Princeton University",
-      "dateLabel": "Nov 22",
-      "timeLabel": "7:30 PM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/princeton-psychology-society-career-panel",
-      "tags": [],
-      "isoDate": "2026-11-22",
-      "startHour": 19
-    },
-    {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 22",
-      "timeLabel": "7:40 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-22",
-      "startHour": 19
     },
     {
       "title": "Site: Exhibition by Carlos Agredano",
@@ -1116,7 +934,7 @@
       "iso": "2026-11-22",
       "label": "Nov 22",
       "weekday": "Sun",
-      "count": 15
+      "count": 1
     },
     {
       "iso": "2026-11-23",
@@ -1162,7 +980,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Light Rain Likely, 63F"
+      "detail": "Slight Chance Light Rain then Patchy Fog, 52F"
     },
     {
       "name": "Princeton University Events",
@@ -1186,7 +1004,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "23 showtimes"
+      "detail": "19 showtimes"
     }
   ]
 }
