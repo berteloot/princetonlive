@@ -1,41 +1,23 @@
 {
-  "generatedAt": "2026-11-27T01:43:18.509Z",
+  "generatedAt": "2026-11-27T12:14:57.128Z",
   "weather": {
-    "temperature": 46,
-    "shortForecast": "Heavy Rain",
-    "wind": "10 to 25 mph SE",
-    "detailedForecast": "Rain. Cloudy. Low around 46, with temperatures rising to around 53 overnight. Southeast wind 10 to 25 mph, with gusts as high as 40 mph. Chance of precipitation is 90%. New rainfall amounts between three quarters and one inch possible.",
+    "temperature": 54,
+    "shortForecast": "Scattered Rain Showers",
+    "wind": "15 mph SW",
+    "detailedForecast": "Scattered rain showers after 8am. Cloudy. High near 54, with temperatures falling to around 46 in the afternoon. Southwest wind around 15 mph, with gusts as high as 30 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.28236d693f059955ce1f81a986d0a131de09c55e.002.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b2eb954e2d1e6def459c3e0a91443953d2e6e839.009.1",
       "event": "Coastal Flood Warning",
-      "headline": "Coastal Flood Warning issued November 26 at 7:55PM EST until November 27 at 8:00PM EST by NWS Mount Holly NJ",
-      "severity": "Severe",
-      "url": null
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.628ae796f9ef276479a70bd2629261d6a4b417c2.002.1",
-      "event": "High Wind Warning",
-      "headline": "High Wind Warning issued November 26 at 7:03PM EST until November 27 at 1:00AM EST by NWS Mount Holly NJ",
+      "headline": "Coastal Flood Warning issued November 27 at 2:50AM EST until November 27 at 8:00PM EST by NWS Mount Holly NJ",
       "severity": "Severe",
       "url": null
     }
   ],
   "alertsAvailable": true,
   "events": [
-    {
-      "title": "University Holiday - Thanksgiving",
-      "source": "Princeton University",
-      "dateLabel": "Nov 26",
-      "timeLabel": "12:00 AM",
-      "location": "Princeton campus",
-      "url": "https://www.princeton.edu/events/2026/university-holiday-thanksgiving",
-      "tags": [],
-      "isoDate": "2026-11-26",
-      "startHour": 0
-    },
     {
       "title": "Elf",
       "source": "Garden Theatre",
@@ -1607,15 +1589,417 @@
       "tags": [],
       "isoDate": "2026-12-02",
       "startHour": 20
+    },
+    {
+      "title": "Site: Exhibition by Carlos Agredano",
+      "source": "Princeton University",
+      "dateLabel": "Dec 3",
+      "timeLabel": "7:00 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/site-exhibition-carlos-agredano-17",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 7
+    },
+    {
+      "title": "English Conversation",
+      "source": "Princeton Public Library",
+      "dateLabel": "Dec 03",
+      "timeLabel": "10:00am - 11:30am",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/17260678",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Storytime!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Dec 03",
+      "timeLabel": "10:30am - 11:00am",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14661284",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 10
+    },
+    {
+      "title": "Fiction Book Group",
+      "source": "Princeton Public Library",
+      "dateLabel": "Dec 03",
+      "timeLabel": "10:30am - 11:30am",
+      "location": "Princeton Public Library - Conference Room",
+      "url": "https://princetonlibrary.libnet.info/event/17618042",
+      "tags": [
+        "practical"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 10
+    },
+    {
+      "title": "Kids: Baby Storytime",
+      "source": "Princeton Public Library",
+      "dateLabel": "Dec 03",
+      "timeLabel": "11:30am - 12:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14661598",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 11
+    },
+    {
+      "title": "PSAI - Danah Boyd Talk",
+      "source": "Princeton University",
+      "dateLabel": "Dec 3",
+      "timeLabel": "11:45 AM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/psai-danah-boyd-talk",
+      "tags": [],
+      "isoDate": "2026-12-03",
+      "startHour": 11
+    },
+    {
+      "title": "Faculty and staff Bible study",
+      "source": "Princeton University",
+      "dateLabel": "Dec 3",
+      "timeLabel": "12:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/faculty-and-staff-bible-study-4",
+      "tags": [],
+      "isoDate": "2026-12-03",
+      "startHour": 12
+    },
+    {
+      "title": "Kids: Baby Play Group",
+      "source": "Princeton Public Library",
+      "dateLabel": "Dec 03",
+      "timeLabel": "12:00pm - 1:00pm",
+      "location": "Princeton Public Library - Story Room",
+      "url": "https://princetonlibrary.libnet.info/event/14662551",
+      "tags": [
+        "new",
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 12
+    },
+    {
+      "title": "Voices of the 250th",
+      "source": "Princeton Public Library",
+      "dateLabel": "Dec 03",
+      "timeLabel": "12:00pm - 2:00pm",
+      "location": "Princeton Public Library - Lobby",
+      "url": "https://princetonlibrary.libnet.info/event/17936511",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 12
+    },
+    {
+      "title": "After Noon Concert Series",
+      "source": "Princeton University",
+      "dateLabel": "Dec 3",
+      "timeLabel": "12:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/after-noon-concert-series-10",
+      "tags": [
+        "culture"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 12
+    },
+    {
+      "title": "Learn English at the Library (Intermediate)",
+      "source": "Princeton Public Library",
+      "dateLabel": "Dec 03",
+      "timeLabel": "12:30pm - 2:30pm",
+      "location": "Princeton Public Library - Quiet Room",
+      "url": "https://princetonlibrary.libnet.info/event/17154727",
+      "tags": [
+        "new",
+        "culture",
+        "rain",
+        "practical"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 12
+    },
+    {
+      "title": "ENV 221: AI for Global Good: Evaluating AI tools to address the UN Sustainable Development Goals",
+      "source": "Princeton University",
+      "dateLabel": "Dec 3",
+      "timeLabel": "1:20 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/env-221-ai-global-good-evaluating-ai-tools-address-un-sustainable-development-goals",
+      "tags": [
+        "new",
+        "culture"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 13
+    },
+    {
+      "title": "Tech Help from Bloomberg",
+      "source": "Princeton Public Library",
+      "dateLabel": "Dec 03",
+      "timeLabel": "3:00pm - 5:00pm",
+      "location": "Princeton Public Library - Tech Center",
+      "url": "https://princetonlibrary.libnet.info/event/16612545",
+      "tags": [
+        "new",
+        "practical"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 15
+    },
+    {
+      "title": "Fall 2026 End of Semester Showings in Dance",
+      "source": "Princeton University",
+      "dateLabel": "Dec 3",
+      "timeLabel": "3:15 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/fall-2026-end-semester-showings-dance-0",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 15
+    },
+    {
+      "title": "Kids & Teens: Homework Help",
+      "source": "Princeton Public Library",
+      "dateLabel": "Dec 03",
+      "timeLabel": "3:30pm - 6:00pm",
+      "location": "Princeton Public Library - CoLab Space",
+      "url": "https://princetonlibrary.libnet.info/event/17507799",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 15
+    },
+    {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Dec 3",
+      "timeLabel": "3:30 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 15
+    },
+    {
+      "title": "Friends of PUL Small Talk: \"A Librarian's War\" with Molly Guptill Manning",
+      "source": "Princeton University",
+      "dateLabel": "Dec 3",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/friends-pul-small-talk-librarians-war-molly-guptill-manning",
+      "tags": [
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 16
+    },
+    {
+      "title": "M/W Squash vs F&M",
+      "source": "Princeton University",
+      "dateLabel": "Dec 3",
+      "timeLabel": "4:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/mw-squash-vs-fm",
+      "tags": [],
+      "isoDate": "2026-12-03",
+      "startHour": 16
+    },
+    {
+      "title": "Kids: Game On!",
+      "source": "Princeton Public Library",
+      "dateLabel": "Dec 03",
+      "timeLabel": "4:00pm - 5:00pm",
+      "location": "Princeton Public Library - Myra & Van Williams Spark Lab",
+      "url": "https://princetonlibrary.libnet.info/event/17028606",
+      "tags": [
+        "family",
+        "practical"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 16
+    },
+    {
+      "title": "I Play Rocky",
+      "source": "Garden Theatre",
+      "dateLabel": "Dec 3",
+      "timeLabel": "4:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=i-play-rocky",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 16
+    },
+    {
+      "title": "Musicology Colloquium with Matthew Gelbart",
+      "source": "Princeton University",
+      "dateLabel": "Dec 3",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/musicology-colloquium-matthew-gelbart",
+      "tags": [
+        "new",
+        "family",
+        "culture"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 16
+    },
+    {
+      "title": "Lives Well Lived",
+      "source": "Princeton University",
+      "dateLabel": "Dec 3",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/lives-well-lived",
+      "tags": [],
+      "isoDate": "2026-12-03",
+      "startHour": 16
+    },
+    {
+      "title": "Fall 2026 Student Reading",
+      "source": "Princeton University",
+      "dateLabel": "Dec 3",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/fall-2026-student-reading",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 16
+    },
+    {
+      "title": "Common or Garden Cosmopolitics",
+      "source": "Princeton University",
+      "dateLabel": "Dec 3",
+      "timeLabel": "4:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/common-or-garden-cosmopolitics",
+      "tags": [],
+      "isoDate": "2026-12-03",
+      "startHour": 16
+    },
+    {
+      "title": "Fieldwork on Fire: What you don't know about the fires in Indonesia threatening orangutans with rapid extinction",
+      "source": "Princeton University",
+      "dateLabel": "Dec 3",
+      "timeLabel": "5:00 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/fieldwork-fire-what-you-dont-know-about-fires-indonesia-threatening-orangutans-rapid",
+      "tags": [
+        "new",
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 17
+    },
+    {
+      "title": "U.S. Citizenship Test Prep Course",
+      "source": "Princeton Public Library",
+      "dateLabel": "Dec 03",
+      "timeLabel": "6:00pm - 8:00pm",
+      "location": "Zoom - Zoom",
+      "url": "https://princetonlibrary.libnet.info/event/17235599",
+      "tags": [
+        "new",
+        "culture",
+        "practical"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 18
+    },
+    {
+      "title": "Lutheran Campus Ministry Table Talk",
+      "source": "Princeton University",
+      "dateLabel": "Dec 3",
+      "timeLabel": "6:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/lutheran-campus-ministry-table-talk-2",
+      "tags": [],
+      "isoDate": "2026-12-03",
+      "startHour": 18
+    },
+    {
+      "title": "I Play Rocky",
+      "source": "Garden Theatre",
+      "dateLabel": "Dec 3",
+      "timeLabel": "7:00 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=i-play-rocky",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 19
+    },
+    {
+      "title": "You Can See Everything",
+      "source": "Garden Theatre",
+      "dateLabel": "Dec 3",
+      "timeLabel": "7:10 PM",
+      "location": "160 Nassau Street",
+      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
+      "tags": [
+        "culture",
+        "rain"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 19
+    },
+    {
+      "title": "Asmik Grigorian, Soprano (Princeton University Concerts)",
+      "source": "Princeton University",
+      "dateLabel": "Dec 3",
+      "timeLabel": "7:30 PM",
+      "location": "Princeton campus",
+      "url": "https://www.princeton.edu/events/2026/asmik-grigorian-soprano-princeton-university-concerts",
+      "tags": [
+        "new",
+        "culture"
+      ],
+      "isoDate": "2026-12-03",
+      "startHour": 19
     }
   ],
   "days": [
-    {
-      "iso": "2026-11-26",
-      "label": "Nov 26",
-      "weekday": "Thu",
-      "count": 1
-    },
     {
       "iso": "2026-11-27",
       "label": "Nov 27",
@@ -1651,6 +2035,12 @@
       "label": "Dec 2",
       "weekday": "Wed",
       "count": 36
+    },
+    {
+      "iso": "2026-12-03",
+      "label": "Dec 3",
+      "weekday": "Thu",
+      "count": 30
     }
   ],
   "windowDays": 7,
@@ -1660,7 +2050,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Heavy Rain, 46F"
+      "detail": "Scattered Rain Showers, 54F"
     },
     {
       "name": "Princeton University Events",
@@ -1672,7 +2062,7 @@
       "name": "Princeton Public Library",
       "url": "https://princetonlibrary.libnet.info/events",
       "status": "ok",
-      "detail": "46 events"
+      "detail": "49 events"
     },
     {
       "name": "Municipality of Princeton",
