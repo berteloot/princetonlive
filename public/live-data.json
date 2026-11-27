@@ -1,17 +1,24 @@
 {
-  "generatedAt": "2026-11-26T16:51:55.926Z",
+  "generatedAt": "2026-11-27T01:43:18.509Z",
   "weather": {
-    "temperature": 50,
-    "shortForecast": "Rain",
-    "wind": "25 to 30 mph NE",
-    "detailedForecast": "Rain. Cloudy, with a high near 50. Northeast wind 25 to 30 mph, with gusts as high as 55 mph. Chance of precipitation is 100%. New rainfall amounts between 1 and 2 inches possible.",
+    "temperature": 46,
+    "shortForecast": "Heavy Rain",
+    "wind": "10 to 25 mph SE",
+    "detailedForecast": "Rain. Cloudy. Low around 46, with temperatures rising to around 53 overnight. Southeast wind 10 to 25 mph, with gusts as high as 40 mph. Chance of precipitation is 90%. New rainfall amounts between three quarters and one inch possible.",
     "sourceUrl": "https://forecast.weather.gov/MapClick.php?lat=40.3573&lon=-74.6672"
   },
   "alerts": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1d23fdecf24095a3aa71cb2b060327a2c8f4a235.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.28236d693f059955ce1f81a986d0a131de09c55e.002.1",
+      "event": "Coastal Flood Warning",
+      "headline": "Coastal Flood Warning issued November 26 at 7:55PM EST until November 27 at 8:00PM EST by NWS Mount Holly NJ",
+      "severity": "Severe",
+      "url": null
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.628ae796f9ef276479a70bd2629261d6a4b417c2.002.1",
       "event": "High Wind Warning",
-      "headline": "High Wind Warning issued November 26 at 8:41AM EST until November 27 at 1:00AM EST by NWS Mount Holly NJ",
+      "headline": "High Wind Warning issued November 26 at 7:03PM EST until November 27 at 1:00AM EST by NWS Mount Holly NJ",
       "severity": "Severe",
       "url": null
     }
@@ -28,34 +35,6 @@
       "tags": [],
       "isoDate": "2026-11-26",
       "startHour": 0
-    },
-    {
-      "title": "I Play Rocky",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 26",
-      "timeLabel": "5:00 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=i-play-rocky",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-26",
-      "startHour": 17
-    },
-    {
-      "title": "You Can See Everything",
-      "source": "Garden Theatre",
-      "dateLabel": "Nov 26",
-      "timeLabel": "5:10 PM",
-      "location": "160 Nassau Street",
-      "url": "https://www.princetongardentheatre.org/film?id=you-can-see-everything",
-      "tags": [
-        "culture",
-        "rain"
-      ],
-      "isoDate": "2026-11-26",
-      "startHour": 17
     },
     {
       "title": "Elf",
@@ -1635,7 +1614,7 @@
       "iso": "2026-11-26",
       "label": "Nov 26",
       "weekday": "Thu",
-      "count": 3
+      "count": 1
     },
     {
       "iso": "2026-11-27",
@@ -1681,7 +1660,7 @@
       "name": "National Weather Service",
       "url": "https://api.weather.gov/",
       "status": "ok",
-      "detail": "Rain, 50F"
+      "detail": "Heavy Rain, 46F"
     },
     {
       "name": "Princeton University Events",
@@ -1705,7 +1684,7 @@
       "name": "Princeton Garden Theatre",
       "url": "https://www.princetongardentheatre.org/",
       "status": "ok",
-      "detail": "42 showtimes"
+      "detail": "40 showtimes"
     }
   ]
 }
